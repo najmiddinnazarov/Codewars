@@ -22,3 +22,14 @@
 //     return "no one likes this";
 //   }
 // }
+
+// #7kyu Ordered Count of Characters
+// const orderedCount = function (text) {
+//   let obj = {};
+//   for (const i of text) {
+//     if (i in obj) obj[i]++;
+//     else obj[i] = 1;
+//   }
+//   return Object.entries(obj);
+// };
+// console.log(orderedCount("233312"));
