@@ -122,3 +122,53 @@
 //   return count;
 // };
 // console.log(countBits(1234));
+
+// #7kyu Get the Middle Character
+// function getMiddle(s) {
+//   if (s.length % 2 === 0) {
+//     return s
+//       .split("")
+//       .splice(s.length / 2 - 1, 2)
+//       .join("");
+//   } else {
+//     return s
+//       .split("")
+//       .splice(Math.floor(s.length / 2), 1)
+//       .join("");
+//   }
+// }
+// console.log(getMiddle("A"));
+
+// #7kyu Mumbling
+// function accum(s) {
+//   let str = s.toLowerCase();
+//   let result = "";
+//   for (let i = 0; i < str.length; i++) {
+//     result += str[i].toUpperCase();
+//     result += `${str[i].repeat(i)}-`;
+//   }
+//   return result.substring(-1, result.length - 1);
+// }
+// console.log(accum("abcd"));
+
+// #7kyu Shortest Word
+// function findShort(s) {
+//   let str = s.toLowerCase();
+//   let obj = {};
+//   let arr = str.split(" ");
+//   let uniqueChars = arr.filter((element, index) => {
+//     return arr.indexOf(element) === index;
+//   });
+//   for (const i of uniqueChars) {
+//     for (const j of i) {
+//       if (i in obj) obj[i]++;
+//       else obj[i] = 1;
+//     }
+//   }
+//   return Math.min(...Object.values(obj));
+// }
+// console.log(
+//   findShort(
+//     "Monero Steem LiteCoin BTC Dogecoin Bitcoin Classic Dash Ethereum 21inc Bitcoin Classic Lisk BTC LiteCoin ProofOfStake Dash"
+//   )
+// );
