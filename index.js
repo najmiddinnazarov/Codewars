@@ -172,3 +172,21 @@
 //     "Monero Steem LiteCoin BTC Dogecoin Bitcoin Classic Dash Ethereum 21inc Bitcoin Classic Lisk BTC LiteCoin ProofOfStake Dash"
 //   )
 // );
+
+// #7kyu Friend or Foe?
+// function friend(friends) {
+//   return friends.filter((value) => value.length == 4);
+// }
+// console.log(friend(["Love", "Your", "Face", "1"]));
+
+// #7kyu Binary Addition
+// function addBinary(a, b) {
+//   return (a + b).toString(2);
+// }
+// console.log(addBinary(1, 1));
+
+// #7kyu Ones and Zeros
+// const binaryArrayToNumber = (arr) => {
+//   return parseInt(arr.join(""), 2);
+// };
+// console.log(binaryArrayToNumber([0, 1, 0, 1, 1]));
