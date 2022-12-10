@@ -190,3 +190,22 @@
 //   return parseInt(arr.join(""), 2);
 // };
 // console.log(binaryArrayToNumber([0, 1, 0, 1, 1]));
+
+// #6kyu Encrypt this!
+// var encryptThis = function (text) {
+//   let result = [];
+//   let array = text.split(" ");
+//   for (const i of array) {
+//     let newArr = i.split("");
+//     if (newArr.length === 1) result.push(newArr.join("").codePointAt(0));
+//     if (newArr.length > 1) {
+//       newArr.splice(newArr[0], 1, newArr.join("").codePointAt(0));
+//       let letter = newArr.pop();
+//       newArr.push(newArr[1]);
+//       newArr.splice(1, 1, letter);
+//       result.push(newArr.join(""));
+//     }
+//   }
+//   return result.join(" ");
+// };
+// console.log(encryptThis("A wise old owl lived in an oak"));
