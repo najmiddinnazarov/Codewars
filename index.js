@@ -209,3 +209,13 @@
 //   return result.join(" ");
 // };
 // console.log(encryptThis("A wise old owl lived in an oak"));
+
+// #8kyu strCount
+// function strCount(str,letter) {
+//     let count = 0;
+//     for (const i of str) {
+//         if (i === letter) count++;
+//     }
+//     return count;
+// }
+// console.log(strCount('Hello','H'));
