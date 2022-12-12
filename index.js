@@ -219,3 +219,15 @@
 //     return count;
 // }
 // console.log(strCount('Hello','H'));
+
+// #8kyu String to Number
+// const stringToNumber = function(str) {
+//     return +str;
+// }
+// console.log(stringToNumber("1234"));
+
+// #8kyu Make negative number
+// function makeNegative(num) {
+//     return num <= 0 ? num : -num;
+// }
+// console.log(makeNegative(0.12));
