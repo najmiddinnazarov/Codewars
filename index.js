@@ -231,3 +231,46 @@
 //     return num <= 0 ? num : -num;
 // }
 // console.log(makeNegative(0.12));
+
+// #6kyu Your order, please
+// function order(words) {
+//   let arr = words.split(" ");
+//   let res = arr.filter((value, index) => {
+//     return value;
+//   });
+//   return res;
+// }
+// console.log(order("is2 Thi1s T4est 3a")); // Error
+
+// #6kyu String average
+//https://www.codewars.com/kata/5966847f4025872c7d00015b/train/javascript
+// let obj = {
+//   zero: 0,
+//   one: 1,
+//   two: 2,
+//   three: 3,
+//   four: 4,
+//   five: 5,
+//   six: 6,
+//   seven: 7,
+//   eight: 8,
+//   nine: 9,
+// };
+// function averageString(str) {
+//   let res = [];
+//   let arr = str.split(" ");
+//   if (arr.length > 1) {
+//     for (const key in obj) {
+//       for (const i of arr) {
+//         if (key == i) res.push(obj[key]);
+//       }
+//     }
+//   } else {
+//     return "n/a";
+//   }
+//   let result = Math.floor(eval(res.join("+")) / arr.length);
+//   for (const value in obj) {
+//     if (result == obj[value]) return value;
+//   }
+// }
+// console.log(averageString(""));
