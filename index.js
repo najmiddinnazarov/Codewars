@@ -274,3 +274,22 @@
 //   }
 // }
 // console.log(averageString(""));
+
+// #6kyu Maximum and minimum
+// function max(...max) {
+//   let arr = max.flat(Infinity);
+//   if (arr.length !== 0) {
+//     arr.sort((a, b) => a - b);
+//     return +arr[arr.length - 1];
+//   } else return 0;
+// }
+
+// function min(...min) {
+//   let arr = min.flat(Infinity);
+//   if (arr.length !== 0) {
+//     arr.sort((a, b) => a - b);
+//     return isNaN(+arr[arr.length - 1]) ? NaN : +arr[0];
+//   } else return 0;
+// }
+// console.log(max(1, 2, [3, ["4r"]]));
+// console.log(min(1, 2, [3, ["4r"]]));
