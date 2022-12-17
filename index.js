@@ -293,3 +293,18 @@
 // }
 // console.log(max(1, 2, [3, ["4r"]]));
 // console.log(min(1, 2, [3, ["4r"]]));
+
+// #5kyu The Hashtag Generator
+// function generateHashtag(str) {
+//   let strLength = str.split(" ").join("").length;
+//   if (strLength < 140 && strLength) {
+//     let arr = str.split(" ");
+//     let result = [];
+//     for (const i of arr) {
+//       result.push(i.replace(i.charAt(0), i.charAt(0).toUpperCase()));
+//     }
+//     result.splice(0, 0, "#");
+//     return result.join("");
+//   } else return false;
+// }
+// console.log(generateHashtag(""));
