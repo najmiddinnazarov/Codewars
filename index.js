@@ -308,3 +308,14 @@
 //   } else return false;
 // }
 // console.log(generateHashtag(""));
+
+// #7kyu Hex Hash Sum
+// function hexHash(code) {
+//   let str = "";
+//   for (let i = 0; i < code.length; i++) {
+//     str += code.charCodeAt(i).toString(16);
+//   }
+//   let result = str.split("").filter((value) => !isNaN(value));
+//   return eval(result.join("+")) == undefined ? 0 : eval(result.join("+"));
+// }
+// console.log(hexHash(""));
