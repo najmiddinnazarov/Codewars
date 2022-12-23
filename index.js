@@ -319,3 +319,10 @@
 //   return eval(result.join("+")) == undefined ? 0 : eval(result.join("+"));
 // }
 // console.log(hexHash(""));
+
+// #8kyu Return to Sanity
+// function mystery() {
+//   var results = { sanity: "Hello" };
+//   return results;
+// }
+// console.log(mystery());
