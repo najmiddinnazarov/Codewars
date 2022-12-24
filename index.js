@@ -326,3 +326,36 @@
 //   return results;
 // }
 // console.log(mystery());
+
+// #6kyu Find The Parity Outlier
+// function findOutlier(integers) {
+//   let even = 0;
+//   let odd = 0;
+//   for (const i of integers) {
+//     if (i % 2 === 0) even++;
+//     else odd++;
+//   }
+//   for (const j of integers) {
+//     if (even < odd) {
+//       if (j % 2 === 0) return j;
+//     } else if (even > odd) {
+//       if (j % 2 !== 0) return j;
+//     }
+//   }
+// }
+// console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]));
+
+// #6kyu Counting Duplicates
+// function duplicateCount(text) {
+//   const obj = {};
+//   let count = 0;
+//   for (const i of text.toLowerCase()) {
+//     if (i in obj) obj[i]++;
+//     else obj[i] = 1;
+//   }
+//   for (const key in obj) {
+//     if (obj[key] > 1) count++;
+//   }
+//   return count;
+// }
+// console.log(duplicateCount("abcdefghABCDABCABA"));
