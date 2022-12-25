@@ -359,3 +359,26 @@
 //   return count;
 // }
 // console.log(duplicateCount("abcdefghABCDABCABA"));
+
+// #6kyu Remove the parentheses
+// function removeParentheses(s) {
+//   let first = s.indexOf("(");
+//   let second = s.lastIndexOf(")") + 1;
+//   let arr = s.split(" ");
+//   return arr;
+// }
+// console.log(removeParentheses("(first group) (second group) (third group)")); // Error
+
+function pigIt(str) {
+  let array = str.split(" ");
+  let result = [];
+  for (const i of array) {
+    if (!i.match(/^[.,:!?]/)) {
+      // let first = i.charAt(0) + "ay";
+      // let second = i.slice(1);
+      result.push(i.slice(1) + (i.charAt(0) + "ay"));
+    } else result.push(i);
+  }
+  return result.join(" ");
+}
+console.log(pigIt("Hello world !"));
