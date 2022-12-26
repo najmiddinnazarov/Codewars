@@ -383,3 +383,27 @@
 //   return result.join(" ");
 // }
 // console.log(pigIt("Hello world !"));
+
+// #5kyu Moving Zeros To The End
+// function moveZeros(arr) {
+//   let result = [];
+//   let array = [];
+//   arr.map((value) => {
+//     if (value !== 0) result.push(value);
+//     else array.push(value);
+//   });
+//   return result.concat(array);
+// }
+// console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"]));
+
+// #5kyu Human Readable Time
+function humanReadable(seconds) {
+  let hour = 0;
+  let min = 0;
+  let sec = 0;
+  if (seconds > 0 && seconds <= 59) sec = seconds;
+  if (seconds === 60) min++;
+  let result = `${hour}:${min}:${sec}`;
+  return result;
+}
+console.log(humanReadable(60));
