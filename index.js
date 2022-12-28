@@ -425,3 +425,58 @@
 //   return res;
 // }
 // console.log(shortcut("hello"));
+
+// #8kyu Training JS #8: Conditional statement--switch
+// function howManydays(month) {
+//   let days;
+//   switch (month) {
+//     case 1:
+//     case 3:
+//     case 5:
+//     case 7:
+//     case 8:
+//     case 10:
+//     case 12:
+//       days = 31;
+//       break;
+//     case 4:
+//     case 6:
+//     case 9:
+//     case 11:
+//       days = 30;
+//       break;
+//     case 2:
+//       days = 28;
+//       break;
+//     default:
+//       return "Days not found!";
+//   }
+//   return days;
+// }
+// console.log(howManydays(12));
+
+// #8kyu Training JS #9: loop statement --while and do..while
+// function padIt(str, n) {
+//   let start = 0;
+//   while (start < n) {
+//     if (start % 2 === 0) str = `*${str}`;
+//     else str = `${str}*`;
+//     start++;
+//   }
+//   return str;
+// }
+// console.log(padIt("a", 1));
+
+// #8kyu Training JS #10: loop statement --for
+// function pickIt(arr) {
+//   var odd = [],
+//     even = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) even.push(arr[i]);
+//     else odd.push(arr[i]);
+//   }
+
+//   return [odd, even];
+// }
+
+// console.log(pickIt([1, 2, 3]));
