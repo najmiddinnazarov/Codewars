@@ -397,13 +397,31 @@
 // console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"]));
 
 // #5kyu Human Readable Time
-function humanReadable(seconds) {
-  let hour = 0;
-  let min = 0;
-  let sec = 0;
-  if (seconds > 0 && seconds <= 59) sec = seconds;
-  if (seconds === 60) min++;
-  let result = `${hour}:${min}:${sec}`;
-  return result;
-}
-console.log(humanReadable(60));
+// https://www.codewars.com/kata/52685f7382004e774f0001f7/train/javascript
+// function humanReadable(seconds) {
+//   let hour = 0;
+//   let min = 0;
+//   let sec = 0;
+//   if (seconds > 0 && seconds <= 59) sec = seconds;
+//   if (seconds > 59 && seconds <= 119) {
+//     min++;
+//     sec = seconds - 60;
+//   }
+//   if (seconds > 119) {
+//     min = parseInt(seconds / 2);
+//     sec = seconds % 2;
+//   }
+//   let result = `${hour}:${min}:${sec}`;
+//   return result;
+// }
+// console.log(humanReadable(129)); // Error
+
+// #8kyu Vowel remover
+// function shortcut(string) {
+//   let res = "";
+//   for (const i of string) {
+//     if (!i.match(/[aeiou]/gi)) res += i;
+//   }
+//   return res;
+// }
+// console.log(shortcut("hello"));
