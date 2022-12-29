@@ -480,3 +480,8 @@
 // }
 
 // console.log(pickIt([1, 2, 3]));
+
+// #8kyu String Templates - Bug Fixing #5
+// function buildString(...template) {
+//   return `I like ${template.join(", ")}!`;
+// }
