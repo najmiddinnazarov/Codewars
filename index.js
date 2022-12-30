@@ -503,3 +503,16 @@
 // };
 // console.log(flatten([[3, 4, 5], [[9, 9, 9]], ["a,b,c"]]));
 // [3, 4, 5, [9, 9, 9], "a,b,c"]
+
+// #7kyu Fizz Buzz
+// function fizzbuzz(n) {
+//   let arr = [];
+//   for (let i = 1; i <= n; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) arr.push("FizzBuzz");
+//     else if (i % 3 === 0) arr.push("Fizz");
+//     else if (i % 5 === 0) arr.push("Buzz");
+//     else arr.push(i);
+//   }
+//   return arr;
+// }
+// console.log(fizzbuzz(15));
