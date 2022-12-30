@@ -485,3 +485,21 @@
 // function buildString(...template) {
 //   return `I like ${template.join(", ")}!`;
 // }
+
+// #7kyu Flatten
+// var flatten = function (array) {
+//   let arr = [];
+//   for (let i = 0; i < array.length; i++) {
+//     arr.push(...array[i]);
+//   }
+//   return arr;
+// };
+// console.log(flatten([[3, 4, 5], [[9, 9, 9]], ["a,b,c"]]));
+// [3, 4, 5, [9, 9, 9], "a,b,c"]
+
+// var flatten = function (array) {
+//   let arr = [];
+//   return arr.concat(array).flat(1);
+// };
+// console.log(flatten([[3, 4, 5], [[9, 9, 9]], ["a,b,c"]]));
+// [3, 4, 5, [9, 9, 9], "a,b,c"]
