@@ -516,3 +516,23 @@
 //   return arr;
 // }
 // console.log(fizzbuzz(15));
+
+// #8kyu Training JS #12: loop statement --for..in and for..of
+// function giveMeFive(obj) {
+//   let result = [];
+//   for (const key in obj) {
+//     if (key.length == 5) result.push(key);
+//     if (obj[key].length == 5) result.push(obj[key]);
+//   }
+//   return result;
+// }
+
+// console.log(giveMeFive({ Our: "earth", is: "a", beautyful: "world" }));
+
+// #8kyu Training JS #14: Methods of Number object--toString() and toLocaleString()
+// function colorOf(r, g, b) {
+//   return `#${r.toString(16).padStart(2, "0")}${g
+//     .toString(16)e
+//     .padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
+// }
+// console.log(colorOf(0, 111, 0));
