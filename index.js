@@ -243,7 +243,6 @@
 // console.log(order("is2 Thi1s T4est 3a")); // Error
 
 // #6kyu String average
-//https://www.codewars.com/kata/5966847f4025872c7d00015b/train/javascript
 // let obj = {
 //   zero: 0,
 //   one: 1,
@@ -257,23 +256,16 @@
 //   nine: 9,
 // };
 // function averageString(str) {
-//   let res = [];
 //   let arr = str.split(" ");
-//   if (arr.length > 1) {
-//     for (const key in obj) {
-//       for (const i of arr) {
-//         if (key == i) res.push(obj[key]);
-//       }
-//     }
-//   } else {
-//     return "n/a";
-//   }
-//   let result = Math.floor(eval(res.join("+")) / arr.length);
-//   for (const value in obj) {
-//     if (result == obj[value]) return value;
+//   let res = arr.every((value) => value in obj);
+//   if (!res) return "n/a";
+//   let num =
+//     Array.from(arr, (x) => obj[x]).reduce((a, c) => a + c, 0) / arr.length;
+//   for (const key in obj) {
+//     if (obj[key] === parseInt(num)) return key;
 //   }
 // }
-// console.log(averageString(""));
+// console.log(averageString("five four two"));
 
 // #6kyu Maximum and minimum
 // function max(...max) {
