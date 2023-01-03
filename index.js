@@ -528,3 +528,26 @@
 //     .padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
 // }
 // console.log(colorOf(0, 111, 0));
+
+// #8kyu Add Length
+// function addLength(str) {
+//   let arr = str.split(" ");
+//   return Array.from(arr, (x) => `${x} ${x.length}`);
+// }
+// console.log(addLength("apple ban"));
+
+// #7kyu Simple Fun #176: Reverse Letter
+// function reverseLetter(str) {
+//   let arr = [];
+//   for (const i of str) {
+//     if (i.toLowerCase() !== i.toUpperCase()) arr.push(i);
+//   }
+//   return arr.reverse().join("");
+// }
+// console.log(reverseLetter("ultr53o?n"));
+
+// #7kyu String ends with?
+// function solution(str, ending) {
+//   return str.endsWith(ending);
+// }
+// console.log(solution("abcde", "de"));
