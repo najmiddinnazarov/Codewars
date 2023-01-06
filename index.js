@@ -569,3 +569,29 @@
 //   return arr;
 // }
 // console.log(solution("abcdefg"));
+
+// #7kyu MinMinMax
+// function minMinMax(array) {
+//   let newArr = array;
+//   let arr = [];
+//   array.sort((a, b) => a - b);
+//   arr.push(array[0]);
+//   function rec(x) {
+//     if (!newArr.includes(x)) return x;
+//     else return rec(x + 1);
+//   }
+//   arr.push(rec(arr[0]), array[array.length - 1]);
+//   return arr;
+// }
+// console.log(minMinMax([1, 3, -3, -2, 8, -1]));
+
+// #7kyu Count consonants
+// function consonantCount(str) {
+//   const vowel = ["a", "e", "i", "o", "u"];
+//   let count = 0;
+//   for (const i of str) {
+//     if (!i.match(/^[^a-zA-Z]+$/) && !vowel.includes(i)) count++;
+//   }
+//   return count;
+// }
+// console.log(consonantCount("h^$&^#$&^elLo world"));
