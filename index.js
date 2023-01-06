@@ -553,19 +553,19 @@
 // console.log(solution("abcde", "de"));
 
 // #6kyu Split Strings
-function solution(str) {
-  let arr = [];
-  let k = 2;
-  for (let i = 0; i < str.length; i += 2) {
-    arr.push(str.slice(i, k));
-    k += 2;
-  }
-  arr.forEach((x) => {
-    if (x.length == 1) {
-      arr.pop();
-      arr.push(`${x}_`);
-    }
-  });
-  return arr;
-}
-console.log(solution("abcdefg"));
+// function solution(str) {
+//   let arr = [];
+//   let k = 2;
+//   for (let i = 0; i < str.length; i += 2) {
+//     arr.push(str.slice(i, k));
+//     k += 2;
+//   }
+//   arr.forEach((x) => {
+//     if (x.length == 1) {
+//       arr.pop();
+//       arr.push(`${x}_`);
+//     }
+//   });
+//   return arr;
+// }
+// console.log(solution("abcdefg"));
