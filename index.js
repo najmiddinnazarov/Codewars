@@ -595,3 +595,22 @@
 //   return count;
 // }
 // console.log(consonantCount("h^$&^#$&^elLo world"));
+
+// #8kyu Hex to Decimal
+// function hexToDec(hexString) {
+//   return parseInt(hexString, 16);
+// }
+// console.log(hexToDec("-C"));
+
+// #7kyu How Many Unique Consonants?
+// function countConsonants(str) {
+//   let dublicate = [...new Set(str.toLowerCase())];
+//   console.log(dublicate);
+//   return (
+//     dublicate.length -
+//     (dublicate.join("").match(/[a, e, i, o, u,0-9,' ']/gi)?.length == null
+//       ? 0
+//       : dublicate.join("").match(/[a, e, i, o, u,0-9,!]/gi).length)
+//   );
+// }
+// console.log(countConsonants("Count my unique consonants!!"));
