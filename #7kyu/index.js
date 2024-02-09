@@ -2588,4 +2588,4 @@ console.log(getStrings("Las Vegas")); */
   for (let i = 1; i < str.length - 1; i++) { if (str[i].match(/[^aeuio]/i)) { output += str[i] } }
   return str[0] + output + str[str.length - 1]
 };
-console.log(shortForm("assaut")); */
+console.log(shortForm("asault")); */
