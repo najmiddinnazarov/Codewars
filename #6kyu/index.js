@@ -962,21 +962,45 @@ console.log(
 }
 console.log(toWeirdCase("This is a test")); */
 
-// #6kyu Are all elements equal? (Infinity version)
-function eqAll(iterable) {
-  iterable = Array.from(iterable);
-  return iterable;
-  let boolean = true;
-  for (let i = 0; i < iterable.length; i++) {
-    for (let k = 0; k < iterable.length; k++) {
-      if (iterable[i] === iterable[k]) {
-        boolean = true;
-      } else {
-        boolean = false;
-        break;
-      }
+// #6kyu Find the missing letter
+/* function findMissingLetter(array) {
+  const alphabet = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ];
+  const upperLetter = array[0].toUpperCase() === array[0];
+  array = array.map((value) => value.toLowerCase());
+  let firstIndex = alphabet.indexOf(array[0]);
+  for (let i = 0; i < array.length; i++, firstIndex++) {
+    if (alphabet[firstIndex] !== array[i]) {
+      return upperLetter
+        ? alphabet[firstIndex].toUpperCase()
+        : alphabet[firstIndex];
     }
   }
-  return boolean ? true : false;
 }
-console.log(eqAll({}));
+console.log(findMissingLetter(["O", "Q", "R", "S"])); */
