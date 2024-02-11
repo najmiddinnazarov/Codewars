@@ -2589,3 +2589,16 @@ console.log(getStrings("Las Vegas")); */
   return str[0] + output + str[str.length - 1]
 };
 console.log(shortForm("asault")); */
+
+// #7kyu Reversing Fun
+/* function flipNumber(n) {
+  let reverse = "";
+  n = n.split("");
+  while (n.length) {
+    n = n.reverse();
+    reverse += n[0];
+    n = n.slice(1);
+  }
+  return reverse;
+}
+console.log(flipNumber("012345")); */
