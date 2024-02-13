@@ -2627,3 +2627,9 @@ console.log(flipNumber("012345")); */
   return element + " " + animal;
 }
 console.log(chineseZodiac(1965)); */
+
+// #7kyu Visible Dots On a Die
+/* function totalAmountVisible(topNum, numOfSides) {
+  return (numOfSides * (numOfSides + 1)) / 2 + (topNum - numOfSides - 1);
+}
+console.log(totalAmountVisible(3, 6)); */
