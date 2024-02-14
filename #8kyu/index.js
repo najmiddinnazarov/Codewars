@@ -1144,3 +1144,7 @@ function subt(a, b) {
   return a - b;
 }
 console.log(add(1, 2)); */
+
+// #8kyu Grasshopper - Combine strings
+/* const combineNames = (a, b) => a + " " + b;
+console.log(combineNames("James", "Stevens")); */
