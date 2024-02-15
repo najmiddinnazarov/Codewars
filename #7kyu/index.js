@@ -2633,3 +2633,16 @@ console.log(chineseZodiac(1965)); */
   return (numOfSides * (numOfSides + 1)) / 2 + (topNum - numOfSides - 1);
 }
 console.log(totalAmountVisible(3, 6)); */
+
+// #7kyu Guess the Word: Count Matching Letters
+/* function countCorrectCharacters(correctWord, guess) {
+  let sum = 0;
+  if (correctWord.length !== guess.length) {
+    throw new Error("Error");
+  }
+  for (let i = 0; i < correctWord.length; i++) {
+    if (correctWord[i] === guess[i]) sum++;
+  }
+  return sum;
+}
+console.log(countCorrectCharacters("dog", "bog")); */
