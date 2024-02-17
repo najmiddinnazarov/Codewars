@@ -2659,3 +2659,9 @@ console.log(countCorrectCharacters("dog", "bog")); */
     : songs.find((v) => v.time < playback).title;
 }
 console.log(longestPossible(215)); */
+
+// #7kyu Filter Long Words
+/* function filterLongWords(sentence, n) {
+  return sentence.split(" ").filter((value) => value.length > n);
+}
+console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4)); */
