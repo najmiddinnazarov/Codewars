@@ -2665,3 +2665,11 @@ console.log(longestPossible(215)); */
   return sentence.split(" ").filter((value) => value.length > n);
 }
 console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4)); */
+
+// #7kyu Basic JS - Calculating averages
+/* var Calculator = {
+  average: function (...args) {
+    return eval(args.join("+")) / args.length || 0;
+  },
+};
+console.log(Calculator.average()); */
