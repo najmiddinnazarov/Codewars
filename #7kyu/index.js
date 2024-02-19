@@ -2673,3 +2673,11 @@ console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4)); 
   },
 };
 console.log(Calculator.average()); */
+
+// #7kyu Sum of array singles
+/* function repeats(arr) {
+  const dublicate = arr.filter((value, index) => arr.indexOf(value) !== index);
+  const single = arr.filter((value) => !dublicate.includes(value));
+  return eval(single.join("+"));
+}
+console.log(repeats([4, 5, 7, 5, 4, 8])); */
