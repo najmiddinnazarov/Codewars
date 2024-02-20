@@ -1148,3 +1148,13 @@ console.log(add(1, 2)); */
 // #8kyu Grasshopper - Combine strings
 /* const combineNames = (a, b) => a + " " + b;
 console.log(combineNames("James", "Stevens")); */
+
+// #8kyu Hello, Name or World!
+/* function hello(name) {
+  return `Hello, ${
+    name
+      ? `${name[0].toUpperCase() + name.toLowerCase().slice(1) + "!"}`
+      : "World!"
+  }`;
+}
+console.log(hello("alice")); */
