@@ -2681,3 +2681,16 @@ console.log(Calculator.average()); */
   return eval(single.join("+"));
 }
 console.log(repeats([4, 5, 7, 5, 4, 8])); */
+
+// #7kyu esrever esreveR!
+/* function esrever(str) {
+  return (
+    str
+      .slice(0, -1)
+      .split(" ")
+      .map((value) => [...value].reverse().join(""))
+      .reverse()
+      .join(" ") + str.slice(str.length - 1)
+  );
+}
+console.log(esrever("b3tTer p4ss thIS 0ne.")); */
