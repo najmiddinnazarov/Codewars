@@ -2694,3 +2694,9 @@ console.log(repeats([4, 5, 7, 5, 4, 8])); */
   );
 }
 console.log(esrever("b3tTer p4ss thIS 0ne.")); */
+
+// #7kyu esreveR gnirtS
+/* String.prototype.reverse = function () {
+  return this.split("").reverse().join("");
+};
+console.log("Hello World".reverse()); */
