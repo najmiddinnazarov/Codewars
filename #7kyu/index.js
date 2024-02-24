@@ -2700,3 +2700,11 @@ console.log(esrever("b3tTer p4ss thIS 0ne.")); */
   return this.split("").reverse().join("");
 };
 console.log("Hello World".reverse()); */
+
+// #7kyu Reducing Problems - Bug Fixing #8
+/* function calculateTotal(team1, team2) {
+  var t1s = team1.reduce((t, c) => t + c, 0);
+  var t2s = team2.reduce((t, c) => t + c, 0);
+  return t1s > t2s;
+}
+console.log(calculateTotal([1, 2, 2], [1, 0, 0])); */
