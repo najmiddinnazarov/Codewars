@@ -2708,3 +2708,16 @@ console.log("Hello World".reverse()); */
   return t1s > t2s;
 }
 console.log(calculateTotal([1, 2, 2], [1, 0, 0])); */
+
+// #7kyu SevenAte9
+/* function sevenAte9(str) {
+  let string = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "7" && str[i + 1] === "9" && str[i + 2] === "7") {
+      string += "7";
+      i++;
+    } else string += str[i];
+  }
+  return string;
+}
+console.log(sevenAte9("7927")); */
