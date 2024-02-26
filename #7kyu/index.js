@@ -2721,3 +2721,9 @@ console.log(calculateTotal([1, 2, 2], [1, 0, 0])); */
   return string;
 }
 console.log(sevenAte9("7927")); */
+
+// #7kyu No Loops 1 - Small enough?
+/* function smallEnough(a, limit) {
+  return Math.max(...a) <= limit;
+}
+console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100)); */
