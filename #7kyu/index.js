@@ -2727,3 +2727,49 @@ console.log(sevenAte9("7927")); */
   return Math.max(...a) <= limit;
 }
 console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100)); */
+
+// #7kyu Coding Meetup #4 - Higher-Order Functions Series - Find the first Python developer
+/* function getFirstPython(list) {
+  const firstDev = list.find((value) => {
+    return value.language === "Python";
+  });
+  return firstDev
+    ? `${firstDev.firstName}, ${firstDev.country}`
+    : "There will be no Python developers";
+}
+console.log(
+  getFirstPython([
+    {
+      firstName: "Mark",
+      lastName: "G.",
+      country: "Scotland",
+      continent: "Europe",
+      age: 22,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Victoria",
+      lastName: "T.",
+      country: "Puerto Rico",
+      continent: "Americas",
+      age: 30,
+      language: "Python",
+    },
+    {
+      firstName: "Anna",
+      lastName: "Doe",
+      country: "New York",
+      continent: "Americas",
+      age: 44,
+      language: "Python",
+    },
+    {
+      firstName: "Emma",
+      lastName: "B.",
+      country: "Norway",
+      continent: "Europe",
+      age: 19,
+      language: "Clojure",
+    },
+  ])
+); */
