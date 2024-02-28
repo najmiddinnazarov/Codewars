@@ -2773,3 +2773,19 @@ console.log(
     },
   ])
 ); */
+
+// #7kyu Ce*s*r*d Strings
+/* function uncensor(infected, discovered) {
+  let k = 0;
+  let string = "";
+  for (let i = 0; i < infected.length; i++) {
+    if (infected[i] === "*") {
+      string += discovered[k];
+      k++;
+    } else {
+      string += infected[i];
+    }
+  }
+  return string;
+}
+console.log(uncensor("*h*s *s v*ry *tr*ng*", "Tiiesae")); */
