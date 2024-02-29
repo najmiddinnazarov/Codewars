@@ -1164,3 +1164,10 @@ console.log(hello("alice")); */
   return arr.slice(0, n);
 }
 console.log(first(["a", "b", "c", "d", "e"])); */
+
+// #8kyu Formatting decimal places #0
+/* function twoDecimalPlaces(n) {
+  return Number(n.toFixed(2));
+}
+console.log(twoDecimalPlaces(173735326.3783732637948948));
+ */
