@@ -2789,3 +2789,26 @@ console.log(
   return string;
 }
 console.log(uncensor("*h*s *s v*ry *tr*ng*", "Tiiesae")); */
+
+// #7kyu Alan Partridge III - London
+/* function alan(x) {
+  const dict = [
+    "Rejection",
+    "Disappointment",
+    "Backstabbing Central",
+    "Shattered Dreams Parkway",
+  ];
+  return dict.every((v) => x.includes(v))
+    ? "Smell my cheese you mother!"
+    : "No, seriously, run. You will miss it.";
+}
+console.log(
+  alan([
+    "Norwich",
+    "Rejection",
+    "Disappointment",
+    "Backstabbing Central",
+    "Shattered Dreams Parkway",
+    "London",
+  ])
+); */
