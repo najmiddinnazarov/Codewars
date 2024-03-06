@@ -2939,3 +2939,14 @@ console.log(
   return arr.filter((v) => v != undefined);
 }
 console.log(compoundArray([11, 12], [21, 22, 23, 24])); */
+
+// #7kyu Fix my method
+/* function myFunction() {
+  return {
+    objProperty: "string",
+    objMethod: function () {
+      return this.objProperty;
+    },
+  };
+}
+console.log(myFunction().objMethod()); */
