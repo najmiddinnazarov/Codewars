@@ -2950,3 +2950,16 @@ console.log(compoundArray([11, 12], [21, 22, 23, 24])); */
   };
 }
 console.log(myFunction().objMethod()); */
+
+// #7kyu From A to Z
+/* function gimmeTheLetters(sp) {
+  let upperLetter = sp[0] === sp[0].toUpperCase();
+  sp = sp.toLowerCase();
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let result = alphabet.slice(
+    alphabet.indexOf(sp[0]),
+    alphabet.indexOf(sp[2]) + 1
+  );
+  return upperLetter ? result.toUpperCase() : result;
+}
+console.log(gimmeTheLetters("J-J")); */
