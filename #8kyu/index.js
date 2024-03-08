@@ -1171,3 +1171,9 @@ console.log(first(["a", "b", "c", "d", "e"])); */
 }
 console.log(twoDecimalPlaces(173735326.3783732637948948));
  */
+
+// #8kyu Grasshopper - Function syntax debugging
+/* function main(verb, noun) {
+  return verb + noun;
+}
+console.log(main("take ", "item")); */
