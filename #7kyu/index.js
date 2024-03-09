@@ -2963,3 +2963,12 @@ console.log(myFunction().objMethod()); */
   return upperLetter ? result.toUpperCase() : result;
 }
 console.log(gimmeTheLetters("J-J")); */
+
+// #7kyu Digitize
+/* function digitize(n) {
+  return n
+    .toString()
+    .split("")
+    .map((value) => Number(value));
+}
+console.log(digitize(8675309)); */
