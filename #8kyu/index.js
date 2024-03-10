@@ -1177,3 +1177,9 @@ console.log(twoDecimalPlaces(173735326.3783732637948948));
   return verb + noun;
 }
 console.log(main("take ", "item")); */
+
+// #8kyu isReallyNaN
+/* const isReallyNaN = (val) => {
+  return val !== val;
+};
+console.log(isReallyNaN(NaN)); */
