@@ -2972,3 +2972,9 @@ console.log(gimmeTheLetters("J-J")); */
     .map((value) => Number(value));
 }
 console.log(digitize(8675309)); */
+
+// #7kyu Substituting Variables Into Strings: Padded Numbers
+/* function solution(value) {
+  return "Value is " + "0".repeat(5 - `${value}`.length) + `${value}`;
+}
+console.log(solution(109)); */
