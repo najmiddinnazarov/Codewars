@@ -2978,3 +2978,9 @@ console.log(digitize(8675309)); */
   return "Value is " + "0".repeat(5 - `${value}`.length) + `${value}`;
 }
 console.log(solution(109)); */
+
+// #7kyu Remove anchor from URL
+/* function removeUrlAnchor(url) {
+  return url.slice(0, url.indexOf("#") > 0 ? url.indexOf("#") : url.length);
+}
+console.log(removeUrlAnchor("www.codewars.com/katas/")); */
