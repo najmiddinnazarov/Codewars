@@ -2984,3 +2984,13 @@ console.log(solution(109)); */
   return url.slice(0, url.indexOf("#") > 0 ? url.indexOf("#") : url.length);
 }
 console.log(removeUrlAnchor("www.codewars.com/katas/")); */
+
+// #7kyu Simple Fun #63: Shape Area
+/* function shapeArea(n) {
+  let count = n + n - 1;
+  for (let i = 1; i < n + n - 1; i += 2) {
+    count += i * 2;
+  }
+  return count;
+}
+console.log(shapeArea(5)); */
