@@ -2994,3 +2994,15 @@ console.log(removeUrlAnchor("www.codewars.com/katas/")); */
   return count;
 }
 console.log(shapeArea(5)); */
+
+// #7kyu Split In Parts
+/* var splitInParts = function (s, partLength) {
+  let string = "";
+  while (s) {
+    string += s.slice(0, partLength);
+    s = s.slice(partLength);
+    string += " ";
+  }
+  return string.slice(0, -1);
+};
+console.log(splitInParts("supercalifragilisticexpialidocious", 3)); */
