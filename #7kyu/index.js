@@ -3006,3 +3006,12 @@ console.log(shapeArea(5)); */
   return string.slice(0, -1);
 };
 console.log(splitInParts("supercalifragilisticexpialidocious", 3)); */
+
+// #7kyu Nothing special
+/* function nothingSpecial(str) {
+  if (typeof str !== "string") {
+    return "Not a string!";
+  }
+  return str.replace(/[^A-Za-z0-9\s]/g, "");
+}
+console.log(nothingSpecial("M$$$$$$$y al ly!!!!!")); */
