@@ -3015,3 +3015,41 @@ console.log(splitInParts("supercalifragilisticexpialidocious", 3)); */
   return str.replace(/[^A-Za-z0-9\s]/g, "");
 }
 console.log(nothingSpecial("M$$$$$$$y al ly!!!!!")); */
+
+// #7kyu The Office II - Boredom Score
+/* function boredom(staff) {
+  let sum = 0;
+  const object = {
+    accounts: 1,
+    finance: 2,
+    canteen: 10,
+    regulation: 3,
+    trading: 6,
+    change: 6,
+    IS: 8,
+    retail: 5,
+    cleaning: 4,
+    "pissing about": 25,
+  };
+  for (const key in staff) {
+    sum += object[staff[key]];
+  }
+  if (sum <= 80) return "kill me now";
+  else if (sum < 100 && sum > 80) return "i can handle this";
+  else return "party time!!";
+}
+console.log(
+  boredom({
+    tim: "IS",
+    jim: "finance",
+    randy: "pissing about",
+    sandy: "cleaning",
+    andy: "cleaning",
+    katie: "cleaning",
+    laura: "pissing about",
+    saajid: "regulation",
+    alex: "regulation",
+    john: "accounts",
+    mr: "canteen",
+  })
+); */
