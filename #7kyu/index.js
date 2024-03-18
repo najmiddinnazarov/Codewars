@@ -3053,3 +3053,18 @@ console.log(
     mr: "canteen",
   })
 ); */
+
+// #7kyu Find the nth Digit of a Number
+/* var findDigit = function (num, nth) {
+  num = Math.abs(num);
+  num = num.toString();
+  if (nth <= 0) return -1;
+  else if (num.length < nth) return 0;
+  num = num
+    .split("")
+    .reverse()
+    .slice(nth - 1, nth)
+    .join("");
+  return +num;
+};
+console.log(findDigit(-2825, 5)); */
