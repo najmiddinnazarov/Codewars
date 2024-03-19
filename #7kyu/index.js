@@ -3068,3 +3068,13 @@ console.log(
   return +num;
 };
 console.log(findDigit(-2825, 5)); */
+
+// #7kyu Acrostic reader
+/* function readOut(acrostic) {
+  let string = "";
+  for (let i = 0; i < acrostic.length; i++) {
+    string += acrostic[i][0];
+  }
+  return string;
+}
+console.log(readOut(["Jolly", "Amazing", "Courteous", "Keen"])); */
