@@ -1189,3 +1189,12 @@ console.log(isReallyNaN(NaN)); */
   return +((mpg * 1.609344) / 4.54609188).toFixed(2);
 }
 console.log(converter(10)); */
+
+// #8kyu Surface Area and Volume of a Box
+/* function getSize(width, height, depth) {
+  return [
+    2 * width * depth + 2 * height * depth + 2 * width * height,
+    width * height * depth,
+  ];
+}
+console.log(getSize(4, 2, 6)); */
