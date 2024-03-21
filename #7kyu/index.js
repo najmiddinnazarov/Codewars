@@ -3078,3 +3078,20 @@ console.log(findDigit(-2825, 5)); */
   return string;
 }
 console.log(readOut(["Jolly", "Amazing", "Courteous", "Keen"])); */
+
+// #7kyu Char Code Calculation
+/* function calc(x) {
+  let charToString = "";
+  let firstCount = 0;
+  let secondCount = 0;
+  for (let i = 0; i < x.length; i++) {
+    charToString += x[i].charCodeAt();
+  }
+  let replace = charToString.replace(/[7]/g, 1);
+  for (let i = 0; i < charToString.length; i++) {
+    firstCount += Number(charToString[i]);
+    secondCount += Number(replace[i]);
+  }
+  return firstCount - secondCount;
+}
+console.log(calc("ABC")); */
