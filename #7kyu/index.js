@@ -3095,3 +3095,23 @@ console.log(readOut(["Jolly", "Amazing", "Courteous", "Keen"])); */
   return firstCount - secondCount;
 }
 console.log(calc("ABC")); */
+
+// #7kyu Holiday II - Plane Seating
+/* function planeSeat(a) {
+  let string = "";
+  if (parseInt(a) > 0 && parseInt(a) < 21) {
+    string += "Front-";
+  } else if (parseInt(a) > 20 && parseInt(a) < 41) {
+    string += "Middle-";
+  } else if (parseInt(a) > 39 && parseInt(a) < 61) {
+    string += "Back-";
+  } else {
+    return "No Seat!!";
+  }
+  if (["A", "B", "C"].includes(a.slice(-1))) string += "Left";
+  else if (["D", "E", "F"].includes(a.slice(-1))) string += "Middle";
+  else if (["G", "H", "K"].includes(a.slice(-1))) string += "Right";
+  else return "No Seat!!";
+  return string;
+}
+console.log(planeSeat("35B")); */
