@@ -3115,3 +3115,10 @@ console.log(calc("ABC")); */
   return string;
 }
 console.log(planeSeat("35B")); */
+
+// #7kyu Check if a triangle is an equable triangle!
+/* function equableTriangle(a, b, c) {
+  const p = (a + b + c) / 2;
+  return 4 * p == (p - a) * (p - b) * (p - c);
+}
+console.log(equableTriangle(5, 12, 13)); */
