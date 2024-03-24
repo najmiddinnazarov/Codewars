@@ -3122,3 +3122,9 @@ console.log(planeSeat("35B")); */
   return 4 * p == (p - a) * (p - b) * (p - c);
 }
 console.log(equableTriangle(5, 12, 13)); */
+
+// #7kyu Is it a letter?
+/* function isItLetter(character) {
+  return character.toLowerCase() !== character.toUpperCase();
+}
+console.log(isItLetter("1")); */
