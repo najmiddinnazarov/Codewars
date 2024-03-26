@@ -3128,3 +3128,9 @@ console.log(equableTriangle(5, 12, 13)); */
   return character.toLowerCase() !== character.toUpperCase();
 }
 console.log(isItLetter("1")); */
+
+// #7kyu Working with arrays I (and why your code fails in some katas)
+/* function withoutLast(arr) {
+  return arr.slice(0, -1);
+}
+console.log(withoutLast([1, 2, 3, 4, 5])); */
