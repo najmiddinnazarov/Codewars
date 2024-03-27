@@ -3134,3 +3134,11 @@ console.log(isItLetter("1")); */
   return arr.slice(0, -1);
 }
 console.log(withoutLast([1, 2, 3, 4, 5])); */
+
+// #7kyu Find the next perfect square!
+/* function findNextSquare(sq) {
+  let square = Math.sqrt(sq);
+  if (parseInt(square) === square) return (square + 1) ** 2;
+  else return -1;
+}
+console.log(findNextSquare(121)); */
