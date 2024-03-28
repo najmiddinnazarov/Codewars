@@ -1198,3 +1198,10 @@ console.log(converter(10)); */
   ];
 }
 console.log(getSize(4, 2, 6)); */
+
+// #8kyu Beginner Series #4 Cockroach
+/* function cockroachSpeed(s) {
+  const speedCmps = (s * 100000) / 3600;
+  return Math.floor(speedCmps);
+}
+console.log(cockroachSpeed(1.08)); */
