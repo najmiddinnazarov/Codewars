@@ -3142,3 +3142,24 @@ console.log(withoutLast([1, 2, 3, 4, 5])); */
   else return -1;
 }
 console.log(findNextSquare(121)); */
+
+// #7kyu Mobile operator detector
+/* function detectOperator(a) {
+  let operators = {
+    "039": "Golden Telecom",
+    "050": "MTS",
+    "063": "Life:)",
+    "066": "MTS",
+    "067": "Kyivstar",
+    "068": "Beeline",
+    "093": "Life:)",
+    "095": "MTS",
+    "096": "Kyivstar",
+    "097": "Kyivstar",
+    "098": "Kyivstar",
+    "099": "MTS",
+  };
+  var op = a.toString().slice(1, 4);
+  return operators[op] || "no info";
+}
+console.log(detectOperator(80931551119)); */
