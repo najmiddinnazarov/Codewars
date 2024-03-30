@@ -3163,3 +3163,13 @@ console.log(findNextSquare(121)); */
   return operators[op] || "no info";
 }
 console.log(detectOperator(80931551119)); */
+
+// #7kyu Sum of the first nth term of Series
+/* function SeriesSum(n) {
+  let sum = 0;
+  for (let i = 1; i <= n * 3; i += 3) {
+    sum += 1 / i;
+  }
+  return sum.toFixed(2).toString();
+}
+console.log(SeriesSum(5)); */
