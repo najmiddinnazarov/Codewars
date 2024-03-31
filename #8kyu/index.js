@@ -1205,3 +1205,15 @@ console.log(getSize(4, 2, 6)); */
   return Math.floor(speedCmps);
 }
 console.log(cockroachSpeed(1.08)); */
+
+// #8kyu Logical calculator
+/* function logicalCalc(array, op) {
+  if (op === "AND") {
+    return eval(array.join(" && "));
+  } else if (op === "OR") {
+    return eval(array.join(" || "));
+  } else {
+    return Boolean(eval(array.join(" ^ ")));
+  }
+}
+console.log(logicalCalc([true, true, true, false], "XOR")); */
