@@ -3173,3 +3173,21 @@ console.log(detectOperator(80931551119)); */
   return sum.toFixed(2).toString();
 }
 console.log(SeriesSum(5)); */
+
+// #7kyu Concatenated Sum
+/* function checkConcatenatedSum(num, repeat) {
+  let sum = 0;
+  let originNumber = num;
+  let minus = num > 0 ? false : true;
+  num = Math.abs(num);
+  num = num.toString();
+  for (let i = 0; i < num.length; i++) {
+    if (minus) {
+      sum += Number(-num[i].repeat(repeat));
+    } else {
+      sum += Number(num[i].repeat(repeat));
+    }
+  }
+  return originNumber === sum;
+}
+console.log(checkConcatenatedSum(-2997, 3)); */
