@@ -3191,3 +3191,12 @@ console.log(SeriesSum(5)); */
   return originNumber === sum;
 }
 console.log(checkConcatenatedSum(-2997, 3)); */
+
+// #7kyu Frog's Dinner
+/* function frogContest(n) {
+  const chris = (n * (n + 1)) / 2;
+  const tom = (Math.floor(chris / 2) * (Math.floor(chris / 2) + 1)) / 2;
+  const cat = ((chris + tom) * (chris + tom + 1)) / 2;
+  return `Chris ate ${chris} flies, Tom ate ${tom} flies and Cat ate ${cat} flies`;
+}
+console.log(frogContest(5)); */
