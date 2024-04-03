@@ -3200,3 +3200,14 @@ console.log(checkConcatenatedSum(-2997, 3)); */
   return `Chris ate ${chris} flies, Tom ate ${tom} flies and Cat ate ${cat} flies`;
 }
 console.log(frogContest(5)); */
+
+// #7kyu Divisible by previous digit?
+/* function divisibleByLast(n) {
+  n = n.toString();
+  let array = [];
+  for (let i = 0; i < n.length; i++) {
+    array.push(n[i] % n[i - 1] === 0);
+  }
+  return array;
+}
+console.log(divisibleByLast(73312)); */
