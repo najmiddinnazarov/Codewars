@@ -3249,5 +3249,5 @@ console.log(divisibleByLast(73312)); */
   }
   return string;
 }
-console.log(toLeetSpeak("CODE WARS"));
+console.log(toLeetSpeak("CODEWARS"));
  */

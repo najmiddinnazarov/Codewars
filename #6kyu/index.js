@@ -1004,3 +1004,25 @@ console.log(toWeirdCase("This is a test")); */
   }
 }
 console.log(findMissingLetter(["O", "Q", "R", "S"])); */
+
+// #6kyu Coding Meetup #8 - Higher-Order Functions Series - Will all continents be represented?
+function allContinents(list) {
+  const array = list.filter((value) => {
+    return ["Africa", "Americas", "Asia", "Europe", "Oceania"].includes(
+      value.continent
+    );
+  });
+  return array.length >= 5 === list.length;
+}
+console.log(
+  allContinents([
+    {
+      firstName: "Fatima",
+      lastName: "A.",
+      country: "Algeria",
+      continent: "Africa",
+      age: 25,
+      language: "JavaScript",
+    },
+  ])
+);
