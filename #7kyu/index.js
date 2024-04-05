@@ -3251,3 +3251,15 @@ console.log(divisibleByLast(73312)); */
 }
 console.log(toLeetSpeak("CODEWARS"));
  */
+
+// #7kyu Simple Fun #137: S2N
+/* function S2N(m, n) {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    for (let k = 0; k <= m; k++) {
+      sum += k ** i;
+    }
+  }
+  return sum;
+}
+console.log(S2N(10, 9)); */
