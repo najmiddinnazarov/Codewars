@@ -3263,3 +3263,21 @@ console.log(toLeetSpeak("CODEWARS"));
   return sum;
 }
 console.log(S2N(10, 9)); */
+
+// #7kyu String Reordering
+/* function sentence(List) {
+  return List.sort((a, b) => Number(Object.keys(a)) - Number(Object.keys(b)))
+    .map((value) => Object.values(value))
+    .join(" ");
+}
+console.log(
+  sentence([
+    { 4: "dog" },
+    { 2: "took" },
+    { 3: "his" },
+    { "-2": "Vatsan" },
+    { 5: "for" },
+    { 6: "a" },
+    { 12: "spin" },
+  ])
+); */
