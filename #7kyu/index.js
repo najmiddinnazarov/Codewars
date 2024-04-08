@@ -3291,3 +3291,9 @@ console.log(
     .reverse();
 }
 console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3)); */
+
+// #7kyu Is every value in the array an array?
+/* const arrCheck = (value) => {
+  return value.every((array) => Array.isArray(array));
+};
+console.log(arrCheck([[1], [2], 3])); */
