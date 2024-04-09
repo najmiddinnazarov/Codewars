@@ -3297,3 +3297,11 @@ console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3)); */
   return value.every((array) => Array.isArray(array));
 };
 console.log(arrCheck([[1], [2], 3])); */
+
+// #7kyu How many e-mails we sent today?
+/* function getPercentage(sent, limit = 1000) {
+  if (sent >= limit) return "Daily limit is reached";
+  else if (sent === 0) return "No e-mails sent";
+  else return Math.floor((sent / limit) * 100) + "%";
+}
+console.log(getPercentage(101)); */
