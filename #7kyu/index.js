@@ -3305,3 +3305,9 @@ console.log(arrCheck([[1], [2], 3])); */
   else return Math.floor((sent / limit) * 100) + "%";
 }
 console.log(getPercentage(101)); */
+
+// #7kyu Find twins
+/* function elimination(arr) {
+  return +arr.filter((value, index) => arr.indexOf(value) !== index).join("") || null;
+}
+console.log(elimination([2, 5, 34, 1, 22, 1])); */
