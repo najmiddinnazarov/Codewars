@@ -3311,3 +3311,14 @@ console.log(getPercentage(101)); */
   return +arr.filter((value, index) => arr.indexOf(value) !== index).join("") || null;
 }
 console.log(elimination([2, 5, 34, 1, 22, 1])); */
+
+// #7kyu makeBackronym
+/* var makeBackronym = function (string) {
+  string = string.toUpperCase();
+  let result = "";
+  for (let i = 0; i < string.length; i++) {
+    result += dict[string[i]] + (i + 1 < string.length ? " " : "");
+  }
+  return result;
+};
+console.log(makeBackronym("dgm")); */
