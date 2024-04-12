@@ -3322,3 +3322,15 @@ console.log(elimination([2, 5, 34, 1, 22, 1])); */
   return result;
 };
 console.log(makeBackronym("dgm")); */
+
+// #7kyu Two to One
+/* function longest(s1, s2) {
+  s1 = s1 + s2;
+  let text = "";
+  const letters = new Set(s1.split("").sort());
+  letters.forEach(function (value) {
+    text += value;
+  });
+  return text;
+}
+console.log(longest("aretheyhere", "yestheyarehere")); */
