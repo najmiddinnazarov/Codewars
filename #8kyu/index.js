@@ -1217,3 +1217,18 @@ console.log(cockroachSpeed(1.08)); */
   }
 }
 console.log(logicalCalc([true, true, true, false], "XOR")); */
+
+// #8kyu Dollars and Cents
+/* function formatMoney(amount) {
+  amount = amount.toString();
+  const splitParts = amount.split(".");
+  const afterDecimal = splitParts.length > 1 ? splitParts[1] : "";
+  if (afterDecimal.length === 2) {
+    return "$" + amount;
+  } else if (afterDecimal.length === 1) {
+    return "$" + amount + "0";
+  } else {
+    return "$" + amount + ".00";
+  }
+}
+console.log(formatMoney(39)); */
