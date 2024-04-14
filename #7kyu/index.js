@@ -3334,3 +3334,17 @@ console.log(makeBackronym("dgm")); */
   return text;
 }
 console.log(longest("aretheyhere", "yestheyarehere")); */
+
+// #7kyu Sum it continuously
+/* function add(arr) {
+  let newArray = [];
+  let array = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (array.length <= i) {
+      array.push(arr[i]);
+      newArray.push(eval(array.join("+")));
+    }
+  }
+  return newArray;
+}
+console.log(add([1, 2, 3, 4, 5])); */
