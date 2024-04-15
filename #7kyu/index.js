@@ -3348,3 +3348,11 @@ console.log(longest("aretheyhere", "yestheyarehere")); */
   return newArray;
 }
 console.log(add([1, 2, 3, 4, 5])); */
+
+// #7kyu Currying functions: multiply all elements in an array
+/* function multiplyAll(arr) {
+  return function (num) {
+    return arr.map((value) => value * num);
+  };
+}
+console.log(multiplyAll([1, 2, 3])(2)); */
