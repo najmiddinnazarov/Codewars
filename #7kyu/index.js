@@ -3356,3 +3356,15 @@ console.log(add([1, 2, 3, 4, 5])); */
   };
 }
 console.log(multiplyAll([1, 2, 3])(2)); */
+
+// #7kyu Digital cypher
+/* function encode(str, n) {
+  const alphabet = "0abcdefghijklmnopqrstuvwxyz";
+  n = n.toString().repeat(str.length);
+  let array = [];
+  for (let i = 0; i < str.length; i++) {
+    array.push(alphabet.indexOf(str[i]) + +n[i]);
+  }
+  return array;
+}
+console.log(encode("scout", 1939)); */
