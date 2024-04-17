@@ -3368,3 +3368,10 @@ console.log(multiplyAll([1, 2, 3])(2)); */
   return array;
 }
 console.log(encode("scout", 1939)); */
+
+// #7kyu Milk and Cookies for Santa
+/* function timeForMilkAndCookies(date) {
+  const data = new Date(date);
+  return data.getMonth() === 11 && data.getDate() === 24;
+}
+console.log(timeForMilkAndCookies("2013-12-24T00:00:00.000Z")); */
