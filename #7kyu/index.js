@@ -3375,3 +3375,16 @@ console.log(encode("scout", 1939)); */
   return data.getMonth() === 11 && data.getDate() === 24;
 }
 console.log(timeForMilkAndCookies("2013-12-24T00:00:00.000Z")); */
+
+// #7kyu Hells Kitchen
+/* function gordon(a) {
+  a = a.toUpperCase();
+  a = a.replace(/[A]/g, "@");
+  a = a.replace(/[OUEI]/g, "*");
+  a = a
+    .split(" ")
+    .map((value) => value + "!!!!")
+    .join(" ");
+  return a;
+}
+console.log(gordon("What feck damn cake")); */
