@@ -3388,3 +3388,14 @@ console.log(timeForMilkAndCookies("2013-12-24T00:00:00.000Z")); */
   return a;
 }
 console.log(gordon("What feck damn cake")); */
+
+// #7kyu Reverse and Invert
+/* function reverseInvert(array) {
+  return array
+    .filter((value) => Number.isInteger(value))
+    .map((value) => {
+      let reverse = Math.abs(value).toString().split("").reverse().join("");
+      return value >= 0 ? -reverse : +reverse;
+    });
+}
+console.log(reverseInvert([1, 12, "a", 3.4, 87, 99.9, -42, 50, 5.6])); */
