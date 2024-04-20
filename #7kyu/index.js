@@ -3399,3 +3399,14 @@ console.log(gordon("What feck damn cake")); */
     });
 }
 console.log(reverseInvert([1, 12, "a", 3.4, 87, 99.9, -42, 50, 5.6])); */
+
+// #7kyu Multiplication - Generators #2
+/* function* generator(a) {
+  let i = 1;
+  while (true) {
+    yield `${a} x ${i} = ${a * i}`;
+    i++;
+  }
+}
+var gen = generator(10);
+console.log(gen.next().value); */
