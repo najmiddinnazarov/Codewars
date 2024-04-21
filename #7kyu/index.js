@@ -3404,9 +3404,26 @@ console.log(reverseInvert([1, 12, "a", 3.4, 87, 99.9, -42, 50, 5.6])); */
 /* function* generator(a) {
   let i = 1;
   while (true) {
-    yield `${a} x ${i} = ${a * i}`;
+    yield `${a} x $
+    {i} = ${a * i}`;
     i++;
   }
 }
 var gen = generator(10);
 console.log(gen.next().value); */
+
+// #7kyu Check the exam
+/* function checkExam(array1, array2) {
+  let sum = 0;
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] === array2[i]) {
+      sum += 4;
+    } else if (array1[i] === "" || array2[i] === "") {
+      sum += 0;
+    } else {
+      sum -= 1;
+    }
+  }
+  return sum >= 0 ? sum : 0;
+}
+console.log(checkExam(["b", "c", "b", "a"], ["", "a", "a", "c"])); */
