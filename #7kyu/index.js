@@ -3440,3 +3440,9 @@ Dog.prototype.bark = function () {
 };
 var apollo = new Dog("Apollo", "Dobermann", "male", "4");
 console.log(apollo.bark()); */
+
+// #7kyu Holiday VII - Local Talk
+/* function pak(s) {
+  return s.trim().replace(/ /g, " pak ");
+}
+console.log(pak(" ")); */
