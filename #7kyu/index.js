@@ -3452,3 +3452,8 @@ console.log(pak(" ")); */
   return [...items.slice(0, a), ...items.slice(b)];
 }
 console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4)); */
+
+// #7kyu Make Me Slow
+/* function makeMeSlow() {
+  for (let x = 0; x < 7000000000; x++) {}
+} */
