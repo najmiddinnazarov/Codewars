@@ -3446,3 +3446,9 @@ console.log(apollo.bark()); */
   return s.trim().replace(/ /g, " pak ");
 }
 console.log(pak(" ")); */
+
+// #7kyu Thinkful - List and Loop Drills: Inverse Slicer
+/* function inverseSlice(items, a, b) {
+  return [...items.slice(0, a), ...items.slice(b)];
+}
+console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4)); */
