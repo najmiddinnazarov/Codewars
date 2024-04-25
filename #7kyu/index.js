@@ -3457,3 +3457,15 @@ console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4)); */
 /* function makeMeSlow() {
   for (let x = 0; x < 7000000000; x++) {}
 } */
+
+// #7kyu The old switcheroo 2
+/* function encode(str) {
+  str = str.toLowerCase();
+  let alphabet = "0abcdefghijklmnopqrstuvwxyz";
+  let index = "";
+  for (let i = 0; i < str.length; i++) {
+    index += alphabet.includes(str[i]) ? alphabet.indexOf(str[i]) : str[i];
+  }
+  return index;
+}
+console.log(encode("abc-#@5")); */
