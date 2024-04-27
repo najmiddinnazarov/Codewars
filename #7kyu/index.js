@@ -3469,3 +3469,23 @@ console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4)); */
   return index;
 }
 console.log(encode("abc-#@5")); */
+
+// #7kyu Class conundrum - Bug Fixing #7
+/* class List {
+  constructor(type) {
+    this.type = type;
+    this.items = [];
+  }
+  get count() {
+    return this.items.length;
+  }
+  add(item) {
+    if (typeof item !== this.type) {
+      return `This item is not of type: ${this.type}`;
+    }
+    this.items.push(item);
+    return this;
+  }
+}
+const myList = new List("string");
+console.log(myList.add(42)); */
