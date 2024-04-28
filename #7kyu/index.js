@@ -3489,3 +3489,20 @@ console.log(encode("abc-#@5")); */
 }
 const myList = new List("string");
 console.log(myList.add(42)); */
+
+// #7kyu Is that a real phone number? (British version)
+/* function validateNumber(str) {
+  str = str.match(/\d/g).join("");
+  if (str.startsWith("07")) {
+    return str.slice(2).length === 9
+      ? "In with a chance"
+      : "Plenty more fish in the sea";
+  } else if (str.startsWith("447")) {
+    return str.slice(3).length === 9
+      ? "In with a chance"
+      : "Plenty more fish in the sea";
+  } else {
+    return "Plenty more fish in the sea";
+  }
+}
+console.log(validateNumber("+07535514555")); */
