@@ -3506,3 +3506,18 @@ console.log(myList.add(42)); */
   }
 }
 console.log(validateNumber("+07535514555")); */
+
+// #7kyu Colour Association
+/* function colourAssociation(array) {
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(Object.fromEntries([array[i]]));
+  }
+  return result;
+}
+console.log(
+  colourAssociation([
+    ["white", "goodness"],
+    ["blue", "tranquility"],
+  ])
+); */
