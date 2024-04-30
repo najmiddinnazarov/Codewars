@@ -1232,3 +1232,12 @@ console.log(logicalCalc([true, true, true, false], "XOR")); */
   }
 }
 console.log(formatMoney(39)); */
+
+// #8kyu Pirates!! Are the Cannons ready!??
+/* const cannonsReady = (gunners) => {
+  const booleanValue = Object.values(gunners).every((value) => value === "aye");
+  return booleanValue ? "Fire!" : "Shiver me timbers!";
+};
+console.log(
+  cannonsReady({ Mike: "aye", Joe: "aye", Johnson: "aye", Peter: "aye" })
+); */
