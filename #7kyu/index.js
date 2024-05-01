@@ -3521,3 +3521,9 @@ console.log(
     ["blue", "tranquility"],
   ])
 ); */
+
+// #7kyu Basic Math (Add or Subtract)
+/* function calculate(str) {
+  return eval(str.split("plus").join("+").split("minus").join("-")).toString();
+}
+console.log(calculate("1plus2plus3minus4")); */
