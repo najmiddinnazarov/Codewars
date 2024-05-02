@@ -3527,3 +3527,15 @@ console.log(
   return eval(str.split("plus").join("+").split("minus").join("-")).toString();
 }
 console.log(calculate("1plus2plus3minus4")); */
+
+// #7kyu Simple Fun #13: Magical Well
+/* function magicalWell(a, b, n) {
+  let sum = 0;
+  while (n--) {
+    sum += a * b;
+    a = a + 1;
+    b = b + 1;
+  }
+  return sum;
+}
+console.log(magicalWell(6, 5, 3)); */
