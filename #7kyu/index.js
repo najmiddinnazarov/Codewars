@@ -3549,3 +3549,13 @@ console.log(magicalWell(6, 5, 3)); */
   return sum;
 };
 console.log(sequenceSum(2, 6, 2)); */
+
+// #7kyu Evens times last
+/* function evenLast(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i += 2) {
+    sum += numbers[i];
+  }
+  return sum * numbers[numbers.length - 1] || 0;
+}
+console.log(evenLast([2, 3, 4, 5])); */
