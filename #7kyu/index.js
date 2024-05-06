@@ -3559,3 +3559,20 @@ console.log(sequenceSum(2, 6, 2)); */
   return sum * numbers[numbers.length - 1] || 0;
 }
 console.log(evenLast([2, 3, 4, 5])); */
+
+// #7kyu Sum of Minimums!
+/* function sumOfMinimums(arr) {
+  let sum = 0;
+  arr.forEach((value) => {
+    sum += Math.min(...value);
+  });
+  return sum;
+}
+console.log(
+  sumOfMinimums([
+    [7, 9, 8, 6, 2],
+    [6, 3, 5, 4, 3],
+    [5, 8, 7, 4, 5],
+  ])
+);
+ */
