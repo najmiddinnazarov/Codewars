@@ -3576,3 +3576,10 @@ console.log(
   ])
 );
  */
+
+// #7kyu Middle Me
+/* function middleMe(N, X, Y) {
+  if (N % 2) return X;
+  return Y.repeat(N / 2) + X + Y.repeat(N / 2);
+}
+console.log(middleMe(18, "z", "#")); */
