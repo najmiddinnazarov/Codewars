@@ -3583,3 +3583,14 @@ console.log(
   return Y.repeat(N / 2) + X + Y.repeat(N / 2);
 }
 console.log(middleMe(18, "z", "#")); */
+
+// #7kyu Simple Fun #384: Is Turing's Equation?
+/* function isTuringEquation(s) {
+  let sum = 0;
+  let array = s.split(/[+|=]/g);
+  for (let i = 0; i < array.length - 1; i++) {
+    sum += Number(array[i].split("").reverse().join(""));
+  }
+  return sum == array[array.length - 1].split("").reverse().join("");
+}
+console.log(isTuringEquation("73+42=16")); */
