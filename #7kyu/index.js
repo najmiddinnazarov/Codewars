@@ -3594,3 +3594,16 @@ console.log(middleMe(18, "z", "#")); */
   return sum == array[array.length - 1].split("").reverse().join("");
 }
 console.log(isTuringEquation("73+42=16")); */
+
+// #7kyu Round up to the next multiple of 5
+/* function roundToNext5(n) {
+  if (n % 5) {
+    while (n % 5) {
+      n += 1;
+    }
+    return n;
+  } else {
+    return n;
+  }
+}
+console.log(roundToNext5(21)); */
