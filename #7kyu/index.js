@@ -3607,3 +3607,12 @@ console.log(isTuringEquation("73+42=16")); */
   }
 }
 console.log(roundToNext5(21)); */
+
+// #7kyu Formatting decimal places #1
+/* function twoDecimalPlaces(number) {
+  let array = number.toString().split(".");
+  return +array
+    .map((value, index) => (index === 1 ? value.slice(0, 2) : value))
+    .join(".");
+}
+console.log(twoDecimalPlaces(10.1289767789)); */
