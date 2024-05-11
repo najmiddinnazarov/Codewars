@@ -1251,3 +1251,13 @@ console.log(
   ];
 }
 console.log(differenceInAges([82, 15, 6, 38, 35])); */
+
+// #8kyu Draw stairs
+/* function drawStairs(n) {
+  let str = "";
+  for (let i = 1; i <= n; i++) {
+    str += " ".repeat(i - 1) + "I" + (i < n ? "\n" : "");
+  }
+  return str;
+}
+console.log(drawStairs(3)); */
