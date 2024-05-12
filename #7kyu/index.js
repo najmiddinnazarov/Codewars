@@ -3616,3 +3616,9 @@ console.log(roundToNext5(21)); */
     .join(".");
 }
 console.log(twoDecimalPlaces(10.1289767789)); */
+
+// #7kyu Double Every Other
+/* function doubleEveryOther(a) {
+  return a.map((value, index) => (index % 2 ? value * 2 : value));
+}
+console.log(doubleEveryOther([1, 2, 3, 4])); */
