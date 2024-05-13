@@ -3622,3 +3622,20 @@ console.log(twoDecimalPlaces(10.1289767789)); */
   return a.map((value, index) => (index % 2 ? value * 2 : value));
 }
 console.log(doubleEveryOther([1, 2, 3, 4])); */
+
+// #7kyu Remove duplicate words
+/* function removeDuplicateWords(s) {
+  let result = [];
+  s = s.split(" ");
+  for (let i = 0; i < s.length; i++) {
+    if (!result.includes(s[i])) {
+      result.push(s[i]);
+    }
+  }
+  return result.join(" ");
+}
+console.log(
+  removeDuplicateWords(
+    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
+  )
+); */
