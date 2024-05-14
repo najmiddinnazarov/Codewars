@@ -3639,3 +3639,13 @@ console.log(
     "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
   )
 ); */
+
+// #7kyu Power of two
+/* function isPowerOfTwo(n) {
+  let sum;
+  for (let i = 1; i <= n; i *= 2) {
+    sum = i;
+  }
+  return sum === n;
+}
+console.log(isPowerOfTwo(2)); */
