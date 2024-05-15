@@ -3649,3 +3649,13 @@ console.log(
   return sum === n;
 }
 console.log(isPowerOfTwo(2)); */
+
+// #7kyu Pull your words together, man!
+/* function sentencify(words) {
+  let str = words[0][0].toUpperCase() + words[0].slice(1);
+  for (let i = 1; i < words.length; i++) {
+    str += " " + words[i];
+  }
+  return str + ".";
+}
+console.log(sentencify(["i", "go"])); */
