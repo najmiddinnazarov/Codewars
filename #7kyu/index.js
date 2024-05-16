@@ -3659,3 +3659,13 @@ console.log(isPowerOfTwo(2)); */
   return str + ".";
 }
 console.log(sentencify(["i", "go"])); */
+
+// #7kyu isEven? - Bitwise Series
+/* var isEven = function (n) {
+  n = n / 2;
+  let numStr = n.toString();
+  let parts = numStr.split(".");
+  let number = parts.length > 1 ? parts[1] : 0;
+  return number === 0;
+};
+console.log(isEven(14)); */
