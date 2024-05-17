@@ -3669,3 +3669,9 @@ console.log(sentencify(["i", "go"])); */
   return number === 0;
 };
 console.log(isEven(14)); */
+
+// #7kyu Sort the Gift Code
+/* function sortGiftCode(code) {
+  return code.split("").sort().join("");
+}
+console.log(sortGiftCode("pqksuvy")); */
