@@ -3675,3 +3675,17 @@ console.log(isEven(14)); */
   return code.split("").sort().join("");
 }
 console.log(sortGiftCode("pqksuvy")); */
+
+// #7kyu Multiples!
+/* function multiple(x) {
+  if (x % 3 === 0 && x % 5 === 0) {
+    return "BangBoom";
+  } else if (x % 3 === 0) {
+    return "Bang";
+  } else if (x % 5 === 0) {
+    return "Boom";
+  } else {
+    return "Miss";
+  }
+}
+console.log(multiple(65)); */
