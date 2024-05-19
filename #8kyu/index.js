@@ -1261,3 +1261,15 @@ console.log(differenceInAges([82, 15, 6, 38, 35])); */
   return str;
 }
 console.log(drawStairs(3)); */
+
+// #8kyu Evil or Odious
+/* function evil(n) {
+  let binaryRepresentation = n.toString(2);
+  let countOfOnes = (binaryRepresentation.match(/1/g) || []).length;
+  if (countOfOnes % 2 === 0) {
+    return "It's Evil!";
+  } else {
+    return "It's Odious!";
+  }
+}
+console.log(evil(2)); */
