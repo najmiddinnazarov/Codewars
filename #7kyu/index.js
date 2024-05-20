@@ -3689,3 +3689,36 @@ console.log(sortGiftCode("pqksuvy")); */
   }
 }
 console.log(multiple(65)); */
+
+// #7kyu Paul's Misery
+/* function paul(x) {
+  let sum = 0;
+  let obj = {
+    kata: 5,
+    "Petes kata": 10,
+    life: 0,
+    eating: 1,
+  };
+  for (let i = 0; i < x.length; i++) {
+    sum += obj[x[i]];
+  }
+  if (sum < 40) {
+    return "Super happy!";
+  } else if (sum < 70 && sum >= 40) {
+    return "Happy!";
+  } else if (sum < 100 && sum >= 70) {
+    return "Sad!";
+  } else {
+    return "Miserable!";
+  }
+}
+console.log(
+  paul([
+    "Petes kata",
+    "Petes kata",
+    "eating",
+    "Petes kata",
+    "Petes kata",
+    "eating",
+  ])
+); */
