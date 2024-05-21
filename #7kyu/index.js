@@ -3722,3 +3722,56 @@ console.log(
     "eating",
   ])
 ); */
+
+// #7kyu GA-DE-RY-PO-LU-KI cypher
+/* const object = {
+  G: "A",
+  A: "G",
+  a: "g",
+  g: "a",
+  D: "E",
+  E: "D",
+  d: "e",
+  e: "d",
+  R: "Y",
+  Y: "R",
+  r: "y",
+  y: "r",
+  P: "O",
+  O: "P",
+  p: "o",
+  o: "p",
+  L: "U",
+  U: "L",
+  l: "u",
+  u: "l",
+  K: "I",
+  I: "K",
+  k: "i",
+  i: "k",
+};
+function encode(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (object[str[i]]) {
+      result += object[str[i]];
+    } else {
+      result += str[i];
+    }
+  }
+  return result;
+}
+
+function decode(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (object[str[i]]) {
+      result += object[str[i]];
+    } else {
+      result += str[i];
+    }
+  }
+  return result;
+}
+console.log(encode("Ala has a cat"));
+console.log(decode("Gug hgs g cgt")); */
