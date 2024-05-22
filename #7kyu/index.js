@@ -3775,3 +3775,14 @@ function decode(str) {
 }
 console.log(encode("Ala has a cat"));
 console.log(decode("Gug hgs g cgt")); */
+
+// #7kyu lucky number
+/* function isLucky(n) {
+  let sum = 0;
+  while (n > 0) {
+    sum += n % 10;
+    n = Math.floor(n / 10);
+  }
+  return sum % 9 === 0;
+}
+console.log(isLucky(1892376)); */
