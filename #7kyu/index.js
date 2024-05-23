@@ -3786,3 +3786,10 @@ console.log(decode("Gug hgs g cgt")); */
   return sum % 9 === 0;
 }
 console.log(isLucky(1892376)); */
+
+// #7kyu Summing a number's digits
+/* function sumDigits(number) {
+  number = Math.abs(number).toString();
+  return eval(number.split("").join("+"));
+}
+console.log(sumDigits(-32)); */
