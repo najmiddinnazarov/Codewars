@@ -3793,3 +3793,14 @@ console.log(isLucky(1892376)); */
   return eval(number.split("").join("+"));
 }
 console.log(sumDigits(-32)); */
+
+// #7kyu Return String of First Characters
+/* function makeString(s) {
+  let string = "";
+  s = s.split(" ");
+  for (let i = 0; i < s.length; i++) {
+    string += s[i].slice(0, 1);
+  }
+  return string;
+}
+console.log(makeString("brown eyes are nice")); */
