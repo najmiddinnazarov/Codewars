@@ -3804,3 +3804,11 @@ console.log(sumDigits(-32)); */
   return string;
 }
 console.log(makeString("brown eyes are nice")); */
+
+// #7kyu Predict your age!
+/* function predictAge(...args) {
+  return Math.floor(
+    Math.sqrt(args.reduce((sum, curr) => curr * curr + sum, 0)) / 2
+  );
+}
+console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45)); */
