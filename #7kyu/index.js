@@ -3812,3 +3812,9 @@ console.log(makeString("brown eyes are nice")); */
   );
 }
 console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45)); */
+
+// #7kyu Is it a vowel on this position?
+/* function checkVowel(string, position) {
+  return /[aouei]/.test(string.slice(position, position + 1).toLowerCase());
+}
+console.log(checkVowel("%WXpIEhqRc%O6o7", -2)); */
