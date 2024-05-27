@@ -3818,3 +3818,15 @@ console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45)); */
   return /[aouei]/.test(string.slice(position, position + 1).toLowerCase());
 }
 console.log(checkVowel("%WXpIEhqRc%O6o7", -2)); */
+
+// #7kyu ScholarStem: Unit 6- Baby count!
+/* function countName(anArr, name) {
+  let sum = 0;
+  for (let i = 0; i < anArr.length; i++) {
+    if (anArr[i] === name) {
+      sum++;
+    }
+  }
+  return sum;
+}
+console.log(countName(["Tom", "Bob", "Harry", "Bob"], "Bob")); */
