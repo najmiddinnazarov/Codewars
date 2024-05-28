@@ -3830,3 +3830,17 @@ console.log(checkVowel("%WXpIEhqRc%O6o7", -2)); */
   return sum;
 }
 console.log(countName(["Tom", "Bob", "Harry", "Bob"], "Bob")); */
+
+// #7kyu Alternate case
+/* function alternateCase(s) {
+  let string = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === s[i].toUpperCase()) {
+      string += s[i].toLowerCase();
+    } else {
+      string += s[i].toUpperCase();
+    }
+  }
+  return string;
+}
+console.log(alternateCase("Hello World")); */
