@@ -3844,3 +3844,17 @@ console.log(countName(["Tom", "Bob", "Harry", "Bob"], "Bob")); */
   return string;
 }
 console.log(alternateCase("Hello World")); */
+
+// #7kyu Check three and two
+/* function checkThreeAndTwo(array) {
+  let obj = {};
+  for (const key in array) {
+    if (array[key] in obj) {
+      obj[array[key]]++;
+    } else {
+      obj[array[key]] = 1;
+    }
+  }
+  return Object.values(obj).includes(3) && Object.values(obj).includes(2);
+}
+console.log(checkThreeAndTwo(["a", "a", "a", "b", "b"])); */
