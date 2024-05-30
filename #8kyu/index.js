@@ -1273,3 +1273,9 @@ console.log(drawStairs(3)); */
   }
 }
 console.log(evil(2)); */
+
+// #8kyu Merge two sorted arrays into one
+/* function mergeArrays(arr1, arr2) {
+  return [...new Set([...arr1, ...arr2])].sort((a, b) => a - b);
+}
+console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12])); */
