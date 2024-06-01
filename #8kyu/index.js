@@ -1279,3 +1279,9 @@ console.log(evil(2)); */
   return [...new Set([...arr1, ...arr2])].sort((a, b) => a - b);
 }
 console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12])); */
+
+// #8kyu Printing Array elements with Comma delimiters
+/* function printArray(array) {
+  return array.join(",");
+}
+console.log(printArray(["h", "o", "l", "a"])); */
