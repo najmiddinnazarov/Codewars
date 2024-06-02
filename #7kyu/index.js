@@ -3892,3 +3892,38 @@ console.log(checkThreeAndTwo(["a", "a", "a", "b", "b"])); */
   }
 };
 console.log(getTurkishNumber(20)); */
+
+// #7kyu Calculate mean and concatenate string
+/* function mean(lst) {
+  lst = lst.join("");
+  let stringRegex = /[a-zA-Z]/g;
+  let numberRegex = /\d/g;
+  return [
+    eval(lst.match(numberRegex).join("+")) / lst.match(numberRegex).length,
+    lst.match(stringRegex).join(""),
+  ];
+}
+console.log(
+  mean([
+    "u",
+    "6",
+    "d",
+    "1",
+    "i",
+    "w",
+    "6",
+    "s",
+    "t",
+    "4",
+    "a",
+    "6",
+    "g",
+    "1",
+    "2",
+    "w",
+    "8",
+    "o",
+    "2",
+    "0",
+  ])
+); */
