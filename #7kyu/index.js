@@ -3927,3 +3927,21 @@ console.log(
     "0",
   ])
 ); */
+
+// #7kyu #~For Kids~# d/m/Y -> Day of the week.
+/* function dayOfTheWeek(date) {
+  date = date.split("/");
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const d = new Date(`${date[2]}-${date[1]}-${date[0]}`);
+  let day = weekday[d.getDay()];
+  return day;
+}
+console.log(dayOfTheWeek("07/12/2000")); */
