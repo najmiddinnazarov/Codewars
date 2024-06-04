@@ -3945,3 +3945,14 @@ console.log(
   return day;
 }
 console.log(dayOfTheWeek("07/12/2000")); */
+
+// #7kyu Number of Divisions
+/* const divisions = (n, divisor) => {
+  let sum = 0;
+  while (n >= divisor) {
+    n = Math.floor(n / divisor);
+    sum++;
+  }
+  return sum;
+};
+console.log(divisions(2450, 5)); */
