@@ -3956,3 +3956,10 @@ console.log(dayOfTheWeek("07/12/2000")); */
   return sum;
 };
 console.log(divisions(2450, 5)); */
+
+// #7kyu Find the anonymous function
+/* var FindFunction = function (func, arr) {
+  const findFunc = func.find((value) => typeof value === "function");
+  return arr.filter((value) => findFunc(value));
+};
+console.log(FindFunction([9, 3, (a) => a % 2, 1, 0], [1, 2, 3, 4])); */
