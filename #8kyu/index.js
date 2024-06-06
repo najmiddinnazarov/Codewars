@@ -1285,3 +1285,10 @@ console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12])); */
   return array.join(",");
 }
 console.log(printArray(["h", "o", "l", "a"])); */
+
+// #8kyu Grasshopper - Basic Function Fixer
+/* function addFive(num) {
+  var total = num + 5;
+  return total;
+}
+console.log(addFive(5)); */
