@@ -1292,3 +1292,15 @@ console.log(printArray(["h", "o", "l", "a"])); */
   return total;
 }
 console.log(addFive(5)); */
+
+// #8kyu Transportation on vacation
+/* function rentalCarCost(d) {
+  if (d >= 3 && d < 7) {
+    return d * 40 - 20;
+  } else if (d >= 7) {
+    return d * 40 - 50;
+  } else {
+    return d * 40;
+  }
+}
+console.log(rentalCarCost(7)); */
