@@ -1304,3 +1304,11 @@ console.log(addFive(5)); */
   }
 }
 console.log(rentalCarCost(7)); */
+
+// #8kyu easy logs
+/* function logs(x, a, b) {
+  const product = a * b;
+  const result = Math.log(product) / Math.log(x);
+  return result;
+}
+console.log(logs(10, 2, 3)); */
