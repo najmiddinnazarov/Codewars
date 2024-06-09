@@ -3963,3 +3963,15 @@ console.log(divisions(2450, 5)); */
   return arr.filter((value) => findFunc(value));
 };
 console.log(FindFunction([9, 3, (a) => a % 2, 1, 0], [1, 2, 3, 4])); */
+
+// #7kyu First-Class Function Factory
+/* function factory(number) {
+  return function (array) {
+    return array.map(function (element) {
+      return element * number;
+    });
+  };
+}
+var myArray = [1, 2, 3];
+var threes = factory(3);
+console.log(threes(myArray)); */
