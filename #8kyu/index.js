@@ -1312,3 +1312,14 @@ console.log(rentalCarCost(7)); */
   return result;
 }
 console.log(logs(10, 2, 3)); */
+
+// #8kyu For UFC Fans (Total Beginners): Conor McGregor vs George Saint Pierre
+/* var quote = function (fighter) {
+  fighter = fighter.toLowerCase().split(" ").join("");
+  if (fighter === "georgesaintpierre") {
+    return "I am not impressed by your performance.";
+  } else {
+    return "I'd like to take this chance to apologize.. To absolutely NOBODY!";
+  }
+};
+console.log(quote("george saint pierre")); */
