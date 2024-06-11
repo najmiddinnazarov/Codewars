@@ -1323,3 +1323,10 @@ console.log(logs(10, 2, 3)); */
   }
 };
 console.log(quote("george saint pierre")); */
+
+// #8kyu Freudian translator
+/* function toFreud(string) {
+  string = string.length > 0 ? string.split(" ").length : 0;
+  return " sex".repeat(string).slice(1);
+}
+console.log(toFreud("test")); */
