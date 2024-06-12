@@ -1330,3 +1330,9 @@ console.log(quote("george saint pierre")); */
   return " sex".repeat(string).slice(1);
 }
 console.log(toFreud("test")); */
+
+// #8kyu Enumerable Magic - Does My List Include This?
+/* function include(arr, item) {
+  return arr.includes(item);
+}
+console.log(include([1, 2, 3, 4], 3)); */
