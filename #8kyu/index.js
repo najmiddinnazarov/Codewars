@@ -1336,3 +1336,18 @@ console.log(toFreud("test")); */
   return arr.includes(item);
 }
 console.log(include([1, 2, 3, 4], 3)); */
+
+// #8kyu OOP: Object Oriented Piracy
+/* class Ship {
+  constructor(draft, crew) {
+    this.draft = draft;
+    this.crew = crew;
+  }
+  isWorthIt() {
+    let crewWeight = this.crew * 1.5;
+    let draftWithoutCrew = this.draft - crewWeight;
+    return draftWithoutCrew > 20;
+  }
+}
+const titanic = new Ship(15, 10);
+console.log(titanic.isWorthIt()); */
