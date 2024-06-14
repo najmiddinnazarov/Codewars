@@ -3975,3 +3975,15 @@ console.log(FindFunction([9, 3, (a) => a % 2, 1, 0], [1, 2, 3, 4])); */
 var myArray = [1, 2, 3];
 var threes = factory(3);
 console.log(threes(myArray)); */
+
+// #7kyu Find all occurrences of an element in an array
+/* const findAll = (array, n) => {
+  let arr = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === n) {
+      arr.push(i);
+    }
+  }
+  return arr;
+};
+console.log(findAll([6, 9, 3, 4, 3, 82, 11], 3)); */
