@@ -3987,3 +3987,12 @@ console.log(threes(myArray)); */
   return arr;
 };
 console.log(findAll([6, 9, 3, 4, 3, 82, 11], 3)); */
+
+// #7kyu String Merge!
+/* function stringMerge(string1, string2, letter) {
+  return (
+    string1.slice(0, string1.indexOf(letter)) +
+    string2.slice(string2.indexOf(letter))
+  );
+}
+console.log(stringMerge("person", "here", "e")); */
