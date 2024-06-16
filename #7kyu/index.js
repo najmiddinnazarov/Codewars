@@ -3996,3 +3996,12 @@ console.log(findAll([6, 9, 3, 4, 3, 82, 11], 3)); */
   );
 }
 console.log(stringMerge("person", "here", "e")); */
+
+// #7kyu Partial Word Searching
+/* function wordSearch(query, seq) {
+  const result = seq.filter((value) =>
+    value.toLowerCase().includes(query.toLowerCase())
+  );
+  return result.length ? result : ["Empty"];
+}
+console.log(wordSearch("ak", ["za", "ab", "abc", "zab", "zbc"])); */
