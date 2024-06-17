@@ -4005,3 +4005,15 @@ console.log(stringMerge("person", "here", "e")); */
   return result.length ? result : ["Empty"];
 }
 console.log(wordSearch("ak", ["za", "ab", "abc", "zab", "zbc"])); */
+
+// #7kyu Difference Of Squares
+/* function differenceOfSquares(n) {
+  let first = 0;
+  let second = 0;
+  for (let i = 1; i <= n; i++) {
+    first += i;
+    second += i ** 2;
+  }
+  return first ** 2 - second;
+}
+console.log(differenceOfSquares(10)); */
