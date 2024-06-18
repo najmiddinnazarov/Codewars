@@ -4017,3 +4017,12 @@ console.log(wordSearch("ak", ["za", "ab", "abc", "zab", "zbc"])); */
   return first ** 2 - second;
 }
 console.log(differenceOfSquares(10)); */
+
+// #7kyu Exclamation marks series #7: Remove words from the sentence if it contains one exclamation mark
+/* function remove(string) {
+  string = string.split(" ");
+  return string
+    .filter((value) => (value.match(/!/g) || "").length !== 1)
+    .join(" ");
+}
+console.log(remove("Hi! !Hi Hi!")); */
