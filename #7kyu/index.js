@@ -4042,3 +4042,11 @@ console.log(remove("Hi! !Hi Hi!")); */
   return x === o;
 }
 console.log(XO("ooom")); */
+
+// #7kyu Simple Fun #6: Is Infinite Process?
+/* function isInfiniteProcess(a, b) {
+  if (b < a) return true;
+  if ((b - a) % 2 == 1) return true;
+  return false;
+}
+console.log(isInfiniteProcess(2, 6)); */
