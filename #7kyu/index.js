@@ -4050,3 +4050,17 @@ console.log(XO("ooom")); */
   return false;
 }
 console.log(isInfiniteProcess(2, 6)); */
+
+// #7kyu Do you speak retsec?
+/* function reverseByCenter(s) {
+  if (s.length % 2 === 0) {
+    return s.slice(s.length / 2) + s.slice(0, s.length / 2);
+  } else {
+    return (
+      s.slice(Math.ceil(s.length / 2)) +
+      s.slice(Math.floor(s.length / 2), Math.ceil(s.length / 2)) +
+      s.slice(0, Math.floor(s.length / 2))
+    );
+  }
+}
+console.log(reverseByCenter("agent")); */
