@@ -4064,3 +4064,13 @@ console.log(isInfiniteProcess(2, 6)); */
   }
 }
 console.log(reverseByCenter("agent")); */
+
+// #7kyu Word to binary
+/* function wordToBin(str) {
+  return str
+    .split("")
+    .map((value) => value.charCodeAt(0))
+    .map((value) => value.toString(2))
+    .map((value) => value.padStart(8, "0"));
+}
+console.log(wordToBin("man")); */
