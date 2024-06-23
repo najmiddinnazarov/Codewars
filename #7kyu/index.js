@@ -4074,3 +4074,12 @@ console.log(reverseByCenter("agent")); */
     .map((value) => value.padStart(8, "0"));
 }
 console.log(wordToBin("man")); */
+
+// #7kyu Tail Swap
+/* function tailSwap(arr) {
+  return [
+    arr[0].split(":")[0] + ":" + arr[1].split(":")[1],
+    arr[1].split(":")[0] + ":" + arr[0].split(":")[1],
+  ];
+}
+console.log(tailSwap(["abc:123", "cde:456"])); */
