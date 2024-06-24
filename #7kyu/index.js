@@ -4083,3 +4083,13 @@ console.log(wordToBin("man")); */
   ];
 }
 console.log(tailSwap(["abc:123", "cde:456"])); */
+
+// #7kyu Number Pairs
+/* function getLargerNumbers(a, b) {
+  let arr = [];
+  for (let i = 0; i < a.length; i++) {
+    arr.push(a[i] >= b[i] ? a[i] : b[i]);
+  }
+  return arr;
+}
+console.log(getLargerNumbers([13, 64, 15, 17, 88], [23, 14, 53, 17, 80])); */
