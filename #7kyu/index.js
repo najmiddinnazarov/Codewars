@@ -4093,3 +4093,23 @@ console.log(tailSwap(["abc:123", "cde:456"])); */
   return arr;
 }
 console.log(getLargerNumbers([13, 64, 15, 17, 88], [23, 14, 53, 17, 80])); */
+
+// #7kyu Sort Santa's Reindeer
+/* function sortReindeer(reindeerNames) {
+  return reindeerNames
+    .map((value) => value.split(" "))
+    .sort((a, b) => a[1].localeCompare(b[1]))
+    .map((value) => value.join(" "));
+}
+console.log(
+  sortReindeer([
+    "Dasher Tonoyan",
+    "Dancer Moore",
+    "Prancer Chua",
+    "Vixen Hall",
+    "Comet Karavani",
+    "Cupid Foroutan",
+    "Donder Jonker",
+    "Blitzen Claus",
+  ])
+); */
