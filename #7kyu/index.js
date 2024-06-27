@@ -4119,3 +4119,11 @@ console.log(
   return a.includes(x);
 }
 console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45)); */
+
+// #7kyu Test Your Knowledge Of Function Scope
+/* function add(a) {
+  return function (b) {
+    return a + b;
+  };
+}
+console.log(add(2)(5)); */
