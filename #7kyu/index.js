@@ -4127,3 +4127,13 @@ console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45)); */
   };
 }
 console.log(add(2)(5)); */
+
+// #7kyu Exclamation marks series #8: Move all exclamation marks to the end of the sentence
+/* function remove(string) {
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    string[i] === "!" && count++;
+  }
+  return string.replace(/[!]/g, "") + "!".repeat(count);
+}
+console.log(remove("Hi! !Hi Hi!")); */
