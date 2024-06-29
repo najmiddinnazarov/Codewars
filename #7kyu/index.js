@@ -4137,3 +4137,15 @@ console.log(add(2)(5)); */
   return string.replace(/[!]/g, "") + "!".repeat(count);
 }
 console.log(remove("Hi! !Hi Hi!")); */
+
+// #7kyu Excessively Abundant Numbers
+/* function abundantNumber(num) {
+  let count = 0;
+  for (let i = 1; i <= Math.floor(num / 2); i++) {
+    if (num % i === 0) {
+      count += i;
+    }
+  }
+  return count > num;
+}
+console.log(abundantNumber(18)); */
