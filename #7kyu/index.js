@@ -4149,3 +4149,19 @@ console.log(remove("Hi! !Hi Hi!")); */
   return count > num;
 }
 console.log(abundantNumber(18)); */
+
+// #7kyu Email Address Obfuscator
+/* obfuscate = function (email) {
+  let string = "";
+  for (let i = 0; i < email.length; i++) {
+    if (email[i] === "@") {
+      string += " [at] ";
+    } else if (email[i] === ".") {
+      string += " [dot] ";
+    } else {
+      string += email[i];
+    }
+  }
+  return string;
+};
+console.log(obfuscate("test@123.com")); */
