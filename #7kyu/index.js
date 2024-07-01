@@ -4165,3 +4165,13 @@ console.log(abundantNumber(18)); */
   return string;
 };
 console.log(obfuscate("test@123.com")); */
+
+// #7kyu Number-Star ladder
+/* function pattern(n) {
+  var output = "1";
+  for (let i = 2; i <= n; i++) {
+    output += `\n1${"*".repeat(i - 1)}${i}`;
+  }
+  return output;
+}
+console.log(pattern(3)); */
