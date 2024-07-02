@@ -4175,3 +4175,9 @@ console.log(obfuscate("test@123.com")); */
   return output;
 }
 console.log(pattern(3)); */
+
+// #7kyu How many times should I go?
+/* function howManyTimes(annualPrice, individualPrice) {
+  return Math.ceil(annualPrice / individualPrice);
+}
+console.log(howManyTimes(40, 15)); */
