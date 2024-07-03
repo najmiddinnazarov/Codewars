@@ -1351,3 +1351,9 @@ console.log(include([1, 2, 3, 4], 3)); */
 }
 const titanic = new Ship(15, 10);
 console.log(titanic.isWorthIt()); */
+
+// #8kyu BASIC: Making Six Toast.
+/* function sixToast(num) {
+  return num < 6 ? num : num - 6;
+}
+console.log(sixToast(6)); */
