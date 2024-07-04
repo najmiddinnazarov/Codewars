@@ -4181,3 +4181,21 @@ console.log(pattern(3)); */
   return Math.ceil(annualPrice / individualPrice);
 }
 console.log(howManyTimes(40, 15)); */
+
+// #7kyu Alternate capitalization
+/* function capitalize(s) {
+  const upperLetter = s
+    .split("")
+    .map((value, index) =>
+      index % 2 === 0 ? value.toUpperCase() : value.toLowerCase()
+    )
+    .join("");
+  const lowerLetter = s
+    .split("")
+    .map((value, index) =>
+      index % 2 ? value.toUpperCase() : value.toLowerCase()
+    )
+    .join("");
+  return [upperLetter, lowerLetter];
+}
+console.log(capitalize("abcdef")); */
