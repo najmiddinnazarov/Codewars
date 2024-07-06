@@ -4205,3 +4205,15 @@ console.log(capitalize("abcdef")); */
   return phrase.replace(/(bad|mean|ugly|horrible|hideous)/gi, "awesome");
 }
 console.log(filterWords("You're Bad! timmy!")); */
+
+// #7kyu Magic Sum of 3s
+/* function magicSum(numbers) {
+  let count = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i].toString().includes(3) && numbers[i] % 2) {
+      count += numbers[i];
+    }
+  }
+  return count;
+}
+console.log(magicSum([3, 12, 5, 8, 30, 13])); */
