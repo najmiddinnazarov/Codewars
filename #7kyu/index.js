@@ -4217,3 +4217,10 @@ console.log(filterWords("You're Bad! timmy!")); */
   return count;
 }
 console.log(magicSum([3, 12, 5, 8, 30, 13])); */
+
+// #7kyu Dad is Commatose
+/* function dadFilter(str) {
+  str = str.replace(/,+/g, ",").trim();
+  return str.slice(-1) === "," ? str.slice(0, -1) : str;
+}
+console.log(dadFilter("all this,,,, used to be trees,,,,,,")); */
