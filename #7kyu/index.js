@@ -4224,3 +4224,15 @@ console.log(magicSum([3, 12, 5, 8, 30, 13])); */
   return str.slice(-1) === "," ? str.slice(0, -1) : str;
 }
 console.log(dadFilter("all this,,,, used to be trees,,,,,,")); */
+
+// #7kyu Thinkful - List and Loop Drills: Lists of lists
+/* function processData(data) {
+  return data.reduce((sum, curr) => sum * eval(curr.join("-")), 1);
+}
+console.log(
+  processData([
+    [2, 5],
+    [3, 4],
+    [8, 7],
+  ])
+); */
