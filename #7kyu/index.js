@@ -4246,3 +4246,15 @@ console.log(
   }
 }
 console.log(evensAndOdds(12800)); */
+
+// #7kyu Sum of Array Averages
+/* const sumAverage = (arr) => {
+  const arrayAverage = arr.map((value) => eval(value.join("+")) / value.length);
+  return Math.floor(eval(arrayAverage.join("+")));
+};
+console.log(
+  sumAverage([
+    [3, 4, 1, 3, 5, 1, 4],
+    [21, 54, 33, 21, 77],
+  ])
+); */
