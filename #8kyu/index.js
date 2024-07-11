@@ -1357,3 +1357,9 @@ console.log(titanic.isWorthIt()); */
   return num < 6 ? num : num - 6;
 }
 console.log(sixToast(6)); */
+
+// #8kyu The Wide-Mouthed frog!
+/* function mouthSize(animal) {
+  return animal === "alligator" ? "small" : "wide";
+}
+console.log(mouthSize("alligator")); */
