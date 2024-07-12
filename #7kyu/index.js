@@ -4258,3 +4258,13 @@ console.log(
     [21, 54, 33, 21, 77],
   ])
 ); */
+
+// #7kyu L2: Triple X
+/* function tripleX(str) {
+  return (
+    str[str.indexOf("x")] === "x" &&
+    str[str.indexOf("x") + 1] === "x" &&
+    str[str.indexOf("x") + 2] === "x"
+  );
+}
+console.log(tripleX("softx kitty, warm kitty, xxxxx")); */
