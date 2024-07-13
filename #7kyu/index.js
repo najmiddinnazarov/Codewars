@@ -4268,3 +4268,7 @@ console.log(
   );
 }
 console.log(tripleX("softx kitty, warm kitty, xxxxx")); */
+
+// #7kyu Truthy and Falsy
+/* const truthy = [1, 2, 3, 4, 5];
+const falsy = [NaN, 0, false, null, undefined]; */
