@@ -1363,3 +1363,13 @@ console.log(sixToast(6)); */
   return animal === "alligator" ? "small" : "wide";
 }
 console.log(mouthSize("alligator")); */
+
+// #8kyu Generate range of integers
+/* function generateRange(min, max, step) {
+  let array = [];
+  for (let i = min; i <= max; i += step) {
+    array.push(i);
+  }
+  return array;
+}
+console.log(generateRange(2, 10, 2)); */
