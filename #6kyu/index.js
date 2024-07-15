@@ -1004,3 +1004,24 @@ console.log(toWeirdCase("This is a test")); */
   }
 }
 console.log(findMissingLetter(["O", "Q", "R", "S"])); */
+
+// #6kyu Highest Rank Number in an Array
+/* function highestRank(arr) {
+  let countNumber = {};
+  for (let key of arr) {
+    if (countNumber[key]) {
+      countNumber[key]++;
+    } else {
+      countNumber[key] = 1;
+    }
+  }
+  let maxValue = Math.max(...Object.values(countNumber));
+  let maxKey = [];
+  for (const key in countNumber) {
+    if (countNumber[key] === maxValue) {
+      maxKey.push(key);
+    }
+  }
+  return Math.max(...maxKey);
+}
+console.log(highestRank([12, 4, 10, 8, 12, 7, 6, 4, 10, 12, 10])); */
