@@ -1025,3 +1025,22 @@ console.log(findMissingLetter(["O", "Q", "R", "S"])); */
   return Math.max(...maxKey);
 }
 console.log(highestRank([12, 4, 10, 8, 12, 7, 6, 4, 10, 12, 10])); */
+
+// #6kyu Range function
+/* function range(...args) {
+  let array = [];
+  step = 1;
+  if (args.length === 1) {
+    start = 1;
+    [stop] = args;
+  } else if (args.length === 2) {
+    [start, stop] = args;
+  } else {
+    [start, step, stop] = args;
+  }
+  for (let i = start; i <= stop; i += step) {
+    array.push(i);
+  }
+  return array;
+}
+console.log(range(7)); */
