@@ -1044,3 +1044,25 @@ console.log(highestRank([12, 4, 10, 8, 12, 7, 6, 4, 10, 12, 10])); */
   return array;
 }
 console.log(range(7)); */
+
+// #6kyu Array Helpers
+/* Array.prototype.square = function () {
+  return this.map((value) => value * value);
+};
+Array.prototype.cube = function () {
+  return this.map((value) => value * value * value);
+};
+Array.prototype.average = function () {
+  return this.reduce((total, current) => total + current, 0) / this.length;
+};
+Array.prototype.sum = function () {
+  return this.reduce((total, current) => total + current, 0);
+};
+Array.prototype.even = function () {
+  return this.filter((value) => value % 2 === 0);
+};
+Array.prototype.odd = function () {
+  return this.filter((value) => value % 2);
+};
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers.sum()); */
