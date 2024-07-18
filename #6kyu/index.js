@@ -1066,3 +1066,13 @@ Array.prototype.odd = function () {
 };
 let numbers = [1, 2, 3, 4, 5];
 console.log(numbers.sum()); */
+
+// #6kyu Twisted Sum
+/* function twistedSum(n) {
+  let str = "";
+  for (let i = 1; i <= n; i++) {
+    str += i;
+  }
+  return eval(str.split("").join("+"));
+}
+console.log(twistedSum(10)); */
