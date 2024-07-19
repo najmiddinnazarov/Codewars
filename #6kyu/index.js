@@ -1076,3 +1076,13 @@ console.log(numbers.sum()); */
   return eval(str.split("").join("+"));
 }
 console.log(twistedSum(10)); */
+
+// #6kyu Arabian String
+/* function camelize(str) {
+  return str
+    .replace(/[^a-zA-Z0-9]+/g, " ")
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join("");
+}
+console.log(camelize("java scri?pt")); */
