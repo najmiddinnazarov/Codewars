@@ -1086,3 +1086,26 @@ console.log(twistedSum(10)); */
     .join("");
 }
 console.log(camelize("java scri?pt")); */
+
+// #6kyu Make the Deadfish Swim
+/* function parse(data) {
+  let array = [];
+  data = data.replace(/[A-Za-z]/gi, (x) => {
+    if ("idso".includes(x)) return x;
+    else return "";
+  });
+  let sum = 0;
+  for (let i = 0; i < data.length; i++) {
+    if (data[i] === "i") {
+      sum++;
+    } else if (data[i] === "d") {
+      sum--;
+    } else if (data[i] === "s") {
+      sum = sum * sum;
+    } else {
+      array.push(sum);
+    }
+  }
+  return array;
+}
+console.log(parse("iiisdoso")); */
