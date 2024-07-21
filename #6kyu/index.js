@@ -1109,3 +1109,20 @@ console.log(camelize("java scri?pt")); */
   return array;
 }
 console.log(parse("iiisdoso")); */
+
+// #6kyu String array duplicates
+/* function dup(s) {
+  let array = [];
+  for (let i = 0; i < s.length; i++) {
+    let str = "";
+    for (let k = 0; k < s[i].length; k++) {
+      if (s[i][k] !== s[i][k + 1]) {
+        str += s[i][k];
+      }
+    }
+    array.push(str);
+    str = "";
+  }
+  return array;
+}
+console.log(dup(["abracadabra", "allottee", "assessee"])); */
