@@ -1126,3 +1126,27 @@ console.log(parse("iiisdoso")); */
   return array;
 }
 console.log(dup(["abracadabra", "allottee", "assessee"])); */
+
+// #6kyu Exclamation marks series #17: Put the exclamation marks and question marks on the balance - are they balanced?
+/* function balance(left, right) {
+  left = eval(
+    left
+      .replace(/[!?]/g, (x) => (x === "!" ? 2 : 3))
+      .split("")
+      .join("+")
+  );
+  right = eval(
+    right
+      .replace(/[!?]/g, (x) => (x === "!" ? 2 : 3))
+      .split("")
+      .join("+")
+  );
+  if (left > right) {
+    return "Left";
+  } else if (right > left) {
+    return "Right";
+  } else {
+    return "Balance";
+  }
+}
+console.log(balance("!??", "?!!")); */
