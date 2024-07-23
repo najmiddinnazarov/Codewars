@@ -1150,3 +1150,18 @@ console.log(dup(["abracadabra", "allottee", "assessee"])); */
   }
 }
 console.log(balance("!??", "?!!")); */
+
+// #6kyu String transformer
+/* function stringTransformer(str) {
+  str = str.split(" ").reverse().join(" ");
+  let string = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === str[i].toLowerCase()) {
+      string += str[i].toUpperCase();
+    } else {
+      string += str[i].toLowerCase();
+    }
+  }
+  return string;
+}
+console.log(stringTransformer("Example Input")); */
