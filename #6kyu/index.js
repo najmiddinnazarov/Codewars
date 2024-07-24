@@ -1165,3 +1165,23 @@ console.log(balance("!??", "?!!")); */
   return string;
 }
 console.log(stringTransformer("Example Input")); */
+
+// #6kyu Mix Fruit Juice
+/* function mixFruit(arr) {
+  let regularFruits = ["banana", "orange", "apple", "lemon", "grapes"];
+  let specialFruits = ["avocado", "strawberry", "mango"];
+  return Math.round(
+    arr
+      .map((value) => value.toLowerCase())
+      .reduce((sum, curr) => {
+        if (regularFruits.includes(curr)) {
+          return sum + 5;
+        } else if (specialFruits.includes(curr)) {
+          return sum + 7;
+        } else {
+          return sum + 9;
+        }
+      }, 0) / arr.length
+  );
+}
+console.log(mixFruit(["banana", "mango", "avocado"])); */
