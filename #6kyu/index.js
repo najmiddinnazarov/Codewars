@@ -1185,3 +1185,9 @@ console.log(stringTransformer("Example Input")); */
   );
 }
 console.log(mixFruit(["banana", "mango", "avocado"])); */
+
+// #6kyu Smart Sum
+/* function smartSum(...args) {
+  return args.flat(Infinity).reduce((sum, curr) => sum + curr, 0);
+}
+console.log(smartSum(1, 2, [[3, 4], 5], 6)); */
