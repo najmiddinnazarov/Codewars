@@ -1191,3 +1191,14 @@ console.log(mixFruit(["banana", "mango", "avocado"])); */
   return args.flat(Infinity).reduce((sum, curr) => sum + curr, 0);
 }
 console.log(smartSum(1, 2, [[3, 4], 5], 6)); */
+
+// #6kyu Remember
+/* function remember(str) {
+  let dublicate = [];
+  let array = str.split("");
+  let spreadArray = array.filter(
+    (value, index, arr) => arr.indexOf(value) !== index
+  );
+  return [...new Set(spreadArray)];
+}
+console.log(remember("limbojackassin the garden")); */
