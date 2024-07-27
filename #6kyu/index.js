@@ -1202,3 +1202,18 @@ console.log(smartSum(1, 2, [[3, 4], 5], 6)); */
   return [...new Set(spreadArray)];
 }
 console.log(remember("limbojackassin the garden")); */
+
+// #6kyu Odd/Even number of divisors
+/* function oddity(n) {
+  let sum = 0;
+  for (let i = 1; i * i <= n; i++) {
+    if (n % i === 0) {
+      sum++;
+      if (i != n / i) {
+        sum++;
+      }
+    }
+  }
+  return sum % 2 === 0 ? "even" : "odd";
+}
+console.log(oddity(5)); */
