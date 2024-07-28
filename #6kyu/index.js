@@ -1217,3 +1217,13 @@ console.log(remember("limbojackassin the garden")); */
   return sum % 2 === 0 ? "even" : "odd";
 }
 console.log(oddity(5)); */
+
+// #6kyu Mirror object - tcejbo rorriM
+/* const mirror = (obj) => {
+  let object = {};
+  for (const key in obj) {
+    object[key] = key.split("").reverse().join("");
+  }
+  return object;
+};
+console.log(mirror({ abc: undefined, arara: undefined })); */
