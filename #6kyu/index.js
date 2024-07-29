@@ -1227,3 +1227,14 @@ console.log(oddity(5)); */
   return object;
 };
 console.log(mirror({ abc: undefined, arara: undefined })); */
+
+// #6kyu Write JavaScript's 'call' function using apply.
+/* Function.prototype.call = function (context, ...args) {
+  return this.apply(context, args);
+};
+function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+const obj = {};
+Product.call(obj, "Laptop", 999); */
