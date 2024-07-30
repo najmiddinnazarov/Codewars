@@ -1238,3 +1238,11 @@ function Product(name, price) {
 }
 const obj = {};
 Product.call(obj, "Laptop", 999); */
+
+// #6kyu Duplicate Arguments
+/* function solution(...args) {
+  return (
+    args.filter((value, index, arr) => arr.indexOf(value) !== index).length > 0
+  );
+}
+console.log(solution("a", "b", "c", "a")); */
