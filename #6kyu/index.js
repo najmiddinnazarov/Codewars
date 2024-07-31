@@ -1246,3 +1246,21 @@ Product.call(obj, "Laptop", 999); */
   );
 }
 console.log(solution("a", "b", "c", "a")); */
+
+// #6kyu Find The Duplicated Number in a Consecutive Unsorted List - Tougher Version
+/* function findDup(array) {
+  let tortoise = array[0];
+  let hare = array[0];
+  do {
+    tortoise = array[tortoise];
+    hare = array[array[hare]];
+  } while (tortoise !== hare);
+  let ptr1 = array[0];
+  let ptr2 = tortoise;
+  while (ptr1 !== ptr2) {
+    ptr1 = array[ptr1];
+    ptr2 = array[ptr2];
+  }
+  return ptr1;
+}
+console.log(findDup([3, 1, 3, 4, 2])); */
