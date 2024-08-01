@@ -1264,3 +1264,15 @@ console.log(solution("a", "b", "c", "a")); */
   return ptr1;
 }
 console.log(findDup([3, 1, 3, 4, 2])); */
+
+// #6kyu Autocomplete! Yay!
+/* function autocomplete(input, dictionary) {
+  input = input.replace(/[^a-zA-Z]/g, "");
+  input = input.toLowerCase();
+  let matches = dictionary.filter((word) =>
+    word.toLowerCase().startsWith(input)
+  );
+  let result = matches.slice(0, 5);
+  return result;
+}
+console.log(autocomplete("ai", ["airplane", "airport", "apple", "ball"])); */
