@@ -1276,3 +1276,23 @@ console.log(findDup([3, 1, 3, 4, 2])); */
   return result;
 }
 console.log(autocomplete("ai", ["airplane", "airport", "apple", "ball"])); */
+
+// #6kyu Only Duplicates
+/* function onlyDuplicates(str) {
+  const charCount = {};
+  for (let char of str) {
+    if (charCount[char]) {
+      charCount[char]++;
+    } else {
+      charCount[char] = 1;
+    }
+  }
+  let result = "";
+  for (let char of str) {
+    if (charCount[char] > 1) {
+      result += char;
+    }
+  }
+  return result;
+}
+console.log(onlyDuplicates("abccdefee")); */
