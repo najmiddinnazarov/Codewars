@@ -1373,3 +1373,7 @@ console.log(mouthSize("alligator")); */
   return array;
 }
 console.log(generateRange(2, 10, 2)); */
+
+// #8kyu Be Concise IV - Index of an element in an array
+/* const find = (a, e) => (a.includes(e) ? a.indexOf(e) : "Not found");
+console.log(find([2, 3, 5, 7, 11], 5)); */
