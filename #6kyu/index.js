@@ -1296,3 +1296,25 @@ console.log(autocomplete("ai", ["airplane", "airport", "apple", "ball"])); */
   return result;
 }
 console.log(onlyDuplicates("abccdefee")); */
+
+// #6kyu Faro Shuffle Count
+/* function faroCount(deckSize) {
+  function faroShuffle(deck) {
+    let half = deckSize / 2;
+    let shuffled = [];
+    for (let i = 0; i < half; i++) {
+      shuffled.push(deck[i]);
+      shuffled.push(deck[i + half]);
+    }
+    return shuffled;
+  }
+  let originalDeck = Array.from({ length: deckSize }, (_, i) => i);
+  let currentDeck = [...originalDeck];
+  let shuffleCount = 0;
+  do {
+    currentDeck = faroShuffle(currentDeck);
+    shuffleCount++;
+  } while (!currentDeck.every((card, index) => card === originalDeck[index]));
+  return shuffleCount;
+}
+console.log(faroCount(52)); */
