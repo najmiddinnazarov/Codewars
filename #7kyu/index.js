@@ -4289,3 +4289,16 @@ const nums = [
   16,
 ];
 console.log(missingNo(nums)); */
+
+// #7kyu My Language Skills
+/* function myLanguages(results) {
+  let object = {};
+  for (const key in results) {
+    if (results[key] >= 60) {
+      object[key] = results[key];
+    }
+  }
+  let sortArray = Object.entries(object).sort((a, b) => b[1] - a[1]);
+  return sortArray.map((value) => value[0]);
+}
+console.log(myLanguages({ Java: 90, Ruby: 80, Python: 65 })); */
