@@ -4302,3 +4302,19 @@ console.log(missingNo(nums)); */
   return sortArray.map((value) => value[0]);
 }
 console.log(myLanguages({ Java: 90, Ruby: 80, Python: 65 })); */
+
+// #7kyu Leap Years
+/* function isLeapYear(year) {
+  let boolean = false;
+  if (year % 4 === 0) {
+    boolean = true;
+  }
+  if (year % 100 === 0) {
+    boolean = false;
+  }
+  if (year % 400 === 0) {
+    boolean = true;
+  }
+  return boolean;
+}
+console.log(isLeapYear(2020)); */
