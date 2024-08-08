@@ -4318,3 +4318,10 @@ console.log(myLanguages({ Java: 90, Ruby: 80, Python: 65 })); */
   return boolean;
 }
 console.log(isLeapYear(2020)); */
+
+// #7kyu Sum of two lowest positive integers
+/* function sumTwoSmallestNumbers(numbers) {
+  let sort = numbers.sort((a, b) => a - b);
+  return sort[0] + sort[1];
+}
+console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453])); */
