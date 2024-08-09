@@ -4325,3 +4325,9 @@ console.log(isLeapYear(2020)); */
   return sort[0] + sort[1];
 }
 console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453])); */
+
+// #7kyu Squeaky Clean
+/* function squeakyClean(arr) {
+  return arr.filter((value) => value);
+}
+console.log(squeakyClean(["click1", "click2", null, "", "", "submitForm"])); */
