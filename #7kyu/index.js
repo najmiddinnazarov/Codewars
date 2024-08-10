@@ -4331,3 +4331,15 @@ console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453])); */
   return arr.filter((value) => value);
 }
 console.log(squeakyClean(["click1", "click2", null, "", "", "submitForm"])); */
+
+// #7kyu Spot the Differences
+/* function spot(s1, s2) {
+  let result = [];
+  for (let i = 0; i < s1.length; i++) {
+    if (s1[i] !== s2[i]) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+console.log(spot("abcdefg", "abcqetg")); */
