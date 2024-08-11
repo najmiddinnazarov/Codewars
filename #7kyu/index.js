@@ -4343,3 +4343,15 @@ console.log(squeakyClean(["click1", "click2", null, "", "", "submitForm"])); */
   return result;
 }
 console.log(spot("abcdefg", "abcqetg")); */
+
+// #7kyu Sum of squares less than some number
+/* function getNumberOfSquares(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i ** 2;
+    if (sum >= n) {
+      return i - 1;
+    }
+  }
+}
+console.log(getNumberOfSquares(15)); */
