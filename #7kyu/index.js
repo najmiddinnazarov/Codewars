@@ -4355,3 +4355,17 @@ console.log(spot("abcdefg", "abcqetg")); */
   }
 }
 console.log(getNumberOfSquares(15)); */
+
+// #7kyu Figurate Numbers #2 - Pronic Number
+/* function isPronic(n) {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    if (sum === n) {
+      return true;
+    } else {
+      sum = i * (i + 1);
+    }
+  }
+  return false;
+}
+console.log(isPronic(3)); */
