@@ -4369,3 +4369,18 @@ console.log(getNumberOfSquares(15)); */
   return false;
 }
 console.log(isPronic(3)); */
+
+// #7kyu Larger Product or Sum
+/* function sumOrProduct(array, n) {
+  array = array.sort((a, b) => a - b);
+  let sum = eval(array.reverse().slice(0, n).join("+"));
+  let product = eval(array.reverse().slice(0, n).join("*"));
+  if (sum > product) {
+    return "sum";
+  } else if (product > sum) {
+    return "product";
+  } else {
+    return "same";
+  }
+}
+console.log(sumOrProduct([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 4)); */
