@@ -4384,3 +4384,11 @@ console.log(isPronic(3)); */
   }
 }
 console.log(sumOrProduct([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 4)); */
+
+// #7kyu Especially Joyful Numbers
+/* function numberJoy(n) {
+  let sum = eval(n.toString().split("").join("+"));
+  let product = sum * sum.toString().split("").reverse().join("");
+  return n === product;
+}
+console.log(numberJoy(1729)); */
