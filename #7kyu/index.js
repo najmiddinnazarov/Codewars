@@ -4392,3 +4392,10 @@ console.log(sumOrProduct([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 4)); */
   return n === product;
 }
 console.log(numberJoy(1729)); */
+
+// #7kyu Temperature analysis I
+/* function lowestTemp(t) {
+  t = t.split(" ");
+  return +t.sort((a, b) => a - b)[0] || null;
+}
+console.log(lowestTemp("")); */
