@@ -4399,3 +4399,12 @@ console.log(numberJoy(1729)); */
   return +t.sort((a, b) => a - b)[0] || null;
 }
 console.log(lowestTemp("")); */
+
+// #7kyu Inspiring Strings
+/* function longestWord(stringOfWords) {
+  stringOfWords = stringOfWords.split(" ");
+  return stringOfWords.sort((a, b) => a.length - b.length)[
+    stringOfWords.length - 1
+  ];
+}
+console.log(longestWord("one two three")); */
