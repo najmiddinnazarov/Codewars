@@ -4408,3 +4408,18 @@ console.log(lowestTemp("")); */
   ];
 }
 console.log(longestWord("one two three")); */
+
+// #7kyu Powers of i
+/* function pofi(n) {
+  let remainder = n % 4;
+  if (remainder === 0) {
+    return "1";
+  } else if (remainder === 1) {
+    return "i";
+  } else if (remainder === 2) {
+    return "-1";
+  } else if (remainder === 3) {
+    return "-i";
+  }
+}
+console.log(pofi(0)); */
