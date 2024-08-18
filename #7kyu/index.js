@@ -4423,3 +4423,9 @@ console.log(longestWord("one two three")); */
   }
 }
 console.log(pofi(0)); */
+
+// #7kyu The highest profit wins!
+/* function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
+console.log(minMax([1, 2, 3, 4, 5])); */
