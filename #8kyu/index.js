@@ -1377,3 +1377,9 @@ console.log(generateRange(2, 10, 2)); */
 // #8kyu Be Concise IV - Index of an element in an array
 /* const find = (a, e) => (a.includes(e) ? a.indexOf(e) : "Not found");
 console.log(find([2, 3, 5, 7, 11], 5)); */
+
+// #8kyu Who is going to pay for the wall?
+/* function whoIsPaying(name) {
+  return name.length <= 2 ? [name] : [name, name.slice(0, 2)];
+}
+console.log(whoIsPaying("Melissa")); */
