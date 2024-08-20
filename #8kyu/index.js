@@ -1383,3 +1383,17 @@ console.log(find([2, 3, 5, 7, 11], 5)); */
   return name.length <= 2 ? [name] : [name, name.slice(0, 2)];
 }
 console.log(whoIsPaying("Melissa")); */
+
+// #8kyu I love you, a little , a lot, passionately ... not at all
+/* function howMuchILoveYou(nbPetals) {
+  let petal = {
+    1: "I love you",
+    2: "a little",
+    3: "a lot",
+    4: "passionately",
+    5: "madly",
+    6: "not at all",
+  };
+  return petal[nbPetals % 6];
+}
+console.log(howMuchILoveYou(6)); */
