@@ -4429,3 +4429,10 @@ console.log(pofi(0)); */
   return [Math.min(...arr), Math.max(...arr)];
 }
 console.log(minMax([1, 2, 3, 4, 5])); */
+
+// #7kyu Dan's great power generator
+/* function danspower(num, power) {
+  let number = num ** power;
+  return number % 2 === 0 ? number : Math.round(number / 10) * 10;
+}
+console.log(danspower(6, 0)); */
