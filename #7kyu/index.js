@@ -4436,3 +4436,22 @@ console.log(minMax([1, 2, 3, 4, 5])); */
   return number % 2 === 0 ? number : Math.round(number / 10) * 10;
 }
 console.log(danspower(6, 0)); */
+
+// #7kyu Simple Fun #147: Find The Missing Tree
+/* function findTheMissingTree(trees) {
+  let numbers = {};
+  for (let i = 0; i < trees.length; i++) {
+    if (trees[i] in numbers) {
+      numbers[trees[i]]++;
+    } else {
+      numbers[trees[i]] = 1;
+    }
+  }
+  let minNumber = Math.min(...Object.values(numbers));
+  for (const key in numbers) {
+    if (numbers[key] === minNumber) {
+      return +key;
+    }
+  }
+}
+console.log(findTheMissingTree([1, 2, 2, 3, 3])); */
