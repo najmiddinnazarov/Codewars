@@ -4455,3 +4455,30 @@ console.log(danspower(6, 0)); */
   }
 }
 console.log(findTheMissingTree([1, 2, 2, 3, 3])); */
+
+// #7kyu Odd Ones Out!
+/* function oddOnesOut(nums) {
+  let object = {};
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] in object) {
+      object[nums[i]]++;
+    } else {
+      object[nums[i]] = 1;
+    }
+  }
+  let entries = Object.entries(object);
+  let odds = [];
+  for (let i = 0; i < entries.length; i++) {
+    if (entries[i][1] % 2) {
+      odds.push(+entries[i][0]);
+    }
+  }
+  let result = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (!odds.includes(nums[i])) {
+      result.push(nums[i]);
+    }
+  }
+  return result;
+}
+console.log(oddOnesOut([1, 2, 3, 1, 3, 3])); */
