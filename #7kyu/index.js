@@ -4530,3 +4530,40 @@ console.log(
   return array;
 }
 console.log(extraPerfect(39)); */
+
+// #7kyu Fizz Buzz Cuckoo Clock
+/* function fizzBuzzCuckooClock(time) {
+  time = time.split(":");
+  if (time[1] === "00") {
+    let numbers = {
+      "00": 12,
+      13: 1,
+      14: 2,
+      15: 3,
+      16: 4,
+      17: 5,
+      18: 6,
+      19: 7,
+      20: 8,
+      21: 9,
+      22: 10,
+      23: 11,
+    };
+    let str = "";
+    for (let i = 1; i <= (numbers[time[0]] || time[0]); i++) {
+      str += "Cuckoo ";
+    }
+    return str.trim();
+  } else if (time[1] === "30") {
+    return "Cuckoo";
+  } else if (time[1] % 3 === 0 && time[1] % 5 === 0) {
+    return "Fizz Buzz";
+  } else if (time[1] % 3 === 0) {
+    return "Fizz";
+  } else if (time[1] % 5 === 0) {
+    return "Buzz";
+  } else {
+    return "tick";
+  }
+}
+console.log(fizzBuzzCuckooClock("13:00")); */
