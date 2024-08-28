@@ -1413,3 +1413,9 @@ console.log(howMuchILoveYou(6)); */
   }
 }
 console.log(grader(0.7)); */
+
+// #8kyu Exclusive "or" (xor) Logical Operator
+/* function xor(a, b) {
+  return a ^ b ? true : false;
+}
+console.log(xor(false, false)); */
