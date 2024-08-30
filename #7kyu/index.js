@@ -4567,3 +4567,11 @@ console.log(extraPerfect(39)); */
   }
 }
 console.log(fizzBuzzCuckooClock("13:00")); */
+
+// #7kyu Inverting a Hash
+/* function invertHash(hash) {
+  return Object.fromEntries(
+    Object.entries(hash).map((value) => value.reverse())
+  );
+}
+console.log(invertHash({ a: "1", b: "2", c: "3" })); */
