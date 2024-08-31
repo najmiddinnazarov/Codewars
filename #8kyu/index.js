@@ -1436,3 +1436,9 @@ console.log(xor(false, false)); */
   }
 }
 console.log(getGrade(70, 70, 100)); */
+
+// #8kyu validate code with simple regex
+/* function validateCode(code) {
+  return /^[123]/g.test(code);
+}
+console.log(validateCode(423)); */
