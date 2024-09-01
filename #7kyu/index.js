@@ -4575,3 +4575,23 @@ console.log(fizzBuzzCuckooClock("13:00")); */
   );
 }
 console.log(invertHash({ a: "1", b: "2", c: "3" })); */
+
+// #7kyu Simple Fun #238: Tennis Game Points
+/* function tennisGamePoints(score) {
+  score = score.split("-");
+  let ball = {
+    love: 0,
+    15: 1,
+    30: 2,
+    40: 3,
+  };
+  let sum = 0;
+  if (score[0] === "all") {
+    return (sum += ball[score[1]] + ball[score[1]]);
+  } else if (score[1] === "all") {
+    return (sum += ball[score[0]] + ball[score[0]]);
+  } else {
+    return (sum += ball[score[0]] + ball[score[1]]);
+  }
+}
+console.log(tennisGamePoints("30-all")); */
