@@ -4595,3 +4595,24 @@ console.log(invertHash({ a: "1", b: "2", c: "3" })); */
   }
 }
 console.log(tennisGamePoints("30-all")); */
+
+// #7kyu Who is the killer?
+/* function killer(suspectInfo, dead) {
+  for (const key in suspectInfo) {
+    for (let i = 0; i < dead.length; i++) {
+      if (suspectInfo[key].includes(dead[i])) {
+        return key;
+      }
+    }
+  }
+}
+console.log(
+  killer(
+    {
+      James: ["Jacob", "Bill", "Lucas"],
+      Johnny: ["David", "Kyle", "Lucas"],
+      Peter: ["Lucy", "Kyle"],
+    },
+    ["Lucas", "Bill"]
+  )
+); */
