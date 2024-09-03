@@ -4616,3 +4616,9 @@ console.log(
     ["Lucas", "Bill"]
   )
 ); */
+
+// #7kyu Sum of angles
+/* function angle(n) {
+  return (n - 2) * 180;
+}
+console.log(angle(3)); */
