@@ -4622,3 +4622,18 @@ console.log(
   return (n - 2) * 180;
 }
 console.log(angle(3)); */
+
+// #7kyu Exclamation marks series #13: Count the number of exclamation marks and question marks, return the product
+/* function product(string) {
+  let exclamation = 0;
+  let question = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "!") {
+      exclamation++;
+    } else if (string[i] === "?") {
+      question++;
+    }
+  }
+  return exclamation * question;
+}
+console.log(product("!!!???")); */
