@@ -4637,3 +4637,18 @@ console.log(angle(3)); */
   return exclamation * question;
 }
 console.log(product("!!!???")); */
+
+// #7kyu Indexed capitalization
+/* function capitalize(s, arr) {
+  s = s.split("");
+  let str = "";
+  for (let i = 0; i < s.length; i++) {
+    if (arr.includes(i)) {
+      str += s[i].toUpperCase();
+    } else {
+      str += s[i];
+    }
+  }
+  return str;
+}
+console.log(capitalize("abcdef", [1, 2, 5])); */
