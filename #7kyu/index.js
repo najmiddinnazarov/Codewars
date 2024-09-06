@@ -4652,3 +4652,12 @@ console.log(product("!!!???")); */
   return str;
 }
 console.log(capitalize("abcdef", [1, 2, 5])); */
+
+// #7kyu Calculate Meal Total
+/* function calculate_total(subtotal, tax, tip) {
+  tax = subtotal * (tax / 100);
+  tip = subtotal * (tip / 100);
+  total = subtotal + tax + tip;
+  return parseFloat(total.toFixed(2));
+}
+console.log(calculate_total(5, 5, 10)); */
