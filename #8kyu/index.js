@@ -1442,3 +1442,13 @@ console.log(getGrade(70, 70, 100)); */
   return /^[123]/g.test(code);
 }
 console.log(validateCode(423)); */
+
+// #8kyu Simple Fun #261: Whose Move
+/* function whoseMove(lastPlayer, win) {
+  if (lastPlayer === "white") {
+    return win ? "white" : "black";
+  } else {
+    return win ? "black" : "white";
+  }
+}
+console.log(whoseMove("black", true)); */
