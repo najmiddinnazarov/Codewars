@@ -1452,3 +1452,9 @@ console.log(validateCode(423)); */
   }
 }
 console.log(whoseMove("black", true)); */
+
+// #8kyu Grasshopper - Terminal game move function
+/* function move(position, roll) {
+  return position + roll * 2;
+}
+console.log(move(2, 5)); */
