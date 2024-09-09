@@ -4661,3 +4661,23 @@ console.log(capitalize("abcdef", [1, 2, 5])); */
   return parseFloat(total.toFixed(2));
 }
 console.log(calculate_total(5, 5, 10)); */
+
+// #7kyu FIXME: Get Full Name
+/* class Dinglemouse {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  getFullName() {
+    if (this.firstName && this.lastName) {
+      return this.firstName + " " + this.lastName;
+    } else if (this.firstName) {
+      return this.firstName;
+    } else if (this.lastName) {
+      return this.lastName;
+    } else {
+      return "";
+    }
+  }
+}
+console.log(new Dinglemouse("Clint", "Eastwood").getFullName()); */
