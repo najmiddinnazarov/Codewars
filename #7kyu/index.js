@@ -4681,3 +4681,17 @@ console.log(calculate_total(5, 5, 10)); */
   }
 }
 console.log(new Dinglemouse("Clint", "Eastwood").getFullName()); */
+
+// #7kyu Averages of numbers
+/* function averages(numbers) {
+  if (!numbers || numbers.length < 2) {
+    return [];
+  }
+  const result = [];
+  for (let i = 0; i < numbers.length - 1; i++) {
+    const avg = (numbers[i] + numbers[i + 1]) / 2;
+    result.push(avg);
+  }
+  return result;
+}
+console.log(averages([1, 3, 5, 1, -10])); */
