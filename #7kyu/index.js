@@ -4695,3 +4695,13 @@ console.log(new Dinglemouse("Clint", "Eastwood").getFullName()); */
   return result;
 }
 console.log(averages([1, 3, 5, 1, -10])); */
+
+// #7kyu Multiples and Digit Sums
+/* function procedure(n) {
+  let sum = 0;
+  for (let i = n; i <= 100; i += n) {
+    sum += eval(eval(i.toString().split("").join("+")));
+  }
+  return sum;
+}
+console.log(procedure(30)); */
