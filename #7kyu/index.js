@@ -4705,3 +4705,17 @@ console.log(averages([1, 3, 5, 1, -10])); */
   return sum;
 }
 console.log(procedure(30)); */
+
+// #7kyu The Ladies of ENIAC
+/* function radLadies(name) {
+  let string = "";
+  for (let i = 0; i < name.length; i++) {
+    if (!/[0-9%$&/£?@]/.test(name[i])) {
+      string += name[i];
+    }
+  }
+  return string.toUpperCase();
+}
+console.log(
+  radLadies("k?%35a&&/y@@@£5599 m93753&$$$c$n///79u??@@%l?975$t?%5y%&$3$1!")
+); */
