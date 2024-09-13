@@ -4719,3 +4719,16 @@ console.log(procedure(30)); */
 console.log(
   radLadies("k?%35a&&/y@@@£5599 m93753&$$$c$n///79u??@@%l?975$t?%5y%&$3$1!")
 ); */
+
+// #7kyu Filter unused digits
+/* function unusedDigits(...args) {
+  let number = "";
+  args = args.join("");
+  for (let i = 0; i <= 9; i++) {
+    if (!args.includes(i)) {
+      number += i;
+    }
+  }
+  return number;
+}
+console.log(unusedDigits(2015, 8, 26)); */
