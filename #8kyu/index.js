@@ -1458,3 +1458,10 @@ console.log(whoseMove("black", true)); */
   return position + roll * 2;
 }
 console.log(move(2, 5)); */
+
+// #8kyu Price of Mangoes
+/* function mango(quantity, price) {
+  quantity = quantity - Math.floor(quantity / 3);
+  return quantity * price;
+}
+console.log(mango(5, 3)); */
