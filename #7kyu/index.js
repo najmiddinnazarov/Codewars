@@ -4732,3 +4732,20 @@ console.log(
   return number;
 }
 console.log(unusedDigits(2015, 8, 26)); */
+
+// #7kyu 80's Kids #1: How Many Licks Does it Take?
+/* function totalLicks(env) {
+  let licks = 252;
+  let challenge;
+  for (const effect in env) {
+    if (env[effect] > 0 && (!challenge || env[effect] > env[challenge])) {
+      challenge = effect;
+    }
+    licks += env[effect];
+  }
+  return (
+    `It took ${licks} licks to get to the tootsie roll center of a tootsie pop.` +
+    (challenge ? ` The toughest challenge was ${challenge}.` : "")
+  );
+}
+console.log(totalLicks({ "freezing temps": 10, "clear skies": -2 })); */
