@@ -4749,3 +4749,12 @@ console.log(unusedDigits(2015, 8, 26)); */
   );
 }
 console.log(totalLicks({ "freezing temps": 10, "clear skies": -2 })); */
+
+// #7kyu Password validator
+/* function password(str) {
+  let upper = /[A-Z]/.test(str);
+  let lower = /[a-z]/.test(str);
+  let number = /[0-9]/.test(str);
+  return upper && lower && number && str.length >= 8;
+}
+console.log(password("AbcdefGhijKlmnopQRsTuvwxyZ1234567890")); */
