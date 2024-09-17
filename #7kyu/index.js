@@ -4758,3 +4758,13 @@ console.log(totalLicks({ "freezing temps": 10, "clear skies": -2 })); */
   return upper && lower && number && str.length >= 8;
 }
 console.log(password("AbcdefGhijKlmnopQRsTuvwxyZ1234567890")); */
+
+// #7kyu Every nth array element. (Basic)
+/* function every(arr, interval = 1, start = 0) {
+  let array = [];
+  for (let i = start; i < arr.length; i += interval) {
+    array.push(arr[i]);
+  }
+  return array;
+}
+console.log(every([0, 1, 2, 3, 4])); */
