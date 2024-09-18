@@ -4768,3 +4768,15 @@ console.log(password("AbcdefGhijKlmnopQRsTuvwxyZ1234567890")); */
   return array;
 }
 console.log(every([0, 1, 2, 3, 4])); */
+
+// #7kyu Find the number of trailing zeros in the binary representation of a number.
+/* function trailingZeros(n) {
+  n = n.toString(2);
+  let sum = 0;
+  while (n > 0 && n % 2 === 0) {
+    sum++;
+    n = n / 2;
+  }
+  return sum;
+}
+console.log(trailingZeros(25)); */
