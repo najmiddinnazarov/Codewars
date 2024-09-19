@@ -4780,3 +4780,13 @@ console.log(every([0, 1, 2, 3, 4])); */
   return sum;
 }
 console.log(trailingZeros(25)); */
+
+// #7kyu Return the first M multiples of N
+/* function multiples(m, n) {
+  let array = [];
+  for (let i = 1; i <= m; i++) {
+    array.push(n * i);
+  }
+  return array;
+}
+console.log(multiples(3, 5)); */
