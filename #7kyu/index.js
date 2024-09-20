@@ -4790,3 +4790,9 @@ console.log(trailingZeros(25)); */
   return array;
 }
 console.log(multiples(3, 5)); */
+
+// #7kyu Interlocking Binary Pairs
+/* function interlockable(a, b) {
+  return (a & b) == 0;
+}
+console.log(interlockable(3n, 6n)); */
