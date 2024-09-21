@@ -4796,3 +4796,16 @@ console.log(multiples(3, 5)); */
   return (a & b) == 0;
 }
 console.log(interlockable(3n, 6n)); */
+
+// #7kyu Authenticate a list of usernames
+/* function authList(arr) {
+  for (let i = 0; i < arr.length; ) {
+    if (/^(?=.*[a-z])(?=.*\d)[a-z\d]{6,10}$/.test(arr[i])) {
+      i++;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(authList(["john123", "alex222", "sandra1"])); */
