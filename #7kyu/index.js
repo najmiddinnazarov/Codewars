@@ -4809,3 +4809,21 @@ console.log(interlockable(3n, 6n)); */
   return true;
 }
 console.log(authList(["john123", "alex222", "sandra1"])); */
+
+// #7kyu Map function issue
+/* var func = function (item) {
+  return item.map((value) => value % 2 === 0);
+};
+
+function map(arr, somefunction) {
+  if (somefunction !== func) {
+    return "given argument is not a function";
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (!Number(arr[i])) {
+      return "array should contain only numbers";
+    }
+  }
+  return somefunction(arr);
+}
+console.log(map([27, 18, 5, "8", "1"], "s")); */
