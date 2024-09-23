@@ -4827,3 +4827,13 @@ function map(arr, somefunction) {
   return somefunction(arr);
 }
 console.log(map([27, 18, 5, "8", "1"], "s")); */
+
+// #7kyu Cut array into smaller parts
+/* function makeParts(arr, chunkSize) {
+  let result = [];
+  for (let i = 0; i < arr.length; ) {
+    result.push(arr.slice(i, (i += chunkSize)));
+  }
+  return result;
+}
+console.log(makeParts([1, 2, 3, 4, 5], 2)); */
