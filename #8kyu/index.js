@@ -1465,3 +1465,13 @@ console.log(move(2, 5)); */
   return quantity * price;
 }
 console.log(mango(5, 3)); */
+
+// #8kyu Smallest unused ID
+/* function nextId(ids) {
+  for (let i = 0; i <= Math.max(...ids) + 1; i++) {
+    if (!ids.includes(i)) {
+      return i;
+    }
+  }
+}
+console.log(nextId([0, 1, 2, 3, 5])); */
