@@ -4837,3 +4837,17 @@ console.log(map([27, 18, 5, "8", "1"], "s")); */
   return result;
 }
 console.log(makeParts([1, 2, 3, 4, 5], 2)); */
+
+// #7kyu Find the calculation type
+/* function calcType(a, b, res) {
+  if (a + b === res) {
+    return "addition";
+  } else if (a - b === res) {
+    return "subtraction";
+  } else if (a * b === res) {
+    return "multiplication";
+  } else {
+    return "division";
+  }
+}
+console.log(calcType(1, 2, 3)); */
