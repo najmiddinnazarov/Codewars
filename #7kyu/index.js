@@ -4851,3 +4851,16 @@ console.log(makeParts([1, 2, 3, 4, 5], 2)); */
   }
 }
 console.log(calcType(1, 2, 3)); */
+
+// #7kyu Find the sum of the roots of a quadratic equation
+/* function roots(a, b, c) {
+  let sum = 0;
+  let discriminant = b ** 2 - 4 * a * c;
+  if (discriminant < 0) {
+    return null;
+  } else {
+    sum = -b / a;
+  }
+  return Number(sum.toFixed(2));
+}
+console.log(roots(1, -35, -23)); */
