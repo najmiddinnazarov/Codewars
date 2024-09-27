@@ -4864,3 +4864,10 @@ console.log(calcType(1, 2, 3)); */
   return Number(sum.toFixed(2));
 }
 console.log(roots(1, -35, -23)); */
+
+// #7kyu Two Oldest Ages
+/* function twoOldestAges(ages) {
+  ages = ages.sort((a, b) => b - a);
+  return [ages[1], ages[0]];
+}
+console.log(twoOldestAges([1, 5, 87, 45, 8, 8])); */
