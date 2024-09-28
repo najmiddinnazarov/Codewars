@@ -4871,3 +4871,17 @@ console.log(roots(1, -35, -23)); */
   return [ages[1], ages[0]];
 }
 console.log(twoOldestAges([1, 5, 87, 45, 8, 8])); */
+
+// #7kyu Make a function that does arithmetic!
+/* function arithmetic(a, b, operator) {
+  if ("add" === operator) {
+    return a + b;
+  } else if ("subtract" === operator) {
+    return a - b;
+  } else if ("multiply" === operator) {
+    return a * b;
+  } else {
+    return a / b;
+  }
+}
+console.log(arithmetic(1, 2, "add")); */
