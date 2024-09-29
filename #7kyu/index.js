@@ -4885,3 +4885,16 @@ console.log(twoOldestAges([1, 5, 87, 45, 8, 8])); */
   }
 }
 console.log(arithmetic(1, 2, "add")); */
+
+// #7kyu Looking for a benefactor
+/* function newAvg(arr, newavg) {
+  let n = arr.length;
+  let sum = arr.reduce((acc, num) => acc + num, 0);
+  let newDonation = newavg * (n + 1) - sum;
+  if (newDonation <= 0) {
+    throw new Error("Expected New Average is too low");
+  } else {
+    return Math.ceil(newDonation);
+  }
+}
+console.log(newAvg([14, 30, 5, 7, 9, 11, 15], 92)); */
