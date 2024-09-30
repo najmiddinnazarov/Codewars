@@ -4898,3 +4898,14 @@ console.log(arithmetic(1, 2, "add")); */
   }
 }
 console.log(newAvg([14, 30, 5, 7, 9, 11, 15], 92)); */
+
+// #7kyu Alphabetical Addition
+/* function addLetters(...letters) {
+  const alphabet = "0abcdefghijklmnopqrstuvwxyz";
+  let count = 0;
+  for (let i = 0; i < letters.length; i++) {
+    count += alphabet.indexOf(letters[i]);
+  }
+  return count % 26 === 0 ? "z" : alphabet[count] || alphabet[count % 26];
+}
+console.log(addLetters("l", "x", "p")); */
