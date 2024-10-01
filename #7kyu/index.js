@@ -4909,3 +4909,18 @@ console.log(newAvg([14, 30, 5, 7, 9, 11, 15], 92)); */
   return count % 26 === 0 ? "z" : alphabet[count] || alphabet[count % 26];
 }
 console.log(addLetters("l", "x", "p")); */
+
+// #7kyu Count the divisors of a number
+/* function getDivisorsCnt(n) {
+  let count = 0;
+  for (let i = 1; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      count += 1;
+      if (i !== n / i) {
+        count += 1;
+      }
+    }
+  }
+  return count;
+}
+console.log(getDivisorsCnt(11)); */
