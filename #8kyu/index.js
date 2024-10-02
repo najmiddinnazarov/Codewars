@@ -1475,3 +1475,9 @@ console.log(mango(5, 3)); */
   }
 }
 console.log(nextId([0, 1, 2, 3, 5])); */
+
+// #8kyu Find the Integral
+/* function integrate(coefficient, exponent) {
+  return `${coefficient / (exponent + 1)}x^${exponent + 1}`;
+}
+console.log(integrate(3, 2)); */
