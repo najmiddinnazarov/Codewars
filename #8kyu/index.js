@@ -1481,3 +1481,9 @@ console.log(nextId([0, 1, 2, 3, 5])); */
   return `${coefficient / (exponent + 1)}x^${exponent + 1}`;
 }
 console.log(integrate(3, 2)); */
+
+// #8kyu Convert to Binary
+/* function toBinary(n) {
+  return Number(n.toString(2));
+}
+console.log(toBinary(2)); */
