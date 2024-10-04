@@ -1487,3 +1487,25 @@ console.log(integrate(3, 2)); */
   return Number(n.toString(2));
 }
 console.log(toBinary(2)); */
+
+// #8kyu Finish Guess the Number Game
+/* class Guesser {
+  constructor(number, lives) {
+    this.number = number;
+    this.lives = lives;
+  }
+
+  guess(n) {
+    if (this.lives <= 0) {
+      throw new Error("Error!");
+    }
+    if (n === this.number) {
+      return true;
+    } else {
+      this.lives--;
+      return false;
+    }
+  }
+}
+let guesser = new Guesser(10, 2);
+console.log(guesser.guess(11)); */
