@@ -4924,3 +4924,36 @@ console.log(addLetters("l", "x", "p")); */
   return count;
 }
 console.log(getDivisorsCnt(11)); */
+
+// #7kyu The Office I - Outed
+/* function outed(meet, boss) {
+  let sum = 0;
+  let team = 1;
+  for (const key in meet) {
+    if (key !== boss) {
+      sum += meet[key];
+      team++;
+    } else {
+      sum += meet[key] + meet[key];
+    }
+  }
+  return sum / team <= 5 ? "Get Out Now!" : "Nice Work Champ!";
+}
+console.log(
+  outed(
+    {
+      tim: 7,
+      jim: 4,
+      randy: 5,
+      sandy: 4,
+      andy: 8,
+      katie: 9,
+      laura: 3,
+      saajid: 9,
+      alex: 0,
+      john: 5,
+      mr: 5,
+    },
+    "jim"
+  )
+); */
