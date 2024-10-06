@@ -4957,3 +4957,14 @@ console.log(
     "jim"
   )
 ); */
+
+// #7kyu Number to digit tiers
+/* function createArrayOfTiers(num) {
+  num = num.toString();
+  let result = [];
+  for (let i = 1; i <= num.length; i++) {
+    result.push(num.slice(0, i));
+  }
+  return result;
+}
+console.log(createArrayOfTiers(2017)); */
