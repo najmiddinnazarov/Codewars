@@ -4968,3 +4968,14 @@ console.log(
   return result;
 }
 console.log(createArrayOfTiers(2017)); */
+
+// #7kyu Odder Than the Rest
+/* function oddOne(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2) {
+      return arr.indexOf(arr[i]);
+    }
+  }
+  return -1;
+}
+console.log(oddOne([2, 4, 6, 7, 10])); */
