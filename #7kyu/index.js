@@ -4979,3 +4979,9 @@ console.log(createArrayOfTiers(2017)); */
   return -1;
 }
 console.log(oddOne([2, 4, 6, 7, 10])); */
+
+// #7kyu Thinkful - String Drills: Quotable
+/* function quotable(name, quote) {
+  return `${name} said: "${quote}"`;
+}
+console.log(quotable("Grae", "Practice makes perfect")); */
