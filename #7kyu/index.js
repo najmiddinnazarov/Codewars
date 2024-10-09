@@ -4985,3 +4985,13 @@ console.log(oddOne([2, 4, 6, 7, 10])); */
   return `${name} said: "${quote}"`;
 }
 console.log(quotable("Grae", "Practice makes perfect")); */
+
+// #7kyu String Scramble
+/* function scramble(str, arr) {
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    result[arr[i]] = str[i];
+  }
+  return result.join("");
+}
+console.log(scramble("abcd", [0, 3, 1, 2])); */
