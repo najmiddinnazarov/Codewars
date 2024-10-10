@@ -4995,3 +4995,28 @@ console.log(quotable("Grae", "Practice makes perfect")); */
   return result.join("");
 }
 console.log(scramble("abcd", [0, 3, 1, 2])); */
+
+// #7kyu Password maker
+/* function makePassword(phrase) {
+  let words = {
+    I: 1,
+    i: 1,
+    O: "0",
+    o: "0",
+    S: 5,
+    s: 5,
+  };
+  phrase = phrase.split(" ");
+  let str = "";
+  for (let i = 0; i < phrase.length; i++) {
+    str += phrase[i].slice(0, 1);
+  }
+  return str.replace(/[IiOoSs]/gi, (x) => {
+    if (words[x]) {
+      return words[x];
+    } else {
+      return x;
+    }
+  });
+}
+console.log(makePassword("Give me liberty or give me death")); */
