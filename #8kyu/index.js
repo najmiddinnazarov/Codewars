@@ -1509,3 +1509,22 @@ console.log(toBinary(2)); */
 }
 let guesser = new Guesser(10, 2);
 console.log(guesser.guess(11)); */
+
+// #8kyu L1: Bartender, drinks!
+/* function getDrinkByProfession(param) {
+  let obj = {
+    jabroni: "Patron Tequila",
+    "school counselor": "Anything with Alcohol",
+    programmer: "Hipster Craft Beer",
+    "bike gang member": "Moonshine",
+    politician: "Your tax dollars",
+    rapper: "Cristal",
+  };
+  param = param.toLowerCase();
+  if (obj[param]) {
+    return obj[param];
+  } else {
+    return "Beer";
+  }
+}
+console.log(getDrinkByProfession("jabrOni")); */
