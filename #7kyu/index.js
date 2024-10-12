@@ -5020,3 +5020,17 @@ console.log(scramble("abcd", [0, 3, 1, 2])); */
   });
 }
 console.log(makePassword("Give me liberty or give me death")); */
+
+// #7kyu Speed Control
+/* function gps(s, x) {
+  let maxSpeed = 0;
+  if (x.length <= 1) return 0;
+  for (let i = 0; i < x.length - 1; i++) {
+    let speed = (3600 * (x[i + 1] - x[i])) / s;
+    if (speed > maxSpeed) {
+      maxSpeed = speed;
+    }
+  }
+  return Math.floor(maxSpeed);
+}
+console.log(gps(15, [0.0, 0.19, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25])); */
