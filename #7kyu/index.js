@@ -5034,3 +5034,16 @@ console.log(makePassword("Give me liberty or give me death")); */
   return Math.floor(maxSpeed);
 }
 console.log(gps(15, [0.0, 0.19, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25])); */
+
+// #7kyu Dominant array elements
+/* function solve(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > Math.max(...arr.slice(i + 1))) {
+      result.push(arr[i]);
+    }
+  }
+  return [...new Set(result)];
+}
+console.log(solve([5, 4, 3, 2, 1]));
+ */
