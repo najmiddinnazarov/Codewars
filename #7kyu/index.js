@@ -5047,3 +5047,17 @@ console.log(gps(15, [0.0, 0.19, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25])); *
 }
 console.log(solve([5, 4, 3, 2, 1]));
  */
+
+// #7kyu Super Secret Password Generator
+/* var superSecretChars = [
+  ["a", "@"],
+  ["s", "$"],
+  ["o", "0"],
+  ["h", "5"],
+  ["x", "*"],
+];
+function createSSP(password) {
+  let object = Object.fromEntries(superSecretChars);
+  return password.replace(/[A-Za-z]/gi, (x) => object[x.toLowerCase()] || x);
+}
+console.log(createSSP("Haxorpassword")); */
