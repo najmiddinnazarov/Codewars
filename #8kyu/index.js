@@ -1534,3 +1534,9 @@ console.log(getDrinkByProfession("jabrOni")); */
   return `${coefficient * exponent}x^${exponent - 1}`;
 }
 console.log(derive(7, 8)); */
+
+// #8kyu Take an Arrow to the knee, Functionally
+/* var ArrowFunc = function (arr) {
+  return arr.map((value) => String.fromCharCode(value)).join("");
+};
+console.log(ArrowFunc([84, 101, 115, 116])); */
