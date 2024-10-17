@@ -5061,3 +5061,13 @@ function createSSP(password) {
   return password.replace(/[A-Za-z]/gi, (x) => object[x.toLowerCase()] || x);
 }
 console.log(createSSP("Haxorpassword")); */
+
+// #7kyu Wise drunk man
+/* function wdm(talk) {
+  return talk
+    .split(/puke|hiccup/gi)
+    .join(" ")
+    .replace(/ +/g, " ")
+    .trim();
+}
+console.log(wdm("puke All's well hiccup     that ends hiccup well puke")); */
