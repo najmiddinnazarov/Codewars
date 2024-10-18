@@ -5071,3 +5071,9 @@ console.log(createSSP("Haxorpassword")); */
     .trim();
 }
 console.log(wdm("puke All's well hiccup     that ends hiccup well puke")); */
+
+// #7kyu Longest vowel chain
+/* function solve(s) {
+  return s.match(/[aeiou]+/gi).sort((a, b) => b.length - a.length)[0].length;
+}
+console.log(solve("chrononhotonthuooaos")); */
