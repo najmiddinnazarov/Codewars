@@ -5077,3 +5077,23 @@ console.log(wdm("puke All's well hiccup     that ends hiccup well puke")); */
   return s.match(/[aeiou]+/gi).sort((a, b) => b.length - a.length)[0].length;
 }
 console.log(solve("chrononhotonthuooaos")); */
+
+// #7kyu Insert Dashes 2
+/* function insertDashII(num) {
+  let result = "";
+  num = num.toString();
+  for (let i = 0; i < num.length; i++) {
+    result += num[i];
+    if (i < num.length - 1) {
+      let current = parseInt(num[i]);
+      let next = parseInt(num[i + 1]);
+      if (current % 2 === 0 && next % 2 === 0 && current !== 0 && next !== 0) {
+        result += "*";
+      } else if (current % 2 === 1 && next % 2 === 1) {
+        result += "-";
+      }
+    }
+  }
+  return result;
+}
+console.log(insertDashII(40546793)); */
