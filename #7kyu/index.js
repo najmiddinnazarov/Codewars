@@ -5097,3 +5097,15 @@ console.log(solve("chrononhotonthuooaos")); */
   return result;
 }
 console.log(insertDashII(40546793)); */
+
+// #7kyu "Very Even" Numbers.
+/* function isVeryEvenNumber(n) {
+  let sum = n;
+  n = n.toString();
+  while (n.length > 1) {
+    n = eval(n.split("").join("+")).toString();
+    sum = n;
+  }
+  return sum % 2 === 0;
+}
+console.log(isVeryEvenNumber(841)); */
