@@ -5109,3 +5109,21 @@ console.log(insertDashII(40546793)); */
   return sum % 2 === 0;
 }
 console.log(isVeryEvenNumber(841)); */
+
+// #7kyu Cryptanalysis Word Patterns
+/* function wordPattern(word) {
+  word = word.toLowerCase();
+  let pattern = [];
+  let letterCodes = {};
+  let currentCode = 0;
+  for (let i = 0; i < word.length; i++) {
+    const letter = word[i];
+    if (!(letter in letterCodes)) {
+      letterCodes[letter] = currentCode;
+      currentCode++;
+    }
+    pattern.push(letterCodes[letter]);
+  }
+  return pattern.join(".");
+}
+console.log(wordPattern("hello")); */
