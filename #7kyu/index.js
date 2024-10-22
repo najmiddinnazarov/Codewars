@@ -5127,3 +5127,17 @@ console.log(isVeryEvenNumber(841)); */
   return pattern.join(".");
 }
 console.log(wordPattern("hello")); */
+
+// #7kyu Unscrambled eggs
+/* function unscrambleEggs(word) {
+  let string = "";
+  for (let i = 0; i < word.length; i++) {
+    if (word.slice(i).startsWith("egg")) {
+      i += 2;
+    } else {
+      string += word[i];
+    }
+  }
+  return string;
+}
+console.log(unscrambleEggs("Beggegeggineggneggeregg")); */
