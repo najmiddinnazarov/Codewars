@@ -5141,3 +5141,9 @@ console.log(wordPattern("hello")); */
   return string;
 }
 console.log(unscrambleEggs("Beggegeggineggneggeregg")); */
+
+// #7kyu Find the lucky numbers
+/* var filterLucky = (x) => {
+  return x.filter((value) => /[7]/.test(value.toString()));
+};
+console.log(filterLucky([1, 2, 3, 4, 5, 6, 7, 68, 69, 70, 15, 17])); */
