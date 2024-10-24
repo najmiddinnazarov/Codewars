@@ -5147,3 +5147,19 @@ console.log(unscrambleEggs("Beggegeggineggneggeregg")); */
   return x.filter((value) => /[7]/.test(value.toString()));
 };
 console.log(filterLucky([1, 2, 3, 4, 5, 6, 7, 68, 69, 70, 15, 17])); */
+
+// #7kyu Multiples By Permutations II
+/* function findLowestInt(k) {
+  let k1 = k;
+  let k2 = k + 1;
+  for (let i = 1; true; i++) {
+    let product1 = (k1 * i).toString();
+    let product2 = (k2 * i).toString();
+    if (
+      product1.split("").sort().join("") === product2.split("").sort().join("")
+    ) {
+      return i;
+    }
+  }
+}
+console.log(findLowestInt(325)); */
