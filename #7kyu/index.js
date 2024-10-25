@@ -5163,3 +5163,14 @@ console.log(filterLucky([1, 2, 3, 4, 5, 6, 7, 68, 69, 70, 15, 17])); */
   }
 }
 console.log(findLowestInt(325)); */
+
+// #7kyu Simple string reversal II
+/* function solve(st, a, b) {
+  let splitText = st.slice(a, b + 1 || st.length);
+  return (
+    st.slice(0, a) +
+    splitText.split("").reverse().join("") +
+    st.slice(b + 1 || st.length)
+  );
+}
+console.log(solve("codewars", 1, 5)); */
