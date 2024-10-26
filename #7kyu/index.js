@@ -5186,3 +5186,18 @@ console.log(solve("codewars", 1, 5)); */
   return number1Sum === num2 && number2Sum === num1;
 }
 console.log(amicableNumbers(220, 284)); */
+
+// #7kyu Multiply Adjacent Digits
+/* function digitMultiplication(expr) {
+  let string = "";
+  for (let i = 0; i < expr.length; i++) {
+    if (/[0-9]/.test(expr[i])) {
+      string += expr[i];
+      string += /[0-9]/.test(expr[i + 1]) ? "*" : "";
+    } else {
+      string += expr[i];
+    }
+  }
+  return eval(string);
+}
+console.log(digitMultiplication("10000345+77-2")); */
