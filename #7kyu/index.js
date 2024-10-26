@@ -5174,3 +5174,15 @@ console.log(findLowestInt(325)); */
   );
 }
 console.log(solve("codewars", 1, 5)); */
+
+// #7kyu The Most Amicable of Numbers
+/* function amicableNumbers(num1, num2) {
+  let number1Sum = 0;
+  let number2Sum = 0;
+  for (let i = 1; i <= Math.max(num1, num2) / 2; i++) {
+    number1Sum += num1 % i === 0 ? i : 0;
+    number2Sum += num2 % i === 0 ? i : 0;
+  }
+  return number1Sum === num2 && number2Sum === num1;
+}
+console.log(amicableNumbers(220, 284)); */
