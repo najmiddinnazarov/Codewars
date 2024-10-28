@@ -5201,3 +5201,14 @@ console.log(amicableNumbers(220, 284)); */
   return eval(string);
 }
 console.log(digitMultiplication("10000345+77-2")); */
+
+// #7kyu Round to nearest 0 or 5
+/* function roundToFive(numbers) {
+  let result = [];
+  for (let i = 0; i < numbers.length; i++) {
+    let num = Math.round(numbers[i] / 5);
+    result.push(num * 5);
+  }
+  return result;
+}
+console.log(roundToFive([34.5, 56.2, 11, 13])); */
