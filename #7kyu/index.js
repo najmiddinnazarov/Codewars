@@ -5212,3 +5212,13 @@ console.log(digitMultiplication("10000345+77-2")); */
   return result;
 }
 console.log(roundToFive([34.5, 56.2, 11, 13])); */
+
+// #7kyu Ghostbusters (whitespace removal)
+/* function ghostBusters(building) {
+  if (building.includes(" ")) {
+    return building.split(" ").join("");
+  } else {
+    return "You just wanted my autograph didn't you?";
+  }
+}
+console.log(ghostBusters("Factor y")); */
