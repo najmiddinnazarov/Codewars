@@ -5222,3 +5222,18 @@ console.log(roundToFive([34.5, 56.2, 11, 13])); */
   }
 }
 console.log(ghostBusters("Factor y")); */
+
+// #7kyu DigitAll
+/* function digitAll(x) {
+  if (typeof x !== "string") {
+    return "Invalid input !";
+  }
+  let result = "";
+  for (let i = 0; i < x.length; i++) {
+    if (/[0-9]/.test(x[i])) {
+      result += x[i];
+    }
+  }
+  return result;
+}
+console.log(digitAll(["yes", "i", "am", "kidding", "you", "!"])); */
