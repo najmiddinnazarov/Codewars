@@ -5237,3 +5237,18 @@ console.log(ghostBusters("Factor y")); */
   return result;
 }
 console.log(digitAll(["yes", "i", "am", "kidding", "you", "!"])); */
+
+// #7kyu Find missing numbers
+/* function findMissingNumbers(arr) {
+  if (arr === undefined) {
+    return [];
+  }
+  let result = [];
+  for (let i = Math.min(...arr); i < Math.max(...arr); i++) {
+    if (!arr.includes(i)) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+console.log(findMissingNumbers(undefined)); */
