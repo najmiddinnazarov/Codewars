@@ -5252,3 +5252,20 @@ console.log(digitAll(["yes", "i", "am", "kidding", "you", "!"])); */
   return result;
 }
 console.log(findMissingNumbers(undefined)); */
+
+// #7kyu Lucky Bus Ticket
+/* function isLucky(ticket) {
+  if (ticket.length !== 6 || !/^\d{6}$/.test(ticket)) {
+    return false;
+  }
+  const firstHalf = ticket.slice(0, 3);
+  const secondHalf = ticket.slice(3);
+  const sumFirstHalf = firstHalf
+    .split("")
+    .reduce((sum, digit) => sum + Number(digit), 0);
+  const sumSecondHalf = secondHalf
+    .split("")
+    .reduce((sum, digit) => sum + Number(digit), 0);
+  return sumFirstHalf === sumSecondHalf;
+}
+console.log(isLucky("")); */
