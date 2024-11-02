@@ -5269,3 +5269,14 @@ console.log(findMissingNumbers(undefined)); */
   return sumFirstHalf === sumSecondHalf;
 }
 console.log(isLucky("")); */
+
+// #7kyu Diving Scores
+/* function scoreOfDive(scores, tariff) {
+  let array = scores.sort((a, b) => a - b);
+  let sum = 0;
+  for (let i = 2; i < array.length - 2; i++) {
+    sum += array[i];
+  }
+  return (sum * tariff).toFixed(2);
+}
+console.log(scoreOfDive([7, 7.5, 8, 7.5, 6, 7, 7], 3)); */
