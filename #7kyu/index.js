@@ -5280,3 +5280,19 @@ console.log(isLucky("")); */
   return (sum * tariff).toFixed(2);
 }
 console.log(scoreOfDive([7, 7.5, 8, 7.5, 6, 7, 7], 3)); */
+
+// #7kyu Mew Cipher
+/* function decipher(code) {
+  let alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let result = "";
+  for (let i = 0; i < code[0].length; i++) {
+    let sum = 0;
+    for (let j = 0; j < code.length; j++) {
+      sum += alphabet.indexOf(code[j][i]);
+    }
+    let avg = Math.floor(sum / code.length);
+    result += alphabet[avg];
+  }
+  return result;
+}
+console.log(decipher(["a  ", " b ", "  c", "   ", "   "])); */
