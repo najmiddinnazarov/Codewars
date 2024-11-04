@@ -1540,3 +1540,9 @@ console.log(derive(7, 8)); */
   return arr.map((value) => String.fromCharCode(value)).join("");
 };
 console.log(ArrowFunc([84, 101, 115, 116])); */
+
+// #8kyu Grasshopper - Messi goals function
+/* function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+console.log(goals(43, 10, 5)); */
