@@ -5296,3 +5296,9 @@ console.log(scoreOfDive([7, 7.5, 8, 7.5, 6, 7, 7], 3)); */
   return result;
 }
 console.log(decipher(["a  ", " b ", "  c", "   ", "   "])); */
+
+// #7kyu Say "Hello World" JS Style
+/* var say = function (string1) {
+  return (x) => string1 + " " + x;
+};
+console.log(say("Hello")("World")); */
