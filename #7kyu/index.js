@@ -5302,3 +5302,21 @@ console.log(decipher(["a  ", " b ", "  c", "   ", "   "])); */
   return (x) => string1 + " " + x;
 };
 console.log(say("Hello")("World")); */
+
+// #7kyu Scoring Tests
+/* function scoreTest(str, right, omit, wrong) {
+  let rightAnswer = 0;
+  let omitAnswer = 0;
+  let wrongAnswer = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === 0) {
+      rightAnswer++;
+    } else if (str[i] === 1) {
+      omitAnswer++;
+    } else {
+      wrongAnswer++;
+    }
+  }
+  return rightAnswer * right + omitAnswer * omit - wrongAnswer * wrong;
+}
+console.log(scoreTest([0, 0, 0, 0, 2, 1, 0], 2, 0, 1)); */
