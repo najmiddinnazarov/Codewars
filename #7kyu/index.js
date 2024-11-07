@@ -5320,3 +5320,22 @@ console.log(say("Hello")("World")); */
   return rightAnswer * right + omitAnswer * omit - wrongAnswer * wrong;
 }
 console.log(scoreTest([0, 0, 0, 0, 2, 1, 0], 2, 0, 1)); */
+
+// #7kyu Offload your work!
+/* function workNeeded(projectMinutes, freelancers) {
+  let freelancerTime = 0;
+  for (let i = 0; i < freelancers.length; i++) {
+    freelancerTime += freelancers[i][0] * 60 + freelancers[i][1];
+  }
+  let projectTime = projectMinutes - freelancerTime;
+  if (projectTime <= 0) {
+    return "Easy Money!";
+  } else if (projectTime >= 60) {
+    return `I need to work ${Math.floor(
+      projectTime / 60
+    )} hour(s) and ${Math.floor(projectTime % 60)} minute(s)`;
+  } else {
+    return `I need to work 0 hour(s) and ${projectTime} minute(s)`;
+  }
+}
+console.log(workNeeded(60, [[1, 0]])); */
