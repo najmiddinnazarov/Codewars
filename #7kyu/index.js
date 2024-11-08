@@ -5339,3 +5339,24 @@ console.log(scoreTest([0, 0, 0, 0, 2, 1, 0], 2, 0, 1)); */
   }
 }
 console.log(workNeeded(60, [[1, 0]])); */
+
+// #7kyu Swap items in a dictionary
+/* function switchDict(dic) {
+  let result = {};
+  for (const key in dic) {
+    if (dic[key] in result) {
+      result[dic[key]] = [...result[dic[key]], key];
+    } else {
+      result[dic[key]] = [key];
+    }
+  }
+  return result;
+}
+console.log(
+  switchDict({
+    Ice: "Cream",
+    Age: "21",
+    Light: "Cream",
+    Double: "Cream",
+  })
+); */
