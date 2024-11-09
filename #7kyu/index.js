@@ -5360,3 +5360,13 @@ console.log(
     Double: "Cream",
   })
 ); */
+
+// #7kyu Recursive Ninja
+/* function chirp(n) {
+  if (n === 1) {
+    return "chirp";
+  } else {
+    return "chirp-" + chirp(n - 1);
+  }
+}
+console.log(chirp(2)); */
