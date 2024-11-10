@@ -5370,3 +5370,27 @@ console.log(
   }
 }
 console.log(chirp(2)); */
+
+// #7kyu Find your caterer
+/* function findCaterer(budget, people) {
+  if (people === 0 || budget < 15 * people) {
+    return -1;
+  }
+  const sum1 = 15 * people;
+  const sum2 = 20 * people;
+  let sum3 = 30 * people;
+  if (people > 60) {
+    sum3 *= 0.8;
+  }
+  if (sum3 <= budget) {
+    return 3;
+  }
+  if (sum2 <= budget) {
+    return 2;
+  }
+  if (sum1 <= budget) {
+    return 1;
+  }
+  return -1;
+}
+console.log(findCaterer(200, 9)); */
