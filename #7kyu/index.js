@@ -5394,3 +5394,9 @@ console.log(chirp(2)); */
   return -1;
 }
 console.log(findCaterer(200, 9)); */
+
+// #7kyu Simple Fun #182: Happy "g"
+/* function gHappy(str) {
+  return str.replace(/[gg]{2,}/gi, "").includes("g") === false;
+}
+console.log(gHappy("gg0gg3gg0gggog213g2g")); */
