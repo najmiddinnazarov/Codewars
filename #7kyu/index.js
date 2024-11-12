@@ -5400,3 +5400,9 @@ console.log(findCaterer(200, 9)); */
   return str.replace(/[gg]{2,}/gi, "").includes("g") === false;
 }
 console.log(gHappy("gg0gg3gg0gggog213g2g")); */
+
+// #7kyu Find The Duplicated Number in a Consecutive Unsorted List
+/* function findDup(arr) {
+  return +arr.filter((value, index) => arr.indexOf(value) !== index).join("");
+}
+console.log(findDup([1, 2, 2, 3])); */
