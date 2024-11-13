@@ -5406,3 +5406,22 @@ console.log(gHappy("gg0gg3gg0gggog213g2g")); */
   return +arr.filter((value, index) => arr.indexOf(value) !== index).join("");
 }
 console.log(findDup([1, 2, 2, 3])); */
+
+// #7kyu Katastrophe!
+/* function strongEnough(earthquake, age) {
+  let sum = 1;
+  for (let i = 0; i < earthquake.length; i++) {
+    sum *= eval(earthquake[i].join("+"));
+  }
+  return 1000 * 0.99 ** age >= sum ? "Safe!" : "Needs Reinforcement!";
+}
+console.log(
+  strongEnough(
+    [
+      [2, 3, 1],
+      [3, 1, 1],
+      [1, 1, 2],
+    ],
+    2
+  )
+); */
