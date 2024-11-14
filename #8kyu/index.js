@@ -1546,3 +1546,9 @@ console.log(ArrowFunc([84, 101, 115, 116])); */
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 console.log(goals(43, 10, 5)); */
+
+// #8kyu Difference of Volumes of Cuboids
+/* function findDifference(a, b) {
+  return Math.abs(eval(a.join("*")) - eval(b.join("*")));
+}
+console.log(findDifference([3, 2, 5], [1, 4, 4])); */
