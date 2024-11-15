@@ -1552,3 +1552,15 @@ console.log(goals(43, 10, 5)); */
   return Math.abs(eval(a.join("*")) - eval(b.join("*")));
 }
 console.log(findDifference([3, 2, 5], [1, 4, 4])); */
+
+// #8kyu Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+/* function remove(s, n) {
+  let string = "";
+  let number = n >= s.length ? s.length : n;
+  for (let i = number; i > 0; i--) {
+    string = s.replace("!", "");
+    s = s.replace("!", "");
+  }
+  return string;
+}
+console.log(remove("!!!Hi !!hi!!! !hi", 2)); */
