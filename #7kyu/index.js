@@ -5425,3 +5425,24 @@ console.log(
     2
   )
 ); */
+
+// #7kyu Credit Card Checker
+/* function validCard(card) {
+  let string = card.split(" ").join("");
+  let reverse = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+    reverse += string[i];
+  }
+  let sort = [];
+  for (let i = 0; i < reverse.length; i++) {
+    if (i % 2) {
+      sort.push(reverse[i] * 2);
+    } else {
+      sort.push(parseInt(reverse[i]));
+    }
+  }
+  let adjusted = sort.map((value) => (value > 9 ? value - 9 : value));
+  let total = adjusted.reduce((sum, value) => sum + value, 0);
+  return total % 10 === 0;
+}
+console.log(validCard("5457 6238 9823 4311")); */
