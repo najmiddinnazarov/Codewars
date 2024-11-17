@@ -1564,3 +1564,10 @@ console.log(findDifference([3, 2, 5], [1, 4, 4])); */
   return string;
 }
 console.log(remove("!!!Hi !!hi!!! !hi", 2)); */
+
+// #8kyu Classic Hello World
+/* class Solution {
+  static main(...args) {
+    console.log("Hello World!");
+  }
+} */
