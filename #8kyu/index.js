@@ -1585,3 +1585,9 @@ console.log(remove("!!!Hi !!hi!!! !hi", 2)); */
   }
 }
 console.log(getRealFloor(1)); */
+
+// #8kyu How many lightsabers do you own?
+/* function howManyLightsabersDoYouOwn(name) {
+  return name === "Zach" ? 18 : 0;
+}
+console.log(howManyLightsabersDoYouOwn("Zach")); */
