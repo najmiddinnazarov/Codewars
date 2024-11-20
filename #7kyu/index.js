@@ -5446,3 +5446,20 @@ console.log(
   return total % 10 === 0;
 }
 console.log(validCard("5457 6238 9823 4311")); */
+
+// #7kyu Valid HK Phone Number
+/* function isValidHKPhoneNumber(params) {
+  let array = params.split(" ");
+  return /[0-9]{4}/.test(array[0]) && /[0-9]{4}/.test(array[1]);
+}
+function hasValidHKPhoneNumber(params) {
+  let array = params.split(" ");
+  for (let i = 0; i < array.length; i++) {
+    if (/[0-9]{4}/.test(array[i]) && /[0-9]{4}/.test(array[i + 1])) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(isValidHKPhoneNumber("836g 2986"));
+console.log(hasValidHKPhoneNumber("What about 9684 2396?")); */
