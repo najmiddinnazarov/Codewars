@@ -5463,3 +5463,15 @@ function hasValidHKPhoneNumber(params) {
 }
 console.log(isValidHKPhoneNumber("836g 2986"));
 console.log(hasValidHKPhoneNumber("What about 9684 2396?")); */
+
+// #7kyu Debug the functions EASY
+/* function multi(arr) {
+  return eval(arr.join("*"));
+}
+function add(arr) {
+  return eval(arr.join("+"));
+}
+function reverse(str) {
+  return str.split("").reverse().join("");
+}
+console.log(multi([5, 1, 5])); */
