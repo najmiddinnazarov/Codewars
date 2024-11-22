@@ -5475,3 +5475,9 @@ function reverse(str) {
   return str.split("").reverse().join("");
 }
 console.log(multi([5, 1, 5])); */
+
+// #7kyu Is Undefined?
+/* function isUndefined(value) {
+  return value == undefined;
+}
+console.log(isUndefined(1)); */
