@@ -5481,3 +5481,7 @@ console.log(multi([5, 1, 5])); */
   return value == undefined;
 }
 console.log(isUndefined(1)); */
+
+// #7kyu JS Golfing #7: Join
+/* x=a=>a.join``
+console.log(x([undefined, null])); */
