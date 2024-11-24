@@ -5485,3 +5485,14 @@ console.log(isUndefined(1)); */
 // #7kyu JS Golfing #7: Join
 /* x=a=>a.join``
 console.log(x([undefined, null])); */
+
+// #7kyu Give me the k first digits. Odd digits.
+/* function findOddDigits(n, k) {
+  let oddNumbers = "";
+  n = n.toString();
+  for (let i = 0; i < n.length; i++) {
+    oddNumbers += n[i] % 2 ? n[i] : "";
+  }
+  return oddNumbers.length >= k ? +oddNumbers.slice(0, k) : 0;
+}
+console.log(findOddDigits(123456789111, 5)); */
