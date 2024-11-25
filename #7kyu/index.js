@@ -5496,3 +5496,22 @@ console.log(x([undefined, null])); */
   return oddNumbers.length >= k ? +oddNumbers.slice(0, k) : 0;
 }
 console.log(findOddDigits(123456789111, 5)); */
+
+// #7kyu UniDecoder
+/* function uniDecoder(...args) {
+  let boolean = args.some(
+    (value) => typeof value === "number" && Number.isInteger(value)
+  );
+  let result = "";
+  if (boolean) {
+    for (let i = 0; i < args.length; i++) {
+      if (typeof args[i] === "number") {
+        result += String.fromCharCode(args[i]);
+      }
+    }
+  } else {
+    return "not a valid character code";
+  }
+  return result;
+}
+console.log(uniDecoder("test", true, 99)); */
