@@ -5515,3 +5515,13 @@ console.log(findOddDigits(123456789111, 5)); */
   return result;
 }
 console.log(uniDecoder("test", true, 99)); */
+
+// #7kyu Unique Sum
+/* function uniqueSum(lst) {
+  if (lst.length === 0) {
+    return null;
+  }
+  let unique = [...new Set(lst)];
+  return unique.reduce((sum, curr) => sum + curr, 0);
+}
+console.log(uniqueSum([1, 3, 8, 1, 8])); */
