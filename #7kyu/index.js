@@ -5525,3 +5525,15 @@ console.log(uniDecoder("test", true, 99)); */
   return unique.reduce((sum, curr) => sum + curr, 0);
 }
 console.log(uniqueSum([1, 3, 8, 1, 8])); */
+
+// #7kyu Wordsearch
+/* function wordSearch(word, text) {
+  text = text.replace(/[,!@.]/gi, "").split(" ");
+  return text.includes(word);
+}
+console.log(
+  wordSearch(
+    "beautiful",
+    "what makes the desert beautiful, said the little prince is that somewhere it hides a well"
+  )
+); */
