@@ -1591,3 +1591,15 @@ console.log(getRealFloor(1)); */
   return name === "Zach" ? 18 : 0;
 }
 console.log(howManyLightsabersDoYouOwn("Zach")); */
+
+// #8kyu Enumerable Magic #2 - True for Any?
+/* function any(arr, fun) {
+  return arr.some((value) => {
+    return fun(value);
+  });
+}
+console.log(
+  any([1, 2, 3, 4], function (v, i) {
+    return v > 3;
+  })
+); */
