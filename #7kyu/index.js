@@ -5543,3 +5543,18 @@ console.log(
   return instructions.sort((a, b) => b - a).join(" ") + " " + "liftoff!";
 }
 console.log(liftoff([2, 8, 10, 9, 1, 3, 4, 7, 6, 5])); */
+
+// #7kyu Deletion in an array
+/* function deleteValues(array, pred) {
+  for (var i = array.length - 1; i >= 0; i--) {
+    if (pred(array[i])) {
+      array.splice(i, 1);
+    }
+  }
+  return array;
+}
+console.log(
+  deleteValues([1, 3, 2, 4, 5, 7, 6, 8, 10, 9], function isEven(n) {
+    return n % 2 === 0;
+  })
+); */
