@@ -5561,6 +5561,12 @@ console.log(
 
 // #7kyu isAN(value)
 /* function isAN(value) {
-  return typeof value === "number" || value instanceof Number;
+  if (typeof value === "number") {
+    return true;
+  }
+  if (value instanceof Number) {
+    return !Number.isNaN(value.valueOf());
+  }
+  return false;
 }
 console.log(isAN(123)); */
