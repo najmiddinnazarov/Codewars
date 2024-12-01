@@ -5558,3 +5558,9 @@ console.log(
     return n % 2 === 0;
   })
 ); */
+
+// #7kyu isAN(value)
+/* function isAN(value) {
+  return typeof value === "number" || value instanceof Number;
+}
+console.log(isAN(123)); */
