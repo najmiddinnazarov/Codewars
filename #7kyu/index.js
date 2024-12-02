@@ -5570,3 +5570,18 @@ console.log(
   return false;
 }
 console.log(isAN(123)); */
+
+// #7kyu Swap two elements
+/* function swapTwo(array, a, b) {
+  let result = array.slice();
+  let firstIndex = result.indexOf(a);
+  let lastIndex = result.lastIndexOf(b);
+  if (firstIndex !== -1 && lastIndex !== -1) {
+    [result[firstIndex], result[lastIndex]] = [
+      result[lastIndex],
+      result[firstIndex],
+    ];
+  }
+  return result;
+}
+console.log(swapTwo([1, 2, 3, 4, 1, 2, 3, 4], 2, 4)); */
