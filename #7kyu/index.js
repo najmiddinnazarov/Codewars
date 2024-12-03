@@ -5585,3 +5585,7 @@ console.log(isAN(123)); */
   return result;
 }
 console.log(swapTwo([1, 2, 3, 4, 1, 2, 3, 4], 2, 4)); */
+
+// #7kyu [Code Golf] Return Odd No Matter What
+/* alwaysOdd=n=>n%2?n:n-1
+console.log(alwaysOdd(1)); */
