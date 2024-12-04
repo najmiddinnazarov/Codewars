@@ -1603,3 +1603,16 @@ console.log(
     return v > 3;
   })
 ); */
+
+// #8kyu Potenciation
+/* function power(x, y) {
+  if (x === 0 && y === 0) {
+    return 1;
+  }
+  let sum = 1;
+  for (let i = 1; i <= y; i++) {
+    sum *= x;
+  }
+  return sum;
+}
+console.log(power(2, 2)); */
