@@ -5589,3 +5589,43 @@ console.log(swapTwo([1, 2, 3, 4, 1, 2, 3, 4], 2, 4)); */
 // #7kyu [Code Golf] Return Odd No Matter What
 /* alwaysOdd=n=>n%2?n:n-1
 console.log(alwaysOdd(1)); */
+
+// #7kyu Comfortable words
+/* const comfortableWord = (word) => {
+  let left = [
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "a",
+    "s",
+    "d",
+    "f",
+    "g",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+  ];
+  let right = ["y", "u", "i", "o", "p", "h", "j", "k", "l", "n", "m"];
+  let currentWord = right.includes(word[0]) ? 1 : 0;
+  for (let i = 1; i < word.length; i++) {
+    if (currentWord) {
+      if (left.includes(word[i])) {
+        currentWord = 0;
+      } else {
+        return false;
+      }
+    } else {
+      if (right.includes(word[i])) {
+        currentWord = 1;
+      } else {
+        return false;
+      }
+    }
+  }
+  return true;
+};
+console.log(comfortableWord("yams")); */
