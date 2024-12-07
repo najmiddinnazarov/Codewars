@@ -5676,3 +5676,18 @@ console.log(comfortableWord("yams")); */
   }
 }
 console.log(sexyName("GUV")); */
+
+// #7kyu Make the small words big!
+/* function smallWordHelper(sentence) {
+  sentence = sentence.split(" ");
+  return sentence
+    .map((value) => {
+      if (value.length <= 3) {
+        return value.toUpperCase();
+      } else if (value.length >= 4) {
+        return value.replace(/["a", "e", "i", "o", "u", ]/gi, "");
+      }
+    })
+    .join(" ");
+}
+console.log(smallWordHelper("The quick brown fox jumps over the lazy dog")); */
