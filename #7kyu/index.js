@@ -5691,3 +5691,10 @@ console.log(sexyName("GUV")); */
     .join(" ");
 }
 console.log(smallWordHelper("The quick brown fox jumps over the lazy dog")); */
+
+// #7kyu Tea for two
+/* function tea42(input) {
+  input = input.toString();
+  return input.replace(/[2]/gi, "t");
+}
+console.log(tea42("2ea2")); */
