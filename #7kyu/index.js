@@ -5698,3 +5698,25 @@ console.log(smallWordHelper("The quick brown fox jumps over the lazy dog")); */
   return input.replace(/[2]/gi, "t");
 }
 console.log(tea42("2ea2")); */
+
+// #7kyu What rank is this card?
+/* function rank(card) {
+  let cardObject = {
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    T: 10,
+    J: 11,
+    Q: 12,
+    K: 13,
+    A: 14,
+  };
+  card = card[0];
+  return cardObject[card] || 0;
+}
+console.log(rank("2s")); */
