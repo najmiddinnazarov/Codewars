@@ -5720,3 +5720,26 @@ console.log(tea42("2ea2")); */
   return cardObject[card] || 0;
 }
 console.log(rank("2s")); */
+
+// #7kyu I'm everywhere!
+/* function i(word) {
+  if (word === "") {
+    return "Invalid word";
+  }
+  if (word[0] === word[0].toUpperCase()) {
+    if (word[0] !== "I") {
+      let vowel = 0;
+      let consonant = 0;
+      for (let i = 0; i < word.length; i++) {
+        if (/[aeiou]/gi.test(word[i])) {
+          vowel++;
+        } else {
+          consonant++;
+        }
+      }
+      return consonant > vowel ? "i" + word : "Invalid word";
+    }
+  }
+  return "Invalid word";
+}
+console.log(i("Phone")); */
