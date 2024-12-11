@@ -5743,3 +5743,21 @@ console.log(rank("2s")); */
   return "Invalid word";
 }
 console.log(i("Phone")); */
+
+// #7kyu ASCII Shift Encryption/Decryption
+/* function asciiEncrypt(plaintext) {
+  let result = "";
+  for (let i = 0; i < plaintext.length; i++) {
+    result += String.fromCharCode(plaintext[i].charCodeAt() + i);
+  }
+  return result;
+}
+function asciiDecrypt(ciphertext) {
+  let result = "";
+  for (let i = 0; i < ciphertext.length; i++) {
+    result += String.fromCharCode(ciphertext[i].charCodeAt() - i);
+  }
+  return result;
+}
+console.log(asciiEncrypt("PASSWORD"));
+console.log(asciiDecrypt("PBUV[TXK")); */
