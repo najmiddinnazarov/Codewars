@@ -5761,3 +5761,15 @@ function asciiDecrypt(ciphertext) {
 }
 console.log(asciiEncrypt("PASSWORD"));
 console.log(asciiDecrypt("PBUV[TXK")); */
+
+// #7kyu Sushi-go-round (Beginner's)
+/* function totalBill(str) {
+  let rLength = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "r") {
+      rLength++;
+    }
+  }
+  return (rLength - Math.floor(rLength / 5)) * 2;
+}
+console.log(totalBill("rr rrr rrr rr")); */
