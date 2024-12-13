@@ -5773,3 +5773,12 @@ console.log(asciiDecrypt("PBUV[TXK")); */
   return (rLength - Math.floor(rLength / 5)) * 2;
 }
 console.log(totalBill("rr rrr rrr rr")); */
+
+// #7kyu Extending JavaScript Objects: Get First & Last Array Element
+/* Array.prototype.first = function () {
+  return this[0];
+};
+Array.prototype.last = function () {
+  return this[this.length - 1];
+};
+console.log([2, 5, 7, 3, 4].last()); */
