@@ -5782,3 +5782,14 @@ Array.prototype.last = function () {
   return this[this.length - 1];
 };
 console.log([2, 5, 7, 3, 4].last()); */
+
+// #7kyu Zebulan's Nightmare
+/* function zebulansNightmare(functionName) {
+  functionName = functionName.split("_");
+  let result = functionName[0];
+  for (let i = 1; i < functionName.length; i++) {
+    result += functionName[i][0].toUpperCase() + functionName[i].slice(1);
+  }
+  return result;
+}
+console.log(zebulansNightmare("camel_case")); */
