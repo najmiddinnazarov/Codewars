@@ -5793,3 +5793,9 @@ console.log([2, 5, 7, 3, 4].last()); */
   return result;
 }
 console.log(zebulansNightmare("camel_case")); */
+
+// #7kyu Is It Negative Zero (-0)?
+/* function isNegativeZero(n) {
+  return (n == 0 && 1 / n) === -Infinity;
+}
+console.log(isNegativeZero(+0)); */
