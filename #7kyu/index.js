@@ -5799,3 +5799,16 @@ console.log(zebulansNightmare("camel_case")); */
   return (n == 0 && 1 / n) === -Infinity;
 }
 console.log(isNegativeZero(+0)); */
+
+// #7kyu Deutschstunde
+/* function derDieDas(wort) {
+  let wortLenght = (wort.match(/[aeiouäöü]/gi) || "0").length;
+  if (wortLenght < 2) {
+    return "das " + wort;
+  } else if (wortLenght >= 2 && wortLenght <= 3) {
+    return "die " + wort;
+  } else {
+    return "der " + wort;
+  }
+}
+console.log(derDieDas("ZXp")); */
