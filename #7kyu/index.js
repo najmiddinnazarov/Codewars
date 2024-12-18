@@ -5812,3 +5812,7 @@ console.log(isNegativeZero(+0)); */
   }
 }
 console.log(derDieDas("ZXp")); */
+
+// #7kyu EZ code golf #2 : 8 -> 10
+/* f=x=>+('0o'+x)
+console.log(f("2")); */
