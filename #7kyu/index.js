@@ -5816,3 +5816,14 @@ console.log(derDieDas("ZXp")); */
 // #7kyu EZ code golf #2 : 8 -> 10
 /* f=x=>+('0o'+x)
 console.log(f("2")); */
+
+// #7kyu Russian postal code checker
+/* function zipvalidate(postcode) {
+  if (postcode.length === 6 && Number(postcode)) {
+    if (!"05789".includes(postcode[0])) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(zipvalidate("198328")); */
