@@ -5827,3 +5827,6 @@ console.log(f("2")); */
   return false;
 }
 console.log(zipvalidate("198328")); */
+
+// #7kyu Shorten Me: Array Declaration II (undefined)
+/* array=x=>[...`${x}`] */
