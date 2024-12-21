@@ -5830,3 +5830,17 @@ console.log(zipvalidate("198328")); */
 
 // #7kyu Shorten Me: Array Declaration II (undefined)
 /* array=x=>[...`${x}`] */
+
+// #7kyu sPoNgEbOb MeMe
+/* function spongeMeme(sentence) {
+  let result = "";
+  for (let i = 0; i < sentence.length; i++) {
+    if (i % 2 === 0) {
+      result += sentence[i].toUpperCase();
+    } else {
+      result += sentence[i].toLowerCase();
+    }
+  }
+  return result;
+}
+console.log(spongeMeme("stop Making spongebob Memes!")); */
