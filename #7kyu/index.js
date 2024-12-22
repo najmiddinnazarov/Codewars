@@ -5844,3 +5844,11 @@ console.log(zipvalidate("198328")); */
   return result;
 }
 console.log(spongeMeme("stop Making spongebob Memes!")); */
+
+// #7kyu Baby shark lyrics generator
+/* function babySharkLyrics() {
+  let verses=["Baby","Mommy","Daddy","Grandma","Grandpa"];result='';
+  for (let v of verses)result+=`${v} shark, doo doo doo doo doo doo\n`.repeat(3) + `${v} shark!\n`;
+  return result+"Let's go hunt, doo doo doo doo doo doo\n".repeat(3) + "Let's go hunt!\nRun away,…"
+}
+console.log(babySharkLyrics()); */
