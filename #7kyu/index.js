@@ -5852,3 +5852,25 @@ console.log(spongeMeme("stop Making spongebob Memes!")); */
   return result+"Let's go hunt, doo doo doo doo doo doo\n".repeat(3) + "Let's go hunt!\nRun away,…"
 }
 console.log(babySharkLyrics()); */
+
+// #7kyu Hëävÿ Mëtäl Ümläüts
+/* function heavyMetalUmlauts(boringText) {
+  const replacements = {
+    A: "Ä",
+    E: "Ë",
+    I: "Ï",
+    O: "Ö",
+    U: "Ü",
+    Y: "Ÿ",
+    a: "ä",
+    e: "ë",
+    i: "ï",
+    o: "ö",
+    u: "ü",
+    y: "ÿ",
+  };
+  return boringText.replace(/[A-Za-z]/gi, (value) =>
+    replacements[value] ? replacements[value] : value
+  );
+}
+console.log(heavyMetalUmlauts("Announcing the Macbook Air Guitar")); */
