@@ -5874,3 +5874,14 @@ console.log(babySharkLyrics()); */
   );
 }
 console.log(heavyMetalUmlauts("Announcing the Macbook Air Guitar")); */
+
+// #7kyu Tetration
+/* function tetration(x, y) {
+  if (y == 0) {
+    return 1;
+  } else if (y == 1) return x;
+  else {
+    return x ** tetration(x, y - 1);
+  }
+}
+console.log(tetration(4, 0)); */
