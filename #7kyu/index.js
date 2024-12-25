@@ -5864,7 +5864,7 @@ console.log(babySharkLyrics()); */
     Y: "Ÿ",
     a: "ä",
     e: "ë",
-    i: "ï",
+    i: "ï", 
     o: "ö",
     u: "ü",
     y: "ÿ",
@@ -5885,3 +5885,24 @@ console.log(heavyMetalUmlauts("Announcing the Macbook Air Guitar")); */
   }
 }
 console.log(tetration(4, 0)); */
+
+// #7kyu Please help Bob
+/* function sortCards(array) {
+  const rankOrder = {
+    A: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    T: 10,
+    J: 11,
+    Q: 12,
+    K: 13,
+  };
+  return array.sort((a, b) => rankOrder[a] - rankOrder[b]);
+}
+console.log(sortCards([3, 9, "A", 5, "T", 8, 2, 4, "Q", 7, "J", 6, "K"])); */
