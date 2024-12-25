@@ -5886,7 +5886,7 @@ console.log(heavyMetalUmlauts("Announcing the Macbook Air Guitar")); */
 }
 console.log(tetration(4, 0)); */
 
-// #7kyu Please help Bob
+// #7kyu Sort deck of cards
 /* function sortCards(array) {
   const rankOrder = {
     A: 1,
