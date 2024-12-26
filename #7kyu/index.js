@@ -5906,3 +5906,17 @@ console.log(tetration(4, 0)); */
   return array.sort((a, b) => rankOrder[a] - rankOrder[b]);
 }
 console.log(sortCards([3, 9, "A", 5, "T", 8, 2, 4, "Q", 7, "J", 6, "K"])); */
+
+// #7kyu ATM
+/* function solve(n) {
+  const banknotes = [10, 20, 50, 100, 200, 500];
+  let sum = 0;
+  for (let i = banknotes.length - 1; i >= 0; i--) {
+    while (n >= banknotes[i]) {
+      n -= banknotes[i];
+      sum++;
+    }
+  }
+  return n === 0 ? sum : -1;
+}
+console.log(solve(22)); */
