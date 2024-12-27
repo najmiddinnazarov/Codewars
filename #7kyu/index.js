@@ -5920,3 +5920,11 @@ console.log(sortCards([3, 9, "A", 5, "T", 8, 2, 4, "Q", 7, "J", 6, "K"])); */
   return n === 0 ? sum : -1;
 }
 console.log(solve(22)); */
+
+// #7kyu Find Screen Size
+/* function findScreenHeight(width, ratio) {
+  const [w, h] = ratio.split(":").map(Number);
+  const result = Math.floor((width / w) * h);
+  return `${width}x${result}`;
+}
+console.log(findScreenHeight(1024, "4:3")); */
