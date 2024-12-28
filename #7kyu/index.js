@@ -5928,3 +5928,19 @@ console.log(solve(22)); */
   return `${width}x${result}`;
 }
 console.log(findScreenHeight(1024, "4:3")); */
+
+// #7kyu Jenny the youngest detective
+/* function missingWord(nums, str) {
+  str = str.split(" ").join("");
+  nums = nums.sort((a, b) => a - b);
+  let result = "";
+  for (let i = 0; i < nums.length; i++) {
+    if (str[nums[i]]) {
+      result += str[nums[i]];
+    } else {
+      return "No mission today";
+    }
+  }
+  return result.toLowerCase();
+}
+console.log(missingWord([5, 0, 3], "I love you")); */
