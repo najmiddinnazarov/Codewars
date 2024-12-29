@@ -5944,3 +5944,13 @@ console.log(findScreenHeight(1024, "4:3")); */
   return result.toLowerCase();
 }
 console.log(missingWord([5, 0, 3], "I love you")); */
+
+// #7kyu Count up the points for the 7 Wonders board game! Easy version
+/* function solve(compasses, gears, tablets) {
+  const distinctSets = Math.min(compasses, gears, tablets);
+  const distinctSetPoints = distinctSets * 7;
+  const squarePoints =
+    compasses * compasses + gears * gears + tablets * tablets;
+  return distinctSetPoints + squarePoints;
+}
+console.log(solve(0, 0, 0)); */
