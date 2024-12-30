@@ -5954,3 +5954,24 @@ console.log(missingWord([5, 0, 3], "I love you")); */
   return distinctSetPoints + squarePoints;
 }
 console.log(solve(0, 0, 0)); */
+
+// #7kyu Sum of numbers from 0 to N
+/* var SequenceSum = (function () {
+  function SequenceSum() {}
+  SequenceSum.showSequence = function (count) {
+    let sum = 0;
+    let result = "";
+    if (count < 0) {
+      return count + "<" + "0";
+    } else if (count === 0) {
+      return "0=0";
+    }
+    for (let i = 0; i <= count; i++) {
+      sum += i;
+      result += i + 1 <= count ? i + "+" : i + " " + "=" + " " + sum;
+    }
+    return result;
+  };
+  return SequenceSum;
+})();
+console.log(SequenceSum.showSequence(-15)); */
