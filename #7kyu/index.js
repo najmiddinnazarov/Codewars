@@ -5975,3 +5975,10 @@ console.log(solve(0, 0, 0)); */
   return SequenceSum;
 })();
 console.log(SequenceSum.showSequence(-15)); */
+
+// #7kyu Simple Fun #28: Html End Tag By Start Tag
+/* function htmlEndTagByStartTag(startTag) {
+  let tag = startTag.slice(startTag.indexOf("<") + 1, startTag.indexOf(" "));
+  return `</${tag}>`;
+}
+console.log(htmlEndTagByStartTag("<button type='button' disabled>")); */
