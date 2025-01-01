@@ -5982,3 +5982,16 @@ console.log(SequenceSum.showSequence(-15)); */
   return `</${tag}>`;
 }
 console.log(htmlEndTagByStartTag("<button type='button' disabled>")); */
+
+// #7kyu Price is right
+/* function priceIsRight(numbers, target) {
+  numbers = numbers.sort((a, b) => a - b);
+  let result;
+  for (let i = 0; i < numbers.length; i++) {
+    if (target >= numbers[i]) {
+      result = numbers[i];
+    }
+  }
+  return result;
+}
+console.log(priceIsRight([1, 2, 3, 4, 5], 5)); */
