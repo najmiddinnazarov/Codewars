@@ -5995,3 +5995,17 @@ console.log(htmlEndTagByStartTag("<button type='button' disabled>")); */
   return result;
 }
 console.log(priceIsRight([1, 2, 3, 4, 5], 5)); */
+
+// #7kyu Multidimensional array
+/* function getElement(array, indexes) {
+  let result;
+  for (let i = 0; i < indexes.length; i++) {
+    if (result) {
+      result = result[indexes[i]];
+    } else {
+      result = array[indexes[i]];
+    }
+  }
+  return result;
+}
+console.log(getElement([[[1, 2, 3]]], [0, 0, 1])); */
