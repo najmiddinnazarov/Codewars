@@ -6009,3 +6009,12 @@ console.log(priceIsRight([1, 2, 3, 4, 5], 5)); */
   return result;
 }
 console.log(getElement([[[1, 2, 3]]], [0, 0, 1])); */
+
+// #7kyu Negation of a Value
+/* function negationValue(string, value) {
+  for (let i = 0; i < string.length; i++) {
+    value = !value;
+  }
+  return value;
+}
+console.log(negationValue("!!", 0)); */
