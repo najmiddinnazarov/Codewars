@@ -6018,3 +6018,20 @@ console.log(getElement([[[1, 2, 3]]], [0, 0, 1])); */
   return value;
 }
 console.log(negationValue("!!", 0)); */
+
+// #7kyu An English Twist on a Japanese Classic
+/* function shiritori(words) {
+  let result = [];
+  for (let i = 0; i < words.length; i++) {
+    let last = words[i][words[i].length - 1];
+    let first = words[i + 1] ? words[i + 1][0] : 0;
+    if (last === first) {
+      result.push(words[i]);
+    } else {
+      result.push(words[i]);
+      return result.join("").length ? result : [];
+    }
+  }
+  return result;
+}
+console.log(shiritori(["", "", "", "", "", ""])); */
