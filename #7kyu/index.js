@@ -6035,3 +6035,14 @@ console.log(negationValue("!!", 0)); */
   return result;
 }
 console.log(shiritori(["", "", "", "", "", ""])); */
+
+// #7kyu Lost number in number sequence
+/* function findDeletedNumber(arr, mixArr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (!mixArr.includes(arr[i])) {
+      return arr[i];
+    }
+  }
+  return 0;
+}
+console.log(findDeletedNumber([1, 2, 3, 4, 5], [3, 4, 1, 5])); */
