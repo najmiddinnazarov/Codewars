@@ -6046,3 +6046,9 @@ console.log(shiritori(["", "", "", "", "", ""])); */
   return 0;
 }
 console.log(findDeletedNumber([1, 2, 3, 4, 5], [3, 4, 1, 5])); */
+
+// #7kyu Words to sentence
+/* function wordsToSentence(words) {
+  return words.join(" ");
+}
+console.log(wordsToSentence(["hello", "world"])); */
