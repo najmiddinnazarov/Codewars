@@ -6052,3 +6052,19 @@ console.log(findDeletedNumber([1, 2, 3, 4, 5], [3, 4, 1, 5])); */
   return words.join(" ");
 }
 console.log(wordsToSentence(["hello", "world"])); */
+
+// #7kyu Chicken Sexing
+/* function correctness(bobsDecisions, expertDecisions) {
+  let sum = 0;
+  for (let i = 0; i < bobsDecisions.length; i++) {
+    if (bobsDecisions[i] === expertDecisions[i]) {
+      sum++;
+    } else if (bobsDecisions[i] === "?" || expertDecisions[i] === "?") {
+      sum += 0.5;
+    } else {
+      sum += 0;
+    }
+  }
+  return sum;
+}
+console.log(correctness(["M", "?", "M"], ["M", "F", "?"])); */
