@@ -1630,3 +1630,9 @@ console.log(power(2, 2)); */
   }
 }
 console.log(finalGrade(100, 12)); */
+
+// #8kyu For Twins: 1. Types
+/* function typeValidation(variable, type) {
+  return typeof variable === type;
+}
+console.log(typeValidation(42, "number")); */
