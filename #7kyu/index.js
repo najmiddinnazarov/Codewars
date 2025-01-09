@@ -6068,3 +6068,14 @@ console.log(wordsToSentence(["hello", "world"])); */
   return sum;
 }
 console.log(correctness(["M", "?", "M"], ["M", "F", "?"])); */
+
+// #7kyu Fac Recursion (Pest control - find the bugs and fix them)
+/* function facRecursion(value) {
+  if (value < 0) {
+    return 0;
+  } else if (value === 1 || value === 0) {
+    return 1;
+  }
+  return value * facRecursion(value - 1);
+}
+console.log(facRecursion(4)); */
