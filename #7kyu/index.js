@@ -6079,3 +6079,25 @@ console.log(correctness(["M", "?", "M"], ["M", "F", "?"])); */
   return value * facRecursion(value - 1);
 }
 console.log(facRecursion(4)); */
+
+// #7kyu Remove duplication
+/* function removeDuplication(arr) {
+  let object = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] in object) {
+      object[arr[i]]++;
+    } else {
+      object[arr[i]] = 1;
+    }
+  }
+  let result = [];
+  for (const key in object) {
+    if (object[key] === 1) {
+      if (/[0-9]/.test(Number(key))) {
+        result.push(Number(key));
+      }
+    }
+  }
+  return result;
+}
+console.log(removeDuplication([1, 2, 3, 2, 4, 6, 2, 6, 7, undefined])); */
