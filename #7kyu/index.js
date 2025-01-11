@@ -6101,3 +6101,18 @@ console.log(facRecursion(4)); */
   return result;
 }
 console.log(removeDuplication([1, 2, 3, 2, 4, 6, 2, 6, 7, undefined])); */
+
+// #7kyu Sorted? yes? no? how?
+/* function isSortedAndHow(array) {
+  let ascendingClone = [...array];
+  let descendingClone = [...array];
+  let ascending = ascendingClone.sort((a, b) => a - b).join("");
+  let descending = descendingClone.sort((a, b) => b - a).join("");
+  array = array.join("");
+  return ascending == array
+    ? "yes, ascending"
+    : descending == array
+    ? "yes, descending"
+    : "no";
+}
+console.log(isSortedAndHow([3, 2, 3])); */
