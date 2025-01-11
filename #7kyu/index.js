@@ -6116,3 +6116,14 @@ console.log(removeDuplication([1, 2, 3, 2, 4, 6, 2, 6, 7, undefined])); */
     : "no";
 }
 console.log(isSortedAndHow([3, 2, 3])); */
+
+// #7kyu Closure Counter
+/* function counter() {
+  let sum = 1;
+  return function () {
+    return sum++;
+  };
+}
+const newCounter = counter();
+console.log(newCounter());
+console.log(newCounter()); */
