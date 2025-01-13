@@ -6143,4 +6143,4 @@ console.log(
 /* function unique(arr) {
   return arr.filter((value, index, temp) => temp.indexOf(value) === index);
 }
-console.log(unique([1, 2, 2, 3])); */
+console.log(unique([1, 2, 2, 3, 3])); */
