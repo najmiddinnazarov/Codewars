@@ -6127,3 +6127,14 @@ console.log(isSortedAndHow([3, 2, 3])); */
 const newCounter = counter();
 console.log(newCounter());
 console.log(newCounter()); */
+
+// #7kyu Javascript filter - 1
+/* function searchNames(logins) {
+  return logins.filter((value) => value[0][value[0].length - 1] == "_");
+}
+console.log(
+  searchNames([
+    ["foo", "foo@foo.com"],
+    ["bar_", "bar@bar.com"],
+  ])
+); */
