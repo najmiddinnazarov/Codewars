@@ -6138,3 +6138,9 @@ console.log(
     ["bar_", "bar@bar.com"],
   ])
 ); */
+
+// #7kyu Train to remove duplicates from an array with filter()
+/* function unique(arr) {
+  return arr.filter((value, index, temp) => temp.indexOf(value) === index);
+}
+console.log(unique([1, 2, 2, 3])); */
