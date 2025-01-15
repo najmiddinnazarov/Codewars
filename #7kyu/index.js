@@ -6144,3 +6144,22 @@ console.log(
   return arr.filter((value, index, temp) => temp.indexOf(value) === index);
 }
 console.log(unique([1, 2, 2, 3, 3])); */
+
+// #7kyu Exclamation marks series #9: Remove or add a exclamation mark at the end of words of the sentence
+/* function removeOrAdd(string) {
+  let result = [];
+  string = string.split(" ");
+  for (let i = 0; i < string.length; i++) {
+    let once = string[i][string[i].length - 1];
+    let twice = string[i][string[i].length - 2];
+    if (twice !== "!" && once === "!") {
+      result.push(string[i].slice(0, -1));
+    } else if (once !== "!") {
+      result.push(string[i] + "!");
+    } else {
+      result.push(string[i]);
+    }
+  }
+  return result.join(" ");
+}
+console.log(removeOrAdd("Hi! Hi!")); */
