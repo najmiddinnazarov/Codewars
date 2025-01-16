@@ -6163,3 +6163,11 @@ console.log(unique([1, 2, 2, 3, 3])); */
   return result.join(" ");
 }
 console.log(removeOrAdd("Hi! Hi!")); */
+
+// #7kyu Automorphic Number (Special Numbers Series #6)
+/* function automorphic(n) {
+  n = n.toString();
+  let number = (n * n).toString();
+  return number.slice(number.length - n.length) === n ? "Automorphic" : "Not!!";
+}
+console.log(automorphic(25)); */
