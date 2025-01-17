@@ -1636,3 +1636,7 @@ console.log(finalGrade(100, 12)); */
   return typeof variable === type;
 }
 console.log(typeValidation(42, "number")); */
+
+// #8kyu Push a hash/an object into array
+/* items = [];
+items.push({ a: "b", c: "d" }); */
