@@ -6171,3 +6171,21 @@ console.log(removeOrAdd("Hi! Hi!")); */
   return number.slice(number.length - n.length) === n ? "Automorphic" : "Not!!";
 }
 console.log(automorphic(25)); */
+
+// #7kyu Fizz / Buzz
+/* function solution(number) {
+  let A = 0;
+  let B = 0;
+  let C = 0;
+  for (let i = 1; i < number; i++) {
+    if (i % 3 == 0 && i % 5 != 0) {
+      A += 1;
+    } else if (i % 5 == 0 && i % 3 != 0) {
+      B += 1;
+    } else if (i % 3 == 0 && i % 5 == 0) {
+      C += 1;
+    }
+  }
+  return [A, B, C];
+}
+console.log(solution(20)); */
