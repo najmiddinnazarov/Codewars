@@ -1640,3 +1640,9 @@ console.log(typeValidation(42, "number")); */
 // #8kyu Push a hash/an object into array
 /* items = [];
 items.push({ a: "b", c: "d" }); */
+
+// #8kyu Will there be enough space?
+/* function enough(cap, on, wait) {
+  return on + wait <= cap ? 0 : on + wait - cap;
+}
+console.log(enough(100, 60, 50)); */
