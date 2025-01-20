@@ -6189,3 +6189,22 @@ console.log(automorphic(25)); */
   return [A, B, C];
 }
 console.log(solution(20)); */
+
+// #7kyu PopShift
+/* function popShift(s) {
+  let stringNumber = Math.floor(s.length / 2);
+  if (s.length % 2) {
+    return [
+      [...s.slice(stringNumber + 1)].reverse().join(""),
+      s.slice(0, stringNumber),
+      s.slice(stringNumber, stringNumber + 1),
+    ];
+  } else {
+    return [
+      [...s.slice(stringNumber)].reverse().join(""),
+      s.slice(0, stringNumber),
+      "",
+    ];
+  }
+}
+console.log(popShift("exampleesthere")); */
