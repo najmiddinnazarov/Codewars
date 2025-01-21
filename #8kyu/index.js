@@ -1646,3 +1646,15 @@ items.push({ a: "b", c: "d" }); */
   return on + wait <= cap ? 0 : on + wait - cap;
 }
 console.log(enough(100, 60, 50)); */
+
+// #8kyu SpeedCode #2 - Array Madness
+/* function arrayMadness(a, b) {
+  let firstArray = 0;
+  let secondArray = 0;
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    firstArray += a[i] ? a[i] ** 2 : 0;
+    secondArray += b[i] ? b[i] ** 3 : 0;
+  }
+  return firstArray > secondArray;
+}
+console.log(arrayMadness([2, 4, 6], [1])); */
