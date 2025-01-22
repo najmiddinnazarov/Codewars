@@ -1658,3 +1658,9 @@ console.log(enough(100, 60, 50)); */
   return firstArray > secondArray;
 }
 console.log(arrayMadness([2, 4, 6], [1])); */
+
+// #8kyu Grasshopper - Check for factor
+/* function checkForFactor(base, factor) {
+  return base % factor === 0;
+}
+console.log(checkForFactor(10, 2)); */
