@@ -6208,3 +6208,16 @@ console.log(solution(20)); */
   }
 }
 console.log(popShift("exampleesthere")); */
+
+// #7kyu Power of 4
+/* function powerOf4(n) {
+  if (n === 1) {
+    return true;
+  }
+  if (typeof n === "number") {
+    return (Math.log(n) / Math.log(4)) % 1 === 0;
+  } else {
+    return false;
+  }
+}
+console.log(powerOf4(2)); */
