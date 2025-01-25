@@ -6221,3 +6221,12 @@ console.log(popShift("exampleesthere")); */
   }
 }
 console.log(powerOf4(2)); */
+
+// #7kyu Every archer has its arrows
+/* function archersReady(archers) {
+  if (archers.length === 0) {
+    return false;
+  }
+  return archers.every((value) => value >= 5) === true;
+}
+console.log(archersReady([])); */
