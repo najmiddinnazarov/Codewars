@@ -6230,3 +6230,9 @@ console.log(powerOf4(2)); */
   return archers.every((value) => value >= 5) === true;
 }
 console.log(archersReady([])); */
+
+// #7kyu Sorted Union
+/* function uniteUnique(...args) {
+  return [...new Set(args.flat())];
+}
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1])); */
