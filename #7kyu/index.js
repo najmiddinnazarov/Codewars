@@ -6236,3 +6236,19 @@ console.log(archersReady([])); */
   return [...new Set(args.flat())];
 }
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1])); */
+
+// #7kyu Unix command line `ls -l` extract the file type.
+/* function linuxType(fileAttribute) {
+  const command = {
+    "-": "file",
+    d: "directory",
+    l: "symlink",
+    s: "socket",
+    p: "pipe",
+    c: "character_file",
+    b: "block_file",
+    D: "door",
+  };
+  return command[fileAttribute[0]];
+}
+console.log(linuxType("srwxrwxrwx")); */
