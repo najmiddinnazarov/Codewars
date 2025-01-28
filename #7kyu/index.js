@@ -6252,3 +6252,11 @@ console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1])); */
   return command[fileAttribute[0]];
 }
 console.log(linuxType("srwxrwxrwx")); */
+
+// #7kyu Club Doorman
+/* function passTheDoorMan(word) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  const doubleLetter = alphabet.indexOf(word.match(/(.)\1/)[1]);
+  return doubleLetter * 3;
+}
+console.log(passTheDoorMan("lettuce")); */
