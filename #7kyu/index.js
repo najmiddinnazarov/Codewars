@@ -6260,3 +6260,32 @@ console.log(linuxType("srwxrwxrwx")); */
   return doubleLetter * 3;
 }
 console.log(passTheDoorMan("lettuce")); */
+
+// #7kyu Test's results
+/* function testResult(array) {
+  const classAverage =
+    array.reduce((curr, sum) => curr + sum, 0) / array.length;
+  let ball = {
+    h: 0,
+    a: 0,
+    l: 0,
+  };
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] >= 9) {
+      ball["h"]++;
+    } else if (array[i] >= 7) {
+      ball["a"]++;
+    } else {
+      ball["l"]++;
+    }
+  }
+  let result;
+  if (ball["a"] === 0 && ball["l"] === 0) {
+    result = [ball, "They did well"];
+  } else {
+    result = [ball];
+  }
+  return [Number(classAverage.toFixed(3)), ...result];
+}
+console.log(testResult([10, 9, 7, 10, 9, 10, 9]));
+ */
