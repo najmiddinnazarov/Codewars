@@ -6289,3 +6289,9 @@ console.log(passTheDoorMan("lettuce")); */
 }
 console.log(testResult([10, 9, 7, 10, 9, 10, 9]));
  */
+
+// #7kyu Functional Addition
+/* function add(n) {
+  return (number) => n + number;
+}
+console.log(add(1)(-5)); */
