@@ -6295,3 +6295,20 @@ console.log(testResult([10, 9, 7, 10, 9, 10, 9]));
   return (number) => n + number;
 }
 console.log(add(1)(-5)); */
+
+// #7kyu Oh come on! Hello world! once again?
+/* f = (_) =>
+  "\u0048" +
+  "\u0065" +
+  "\u006C" +
+  "\u006C" +
+  "\u006F" +
+  "\u002C" +
+  "\u0020" +
+  "\u0077" +
+  "\u006F" +
+  "\u0072" +
+  "\u006C" +
+  "\u0064" +
+  "\u0021";
+console.log(f()); */
