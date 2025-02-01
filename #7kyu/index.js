@@ -6312,3 +6312,14 @@ console.log(add(1)(-5)); */
   "\u0064" +
   "\u0021";
 console.log(f()); */
+
+// #7kyu Arithmetic sequence - sum of n elements
+/* function ArithmeticSequenceSum(a, r, n) {
+  let sum = a;
+  for (let i = 2; i <= n; i++) {
+    sum += a;
+    sum += r * (i - 1);
+  }
+  return sum;
+}
+console.log(ArithmeticSequenceSum(2, 3, 5)); */
