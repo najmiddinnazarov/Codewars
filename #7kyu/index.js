@@ -6323,3 +6323,9 @@ console.log(f()); */
   return sum;
 }
 console.log(ArithmeticSequenceSum(2, 3, 5)); */
+
+// #7kyu Get the 𝑟𝑒𝑎𝑙 length of a string
+/* function getRealLength(string) {
+  return Array.from(string.split(/[\ufe00-\ufe0f]/).join("")).length;
+}
+console.log(getRealLength("1")); */
