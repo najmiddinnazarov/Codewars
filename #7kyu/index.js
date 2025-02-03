@@ -6329,3 +6329,9 @@ console.log(ArithmeticSequenceSum(2, 3, 5)); */
   return Array.from(string.split(/[\ufe00-\ufe0f]/).join("")).length;
 }
 console.log(getRealLength("1")); */
+
+// #7kyu Sum of all arguments
+/* function sum(...args) {
+  return args.reduce((curr, sum) => curr + sum, 0);
+}
+console.log(sum(5, 7, 9)); */
