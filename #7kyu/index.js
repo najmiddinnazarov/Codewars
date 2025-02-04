@@ -6335,3 +6335,16 @@ console.log(getRealLength("1")); */
   return args.reduce((curr, sum) => curr + sum, 0);
 }
 console.log(sum(5, 7, 9)); */
+
+// #7kyu Arithmetic progression
+/* function arithmeticSequenceElements(a, d, n) {
+  let sum = [];
+  for (let i = a; ; i += d) {
+    if (sum.length === n) {
+      return sum.join(", ");
+    } else {
+      sum.push(i);
+    }
+  }
+}
+console.log(arithmeticSequenceElements(1, 2, 5)); */
