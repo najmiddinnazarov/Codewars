@@ -1677,3 +1677,9 @@ console.log(checkForFactor(10, 2)); */
   }
 }
 console.log(yourFutureCareer()); */
+
+// #8kyu Are arrow functions odd?
+/* function odds(values) {
+  return values.filter((number) => number % 2);
+}
+console.log(odds([1, 2, 3, 4, 5])); */
