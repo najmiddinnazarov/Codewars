@@ -6348,3 +6348,21 @@ console.log(sum(5, 7, 9)); */
   }
 }
 console.log(arithmeticSequenceElements(1, 2, 5)); */
+
+// #7kyu What is my name score? #1
+/* function nameScore(name) {
+  const alpha = ["Z", "ABCDE", "FGHIJ", "KLMNO", "PQRST", "UVWXY"];
+  let sum = 0;
+  let result = {};
+  let clearName = name.toUpperCase().split(" ").join("");
+  for (let i = 0; i < clearName.length; i++) {
+    for (let k = 0; k < alpha.length; k++) {
+      if (alpha[k].includes(clearName[i])) {
+        sum += k;
+      }
+    }
+  }
+  result[name] = sum;
+  return result;
+}
+console.log(nameScore("Mary Jane")); */
