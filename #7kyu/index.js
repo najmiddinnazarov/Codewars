@@ -6366,3 +6366,24 @@ console.log(arithmeticSequenceElements(1, 2, 5)); */
   return result;
 }
 console.log(nameScore("Mary Jane")); */
+
+// #7kyu Operations With Sets
+/* function process2Arrays(arr1, arr2) {
+  let bothArray = arr1.concat(arr2).filter((value, index, temp) => {
+    return temp.indexOf(value) !== index;
+  });
+  let onlyArray = arr1.concat(arr2).filter((value) => {
+    return !bothArray.includes(value);
+  });
+  let firstArray = arr1.filter((value) => !bothArray.includes(value));
+  let secondArray = arr2.filter((value) => !bothArray.includes(value));
+  return [
+    bothArray.length,
+    onlyArray.length,
+    firstArray.length,
+    secondArray.length,
+  ];
+}
+console.log(
+  process2Arrays([1, 2, 3, 4, 5, 6, 7, 8, 9], [2, 4, 6, 8, 10, 12, 14])
+); */
