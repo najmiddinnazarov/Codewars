@@ -6387,3 +6387,22 @@ console.log(nameScore("Mary Jane")); */
 console.log(
   process2Arrays([1, 2, 3, 4, 5, 6, 7, 8, 9], [2, 4, 6, 8, 10, 12, 14])
 ); */
+
+// #7kyu The Hidden Word
+/* function hiddenWord(num) {
+  const maya = {
+    6: "a",
+    1: "b",
+    7: "d",
+    4: "e",
+    3: "i",
+    2: "l",
+    9: "m",
+    8: "n",
+    0: "o",
+    5: "t",
+  };
+  num = num.toString();
+  return num.replace(/[0-9]/g, (value) => maya[value] || "");
+}
+console.log(hiddenWord(942547)); */
