@@ -6406,3 +6406,13 @@ console.log(
   return num.replace(/[0-9]/g, (value) => maya[value] || "");
 }
 console.log(hiddenWord(942547)); */
+
+// #7kyu Number Manipulation I (Easy)
+/* function manipulate(num) {
+  num = num.toString();
+  const result =
+    num.slice(0, Math.floor(num.length / 2)) +
+    "0".repeat(num.length - Math.floor(num.length / 2));
+  return Number(result);
+}
+console.log(manipulate(8384737)); */
