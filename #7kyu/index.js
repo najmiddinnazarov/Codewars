@@ -6416,3 +6416,14 @@ console.log(hiddenWord(942547)); */
   return Number(result);
 }
 console.log(manipulate(8384737)); */
+
+// #7kyu Character Concatenation
+/* function charConcat(string) {
+  let originalSize = Math.floor(string.length / 2);
+  let result = "";
+  for (let i = 0; i < originalSize; i++) {
+    result += string[i] + string[string.length - 1 - i] + (i + 1);
+  }
+  return result;
+}
+console.log(charConcat("abc!def")); */
