@@ -6427,3 +6427,23 @@ console.log(manipulate(8384737)); */
   return result;
 }
 console.log(charConcat("abc!def")); */
+
+// #7kyu Credit card issuer checking
+/* function getIssuer(number) {
+  number = number.toString();
+  const len = number.length;
+  if ((len === 13 || len === 16) && number.startsWith("4")) {
+    return "VISA";
+  }
+  if (len === 16 && /^5[1-5]/.test(number)) {
+    return "Mastercard";
+  }
+  if (len === 16 && number.startsWith("6011")) {
+    return "Discover";
+  }
+  if (len === 15 && /^3[4|7]/.test(number)) {
+    return "AMEX";
+  }
+  return "Unknown";
+}
+console.log(getIssuer(4111111111111111)); */
