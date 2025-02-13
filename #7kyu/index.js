@@ -6466,3 +6466,9 @@ console.log(getIssuer(4111111111111111)); */
   }
 }
 console.log(well([[]])); */
+
+// #7kyu Regexp Basics - is it a letter?
+/* String.prototype.isLetter = function () {
+  return this.length === 1 ? /[A-Za-z]/.test(this) : false;
+};
+console.log("ab".isLetter()); */
