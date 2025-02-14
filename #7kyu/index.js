@@ -6472,3 +6472,24 @@ console.log(well([[]])); */
   return this.length === 1 ? /[A-Za-z]/.test(this) : false;
 };
 console.log("ab".isLetter()); */
+
+// #7kyu Multiply array values and filter non-numeric
+/* function multiplyAndFilter(array, multiplier) {
+  let checkArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (/[0-9]/.test(array[i])) {
+      checkArray.push(array[i]);
+    }
+  }
+  let result = [];
+  for (let i = 0; i < checkArray.length; i++) {
+    result.push(multiplier * checkArray[i]);
+  }
+  return result;
+}
+console.log(
+  multiplyAndFilter(
+    [1, null, function () {}, 2.5, "string", 10, undefined, {}, []],
+    2
+  )
+); */
