@@ -6493,3 +6493,23 @@ console.log(
     2
   )
 ); */
+
+// #7kyu Combine objects
+/* function combine(...args) {
+  let object = {};
+  for (let i = 0; i < args.length; i++) {
+    let keys = Object.keys(args[i]);
+    let values = Object.values(args[i]);
+    for (let k = 0; k < keys.length; k++) {
+      if (keys[k] in object) {
+        object[keys[k]] += values[k];
+      } else {
+        object[keys[k]] = values[k];
+      }
+    }
+  }
+  return object;
+}
+console.log(
+  combine({ a: 10, b: 20, c: 30 }, { a: 3, c: 6, d: 3 }, { a: 5, d: 11, e: 8 })
+); */
