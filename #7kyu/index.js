@@ -6513,3 +6513,11 @@ console.log(
 console.log(
   combine({ a: 10, b: 20, c: 30 }, { a: 3, c: 6, d: 3 }, { a: 5, d: 11, e: 8 })
 ); */
+
+// #7kyu Multiply Word in String
+/* function modifyMultiply(str, loc, num) {
+  str = str.split(" ");
+  return (str[loc] + "-").repeat(num).slice(0, -1);
+}
+console.log(modifyMultiply("This is a string", 3, 5));
+ */
