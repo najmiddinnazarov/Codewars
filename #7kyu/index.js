@@ -6521,3 +6521,10 @@ console.log(
 }
 console.log(modifyMultiply("This is a string", 3, 5));
  */
+
+// #7kyu Regexp Basics - is it a vowel?
+/* String.prototype.vowel = function () {
+  const regex = /[aeiou]/i;
+  return this.length === 1 ? regex.test(this) : false;
+};
+console.log("aa".vowel()); */
