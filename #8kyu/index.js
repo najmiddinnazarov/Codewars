@@ -1683,3 +1683,9 @@ console.log(yourFutureCareer()); */
   return values.filter((number) => number % 2);
 }
 console.log(odds([1, 2, 3, 4, 5])); */
+
+// #8kyu Grasshopper - Personalized Message
+/* function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}
+console.log(greet(("Daniel", "Daniel"))); */
