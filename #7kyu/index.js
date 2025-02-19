@@ -6528,3 +6528,16 @@ console.log(modifyMultiply("This is a string", 3, 5));
   return this.length === 1 ? regex.test(this) : false;
 };
 console.log("aa".vowel()); */
+
+// #7kyu Maximum Product
+/* function adjacentElementsProduct(array) {
+  let result = array[0] * array[1];
+  for (let i = 0; i < array.length; i++) {
+    let multiple = array[i] * array[i + 1];
+    if (multiple >= result) {
+      result = multiple;
+    }
+  }
+  return result;
+}
+console.log(adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921])); */
