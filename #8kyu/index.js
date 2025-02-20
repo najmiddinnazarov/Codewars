@@ -1689,3 +1689,13 @@ console.log(odds([1, 2, 3, 4, 5])); */
   return name === owner ? "Hello boss" : "Hello guest";
 }
 console.log(greet(("Daniel", "Daniel"))); */
+
+// #8kyu Name on billboard
+/* function billboard(name, price = 30) {
+  let sum = 0;
+  for (let i = 0; i < name.length; i++) {
+    sum += price;
+  }
+  return sum;
+}
+console.log(billboard("Jeong-Ho Aristotelis")); */
