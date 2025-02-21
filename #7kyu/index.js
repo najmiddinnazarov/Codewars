@@ -6541,3 +6541,14 @@ console.log("aa".vowel()); */
   return result;
 }
 console.log(adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921])); */
+
+// #7kyu Get initials from person name
+/* function toInitials(name) {
+  let array = name.split(" ");
+  let result = "";
+  for (let i = 0; i < array.length; i++) {
+    result += array[i + 1] ? array[i][0] + "." + " " : array[i][0] + ".";
+  }
+  return result;
+}
+console.log(toInitials("Robert C. Martin")); */
