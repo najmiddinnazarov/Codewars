@@ -6552,3 +6552,11 @@ console.log(adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921])); *
   return result;
 }
 console.log(toInitials("Robert C. Martin")); */
+
+// #7kyu Broken Collatz
+/* function collatz(n, count = 1) {
+  if (n === 1) return count;
+  n = n % 2 === 0 ? n / 2 : n * 3 + 1;
+  return collatz(n, count + 1);
+}
+console.log(collatz(4)); */
