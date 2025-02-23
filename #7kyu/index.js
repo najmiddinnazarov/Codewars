@@ -6560,3 +6560,33 @@ console.log(toInitials("Robert C. Martin")); */
   return collatz(n, count + 1);
 }
 console.log(collatz(4)); */
+
+// #7kyu Bug fix: Is this component visible?
+/* class Component {
+  #id;
+  #parent;
+  #children;
+  #visibility;
+  constructor(id, children) {
+    this.#id = id;
+    this.#children = children;
+    this.#visibility = null; 
+    this.#parent = null;
+    this.#children.forEach(child => child.#parent = this);
+  }
+  set visibility(value) {
+    this.#visibility = value;
+  }
+  get isVisible() {
+    if (this.#visibility !== null) {
+      return this.#visibility;
+    }
+    if (this.#parent) {
+      return this.#parent.isVisible;
+    }
+    return true;
+  }
+  toString() {
+    return this.#id;
+  }
+} */
