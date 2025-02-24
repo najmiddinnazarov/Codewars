@@ -6590,3 +6590,9 @@ console.log(collatz(4)); */
     return this.#id;
   }
 } */
+
+// #7kyu For the sake of argument
+/* function numbers(...args) {
+  return args.every((value) => typeof value === "number");
+}
+console.log(numbers(1, 4, 3, NaN, 5)); */
