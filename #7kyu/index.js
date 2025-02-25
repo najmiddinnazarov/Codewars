@@ -6596,3 +6596,26 @@ console.log(collatz(4)); */
   return args.every((value) => typeof value === "number");
 }
 console.log(numbers(1, 4, 3, NaN, 5)); */
+
+// #7kyu Coding 3min: Bug in Apple
+/* function sc(apple) {
+  let result = [];
+  for (let i = 0; i < apple.length; i++) {
+    for (let k = 0; k < apple[i].length; k++) {
+      if (apple[i][k] === "B") {
+        result[0] = i;
+        result[1] = k;
+      }
+    }
+  }
+  return result;
+}
+console.log(
+  sc([
+    ["B", "A", "A", "A", "A"],
+    ["A", "A", "A", "A", "A"],
+    ["A", "A", "A", "A", "A"],
+    ["A", "A", "A", "A", "A"],
+    ["A", "A", "A", "A", "A"],
+  ])
+); */
