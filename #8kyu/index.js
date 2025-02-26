@@ -1699,3 +1699,9 @@ console.log(greet(("Daniel", "Daniel"))); */
   return sum;
 }
 console.log(billboard("Jeong-Ho Aristotelis")); */
+
+// #8kyu Grasshopper - Messi Goals
+/* var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals; */
