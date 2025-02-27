@@ -1705,3 +1705,13 @@ console.log(billboard("Jeong-Ho Aristotelis")); */
 var championsLeagueGoals = 10;
 var copaDelReyGoals = 5;
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals; */
+
+// #8kyu [BUG] XCOM-409: Flight distance of Interceptor planes is miscalculated
+/* function travelDistance(avgSpeed, travelTime) {
+  const NAUTICAL_MILES_PER_HOUR = 1.852;
+  const travelHours = travelTime / 60;
+  const distanceNauticalMiles = avgSpeed * travelHours;
+  const travelDistanceKm = distanceNauticalMiles * NAUTICAL_MILES_PER_HOUR;
+  return travelDistanceKm;
+}
+console.log(travelDistance(0, 0)); */
