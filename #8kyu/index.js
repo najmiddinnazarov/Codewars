@@ -1715,3 +1715,10 @@ var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals; */
   return travelDistanceKm;
 }
 console.log(travelDistance(0, 0)); */
+
+// #8kyu Wilson primes
+/* function amIWilson(p) {
+  const wilsonPrime = ["5", "13", "563"];
+  return wilsonPrime.includes(p.toString());
+}
+console.log(amIWilson(5)); */
