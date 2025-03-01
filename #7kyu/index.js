@@ -6619,3 +6619,15 @@ console.log(
     ["A", "A", "A", "A", "A"],
   ])
 ); */
+
+// #7kyu A (no more) bugs trilogy: Episode 3 - Make a Player
+/* function Player(name, position, age, dribbling, pass, shoot) {
+  this.name = name;
+  this.position = position;
+  this.age = age;
+  this.dribbling = dribbling;
+  this.pass = pass;
+  this.shoot = shoot;
+}
+const myPlayer = new Player("Dumbo", "Kata Coder", 1, 2, 3, 4);
+console.log(myPlayer.dribbling); */
