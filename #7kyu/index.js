@@ -6631,3 +6631,14 @@ console.log(
 }
 const myPlayer = new Player("Dumbo", "Kata Coder", 1, 2, 3, 4);
 console.log(myPlayer.dribbling); */
+
+// #7kyu [BUG] XCOM-141: Koko always gets treats
+/* function applyFeedback(battlescape, enemy, position) {
+  const battlescapeArray = [...battlescape];
+  if (battlescapeArray[position] === enemy) {
+    return "DISPENSE_TREAT";
+  } else {
+    return "RELEASE_NITROGEN_SHOWER";
+  }
+}
+console.log(applyFeedback("👮🚗👽🏠🚒", "👽", 2)); */
