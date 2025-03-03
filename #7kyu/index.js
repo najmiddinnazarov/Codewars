@@ -6642,3 +6642,30 @@ console.log(myPlayer.dribbling); */
   }
 }
 console.log(applyFeedback("👮🚗👽🏠🚒", "👽", 2)); */
+
+// #7kyu Turn any word into a beef taco
+/* function tacofy(word) {
+  word = word.toLowerCase();
+  let object = {
+    a: "beef",
+    o: "beef",
+    e: "beef",
+    i: "beef",
+    u: "beef",
+    t: "tomato",
+    l: "lettuce",
+    c: "cheese",
+    g: "guacamole",
+    s: "salsa",
+  };
+  let result = [];
+  for (let i = 0; i < word.length; i++) {
+    if (object[word[i]]) {
+      result.push(object[word[i]]);
+    }
+  }
+  result.unshift("shell");
+  result.push("shell");
+  return result;
+}
+console.log(tacofy("aggg")); */
