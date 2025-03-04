@@ -1722,3 +1722,9 @@ console.log(travelDistance(0, 0)); */
   return wilsonPrime.includes(p.toString());
 }
 console.log(amIWilson(5)); */
+
+// #8kyu Be Concise I - The Ternary Operator
+/* function describeAge(age) {
+  return "You're a(n) "+(age<=12?"kid":age>=13 && age<=17?"teenager":age>=18 && age<=64?"adult":"elderly")
+}
+console.log(describeAge(13)); */
