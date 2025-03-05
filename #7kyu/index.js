@@ -6669,3 +6669,24 @@ console.log(applyFeedback("👮🚗👽🏠🚒", "👽", 2)); */
   return result;
 }
 console.log(tacofy("aggg")); */
+
+// #7kyu Alphabetize a list by the nth character
+/* function sortIt(list, n) {
+  let array = list.split(", ");
+  return array
+    .sort((a, b) => {
+      let letterA = a[n - 1].toLowerCase();
+      let letterB = b[n - 1].toLowerCase();
+      if (letterA !== letterB) {
+        return letterA.localeCompare(letterB);
+      }
+      return a.toLowerCase().localeCompare(b.toLowerCase());
+    })
+    .join(", ");
+}
+console.log(
+  sortIt(
+    "Cornelius Lutz, Anton Ferner, Wolfgang Mittermeyer, Oskar von Reuenthal, Helmut Rennenkampf, Fritz Josef Bittenfeld, Neidhardt Muller",
+    10
+  )
+); */
