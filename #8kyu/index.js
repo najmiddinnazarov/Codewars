@@ -1728,3 +1728,9 @@ console.log(amIWilson(5)); */
   return "You're a(n) "+(age<=12?"kid":age>=13 && age<=17?"teenager":age>=18 && age<=64?"adult":"elderly")
 }
 console.log(describeAge(13)); */
+
+// #8kyu Plural
+/* function plural(n) {
+  return n !== 1;
+}
+console.log(plural(Infinity)); */
