@@ -6716,3 +6716,14 @@ console.log(
   return string.replace(/[A-Za-z]/g, (x) => (object[x] ? object[x] : x));
 }
 console.log(cypher("Hello World")); */
+
+// #7kyu Array element parity
+/* function solve(arr) {
+  let uniqueNumbers = new Set(arr);
+  for (let num of uniqueNumbers) {
+    if (!uniqueNumbers.has(-num)) {
+      return num;
+    }
+  }
+}
+console.log(solve([-110, 110, -38, -38, -62, 62, -38, -38, -38])); */
