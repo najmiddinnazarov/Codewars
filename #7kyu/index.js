@@ -6727,3 +6727,20 @@ console.log(cypher("Hello World")); */
   }
 }
 console.log(solve([-110, 110, -38, -38, -62, 62, -38, -38, -38])); */
+
+// #7kyu Simple Fun #144: Distinct Digit Year
+/* function distinctDigitYear(year) {
+  if (year === 1987) {
+    return 2013;
+  } else {
+    year += 1;
+    while (true) {
+      let yearStr = year.toString();
+      if ([...new Set([...yearStr])].length === yearStr.length) {
+        return year;
+      }
+      year += 1;
+    }
+  }
+}
+console.log(distinctDigitYear(8743)); */
