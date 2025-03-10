@@ -6744,3 +6744,9 @@ console.log(solve([-110, 110, -38, -38, -62, 62, -38, -38, -38])); */
   }
 }
 console.log(distinctDigitYear(8743)); */
+
+// #7kyu Largest Square Inside A Circle
+/* function areaLargestSquare(r) {
+  return r * r + r * r;
+}
+console.log(areaLargestSquare(5)); */
