@@ -6750,3 +6750,20 @@ console.log(distinctDigitYear(8743)); */
   return r * r + r * r;
 }
 console.log(areaLargestSquare(5)); */
+
+// #7kyu Spraying trees
+/* function task(w, t, c) {
+  let names = {
+    Monday: "James",
+    Tuesday: "John",
+    Wednesday: "Robert",
+    Thursday: "Michael",
+    Friday: "William",
+  };
+  return `It is ${w} today, ${
+    names[w]
+  }, you have to work, you must spray ${t} trees and you need ${
+    t * c
+  } dollars to buy liquid`;
+}
+console.log(task("Wednesday", 10, 2)); */
