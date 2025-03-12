@@ -6767,3 +6767,11 @@ console.log(areaLargestSquare(5)); */
   } dollars to buy liquid`;
 }
 console.log(task("Wednesday", 10, 2)); */
+
+// #7kyu Noonerize Me
+/* function noonerize(numbers) {
+  let a = numbers[1].toString()[0] + numbers[0].toString().slice(1);
+  let b = numbers[0].toString()[0] + numbers[1].toString().slice(1);
+  return a - b ? Math.abs(a - b) : "invalid array";
+}
+console.log(noonerize([1000000, 9999999])); */
