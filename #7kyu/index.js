@@ -6775,3 +6775,17 @@ console.log(task("Wednesday", 10, 2)); */
   return a - b ? Math.abs(a - b) : "invalid array";
 }
 console.log(noonerize([1000000, 9999999])); */
+
+// #7kyu Mirror, mirror, on the wall...
+/* function mirror(data) {
+  let temp1 = [...data];
+  let temp2 = [...data];
+  const increase = temp1.sort((a, b) => a - b);
+  const decrease = temp2.sort((a, b) => b - a);
+  if (increase[increase.length - 1] === decrease[0]) {
+    return [...increase, ...decrease.slice(1)];
+  } else {
+    return [...increase, ...decrease];
+  }
+}
+console.log(mirror([2, 3, 1])); */
