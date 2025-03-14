@@ -6789,3 +6789,20 @@ console.log(noonerize([1000000, 9999999])); */
   }
 }
 console.log(mirror([2, 3, 1])); */
+
+// #7kyu Collatz Conjecture Length
+/* function collatz(n) {
+  let output = [n];
+  let i = 0;
+  while (output[i] !== 1) {
+    if (output[i] % 2 === 0) {
+      output.push(output[i] / 2);
+      i++;
+    } else {
+      output.push(output[i] * 3 + 1);
+      i++;
+    }
+  }
+  return output.length;
+}
+console.log(collatz(20)); */
