@@ -6806,3 +6806,17 @@ console.log(mirror([2, 3, 1])); */
   return output.length;
 }
 console.log(collatz(20)); */
+
+// #7kyu Lorraine Wants to Win the TV Contest
+/* function unscramble(scramble) {
+  return wordList.filter((value) => {
+    if (value.length === scramble.length) {
+      let sortValue = [...value].sort().join("");
+      let sortScramble = [...scramble].sort().join("");
+      if (sortValue === sortScramble) {
+        return value;
+      }
+    }
+  });
+}
+console.log(unscramble("shi")); */
