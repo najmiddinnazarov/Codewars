@@ -6820,3 +6820,12 @@ console.log(collatz(20)); */
   });
 }
 console.log(unscramble("shi")); */
+
+// #7kyu Simple Fun #40: Timed Reading
+/* function timedReading(maxLength, text) {
+  const onlyRead = text.split(/\W+/g);
+  return onlyRead.filter(
+    (value) => value.length > 0 && value.length <= maxLength
+  ).length;
+}
+console.log(timedReading(4, "The Fox asked the stork, 'How is the soup?'")); */
