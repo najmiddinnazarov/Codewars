@@ -6829,3 +6829,13 @@ console.log(unscramble("shi")); */
   ).length;
 }
 console.log(timedReading(4, "The Fox asked the stork, 'How is the soup?'")); */
+
+// #7kyu Guess the Sequence
+/* function sequence(x) {
+  let array = [];
+  for (let i = 1; i <= x; i++) {
+    array.push(i);
+  }
+  return array.sort();
+}
+console.log(sequence(16)); */
