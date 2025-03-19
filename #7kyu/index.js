@@ -6839,3 +6839,16 @@ console.log(timedReading(4, "The Fox asked the stork, 'How is the soup?'")); */
   return array.sort();
 }
 console.log(sequence(16)); */
+
+// #7kyu Operations with sequence
+/* var calc = function (a) {
+  const firstCondition = a.map((value) => (value > 0 ? value * value : value));
+  const secondCondition = firstCondition.map((value, index) =>
+    (index + 1) % 3 === 0 ? value * 3 : value
+  );
+  const thirdCondition = secondCondition.map((value, index) =>
+    (index + 1) % 5 === 0 ? value * -1 : value
+  );
+  return thirdCondition.reduce((curr, sum) => curr + sum, 0);
+};
+console.log(calc([0, 2, 1, -6, -3, 3])); */
