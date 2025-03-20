@@ -6852,3 +6852,32 @@ console.log(sequence(16)); */
   return thirdCondition.reduce((curr, sum) => curr + sum, 0);
 };
 console.log(calc([0, 2, 1, -6, -3, 3])); */
+
+// #7kyu Simple Maths Test
+/* function numberProperty(n) {
+  let result = [];
+  if (n > 1) {
+    let isPrime = true;
+    for (let i = 2; i <= n / 2; i++) {
+      if (n % i == 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    result[0] = isPrime;
+  } else {
+    result[0] = false;
+  }
+  if (n % 2 === 0) {
+    result[1] = true;
+  } else {
+    result[1] = false;
+  }
+  if (n % 10 === 0) {
+    result[2] = true;
+  } else {
+    result[2] = false;
+  }
+  return result;
+}
+console.log(numberProperty(7)); */
