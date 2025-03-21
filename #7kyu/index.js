@@ -6881,3 +6881,39 @@ console.log(calc([0, 2, 1, -6, -3, 3])); */
   return result;
 }
 console.log(numberProperty(7)); */
+
+// #7kyu Adding words - Part I
+/* class Arith {
+  constructor(number) {
+    this.number = number;
+  }
+  add = function (n) {
+    const numbers = [
+      "zero",
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten",
+      "eleven",
+      "twelve",
+      "thirteen",
+      "fourteen",
+      "fifteen",
+      "sixteen",
+      "seventeen",
+      "eighteen",
+      "nineteen",
+      "twenty",
+    ];
+    const calc = numbers.indexOf(this.number) + numbers.indexOf(n);
+    return numbers[calc];
+  };
+}
+var k = new Arith("three");
+console.log(k.add("seven")); */
