@@ -6917,3 +6917,15 @@ console.log(numberProperty(7)); */
 }
 var k = new Arith("three");
 console.log(k.add("seven")); */
+
+// #7kyu Elevator Distance
+/* function elevatorDistance(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i + 1] || array[i + 1] === 0) {
+      sum += Math.abs(array[i] - array[i + 1]);
+    }
+  }
+  return sum;
+}
+console.log(elevatorDistance([19, 0, 20, 11])); */
