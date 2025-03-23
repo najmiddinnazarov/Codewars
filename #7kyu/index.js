@@ -6929,3 +6929,15 @@ console.log(k.add("seven")); */
   return sum;
 }
 console.log(elevatorDistance([19, 0, 20, 11])); */
+
+// #7kyu Alphabetical Sequence
+/* function alphaSeq(str) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  const sortString = [...str.toLowerCase()].sort((a, b) => a.localeCompare(b));
+  return sortString
+    .map(
+      (value) => value.toUpperCase() + value.repeat(alphabet.indexOf(value) - 1)
+    )
+    .join(",");
+}
+console.log(alphaSeq("ZpglnRxqenU")); */
