@@ -6941,3 +6941,18 @@ console.log(elevatorDistance([19, 0, 20, 11])); */
     .join(",");
 }
 console.log(alphaSeq("ZpglnRxqenU")); */
+
+// #7kyu Equalize the array!
+/* function equalize(array) {
+  let result = [];
+  const firstNumber = array[0];
+  for (let i = 0; i < array.length; i++) {
+    result.push(
+      array[i] - firstNumber >= 0
+        ? "+" + (array[i] - firstNumber).toString()
+        : (array[i] - firstNumber).toString()
+    );
+  }
+  return result;
+}
+console.log(equalize([10, 12, 24, 50, 0, 15, 20])); */
