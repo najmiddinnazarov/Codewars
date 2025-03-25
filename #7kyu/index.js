@@ -6956,3 +6956,18 @@ console.log(alphaSeq("ZpglnRxqenU")); */
   return result;
 }
 console.log(equalize([10, 12, 24, 50, 0, 15, 20])); */
+
+// #7kyu Diagonals sum
+/* function sum(matrix) {
+  const a = matrix.map((value, index) => value[index]);
+  const b = matrix.map((value, index) => value[value.length - 1 - index]);
+  return [...a, ...b].reduce((sum, curr) => sum + curr, 0);
+}
+console.log(
+  sum([
+    [-2, 5, 3, 2],
+    [9, -6, 5, 1],
+    [3, 2, 7, 3],
+    [-1, 8, -4, 8],
+  ])
+); */
