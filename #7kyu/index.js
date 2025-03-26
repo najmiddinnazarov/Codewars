@@ -6971,3 +6971,11 @@ console.log(
     [-1, 8, -4, 8],
   ])
 ); */
+
+// #7kyu Finding Remainder Without Using '%' Operator
+/* const remainder = (D, d) => {
+  q = parseInt(D / d);
+  p = q * d;
+  return D - p;
+};
+console.log(remainder(3, 2)); */
