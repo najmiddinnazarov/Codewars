@@ -6979,3 +6979,25 @@ console.log(
   return D - p;
 };
 console.log(remainder(3, 2)); */
+
+// #7kyu Simple Fun #136: Missing Values
+/* function missingValues(arr) {
+  let valueCount = {};
+  for (const key in arr) {
+    if (arr[key] in valueCount) {
+      valueCount[arr[key]]++;
+    } else {
+      valueCount[arr[key]] = 1;
+    }
+  }
+  let sum = 1;
+  for (const key in valueCount) {
+    if (valueCount[key] === 2) {
+      sum *= key;
+    } else if (valueCount[key] === 1) {
+      sum *= key ** 2;
+    }
+  }
+  return sum;
+}
+console.log(missingValues([1, 1, 1, 2, 2, 3])); */
