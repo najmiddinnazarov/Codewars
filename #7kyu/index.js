@@ -7001,3 +7001,14 @@ console.log(remainder(3, 2)); */
   return sum;
 }
 console.log(missingValues([1, 1, 1, 2, 2, 3])); */
+
+// #7kyu Not all but sometimes all
+/* function remove(str, what) {
+  for (const key in what) {
+    for (let i = 0; i < what[key]; i++) {
+      str = str.replace(key, "");
+    }
+  }
+  return str;
+}
+console.log(remove("this is a string", { t: 1, i: 2 })); */
