@@ -7012,3 +7012,17 @@ console.log(missingValues([1, 1, 1, 2, 2, 3])); */
   return str;
 }
 console.log(remove("this is a string", { t: 1, i: 2 })); */
+
+// #7kyu Hungarian Vowel Harmony (easy)
+/* function dative(word) {
+  const frontVowel = ["e", "é", "i", "í", "ö", "ő", "ü", "ű"];
+  const backVowel = ["a", "á", "o", "ó", "u", "ú"];
+  for (let i = word.length; i >= 0; i--) {
+    if (frontVowel.includes(word[i])) {
+      return word + "nek";
+    } else if (backVowel.includes(word[i])) {
+      return word + "nak";
+    }
+  }
+}
+console.log(dative("őr")); */
