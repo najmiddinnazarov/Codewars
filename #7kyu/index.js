@@ -7026,3 +7026,18 @@ console.log(remove("this is a string", { t: 1, i: 2 })); */
   }
 }
 console.log(dative("őr")); */
+
+// #7kyu Upturn Numeral Triangle
+/* function pattern(n) {
+  let output = [];
+  let k = n;
+  let j = 1;
+  for (let i = 1; i < n + 1; i++) {
+    let temp = i.toString().split("")[i.toString().length - 1];
+    output.push(" ".repeat(j - 1) + (" " + temp).repeat(k));
+    k--;
+    j++;
+  }
+  return output.join("\n");
+}
+console.log(pattern(16)); */
