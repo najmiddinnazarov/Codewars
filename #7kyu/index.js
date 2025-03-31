@@ -7041,3 +7041,21 @@ console.log(dative("őr")); */
   return output.join("\n");
 }
 console.log(pattern(16)); */
+
+// #7kyu Simple Fun #270: Evil Code Medal
+/* function evilCodeMedal(userTime, gold, silver, bronze) {
+  userTime = +userTime.split(":").join("");
+  gold = +gold.split(":").join("");
+  silver = +silver.split(":").join("");
+  bronze = +bronze.split(":").join("");
+  if (userTime < gold) {
+    return "Gold";
+  } else if (userTime >= gold && userTime < silver) {
+    return "Silver";
+  } else if (userTime >= silver && userTime < bronze) {
+    return "Bronze";
+  } else {
+    return "None";
+  }
+}
+console.log(evilCodeMedal("03:15:00", "03:15:00", "03:15:01", "03:15:02")); */
