@@ -7059,3 +7059,12 @@ console.log(pattern(16)); */
   }
 }
 console.log(evilCodeMedal("03:15:00", "03:15:00", "03:15:01", "03:15:02")); */
+
+// #7kyu Palindromes Here and There
+/* function convertPalindromes(numbers) {
+  return numbers.map((value) => {
+    let string = value.toString().split("").reverse().join("");
+    return Number(value == string);
+  });
+}
+console.log(convertPalindromes([101, 2, 85, 33, 14014])); */
