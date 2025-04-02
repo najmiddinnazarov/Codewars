@@ -1318,3 +1318,21 @@ console.log(onlyDuplicates("abccdefee")); */
   return shuffleCount;
 }
 console.log(faroCount(52)); */
+
+// #6kyu Sentence Calculator
+/* function lettersToNumbers(s) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  const numbers = "0123456789";
+  let result = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === s[i].toUpperCase() && alphabet.includes(s[i].toLowerCase())) {
+      result += alphabet.indexOf(s[i].toLowerCase()) * 2;
+    } else if (alphabet.includes(s[i])) {
+      result += alphabet.indexOf(s[i]);
+    } else if (numbers.includes(s[i])) {
+      result += numbers.indexOf(s[i]);
+    }
+  }
+  return result;
+}
+console.log(lettersToNumbers("Give me 5!")); */
