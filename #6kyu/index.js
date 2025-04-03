@@ -1336,3 +1336,21 @@ console.log(faroCount(52)); */
   return result;
 }
 console.log(lettersToNumbers("Give me 5!")); */
+
+// #6kyu Simplify the number!
+/* function simplify(number) {
+  let result = [];
+  number = number.toString();
+  for (let i = 0; i < number.length; i++) {
+    if (number[i] != 0) {
+      result.push(
+        number[i] +
+          "*".repeat(number.length - i - 1 ? 1 : 0) +
+          "1".repeat(number.length - i - 1 ? 1 : 0) +
+          "0".repeat(number.length - i - 1)
+      );
+    }
+  }
+  return result.join("+");
+}
+console.log(simplify(560)); */
