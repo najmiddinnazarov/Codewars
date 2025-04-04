@@ -1354,3 +1354,27 @@ console.log(lettersToNumbers("Give me 5!")); */
   return result.join("+");
 }
 console.log(simplify(560)); */
+
+// #6kyu Custom Array Filters
+/* Array.prototype.even = function () {
+  if (this !== "0") {
+    return this.filter((num) => num % 2 === 0 && Number.isInteger(num));
+  }
+};
+Array.prototype.odd = function () {
+  return this.filter((num) => num % 2 && Number.isInteger(num));
+};
+Array.prototype.inRange = function (start, end) {
+  return this.filter(
+    (num) => num >= start && num <= end && Number.isInteger(num)
+  );
+};
+Array.prototype.under = function (end) {
+  return this.filter((num) => num < end && Number.isInteger(num));
+};
+Array.prototype.over = function (start) {
+  return this.filter((num) => num > start && Number.isInteger(num));
+};
+console.log(
+  ["a", 1, "0", "b", 300, "x", "q", 63, 122, 181, "z", 0.83, 0.11].even()
+); */
