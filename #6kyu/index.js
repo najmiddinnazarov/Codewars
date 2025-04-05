@@ -1378,3 +1378,37 @@ Array.prototype.over = function (start) {
 console.log(
   ["a", 1, "0", "b", 300, "x", "q", 63, 122, 181, "z", 0.83, 0.11].even()
 ); */
+
+// #6kyu Find Added
+/* function findAdded(st1, st2) {
+  if (st1.length > st2.length) {
+    return "";
+  }
+  let st1CountNumber = {};
+  let st2CountNumber = {};
+  for (let i = 0; i < st1.length; i++) {
+    if (st1[i] in st1CountNumber) {
+      st1CountNumber[st1[i]]++;
+    } else {
+      st1CountNumber[st1[i]] = 1;
+    }
+  }
+  for (let i = 0; i < st2.length; i++) {
+    if (st2[i] in st2CountNumber) {
+      st2CountNumber[st2[i]]++;
+    } else {
+      st2CountNumber[st2[i]] = 1;
+    }
+  }
+  let result = "";
+  for (const num in st2CountNumber) {
+    if (st2CountNumber[num] > st1CountNumber[num]) {
+      let count = st2CountNumber[num] - st1CountNumber[num];
+      result += num.repeat(count);
+    } else if (st1CountNumber[num] == undefined) {
+      result += num.repeat(st2CountNumber[num]);
+    }
+  }
+  return result;
+}
+console.log(findAdded("026866682139", "8356026866682139595")); */
