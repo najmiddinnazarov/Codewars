@@ -1412,3 +1412,25 @@ console.log(
   return result;
 }
 console.log(findAdded("026866682139", "8356026866682139595")); */
+
+// #6kyu T.T.T.22: Left? Right? Both?
+/* function leftRightOrBoth(text) {
+  const left = "12345QWERTASDFGZXCVB";
+  const right = "67890YUIOPHJKL'NM,./^&*()";
+  if (text === "") return "";
+  let leftCount = 0;
+  let rightCount = 0;
+  text = text.toUpperCase();
+  for (let i = 0; i < text.length; i++) {
+    if (left.includes(text[i])) {
+      leftCount++;
+    } else if (right.includes(text[i])) {
+      rightCount++;
+    }
+  }
+  if (leftCount > 0 && rightCount > 0) return "Both";
+  else if (leftCount > rightCount) return "Left";
+  else if (rightCount > leftCount) return "Right";
+  else return "";
+}
+console.log(leftRightOrBoth("^&*()")); */
