@@ -1434,3 +1434,13 @@ console.log(findAdded("026866682139", "8356026866682139595")); */
   else return "";
 }
 console.log(leftRightOrBoth("^&*()")); */
+
+// #6kyu Round by 0.5 steps
+/* function solution(n) {
+  return n.toString().includes(".")
+    ? Math.round(n * 2) / 2
+    : n % 1 === 0
+    ? n
+    : Math.round(n * 2) / 2;
+}
+console.log(solution(4.8)); */
