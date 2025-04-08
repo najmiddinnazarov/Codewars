@@ -1444,3 +1444,23 @@ console.log(leftRightOrBoth("^&*()")); */
     : Math.round(n * 2) / 2;
 }
 console.log(solution(4.8)); */
+
+// #6kyu Deep List Reverse
+/* function deepReverse(l) {
+  let result = [];
+  for (let i = l.length - 1; i >= 0; i--) {
+    if (Array.isArray(l[i])) {
+      result.push(deepReverse(l[i]));
+    } else {
+      result.push(l[i]);
+    }
+  }
+  return result;
+}
+console.log(
+  deepReverse([
+    [1, 2],
+    [3, 4],
+  ])
+);
+ */
