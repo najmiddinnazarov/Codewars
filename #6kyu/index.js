@@ -1464,3 +1464,25 @@ console.log(
   ])
 );
  */
+
+// #6kyu Split and then add both sides of an array together.
+/* function splitAndAdd(arr, n) {
+  if (n === 0) {
+    return arr;
+  } else {
+    let begin;
+    let end;
+    let result = [];
+    if (arr.length % 2 === 0) {
+      begin = arr.slice(0, arr.length / 2);
+      end = arr.slice(arr.length / 2);
+      for (let i = 0; i < begin.length; i++) {
+        result.push(begin[i] + end[i]);
+      }
+      return splitAndAdd(result, n - 1);
+    } else {
+      return splitAndAdd([0, ...arr], n);
+    }
+  }
+}
+console.log(splitAndAdd([1, 2, 3, 4, 5], 3)); */
