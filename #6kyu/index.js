@@ -1486,3 +1486,21 @@ console.log(
   }
 }
 console.log(splitAndAdd([1, 2, 3, 4, 5], 3)); */
+
+// #6kyu The most common letter
+/* function replaceCommon(string, letter) {
+  let countLetter = {};
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] in countLetter && /[A-Za-z]/.test(string[i])) {
+      countLetter[string[i]]++;
+    } else {
+      countLetter[string[i]] = 1;
+    }
+  }
+  const maxNumber = Math.max(...Object.values(countLetter));
+  const findLetter = Object.entries(countLetter).find(
+    (value) => value[1] === maxNumber
+  )[0];
+  return string.replaceAll(findLetter, letter);
+}
+console.log(replaceCommon("my mom loves me as never did", "t")); */
