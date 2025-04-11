@@ -1504,3 +1504,9 @@ console.log(splitAndAdd([1, 2, 3, 4, 5], 3)); */
   return string.replaceAll(findLetter, letter);
 }
 console.log(replaceCommon("my mom loves me as never did", "t")); */
+
+// #6kyu Sort Arrays (Ignoring Case)
+/* function sortme(names) {
+  return names.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+}
+console.log(sortme(["Hello", "there", "I'm", "fine"])); */
