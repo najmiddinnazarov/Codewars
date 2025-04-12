@@ -7068,3 +7068,17 @@ console.log(evilCodeMedal("03:15:00", "03:15:00", "03:15:01", "03:15:02")); */
   });
 }
 console.log(convertPalindromes([101, 2, 85, 33, 14014])); */
+
+// #7kyu Nice Array
+/* function isNice(arr) {
+  if (arr.length === 0) {
+    return false;
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (!(arr.includes(arr[i] - 1) || arr.includes(arr[i] + 1))) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(isNice([])); */
