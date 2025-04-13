@@ -1510,3 +1510,17 @@ console.log(replaceCommon("my mom loves me as never did", "t")); */
   return names.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 }
 console.log(sortme(["Hello", "there", "I'm", "fine"])); */
+
+// #6kyu first character that repeats
+/* function firstDup(s) {
+  let count = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s.indexOf(s[i]) !== s.lastIndexOf(s[i])) {
+      count++;
+      if (count === 1) {
+        return s[i];
+      }
+    }
+  }
+}
+console.log(firstDup("tweet")); */
