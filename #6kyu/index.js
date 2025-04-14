@@ -1524,3 +1524,37 @@ console.log(sortme(["Hello", "there", "I'm", "fine"])); */
   }
 }
 console.log(firstDup("tweet")); */
+
+// #6kyu Update inventory in your smartphone store
+/* function updateInventory(curStock, newStock) {
+  const array = [...curStock, ...newStock];
+  let object = {};
+  for (let i = 0; i < array.length; i++) {
+    if (array[i][1] in object) {
+      object[array[i][1]] += array[i][0];
+    } else {
+      object[array[i][1]] = array[i][0];
+    }
+  }
+  let objectToArray = Object.entries(object).sort((a, b) =>
+    a[0].localeCompare(b[0])
+  );
+  return objectToArray.map((value) => value.reverse());
+}
+console.log(
+  updateInventory(
+    [
+      [25, "HTC"],
+      [1000, "Nokia"],
+      [50, "Samsung"],
+      [33, "Sony"],
+      [10, "Apple"],
+    ],
+    [
+      [5, "LG"],
+      [10, "Sony"],
+      [4, "Samsung"],
+      [5, "Apple"],
+    ]
+  )
+); */
