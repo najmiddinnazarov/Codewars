@@ -1558,3 +1558,9 @@ console.log(
     ]
   )
 ); */
+
+// #6kyu replaceAll(input, find, replace)
+/* function replaceAll(input, find, replace) {
+  return input.replaceAll(find, replace);
+}
+console.log(replaceAll("string-string", "ing", "!")); */
