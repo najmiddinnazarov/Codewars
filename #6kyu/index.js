@@ -1564,3 +1564,40 @@ console.log(
   return input.replaceAll(find, replace);
 }
 console.log(replaceAll("string-string", "ing", "!")); */
+
+// #6kyu Decipher this!
+/* function decipherThis(str) {
+  str = str.split(" ");
+  let num = [];
+  let string = [];
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    if (Number(str[i])) {
+      num.push(str[i]);
+    } else {
+      if (Number(str[i].slice(0, 3))) {
+        num.push(str[i].slice(0, 3));
+      } else if (Number(str[i].slice(0, 2))) {
+        num.push(str[i].slice(0, 2));
+      } else {
+        num.push(str[i].slice(0, 1));
+      }
+    }
+  }
+  for (let i = 0; i < num.length; i++) {
+    string.push(str[i].replace(num[i], String.fromCharCode(num[i])));
+  }
+  for (let i = 0; i < string.length; i++) {
+    if (string[i].length > 2) {
+      let second = string[i][1];
+      let last = string[i][string[i].length - 1];
+      string[i] = string[i].slice(0, 1) + last + string[i].slice(2);
+      string[i] = string[i].slice(0, string[i].length - 1) + second;
+      result.push(string[i]);
+    } else {
+      result.push(string[i]);
+    }
+  }
+  return result.join(" ");
+}
+console.log(decipherThis("65 119esi 111dl 111lw 108dvei 105n 97n 111ka")); */
