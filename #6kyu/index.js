@@ -1601,3 +1601,34 @@ console.log(replaceAll("string-string", "ing", "!")); */
   return result.join(" ");
 }
 console.log(decipherThis("65 119esi 111dl 111lw 108dvei 105n 97n 111ka")); */
+
+// #6kyu Basics 03: Strings, Numbers and Calculation
+/* function calculateString(st) {
+  let math = "0123456789/*+-.";
+  let string = "";
+  for (let i = 0; i < st.length; i++) {
+    if (math.includes(st[i])) {
+      string += st[i];
+    }
+  }
+  let sign;
+  if (string.includes("+")) {
+    sign = "+";
+  } else if (string.includes("-")) {
+    sign = "-";
+  } else if (string.includes("*")) {
+    sign = "*";
+  } else if (string.includes("/")) {
+    sign = "/";
+  } else {
+    return "";
+  }
+  let split = string.split(sign);
+  let result = eval(split.join(sign));
+  return Math.round(
+    result[0] == "0"
+      ? eval(split.join(sign)).toString().replace(/^0./, "").replace(/^0+/, "")
+      : result
+  ).toString();
+}
+console.log(calculateString("fsdfsd235???34.4554s4234df-sdfgf2g3h4j442")); */
