@@ -7082,3 +7082,16 @@ console.log(convertPalindromes([101, 2, 85, 33, 14014])); */
   return true;
 }
 console.log(isNice([])); */
+
+// #7kyu Reimplement Multiplication Part 1
+/* function mul(a, b) {
+  let sum = 0;
+  if (a === 0 || b === 0) {
+    return sum;
+  }
+  for (let i = 0; i < b; i++) {
+    sum += a;
+  }
+  return sum;
+}
+console.log(mul(5, 5)); */
