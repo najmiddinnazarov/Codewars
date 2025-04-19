@@ -1632,3 +1632,22 @@ console.log(decipherThis("65 119esi 111dl 111lw 108dvei 105n 97n 111ka")); */
   ).toString();
 }
 console.log(calculateString("fsdfsd235???34.4554s4234df-sdfgf2g3h4j442")); */
+
+// #6kyu Interlace an arbitrary Number of Strings
+/* function combineStrings(...args) {
+  let array = [...args];
+  let max = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (max < array[i].length) {
+      max = array[i].length;
+    }
+  }
+  let string = "";
+  for (let i = 0; i < max; i++) {
+    for (let k = 0; k < array.length; k++) {
+      string += array[k][i] ? array[k][i] : ""
+    }
+  }
+  return string;
+}
+console.log(combineStrings("abcd", "123", "£$%")); */
