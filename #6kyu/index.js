@@ -1651,3 +1651,43 @@ console.log(calculateString("fsdfsd235???34.4554s4234df-sdfgf2g3h4j442")); */
   return string;
 }
 console.log(combineStrings("abcd", "123", "£$%")); */
+
+// #6kyu Polybius square cipher - encode
+/* function polybius(text) {
+  let polybius = {
+    A: 11,
+    B: 12,
+    C: 13,
+    D: 14,
+    E: 15,
+    F: 21,
+    G: 22,
+    H: 23,
+    I: 24,
+    J: 24,
+    K: 25,
+    L: 31,
+    M: 32,
+    N: 33,
+    O: 34,
+    P: 35,
+    Q: 41,
+    R: 42,
+    S: 43,
+    T: 44,
+    U: 45,
+    V: 51,
+    W: 52,
+    X: 53,
+    Y: 54,
+    Z: 55,
+  };
+  return text.replace(/[A-Za-z]/g, (x) => {
+    if (polybius[x]) {
+      return polybius[x];
+    } else {
+      return x;
+    }
+  });
+}
+console.log(polybius("CODEWARS")); */
