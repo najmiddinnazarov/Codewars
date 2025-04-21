@@ -1691,3 +1691,12 @@ console.log(combineStrings("abcd", "123", "£$%")); */
   });
 }
 console.log(polybius("CODEWARS")); */
+
+// #6kyu Grouped by commas
+/* function groupByCommas(n) {
+  if (typeof n !== "number") return "NaN";
+  let str = String(n).split("").reverse().join("");
+  let result = str.replace(/(\d{3})(?=\d)/g, "$1,");
+  return result.split("").reverse().join("");
+}
+console.log(groupByCommas(32234)); */
