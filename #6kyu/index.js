@@ -1700,3 +1700,13 @@ console.log(polybius("CODEWARS")); */
   return result.split("").reverse().join("");
 }
 console.log(groupByCommas(32234)); */
+
+// #6kyu Binary string
+/* function toBinaryString(number) {
+  let binary = "";
+  for (; number > 0; number >>= 1) {
+    binary = (number & 1) + binary;
+  }
+  return binary || "0";
+}
+console.log(toBinaryString(6)); */
