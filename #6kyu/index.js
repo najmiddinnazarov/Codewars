@@ -1710,3 +1710,22 @@ console.log(groupByCommas(32234)); */
   return binary || "0";
 }
 console.log(toBinaryString(6)); */
+
+// #6kyu Mexican Wave
+/* function wave(str) {
+  let result = [];
+  if (str === " ") {
+    return " ";
+  }
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " ") {
+      result.push(
+        str.slice(0, i).toLowerCase() +
+          str.slice(i, i + 1).toUpperCase() +
+          str.slice(i + 1).toLowerCase()
+      );
+    }
+  }
+  return result;
+}
+console.log(wave("two words")); */
