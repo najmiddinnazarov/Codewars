@@ -1729,3 +1729,52 @@ console.log(toBinaryString(6)); */
   return result;
 }
 console.log(wave("two words")); */
+
+// #6kyu New Cashier Does Not Know About Space or Shift
+/* function getOrder(input) {
+  let split = [];
+  input.replace(
+    /Burger|Fries|Chicken|Pizza|Sandwich|Onionrings|Milkshake|Coke/gi,
+    (x) => {
+      if (x === "burger") {
+        split.push("Burger");
+      } else if (x === "fries") {
+        split.push("Fries");
+      } else if (x === "chicken") {
+        split.push("Chicken");
+      } else if (x === "pizza") {
+        split.push("Pizza");
+      } else if (x === "sandwich") {
+        split.push("Sandwich");
+      } else if (x === "onionrings") {
+        split.push("Onionrings");
+      } else if (x === "milkshake") {
+        split.push("Milkshake");
+      } else if (x === "coke") {
+        split.push("Coke");
+      }
+    }
+  );
+  let result = [];
+  const menu = [
+    "Burger",
+    "Fries",
+    "Chicken",
+    "Pizza",
+    "Sandwich",
+    "Onionrings",
+    "Milkshake",
+    "Coke",
+  ];
+  for (let i = 0; i < menu.length; i++) {
+    for (let k = 0; k < split.length; k++) {
+      if (menu[i] === split[k]) {
+        result.push(menu[i]);
+      }
+    }
+  }
+  return result.join(" ");
+}
+console.log(
+  getOrder("milkshakepizzachickenfriescokeburgerpizzasandwichmilkshakepizza")
+); */
