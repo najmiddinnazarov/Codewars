@@ -1798,3 +1798,26 @@ console.log(
   return result;
 }
 console.log(numberOfPairs(["red", "green", "red", "blue", "blue"])); */
+
+// #6kyu React Fun #1: Component types and nesting
+/* const React = require("react");
+class Hello extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+class World extends React.Component {
+  render() {
+    return <h2>World!</h2>;
+  }
+}
+class Greet extends React.Component {
+  render() {
+    return (
+      <div>
+        <Hello />
+        <World />
+      </div>
+    );
+  }
+} */
