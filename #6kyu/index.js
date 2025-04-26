@@ -1778,3 +1778,23 @@ console.log(wave("two words")); */
 console.log(
   getOrder("milkshakepizzachickenfriescokeburgerpizzasandwichmilkshakepizza")
 ); */
+
+// #6kyu Pair of gloves
+/* function numberOfPairs(gloves) {
+  let pairs = {};
+  for (let i = 0; i < gloves.length; i++) {
+    if (gloves[i] in pairs) {
+      pairs[gloves[i]]++;
+    } else {
+      pairs[gloves[i]] = 1;
+    }
+  }
+  let result = 0;
+  for (const gloves in pairs) {
+    if (pairs[gloves] > 1) {
+      result += Math.floor(pairs[gloves] / 2);
+    }
+  }
+  return result;
+}
+console.log(numberOfPairs(["red", "green", "red", "blue", "blue"])); */
