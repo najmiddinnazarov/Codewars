@@ -1821,3 +1821,23 @@ class Greet extends React.Component {
     );
   }
 } */
+
+// #6kyu Consecutive Count
+/* function getConsectiveItems(items, key) {
+  items = items.toString();
+  let count = 0;
+  let result = 0;
+  for (let i = 0; i < items.length; i++) {
+    if (items[i] == key) {
+      count++;
+    } else {
+      if (count > result) {
+        result = count;
+      }
+      count = 0;
+    }
+  }
+  return Math.max(count, result);
+}
+console.log(getConsectiveItems("abcdaaadse", "a"));
+ */
