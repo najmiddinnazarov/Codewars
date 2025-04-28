@@ -1841,3 +1841,16 @@ class Greet extends React.Component {
 }
 console.log(getConsectiveItems("abcdaaadse", "a"));
  */
+
+// #6kyu Turn String Input into Hash
+/* function strToHash(str) {
+  str = str.split(/[,=]/g);
+  let result = [];
+  for (let i = 0; i < str.length; i += 2) {
+    if (str[i] && str[i + 1]) {
+      result.push([str[i].trim(), Number(str[i + 1].trim())]);
+    }
+  }
+  return Object.fromEntries(result);
+}
+console.log(strToHash("a=1, b=2, c=3, d=4")); */
