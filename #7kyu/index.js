@@ -7095,3 +7095,12 @@ console.log(isNice([])); */
   return sum;
 }
 console.log(mul(5, 5)); */
+
+// #7kyu Say hello!
+/* function greet(name) {
+  if (name) {
+    return "hello " + name + "!";
+  }
+  return null;
+}
+console.log(greet("Niks")); */
