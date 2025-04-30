@@ -1854,3 +1854,23 @@ console.log(getConsectiveItems("abcdaaadse", "a"));
   return Object.fromEntries(result);
 }
 console.log(strToHash("a=1, b=2, c=3, d=4")); */
+
+// #6kyu Coding Meetup #8 - Higher-Order Functions Series - Will all continents be represented?
+/* function allContinents(list) {
+  const continents = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
+  let result = [];
+  list.map((obj) => result.push(obj.continent));
+  return continents.every((value) => result.includes(value));
+}
+console.log(
+  allContinents([
+    {
+      firstName: "Fatima",
+      lastName: "A.",
+      country: "Algeria",
+      continent: "Africa",
+      age: 25,
+      language: "JavaScript",
+    },
+  ])
+); */
