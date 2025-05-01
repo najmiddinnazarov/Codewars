@@ -7104,3 +7104,56 @@ console.log(mul(5, 5)); */
   return null;
 }
 console.log(greet("Niks")); */
+
+// #7kyu Coding Meetup #14 - Higher-Order Functions Series - Order the food
+/* function orderFood(list) {
+  let result = {};
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].meal in result) {
+      result[list[i].meal]++;
+    } else {
+      result[list[i].meal] = 1;
+    }
+  }
+  return result;
+}
+console.log(
+  orderFood([
+    {
+      firstName: "Noah",
+      lastName: "M.",
+      country: "Switzerland",
+      continent: "Europe",
+      age: 19,
+      language: "C",
+      meal: "vegetarian",
+    },
+    {
+      firstName: "Anna",
+      lastName: "R.",
+      country: "Liechtenstein",
+      continent: "Europe",
+      age: 52,
+      language: "JavaScript",
+      meal: "standard",
+    },
+    {
+      firstName: "Ramona",
+      lastName: "R.",
+      country: "Paraguay",
+      continent: "Americas",
+      age: 29,
+      language: "Ruby",
+      meal: "vegan",
+    },
+    {
+      firstName: "George",
+      lastName: "B.",
+      country: "England",
+      continent: "Europe",
+      age: 81,
+      language: "C",
+      meal: "vegetarian",
+    },
+  ])
+); */
