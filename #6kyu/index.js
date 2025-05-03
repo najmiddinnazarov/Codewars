@@ -1874,3 +1874,45 @@ console.log(
     },
   ])
 ); */
+
+// #6kyu Coding Meetup #16 - Higher-Order Functions Series - Ask for missing details
+/* function askForMissingDetails(list) {
+  const missingNull = list.filter((obj) =>
+    Object.values(obj).some((value) => value === null)
+  );
+  return missingNull.map((obj) => {
+    const missingKeys = Object.keys(obj).filter((key) => obj[key] === null);
+    return {
+      ...obj,
+      ...{ question: `Hi, could you please provide your ${missingKeys}.` },
+    };
+  });
+}
+console.log(
+  askForMissingDetails([
+    {
+      firstName: null,
+      lastName: "I.",
+      country: "Argentina",
+      continent: "Americas",
+      age: 35,
+      language: "Java",
+    },
+    {
+      firstName: "Lukas",
+      lastName: "X.",
+      country: "Croatia",
+      continent: "Europe",
+      age: 35,
+      language: null,
+    },
+    {
+      firstName: "Madison",
+      lastName: "U.",
+      country: "United States",
+      continent: "Americas",
+      age: 32,
+      language: "Ruby",
+    },
+  ])
+); */
