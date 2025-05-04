@@ -1916,3 +1916,9 @@ console.log(
     },
   ])
 ); */
+
+// #6kyu Maximum value in nested arrays
+/* function findNestedMaximum(arr) {
+  return Math.max(...arr.flat(Infinity));
+}
+console.log(findNestedMaximum([4, -3, [10], [[-5, 6], 18]])); */
