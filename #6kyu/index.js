@@ -1922,3 +1922,107 @@ console.log(
   return Math.max(...arr.flat(Infinity));
 }
 console.log(findNestedMaximum([4, -3, [10], [[-5, 6], 18]])); */
+
+// #6kyu Coding Meetup #9 - Higher-Order Functions Series - Is the meetup age-diverse?
+/* function isAgeDiverse(list) {
+  const ageGroups = new Set();
+  list.forEach((dev) => {
+    const age = dev.age;
+    if (age >= 13 && age <= 19) ageGroups.add("teens");
+    else if (age >= 20 && age <= 29) ageGroups.add("twenties");
+    else if (age >= 30 && age <= 39) ageGroups.add("thirties");
+    else if (age >= 40 && age <= 49) ageGroups.add("forties");
+    else if (age >= 50 && age <= 59) ageGroups.add("fifties");
+    else if (age >= 60 && age <= 69) ageGroups.add("sixties");
+    else if (age >= 70 && age <= 79) ageGroups.add("seventies");
+    else if (age >= 80 && age <= 89) ageGroups.add("eighties");
+    else if (age >= 90 && age <= 99) ageGroups.add("nineties");
+    else if (age >= 100) ageGroups.add("centenarian");
+  });
+
+  return ageGroups.size === 10;
+}
+console.log(
+  isAgeDiverse([
+    {
+      firstName: "Harry",
+      lastName: "K.",
+      country: "Brazil",
+      continent: "Americas",
+      age: 19,
+      language: "Python",
+    },
+    {
+      firstName: "Kseniya",
+      lastName: "T.",
+      country: "Belarus",
+      continent: "Europe",
+      age: 29,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Jing",
+      lastName: "X.",
+      country: "China",
+      continent: "Asia",
+      age: 39,
+      language: "Ruby",
+    },
+    {
+      firstName: "Noa",
+      lastName: "A.",
+      country: "Israel",
+      continent: "Asia",
+      age: 40,
+      language: "Ruby",
+    },
+    {
+      firstName: "Andrei",
+      lastName: "E.",
+      country: "Romania",
+      continent: "Europe",
+      age: 59,
+      language: "C",
+    },
+    {
+      firstName: "Maria",
+      lastName: "S.",
+      country: "Peru",
+      continent: "Americas",
+      age: 60,
+      language: "C",
+    },
+    {
+      firstName: "Lukas",
+      lastName: "X.",
+      country: "Croatia",
+      continent: "Europe",
+      age: 75,
+      language: "Python",
+    },
+    {
+      firstName: "Chloe",
+      lastName: "K.",
+      country: "Guernsey",
+      continent: "Europe",
+      age: 88,
+      language: "Ruby",
+    },
+    {
+      firstName: "Viktoria",
+      lastName: "W.",
+      country: "Bulgaria",
+      continent: "Europe",
+      age: 98,
+      language: "PHP",
+    },
+    {
+      firstName: "Piotr",
+      lastName: "B.",
+      country: "Poland",
+      continent: "Europe",
+      age: 128,
+      language: "JavaScript",
+    },
+  ])
+); */
