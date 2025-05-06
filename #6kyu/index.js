@@ -2026,3 +2026,15 @@ console.log(
     },
   ])
 ); */
+
+// #6kyu "Stringing"+"Me"+"Along"
+/* function createMessage(word) {
+  let message = word || "";
+  function next(word) {
+    if (word === undefined) return message.trim();
+    message += " " + word;
+    return next;
+  }
+  return next;
+}
+console.log(createMessage("Hello")("World!")("how")("are")("you?")()); */
