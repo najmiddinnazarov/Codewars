@@ -2038,3 +2038,16 @@ console.log(
   return next;
 }
 console.log(createMessage("Hello")("World!")("how")("are")("you?")()); */
+
+// #6kyu Numericals of a String
+/* function numericals(s) {
+  let counts = {};
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    let char = s[i];
+    counts[char] = (counts[char] || 0) + 1;
+    result += counts[char];
+  }
+  return result;
+}
+console.log(numericals("Hello, World!")); */
