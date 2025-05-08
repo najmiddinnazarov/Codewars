@@ -2051,3 +2051,37 @@ console.log(createMessage("Hello")("World!")("how")("are")("you?")()); */
   return result;
 }
 console.log(numericals("Hello, World!")); */
+
+// #6kyu Coding Meetup #10 - Higher-Order Functions Series - Create usernames
+/* function addUsername(list) {
+  return list.map((obj) => {
+    return {
+      ...obj,
+      ...{
+        username: `${obj.firstName.toLowerCase()}${obj.lastName[0].toLowerCase()}${
+          new Date().getFullYear() - obj.age
+        }`,
+      },
+    };
+  });
+}
+console.log(
+  addUsername([
+    {
+      firstName: "Emily",
+      lastName: "N.",
+      country: "Ireland",
+      continent: "Europe",
+      age: 30,
+      language: "Ruby",
+    },
+    {
+      firstName: "Nor",
+      lastName: "E.",
+      country: "Malaysia",
+      continent: "Asia",
+      age: 20,
+      language: "Clojure",
+    },
+  ])
+); */
