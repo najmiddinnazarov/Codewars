@@ -2085,3 +2085,36 @@ console.log(
     },
   ])
 ); */
+
+// #6kyu Coding Meetup #15 - Higher-Order Functions Series - Find the odd names
+/* function findOddNames(list) {
+  return list.filter((obj) => {
+    let sum = 0;
+    for (let i = 0; i < obj.firstName.length; i++) {
+      sum += obj.firstName[i].charCodeAt();
+    }
+    if (sum % 2) {
+      return obj;
+    }
+  });
+}
+console.log(
+  findOddNames([
+    {
+      firstName: "Aba",
+      lastName: "N.",
+      country: "Ghana",
+      continent: "Africa",
+      age: 21,
+      language: "Python",
+    },
+    {
+      firstName: "Abb",
+      lastName: "O.",
+      country: "Israel",
+      continent: "Asia",
+      age: 39,
+      language: "Java",
+    },
+  ])
+); */
