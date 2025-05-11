@@ -2189,3 +2189,29 @@ console.log(
     },
   ])
 ); */
+
+// #6kyu Uncollapse Digits
+/* function uncollapse(digits) {
+  let numbers = [
+    "zero",
+    "nine",
+    "one",
+    "eight",
+    "two",
+    "seven",
+    "three",
+    "six",
+    "four",
+    "two",
+    "five",
+  ];
+  let result = [];
+  while (digits.length) {
+    let str = digits[0] + digits[1];
+    let number = numbers.find((value) => value.includes(str));
+    result.push(number);
+    digits = digits.replace(number, "");
+  }
+  return result.join(" ");
+}
+console.log(uncollapse("foursixeighttwofive")); */
