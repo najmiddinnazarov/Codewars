@@ -2215,3 +2215,14 @@ console.log(
   return result.join(" ");
 }
 console.log(uncollapse("foursixeighttwofive")); */
+
+// #6kyu sum function
+/* function sum(x, y) {
+  if (y !== undefined) {
+    return x + y;
+  }
+  return function (z) {
+    return x + z;
+  };
+}
+console.log(sum(2)(3)); */
