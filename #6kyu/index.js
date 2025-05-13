@@ -2226,3 +2226,25 @@ console.log(uncollapse("foursixeighttwofive")); */
   };
 }
 console.log(sum(2)(3)); */
+
+// #6kyu What will be the odd one out?
+/* function oddOneOut(str) {
+  const count = {};
+  const lastIndex = {};
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    count[char] = (count[char] || 0) + 1;
+    lastIndex[char] = i;
+  }
+  const seen = new Set();
+  const result = [];
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    if (count[char] % 2 !== 0 && lastIndex[char] === i && !seen.has(char)) {
+      result.push(char);
+      seen.add(char);
+    }
+  }
+  return result;
+}
+console.log(oddOneOut("Hello World")); */
