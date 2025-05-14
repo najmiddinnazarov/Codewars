@@ -1752,3 +1752,13 @@ console.log(plural(Infinity)); */
     },
   },
 }; */
+
+// #8kyu Beginner Series #2 Clock
+/* function past(h, m, s) {
+  let result = 0;
+  result += h * 3600000;
+  result += m * 60000;
+  result += s * 1000;
+  return result;
+}
+console.log(past(0, 1, 1)); */
