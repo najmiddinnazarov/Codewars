@@ -1762,3 +1762,9 @@ console.log(plural(Infinity)); */
   return result;
 }
 console.log(past(0, 1, 1)); */
+
+// #8kyu Third Angle of a Triangle
+/* function otherAngle(a, b) {
+  return 180 - (a + b);
+}
+console.log(otherAngle(43, 78)); */
