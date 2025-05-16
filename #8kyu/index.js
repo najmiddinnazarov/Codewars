@@ -1768,3 +1768,14 @@ console.log(past(0, 1, 1)); */
   return 180 - (a + b);
 }
 console.log(otherAngle(43, 75)); */
+
+// #8kyu Find the first non-consecutive number
+/* function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== arr[0] + i) {
+      return arr[i];
+    }
+  }
+  return null;
+}
+console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); */
