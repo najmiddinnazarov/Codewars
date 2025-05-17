@@ -1779,3 +1779,9 @@ console.log(otherAngle(43, 75)); */
   return null;
 }
 console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); */
+
+// #8kyu L1: Set Alarm
+/* function setAlarm(employed, vacation) {
+  return employed && !vacation ? true : false;
+}
+console.log(setAlarm(true, true)); */
