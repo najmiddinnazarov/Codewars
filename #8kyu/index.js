@@ -1785,3 +1785,9 @@ console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); */
   return employed && !vacation ? true : false;
 }
 console.log(setAlarm(true, true)); */
+
+// #8kyu Simple Comparison?
+/* function add(a, b) {
+  return a == b;
+}
+console.log(add(120, "021")); */
