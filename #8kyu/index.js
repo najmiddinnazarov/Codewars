@@ -1791,3 +1791,9 @@ console.log(setAlarm(true, true)); */
   return a == b;
 }
 console.log(add(120, "021")); */
+
+// #8kyu Be Concise III - Sum Squares
+/* function sumSquares(array) {
+  return array.reduce((sum, curr) => curr ** 2 + sum, 0);
+}
+console.log(sumSquares([1, 2, 3, 4, 5])); */
