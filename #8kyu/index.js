@@ -1797,3 +1797,18 @@ console.log(add(120, "021")); */
   return array.reduce((sum, curr) => curr ** 2 + sum, 0);
 }
 console.log(sumSquares([1, 2, 3, 4, 5])); */
+
+// #8kyu Max Headroom and JavaScript style
+/* function getMax1() {
+  var max = {
+    name: "Max Headroom",
+  };
+  return max;
+}
+
+function getMax2() {
+  var max = {
+    name: "Max Headroom",
+  };
+  return max;
+} */
