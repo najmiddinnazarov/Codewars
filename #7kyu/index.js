@@ -7164,3 +7164,21 @@ console.log(
   return [...num].every((char) => validChars.includes(char.toUpperCase()));
 }
 console.log(validateBase("7623", 8)); */
+
+// #7kyu Gryffindor vs Slytherin Quidditch Game
+/* function gameWinners(gryffindor, slytherin) {
+  if (gryffindor[1] === "yes") {
+    gryffindor[0] = gryffindor[0] + 150;
+  }
+  if (slytherin[1] === "yes") {
+    slytherin[0] = slytherin[0] + 150;
+  }
+  if (gryffindor[0] > slytherin[0]) {
+    return "Gryffindor wins!";
+  } else if (slytherin[0] > gryffindor[0]) {
+    return "Slytherin wins!";
+  } else {
+    return "It's a draw!";
+  }
+}
+console.log(gameWinners([350, "no"], [250, "yes"])); */
