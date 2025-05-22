@@ -7182,3 +7182,22 @@ console.log(validateBase("7623", 8)); */
   }
 }
 console.log(gameWinners([350, "no"], [250, "yes"])); */
+
+// #7kyu Simple string reversal
+/* function solve(str) {
+  let result = [];
+  let space = [];
+  for (let i = str.length - 1; i >= 0; i--) {
+    if (str[i] === " ") {
+      space.push(i);
+    } else {
+      result.push(str[i]);
+    }
+  }
+  space = space.sort((a, b) => a - b);
+  for (let i = 0; i < space.length; i++) {
+    result.splice(space[i], 0, " ");
+  }
+  return result.join("");
+}
+console.log(solve("your code rocks")); */
