@@ -7201,3 +7201,18 @@ console.log(gameWinners([350, "no"], [250, "yes"])); */
   return result.join("");
 }
 console.log(solve("your code rocks")); */
+
+// #7kyu Coding 3min : A*B=C
+/* function findAB(numbers, c) {
+  let result = [];
+  for (let i = 0; i < numbers.length; i++) {
+    for (let k = i + 1; k < numbers.length; k++) {
+      if (numbers[i] * numbers[k] === c) {
+        result.push(numbers[i], numbers[k]);
+        return result;
+      }
+    }
+  }
+  return null;
+}
+console.log(findAB([1, 2, 3], 6)); */
