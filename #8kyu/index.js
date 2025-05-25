@@ -1818,3 +1818,9 @@ function getMax2() {
   return Number(Math.pow((2 * A) / Math.PI, 2).toFixed(2));
 }
 console.log(squareArea(2)); */
+
+// #8kyu Find out whether the shape is a cube
+/* function cubeChecker(volume, side) {
+  return side > 0 && volume === side ** 3;
+}
+console.log(cubeChecker(27, 3)); */
