@@ -1824,3 +1824,10 @@ console.log(squareArea(2)); */
   return side > 0 && volume === side ** 3;
 }
 console.log(cubeChecker(27, 3)); */
+
+// #8kyu Swap Values
+/* function swapValues(arguments) {
+  var temp = arguments[0];
+  arguments[0] = arguments[1];
+  arguments[1] = temp;
+} */
