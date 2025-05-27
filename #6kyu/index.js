@@ -2248,3 +2248,15 @@ console.log(sum(2)(3)); */
   return result;
 }
 console.log(oddOneOut("Hello World")); */
+
+// #6kyu Calculate the area of a regular n sides polygon inside a circle of radius r
+/* function areaOfPolygonInsideCircle(circleRadius, numberOfSides) {
+  return +(
+    (circleRadius *
+      circleRadius *
+      numberOfSides *
+      Math.sin((2 * Math.PI) / numberOfSides)) /
+    2
+  ).toFixed(3);
+}
+console.log(areaOfPolygonInsideCircle(3, 3)); */
