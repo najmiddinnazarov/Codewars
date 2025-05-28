@@ -1831,3 +1831,26 @@ console.log(cubeChecker(27, 3)); */
   arguments[0] = arguments[1];
   arguments[1] = temp;
 } */
+
+// #8kyu They say that only the name is long enough to attract attention. They also said that only a simple Kata will have someone to solve it. This is a sadly story #1: Are they opposite?
+/* function isOpposite(s1, s2) {
+  if (s1 === "" || s2 === "") {
+    return false;
+  }
+  if (s1.length !== s2.length) {
+    return false;
+  }
+  for (let i = 0; i < s1.length; i++) {
+    if (s1[i].toLowerCase() !== s2[i].toLowerCase()) {
+      return false;
+    }
+    if (
+      (s1[i] === s1[i].toLowerCase() && s2[i] !== s2[i].toUpperCase()) ||
+      (s1[i] === s1[i].toUpperCase() && s2[i] !== s2[i].toLowerCase())
+    ) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(isOpposite("ab", "AB")); */
