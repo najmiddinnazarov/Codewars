@@ -1866,3 +1866,11 @@ function convertToCelsius(temperature) {
   return celsius;
 }
 console.log(weatherInfo(50)); */
+
+// #8kyu Add new item (collections are passed by reference)
+/* function addExtra(listOfNumbers) {
+  const newList = [...listOfNumbers];
+  newList.push(1);
+  return newList;
+}
+console.log(addExtra([1, 2, 3])); */
