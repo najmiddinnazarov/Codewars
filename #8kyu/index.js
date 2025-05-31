@@ -1874,3 +1874,13 @@ console.log(weatherInfo(50)); */
   return newList;
 }
 console.log(addExtra([1, 2, 3])); */
+
+// #8kyu Grasshopper - Terminal Game Turn Function
+/* function doTurn() {
+  rollDice();
+  move();
+  combat();
+  getCoins();
+  buyHealth();
+  printStatus();
+} */
