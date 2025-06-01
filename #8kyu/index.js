@@ -1884,3 +1884,23 @@ console.log(addExtra([1, 2, 3])); */
   buyHealth();
   printStatus();
 } */
+
+// #8kyu Grasshopper - Create the rooms
+// Add rooms here
+/* var rooms = {
+  name: {
+    name: "John",
+    surname: "Doe",
+    task: "Clean a room",
+  },
+  description: {
+    name: "John",
+    surname: "Doe",
+    task: "Clean a room",
+  },
+  completed: {
+    name: "John",
+    surname: "Doe",
+    task: "Clean a room",
+  },
+} */
