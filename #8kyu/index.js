@@ -1904,3 +1904,16 @@ console.log(addExtra([1, 2, 3])); */
     task: "Clean a room",
   },
 } */
+
+// #8kyu Expressions Matter
+/* function expressionMatter(a, b, c) {
+  let result = [];
+  result.push(a + b + c);
+  result.push(a * b * c);
+  result.push(a * (b + c));
+  result.push((a + b) * c);
+  result.push(a + b * c);
+  result.push(a * b + c);
+  return Math.max(...result);
+}
+console.log(expressionMatter(1, 2, 3)); */
