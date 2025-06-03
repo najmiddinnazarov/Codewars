@@ -1917,3 +1917,10 @@ console.log(addExtra([1, 2, 3])); */
   return Math.max(...result);
 }
 console.log(expressionMatter(1, 2, 3)); */
+
+// #8kyu Duck Duck Goose
+/* function duckDuckGoose(players, goose) {
+  if (players.length === 0) return null;
+  const index = (goose - 1) % players.length;
+  return players[index].name;
+} */
