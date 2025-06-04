@@ -1924,3 +1924,12 @@ console.log(expressionMatter(1, 2, 3)); */
   const index = (goose - 1) % players.length;
   return players[index].name;
 } */
+
+// #8kyu Is it a number?
+/* function isDigit(s) {
+  if (s.includes("0")) {
+    return true;
+  }
+  return +s ? true : false;
+}
+console.log(isDigit("0")); */
