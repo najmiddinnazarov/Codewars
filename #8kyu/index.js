@@ -1933,3 +1933,10 @@ console.log(expressionMatter(1, 2, 3)); */
   return +s ? true : false;
 }
 console.log(isDigit("0")); */
+
+// #8kyu Multiply the number
+/* function multiply(number) {
+  const multiplier = Math.pow(5, Math.floor(Math.log10(Math.abs(number))) + 1);
+  return number * multiplier;
+}
+console.log(multiply(-2)); */
