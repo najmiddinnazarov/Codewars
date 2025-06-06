@@ -1940,3 +1940,11 @@ console.log(isDigit("0")); */
   return number * multiplier;
 }
 console.log(multiply(-2)); */
+
+// #8kyu Regular Ball Super Ball
+/* var Ball = function (ballType) {
+  this.ballType = ballType || "regular";
+};
+var ball1, ball2;
+ball1 = new Ball();
+ball2 = new Ball("super"); */
