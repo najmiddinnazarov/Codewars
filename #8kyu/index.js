@@ -1948,3 +1948,18 @@ console.log(multiply(-2)); */
 var ball1, ball2;
 ball1 = new Ball();
 ball2 = new Ball("super"); */
+
+// #8kyu Age Range Compatibility Equation
+/* function datingRange(age) {
+  let min;
+  let max;
+  if (age <= 14) {
+    min = age - 0.1 * age;
+    max = age + 0.1 * age;
+  } else {
+    min = age / 2 + 7;
+    max = 2 * (age - 7);
+  }
+  return [Math.floor(min), Math.floor(max)].join("-");
+}
+console.log(datingRange(10)); */
