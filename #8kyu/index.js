@@ -1963,3 +1963,11 @@ ball2 = new Ball("super"); */
   return [Math.floor(min), Math.floor(max)].join("-");
 }
 console.log(datingRange(10)); */
+
+// #8kyu Are there any arrows left?
+/* function anyArrows(arrows) {
+  return arrows.some((object) => !object.damaged);
+}
+console.log(
+  anyArrows([{ range: 5 }, { range: 10, damaged: true }, { damaged: true }])
+); */
