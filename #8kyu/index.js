@@ -1971,3 +1971,15 @@ console.log(datingRange(10)); */
 console.log(
   anyArrows([{ range: 5 }, { range: 10, damaged: true }, { damaged: true }])
 ); */
+
+// #8kyu Compare within margin
+/* function closeCompare(a, b, margin = 0) {
+  if (Math.abs(a - b) <= margin) {
+    return 0;
+  } else if (a < b) {
+    return -1;
+  } else {
+    return 1;
+  }
+}
+console.log(closeCompare(8.1, 5, 3)); */
