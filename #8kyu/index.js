@@ -1983,3 +1983,14 @@ console.log(
   }
 }
 console.log(closeCompare(8.1, 5, 3)); */
+
+// #8kyu Grasshopper - Terminal Game #1
+/* function Hero(name) {
+  this.name = name || "Hero";
+  this.position = "00";
+  this.health = 100;
+  this.damage = 5;
+  this.experience = 0;
+}
+let myHero = new Hero();
+console.log(myHero.name); */
