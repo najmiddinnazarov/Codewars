@@ -1994,3 +1994,14 @@ console.log(closeCompare(8.1, 5, 3)); */
 }
 let myHero = new Hero();
 console.log(myHero.name); */
+
+// #8kyu Color Ghost
+/* let Ghost = function () {
+  function color() {
+    let expectedColors = ["white", "yellow", "purple", "red"];
+    return expectedColors[Math.floor(Math.random() * expectedColors.length)];
+  }
+  this.color = color();
+};
+let yourGhostColor = new Ghost().color;
+console.log(yourGhostColor); */
