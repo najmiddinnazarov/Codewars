@@ -2005,3 +2005,11 @@ console.log(myHero.name); */
 };
 let yourGhostColor = new Ghost().color;
 console.log(yourGhostColor); */
+
+// #8kyu Determine offspring sex based on genes XX and XY chromosomes
+/* function chromosomeCheck(sperm) {
+  return `Congratulations! You're going to have a ${
+    sperm[1] === "Y" ? "son" : "daughter"
+  }.`;
+}
+console.log(chromosomeCheck("XY")); */
