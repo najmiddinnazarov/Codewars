@@ -2013,3 +2013,11 @@ console.log(yourGhostColor); */
   }.`;
 }
 console.log(chromosomeCheck("XY")); */
+
+// #8kyu Semi-Optional
+/* function wrap(value) {
+  return {
+    value: value,
+  };
+}
+console.log(wrap(343)); */
