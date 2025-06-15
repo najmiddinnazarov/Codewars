@@ -2041,3 +2041,13 @@ console.log(wrap(343)); */
   }
 }
 console.log(calculateTip(26.95, "good")); */
+
+// #8kyu Alan Partridge II - Apple Turnover
+/* function apple(x) {
+  if (x ** 2 > 1000) {
+    return "It's hotter than the sun!!";
+  } else {
+    return "Help yourself to a honeycomb Yorkie for the glovebox.";
+  }
+}
+console.log(apple(4)); */
