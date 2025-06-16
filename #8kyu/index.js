@@ -2051,3 +2051,15 @@ console.log(calculateTip(26.95, "good")); */
   }
 }
 console.log(apple(4)); */
+
+// #8kyu Configure package json for a node application
+/* const configuration = {
+  name: "foo",
+  version: "0.0.0",
+  scripts: {
+    test: "mocha",
+  },
+  devDependencies: {
+    "coffee-script": "~1.6.3",
+  },
+}; */
