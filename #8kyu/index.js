@@ -2070,3 +2070,21 @@ constructor(name, age, gender, master){this.name = name;this.age = age;this.gend
 }
 var edward = new Labrador("Edward", 3, "Male", "Emma");
 console.log(edward); */
+
+// #8kyu Hello Happy Codevarrior!
+/* function Warrior(n) {
+  let temp = n;
+  this.name = function (newName) {
+    if (newName !== undefined) {
+      temp = newName;
+    }
+    return temp;
+  };
+}
+Warrior.prototype.toString = function () {
+  return "Hi! my name's " + this.name();
+};
+var albert = new Warrior("Al");
+var boris = new Warrior("Boris");
+console.log(albert.toString());
+console.log(boris.name()); */
