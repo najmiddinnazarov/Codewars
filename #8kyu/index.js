@@ -2088,3 +2088,9 @@ var albert = new Warrior("Al");
 var boris = new Warrior("Boris");
 console.log(albert.toString());
 console.log(boris.name()); */
+
+// #8kyu Grasshopper - Order of operations
+/* function orderOperations() {
+  return (2 + 2) * (2 + 2) * 2;
+}
+console.log(orderOperations()); */
