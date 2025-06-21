@@ -7216,3 +7216,15 @@ console.log(solve("your code rocks")); */
   return null;
 }
 console.log(findAB([1, 2, 3], 6)); */
+
+// #7kyu "Center yourself", says the monk.
+/* function center(strng, width, fill = " ") {
+  if (strng.length >= width) {
+    return strng;
+  }
+  const padding = width - strng.length;
+  const rightPadding = Math.floor(padding / 2);
+  const leftPadding = padding - rightPadding;
+  return fill.repeat(leftPadding) + strng + fill.repeat(rightPadding);
+}
+console.log(center("abc", 10, "_")); */
