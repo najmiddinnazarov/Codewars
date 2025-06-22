@@ -7228,3 +7228,9 @@ console.log(findAB([1, 2, 3], 6)); */
   return fill.repeat(leftPadding) + strng + fill.repeat(rightPadding);
 }
 console.log(center("abc", 10, "_")); */
+
+// #7kyu Is this a triangle?
+/* function isTriangle(a, b, c) {
+  return a + b > c && a + c > b && b + c > a;
+}
+console.log(isTriangle(1, 2, 3)); */
