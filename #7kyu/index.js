@@ -7234,3 +7234,16 @@ console.log(center("abc", 10, "_")); */
   return a + b > c && a + c > b && b + c > a;
 }
 console.log(isTriangle(1, 2, 3)); */
+
+// #7kyu Digits explosion
+/* function explode(s) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    const digit = parseInt(s[i], 10);
+    if (!isNaN(digit)) {
+      result += s[i].repeat(digit);
+    }
+  }
+  return result;
+}
+console.log(explode("3120")); */
