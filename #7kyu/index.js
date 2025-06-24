@@ -7247,3 +7247,20 @@ console.log(isTriangle(1, 2, 3)); */
   return result;
 }
 console.log(explode("3120")); */
+
+// #7kyu Basic Calculator
+/* function calculate(num1, operation, num2) {
+  switch (operation) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num2 !== 0 ? num1 / num2 : null;
+    default:
+      return null;
+  }
+}
+console.log(calculate(2, "+", 3)); */
