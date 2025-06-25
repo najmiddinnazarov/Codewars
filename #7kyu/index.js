@@ -7264,3 +7264,18 @@ console.log(explode("3120")); */
   }
 }
 console.log(calculate(2, "+", 3)); */
+
+// #7kyu Sum of Odd Cubed Numbers
+/* function cubeOdd(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== "number" || isNaN(arr[i])) {
+      return undefined;
+    }
+    if (arr[i] % 2) {
+      sum += arr[i] ** 3;
+    }
+  }
+  return sum;
+}
+console.log(cubeOdd([1, 2, 3, 4])); */
