@@ -7279,3 +7279,16 @@ console.log(calculate(2, "+", 3)); */
   return sum;
 }
 console.log(cubeOdd([1, 2, 3, 4])); */
+
+// #7kyu Return a string's even characters.
+/* function evenChars(string) {
+  if (string.length < 2 || string.length > 100) {
+    return "invalid string";
+  }
+  let result = [];
+  for (let i = 1; i < string.length; i += 2) {
+    result.push(string[i]);
+  }
+  return result;
+}
+console.log(evenChars("abcdefg")); */
