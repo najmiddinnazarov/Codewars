@@ -7292,3 +7292,9 @@ console.log(cubeOdd([1, 2, 3, 4])); */
   return result;
 }
 console.log(evenChars("abcdefg")); */
+
+// #7kyu Get decimal part of the given number
+/* function getDecimal(n) {
+  return Number("0." + n.toString().split(".")[1]) || 0;
+}
+console.log(getDecimal(10)); */
