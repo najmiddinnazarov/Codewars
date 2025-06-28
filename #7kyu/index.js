@@ -7298,3 +7298,11 @@ console.log(evenChars("abcdefg")); */
   return Number("0." + n.toString().split(".")[1]) || 0;
 }
 console.log(getDecimal(10)); */
+
+// #7kyu Form The Minimum
+/* function minValue(values) {
+  const uniqueValues = [...new Set(values)];
+  uniqueValues.sort((a, b) => a - b);
+  return Number(uniqueValues.join(""));
+}
+console.log(minValue([1, 9, 3, 1, 7, 4, 6, 6, 7])); */
