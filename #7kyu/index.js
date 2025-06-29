@@ -7306,3 +7306,41 @@ console.log(getDecimal(10)); */
   return Number(uniqueValues.join(""));
 }
 console.log(minValue([1, 9, 3, 1, 7, 4, 6, 6, 7])); */
+
+// #7kyu Who's Online?
+/* const whosOnline = (friends) => {
+  const result = {
+    online: [],
+    offline: [],
+    away: [],
+  };
+  friends.forEach((friend) => {
+    if (friend.status === "online" && friend.lastActivity > 10) {
+      result["away"].push(friend.username);
+    } else if (friend.status === "online") {
+      result["online"].push(friend.username);
+    } else if (friend.status === "offline") {
+      result["offline"].push(friend.username);
+    }
+  });
+  Object.keys(result).forEach((key) => {
+    if (result[key].length === 0) {
+      delete result[key];
+    }
+  });
+  return result;
+};
+console.log(
+  whosOnline([
+    {
+      username: "Lucy",
+      status: "offline",
+      lastActivity: 22,
+    },
+    {
+      username: "Bob",
+      status: "online",
+      lastActivity: 104,
+    },
+  ])
+); */
