@@ -7344,3 +7344,9 @@ console.log(
     },
   ])
 ); */
+
+// #7kyu Use map() to double the values in an array
+/* function double(array) {
+  return array.map((value) => value * 2);
+}
+console.log(double([1, 2, 3])); */
