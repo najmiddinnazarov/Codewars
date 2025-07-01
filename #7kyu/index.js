@@ -7350,3 +7350,17 @@ console.log(
   return array.map((value) => value * 2);
 }
 console.log(double([1, 2, 3])); */
+
+// #7kyu Every possible sum of two digits
+/* function digits(num) {
+  let result = [];
+  const strNum = num.toString();
+  for (let i = 0; i < strNum.length; i++) {
+    for (let j = i + 1; j < strNum.length; j++) {
+      const sum = parseInt(strNum[i]) + parseInt(strNum[j]);
+      result.push(sum);
+    }
+  }
+  return result;
+}
+console.log(digits(12345)); */
