@@ -7364,3 +7364,9 @@ console.log(double([1, 2, 3])); */
   return result;
 }
 console.log(digits(12345)); */
+
+// #7kyu Array Appender
+/* function appendArrays(arr1, arr2) {
+  return [...arr1, ...arr2];
+}
+console.log(appendArrays([["x", "x"], "B"], ["c", "D"])); */
