@@ -7370,3 +7370,21 @@ console.log(digits(12345)); */
   return [...arr1, ...arr2];
 }
 console.log(appendArrays([["x", "x"], "B"], ["c", "D"])); */
+
+// #7kyu Basic method
+/* Array.prototype.max = function () {
+  if (this.length === 0) {
+    return null;
+  }
+  let max = Number(this[0]);
+  if (isNaN(max)) return NaN;
+  for (let i = 1; i < this.length; i++) {
+    let num = Number(this[i]);
+    if (isNaN(num)) return NaN;
+    if (num > max) {
+      max = num;
+    }
+  }
+  return max;
+};
+console.log([2, "5", 1, 3].max()); */
