@@ -7388,3 +7388,15 @@ console.log(appendArrays([["x", "x"], "B"], ["c", "D"])); */
   return max;
 };
 console.log([2, "5", 1, 3].max()); */
+
+// #7kyu Pairs of integers from m to n
+/* function generatePairs(m, n) {
+  let result = [];
+  for (let i = m; i <= n; i++) {
+    for (let j = i; j <= n; j++) {
+      result.push([i, j]);
+    }
+  }
+  return result;
+}
+console.log(generatePairs(2, 4)); */
