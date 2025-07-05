@@ -7400,3 +7400,18 @@ console.log([2, "5", 1, 3].max()); */
   return result;
 }
 console.log(generatePairs(2, 4)); */
+
+// #7kyu Complete The Pattern #4
+/* function pattern(n) {
+  var output = "";
+  for (let i = 1; i <= n; i++) {
+    for (let j = i; j <= n; j++) {
+      output += j;
+    }
+    if (i < n) {
+      output += "\n";
+    }
+  }
+  return output;
+}
+console.log(pattern(6)); */
