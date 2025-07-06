@@ -7415,3 +7415,13 @@ console.log(generatePairs(2, 4)); */
   return output;
 }
 console.log(pattern(6)); */
+
+// #7kyu last digits of a number
+/* function lastDigit(n, d) {
+  const strNum = n.toString();
+  const length = strNum.length;
+  const startIndex = Math.max(0, length - d);
+  const lastDigits = strNum.slice(startIndex);
+  return lastDigits.split("").map(Number);
+}
+console.log(lastDigit(123456789, 3)); */
