@@ -7425,3 +7425,12 @@ console.log(pattern(6)); */
   return lastDigits.split("").map(Number);
 }
 console.log(lastDigit(123456789, 3)); */
+
+// #7kyu Greatest common divisor
+/* function mygcd(x, y) {
+  if (y === 0) {
+    return x;
+  }
+  return mygcd(y, x % y);
+}
+console.log(mygcd(30, 12)); */
