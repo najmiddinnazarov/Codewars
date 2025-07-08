@@ -7434,3 +7434,14 @@ console.log(lastDigit(123456789, 3)); */
   return mygcd(y, x % y);
 }
 console.log(mygcd(30, 12)); */
+
+// #7kyu How many consecutive numbers are needed?
+/* function consecutive(array) {
+  if (array.length === 0) {
+    return 0;
+  }
+  const min = Math.min(...array);
+  const max = Math.max(...array);
+  return max - min + 1 - array.length;
+}
+console.log(consecutive([1, 2, 5])); */
