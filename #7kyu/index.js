@@ -7445,3 +7445,10 @@ console.log(mygcd(30, 12)); */
   return max - min + 1 - array.length;
 }
 console.log(consecutive([1, 2, 5])); */
+
+// #7kyu Largest pair sum in array
+/* function largestPairSum(numbers) {
+  numbers = numbers.sort((a, b) => b - a);
+  return numbers[0] + numbers[1];
+}
+console.log(largestPairSum([10, 14, 2, 23, 19])); */
