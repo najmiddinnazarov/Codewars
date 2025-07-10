@@ -183,3 +183,16 @@ console.log(firstNonRepeatingLetter("moonmen"));
 console.log(flatten([[[[[1]], 2], 3]]));
  */
 
+// #5kyu A Chain adding function
+function add(n) {
+  let message = n;
+  function next(n) {
+    if (n === undefined) {
+      return message;
+    }
+    message += n;
+    return next;
+  }
+  return next;
+}
+console.log(add(1)(2)(3)(4));

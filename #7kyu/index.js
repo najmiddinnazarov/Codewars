@@ -7452,3 +7452,18 @@ console.log(consecutive([1, 2, 5])); */
   return numbers[0] + numbers[1];
 }
 console.log(largestPairSum([10, 14, 2, 23, 20])); */
+
+// #7kyu Return substring instance count
+/* function solution(fullText, search) {
+  let count = 0;
+  for (let i = 0; i < fullText.length; i++) {
+    if (fullText[i] === search[0]) {
+      if (fullText.slice(i, i + search.length) === search) {
+        count++;
+        i += search.length - 1;
+      }
+    }
+  }
+  return count;
+}
+console.log(solution("aaabbbccc", "bb")); */
