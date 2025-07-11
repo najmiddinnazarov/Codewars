@@ -7467,3 +7467,13 @@ console.log(largestPairSum([10, 14, 2, 23, 20])); */
   return count;
 }
 console.log(solution("aaabbbccc", "bb")); */
+
+// #7kyu Maximum Multiple
+/* function maxMultiple(divisor, bound) {
+  for (let i = bound; i > 0; i--) {
+    if (i % divisor === 0) {
+      return i;
+    }
+  }
+}
+console.log(maxMultiple(2, 7)); */
