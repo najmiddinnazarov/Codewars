@@ -7477,3 +7477,11 @@ console.log(solution("aaabbbccc", "bb")); */
   }
 }
 console.log(maxMultiple(2, 7)); */
+
+// #7kyu Difference between years. (Level 1)
+/* var howManyYears = function (date1, date2) {
+  date1 = date1.slice(0, 4);
+  date2 = date2.slice(0, 4);
+  return Math.abs(date1 - date2);
+};
+console.log(howManyYears("1997/10/10", "2015/10/10")); */
