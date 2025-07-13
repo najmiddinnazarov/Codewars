@@ -7485,3 +7485,32 @@ console.log(maxMultiple(2, 7)); */
   return Math.abs(date1 - date2);
 };
 console.log(howManyYears("1997/10/10", "2015/10/10")); */
+
+// #7kyu Card game: twenty-one
+/* function twentyOne(card1, card2, card3) {
+  card1 = card1.slice(0, -1);
+  card2 = card2.slice(0, -1);
+  card3 = card3.slice(0, -1);
+  [card1, card2, card3] = [card1, card2, card3].map((value) => {
+    if (value === "J") {
+      return 2;
+    } else if (value === "Q") {
+      return 3;
+    } else if (value === "K") {
+      return 4;
+    } else if (value === "A") {
+      return 11;
+    } else {
+      return +value;
+    }
+  });
+  let sum = [card1, card2, card3].reduce((sum, curr) => sum + curr, 0);
+  if (sum < 21) {
+    return "less";
+  } else if (sum > 21) {
+    return "more";
+  } else {
+    return "twenty-one";
+  }
+}
+console.log(twentyOne("A♣", "4♦", "Q♥")); */
