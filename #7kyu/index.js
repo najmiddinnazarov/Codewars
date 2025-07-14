@@ -7514,3 +7514,12 @@ console.log(howManyYears("1997/10/10", "2015/10/10")); */
   }
 }
 console.log(twentyOne("A♣", "4♦", "Q♥")); */
+
+// #7kyu Array comparator
+/* function matchArrays(v, r) {
+  let dublicate = [...new Set([...v, ...r])];
+  return [...v, ...r].length - dublicate.length;
+}
+console.log(
+  matchArrays(["Perl", "Closure", "JavaScript"], ["Go", "C++", "Erlang"])
+); */
