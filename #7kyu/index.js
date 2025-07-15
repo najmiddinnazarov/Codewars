@@ -7523,3 +7523,24 @@ console.log(twentyOne("A♣", "4♦", "Q♥")); */
 console.log(
   matchArrays(["Perl", "Closure", "JavaScript"], ["Go", "C++", "Erlang"])
 ); */
+
+// #7kyu All Star Code Challenge #16
+/* function noRepeat(str) {
+  let countLetter = {};
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] in countLetter) {
+      countLetter[str[i]]++;
+    } else {
+      countLetter[str[i]] = 1;
+    }
+  }
+  let noRepeatLetter = Object.keys(countLetter).filter(
+    (key) => countLetter[key] === 1
+  );
+  for (let i = 0; i < str.length; i++) {
+    if (noRepeatLetter.includes(str[i])) {
+      return str[i];
+    }
+  }
+}
+console.log(noRepeat("wxyz")); */
