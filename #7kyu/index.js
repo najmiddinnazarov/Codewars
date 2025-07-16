@@ -7544,3 +7544,27 @@ console.log(
   }
 }
 console.log(noRepeat("wxyz")); */
+
+// #7kyu Adding useful functional functionality to JavaScript arrays
+/* Array.range = function (start, count) {
+  if (start === 0 && count === 0) {
+    return [];
+  }
+  if (count === 0) {
+    return [];
+  }
+  let result = [];
+  for (let i = start; i < start + count; i++) {
+    result.push(i);
+  }
+  return result;
+};
+Array.prototype.sum = function () {
+  let result = 0;
+  for (let i = 0; i < this.length; i++) {
+    result += this[i];
+  }
+  return result;
+};
+console.log(Array.range(0, 23));
+console.log([-2, -1, -5].sum()); */
