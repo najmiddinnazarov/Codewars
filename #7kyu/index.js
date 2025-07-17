@@ -7568,3 +7568,15 @@ Array.prototype.sum = function () {
 };
 console.log(Array.range(0, 23));
 console.log([-2, -1, -5].sum()); */
+
+// #7kyu Borrower Speak
+/* function borrow(s) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    if (/[A-Za-z]/.test(s[i])) {
+      result += s[i].toLowerCase();
+    }
+  }
+  return result;
+}
+console.log(borrow("WhAt! FiCK! DaMn CAke?")); */
