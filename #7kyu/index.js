@@ -7580,3 +7580,9 @@ console.log([-2, -1, -5].sum()); */
   return result;
 }
 console.log(borrow("WhAt! FiCK! DaMn CAke?")); */
+
+// #7kyu Perimeter sequence
+/* function perimeterSequence(a, n) {
+  return 4 * n * a;
+}
+console.log(perimeterSequence(1, 3)); */
