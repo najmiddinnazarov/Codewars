@@ -7600,3 +7600,25 @@ console.log(
     { age: 74, name: "brendan" },
   ])
 ); */
+
+// #7kyu Convert the score
+/* function scoreboard(string) {
+  let numbers = {
+    nil: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    seven: 7,
+    eight: 8,
+    nine: 9,
+  };
+  string = string.split(" ");
+  return [
+    numbers[string[string.length - 2]],
+    numbers[string[string.length - 1]],
+  ];
+}
+console.log(scoreboard("new score: two three")); */
