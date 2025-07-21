@@ -7622,3 +7622,14 @@ console.log(
   ];
 }
 console.log(scoreboard("new score: two three")); */
+
+// #7kyu Numbers to Objects
+/* function numObj(s) {
+  let obj = [];
+  let array = s.map((value) => [value, String.fromCharCode(value)]);
+  array.forEach((value) => {
+    obj.push({ [value[0]]: value[1] });
+  });
+  return obj;
+}
+console.log(numObj([118, 117, 120])); */
