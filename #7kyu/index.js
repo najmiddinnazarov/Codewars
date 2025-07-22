@@ -7633,3 +7633,12 @@ console.log(scoreboard("new score: two three")); */
   return obj;
 }
 console.log(numObj([118, 117, 120])); */
+
+// #7kyu Replace all items
+/* function replaceAll(seq, find, replace) {
+  if (typeof seq === "string") {
+    return seq.split(find).join(replace);
+  }
+  return seq.map((item) => (item === find ? replace : item));
+}
+console.log(replaceAll("Hell1 Word1", 1, 2)); */
