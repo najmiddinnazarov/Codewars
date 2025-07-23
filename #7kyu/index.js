@@ -7642,3 +7642,9 @@ console.log(numObj([118, 117, 120])); */
   return seq.map((item) => (item === find ? replace : item));
 }
 console.log(replaceAll("Hell1 Word1", 1, 2)); */
+
+// #7kyu Area of an arrow
+/* function arrowArea(a,b) {
+  return (1/2) * b * (a/2);
+}
+console.log(arrowArea(4,2)) */
