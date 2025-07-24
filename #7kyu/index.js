@@ -7648,3 +7648,7 @@ console.log(replaceAll("Hell1 Word1", 1, 2)); */
   return (1/2) * b * (a/2);
 }
 console.log(arrowArea(4,2)) */
+
+// #7kyu JS Golfing #1: undefined
+/* x=()=>{}
+console.log(x()); */
