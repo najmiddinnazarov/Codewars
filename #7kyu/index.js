@@ -7652,3 +7652,18 @@ console.log(arrowArea(4,2)) */
 // #7kyu JS Golfing #1: undefined
 /* x=()=>{}
 console.log(x()); */
+
+// #7kyu Hit Count
+/* function counterEffect(hitCount) {
+  let result = [];
+  for (let i = 0; i < hitCount.length; i++) {
+    let array = [];
+    for (let j = 0; j <= hitCount[i]; j++) {
+      array.push(j);
+    }
+    result.push(array);
+    array = [];
+  }
+  return result;
+}
+console.log(counterEffect("1250")); */
