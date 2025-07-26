@@ -7667,3 +7667,15 @@ console.log(x()); */
   return result;
 }
 console.log(counterEffect("1250")); */
+
+// #7kyu Understanding closures - the basics
+/* function buildFun(n) {
+  let res = [];
+  for (let i = 0; i < n; i++) {
+    res.push(function () {
+      return i;
+    });
+  }
+  return res;
+}
+console.log(buildFun(10)[1]()); */
