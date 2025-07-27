@@ -7679,3 +7679,13 @@ console.log(counterEffect("1250")); */
   return res;
 }
 console.log(buildFun(10)[1]()); */
+
+// #7kyu Format to the 2nd
+/* function printNums(...args) {
+  let max = Math.max(...args.flat(Infinity)).toString().length;
+  return args
+    .flat(Infinity)
+    .map((num) => num.toString().padStart(max, "0"))
+    .join("\n");
+}
+console.log(printNums([1, 12, 34])); */
