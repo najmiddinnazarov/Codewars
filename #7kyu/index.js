@@ -7689,3 +7689,23 @@ console.log(buildFun(10)[1]()); */
     .join("\n");
 }
 console.log(printNums([1, 12, 34])); */
+
+// #7kyu Loose Change!
+/* function changeCount(change) {
+  const coins = {
+    penny: 0.01,
+    nickel: 0.05,
+    dime: 0.1,
+    quarter: 0.25,
+    dollar: 1.0,
+  };
+  let total = 0;
+  const changeArray = change.split(" ");
+  for (let coin of changeArray) {
+    if (coins[coin]) {
+      total += coins[coin];
+    }
+  }
+  return "$" + total.toFixed(2);
+}
+console.log(changeCount("dime penny dollar")); */
