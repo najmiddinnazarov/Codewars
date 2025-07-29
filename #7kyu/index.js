@@ -7709,3 +7709,9 @@ console.log(printNums([1, 12, 34])); */
   return "$" + total.toFixed(2);
 }
 console.log(changeCount("dime penny dollar")); */
+
+// #7kyu Four/Seven
+/* function fourSeven(n) {
+  return ([4, 7].includes(n) && ((n === 4 && 7) || 4)) || 0;
+}
+console.log(fourSeven(4)); */
