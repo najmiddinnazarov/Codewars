@@ -7715,3 +7715,19 @@ console.log(changeCount("dime penny dollar")); */
   return ([4, 7].includes(n) && ((n === 4 && 7) || 4)) || 0;
 }
 console.log(fourSeven(4)); */
+
+// #7kyu Complete The Pattern #7 - Cyclical Permutation
+/* function pattern(n) {
+  var output = [];
+  var numbers = [];
+  for (let j = 1; j <= n; j++) {
+    numbers.push(j);
+  }
+  for (let i = 1; i <= n; i++) {
+    output.push(
+      (numbers.slice(i - 1, n) + numbers.slice(0, i - 1)).split(",").join("")
+    );
+  }
+  return output.join("\n");
+}
+console.log(pattern(10)); */
