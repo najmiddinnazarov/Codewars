@@ -7731,3 +7731,24 @@ console.log(fourSeven(4)); */
   return output.join("\n");
 }
 console.log(pattern(10)); */
+
+// #7kyu Difference between two collections
+/* function diff(a, b) {
+  let result = [];
+  let uniqueA = new Set(a);
+  let uniqueB = new Set(b);
+  for (let item of uniqueA) {
+    if (!uniqueB.has(item)) {
+      result.push(item);
+    }
+  }
+  for (let item of uniqueB) {
+    if (!uniqueA.has(item)) {
+      result.push(item);
+    }
+  }
+  return result.sort();
+}
+console.log(
+  diff(["a", "a", "t", "e", "f", "i", "j"], ["t", "g", "g", "i", "k", "f"])
+); */
