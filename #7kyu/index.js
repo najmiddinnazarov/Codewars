@@ -7752,3 +7752,12 @@ console.log(pattern(10)); */
 console.log(
   diff(["a", "a", "t", "e", "f", "i", "j"], ["t", "g", "g", "i", "k", "f"])
 ); */
+
+// #7kyu String to list of integers.
+/* function stringToIntArray(s) {
+  return s
+    .split(",")
+    .filter((value) => value.trim() !== "")
+    .map((value) => parseInt(value, 10));
+}
+console.log(stringToIntArray("1,2,3,,,4,,5,,,")); */
