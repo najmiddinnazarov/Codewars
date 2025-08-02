@@ -7761,3 +7761,9 @@ console.log(
     .map((value) => parseInt(value, 10));
 }
 console.log(stringToIntArray("1,2,3,,,4,,5,,,")); */
+
+// #7kyu Get length of the list recursively
+/* function lenR(x) {
+  return x.length;
+}
+console.log(lenR([1, 2, 3, 4, 5])); */
