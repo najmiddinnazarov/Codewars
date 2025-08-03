@@ -7767,3 +7767,7 @@ console.log(stringToIntArray("1,2,3,,,4,,5,,,")); */
   return x.length;
 }
 console.log(lenR([1, 2, 3, 4, 5])); */
+
+// #7kyu EZ code golf #1 : ∞
+/* f=_=>1/0
+console.log(f()); */
