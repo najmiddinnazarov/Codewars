@@ -7771,3 +7771,17 @@ console.log(lenR([1, 2, 3, 4, 5])); */
 // #7kyu EZ code golf #1 : ∞
 /* f=_=>1/0
 console.log(f()); */
+
+// #7kyu All Star Code Challenge #14 - Find the median
+/* function median(array) {
+  array = array.sort((a, b) => a - b);
+  const arrayLength = array.length;
+  if (arrayLength % 2 === 0) {
+    const mid1 = array[arrayLength / 2 - 1];
+    const mid2 = array[arrayLength / 2];
+    return (mid1 + mid2) / 2;
+  } else {
+    return array[Math.floor(arrayLength / 2)];
+  }
+}
+console.log(median([33, 99, 100, 30, 29, 50])); */
