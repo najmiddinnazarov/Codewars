@@ -7826,3 +7826,9 @@ console.log(median([33, 99, 100, 30, 29, 50])); */
   return word.length === 7 ? score * word.length + 50 : score * word.length;
 }
 console.log(wordscore("deceive")); */
+
+// #7kyu Sentence to words
+/* function splitSentence(s) {
+  return s.split(" ");
+}
+console.log(splitSentence("Hello world! This is a test.")); */
