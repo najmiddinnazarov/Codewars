@@ -7832,3 +7832,16 @@ console.log(wordscore("deceive")); */
   return s.split(" ");
 }
 console.log(splitSentence("Hello world! This is a test.")); */
+
+// #7kyu Sum ALL the arrays!
+/* function arraySum(arr) {
+  arr = arr.flat(Infinity);
+  let number = [];
+  arr.filter((value) => {
+    if (typeof value === "number") {
+      number.push(value);
+    }
+  });
+  return number.reduce((sum, curr) => sum + curr, 0);
+}
+console.log(arraySum([1, 2, [3, "b"], 5])); */
