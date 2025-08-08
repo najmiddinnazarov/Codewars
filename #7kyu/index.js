@@ -7845,3 +7845,13 @@ console.log(splitSentence("Hello world! This is a test.")); */
   return number.reduce((sum, curr) => sum + curr, 0);
 }
 console.log(arraySum([1, 2, [3, "b"], 5])); */
+
+// #7kyu Add a property to an object
+/* function addProperty(obj, prop, value) {
+  if (prop in obj) {
+    throw new Error("Property already exists");
+  }
+  obj[prop] = value;
+  return obj;
+}
+console.log(addProperty({ name: "John" }, "age", 30)); */
