@@ -7855,3 +7855,34 @@ console.log(arraySum([1, 2, [3, "b"], 5])); */
   return obj;
 }
 console.log(addProperty({ name: "John" }, "age", 30)); */
+
+// #7kyu Separate basic types
+/* function separateTypes(input) {
+  let result = {
+    number: [],
+    string: [],
+    boolean: [],
+    null: [],
+    undefined: [],
+  };
+  input.forEach((item) => {
+    if (typeof item === "number") {
+      result.number.push(item);
+    } else if (typeof item === "string") {
+      result.string.push(item);
+    } else if (typeof item === "boolean") {
+      result.boolean.push(item);
+    } else if (item === null) {
+      result.null.push(item);
+    } else if (typeof item === "undefined") {
+      result.undefined.push(item);
+    }
+  });
+  for (const key in result) {
+    if (result[key].length === 0) {
+      delete result[key];
+    }
+  }
+  return result;
+}
+console.log(separateTypes([1, "hello", true, 3.14, undefined, "world"])); */
