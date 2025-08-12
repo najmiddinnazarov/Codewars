@@ -2131,3 +2131,11 @@ console.log(cube.setSide(42)); */
   return sum;
 }
 console.log(sumOfDifferences([1, 2, 10])); */
+
+// #8kyu Sleigh Authentication
+/* function Sleigh() {}
+Sleigh.prototype.authenticate = function (name, password) {
+  return name === "Santa Claus" && password === "Ho Ho Ho!";
+};
+var sleigh = new Sleigh();
+console.log(sleigh.authenticate("Santa Claus", "Ho Ho Ho!")); */
