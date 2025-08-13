@@ -2139,3 +2139,9 @@ Sleigh.prototype.authenticate = function (name, password) {
 };
 var sleigh = new Sleigh();
 console.log(sleigh.authenticate("Santa Claus", "Ho Ho Ho!")); */
+
+// #8kyu Improving Math.round(x)
+/* Math.roundTo = function (number, precision) {
+  return Number(number.toFixed(precision));
+};
+console.log(Math.roundTo(3.1415926535, 4)); */
