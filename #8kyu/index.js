@@ -2145,3 +2145,9 @@ console.log(sleigh.authenticate("Santa Claus", "Ho Ho Ho!")); */
   return Number(number.toFixed(precision));
 };
 console.log(Math.roundTo(3.1415926535, 4)); */
+
+// #8kyu Is integer safe to use?
+/* function SafeInteger(n) {
+  return Number.isSafeInteger(n);
+}
+console.log(SafeInteger(9007199254740992)); */
