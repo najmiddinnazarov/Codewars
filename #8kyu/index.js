@@ -2151,3 +2151,13 @@ console.log(Math.roundTo(3.1415926535, 4)); */
   return Number.isSafeInteger(n);
 }
 console.log(SafeInteger(9007199254740992)); */
+
+// #8kyu Arguments to Binary addition
+/* function arr2bin(arr) {
+  const calc = arr.reduce(
+    (acc, curr) => (typeof curr === "number" ? acc + curr : acc + 0),
+    0
+  );
+  return calc.toString(2);
+}
+console.log(arr2bin([1, 2, 3, 4, 5, "a"])); */
