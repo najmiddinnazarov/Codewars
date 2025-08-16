@@ -2161,3 +2161,12 @@ console.log(SafeInteger(9007199254740992)); */
   return calc.toString(2);
 }
 console.log(arr2bin([1, 2, 3, 4, 5, "a"])); */
+
+// #8kyu Online RPG: player to qualifying stage?
+/* function playerRankUp(points) {
+  if (points >= 100) {
+    return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.";
+  }
+  return false;
+}
+console.log(playerRankUp(10)); */
