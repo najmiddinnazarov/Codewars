@@ -2170,3 +2170,16 @@ console.log(arr2bin([1, 2, 3, 4, 5, "a"])); */
   return false;
 }
 console.log(playerRankUp(10)); */
+
+// #8kyu Implement Array.prototype.filter()
+/* Array.prototype.filter = function (func) {
+  return func
+    ? this.reduce((acc, curr) => {
+        if (func(curr)) {
+          acc.push(curr);
+        }
+        return acc;
+      }, [])
+    : [];
+};
+console.log([1, 2, 3, 4, 5].filter((x) => x > 2)); */
