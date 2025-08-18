@@ -2183,3 +2183,18 @@ console.log(playerRankUp(10)); */
     : [];
 };
 console.log([1, 2, 3, 4, 5].filter((x) => x > 2)); */
+
+// #8kyu Barking mad
+/* function Dog(breed) {
+  this.breed = breed;
+}
+var snoopy = new Dog("Beagle");
+snoopy.bark = function () {
+  return "Woof";
+};
+var scoobydoo = new Dog("Great Dane");
+scoobydoo.bark = function () {
+  return "Woof";
+};
+console.log(snoopy.bark());
+console.log(scoobydoo.bark()); */
