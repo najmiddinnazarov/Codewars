@@ -7886,3 +7886,30 @@ console.log(addProperty({ name: "John" }, "age", 30)); */
   return result;
 }
 console.log(separateTypes([1, "hello", true, 3.14, undefined, "world"])); */
+
+// #7kyu Extending JavaScript Objects: Simple Math Methods
+/* Number.prototype.add = function (n) {
+  return this + n;
+};
+Number.prototype.sub = function (n) {
+  return this - n;
+};
+Number.prototype.mul = function (n) {
+  return this * n;
+};
+Number.prototype.div = function (n) {
+  return this / n;
+};
+Number.prototype.pow = function (n) {
+  return this ** n;
+};
+Number.prototype.sqr = function () {
+  return Math.sqrt(this);
+};
+var n = 25;
+n.add(4);
+n.sub(3);
+n.mul(2);
+n.div(5);
+n.pow(2);
+n.sqr(); */
