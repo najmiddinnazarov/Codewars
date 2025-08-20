@@ -7913,3 +7913,17 @@ n.mul(2);
 n.div(5);
 n.pow(2);
 n.sqr(); */
+
+// #7kyu Complete Series
+/* function completeSeries(arr) {
+  if (arr.toString() !== [...new Set(arr)].toString()) {
+    return [0];
+  }
+  let maxNumber = Math.max(...arr);
+  let result = [];
+  for (let i = 0; i <= maxNumber; i++) {
+    result.push(i);
+  }
+  return result;
+}
+console.log(completeSeries([1, 4, 4, 6])); */
