@@ -7927,3 +7927,14 @@ n.sqr(); */
   return result;
 }
 console.log(completeSeries([1, 4, 4, 6])); */
+
+// #7kyu Grid blast!
+/* function fire(x, y) {
+  const grid = [
+    ["top left", "top middle", "top right"],
+    ["middle left", "center", "middle right"],
+    ["bottom left", "bottom middle", "bottom right"],
+  ];
+  return grid[y][x];
+}
+console.log(fire(1, 2)); */
