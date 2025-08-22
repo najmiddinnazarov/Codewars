@@ -7938,3 +7938,18 @@ console.log(completeSeries([1, 4, 4, 6])); */
   return grid[y][x];
 }
 console.log(fire(1, 2)); */
+
+// #7kyu What comes after?
+/* function comes_after(str, l) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].toLowerCase() === l.toLowerCase()) {
+      result +=
+        /[A-Za-z]/.test(str[i + 1]) && str[i + 1] !== undefined
+          ? str[i + 1]
+          : "";
+    }
+  }
+  return result;
+}
+console.log(comes_after("Pirates say arrrrrrrrr", "r")); */
