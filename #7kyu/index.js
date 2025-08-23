@@ -7953,3 +7953,15 @@ console.log(fire(1, 2)); */
   return result;
 }
 console.log(comes_after("Pirates say arrrrrrrrr", "r")); */
+
+// #7kyu Exclamation marks series #5: Remove all exclamation marks from the end of words
+/* function remove(string) {
+  string = string.split(" ");
+  let result = "";
+  for (let i = 0; i < string.length; i++) {
+    result +=
+      string[i].replace(/!+$/g, "") + (i === string.length - 1 ? "" : " ");
+  }
+  return result;
+}
+console.log(remove("pwap !!zcsxm!")); */
