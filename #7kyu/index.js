@@ -7965,3 +7965,19 @@ console.log(comes_after("Pirates say arrrrrrrrr", "r")); */
   return result;
 }
 console.log(remove("pwap !!zcsxm!")); */
+
+// #7kyu Product of the main diagonal of a square matrix.
+/* function mainDiagonalProduct(mat) {
+  let result = 1;
+  for (let i = 0; i < mat.length; i++) {
+    result *= mat[i][i];
+  }
+  return result;
+}
+console.log(
+  mainDiagonalProduct([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ])
+); */
