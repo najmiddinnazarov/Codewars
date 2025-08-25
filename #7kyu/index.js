@@ -7981,3 +7981,17 @@ console.log(
     [7, 8, 9],
   ])
 ); */
+
+// #7kyu Odd or Even? Determine that!
+/* function oddOrEven(n) {
+  if (n % 2) {
+    return "Either";
+  }
+  if ((n / 2) % 2 === 0) {
+    return "Even";
+  }
+  if ((n / 2) % 2 === 1) {
+    return "Odd";
+  }
+}
+console.log(oddOrEven(5)); */
