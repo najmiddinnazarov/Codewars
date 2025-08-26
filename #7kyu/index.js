@@ -7995,3 +7995,13 @@ console.log(
   }
 }
 console.log(oddOrEven(5)); */
+
+// #7kyu Pluck
+/* function pluck(objs, name) {
+  const result = objs
+    .filter((value) => name in value)
+    .map((value) => value[name]);
+  result.length !== objs.length ? result.push(undefined) : [];
+  return result;
+}
+console.log(pluck([{ a: 1, b: 3 }, { a: 2 }], "b")); */
