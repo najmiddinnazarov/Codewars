@@ -2198,3 +2198,18 @@ scoobydoo.bark = function () {
 };
 console.log(snoopy.bark());
 console.log(scoobydoo.bark()); */
+
+// #8kyu Lexical this
+/* var Person = function () {
+  var person = {
+    _name: "Leroy",
+    _friends: [],
+    fillFriends(f) {
+      this._friends = f;
+    },
+  };
+  return person;
+};
+var person = Person();
+person.fillFriends(["bob", "john"]);
+console.log(person._friends); */
