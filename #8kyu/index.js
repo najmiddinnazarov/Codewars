@@ -2213,3 +2213,10 @@ console.log(scoobydoo.bark()); */
 var person = Person();
 person.fillFriends(["bob", "john"]);
 console.log(person._friends); */
+
+// #7kyu Calculate Price Excluding VAT
+/* function excludingVatPrice(price) {
+  if (price === 0) return 0;
+  return Math.round((price / 1.15) * 100) / 100 || -1;
+}
+console.log(excludingVatPrice(0)); */
