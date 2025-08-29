@@ -8005,3 +8005,14 @@ console.log(oddOrEven(5)); */
   return result;
 }
 console.log(pluck([{ a: 1, b: 3 }, { a: 2 }], "b")); */
+
+// #7kyu Sentences should start with capital letters.
+/* function fix(paragraph) {
+  return paragraph
+    .split(". ")
+    .map((sentence) => sentence.charAt(0).toUpperCase() + sentence.slice(1))
+    .join(". ");
+}
+console.log(
+  fix("hello. my name is inigo montoya. you killed my father. prepare to die.")
+); */
