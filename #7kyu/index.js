@@ -8016,3 +8016,11 @@ console.log(pluck([{ a: 1, b: 3 }, { a: 2 }], "b")); */
 console.log(
   fix("hello. my name is inigo montoya. you killed my father. prepare to die.")
 ); */
+
+// #7kyu Move Zeros
+/* function move_zeros(arrNum, isRight = true) {
+  let zeros = arrNum.filter((value) => value === 0);
+  let nonZeros = arrNum.filter((value) => value !== 0);
+  return isRight ? nonZeros.concat(zeros) : zeros.concat(nonZeros);
+}
+console.log(move_zeros([12, 0, 10, 0, 8, 12, 7, 6, 0, 4, 10, 12, 0], false)); */
