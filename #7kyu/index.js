@@ -8024,3 +8024,15 @@ console.log(
   return isRight ? nonZeros.concat(zeros) : zeros.concat(nonZeros);
 }
 console.log(move_zeros([12, 0, 10, 0, 8, 12, 7, 6, 0, 4, 10, 12, 0], false)); */
+
+// #7kyu getNames()
+/* function getNames(data) {
+  return data.filter((value) => "name" in value).map((value) => value.name);
+}
+console.log(
+  getNames([
+    { name: "Joe", age: 20 },
+    { name: "Bill", age: 30 },
+    { name: "Kate", age: 23 },
+  ])
+); */
