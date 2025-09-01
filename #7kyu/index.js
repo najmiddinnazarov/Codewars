@@ -8036,3 +8036,13 @@ console.log(
     { name: "Kate", age: 23 },
   ])
 ); */
+
+// #7kyu Gradually Adding Parameters
+/* function add(...arguments) {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i] * (i + 1);
+  }
+  return sum;
+}
+console.log(add(100, 200, 300)); */
