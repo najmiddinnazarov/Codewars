@@ -8046,3 +8046,18 @@ console.log(
   return sum;
 }
 console.log(add(100, 200, 300)); */
+
+// #7kyu Battle of the characters (Easy)
+/* function battle(x, y) {
+  let alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let sumX = 0;
+  let sumY = 0;
+  for (let i = 0; i < x.length; i++) {
+    sumX += alphabet.indexOf(x[i].toLowerCase());
+  }
+  for (let i = 0; i < y.length; i++) {
+    sumY += alphabet.indexOf(y[i].toLowerCase());
+  }
+  return sumX > sumY ? x : sumY > sumX ? y : "Tie!";
+}
+console.log(battle("QAZWSX", "VFREDC")); */
