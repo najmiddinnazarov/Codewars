@@ -8061,3 +8061,11 @@ console.log(add(100, 200, 300)); */
   return sumX > sumY ? x : sumY > sumX ? y : "Tie!";
 }
 console.log(battle("QAZWSX", "VFREDC")); */
+
+// #7kyu Most digits
+/* function findLongest(array) {
+  let digits = array.map((num) => num.toString().length);
+  let maxDigits = Math.max(...digits);
+  return array[digits.indexOf(maxDigits)];
+}
+console.log(findLongest([8, 900, 500])); */
