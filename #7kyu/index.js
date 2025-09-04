@@ -8069,3 +8069,19 @@ console.log(battle("QAZWSX", "VFREDC")); */
   return array[digits.indexOf(maxDigits)];
 }
 console.log(findLongest([8, 900, 500])); */
+
+// #7kyu Duplicate sandwich
+/* function duplicateSandwich(a) {
+  let boolean = false;
+  if (Array.isArray(a) === false) {
+    a = a.split("");
+    boolean = true;
+  }
+  let dublicateLetter = a.filter((value, index) => a.indexOf(value) !== index);
+  let result = a.slice(
+    a.indexOf(dublicateLetter[0]) + 1,
+    a.lastIndexOf(dublicateLetter[0])
+  );
+  return boolean ? result.join("") : result;
+}
+console.log(duplicateSandwich("example")); */
