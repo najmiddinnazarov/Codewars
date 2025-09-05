@@ -8085,3 +8085,26 @@ console.log(findLongest([8, 900, 500])); */
   return boolean ? result.join("") : result;
 }
 console.log(duplicateSandwich("example")); */
+
+// #7kyu Grid index
+/* function gridIndex(grid, indices) {
+  let result = "";
+  grid = grid.flat();
+  grid.unshift(" ");
+  for (let i = 0; i < indices.length; i++) {
+    if (indices[i] < grid.length) {
+      result += grid[indices[i]];
+    }
+  }
+  return result;
+}
+console.log(
+  gridIndex(
+    [
+      ["m", "y", "e"],
+      ["x", "a", "m"],
+      ["p", "l", "e"],
+    ],
+    [1, 5, 6]
+  )
+); */
