@@ -8108,3 +8108,15 @@ console.log(
     [1, 5, 6]
   )
 ); */
+
+// #7kyu Lottery machine
+/* function lottery(str) {
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    if (/[0-9]/.test(str[i])) {
+      result.push(str[i]);
+    }
+  }
+  return result.length === 0 ? "One more run!" : [...new Set(result)].join("");
+}
+console.log(lottery("ffaQtaRFKeGIIBIcSJtg")); */
