@@ -8120,3 +8120,32 @@ console.log(
   return result.length === 0 ? "One more run!" : [...new Set(result)].join("");
 }
 console.log(lottery("ffaQtaRFKeGIIBIcSJtg")); */
+
+// #7kyu UVB-76 Message Validator
+/* function validate(message) {
+  message = message.split(" ");
+  if (message.length !== 8) {
+    return false;
+  }
+  if (message[0] === "MDZHB") {
+    if (message[1].length === 2) {
+      if (message[2].length === 3) {
+        if (/^[A-Z]+$/.test(message[3])) {
+          if (message[4].length === 2) {
+            if (message[5].length === 2) {
+              if (message[6].length === 2) {
+                if (message[7].length === 2) {
+                  return true;
+                } else {
+                  return false;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  return false;
+}
+console.log(validate("MDZHB 12 733 VOSKHOD 67 79 66")); */
