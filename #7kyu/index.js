@@ -8149,3 +8149,13 @@ console.log(lottery("ffaQtaRFKeGIIBIcSJtg")); */
   return false;
 }
 console.log(validate("MDZHB 12 733 VOSKHOD 67 79 66")); */
+
+// #7kyu Complete The Pattern #6 - Odd Ladder
+/* function pattern(n) {
+  let output = [];
+  for (let i = 1; i <= n; i += 2) {
+    output.push(i.toString().repeat(i));
+  }
+  return output.join("\n");
+}
+console.log(pattern(3)); */
