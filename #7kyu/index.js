@@ -8159,3 +8159,21 @@ console.log(validate("MDZHB 12 733 VOSKHOD 67 79 66")); */
   return output.join("\n");
 }
 console.log(pattern(3)); */
+
+// #7kyu Makes the Sentence
+/* function makesTheSentence(characterArray, sentenceString) {
+  let sentenceArray = sentenceString.replace(/\s/g, "").split("");
+  let chars = characterArray.slice();
+  for (let ch of sentenceArray) {
+    let idx = chars.indexOf(ch);
+    if (idx === -1) return false;
+    chars.splice(idx, 1);
+  }
+  return chars.length === 0;
+}
+console.log(
+  makesTheSentence(
+    ["D", "u", "c", "k", "s", "q", "u", "a", "c", "k", "!", ".", "?"],
+    "Ducks quack."
+  )
+); */
