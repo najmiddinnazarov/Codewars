@@ -8177,3 +8177,11 @@ console.log(
     "Ducks quack."
   )
 ); */
+
+// #7kyu Alternate Square Sum
+/* function alternateSqSum(arr) {
+  return arr.reduce((sum, curr, index) => {
+    return index % 2 === 0 ? sum + curr : sum + curr ** 2;
+  }, 0);
+}
+console.log(alternateSqSum([1, 2, 3, 4, 5])); */
