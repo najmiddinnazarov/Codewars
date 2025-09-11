@@ -8185,3 +8185,25 @@ console.log(
   }, 0);
 }
 console.log(alternateSqSum([1, 2, 3, 4, 5])); */
+
+// #7kyu Vault experience (1): Enough water for how many days?
+/* function thirstyIn(water, ageOfDwellerArray) {
+  if (water.length === 0) {
+    return -1;
+  }
+  if (water < 0) {
+    return 0;
+  }
+  let limit = 0;
+  for (let i = 0; i < ageOfDwellerArray.length; i++) {
+    if (ageOfDwellerArray[i] < 18) {
+      limit += 1;
+    } else if (ageOfDwellerArray[i] > 50) {
+      limit += 1.5;
+    } else {
+      limit += 2;
+    }
+  }
+  return limit === 0 ? -1 : Math.floor(water / limit);
+}
+console.log(thirstyIn(150, [5, 30, 10])); */
