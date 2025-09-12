@@ -8207,3 +8207,10 @@ console.log(alternateSqSum([1, 2, 3, 4, 5])); */
   return limit === 0 ? -1 : Math.floor(water / limit);
 }
 console.log(thirstyIn(150, [5, 30, 10])); */
+
+// #7kyu Nth Smallest Element (Array Series #4)
+/* function nthSmallest(arr, pos) {
+  const temp = arr.sort((a, b) => a - b);
+  return temp[pos - 1];
+}
+console.log(nthSmallest([3, 1, 2], 2)); */
