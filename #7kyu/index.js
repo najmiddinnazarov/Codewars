@@ -8214,3 +8214,14 @@ console.log(thirstyIn(150, [5, 30, 10])); */
   return temp[pos - 1];
 }
 console.log(nthSmallest([3, 1, 2], 2)); */
+
+// #7kyu Javascript Namespacing
+/* MyNamespace.MyClass = class {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHello() {
+    return this.name;
+  }
+};
+console.log(new MyNamespace.MyClass("John").sayHello()); */
