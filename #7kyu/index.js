@@ -8225,3 +8225,15 @@ console.log(nthSmallest([3, 1, 2], 2)); */
   }
 };
 console.log(new MyNamespace.MyClass("John").sayHello()); */
+
+// #7kyu Find sum of top-left to bottom-right diagonals
+/* function diagonalSum(matrix) {
+  return matrix.reduce((sum, curr, i) => sum + curr[i], 0);
+}
+console.log(
+  diagonalSum([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ])
+); */
