@@ -8237,3 +8237,26 @@ console.log(
     [7, 8, 9],
   ])
 ); */
+
+// #7kyu Odds-Index
+/* function oddBall(arr) {
+  const oddIndex = arr.indexOf("odd");
+  return arr.some((x) => typeof x === "number" && x === oddIndex);
+}
+console.log(
+  oddBall([
+    "even",
+    4,
+    "even",
+    7,
+    "even",
+    55,
+    "even",
+    6,
+    "even",
+    10,
+    "odd",
+    3,
+    "even",
+  ])
+); */
