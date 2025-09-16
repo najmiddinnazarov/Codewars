@@ -8260,3 +8260,6 @@ console.log(
     "even",
   ])
 ); */
+
+// #7kyu Add property to every object in array
+/* questions.map((value) => (value.usersAnswer = null)); */
