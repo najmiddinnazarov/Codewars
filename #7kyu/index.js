@@ -8263,3 +8263,12 @@ console.log(
 
 // #7kyu Add property to every object in array
 /* questions.map((value) => (value.usersAnswer = null)); */
+
+// #7kyu Area of a Circle
+/* function circleArea(radius) {
+  if (radius <= 0) {
+    throw new Error("Invalid radius");
+  }
+  return Math.PI * radius * radius;
+}
+console.log(circleArea(0)); */
