@@ -8272,3 +8272,9 @@ console.log(
   return Math.PI * radius * radius;
 }
 console.log(circleArea(0)); */
+
+// #7kyu The Office IV - Find a Meeting Room
+/* function meeting(x) {
+  return x.indexOf("O") !== -1 ? x.indexOf("O") : "None available!";
+}
+console.log(meeting(["X", "O", "X", "X"])); */
