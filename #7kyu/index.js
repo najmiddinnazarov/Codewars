@@ -8278,3 +8278,13 @@ console.log(circleArea(0)); */
   return x.indexOf("O") !== -1 ? x.indexOf("O") : "None available!";
 }
 console.log(meeting(["X", "O", "X", "X"])); */
+
+// #7kyu Sort with a sorting array
+/* function sort(initialArray, sortingArray) {
+  let result = [];
+  for (let i = 0; i < sortingArray.length; i++) {
+    result[sortingArray[i]] = initialArray[i];
+  }
+  return result;
+}
+console.log(sort(["x", "y", "z"], [1, 2, 0])); */
