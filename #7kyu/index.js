@@ -8288,3 +8288,11 @@ console.log(meeting(["X", "O", "X", "X"])); */
   return result;
 }
 console.log(sort(["x", "y", "z"], [1, 2, 0])); */
+
+// #7kyu Stones on the Table
+/* function solve(stones) {
+  return stones
+    .split("")
+    .reduce((acc, curr, i, arr) => (curr === arr[i - 1] ? acc + 1 : acc), 0);
+}
+console.log(solve("RGBRGBRGGB")); */
