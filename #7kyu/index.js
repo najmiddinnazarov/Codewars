@@ -8296,3 +8296,17 @@ console.log(sort(["x", "y", "z"], [1, 2, 0])); */
     .reduce((acc, curr, i, arr) => (curr === arr[i - 1] ? acc + 1 : acc), 0);
 }
 console.log(solve("RGBRGBRGGB")); */
+
+// #7kyu Capitals first!
+/* function capitalsFirst(str) {
+  let arr = str.split(" ");
+  arr = arr.filter((value) => /[A-Za-z]/.test(value[0]));
+  let upperCase = [];
+  let lowerCase = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i][0] === arr[i][0].toUpperCase()) upperCase.push(arr[i]);
+    else lowerCase.push(arr[i]);
+  }
+  return [...upperCase, ...lowerCase].join(" ");
+}
+console.log(capitalsFirst("Life gets Sometimes pretty !Hard")); */
