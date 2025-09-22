@@ -8310,3 +8310,17 @@ console.log(solve("RGBRGBRGGB")); */
   return [...upperCase, ...lowerCase].join(" ");
 }
 console.log(capitalsFirst("Life gets Sometimes pretty !Hard")); */
+
+// #7kyu Binary Zoo
+/* function countTheAnimals(animals) {
+  animals = Object.values(animals);
+  return animals.reduce((sum, curr) => sum + parseInt(curr, 2), 0);
+}
+console.log(
+  countTheAnimals({
+    aardvark: "1101",
+    tiger: "1100",
+    donkey: "1100",
+    emu: "1010",
+  })
+); */
