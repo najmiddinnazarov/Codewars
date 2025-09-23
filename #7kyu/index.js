@@ -8324,3 +8324,21 @@ console.log(
     emu: "1010",
   })
 ); */
+
+// #7kyu Caffeine Script
+/* function caffeineBuzz(n) {
+  let result = "";
+  let condition = false;
+  if (n % 3 === 0 && n % 4 === 0) {
+    result = "Coffee";
+    condition = true;
+  } else if (n % 3 === 0) {
+    result += "Java";
+    condition = true;
+  }
+  if (condition && n % 2 === 0) {
+    result += "Script";
+  }
+  return result === "" ? "mocha_missing!" : result;
+}
+console.log(caffeineBuzz(4)); */
