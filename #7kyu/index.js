@@ -8342,3 +8342,24 @@ console.log(
   return result === "" ? "mocha_missing!" : result;
 }
 console.log(caffeineBuzz(4)); */
+
+// #7kyu Converting integer to currency format
+/* function toCurrency(price) {
+  if (price < 1000) {
+    return price.toString();
+  }
+  price = price.toString().split("").reverse();
+  let result = [];
+  let count = "";
+  for (let i = 0; i < price.length; i++) {
+    if (count.length === 3) {
+      result.push(count);
+      result.push(",");
+      count = "";
+    }
+    count += price[i];
+  }
+  result.push(count);
+  return result.join("").split("").reverse().join("");
+}
+console.log(toCurrency(12345678)); */
