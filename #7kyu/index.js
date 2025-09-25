@@ -8363,3 +8363,19 @@ console.log(caffeineBuzz(4)); */
   return result.join("").split("").reverse().join("");
 }
 console.log(toCurrency(12345678)); */
+
+// #7kyu Sum of a Beach
+/* function sumOfABeach(beach) {
+  let count = 0;
+  beach = beach.toLowerCase();
+  let words = ["sand", "water", "fish", "sun"];
+  for (let word of words) {
+    let regex = new RegExp(word, "g");
+    let matches = beach.match(regex);
+    if (matches) {
+      count += matches.length;
+    }
+  }
+  return count;
+}
+console.log(sumOfABeach("WAtErSlIde")); */
