@@ -8379,3 +8379,27 @@ console.log(toCurrency(12345678)); */
   return count;
 }
 console.log(sumOfABeach("WAtErSlIde")); */
+
+// #7kyu Scrabble Score
+/* function scrabbleScore(str) {
+  const scores = {
+    1: "AEIOULNRST",
+    2: "DG",
+    3: "BCMP",
+    4: "FHVWY",
+    5: "K",
+    8: "JX",
+    10: "QZ",
+  };
+  str = str.toUpperCase();
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    for (let key in scores) {
+      if (scores[key].includes(str[i])) {
+        count += parseInt(key);
+      }
+    }
+  }
+  return count;
+}
+console.log(scrabbleScore("cabbage")); */
