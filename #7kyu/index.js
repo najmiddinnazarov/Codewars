@@ -8403,3 +8403,22 @@ console.log(sumOfABeach("WAtErSlIde")); */
   return count;
 }
 console.log(scrabbleScore("cabbage")); */
+
+// #7kyu Easy Time Convert
+/* function timeConvert(num) {
+  if (num < 0) {
+    return "00:00";
+  }
+  if (num < 60) {
+    return `00:${num < 10 ? `0${num}` : num}`;
+  } else {
+    let hours =
+      Math.floor(num / 60) < 10
+        ? `0${Math.floor(num / 60)}`
+        : Math.floor(num / 60);
+    let minutes = num % 60 < 10 ? `0${num % 60}` : num % 60;
+    return `${hours}:${minutes}`;
+  }
+}
+console.log(timeConvert(78));
+ */
