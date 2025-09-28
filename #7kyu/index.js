@@ -8422,3 +8422,12 @@ console.log(scrabbleScore("cabbage")); */
 }
 console.log(timeConvert(78));
  */
+
+// #7kyu Maxed Out
+/* function maxedOut(arr) {
+  const calc = arr.reduce((sum, curr) => sum + Math.pow(curr, 3), 0);
+  return calc >= 9007199254740991 ? "You've pushed me to the max!" : calc;
+}
+console.log(
+  maxedOut([434, 653, 323, 5645, 322354, 6534, 323, 556, 23122, 324])
+); */
