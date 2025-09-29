@@ -8431,3 +8431,37 @@ console.log(timeConvert(78));
 console.log(
   maxedOut([434, 653, 323, 5645, 322354, 6534, 323, 556, 23122, 324])
 ); */
+
+// #7kyu Find Your Villain Name
+/* function getVillainName(birthday) {
+  const m = [
+    "Evil",
+    "Vile",
+    "Cruel",
+    "Trashy",
+    "Despicable",
+    "Embarrassing",
+    "Disreputable",
+    "Atrocious",
+    "Twirling",
+    "Orange",
+    "Terrifying",
+    "Awkward",
+  ];
+  const d = [
+    "Mustache",
+    "Pickle",
+    "Hood Ornament",
+    "Raisin",
+    "Recycling Bin",
+    "Potato",
+    "Tomato",
+    "House Cat",
+    "Teaspoon",
+    "Laundry Basket",
+  ];
+  const date = birthday.getDate().toString().slice(-1);
+  const month = birthday.getMonth();
+  return "The" + " " + m[month] + " " + d[date];
+}
+console.log(getVillainName(new Date("May 3"))); */
