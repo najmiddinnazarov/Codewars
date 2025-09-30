@@ -8465,3 +8465,10 @@ console.log(
   return "The" + " " + m[month] + " " + d[date];
 }
 console.log(getVillainName(new Date("May 3"))); */
+
+// #7kyu Sum squares of numbers in list that may contain more lists
+/* function SumSquares(l) {
+  l = l.flat(Infinity);
+  return l.reduce((sum, curr) => sum + curr * curr, 0);
+}
+console.log(SumSquares([1, 2, [3, 4]])); */
