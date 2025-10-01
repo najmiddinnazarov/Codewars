@@ -8472,3 +8472,10 @@ console.log(getVillainName(new Date("May 3"))); */
   return l.reduce((sum, curr) => sum + curr * curr, 0);
 }
 console.log(SumSquares([1, 2, [3, 4]])); */
+
+// #7kyu Numbers in different systems
+/* function sysNums(n, sys) {
+  const str = n.toString(sys);
+  return /^\d+$/.test(str) ? Number(str) : str;
+}
+console.log(sysNums(5, 2)); */
