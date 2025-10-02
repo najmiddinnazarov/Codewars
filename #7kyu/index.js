@@ -8479,3 +8479,25 @@ console.log(SumSquares([1, 2, [3, 4]])); */
   return /^\d+$/.test(str) ? Number(str) : str;
 }
 console.log(sysNums(5, 2)); */
+
+// #7kyu Celebrity Baby Names
+/* function validName(array) {
+  if (array.length === 0) {
+    return "You must test at least one name.";
+  }
+  if (array.length === 1) {
+    return "Congratulations, you can choose any name you like!";
+  }
+  array = array.map((value) => value.toLowerCase());
+  for (let i = 0; i < array.length; i++) {
+    if (array[i + 1]) {
+      if (array[i][array[i].length - 1] == array[i + 1][0]) {
+        continue;
+      } else {
+        return "Back to the drawing board, your baby names are not compatible.";
+      }
+    }
+  }
+  return "Congratulations, your baby names are compatible!";
+}
+console.log(validName(["Cruz", "Zuma"])); */
