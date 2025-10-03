@@ -8501,3 +8501,12 @@ console.log(sysNums(5, 2)); */
   return "Congratulations, your baby names are compatible!";
 }
 console.log(validName(["Cruz", "Zuma"])); */
+
+// #7kyu Find the Combination
+/* let countCombinations = function (string, key) {
+  let regex = new RegExp(key, "gi");
+  let count = 0;
+  string.replace(regex, () => count++);
+  return count;
+};
+console.log(countCombinations("03948", "\\d")); */
