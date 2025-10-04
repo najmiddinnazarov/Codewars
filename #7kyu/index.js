@@ -8510,3 +8510,23 @@ console.log(validName(["Cruz", "Zuma"])); */
   return count;
 };
 console.log(countCombinations("03948", "\\d")); */
+
+// #7kyu Display Large Numbers
+/* function displayLargeNumber(n) {
+  n = n.toString();
+  if (n.length <= 3) {
+    return n;
+  }
+  const firstSplitNumber = n.length % 3;
+  let result = [];
+  if (firstSplitNumber !== 0) {
+    result.push(n.slice(0, firstSplitNumber));
+  }
+  let temp = n.slice(firstSplitNumber);
+  while (temp.length > 0) {
+    result.push(temp.slice(0, 3));
+    temp = temp.slice(3);
+  }
+  return result.join(",");
+}
+console.log(displayLargeNumber("123456789")); */
