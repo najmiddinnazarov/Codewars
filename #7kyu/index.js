@@ -8530,3 +8530,12 @@ console.log(countCombinations("03948", "\\d")); */
   return result.join(",");
 }
 console.log(displayLargeNumber("123456789")); */
+
+// #7kyu Swap the head and the tail
+/* function swapHeadAndTail(arr) {
+  const head = arr.slice(0, Math.floor(arr.length / 2));
+  const middle = arr.length % 2 === 0 ? [] : [arr[Math.floor(arr.length / 2)]];
+  const tail = arr.slice(Math.ceil(arr.length / 2));
+  return [...tail, ...middle, ...head];
+}
+console.log(swapHeadAndTail([1, 2, 3, 4, 5])); */
