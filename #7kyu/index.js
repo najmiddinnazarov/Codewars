@@ -8539,3 +8539,19 @@ console.log(displayLargeNumber("123456789")); */
   return [...tail, ...middle, ...head];
 }
 console.log(swapHeadAndTail([1, 2, 3, 4, 5])); */
+
+// #7kyu You Can't Code Under Pressure #2
+/* function Counter() {
+  function increment() {
+    this.count = (this.count || 0) + 1;
+    return this.count;
+  }
+  this.check = function () {
+    return this.count || 0;
+  };
+  this.increment = increment;
+}
+var myCounter = new Counter();
+myCounter.increment();
+myCounter.increment();
+console.log(myCounter.check()); */
