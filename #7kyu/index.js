@@ -8555,3 +8555,9 @@ var myCounter = new Counter();
 myCounter.increment();
 myCounter.increment();
 console.log(myCounter.check()); */
+
+// #7kyu Remove the noise from the string
+/* function removeNoise(str) {
+  return str.replace(/[%$&#\/·@|º\\ª]/g, "");
+}
+console.log(removeNoise("Th!e@ #l$az%y^ &d*o(g)")); */
