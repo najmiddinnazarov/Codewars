@@ -8561,3 +8561,12 @@ console.log(myCounter.check()); */
   return str.replace(/[%$&#\/·@|º\\ª]/g, "");
 }
 console.log(removeNoise("Th!e@ #l$az%y^ &d*o(g)")); */
+
+// #7kyu noobCode 03: CHECK THESE LETTERS... see if letters in "String 2" are present in "String 1"
+/* function letterCheck(arr) {
+  return arr[1]
+    .toLowerCase()
+    .split("")
+    .every((value) => arr[0].toLowerCase().includes(value));
+}
+console.log(letterCheck(["compadres", "DRAPES"])); */
