@@ -8570,3 +8570,22 @@ console.log(removeNoise("Th!e@ #l$az%y^ &d*o(g)")); */
     .every((value) => arr[0].toLowerCase().includes(value));
 }
 console.log(letterCheck(["compadres", "DRAPES"])); */
+
+// #7kyu Pairs of integers from 0 to n
+/* function generatePairs(n) {
+  let array = [];
+  for (let i = 0; i <= n; i++) {
+    let x = [];
+    for (let j = 0; j <= n; j++) {
+      x.push([i, j]);
+    }
+    array.push(x);
+    x = [];
+  }
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(...array[i].slice(i));
+  }
+  return result;
+}
+console.log(generatePairs(10)); */
