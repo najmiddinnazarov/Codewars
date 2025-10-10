@@ -8589,3 +8589,13 @@ console.log(letterCheck(["compadres", "DRAPES"])); */
   return result;
 }
 console.log(generatePairs(10)); */
+
+// #7kyu Pizza Payments
+/* function michaelPays(costs) {
+  if (costs < 5) {
+    return Number(costs.toFixed(2));
+  }
+  const discount = costs * (1 / 3);
+  return Number((discount <= 10 ? costs - discount : costs - 10).toFixed(2));
+}
+console.log(michaelPays(40.2)); */
