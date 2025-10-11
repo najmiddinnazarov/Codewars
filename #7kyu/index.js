@@ -8599,3 +8599,15 @@ console.log(generatePairs(10)); */
   return Number((discount <= 10 ? costs - discount : costs - 10).toFixed(2));
 }
 console.log(michaelPays(40.2)); */
+
+// #7kyu Sort rectangles and circles by area
+/* function sortByArea(array) {
+  return array
+    .map((value) =>
+      Array.isArray(value)
+        ? Number((value[0] * value[1]).toFixed(2))
+        : Number((Math.PI * value * value).toFixed(2))
+    )
+    .sort((a, b) => a - b);
+}
+console.log(sortByArea([[4.23, 6.43], 1.23, 3.444, [1.342, 3.212]])); */
