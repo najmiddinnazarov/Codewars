@@ -8611,3 +8611,24 @@ console.log(michaelPays(40.2)); */
     .sort((a, b) => a - b);
 }
 console.log(sortByArea([[4.23, 6.43], 1.23, 3.444, [1.342, 3.212]])); */
+
+// #7kyu JavaScript class-like objects
+/* class Animal {
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
+  }
+  toString() {
+    return this.name.toString() + " is a " + this.type.toString();
+  }
+  type() {
+    return this.type;
+  }
+  name() {
+    return this.name;
+  }
+}
+let dog = new Animal("Max", "dog");
+console.log(dog.toString());
+console.log(dog.type);
+console.log(dog.name); */
