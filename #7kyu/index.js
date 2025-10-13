@@ -8632,3 +8632,12 @@ let dog = new Animal("Max", "dog");
 console.log(dog.toString());
 console.log(dog.type);
 console.log(dog.name); */
+
+// #7kyu Squeaky Window
+/* function sliding(nums, k) {
+  return nums
+    .map((value, index) => nums.slice(index, k + index))
+    .filter((value) => value.length === k)
+    .map((value) => Math.max(...value));
+}
+console.log(sliding([1, 3, -1, -3, 5, 3, 6, 7], 3)); */
