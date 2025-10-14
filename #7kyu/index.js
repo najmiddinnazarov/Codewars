@@ -8641,3 +8641,17 @@ console.log(dog.name); */
     .map((value) => Math.max(...value));
 }
 console.log(sliding([1, 3, -1, -3, 5, 3, 6, 7], 3)); */
+
+// #7kyu Time Converter: hours, minutes, seconds and milliseconds
+/* function convert(time) {
+  return (
+    time.getHours().toString().padStart(2, "0") +
+    ":" +
+    time.getMinutes().toString().padStart(2, "0") +
+    ":" +
+    time.getSeconds().toString().padStart(2, "0") +
+    "," +
+    time.getMilliseconds().toString().padStart(3, "0")
+  );
+}
+console.log(convert(new Date(1850, 12, 30, 11, 11, 11, 123))); */
