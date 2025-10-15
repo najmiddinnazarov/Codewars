@@ -8655,3 +8655,17 @@ console.log(sliding([1, 3, -1, -3, 5, 3, 6, 7], 3)); */
   );
 }
 console.log(convert(new Date(1850, 12, 30, 11, 11, 11, 123))); */
+
+// #7kyu The once rollable dice
+/* function Character(name, opness) {
+  this.name = name;
+  this.opness = opness;
+  this.attack = function () {
+    return this.opness + Math.floor(Math.random() * 20) + 1;
+  };
+  this.levelUp = function () {
+    this.opness++;
+  };
+}
+var balthazaar = new Character("Balthazaar", 30);
+console.log(balthazaar.attack); */
