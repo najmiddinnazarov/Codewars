@@ -8669,3 +8669,20 @@ console.log(convert(new Date(1850, 12, 30, 11, 11, 11, 123))); */
 }
 var balthazaar = new Character("Balthazaar", 30);
 console.log(balthazaar.attack); */
+
+// #7kyu Months, Weeks, Days, Hours and Minutes
+/* function displayValue(value) {
+  const month = Math.floor(value / 40320);
+  const week = Math.floor((value % 40320) / 10080);
+  const day = Math.floor(((value % 40320) % 10080) / 1440);
+  const hour = Math.floor((((value % 40320) % 10080) % 1440) / 60);
+  const minute = Math.floor((((value % 40320) % 10080) % 1440) % 60);
+  let result = "";
+  if (month > 0) result += month + " month" + (month > 1 ? "s " : " ");
+  if (week > 0) result += week + " week" + (week > 1 ? "s " : " ");
+  if (day > 0) result += day + " day" + (day > 1 ? "s " : " ");
+  if (hour > 0) result += hour + " hour" + (hour > 1 ? "s " : " ");
+  if (minute > 0) result += minute + " minute" + (minute > 1 ? "s" : "");
+  return result.trim();
+}
+console.log(displayValue(100650)); */
