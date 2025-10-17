@@ -8686,3 +8686,20 @@ console.log(balthazaar.attack); */
   return result.trim();
 }
 console.log(displayValue(100650)); */
+
+// #7kyu Simple letter removal
+/* function solve(s, k) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let count = 0;
+  for (let i = 0; i < alphabet.length; i++) {
+    for (let j = 0; j < s.length; j++) {
+      if (s[j] === alphabet[i] && count < k) {
+        s = s.slice(0, j) + s.slice(j + 1);
+        count++;
+        j--;
+      }
+    }
+  }
+  return s;
+}
+console.log(solve("hxehmvkybeklnj", 5)); */
