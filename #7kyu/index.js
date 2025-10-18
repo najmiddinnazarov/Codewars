@@ -8703,3 +8703,24 @@ console.log(displayValue(100650)); */
   return s;
 }
 console.log(solve("hxehmvkybeklnj", 5)); */
+
+// #7kyu Simple Fun #223: Parameter Of Number
+/* function parameter(n) {
+  const sum = n
+    .toString()
+    .split("")
+    .reduce((acc, curr) => acc + Number(curr), 0);
+  const multiple = n
+    .toString()
+    .split("")
+    .reduce((acc, curr) => acc * Number(curr), 1);
+  let array = [Math.max(sum, multiple), Math.min(sum, multiple)];
+  let remainder;
+  while (remainder !== 0) {
+    remainder = array[0] % array[1];
+    array[0] = array[1];
+    array[1] = remainder;
+  }
+  return (sum * multiple) / array[0];
+}
+console.log(parameter(1234)); */
