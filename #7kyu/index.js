@@ -8724,3 +8724,7 @@ console.log(solve("hxehmvkybeklnj", 5)); */
   return (sum * multiple) / array[0];
 }
 console.log(parameter(1234)); */
+
+// #7kyu JS Golfing #5: A Million Times
+/* x=n=>n*1e6
+console.log(x(2)); */
