@@ -8728,3 +8728,10 @@ console.log(parameter(1234)); */
 // #7kyu JS Golfing #5: A Million Times
 /* x=n=>n*1e6
 console.log(x(2)); */
+
+// #7kyu Monkey Tennis - The Aftermath
+/* function ballCollector(detritus) {
+  const balls = detritus.filter((w) => w === 58).length;
+  return { weight: balls * 58 };
+}
+console.log(ballCollector([58, 68, 62, 69, 58])); */
