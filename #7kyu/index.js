@@ -8735,3 +8735,19 @@ console.log(x(2)); */
   return { weight: balls * 58 };
 }
 console.log(ballCollector([58, 68, 62, 69, 58])); */
+
+// #7kyu Merge two arrays
+/* function mergeArrays(a, b) {
+  let result = [];
+  let maxLength = Math.max(a.length, b.length);
+  for (let i = 0; i < maxLength; i++) {
+    if (i < a.length) {
+      result.push(a[i]);
+    }
+    if (i < b.length) {
+      result.push(b[i]);
+    }
+  }
+  return result;
+}
+console.log(mergeArrays(["a", "b", "c", "d", "e"], [1, 2, 3, 4, 5])); */
