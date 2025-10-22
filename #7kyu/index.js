@@ -8751,3 +8751,16 @@ console.log(ballCollector([58, 68, 62, 69, 58])); */
   return result;
 }
 console.log(mergeArrays(["a", "b", "c", "d", "e"], [1, 2, 3, 4, 5])); */
+
+// #7kyu Loop Array
+/* function loopArr(arr, direction, steps) {
+  steps = steps % arr.length;
+  if (direction === "right") {
+    return arr.slice(-steps).concat(arr.slice(0, -steps));
+  } else {
+    return arr.slice(steps).concat(arr.slice(0, steps));
+  }
+}
+console.log(
+  loopArr([529, 514, 376, 708, 168, 860, 861, 495, 328, 443, 4], "right", 0)
+); */
