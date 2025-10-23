@@ -8764,3 +8764,9 @@ console.log(mergeArrays(["a", "b", "c", "d", "e"], [1, 2, 3, 4, 5])); */
 console.log(
   loopArr([529, 514, 376, 708, 168, 860, 861, 495, 328, 443, 4], "right", 0)
 ); */
+
+// #7kyu Monotone travel
+/* var isMonotone = function (arr) {
+  return arr.every((val, i, a) => i === 0 || val >= a[i - 1]);
+};
+console.log(isMonotone([3, 2, 3])); */
