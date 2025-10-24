@@ -8770,3 +8770,18 @@ console.log(
   return arr.every((val, i, a) => i === 0 || val >= a[i - 1]);
 };
 console.log(isMonotone([3, 2, 3])); */
+
+// #7kyu Exclamation marks series #3: Remove all exclamation marks from sentence except at the end
+/* function remove(string) {
+  return string
+    .split(" ")
+    .map((word, index, arr) => {
+      if (index === arr.length - 1) {
+        return word.replace(/^!/g, "");
+      } else {
+        return word.replace(/!/g, "");
+      }
+    })
+    .join(" ");
+}
+console.log(remove("Hi!")); */
