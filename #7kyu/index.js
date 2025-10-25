@@ -8785,3 +8785,18 @@ console.log(isMonotone([3, 2, 3])); */
     .join(" ");
 }
 console.log(remove("Hi!")); */
+
+// #7kyu The Lazy Startup Office
+/* function binRota(arr) {
+  return arr
+    .map((value, index) => (index % 2 ? value.reverse() : value))
+    .flat(Infinity);
+}
+console.log(
+  binRota([
+    ["Stefan", "Raj", "Marie"],
+    ["Alexa", "Amy", "Edward"],
+    ["Liz", "Claire", "Juan"],
+    ["Dee", "Luke", "Katie"],
+  ])
+); */
