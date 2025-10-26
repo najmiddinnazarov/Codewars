@@ -8800,3 +8800,9 @@ console.log(
     ["Dee", "Luke", "Katie"],
   ])
 ); */
+
+// #7kyu Valid Spacing
+/* function validSpacing(s) {
+  return s.trim() === s && !s.includes("  ");
+}
+console.log(validSpacing("Hello world")); */
