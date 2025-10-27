@@ -8806,3 +8806,23 @@ console.log(
   return s.trim() === s && !s.includes("  ");
 }
 console.log(validSpacing("Hello world")); */
+
+// #7kyu SCHEDULE YOUR DA(RRA)Y
+/* function dayPlan(hours, tasks, duration) {
+  hours = hours * 60;
+  if (hours < tasks * duration) {
+    return "You're not sleeping tonight!";
+  }
+  const durationWork = tasks * duration;
+  const remainTime = hours - durationWork;
+  const breakTime = Math.round(remainTime / (tasks - 1));
+  let result = [];
+  for (let i = 0; i < tasks; i++) {
+    result.push(duration);
+    if (i !== tasks - 1) {
+      result.push(breakTime);
+    }
+  }
+  return result;
+}
+console.log(dayPlan(2, 2, 60)); */
