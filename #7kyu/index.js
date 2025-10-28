@@ -8826,3 +8826,13 @@ console.log(validSpacing("Hello world")); */
   return result;
 }
 console.log(dayPlan(2, 2, 60)); */
+
+// #7kyu Dictionary from two lists
+/* function createDict(keys, values) {
+  let result = {};
+  for (let i = 0; i < keys.length; i++) {
+    result[keys[i]] = values[i] !== undefined ? values[i] : null;
+  }
+  return result;
+}
+console.log(createDict(["a", "b", "c", "d", "e"], [1, 2, 0, false, ""])); */
