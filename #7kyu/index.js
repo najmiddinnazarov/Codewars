@@ -8836,3 +8836,15 @@ console.log(dayPlan(2, 2, 60)); */
   return result;
 }
 console.log(createDict(["a", "b", "c", "d", "e"], [1, 2, 0, false, ""])); */
+
+// #7kyu Show multiples of 2 numbers within a range
+/* function multiples(s1, s2, s3) {
+  let result = [];
+  for (let i = s1; i < s3; i++) {
+    if (i % s1 === 0 && i % s2 === 0) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+console.log(multiples(4, 6, 15)); */
