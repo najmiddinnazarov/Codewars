@@ -8848,3 +8848,20 @@ console.log(createDict(["a", "b", "c", "d", "e"], [1, 2, 0, false, ""])); */
   return result;
 }
 console.log(multiples(4, 6, 15)); */
+
+// #7kyu Super Class Extensions
+/* class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    return this.name + " makes a noise, ";
+  }
+}
+class Cat extends Animal {
+  speak() {
+    return super.speak() + this.name + " goes meow.";
+  }
+}
+var cat = new Cat("Mr Whiskers");
+console.log(cat.speak()); */
