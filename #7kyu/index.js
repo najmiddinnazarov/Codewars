@@ -8865,3 +8865,30 @@ class Cat extends Animal {
 }
 var cat = new Cat("Mr Whiskers");
 console.log(cat.speak()); */
+
+// #7kyu The Crockford Invocation
+/* function add(a, b) {
+  return function (b) {
+    return a + b;
+  };
+}
+function subtract(a, b) {
+  return function (b) {
+    return a - b;
+  };
+}
+function multiply(a, b) {
+  return function (b) {
+    return a * b;
+  };
+}
+function apply(fn) {
+  return function (x) {
+    return function (y) {
+      return fn(x)(y);
+    };
+  };
+}
+console.log(apply(add(3)(4)));
+console.log(apply(subtract(3)(4)));
+console.log(apply(multiply(3)(4))); */
