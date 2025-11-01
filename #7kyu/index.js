@@ -8892,3 +8892,17 @@ function apply(fn) {
 console.log(apply(add(3)(4)));
 console.log(apply(subtract(3)(4)));
 console.log(apply(multiply(3)(4))); */
+
+// #7kyu Capitalize first letter of a string
+/* String.prototype.capitalize = function () {
+  const s = String(this);
+  if (s.length === 0) return "";
+  const firstChar = s.charAt(0);
+  const charCode = firstChar.charCodeAt(0);
+  if (charCode >= 97 && charCode <= 122) {
+    const upperFirst = String.fromCharCode(charCode - 32);
+    return upperFirst + s.slice(1);
+  }
+  return s;
+};
+console.log("hello world".capitalize()); */
