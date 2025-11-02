@@ -8906,3 +8906,17 @@ console.log(apply(multiply(3)(4))); */
   return s;
 };
 console.log("hello world".capitalize()); */
+
+// #7kyu Last
+/* function last(...args) {
+  if (args.length === 1) {
+    const x = args[0];
+    if (typeof x === "string" || Array.isArray(x)) {
+      return x[x.length - 1];
+    } else {
+      return x;
+    }
+  }
+  return args[args.length - 1];
+}
+console.log(last([1, 2], [3, 4])); */
