@@ -8920,3 +8920,10 @@ console.log("hello world".capitalize()); */
   return args[args.length - 1];
 }
 console.log(last([1, 2], [3, 4])); */
+
+// #7kyu Sums of consecutive integers
+/* function position(x, y, n) {
+  const a = (y - (x * (x - 1)) / 2) / x;
+  return a + n;
+}
+console.log(position(3, -9, 1)); */
