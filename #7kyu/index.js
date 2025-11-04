@@ -8927,3 +8927,12 @@ console.log(last([1, 2], [3, 4])); */
   return a + n;
 }
 console.log(position(3, -9, 1)); */
+
+// #7kyu Pure Functions
+/* const state = {
+  modifier: 5,
+};
+function solution(arr, options) {
+  return arr.map((value) => value + options.modifier * 2);
+}
+console.log(solution([1, 2, 3], state)); */
