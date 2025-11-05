@@ -8936,3 +8936,18 @@ function solution(arr, options) {
   return arr.map((value) => value + options.modifier * 2);
 }
 console.log(solution([1, 2, 3], state)); */
+
+// #7kyu Double Trouble
+/* function trouble(x, t) {
+  let result = [];
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] + x[i + 1] === t) {
+      x.splice(i + 1, 1);
+      i--;
+    } else {
+      result.push(x[i]);
+    }
+  }
+  return result;
+}
+console.log(trouble([4, 1, 1, 1, 4], 2)); */
