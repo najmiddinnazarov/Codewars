@@ -2220,3 +2220,9 @@ console.log(person._friends); */
   return Math.round((price / 1.15) * 100) / 100 || -1;
 }
 console.log(excludingVatPrice(0)); */
+
+// #8kyu The falling speed of petals
+/* function sakuraFall(v) {
+  return v > 0 ? 400 / v : 0;
+}
+console.log(sakuraFall(5)); */
