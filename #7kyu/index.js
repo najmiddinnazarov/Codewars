@@ -8951,3 +8951,14 @@ console.log(solution([1, 2, 3], state)); */
   return result;
 }
 console.log(trouble([4, 1, 1, 1, 4], 2)); */
+
+// #7kyu Calculate Two People's Individual Ages
+/* function getAges(sum, difference) {
+  if (sum < 0 || difference < 0) {
+    return null;
+  }
+  const older = (sum + difference) / 2 < 0 ? null : (sum + difference) / 2;
+  const younger = (sum - difference) / 2 < 0 ? null : (sum - difference) / 2;
+  return older !== null && younger !== null ? [older, younger] : null;
+}
+console.log(getAges(86, 94)); */
