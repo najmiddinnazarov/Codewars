@@ -8962,3 +8962,18 @@ console.log(trouble([4, 1, 1, 1, 4], 2)); */
   return older !== null && younger !== null ? [older, younger] : null;
 }
 console.log(getAges(86, 94)); */
+
+// #7kyu Find Duplicates
+/* function duplicates(arr) {
+  let dublicateNumber = [];
+  let isNotDublicateNumber = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!isNotDublicateNumber.includes(arr[i])) {
+      isNotDublicateNumber.push(arr[i]);
+    } else if (!dublicateNumber.includes(arr[i])) {
+      dublicateNumber.push(arr[i]);
+    }
+  }
+  return dublicateNumber;
+}
+console.log(duplicates([1, 2, 4, 4, 3, 3, 1, 5, 3, "5"])); */
