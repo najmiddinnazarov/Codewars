@@ -8977,3 +8977,26 @@ console.log(getAges(86, 94)); */
   return dublicateNumber;
 }
 console.log(duplicates([1, 2, 4, 4, 3, 3, 1, 5, 3, "5"])); */
+
+// #7kyu Simple Fun #173: A Hero Go To The School
+/* function whichBusToTake(busesColors, goingToSchool) {
+  let result;
+  for (let i = 0; i < busesColors.length; i++) {
+    if (busesColors[i] === "red" && goingToSchool[i]) {
+      result = i;
+      break;
+    }
+    if (busesColors[i] === "blue" && goingToSchool[i]) {
+      if (result === undefined) {
+        result = i;
+      }
+    }
+  }
+  return result;
+}
+console.log(
+  whichBusToTake(
+    ["blue", "blue", "red", "red", "red", "red", "blue", "blue", "blue"],
+    [true, false, false, false, false, false, true, true, false]
+  )
+); */
