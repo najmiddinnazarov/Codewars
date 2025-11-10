@@ -9000,3 +9000,13 @@ console.log(
     [true, false, false, false, false, false, true, true, false]
   )
 ); */
+
+// #7kyu KISS - Keep It Simple Stupid
+/* function isKiss(words) {
+  const array = words.split(" ");
+  const wordsLength = array.map((word) => word.length);
+  return wordsLength.every((length) => length <= array.length)
+    ? "Good work Joe!"
+    : "Keep It Simple Stupid";
+}
+console.log(isKiss("Keep It Simple Stupid")); */
