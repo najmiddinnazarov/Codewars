@@ -9010,3 +9010,20 @@ console.log(
     : "Keep It Simple Stupid";
 }
 console.log(isKiss("Keep It Simple Stupid")); */
+
+// #7kyu Letterbox Paint-Squad
+/* var paintLetterboxes = function (start, end) {
+  const numbers = [];
+  for (let i = start; i <= end; i++) {
+    let spreadNumber = i.toString().split("");
+    for (let j = 0; j < spreadNumber.length; j++) {
+      numbers.push(spreadNumber[j]);
+    }
+  }
+  const result = Array(10).fill(0);
+  for (let k = 0; k < numbers.length; k++) {
+    result[parseInt(numbers[k])] += 1;
+  }
+  return result;
+};
+console.log(paintLetterboxes(125, 132)); */
