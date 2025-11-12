@@ -9027,3 +9027,13 @@ console.log(isKiss("Keep It Simple Stupid")); */
   return result;
 };
 console.log(paintLetterboxes(125, 132)); */
+
+// #7kyu Find an employees role in the company
+/* function findEmployeesRole(name) {
+  let [first, last] = name.split(" ");
+  let person = employees.find(
+    (e) => e.firstName === first && e.lastName === last
+  );
+  return person ? person.role : "Does not work here!";
+}
+console.log(findEmployeesRole("Dipper Pines")); */
