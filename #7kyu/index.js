@@ -9037,3 +9037,66 @@ console.log(paintLetterboxes(125, 132)); */
   return person ? person.role : "Does not work here!";
 }
 console.log(findEmployeesRole("Dipper Pines")); */
+
+// #7kyu Whose bicycle?
+/* function whoseBicycle(diary1, diary2, diary3) {
+  const ageTable = {
+    firstSonAge: 14,
+    secondSonAge: 9,
+    thirdSonAge: 8,
+  };
+  const firstSon = Math.round(
+    Object.values(diary1).reduce((acc, curr) => acc + curr, 0)
+  );
+  const secondSon = Math.round(
+    Object.values(diary2).reduce((acc, curr) => acc + curr, 0)
+  );
+  const thirdSon = Math.round(
+    Object.values(diary3).reduce((acc, curr) => acc + curr, 0)
+  );
+  const maxStudy = Math.max(firstSon, secondSon, thirdSon);
+  if (
+    maxStudy === firstSon &&
+    maxStudy === secondSon &&
+    maxStudy === thirdSon
+  ) {
+    return "I need to buy a bicycle for my third son.";
+  } else if (maxStudy === firstSon && maxStudy === secondSon) {
+    return "I need to buy a bicycle for my second son.";
+  } else if (maxStudy === firstSon && maxStudy === thirdSon) {
+    return "I need to buy a bicycle for my third son.";
+  } else if (maxStudy === secondSon && maxStudy === thirdSon) {
+    return "I need to buy a bicycle for my third son.";
+  } else if (maxStudy === firstSon) {
+    return "I need to buy a bicycle for my first son.";
+  } else if (maxStudy === secondSon) {
+    return "I need to buy a bicycle for my second son.";
+  } else if (maxStudy === thirdSon) {
+    return "I need to buy a bicycle for my third son.";
+  }
+}
+console.log(
+  whoseBicycle(
+    {
+      algebra: 10,
+      history: 2,
+      physics: 10,
+      geography: 9,
+      chemistry: 3,
+    },
+    {
+      algebra: 2,
+      history: 10,
+      physics: 8,
+      geography: 1,
+      chemistry: 2,
+    },
+    {
+      algebra: 8,
+      history: 2,
+      physics: 5,
+      geography: 2,
+      chemistry: 5,
+    }
+  )
+); */
