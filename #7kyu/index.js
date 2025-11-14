@@ -9100,3 +9100,19 @@ console.log(
     }
   )
 ); */
+
+// #7kyu Recycle!
+/* function recycleMe(recycle) {
+  let result = [0, 0, 0];
+  for (let value of recycle) {
+    if (value > 0) {
+      result[0]++;
+    } else if (value < 0) {
+      result[1]++;
+    } else if (value === 0) {
+      result[2]++;
+    }
+  }
+  return result;
+}
+console.log(recycleMe([5, -9, 0, 6, -84, -95, 15])); */
