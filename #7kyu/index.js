@@ -9116,3 +9116,27 @@ console.log(
   return result;
 }
 console.log(recycleMe([5, -9, 0, 6, -84, -95, 15])); */
+
+// #7kyu draw me a chessboard
+/* function chessBoard(rows, columns) {
+  let matrix = [];
+  for (let i = 0; i < rows; i++) {
+    let row = [];
+    let startChar = i % 2 === 0 ? "O" : "X";
+    let boolean = startChar === "X";
+    for (let j = 0; j < columns; j++) {
+      if (boolean) {
+        row.push("X");
+        boolean = false;
+      } else {
+        row.push("O");
+        boolean = true;
+      }
+    }
+    if (matrix.length < rows) {
+      matrix.push(row);
+    }
+  }
+  return matrix;
+}
+console.log(chessBoard(6, 4)); */
