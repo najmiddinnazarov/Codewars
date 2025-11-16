@@ -9140,3 +9140,9 @@ console.log(recycleMe([5, -9, 0, 6, -84, -95, 15])); */
   return matrix;
 }
 console.log(chessBoard(6, 4)); */
+
+// #7kyu Sum of odd numbers
+/* function rowSumOddNumbers(n) {
+  return Math.pow(n, 3);
+}
+console.log(rowSumOddNumbers(2)); */
