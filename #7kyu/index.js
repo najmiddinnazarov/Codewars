@@ -9146,3 +9146,16 @@ console.log(chessBoard(6, 4)); */
   return Math.pow(n, 3);
 }
 console.log(rowSumOddNumbers(2)); */
+
+// #7kyu Happy Birthday, Darling!
+/* function womensAge(n) {
+  for (let i = 1; i <= 100; i++) {
+    if (n === 2 * i) {
+      return `${n}? That's just 20, in base ${i}!`;
+    }
+    if (n === 2 * i + 1) {
+      return `${n}? That's just 21, in base ${i}!`;
+    }
+  }
+}
+console.log(womensAge(32)); */
