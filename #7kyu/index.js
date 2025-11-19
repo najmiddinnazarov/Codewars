@@ -9175,3 +9175,13 @@ console.log(womensAge(32)); */
   return max1 * max2;
 }
 console.log(maxProduct([56, 335, 195, 443, 6, 494, 252])); */
+
+// #7kyu Strange mathematics
+/* function strangeMath(n, k) {
+  return (
+    Array.from({ length: n }, (_, i) => i + 1)
+      .sort()
+      .indexOf(k) + 1
+  );
+}
+console.log(strangeMath(11, 2)); */
