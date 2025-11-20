@@ -9185,3 +9185,20 @@ console.log(maxProduct([56, 335, 195, 443, 6, 494, 252])); */
   );
 }
 console.log(strangeMath(11, 2)); */
+
+// #7kyu Friday the 13th Part 1
+/* function killcount(counselors, jason) {
+  let result = counselors.filter((value) => value[1] < jason);
+  return result.map((value) => value[0]);
+}
+console.log(
+  killcount(
+    [
+      ["Tiffany", 4],
+      ["Jack", 6],
+      ["Megan", 7],
+      ["Tyler", 3],
+    ],
+    5
+  )
+); */
