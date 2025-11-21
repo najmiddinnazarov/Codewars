@@ -9202,3 +9202,17 @@ console.log(
     5
   )
 ); */
+
+// #7kyu Sum of Triangular Numbers
+/* function sumTriangularNumbers(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    let temp = 0;
+    for (let j = 1; j <= i; j++) {
+      temp += j;
+    }
+    sum += temp;
+  }
+  return sum;
+}
+console.log(sumTriangularNumbers(6)); */
