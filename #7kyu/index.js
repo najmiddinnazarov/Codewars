@@ -9216,3 +9216,14 @@ console.log(
   return sum;
 }
 console.log(sumTriangularNumbers(6)); */
+
+// #7kyu All Star Code Challenge #17
+/* function findYear(month, dayOfWeek) {
+  if (dayOfWeek < 0 || dayOfWeek > 6) return 0;
+  for (let year = 2014; year <= 2050; year++) {
+    const firstDay = new Date(year, month, 1).getDay();
+    if (firstDay === dayOfWeek) return year;
+  }
+  return 0;
+}
+console.log(findYear(11, 2)); */
