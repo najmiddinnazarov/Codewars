@@ -9227,3 +9227,23 @@ console.log(sumTriangularNumbers(6)); */
   return 0;
 }
 console.log(findYear(11, 2)); */
+
+// #7kyu So Easy: Show my password
+/* function showMyPassword(birthdays) {
+  const sortYear = birthdays.sort((a, b) => b.slice(0, 4) - a.slice(0, 4));
+  const john = sortYear[1].slice(2, 4);
+  const johnGirlfriend = sortYear[0].slice(2, 4);
+  let johnFather = sortYear[3].split("-");
+  let johnMother = sortYear[2].split("-");
+  if (johnFather[0] === johnMother[0] && +johnFather[1] > +johnMother[1]) {
+    let temp = johnFather;
+    johnFather = johnMother;
+    johnMother = temp;
+  }
+  johnFather = johnFather[1] < 10 ? "0" + johnFather[1] : johnFather[1];
+  johnMother = johnMother[2] < 10 ? "0" + johnMother[2] : johnMother[2];
+  return [john, johnGirlfriend, johnFather, johnMother].join("");
+}
+console.log(
+  showMyPassword(["1990-2-21", "1959-2-14", "1980-10-21", "1959-11-23"])
+); */
