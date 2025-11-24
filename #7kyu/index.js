@@ -9247,3 +9247,15 @@ console.log(findYear(11, 2)); */
 console.log(
   showMyPassword(["1990-2-21", "1959-2-14", "1980-10-21", "1959-11-23"])
 ); */
+
+// #7kyu Split The Bill
+/* function splitTheBill(x) {
+  const sum = Object.values(x).reduce((sum, curr) => sum + curr, 0);
+  const averageSum = sum / Object.values(x).length;
+  let result = {};
+  for (const key in x) {
+    result[key] = Number((x[key] - averageSum).toFixed(2));
+  }
+  return result;
+}
+console.log(splitTheBill({ A: 40, B: 25, C: 10, D: 153, E: 58 })); */
