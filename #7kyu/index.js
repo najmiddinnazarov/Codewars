@@ -9259,3 +9259,11 @@ console.log(
   return result;
 }
 console.log(splitTheBill({ A: 40, B: 25, C: 10, D: 153, E: 58 })); */
+
+// #7kyu Possibilities Array
+/* function isAllPossibilities(x) {
+  x = x.sort((a, b) => a - b);
+  let newArray = Array.from({ length: x.length }, (v, i) => i);
+  return newArray.join("") === x.join("");
+}
+console.log(isAllPossibilities([0, 4, 1, 3])); */
