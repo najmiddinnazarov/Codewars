@@ -9267,3 +9267,9 @@ console.log(splitTheBill({ A: 40, B: 25, C: 10, D: 153, E: 58 })); */
   return newArray.join("") === x.join("");
 }
 console.log(isAllPossibilities([0, 4, 1, 3])); */
+
+// #7kyu Sum of integers in string
+/* function sumOfIntegersInString(s) {
+  return (s.match(/\d+/g) || []).reduce((sum, curr) => sum + Number(curr), 0);
+}
+console.log(sumOfIntegersInString("Dogs are our best friends.")); */
