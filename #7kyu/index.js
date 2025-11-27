@@ -9273,3 +9273,18 @@ console.log(isAllPossibilities([0, 4, 1, 3])); */
   return (s.match(/\d+/g) || []).reduce((sum, curr) => sum + Number(curr), 0);
 }
 console.log(sumOfIntegersInString("Dogs are our best friends.")); */
+
+// #7kyu Printer Errors
+/* function printerError(s) {
+  const alphabet = "abcdefghijklm";
+  let errors = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (!alphabet.includes(s[i])) {
+      errors++;
+    }
+  }
+  return errors + "/" + s.length;
+}
+console.log(
+  printerError("kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
+); */
