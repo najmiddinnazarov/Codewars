@@ -9304,3 +9304,10 @@ console.log(
   }
 }
 console.log(trim("Code Wars is pretty rad", 50)); */
+
+// #7kyu Stanton measure
+/* function stantonMeasure(a) {
+  const n = a.filter((value) => value === 1).length;
+  return a.filter((value) => value === n).length;
+}
+console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2])); */
