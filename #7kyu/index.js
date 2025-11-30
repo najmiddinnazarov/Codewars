@@ -9311,3 +9311,15 @@ console.log(trim("Code Wars is pretty rad", 50)); */
   return a.filter((value) => value === n).length;
 }
 console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2])); */
+
+// #7kyu Mean Means
+/* function geo_mean(nums, arith_mean) {
+  const sumAllNumbers = nums.reduce((sum, curr) => sum + curr, 0);
+  const remainNumber = (nums.length + 1) * arith_mean;
+  const x = Math.abs(sumAllNumbers - remainNumber);
+  return (
+    Math.abs([...nums, x].reduce((sum, curr) => sum * curr, 1)) **
+    (1 / (nums.length + 1))
+  );
+}
+console.log(geo_mean([-4, 45, 9], 6)); */
