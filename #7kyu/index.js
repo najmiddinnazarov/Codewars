@@ -9323,3 +9323,24 @@ console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2])); */
   );
 }
 console.log(geo_mean([-4, 45, 9], 6)); */
+
+// #7kyu Create sequence containing all allowed characters
+/* const createSequence = (regex) => {
+  const numbers = "0123456789";
+  const upperLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lowerLetter = "abcdefghijklmnopqrstuvwxyz";
+  let result = [];
+  for (let i = 0; i < upperLetter.length; i++) {
+    if (regex.test(numbers[i])) {
+      result.push(numbers[i]);
+    }
+    if (regex.test(upperLetter[i])) {
+      result.push(upperLetter[i]);
+    }
+    if (regex.test(lowerLetter[i])) {
+      result.push(lowerLetter[i]);
+    }
+  }
+  return result.sort().join("");
+};
+console.log(createSequence(/[0-9A-F]/)); */
