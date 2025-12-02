@@ -9344,3 +9344,20 @@ console.log(geo_mean([-4, 45, 9], 6)); */
   return result.sort().join("");
 };
 console.log(createSequence(/[0-9A-F]/)); */
+
+// #7kyu Basics - Generators #1
+/* function* generator() {
+  let counter = 1;
+  while (true) {
+    const newValue = yield counter;
+    if (typeof newValue === "number") {
+      counter = newValue;
+    } else {
+      counter++;
+    }
+  }
+}
+var gen = generator();
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next(10).value); */
