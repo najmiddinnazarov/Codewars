@@ -9361,3 +9361,14 @@ var gen = generator();
 console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next(10).value); */
+
+// #7kyu How fast can the burglar steal all the diamonds?
+/* function diamondBurglar(locker) {
+  return locker
+    .map((value) => value.split("."))
+    .flat()
+    .reduce((sum, curr) => sum + Math.round(curr.length / 2), 0);
+}
+console.log(
+  diamondBurglar(["..****..*.", "..***.....", ".*..*...*.", "......**.."])
+); */
