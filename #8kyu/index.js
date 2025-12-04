@@ -2226,3 +2226,9 @@ console.log(excludingVatPrice(0)); */
   return v > 0 ? 400 / v : 0;
 }
 console.log(sakuraFall(5)); */
+
+// #8kyu Was the package received before it was sent? (Simplified)
+/* function was_package_received_yesterday(tz_from, tz_to, start, duration) {
+  return start + duration - (tz_from - tz_to) < 0;
+}
+console.log(was_package_received_yesterday(-11, -11, 12, 8)); */
