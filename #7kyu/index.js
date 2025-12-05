@@ -9372,3 +9372,18 @@ console.log(gen.next(10).value); */
 console.log(
   diamondBurglar(["..****..*.", "..***.....", ".*..*...*.", "......**.."])
 ); */
+
+// #7kyu Birthday I - Cake
+/* function cake(x, y) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let sum = 0;
+  for (let i = 0; i < y.length; i++) {
+    if (i % 2 === 0) {
+      sum += y[i].charCodeAt(0);
+    } else {
+      sum += alphabet.indexOf(y[i]);
+    }
+  }
+  return x * 0.7 > sum ? "That was close!" : "Fire!";
+}
+console.log(cake(900, "abcdef")); */
