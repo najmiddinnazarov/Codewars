@@ -9387,3 +9387,15 @@ console.log(
   return x * 0.7 > sum ? "That was close!" : "Fire!";
 }
 console.log(cake(900, "abcdef")); */
+
+// #7kyu Find the smallest power higher than a given a value
+/* function findNextPower(val, pow_) {
+  let sum = 0;
+  let i = 2;
+  while (val >= sum) {
+    i++;
+    sum = Math.pow(i, pow_);
+  }
+  return sum;
+}
+console.log(findNextPower(4782969, 7)); */
