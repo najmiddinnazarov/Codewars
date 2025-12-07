@@ -9399,3 +9399,14 @@ console.log(cake(900, "abcdef")); */
   return sum;
 }
 console.log(findNextPower(4782969, 7)); */
+
+// #7kyu Second largest in Array
+/* function secondLargest(array) {
+  if (Array.isArray(array)) {
+    let onlyNumbers = array
+      .filter((value) => /[0-9]/gi.test(value))
+      .map((value) => Number(value));
+    return [...new Set(onlyNumbers)].sort((a, b) => b - a)[1];
+  }
+}
+console.log(secondLargest(["-1", 2, null, false])); */
