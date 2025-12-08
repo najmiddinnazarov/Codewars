@@ -9410,3 +9410,16 @@ console.log(findNextPower(4782969, 7)); */
   }
 }
 console.log(secondLargest(["-1", 2, null, false])); */
+
+// #7kyu The Power of Exponents
+/* function power(base, exponent) {
+  if (exponent === 0) {
+    return 1;
+  }
+  let result = base;
+  for (let i = 1; i < Math.abs(exponent); i++) {
+    result *= base;
+  }
+  return exponent <= 0 ? 1 / result : result;
+}
+console.log(power(10, 0)); */
