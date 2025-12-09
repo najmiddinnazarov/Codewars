@@ -9423,3 +9423,19 @@ console.log(secondLargest(["-1", 2, null, false])); */
   return exponent <= 0 ? 1 / result : result;
 }
 console.log(power(10, 0)); */
+
+// #7kyu The Span Function
+/* function span(arr, predicate) {
+  if (arr.length === 0) {
+    return [[], []];
+  }
+  let divider = arr.find((num) => !predicate(num)) || 0;
+  let index = arr.indexOf(divider) !== -1 ? arr.indexOf(divider) : 0;
+  let result = [arr.slice(0, index), arr.slice(index)];
+  return divider === 0 ? result.reverse() : result;
+}
+console.log(
+  span([13, 17, 19, 11, 21], function isOdd(x) {
+    return Math.abs(x) % 2 !== 0;
+  })
+); */
