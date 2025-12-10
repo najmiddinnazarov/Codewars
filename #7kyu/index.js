@@ -9439,3 +9439,9 @@ console.log(
     return Math.abs(x) % 2 !== 0;
   })
 ); */
+
+// #7kyu Remove Empty Items of Array
+/* function clean(arr) {
+  return arr.filter((value) => value !== ",");
+}
+console.log(clean([undefined, null, NaN, false, "", 0])); */
