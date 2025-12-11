@@ -9445,3 +9445,27 @@ console.log(
   return arr.filter((value) => value !== ",");
 }
 console.log(clean([undefined, null, NaN, false, "", 0])); */
+
+// #7kyu 16+18=214
+/* function add(num1, num2) {
+  let result = [];
+  num1 = num1.toString();
+  num2 = num2.toString();
+  let boolean = true;
+  let zeros;
+  if (num1.length > num2.length) {
+    zeros = "0".repeat(num1.length - num2.length) + num2;
+  } else {
+    zeros = "0".repeat(num2.length - num1.length) + num1;
+    boolean = false;
+  }
+  for (let i = 0; i < zeros.length; i++) {
+    if (boolean) {
+      result.push(Number(num1[i]) + Number(zeros[i]));
+    } else {
+      result.push(Number(zeros[i]) + Number(num2[i]));
+    }
+  }
+  return Number(result.join(""));
+}
+console.log(add(122, 81)); */
