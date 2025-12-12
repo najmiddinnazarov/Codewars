@@ -9469,3 +9469,20 @@ console.log(clean([undefined, null, NaN, false, "", 0])); */
   return Number(result.join(""));
 }
 console.log(add(122, 81)); */
+
+// #7kyu List of Presents
+/* function howManyGifts(maxBudget, gifts) {
+  gifts = gifts.sort((a, b) => a - b);
+  let sum = 0n;
+  let result = gifts.length;
+  for (let i = 0; i < gifts.length; i++) {
+    if (maxBudget >= sum + BigInt(gifts[i])) {
+      sum += BigInt(gifts[i]);
+    } else {
+      result = i;
+      break;
+    }
+  }
+  return result;
+}
+console.log(howManyGifts(90, [5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10])); */
