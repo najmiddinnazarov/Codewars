@@ -9486,3 +9486,9 @@ console.log(add(122, 81)); */
   return result;
 }
 console.log(howManyGifts(90, [5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10])); */
+
+// #7kyu Everything Is Even
+/* function ensureEven(n) {
+  return Math.round(n / 2) * 2;
+}
+console.log(ensureEven(1)); */
