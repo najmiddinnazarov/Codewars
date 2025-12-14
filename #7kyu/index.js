@@ -9492,3 +9492,16 @@ console.log(howManyGifts(90, [5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10])); */
   return Math.round(n / 2) * 2;
 }
 console.log(ensureEven(1)); */
+
+// #7kyu True Min
+/* function min(a, b) {
+  a = a === null ? 0 : a;
+  b = b === null ? 0 : b;
+  a = typeof a !== "number" || isNaN(a) ? NaN : a;
+  b = typeof b !== "number" || isNaN(b) ? NaN : b;
+  if (isNaN(a) || isNaN(b)) {
+    return NaN;
+  }
+  return a < b ? a : b;
+}
+console.log(min(NaN, 1.5)); */
