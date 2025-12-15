@@ -9505,3 +9505,28 @@ console.log(ensureEven(1)); */
   return a < b ? a : b;
 }
 console.log(min(NaN, 1.5)); */
+
+// #7kyu What dominates your array?
+/* function dominator(arr) {
+  let numberCounter = {};
+  for (const num of arr) {
+    if (num in numberCounter) {
+      numberCounter[num]++;
+    } else {
+      numberCounter[num] = 1;
+    }
+  }
+  let half = Math.floor(arr.length / 2);
+  let maxValue = Object.values(numberCounter).filter(
+    (value) => value > half
+  )[0];
+  if (maxValue) {
+    for (const key in numberCounter) {
+      if (numberCounter[key] === maxValue) {
+        return Number(key);
+      }
+    }
+  }
+  return -1;
+}
+console.log(dominator([1, 1, 1, 2, 2, 2, 2])); */
