@@ -9530,3 +9530,35 @@ console.log(min(NaN, 1.5)); */
   return -1;
 }
 console.log(dominator([1, 1, 1, 2, 2, 2, 2])); */
+
+// #7kyu Format of a ticket number
+/* function nbrValidTickets(tickets) {
+  let lettersRegex = /^[a-zA-Z]+$/;
+  let numbersRegex = /^[0-9]+$/;
+  let result = [];
+  for (let i = 0; i < tickets.length; i++) {
+    let firstLetter = tickets[i][0];
+    let secondLetter = tickets[i][1];
+    let thirdToSix = tickets[i].slice(2);
+    if (
+      tickets[i].length === 6 &&
+      lettersRegex.test(firstLetter) &&
+      numbersRegex.test(secondLetter) &&
+      lettersRegex.test(thirdToSix)
+    ) {
+      result.push(tickets[i]);
+    }
+  }
+  return result.length;
+}
+console.log(
+  nbrValidTickets([
+    "A9JZOD",
+    "E9FIDH",
+    "SI2JIS",
+    "F8JIODJ",
+    "FDSNJA",
+    "A9POF?",
+    "AA9DIJD",
+  ])
+); */
