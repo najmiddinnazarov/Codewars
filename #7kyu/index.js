@@ -9562,3 +9562,18 @@ console.log(
     "AA9DIJD",
   ])
 ); */
+
+// #7kyu Which triangle is that?
+/* var typeOfTriangle = function (sideA, sideB, sideC) {
+  if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+    if (sideA === sideB && sideB === sideC) {
+      return "Equilateral";
+    } else if (sideA === sideB || sideB === sideC || sideA === sideC) {
+      return "Isosceles";
+    } else {
+      return "Scalene";
+    }
+  }
+  return "Not a valid triangle";
+};
+console.log(typeOfTriangle(1, 1, 1)); */
