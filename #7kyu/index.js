@@ -9577,3 +9577,16 @@ console.log(
   return "Not a valid triangle";
 };
 console.log(typeOfTriangle(1, 1, 1)); */
+
+// #7kyu All Star Code Challenge #28
+/* function convertCF(num, scale = "c") {
+  if (!["c", "f"].includes(scale)) {
+    throw Error("Error");
+  }
+  if (scale === "f") {
+    return num * (9 / 5) + 32;
+  } else {
+    return (num - 32) * (5 / 9);
+  }
+}
+console.log(convertCF(60, "f")); */
