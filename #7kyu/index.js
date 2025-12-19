@@ -9590,3 +9590,26 @@ console.log(typeOfTriangle(1, 1, 1)); */
   }
 }
 console.log(convertCF(60, "f")); */
+
+// #7kyu The Baby Years III - First Tooth
+/* function firstTooth(t) {
+  let numbers = [];
+  for (let i = 0; i < t.length; i++) {
+    let left;
+    let right;
+    if (t[i - 1] !== undefined) {
+      left = t[i] - t[i - 1];
+    }
+    if (t[i + 1] !== undefined) {
+      right = t[i] - t[i + 1];
+    }
+    numbers.push((left || 0) + (right || 0));
+    left = null;
+    right = null;
+  }
+  let maxNumber = Math.max(...numbers);
+  let checkDublicate = numbers.filter((value) => value === maxNumber).length;
+  let idx = numbers.findIndex((value) => value === maxNumber);
+  return checkDublicate === 1 ? idx : -1;
+}
+console.log(firstTooth([9, 2, 8, 1])); */
