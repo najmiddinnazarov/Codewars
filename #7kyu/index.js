@@ -9613,3 +9613,9 @@ console.log(convertCF(60, "f")); */
   return checkDublicate === 1 ? idx : -1;
 }
 console.log(firstTooth([9, 2, 8, 1])); */
+
+// #7kyu Sum The Strings: ARRAY EDITION
+/* function sumArr(a, b) {
+  return a.map((value, idx) => (Number(value) + Number(b[idx])).toString());
+}
+console.log(sumArr(["4", "5", "6", "7", "8"], ["1", "2", "3", "4", "5"])); */
