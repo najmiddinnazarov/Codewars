@@ -9619,3 +9619,33 @@ console.log(firstTooth([9, 2, 8, 1])); */
   return a.map((value, idx) => (Number(value) + Number(b[idx])).toString());
 }
 console.log(sumArr(["4", "5", "6", "7", "8"], ["1", "2", "3", "4", "5"])); */
+
+// #7kyu Grouping in string
+/* const isConsecutive = (str) => {
+  let group = [];
+  for (let i = 0; i < str.length; i++) {
+    let temp = [];
+    temp.push(str[i]);
+    for (let k = i; k < str.length; ) {
+      if (str[i] === str[k + 1]) {
+        temp.push(str[k]);
+      } else {
+        break;
+      }
+      k++;
+    }
+    group.push(temp.join(""));
+    i += temp.length - 1;
+    temp = [];
+  }
+  let checkdublicate = [];
+  for (let i = 0; i < group.length; i++) {
+    if (!checkdublicate.includes(group[i][0])) {
+      checkdublicate.push(group[i][0]);
+    } else {
+      return false;
+    }
+  }
+  return true;
+};
+console.log(isConsecutive("112200")); */
