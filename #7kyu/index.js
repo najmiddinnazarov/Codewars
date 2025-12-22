@@ -9649,3 +9649,32 @@ console.log(sumArr(["4", "5", "6", "7", "8"], ["1", "2", "3", "4", "5"])); */
   return true;
 };
 console.log(isConsecutive("112200")); */
+
+// #7kyu Adding Arrays
+/* function arrAdder(arr) {
+  let result = [];
+  for (let i = 0; i < arr[0].length; i++) {
+    let temp = [];
+    for (let k = 0; k < arr.length; k++) {
+      temp.push(arr[k][i]);
+    }
+    if (temp.join("").trim()) {
+      result.push(temp.join("").trim());
+      temp = [];
+    }
+  }
+  return result.join(" ");
+}
+console.log(
+  arrAdder([
+    ["", "A", "", "C", "", "L", "", "T"],
+    ["S", "r", "", "o", "", "e", "", "e"],
+    ["y", "t", "", "d", "", "a", "", "s"],
+    ["", "i", "", "e", "", "r", "", "t"],
+    ["", "f", "", "", "", "n", "", ""],
+    ["", "i", "", "", "", "i", "", ""],
+    ["", "c", "", "", "", "n", "", ""],
+    ["", "i", "", "", "", "g", "", ""],
+    ["", "a", "", "", "", "", "", ""],
+  ])
+); */
