@@ -9678,3 +9678,17 @@ console.log(
     ["", "a", "", "", "", "", "", ""],
   ])
 ); */
+
+// #7kyu Find the Capitals
+/* function capital(capitals) {
+  return capitals.map(
+    (value) =>
+      `The capital of ${value.state || value.country} is ${value.capital}`
+  );
+}
+console.log(
+  capital([
+    { state: "Maine", capital: "Augusta" },
+    { country: "Spain", capital: "Madrid" },
+  ])
+); */
