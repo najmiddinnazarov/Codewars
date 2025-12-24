@@ -9692,3 +9692,17 @@ console.log(
     { country: "Spain", capital: "Madrid" },
   ])
 ); */
+
+// #7kyu Integer Difference
+/* const intDiff = (arr, n) => {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    for (let k = i + 1; k < arr.length; k++) {
+      if (Math.abs(arr[i] - arr[k]) === n) {
+        result.push([arr[i], arr[k]]);
+      }
+    }
+  }
+  return result.length;
+};
+console.log(intDiff([1, 6, 2, 3, 7, 8, 7], 0)); */
