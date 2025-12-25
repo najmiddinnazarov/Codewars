@@ -9706,3 +9706,25 @@ console.log(
   return result.length;
 };
 console.log(intDiff([1, 6, 2, 3, 7, 8, 7], 0)); */
+
+// #7kyu Weird words
+/* function nextLetter(str) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  // return alphabet[alphabet.indexOf("f") + 1];
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    let checkLetter = str[i].toUpperCase() === str[i];
+    let temp = str[i].toLowerCase();
+    if (temp == "z") {
+      result += checkLetter ? "a".toUpperCase() : "a";
+    } else if (/[a-z]/.test(temp)) {
+      result += checkLetter
+        ? alphabet[alphabet.indexOf(temp) + 1].toUpperCase()
+        : alphabet[alphabet.indexOf(temp) + 1];
+    } else {
+      result += temp;
+    }
+  }
+  return result;
+}
+console.log(nextLetter("My Name Is Zoo")); */
