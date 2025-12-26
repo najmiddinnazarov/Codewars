@@ -9728,3 +9728,22 @@ console.log(intDiff([1, 6, 2, 3, 7, 8, 7], 0)); */
   return result;
 }
 console.log(nextLetter("My Name Is Zoo")); */
+
+// #7kyu 'x' marks the spot.
+/* function xMarksTheSpot(matrix) {
+  let result = [];
+  for (let i = 0; i < matrix.length; i++) {
+    for (let k = 0; k < matrix[i].length; k++) {
+      if (matrix[i][k] === "x") {
+        result.push(i, k);
+      }
+    }
+  }
+  return result.length === 2 ? result : [];
+}
+console.log(
+  xMarksTheSpot([
+    ["x", "o"],
+    ["o", "x"],
+  ])
+); */
