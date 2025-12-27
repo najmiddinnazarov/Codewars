@@ -9747,3 +9747,18 @@ console.log(
     ["o", "x"],
   ])
 ); */
+
+// #7kyu heggeleggleggo
+/* function heggeleggleggo(word) {
+  let vowel = ["a", "o", "u", "i", "e", "A", "O", "U", "I", "E"];
+  let result = "";
+  for (let i = 0; i < word.length; i++) {
+    if (!vowel.includes(word[i]) && /[A-Za-z]/.test(word[i])) {
+      result += word[i] + "egg";
+    } else {
+      result += word[i];
+    }
+  }
+  return result;
+}
+console.log(heggeleggleggo("code here")); */
