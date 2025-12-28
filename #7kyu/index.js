@@ -9762,3 +9762,19 @@ console.log(
   return result;
 }
 console.log(heggeleggleggo("code here")); */
+
+// #7kyu Difference between biggest 2 numbers
+/* function diffBig2(arr) {
+  let first = 0;
+  let second = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > first) {
+      second = first;
+      first = arr[i];
+    } else if (arr[i] > second) {
+      second = arr[i];
+    }
+  }
+  return first - second;
+}
+console.log(diffBig2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); */
