@@ -9778,3 +9778,16 @@ console.log(heggeleggleggo("code here")); */
   return first - second;
 }
 console.log(diffBig2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); */
+
+// #7kyu Remove method in Arrays
+/* Array.prototype.remove = function (index) {
+  if (typeof index !== "number" || index < 0 || index >= this.length) {
+    return this;
+  }
+  for (let i = index; i < this.length - 1; i++) {
+    this[i] = this[i + 1];
+  }
+  this.length = this.length - 1;
+  return this;
+};
+console.log([1, 2, 3].remove(1)); */
