@@ -9791,3 +9791,35 @@ console.log(diffBig2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); */
   return this;
 };
 console.log([1, 2, 3].remove(1)); */
+
+// #7kyu Write out expression!
+/* function expressionOut(expr) {
+  let operators = {
+    "+": "Plus",
+    "-": "Minus",
+    "*": "Times",
+    "/": "Divided By",
+    "**": "To The Power Of",
+    "=": "Equals",
+    "!=": "Does Not Equal",
+  };
+  let numbers = {
+    1: "One",
+    2: "Two",
+    3: "Three",
+    4: "Four",
+    5: "Five",
+    6: "Six",
+    7: "Seven",
+    8: "Eight",
+    9: "Nine",
+    10: "Ten",
+  };
+  expr = expr.split(" ");
+  if (operators[expr[1]]) {
+    return numbers[expr[0]] + " " + operators[expr[1]] + " " + numbers[expr[2]];
+  } else {
+    return "That's not an operator!";
+  }
+}
+console.log(expressionOut("6 ** 9")); */
