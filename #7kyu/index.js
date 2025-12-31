@@ -9823,3 +9823,34 @@ console.log([1, 2, 3].remove(1)); */
   }
 }
 console.log(expressionOut("6 ** 9")); */
+
+// #7kyu Generate HTML links
+/* function generateMenu(menuItems) {
+  return menuItems
+    .map((obj) => `<a href="${obj.url}">${obj.text}</a>`)
+    .join("");
+}
+console.log(
+  generateMenu([
+    {
+      url: "http://www.google.com",
+      text: "10^100",
+    },
+    {
+      url: "#codewars",
+      text: "codewars",
+    },
+    {
+      url: "#q",
+      text: "query",
+    },
+    {
+      url: "#a",
+      text: "ans",
+    },
+    {
+      url: "#123",
+      text: 123,
+    },
+  ])
+); */
