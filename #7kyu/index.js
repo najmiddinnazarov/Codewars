@@ -9856,7 +9856,7 @@ console.log(
 ); */
 
 // #7kyu Sorting the Odd way!
-function sortItOut(array) {
+/* function sortItOut(array) {
   const oddArray = array
     .filter((value) => Math.floor(value) % 2)
     .sort((a, b) => a - b);
@@ -9865,4 +9865,14 @@ function sortItOut(array) {
     .sort((a, b) => b - a);
   return [...oddArray, ...evenArray];
 }
-console.log(sortItOut([11, 22, 33, 44, 55, 55, 90.4, 4, 78]));
+console.log(sortItOut([11, 22, 33, 44, 55, 55, 90.4, 4, 78])); */
+
+// #7kyu Extending JavaScript Objects: Reverse String
+/* String.prototype.reverse = function () {
+  let result = "";
+  for (let i = this.length - 1; i >= 0; i--) {
+    result += this[i];
+  }
+  return result;
+};
+console.log("Hello, World!".reverse()); */
