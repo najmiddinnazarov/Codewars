@@ -9876,3 +9876,18 @@ console.log(sortItOut([11, 22, 33, 44, 55, 55, 90.4, 4, 78])); */
   return result;
 };
 console.log("Hello, World!".reverse()); */
+
+// #7kyu Lost Cities Score Calculator
+/* function calculateScore(cardsArr, wager) {
+  if (cardsArr.length === 0 && wager === 0) {
+    return 0;
+  }
+  const handshake = {
+    1: 2,
+    2: 3,
+    3: 4,
+  };
+  const sum = -20 + cardsArr.reduce((sum, curr) => sum + curr, 0);
+  return (handshake[wager] || 1) * sum;
+}
+console.log(calculateScore([2, 3, 4, 6, 7, 10], 0)); */
