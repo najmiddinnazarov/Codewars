@@ -9891,3 +9891,9 @@ console.log("Hello, World!".reverse()); */
   return (handshake[wager] || 1) * sum;
 }
 console.log(calculateScore([2, 3, 4, 6, 7, 10], 0)); */
+
+// #7kyu Is my string repeating the same character over and over ?
+/* function hasOneChar(s) {
+  return [...new Set(s)].length === 1;
+}
+console.log(hasOneChar("aaaaa")); */
