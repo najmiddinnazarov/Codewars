@@ -9897,3 +9897,21 @@ console.log(calculateScore([2, 3, 4, 6, 7, 10], 0)); */
   return [...new Set(s)].length === 1;
 }
 console.log(hasOneChar("aaaaa")); */
+
+// #7kyu Return Specifics from an Object.
+/* function returnSpecifics(obj) {
+  let number = [];
+  let func = [];
+  for (const key in obj) {
+    if (typeof obj[key] === "number") {
+      number.push(obj[key]);
+    }
+    if (typeof obj[key] === "function") {
+      func.push(key);
+    }
+  }
+  return number.concat(...func).length
+    ? number.concat(...func)
+    : ["The Object is Empty"];
+}
+console.log(returnSpecifics({})); */
