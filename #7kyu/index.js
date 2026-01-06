@@ -9915,3 +9915,10 @@ console.log(hasOneChar("aaaaa")); */
     : ["The Object is Empty"];
 }
 console.log(returnSpecifics({})); */
+
+// #7kyu Smallest Product
+/* function smallestProduct(arr) {
+  const sum = arr.map((value) => value.reduce((sum, curr) => sum * curr, 1));
+  return Math.min(...sum);
+}
+console.log(smallestProduct([[1, 5], [2], [-1, -3]])); */
