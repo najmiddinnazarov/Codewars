@@ -9922,3 +9922,20 @@ console.log(returnSpecifics({})); */
   return Math.min(...sum);
 }
 console.log(smallestProduct([[1, 5], [2], [-1, -3]])); */
+
+// #7kyu Holiday X - Bintang Vests
+/* function vestBuy(price, haggle) {
+  let haggleObject = {
+    light: 20,
+    medium: 30,
+    heavy: 40,
+    walkandswear: 90,
+  };
+  if (haggleObject[haggle]) {
+    let perCent = price * (haggleObject[haggle] / 100);
+    return price - perCent;
+  } else {
+    return "Run!!";
+  }
+}
+console.log(vestBuy(70000, "light")); */
