@@ -9939,3 +9939,18 @@ console.log(smallestProduct([[1, 5], [2], [-1, -3]])); */
   }
 }
 console.log(vestBuy(70000, "light")); */
+
+// #7kyu Move all vowels
+/* function moveVowel(input) {
+  let vowel = [];
+  let consonant = [];
+  for (let i = 0; i < input.length; i++) {
+    if (/[aoeiu]/.test(input[i])) {
+      vowel.push(input[i]);
+    } else {
+      consonant.push(input[i]);
+    }
+  }
+  return consonant.concat(...vowel).join("");
+}
+console.log(moveVowel(moveVowel("apple"))); */
