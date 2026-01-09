@@ -9954,3 +9954,13 @@ console.log(vestBuy(70000, "light")); */
   return consonant.concat(...vowel).join("");
 }
 console.log(moveVowel(moveVowel("apple"))); */
+
+// #7kyu Multiple remainder of the division
+/* function isMultiple(a, b, n) {
+  let result = a / b;
+  let fractionalPart = result - Math.floor(result);
+  let roundedFraction = parseFloat(fractionalPart.toFixed(1));
+  roundedFraction = (roundedFraction + "").split(".")[1];
+  return roundedFraction > 0 && roundedFraction % n === 0;
+}
+console.log(isMultiple(5, 4, 3)); */
