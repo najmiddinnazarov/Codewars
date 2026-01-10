@@ -9964,3 +9964,18 @@ console.log(moveVowel(moveVowel("apple"))); */
   return roundedFraction > 0 && roundedFraction % n === 0;
 }
 console.log(isMultiple(5, 4, 3)); */
+
+// #7kyu Map over a list of lists
+/* function gridMap(fn, a) {
+  return a.map((array) => array.map((value) => fn(value)));
+}
+console.log(
+  gridMap(
+    (x) => x + 1,
+    [
+      [1, 2, 3, 4],
+      [5, 6, 7, 8, 9],
+      [0, 2, 4],
+    ]
+  )
+); */
