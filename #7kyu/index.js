@@ -9979,3 +9979,13 @@ console.log(
     ]
   )
 ); */
+
+// #7kyu What is type of variable?
+/* function type(value) {
+  return Object.prototype.toString
+    .call(value)
+    .split(" ")[1]
+    .slice(0, -1)
+    .toLowerCase();
+}
+console.log(type(new Date())); */
