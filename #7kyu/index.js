@@ -9989,3 +9989,26 @@ console.log(
     .toLowerCase();
 }
 console.log(type(new Date())); */
+
+// #7kyu Symbols counted
+/* const transform = (s) => {
+  let dublicateLetterCounter = {};
+  for (const letter in s) {
+    if (s[letter] in dublicateLetterCounter) {
+      dublicateLetterCounter[s[letter]]++;
+    } else {
+      dublicateLetterCounter[s[letter]] = 1;
+    }
+  }
+  let removeDublicateLetter = [...new Set([...s])];
+  return removeDublicateLetter
+    .map((value) => {
+      if (dublicateLetterCounter[value] >= 2) {
+        return value + dublicateLetterCounter[value];
+      } else {
+        return value;
+      }
+    })
+    .join("");
+};
+console.log(transform("economics")); */
