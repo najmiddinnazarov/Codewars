@@ -10012,3 +10012,10 @@ console.log(type(new Date())); */
     .join("");
 };
 console.log(transform("economics")); */
+
+// #7kyu Youtube URL
+/* function makeYoutubeLink(str) {
+  let getId = str.split(/[/=]/);
+  return "https://www.youtube.com/embed/" + getId[getId.length - 1];
+}
+console.log(makeYoutubeLink("https://www.youtube.com/watch?v=L3JxAuUyjzY")); */
