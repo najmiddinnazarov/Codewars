@@ -10019,3 +10019,18 @@ console.log(transform("economics")); */
   return "https://www.youtube.com/embed/" + getId[getId.length - 1];
 }
 console.log(makeYoutubeLink("https://www.youtube.com/watch?v=L3JxAuUyjzY")); */
+
+// #7kyu Thinking & Testing: Sing a Song
+/* function singSong(a, b = "") {
+  let vowel = "aouei";
+  if (a === b) {
+    return `I have two ${a[0].toLowerCase() + a.slice(1)}s.`;
+  } else if (a.length > 0 && b.length > 0) {
+    return `Uhh! ${a[0].toUpperCase() + a.slice(1)}-${b}!`;
+  } else if (vowel.includes(a[0])) {
+    return `I have an ${a}.`;
+  } else {
+    return `I have a ${a}.`;
+  }
+}
+console.log(singSong("fig", "fig")); */
