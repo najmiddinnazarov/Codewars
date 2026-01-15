@@ -2232,3 +2232,9 @@ console.log(sakuraFall(5)); */
   return start + duration - (tz_from - tz_to) < 0;
 }
 console.log(was_package_received_yesterday(-11, -11, 12, 8)); */
+
+// #8kyu Be Concise II - I Need Squares
+/* function squaresOnly(a) {
+  return a.filter((v) => Number.isInteger(Math.sqrt(v)));
+}
+console.log(squaresOnly([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); */
