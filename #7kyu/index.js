@@ -10034,3 +10034,36 @@ console.log(makeYoutubeLink("https://www.youtube.com/watch?v=L3JxAuUyjzY")); */
   }
 }
 console.log(singSong("fig", "fig")); */
+
+// #7kyu All, None & Any
+/* Array.prototype.all = function (p) {
+  for (let i = 0; i < this.length; i++) {
+    if (!p(this[i])) {
+      return false;
+    }
+  }
+  return true;
+};
+
+Array.prototype.none = function (p) {
+  for (let i = 0; i < this.length; i++) {
+    if (p(this[i])) {
+      return false;
+    }
+  }
+  return true;
+};
+
+Array.prototype.any = function (p) {
+  for (let i = 0; i < this.length; i++) {
+    if (p(this[i])) {
+      return true;
+    }
+  }
+  return false;
+};
+console.log(
+  [1, 2, 3].all(function isGreaterThanZero(num) {
+    return num > 0;
+  })
+); */
