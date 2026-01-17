@@ -10067,3 +10067,17 @@ console.log(
     return num > 0;
   })
 ); */
+
+// #7kyu Valid Parentheses
+/* function validParentheses(parenStr) {
+  let counter = 0;
+  for (let i = 0; i < parenStr.length; i++) {
+    if (counter < 0) {
+      return false;
+    } else {
+      parenStr[i] === "(" ? counter++ : counter--;
+    }
+  }
+  return counter === 0;
+}
+console.log(validParentheses("(())((()())())")); */
