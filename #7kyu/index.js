@@ -10081,3 +10081,33 @@ console.log(
   return counter === 0;
 }
 console.log(validParentheses("(())((()())())")); */
+
+// #7kyu Maximum Length Difference
+/* function mxdiflg(a1, a2) {
+  if (a1.length === 0 || a2.length === 0) {
+    return -1;
+  }
+  let str1 = a1.map((value) => value.length).sort((a, b) => a - b);
+  let str2 = a2.map((value) => value.length).sort((a, b) => a - b);
+  return Math.max(
+    str1[str1.length - 1] - str2[0],
+    str2[str2.length - 1] - str1[0],
+  );
+}
+console.log(
+  mxdiflg(
+    [
+      "hoqq",
+      "bbllkw",
+      "oox",
+      "ejjuyyy",
+      "plmiis",
+      "xxxzgpsssa",
+      "xxwwkktt",
+      "znnnnfqknaz",
+      "qqquuhii",
+      "dvvvwz",
+    ],
+    ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"],
+  ),
+); */
