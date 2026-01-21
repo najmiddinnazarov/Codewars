@@ -10144,3 +10144,21 @@ console.log(
   return result;
 }
 console.log(solve(["IAMDEFANDJKL", "thedefgh", "xyzDEFghijabc"])); */
+
+// #7kyu Argue the toss
+/* function anArgument(...args) {
+  if (args.length === 0) {
+    return "You didn't give me any arguments.";
+  } else if (args.length === 1) {
+    return `You gave me 1 argument and it is "${args[0]}".`;
+  } else if (args.length === 2) {
+    return `You gave me 2 arguments and they are "${args[0]}" and "${args[1]}".`;
+  } else if (args.length > 2) {
+    const lastArgument = args.slice(-1);
+    return `You gave me ${args.length} arguments and they are ${args
+      .slice(0, -1)
+      .map((value) => `"${value}"`)
+      .join(", ")} and "${lastArgument}".`;
+  }
+}
+console.log(anArgument("chairs", "table", "lamp", "sideboard")); */
