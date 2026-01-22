@@ -10162,3 +10162,17 @@ console.log(solve(["IAMDEFANDJKL", "thedefgh", "xyzDEFghijabc"])); */
   }
 }
 console.log(anArgument("chairs", "table", "lamp", "sideboard")); */
+
+// #7kyu Its all backwards
+/* function flipper(stringArr) {
+  let reverseArray = stringArr.reverse();
+  let lastLetterUpper = reverseArray.map((word) => {
+    if (word.length === 1) {
+      return word;
+    } else {
+      return word.slice(0, -1).toLowerCase() + word.slice(-1).toUpperCase();
+    }
+  });
+  return lastLetterUpper.join(" ");
+}
+console.log(flipper(["This", "Is", "A", "Test"])); */
