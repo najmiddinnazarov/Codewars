@@ -10176,3 +10176,33 @@ console.log(anArgument("chairs", "table", "lamp", "sideboard")); */
   return lastLetterUpper.join(" ");
 }
 console.log(flipper(["This", "Is", "A", "Test"])); */
+
+// #7kyu HTML Generator
+/* function HTMLGen() {
+  HTMLGen.prototype.a = function (param) {
+    return `<a>${param}</a>`;
+  };
+  HTMLGen.prototype.b = function (param) {
+    return `<b>${param}</b>`;
+  };
+  HTMLGen.prototype.p = function (param) {
+    return `<p>${param}</p>`;
+  };
+  HTMLGen.prototype.body = function (param) {
+    return `<body>${param}</body>`;
+  };
+  HTMLGen.prototype.div = function (param) {
+    return `<div>${param}</div>`;
+  };
+  HTMLGen.prototype.span = function (param) {
+    return `<span>${param}</span>`;
+  };
+  HTMLGen.prototype.title = function (param) {
+    return `<title>${param}</title>`;
+  };
+  HTMLGen.prototype.comment = function (param) {
+    return `<!--${param}-->`;
+  };
+}
+var g = new HTMLGen();
+console.log(g.comment("i am a comment")); */
