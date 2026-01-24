@@ -10206,3 +10206,14 @@ console.log(flipper(["This", "Is", "A", "Test"])); */
 }
 var g = new HTMLGen();
 console.log(g.comment("i am a comment")); */
+
+// #7kyu Geometric Progression Sequence
+/* function geometricSequenceElements(a, r, n) {
+  let result = [a];
+  for (let i = 1; i < n; i++) {
+    result.push(a * r);
+    a = a * r;
+  }
+  return result.join(", ");
+}
+console.log(geometricSequenceElements(2, 3, 5)); */
