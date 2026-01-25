@@ -2238,3 +2238,10 @@ console.log(was_package_received_yesterday(-11, -11, 12, 8)); */
   return a.filter((v) => Number.isInteger(Math.sqrt(v)));
 }
 console.log(squaresOnly([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); */
+
+// #8kyu Holiday VIII - Duty Free
+/* function dutyFree(normPrice, discount, hol) {
+  const thrift = (normPrice * discount) / 100;
+  return Math.floor(hol / thrift);
+}
+console.log(dutyFree(12, 50, 1000)); */
