@@ -2245,3 +2245,9 @@ console.log(squaresOnly([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); */
   return Math.floor(hol / thrift);
 }
 console.log(dutyFree(12, 50, 1000)); */
+
+// #8kyu Decibel Scale
+/* function dBScale(intensity) {
+  return 10 * Math.log10(intensity / Math.pow(10, -12));
+}
+console.log(dBScale(Math.pow(10, -11))); */
