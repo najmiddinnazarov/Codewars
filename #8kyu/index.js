@@ -2251,3 +2251,14 @@ console.log(dutyFree(12, 50, 1000)); */
   return 10 * Math.log10(intensity / Math.pow(10, -12));
 }
 console.log(dBScale(Math.pow(10, -11))); */
+
+// #8kyu Thinkful - Number Drills: Blue and red marbles
+/* function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  const remainingBlue = blueStart - bluePulled;
+  const remainingRed = redStart - redPulled;
+  const totalRemaining = remainingBlue + remainingRed;
+  const probability = remainingBlue / totalRemaining;
+  return probability;
+}
+console.log(guessBlue(5, 5, 2, 3));
+ */
