@@ -2262,3 +2262,15 @@ console.log(dBScale(Math.pow(10, -11))); */
 }
 console.log(guessBlue(5, 5, 2, 3));
  */
+
+// #8kyu Crash Override
+/* function aliasGen(first, last) {
+  if (/[A-Za-z]/g.test(first[0]) && /[A-Za-z]/.test(last[0])) {
+    return (
+      firstName[first[0].toUpperCase()] + " " + surname[last[0].toUpperCase()]
+    );
+  } else {
+    return "Your name must start with a letter from A - Z.";
+  }
+}
+console.log(aliasGen("Mike", "Millington")); */
