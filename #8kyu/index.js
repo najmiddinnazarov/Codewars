@@ -2274,3 +2274,8 @@ console.log(guessBlue(5, 5, 2, 3));
   }
 }
 console.log(aliasGen("Mike", "Millington")); */
+
+// #8kyu Find variable which breaks strict comparison!
+/* function findStrangeValue() {
+  return NaN;
+} */
