@@ -2292,3 +2292,22 @@ console.log(aliasGen("Mike", "Millington")); */
   return Number(result.toFixed(2));
 }
 console.log(howMuchWater(5, 10, 14)); */
+
+// #8kyu Flick Switch
+/* function flickSwitch(arr) {
+  let boolean = true;
+  return arr.map((value) => {
+    if (value === "flick" && boolean) {
+      boolean = false;
+      return boolean;
+    } else if (value === "flick" && boolean === false) {
+      boolean = true;
+      return boolean;
+    } else {
+      return boolean;
+    }
+  });
+}
+console.log(
+  flickSwitch(["codewars", "flick", "code", "wars", "flick", "laptop"]),
+); */
