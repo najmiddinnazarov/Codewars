@@ -2311,3 +2311,6 @@ console.log(howMuchWater(5, 10, 14)); */
 console.log(
   flickSwitch(["codewars", "flick", "code", "wars", "flick", "laptop"]),
 ); */
+
+// #8kyu Up and down, the string grows
+/* const STRANGE_STRING = "ß"; */
