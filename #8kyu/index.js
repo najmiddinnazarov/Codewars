@@ -2314,3 +2314,9 @@ console.log(
 
 // #8kyu Up and down, the string grows
 /* const STRANGE_STRING = "ß"; */
+
+// #8kyu Geometry Basics: Circle Circumference in 2D
+/* function circleCircumference(circle) {
+  return +(2 * Math.PI * circle.radius).toFixed(6);
+}
+console.log(circleCircumference({ center: { x: 10, y: 10 }, radius: 30 })); */
