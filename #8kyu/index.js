@@ -2320,3 +2320,15 @@ console.log(
   return +(2 * Math.PI * circle.radius).toFixed(6);
 }
 console.log(circleCircumference({ center: { x: 10, y: 10 }, radius: 30 })); */
+
+// #8kyu Enumerable Magic #20 - Cascading Subsets
+/* function eachCons(array, n) {
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array.length >= i + n) {
+      result.push(array.slice(i, n + i));
+    }
+  }
+  return result;
+}
+console.log(eachCons([1, 2, 3, 4], 2)); */
