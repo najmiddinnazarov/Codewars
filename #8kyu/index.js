@@ -2332,3 +2332,22 @@ console.log(circleCircumference({ center: { x: 10, y: 10 }, radius: 30 })); */
   return result;
 }
 console.log(eachCons([1, 2, 3, 4], 2)); */
+
+// #8kyu Fun with ES6 Classes #1 - People, people, people
+/* class Person {
+  constructor(name = "John", lastName = "Doe", age = 0, gender = "Male") {
+    this.firstName = name;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+  }
+  sayFullName() {
+    return this.firstName + " " + this.lastName;
+  }
+  static greetExtraTerrestrials(raceName) {
+    return `Welcome to Planet Earth ${raceName}`;
+  }
+}
+let john = new Person("Jane", "Doe", 25, "Female");
+console.log(john.sayFullName());
+console.log(Person.greetExtraTerrestrials("Jovians")); */
