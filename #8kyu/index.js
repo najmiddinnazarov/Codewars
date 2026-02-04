@@ -2351,3 +2351,19 @@ console.log(eachCons([1, 2, 3, 4], 2)); */
 let john = new Person("Jane", "Doe", 25, "Female");
 console.log(john.sayFullName());
 console.log(Person.greetExtraTerrestrials("Jovians")); */
+
+// #8kyu How old will I be in 2099?
+/* function calculateAge(birth, year) {
+  if (birth > year) {
+    const diff = birth - year;
+    return diff === 1
+      ? "You will be born in 1 year."
+      : `You will be born in ${diff} years.`;
+  }
+  if (birth === year) {
+    return "You were born this very year!";
+  }
+  const diff = year - birth;
+  return diff === 1 ? "You are 1 year old." : `You are ${diff} years old.`;
+}
+console.log(calculateAge(2012, 2016)); */
