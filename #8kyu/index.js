@@ -2367,3 +2367,14 @@ console.log(Person.greetExtraTerrestrials("Jovians")); */
   return diff === 1 ? "You are 1 year old." : `You are ${diff} years old.`;
 }
 console.log(calculateAge(2012, 2016)); */
+
+// #8kyu A Strange Trip to the Market
+/* function isLochNessMonster(s) {
+  let string = ["tree fiddy", "3.50", "three fifty"];
+  return string.filter((value) => s.includes(value)).length >= 1;
+}
+console.log(
+  isLochNessMonster(
+    "Your girlscout cookies are ready to ship. Your total comes to tree fiddy",
+  ),
+); */
