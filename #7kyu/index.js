@@ -10217,3 +10217,15 @@ console.log(g.comment("i am a comment")); */
   return result.join(", ");
 }
 console.log(geometricSequenceElements(2, 3, 5)); */
+
+// #7kyu Simple equation reversal
+/* function solve(eq) {
+  return eq
+    .replace(/[+-/*]/g, (num) => {
+      return " " + num + " ";
+    })
+    .split(" ")
+    .reverse()
+    .join("");
+}
+console.log(solve("100*b/y")); */
