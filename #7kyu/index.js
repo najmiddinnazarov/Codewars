@@ -10229,3 +10229,8 @@ console.log(geometricSequenceElements(2, 3, 5)); */
     .join("");
 }
 console.log(solve("100*b/y")); */
+
+// #7kyu A Promise is a Promise
+/* function promiseHelloWorld() {
+  return Promise.resolve('Hello World!');
+} */
