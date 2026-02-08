@@ -10234,3 +10234,16 @@ console.log(solve("100*b/y")); */
 /* function promiseHelloWorld() {
   return Promise.resolve('Hello World!');
 } */
+
+// #7kyu Homogenous arrays
+/* function filterHomogenous(arrays) {
+  return arrays.filter((arr) => {
+    let check = arr.every(
+      (value, idx, origin) => typeof origin[0] === typeof value,
+    );
+    if (check && arr.length) {
+      return arr;
+    }
+  });
+}
+console.log(filterHomogenous([[1, 5, 4], ["a", 3, 5], ["b"], [], ["1", 2, 3]])); */
