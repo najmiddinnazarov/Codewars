@@ -10247,3 +10247,15 @@ console.log(solve("100*b/y")); */
   });
 }
 console.log(filterHomogenous([[1, 5, 4], ["a", 3, 5], ["b"], [], ["1", 2, 3]])); */
+
+// #7kyu Plus - minus - plus - plus - ... - Count
+/* function catchSignChange(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if ((arr[i] >= 0 && arr[i + 1] < 0) || (arr[i] < 0 && arr[i + 1] >= 0)) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(catchSignChange([-2, -2, -5, -4, 5, 2, 0, 6, 0])); */
