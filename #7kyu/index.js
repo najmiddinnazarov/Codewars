@@ -10259,3 +10259,14 @@ console.log(filterHomogenous([[1, 5, 4], ["a", 3, 5], ["b"], [], ["1", 2, 3]]));
   return count;
 }
 console.log(catchSignChange([-2, -2, -5, -4, 5, 2, 0, 6, 0])); */
+
+// #7kyu Simple Fun #10: Range Bit Counting
+/* function rangeBitCount(a, b) {
+  let array = [];
+  for (let i = a; i <= b; i++) {
+    array.push(i.toString(2));
+  }
+  array = array.join("").split("");
+  return array.reduce((sum, curr) => sum + Number(curr), 0);
+}
+console.log(rangeBitCount(2, 7)); */
