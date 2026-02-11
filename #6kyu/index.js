@@ -2260,3 +2260,11 @@ console.log(oddOneOut("Hello World")); */
   ).toFixed(3);
 }
 console.log(areaOfPolygonInsideCircle(3, 3)); */
+
+// #6kyu Arrh, grabscrab!
+/* function grabscrab(anagram, dictionary) {
+  return dictionary.filter(
+    (value) => [...value].sort().join("") === [...anagram].sort().join(""),
+  );
+}
+console.log(grabscrab("ortsp", ["sport", "parrot", "ports", "matey"])); */
