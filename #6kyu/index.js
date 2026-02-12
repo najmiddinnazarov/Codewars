@@ -2268,3 +2268,14 @@ console.log(areaOfPolygonInsideCircle(3, 3)); */
   );
 }
 console.log(grabscrab("ortsp", ["sport", "parrot", "ports", "matey"])); */
+
+// #6kyu How many feelings?
+/* function countFeelings(string, array) {
+  let result = array.filter((value) =>
+    [...value].every((letter) => string.includes(letter)),
+  ).length;
+  return result === 1 ? result + " feeling." : result + " feelings.";
+}
+console.log(
+  countFeelings("yliausoenvjw", ["anger", "awe", "joy", "love", "grief"]),
+); */
