@@ -2279,3 +2279,20 @@ console.log(grabscrab("ortsp", ["sport", "parrot", "ports", "matey"])); */
 console.log(
   countFeelings("yliausoenvjw", ["anger", "awe", "joy", "love", "grief"]),
 ); */
+
+// #6kyu Delete occurrences of an element if it occurs more than n times
+/* function deleteNth(arr, n) {
+  let numbers = {};
+  for (const number of arr) {
+    numbers[number] = 0;
+  }
+  let result = [];
+  arr.forEach((element) => {
+    if (numbers[element] !== n) {
+      result.push(element);
+      numbers[element]++;
+    }
+  });
+  return result;
+}
+console.log(deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 1)); */
