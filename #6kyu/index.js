@@ -2296,3 +2296,18 @@ console.log(
   return result;
 }
 console.log(deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 1)); */
+
+// #6kyu Non-even substrings
+/* function solve(s) {
+  let substring = [];
+  for (let i = 0; i < s.length; i++) {
+    for (let k = 0; k < s.length; k++) {
+      let num = s.slice(i, k + 1);
+      if (num[num.length - 1] % 2) {
+        substring.push(num);
+      }
+    }
+  }
+  return substring.length;
+}
+console.log(solve("303")); */
