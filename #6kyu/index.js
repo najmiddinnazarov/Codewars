@@ -2311,3 +2311,15 @@ console.log(deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 1)); */
   return substring.length;
 }
 console.log(solve("303")); */
+
+// #6kyu Valid string
+/* function validWord(dictionary, word) {
+  if (word === "") return true;
+  for (let w of dictionary) {
+    if (word.startsWith(w)) {
+      if (validWord(dictionary, word.slice(w.length))) return true;
+    }
+  }
+  return false;
+}
+console.log(validWord(["code", "wars"], "codewars")); */
