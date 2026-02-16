@@ -2323,3 +2323,18 @@ console.log(solve("303")); */
   return false;
 }
 console.log(validWord(["code", "wars"], "codewars")); */
+
+// #6kyu Take a Ten Minutes Walk
+/* function isValidWalk(walk) {
+  if (walk.length !== 10) return false;
+  let x = 0;
+  let y = 0;
+  for (let dir of walk) {
+    if (dir === "n") y++;
+    if (dir === "s") y--;
+    if (dir === "e") x++;
+    if (dir === "w") x--;
+  }
+  return x === 0 && y === 0;
+}
+console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"])); */
