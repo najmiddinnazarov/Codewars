@@ -2338,3 +2338,27 @@ console.log(validWord(["code", "wars"], "codewars")); */
   return x === 0 && y === 0;
 }
 console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"])); */
+
+// #6kyu Good vs Evil
+/* function goodVsEvil(good, evil) {
+  let goodObj = [1, 2, 3, 3, 4, 10];
+  let evilObj = [1, 2, 2, 2, 3, 5, 10];
+  good = good.split(" ").map(Number);
+  evil = evil.split(" ").map(Number);
+  let calcGood = 0;
+  let calcEvil = 0;
+  for (let i = 0; i < good.length; i++) {
+    calcGood += good[i] * goodObj[i];
+  }
+  for (let i = 0; i < evil.length; i++) {
+    calcEvil += evil[i] * evilObj[i];
+  }
+  if (calcGood > calcEvil) {
+    return "Battle Result: Good triumphs over Evil";
+  } else if (calcEvil > calcGood) {
+    return "Battle Result: Evil eradicates all trace of Good";
+  } else {
+    return "Battle Result: No victor on this battle field";
+  }
+}
+console.log(goodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0")); */
