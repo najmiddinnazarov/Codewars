@@ -10270,3 +10270,34 @@ console.log(catchSignChange([-2, -2, -5, -4, 5, 2, 0, 6, 0])); */
   return array.reduce((sum, curr) => sum + Number(curr), 0);
 }
 console.log(rangeBitCount(2, 7)); */
+
+// #7kyu Toggle, Set, and Clear Bits (Bit Manipulation Basics)
+/* const toggleBit = (n, position) => {
+  return n ^ (1 << position);
+};
+const setBit = (n, position) => {
+  return n | (1 << position);
+};
+const clearBit = (n, position) => {
+  return n & ~(1 << position);
+};
+const isBitSet = (n, position) => {
+  return (n & (1 << position)) !== 0;
+};
+const setMultipleBits = (n, mask) => {
+  return n | mask;
+};
+const clearMultipleBits = (n, mask) => {
+  return n & ~mask;
+};
+const toggleMultipleBits = (n, mask) => {
+  return n ^ mask;
+};
+console.log(toggleBit(5, 1));
+console.log(setBit(5, 1));
+console.log(clearBit(7, 1));
+console.log(isBitSet(5, 0));
+console.log(setMultipleBits(5, 3));
+console.log(setMultipleBits(5, 3));
+console.log(clearMultipleBits(7, 2));
+console.log(toggleMultipleBits(5, 3)); */
