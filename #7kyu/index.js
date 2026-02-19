@@ -10301,3 +10301,17 @@ console.log(setMultipleBits(5, 3));
 console.log(setMultipleBits(5, 3));
 console.log(clearMultipleBits(7, 2));
 console.log(toggleMultipleBits(5, 3)); */
+
+// #7kyu Polydivisible Numbers
+/* function polydivisible(x) {
+  x = String(x);
+  let temp = "";
+  for (let i = 0; i < x.length; i++) {
+    temp += x[i];
+    if (+temp % (i + 1) !== 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(polydivisible(1232)); */
