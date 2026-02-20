@@ -10315,3 +10315,16 @@ console.log(toggleMultipleBits(5, 3)); */
   return true;
 }
 console.log(polydivisible(1232)); */
+
+// #7kyu LinkedList -> Array
+/* function listToArray(list) {
+  let arr = [list["value"]];
+  while (list["next"]) {
+    list = list["next"];
+    arr.push(list["value"]);
+  }
+  return arr;
+}
+console.log(
+  listToArray({ value: 1, next: { value: 2, next: { value: 3, next: null } } }),
+); */
