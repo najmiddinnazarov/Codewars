@@ -10328,3 +10328,21 @@ console.log(polydivisible(1232)); */
 console.log(
   listToArray({ value: 1, next: { value: 2, next: { value: 3, next: null } } }),
 ); */
+
+// #7kyu 80's Kids #3: Punky Brewster's Socks
+/* function getSocks(name, socks) {
+  let sortSocks = socks.sort();
+  let a = sortSocks[0];
+  let b = sortSocks[sortSocks.length - 1];
+  if (name === "Punky") {
+    if (a !== b) {
+      return [a, b];
+    }
+  } else if (name === "Henry") {
+    if (a === socks[1]) {
+      return [sortSocks[0], sortSocks[1]];
+    }
+  }
+  return [];
+}
+console.log(getSocks("Punky", ["red", "blue", "blue", "green"])); */
