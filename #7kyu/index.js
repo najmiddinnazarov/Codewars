@@ -10346,3 +10346,28 @@ console.log(
   return [];
 }
 console.log(getSocks("Punky", ["red", "blue", "blue", "green"])); */
+
+// #7kyu Fridge Organizer: Priority Eating
+/* function fridgeOrganizer(items) {
+  return items
+    .filter((item) => item.expiryDays >= 0)
+    .sort((a, b) => {
+      if (a.isAlmostEmpty !== b.isAlmostEmpty) {
+        return b.isAlmostEmpty - a.isAlmostEmpty;
+      }
+      if (a.expiryDays !== b.expiryDays) {
+        return a.expiryDays - b.expiryDays;
+      }
+      return a.name.localeCompare(b.name);
+    })
+    .map((item) => item.name);
+}
+console.log(
+  fridgeOrganizer([
+    { name: "Milk", expiryDays: 3, isAlmostEmpty: false },
+    { name: "Jam", expiryDays: 3, isAlmostEmpty: true },
+    { name: "Yogurt", expiryDays: 1, isAlmostEmpty: false },
+    { name: "Old Meat", expiryDays: -1, isAlmostEmpty: true },
+    { name: "Today's Tofu", expiryDays: 0, isAlmostEmpty: false },
+  ]),
+); */
