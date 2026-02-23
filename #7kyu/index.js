@@ -10371,3 +10371,11 @@ console.log(
     { name: "Today's Tofu", expiryDays: 0, isAlmostEmpty: false },
   ]),
 ); */
+
+// #7kyu New £5 notes collectors!
+/* function getNewNotes(salary, bills) {
+  let sum = bills.reduce((sum, curr) => sum + curr, 0);
+  let result = Math.floor((salary - sum) / 5);
+  return result > 0 ? result : 0;
+}
+console.log(getNewNotes(2300, [590, 1500, 45, 655, 150])); */
