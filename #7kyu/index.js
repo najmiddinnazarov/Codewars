@@ -10379,3 +10379,30 @@ console.log(
   return result > 0 ? result : 0;
 }
 console.log(getNewNotes(2300, [590, 1500, 45, 655, 150])); */
+
+// #7kyu Bits Battle
+/* function bitsBattle(numbers) {
+  if (numbers[0] === 0) {
+    return "tie";
+  }
+  let odds = [];
+  let even = [];
+  numbers.forEach((num) => {
+    let binary = num.toString(2);
+    if (num % 2 === 0) {
+      even.push(...binary);
+    } else {
+      odds.push(...binary);
+    }
+  });
+  odds = odds.filter((value) => value == 1).length;
+  even = even.filter((value) => value == 0).length;
+  if (odds > even) {
+    return "odds win";
+  } else if (even > odds) {
+    return "evens win";
+  } else {
+    return "tie";
+  }
+}
+console.log(bitsBattle([0])); */
