@@ -10406,3 +10406,10 @@ console.log(getNewNotes(2300, [590, 1500, 45, 655, 150])); */
   }
 }
 console.log(bitsBattle([0])); */
+
+// #7kyu Fly as fast as you can
+/* function flyTime(dist, train, fly) {
+  const result = fly * (dist / (2 * train));
+  return result === Infinity ? null : result;
+}
+console.log(flyTime(100, 0, 30)); */
