@@ -10413,3 +10413,11 @@ console.log(bitsBattle([0])); */
   return result === Infinity ? null : result;
 }
 console.log(flyTime(100, 0, 30)); */
+
+// #7kyu Match My Husband
+/* function match(usefulness, months) {
+  let man = usefulness.reduce((sum, curr) => sum + curr, 0);
+  let woman = 100 * 0.85 ** months;
+  return man >= woman ? "Match!" : "No match!";
+}
+console.log(match([15, 24, 12], 2)); */
