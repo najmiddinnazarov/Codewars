@@ -10421,3 +10421,9 @@ console.log(flyTime(100, 0, 30)); */
   return man >= woman ? "Match!" : "No match!";
 }
 console.log(match([15, 24, 12], 2)); */
+
+// #7kyu Simple Fun #152: Invite More Women?
+/* function inviteMoreWomen(L) {
+  return L.filter((value) => value === 1).length > L.length / 2;
+}
+console.log(inviteMoreWomen([1, 1, 1])); */
