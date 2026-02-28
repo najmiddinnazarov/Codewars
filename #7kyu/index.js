@@ -10427,3 +10427,17 @@ console.log(match([15, 24, 12], 2)); */
   return L.filter((value) => value === 1).length > L.length / 2;
 }
 console.log(inviteMoreWomen([1, 1, 1])); */
+
+// #7kyu maxPossibleScore
+/* function maxPossibleScore(obj, arr) {
+  let sum = 0;
+  for (const key in obj) {
+    if (arr.includes(key)) {
+      sum += obj[key] * 2;
+    } else {
+      sum += obj[key];
+    }
+  }
+  return sum;
+}
+console.log(maxPossibleScore({ a: 1 }, [])); */
