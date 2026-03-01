@@ -10441,3 +10441,28 @@ console.log(inviteMoreWomen([1, 1, 1])); */
   return sum;
 }
 console.log(maxPossibleScore({ a: 1 }, [])); */
+
+// #7kyu Slice the middle of a list backwards
+/* function reverseMiddle(array) {
+  let sliceNumber;
+  let evenOrOdd = true;
+  let result;
+  if (array.length % 2 === 0) {
+    sliceNumber = (array.length - 2) / 2;
+  } else {
+    sliceNumber = (array.length - 3) / 2;
+    evenOrOdd = false;
+  }
+  if (evenOrOdd) {
+    result = array.slice(sliceNumber, sliceNumber + 2);
+  } else {
+    result = array.slice(sliceNumber, sliceNumber + 3);
+  }
+  return result.reverse();
+}
+console.log(
+  reverseMiddle([
+    -29, -59, -77, -47, -3, 78, -80, -26, 42, -52, 91, 68, 9, 73, -4, 7, 29, 40,
+    17, 31, 39, 15, -26, 53, 82, -12, -97,
+  ]),
+); */
