@@ -10466,3 +10466,13 @@ console.log(
     17, 31, 39, 15, -26, 53, 82, -12, -97,
   ]),
 ); */
+
+// #7kyu Least Larger
+/* function leastLarger(a, i) {
+  let number = a[i];
+  let candidates = a.filter((v) => v > number);
+  if (candidates.length === 0) return -1;
+  let smallest = Math.min(...candidates);
+  return a.indexOf(smallest);
+}
+console.log(leastLarger([1, 3, 5, 2, 4], 0)); */
