@@ -10476,3 +10476,14 @@ console.log(
   return a.indexOf(smallest);
 }
 console.log(leastLarger([1, 3, 5, 2, 4], 0)); */
+
+// #7kyu Growth of a Population
+/* function nbYear(p0, percent, aug, p) {
+  let year = 0;
+  while (p > p0) {
+    p0 = Math.floor(p0 + p0 * (percent / 100) + aug);
+    year++;
+  }
+  return year;
+}
+console.log(nbYear(1500000, 0, 10000, 2000000)); */
