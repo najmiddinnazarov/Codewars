@@ -2378,3 +2378,13 @@ console.log(
     "Your girlscout cookies are ready to ship. Your total comes to tree fiddy",
   ),
 ); */
+
+// #8kyu Job Matching #1
+/* function match(candidate, job) {
+  if (candidate.minSalary === undefined || job.maxSalary === undefined) {
+    throw new Error("Ooops!");
+  }
+  let candidateMinSalary = candidate.minSalary - candidate.minSalary / 10;
+  return candidateMinSalary <= job.maxSalary;
+}
+console.log(match({}, { maxSalary: 130000 })); */
