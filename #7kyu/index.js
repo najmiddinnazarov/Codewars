@@ -10487,3 +10487,9 @@ console.log(leastLarger([1, 3, 5, 2, 4], 0)); */
   return year;
 }
 console.log(nbYear(1500000, 0, 10000, 2000000)); */
+
+// #7kyu Oh dear God! Is it bugged?
+/* function isItBugged(code) {
+  return /^\d{2}-\d{2}-\d{4} \d{2}:\d{2}/.test(code);
+}
+console.log(isItBugged("14-10-1066 12:00")); */
