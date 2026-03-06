@@ -10493,3 +10493,17 @@ console.log(nbYear(1500000, 0, 10000, 2000000)); */
   return /^\d{2}-\d{2}-\d{4} \d{2}:\d{2}/.test(code);
 }
 console.log(isItBugged("14-10-1066 12:00")); */
+
+// #7kyu Find all non-consecutive numbers
+/* function allNonConsecutive(arr) {
+  let result = [];
+  arr.forEach((num, idx, origin) => {
+    if (num + 1 !== origin[idx + 1]) {
+      if (origin[idx + 1] || origin[idx + 1] === 0) {
+        result.push({ i: idx + 1, n: origin[idx + 1] });
+      }
+    }
+  });
+  return result;
+}
+console.log(allNonConsecutive([-5, -3, -2, 0, 1, 2, 3, 4, 6, 7, 8, 10])); */
