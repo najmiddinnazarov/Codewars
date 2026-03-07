@@ -10507,3 +10507,10 @@ console.log(isItBugged("14-10-1066 12:00")); */
   return result;
 }
 console.log(allNonConsecutive([-5, -3, -2, 0, 1, 2, 3, 4, 6, 7, 8, 10])); */
+
+// #7kyu Discover The Original Price
+/* function discoverOriginalPrice(discountedPrice, salePercentage) {
+  let originPrice = (discountedPrice / (1 - salePercentage / 100)).toFixed(2);
+  return Number(originPrice);
+}
+console.log(discoverOriginalPrice(458.2, 17.13)); */
