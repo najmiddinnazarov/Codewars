@@ -10514,3 +10514,28 @@ console.log(allNonConsecutive([-5, -3, -2, 0, 1, 2, 3, 4, 6, 7, 8, 10])); */
   return Number(originPrice);
 }
 console.log(discoverOriginalPrice(458.2, 17.13)); */
+
+// #7kyu Disarium Number (Special Numbers Series #3)
+/* function disariumNumber(n) {
+  let sum = 0;
+  n = n.toString();
+  for (let i = 0; i < n.length; i++) {
+    sum += n[i] ** (i + 1);
+  }
+  return sum == n ? "Disarium !!" : "Not !!";
+}
+console.log(disariumNumber(89)); */
+
+// #7kyu Decompose single strand DNA into 3 reading frames
+/* var decomposeSingleStrand = function (singleStrand) {
+  let frame1 = ["Frame 1:"];
+  let frame2 = ["Frame 2:", singleStrand[0]];
+  let frame3 = ["Frame 3:", singleStrand.slice(0, 2)];
+  for (let i = 0; i < singleStrand.length; i += 3) {
+    frame1.push(singleStrand.slice(i, i + 3));
+    frame2.push(singleStrand.slice(i + 1, i + 4));
+    frame3.push(singleStrand.slice(i + 2, i + 5));
+  }
+  return [frame1.join(" "), frame2.join(" "), frame3.join(" ")].join("\n");
+};
+console.log(decomposeSingleStrand("AGGTGACACCGCAAGCCTTATATTAGC")); */
