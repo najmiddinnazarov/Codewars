@@ -10539,3 +10539,16 @@ console.log(disariumNumber(89)); */
   return [frame1.join(" "), frame2.join(" "), frame3.join(" ")].join("\n");
 };
 console.log(decomposeSingleStrand("AGGTGACACCGCAAGCCTTATATTAGC")); */
+
+// #7kyu The Office VI - Sabbatical
+/* function sabb(s, val, happiness) {
+  let count = 0;
+  for (let i = 0; i < s.length; i++) {
+    if ("sabbatical".includes(s[i])) {
+      count++;
+    }
+  }
+  let sum = val + happiness + count;
+  return sum > 22 ? "Sabbatical! Boom!" : "Back to your desk, boy.";
+}
+console.log(sabb("Can I have a sabbatical?", 5, 5)); */
