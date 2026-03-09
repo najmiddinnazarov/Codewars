@@ -10552,3 +10552,12 @@ console.log(decomposeSingleStrand("AGGTGACACCGCAAGCCTTATATTAGC")); */
   return sum > 22 ? "Sabbatical! Boom!" : "Back to your desk, boy.";
 }
 console.log(sabb("Can I have a sabbatical?", 5, 5)); */
+
+// #7kyu Sort an array by value and index
+/* function sortByValueAndIndex(array) {
+  return array
+    .map((value, idx, origin) => [origin[idx], value * (idx + 1)])
+    .sort((a, b) => a[1] - b[1])
+    .map((value) => value[0]);
+}
+console.log(sortByValueAndIndex([23, 2, 3, 4, 5])); */
