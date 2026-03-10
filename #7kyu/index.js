@@ -10561,3 +10561,14 @@ console.log(sabb("Can I have a sabbatical?", 5, 5)); */
     .map((value) => value[0]);
 }
 console.log(sortByValueAndIndex([23, 2, 3, 4, 5])); */
+
+// #7kyu Stalin Sort
+/* function stalinSort(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > array[i + 1]) {
+      array.splice(i + 1, 1);
+      return stalinSort(array);
+    }
+  }
+}
+console.log(stalinSort([1, 2, 2, 3, 1, 4])); */
