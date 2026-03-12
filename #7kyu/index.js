@@ -10587,3 +10587,12 @@ console.log(stalinSort([1, 2, 2, 3, 1, 4])); */
   return [a, b];
 }
 console.log(solve(2, 10)); */
+
+// #7kyu Recurrence by Recursion
+/* function recurrence(base, formula, term) {
+  if (term === 1) {
+    return base;
+  }
+  return recurrence(formula(base), formula, term - 1);
+}
+console.log(recurrence(1, (n) => n + 3, 3)); */
