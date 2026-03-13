@@ -2362,3 +2362,20 @@ console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"])); */
   }
 }
 console.log(goodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0")); */
+
+// #6kyu Mad Max: Recursion Road
+/* function max(array) {
+  if (array.length === 0) {
+    return -Infinity;
+  }
+  if (array[0] >= array[1]) {
+    array.splice(1, 1);
+    return max(array);
+  }
+  if (array[0] < array[1]) {
+    array.splice(0, 1);
+    return max(array);
+  }
+  return array[0];
+}
+console.log(max([5])); */
