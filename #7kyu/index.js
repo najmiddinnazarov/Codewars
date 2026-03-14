@@ -10596,3 +10596,23 @@ console.log(solve(2, 10)); */
   return recurrence(formula(base), formula, term - 1);
 }
 console.log(recurrence(1, (n) => n + 3, 3)); */
+
+// #7kyu Average Array
+/* function avgArray(arr) {
+  let result = [];
+  for (let i = 0; i < arr[0].length; i++) {
+    let sum = 0;
+    for (let k = 0; k < arr.length; k++) {
+      sum += arr[k][i];
+    }
+    result.push(sum / arr.length);
+    sum = 0;
+  }
+  return result;
+}
+console.log(
+  avgArray([
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+  ]),
+); */
