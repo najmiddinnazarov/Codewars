@@ -10616,3 +10616,11 @@ console.log(
     [5, 6, 7, 8],
   ]),
 ); */
+
+// #7kyu Simple Fun #246: Array Center
+/* function arrayCenter(a) {
+  let min = Math.min(...a);
+  let avg = a.reduce((sum, curr) => sum + curr, 0) / a.length;
+  return a.filter((value) => avg - min < value && value < avg + min);
+}
+console.log(arrayCenter([8, 3, 4, 5, 2, 8])); */
