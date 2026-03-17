@@ -10640,3 +10640,17 @@ console.log(
     "01110000 01100001 01110011 01110011 01110111 01101111 01110010 01100100 00110001 00110010 00110011",
   ),
 ); */
+
+// #7kyu The Office III - Broken Photocopier
+/* function broken(x) {
+  let result = "";
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === "1") {
+      result += "0";
+    } else {
+      result += "1";
+    }
+  }
+  return result;
+}
+console.log(broken("10000000101101111110011001000")); */
