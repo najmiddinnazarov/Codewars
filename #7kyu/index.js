@@ -10686,8 +10686,3 @@ console.log(breachAttempts([10, 11, 12], 5, 3)); */
   return result;
 }
 console.log(playerManager("John Doe, 8167238327, Jane Doe, 8163723827")); */
-
-/* 
-expected [ { player: 'John Doe', contact: ' 8167238327' }, { player: ' Jane Doe', contact: ' 8163723827' } ] 
-to equal [ { player: 'John Doe', contact: 8167238327 }, { player: 'Jane Doe', contact: 8163723827 } ]
-*/
