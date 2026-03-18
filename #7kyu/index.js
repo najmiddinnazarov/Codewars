@@ -10668,3 +10668,26 @@ console.log(broken("10000000101101111110011001000")); */
   return hackCount;
 }
 console.log(breachAttempts([10, 11, 12], 5, 3)); */
+
+// #7kyu Player Contact Manager
+/* function playerManager(players) {
+  if (players) {
+    players = players.split(", ");
+  } else {
+    return [];
+  }
+  let result = [];
+  for (let i = 0; i < players.length; i += 2) {
+    result.push({
+      player: players[i],
+      contact: Number(players[i + 1]),
+    });
+  }
+  return result;
+}
+console.log(playerManager("John Doe, 8167238327, Jane Doe, 8163723827")); */
+
+/* 
+expected [ { player: 'John Doe', contact: ' 8167238327' }, { player: ' Jane Doe', contact: ' 8163723827' } ] 
+to equal [ { player: 'John Doe', contact: 8167238327 }, { player: 'Jane Doe', contact: 8163723827 } ]
+*/
