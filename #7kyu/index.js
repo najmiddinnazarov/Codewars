@@ -10654,3 +10654,17 @@ console.log(
   return result;
 }
 console.log(broken("10000000101101111110011001000")); */
+
+// #7kyu Adaptive Security System
+/* function breachAttempts(hackers, securityLevel, increase) {
+  let hackCount = 0;
+  hackers.forEach((value) => {
+    if (value > securityLevel) {
+      hackCount++;
+    } else {
+      securityLevel += increase;
+    }
+  });
+  return hackCount;
+}
+console.log(breachAttempts([10, 11, 12], 5, 3)); */
