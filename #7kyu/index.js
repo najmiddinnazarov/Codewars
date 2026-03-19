@@ -10686,3 +10686,15 @@ console.log(breachAttempts([10, 11, 12], 5, 3)); */
   return result;
 }
 console.log(playerManager("John Doe, 8167238327, Jane Doe, 8163723827")); */
+
+// #7kyu Parts of a list
+/* function partlist(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i + 1]) {
+      result.push([arr.slice(0, i + 1).join(" "), arr.slice(i + 1).join(" ")]);
+    }
+  }
+  return result;
+}
+console.log(partlist(["az", "toto", "picaro", "zone", "kiwi"])); */
