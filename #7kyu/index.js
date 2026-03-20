@@ -10698,3 +10698,13 @@ console.log(playerManager("John Doe, 8167238327, Jane Doe, 8163723827")); */
   return result;
 }
 console.log(partlist(["az", "toto", "picaro", "zone", "kiwi"])); */
+
+// #7kyu Drone Fly-By
+/* function flyBy(lamps, drone) {
+  if (drone.length > lamps.length) {
+    return "o".repeat(lamps.length);
+  }
+  let flyDrone = lamps.length - drone.length;
+  return "o".repeat(drone.length) + "x".repeat(flyDrone);
+}
+console.log(flyBy("xxxxxx", "====T")); */
