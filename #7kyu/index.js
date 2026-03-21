@@ -10708,3 +10708,20 @@ console.log(partlist(["az", "toto", "picaro", "zone", "kiwi"])); */
   return "o".repeat(drone.length) + "x".repeat(flyDrone);
 }
 console.log(flyBy("xxxxxx", "====T")); */
+
+// #7kyu How much coffee do you need?
+/* function howMuchCoffee(events) {
+  let keys = ["cw", "dog", "cat", "movie"];
+  let result = 0;
+  for (let i = 0; i < events.length; i++) {
+    if (keys.includes(events[i].toLowerCase())) {
+      if (events[i].toLowerCase() === events[i]) {
+        result++;
+      } else {
+        result += 2;
+      }
+    }
+  }
+  return result > 3 ? "You need extra sleep" : result;
+}
+console.log(howMuchCoffee(["cw", "CAT", "DOG"])); */
