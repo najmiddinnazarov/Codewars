@@ -10725,3 +10725,13 @@ console.log(flyBy("xxxxxx", "====T")); */
   return result > 3 ? "You need extra sleep" : result;
 }
 console.log(howMuchCoffee(["cw", "CAT", "DOG"])); */
+
+// #7kyu Shortest direction on circle
+/* function shortestDirection(a, b) {
+  const norm = (x) => ((x % 360) + 360) % 360;
+  let d = norm(b) - norm(a);
+  if (d > 180) d -= 360;
+  if (d < -180) d += 360;
+  return d;
+}
+console.log(shortestDirection(180, -450)); */
