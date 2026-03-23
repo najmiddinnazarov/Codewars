@@ -2388,3 +2388,11 @@ console.log(
   return candidateMinSalary <= job.maxSalary;
 }
 console.log(match({}, { maxSalary: 130000 })); */
+
+// #8kyu The Feast of Many Beasts
+/* function feast(beast, dish) {
+  return (
+    dish[0] === beast[0] && dish[dish.length - 1] === beast[beast.length - 1]
+  );
+}
+console.log(feast("great blue heron", "garlic naan")); */
