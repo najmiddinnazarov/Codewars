@@ -10735,3 +10735,14 @@ console.log(howMuchCoffee(["cw", "CAT", "DOG"])); */
   return d;
 }
 console.log(shortestDirection(180, -450)); */
+
+// #7kyu String matchup
+/* function solve(a, b) {
+  let result = [];
+  for (let i = 0; i < b.length; i++) {
+    let count = a.filter((value) => value === b[i]).length;
+    result.push(count);
+  }
+  return result;
+}
+console.log(solve(["abc", "abc", "xyz", "abcd", "cde"], ["abc", "cde", "uap"])); */
