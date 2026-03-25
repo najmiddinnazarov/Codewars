@@ -10746,3 +10746,18 @@ console.log(shortestDirection(180, -450)); */
   return result;
 }
 console.log(solve(["abc", "abc", "xyz", "abcd", "cde"], ["abc", "cde", "uap"])); */
+
+// #7kyu Sum Factorial
+/* function sumFactorial(arr) {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let temp = 1;
+    for (let k = arr[i]; k > 0; k--) {
+      temp *= k;
+    }
+    result += temp;
+    temp = 1;
+  }
+  return result;
+}
+console.log(sumFactorial([4, 6])); */
