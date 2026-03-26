@@ -10761,3 +10761,14 @@ console.log(solve(["abc", "abc", "xyz", "abcd", "cde"], ["abc", "cde", "uap"]));
   return result;
 }
 console.log(sumFactorial([4, 6])); */
+
+// #7kyu Word values
+/* function wordValue(words) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  return words.map(
+    (value, idx) =>
+      [...value].reduce((sum, curr) => sum + alphabet.indexOf(curr), 0) *
+      (idx + 1),
+  );
+}
+console.log(wordValue(["codewars", "abc", "xyz"])); */
