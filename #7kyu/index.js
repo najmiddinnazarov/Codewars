@@ -10772,3 +10772,25 @@ console.log(sumFactorial([4, 6])); */
   );
 }
 console.log(wordValue(["codewars", "abc", "xyz"])); */
+
+// #7kyu Array Info
+/* function arrayInfo(arr) {
+  if (arr.length === 0) {
+    return "Nothing in the array!";
+  }
+  let result = [arr.length, 0, 0, 0, 0];
+  for (let i = 0; i < arr.length; i++) {
+    if (Number.isInteger(arr[i])) {
+      result[1]++;
+    } else if (typeof arr[i] === "number") {
+      result[2]++;
+    } else if (typeof arr[i] === "string" && arr[i] !== " ") {
+      result[3]++;
+    }
+    if (arr[i] === " ") {
+      result[4]++;
+    }
+  }
+  return result.map((value) => [value === 0 ? null : value]);
+}
+console.log(arrayInfo([1, 2, 3.33, 4, 5.01, "bass", "kick", " "])); */
