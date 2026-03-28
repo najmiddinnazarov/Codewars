@@ -10794,3 +10794,21 @@ console.log(wordValue(["codewars", "abc", "xyz"])); */
   return result.map((value) => [value === 0 ? null : value]);
 }
 console.log(arrayInfo([1, 2, 3.33, 4, 5.01, "bass", "kick", " "])); */
+
+// #7kyu Keypad horror
+/* function computerToPhone(numbers) {
+  let computerToPhoneKeyboard = {
+    7: 1,
+    8: 2,
+    9: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    1: 7,
+    2: 8,
+    3: 9,
+    0: 0,
+  };
+  return numbers.replace(/[0-9]/g, (num) => computerToPhoneKeyboard[num]);
+}
+console.log(computerToPhone("0789456123")); */
