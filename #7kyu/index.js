@@ -10812,3 +10812,18 @@ console.log(arrayInfo([1, 2, 3.33, 4, 5.01, "bass", "kick", " "])); */
   return numbers.replace(/[0-9]/g, (num) => computerToPhoneKeyboard[num]);
 }
 console.log(computerToPhone("0789456123")); */
+
+// #7kyu Unflatten a list (Easy)
+/* function unflatten(flatArray) {
+  let result = [];
+  for (let i = 0; i < flatArray.length; i++) {
+    if (flatArray[i] < 3) {
+      result.push(flatArray[i]);
+    } else {
+      result.push(flatArray.slice(i, i + flatArray[i]));
+      i += flatArray[i] - 1;
+    }
+  }
+  return result;
+}
+console.log(unflatten([1, 4, 5, 2, 1, 2, 4, 5, 2, 6, 2, 3, 3])); */
