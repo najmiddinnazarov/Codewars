@@ -10827,3 +10827,9 @@ console.log(computerToPhone("0789456123")); */
   return result;
 }
 console.log(unflatten([1, 4, 5, 2, 1, 2, 4, 5, 2, 6, 2, 3, 3])); */
+
+// #7kyu Determine if the poker hand is flush
+/* function isFlush(cards) {
+  return cards.every((card) => card.slice(-1) === cards[0].slice(-1));
+}
+console.log(isFlush(["AS", "3S", "9S", "KS", "4S"])); */
