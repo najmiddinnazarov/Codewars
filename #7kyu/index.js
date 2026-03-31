@@ -10833,3 +10833,25 @@ console.log(unflatten([1, 4, 5, 2, 1, 2, 4, 5, 2, 6, 2, 3, 3])); */
   return cards.every((card) => card.slice(-1) === cards[0].slice(-1));
 }
 console.log(isFlush(["AS", "3S", "9S", "KS", "4S"])); */
+
+// #7kyu Which string is worth more?
+/* function highestValue(a, b) {
+  let convertArrayA = [...a];
+  let convertArrayB = [...b];
+  let firstAsciiCode = convertArrayA
+    .map((value) => value.charCodeAt(0))
+    .reduce((sum, curr) => sum + curr, 0);
+  let secondAsciiCode = convertArrayB
+    .map((value) => value.charCodeAt(0))
+    .reduce((sum, curr) => sum + curr, 0);
+
+  if (firstAsciiCode === secondAsciiCode) {
+    return a;
+  }
+  if (firstAsciiCode > secondAsciiCode) {
+    return a;
+  } else {
+    return b;
+  }
+}
+console.log(highestValue("AaBbCcXxYyZz0189", "KkLlMmNnOoPp4567")); */
