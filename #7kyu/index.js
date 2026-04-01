@@ -10855,3 +10855,13 @@ console.log(isFlush(["AS", "3S", "9S", "KS", "4S"])); */
   }
 }
 console.log(highestValue("AaBbCcXxYyZz0189", "KkLlMmNnOoPp4567")); */
+
+// #7kyu Describe the shape
+/* function describeTheShape(angles) {
+  if (angles <= 2) {
+    return "this will be a line segment or a dot";
+  }
+  let a = Math.floor(((angles - 2) * 180) / angles);
+  return `This shape has ${angles} sides and each angle measures ${a}`;
+}
+console.log(describeTheShape(4)); */
