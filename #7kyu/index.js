@@ -10865,3 +10865,9 @@ console.log(highestValue("AaBbCcXxYyZz0189", "KkLlMmNnOoPp4567")); */
   return `This shape has ${angles} sides and each angle measures ${a}`;
 }
 console.log(describeTheShape(4)); */
+
+// #7kyu Counting in the Amazon
+/* function countArara(n) {
+  return ("adak ".repeat(Math.floor(n / 2)) + "anane".repeat(n % 2)).trim();
+}
+console.log(countArara(3)); */
