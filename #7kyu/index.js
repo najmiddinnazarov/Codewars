@@ -10871,3 +10871,19 @@ console.log(describeTheShape(4)); */
   return ("adak ".repeat(Math.floor(n / 2)) + "anane".repeat(n % 2)).trim();
 }
 console.log(countArara(3)); */
+
+// #7kyu Consecutive Vowels in a String
+/* function getTheVowels(word) {
+  let count = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+  let counter = 0;
+  for (let i = 0; i < word.length; i++) {
+    let currentVowel = vowels[counter];
+    if (word[i] === currentVowel) {
+      count++;
+      vowels[counter + 1] === undefined ? (counter = 0) : (counter += 1);
+    }
+  }
+  return count;
+}
+console.log(getTheVowels("erfaiekjudhyfimngukduo")); */
