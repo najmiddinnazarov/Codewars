@@ -10887,3 +10887,25 @@ console.log(countArara(3)); */
   return count;
 }
 console.log(getTheVowels("erfaiekjudhyfimngukduo")); */
+
+// #7kyu Witcher's Contract: The Bestiary
+/* function identifyMonster(observedWeaknesses, bestiary) {
+  for (const key in bestiary) {
+    let check = observedWeaknesses.every((value) =>
+      bestiary[key].includes(value),
+    );
+    if (check) {
+      return key;
+    }
+  }
+  return "Unknown monster";
+}
+console.log(
+  identifyMonster(["Igni", "Relict Oil"], {
+    Griffin: ["Grapeshot", "Hybrid Oil", "Aard"],
+    Noonwraith: ["Yrden", "Moon Dust", "Specter Oil"],
+    Drowner: ["Igni", "Necrophage Oil"],
+    Leshen: ["Igni", "Relict Oil", "Dimeritium Bomb"],
+    Fiend: ["Samum", "Devil's Puffball", "Relict Oil"],
+  }),
+); */
