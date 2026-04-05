@@ -10909,3 +10909,20 @@ console.log(
     Fiend: ["Samum", "Devil's Puffball", "Relict Oil"],
   }),
 ); */
+
+// #7kyu Numbers with this digit inside
+/* function numbersWithDigitInside(x, d) {
+  let numbers = [0, 0, 1];
+  let boolean = false;
+  for (let i = 1; i <= x; i++) {
+    i = i.toString();
+    if (i.includes(d)) numbers[0]++;
+    if (i.includes(d)) numbers[1] += Number(i);
+    if (i.includes(d)) {
+      numbers[2] *= i;
+      boolean = true;
+    }
+  }
+  return numbers[2] === 1 && !boolean ? [...numbers.slice(0, 2), 0] : numbers;
+}
+console.log(numbersWithDigitInside(11, 1)); */
