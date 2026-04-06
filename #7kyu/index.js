@@ -10926,3 +10926,66 @@ console.log(
   return numbers[2] === 1 && !boolean ? [...numbers.slice(0, 2), 0] : numbers;
 }
 console.log(numbersWithDigitInside(11, 1)); */
+
+// #7kyu I guess this is a 7kyu kata #6: Fruit Ninja I
+/* function cutFruits(fruits) {
+  const fruitsName = [
+    "apple",
+    "pear",
+    "banana",
+    "orange",
+    "mango",
+    "pineapple",
+    "strawberry",
+    "cherry",
+    "peach",
+    "apricot",
+    "watermelon",
+    "melon",
+    "kiwi",
+    "lemon",
+    "lime",
+    "plum",
+    "coconut",
+    "durian",
+    "pitaya",
+    "jujube",
+    "hawthorn",
+    "litchi",
+    "ginkgo",
+    "carambola",
+    "grape",
+    "cantaloupe",
+    "tomato",
+    "pomegranate",
+    "fig",
+    "blueberry",
+    "mangosteen",
+    "persimmon",
+  ];
+  let result = [];
+  for (let i = 0; i < fruits.length; i++) {
+    if (!fruitsName.includes(fruits[i])) {
+      result.push(fruits[i]);
+    } else {
+      result.push(
+        fruits[i].slice(0, Math.ceil(fruits[i].length / 2)),
+        fruits[i].slice(Math.ceil(fruits[i].length / 2)),
+      );
+    }
+  }
+  return result;
+}
+console.log(
+  cutFruits([
+    "litchi",
+    "blueberry",
+    "litchi",
+    "peach",
+    "pitaya",
+    "rtnv",
+    "apricot",
+    "cherry",
+    "pear",
+  ]),
+); */
