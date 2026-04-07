@@ -10989,3 +10989,11 @@ console.log(
     "pear",
   ]),
 ); */
+
+// #7kyu Working with arrays II (and why your code fails in some katas)
+/* function removeNthElement(arr, n) {
+  var arrCopy = [...arr];
+  arrCopy.splice(n, 1);
+  return arrCopy;
+}
+console.log(removeNthElement([2, 3, 4, 5], 1)); */
