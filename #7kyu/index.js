@@ -10997,3 +10997,18 @@ console.log(
   return arrCopy;
 }
 console.log(removeNthElement([2, 3, 4, 5], 1)); */
+
+// #7kyu I guess this is a 7kyu kata #1: Search result
+/* function finalResult(keywords, searchResult) {
+  let result = [];
+  for (let i = 0; i < searchResult.length; i++) {
+    let check = [...keywords].every((letter) =>
+      searchResult[i].includes(letter),
+    );
+    if (check) {
+      result.push(searchResult[i]);
+    }
+  }
+  return result;
+}
+console.log(finalResult("abc", ["ab", "abc", "abcd", "bcd"])); */
