@@ -11012,3 +11012,19 @@ console.log(removeNthElement([2, 3, 4, 5], 1)); */
   return result;
 }
 console.log(finalResult("abc", ["ab", "abc", "abcd", "bcd"])); */
+
+// #7kyu Number climber
+/* function climb(n) {
+  let result = [n];
+  while (n > 1) {
+    if (n % 2 === 0) {
+      result.unshift(n / 2);
+      n = n / 2;
+    } else {
+      result.unshift((n - 1) / 2);
+      n = (n - 1) / 2;
+    }
+  }
+  return result;
+}
+console.log(climb(13)); */
