@@ -11028,3 +11028,18 @@ console.log(finalResult("abc", ["ab", "abc", "abcd", "bcd"])); */
   return result;
 }
 console.log(climb(13)); */
+
+// #7kyu Find Factors Down to Limit
+/* function factors(integer, limit) {
+  let result = [];
+  if (limit > integer) {
+    return [];
+  }
+  for (let i = limit; i <= integer; i++) {
+    if (integer % i === 0) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+console.log(factors(30, 2)); */
