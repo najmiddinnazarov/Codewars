@@ -11043,3 +11043,9 @@ console.log(climb(13)); */
   return result;
 }
 console.log(factors(30, 2)); */
+
+// #7kyu Boiled Eggs
+/* function cookingTime(eggs) {
+  return Math.ceil(eggs / 8) * 5;
+}
+console.log(cookingTime(10)); */
