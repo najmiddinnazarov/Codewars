@@ -11049,3 +11049,9 @@ console.log(factors(30, 2)); */
   return Math.ceil(eggs / 8) * 5;
 }
 console.log(cookingTime(10)); */
+
+// #7kyu Count all the sheep on farm in the heights of New Zealand
+/* function lostSheep(friday, saturday, total) {
+  return total - [...friday, ...saturday].reduce((sum, curr) => sum + curr, 0);
+}
+console.log(lostSheep([1, 2], [3, 4], 15)); */
