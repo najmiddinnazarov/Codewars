@@ -11055,3 +11055,18 @@ console.log(cookingTime(10)); */
   return total - [...friday, ...saturday].reduce((sum, curr) => sum + curr, 0);
 }
 console.log(lostSheep([1, 2], [3, 4], 15)); */
+
+// #7kyu Lazily executing a function
+/* function makeLazy(...args) {
+  return function () {
+    return args[0](...args.slice(1));
+  };
+}
+const result = makeLazy(
+  function add(a, b) {
+    return a + b;
+  },
+  5,
+  10,
+);
+console.log(result()); */
