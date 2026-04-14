@@ -11070,3 +11070,18 @@ const result = makeLazy(
   10,
 );
 console.log(result()); */
+
+// #7kyu sum2total
+/* function total(arr) {
+  let newArr = [];
+  if (arr.length === 1) {
+    return arr[0];
+  }
+  for (let i = 0; i < arr.length - 1; i++) {
+    newArr.push(arr[i] + arr[i + 1]);
+  }
+  arr = newArr;
+  return total(arr);
+}
+console.log(total([1, 2, 3, 4, 5])); */
+
