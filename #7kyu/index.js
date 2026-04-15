@@ -11085,3 +11085,8 @@ console.log(result()); */
 }
 console.log(total([1, 2, 3, 4, 5])); */
 
+// #7kyu COFFEE!
+/* function coffee(str) {
+  return str.replace(/\bcoffee\b/gi, (x) => x.toUpperCase());
+}
+console.log(coffee("coffee coffee coFFEE!")); */
