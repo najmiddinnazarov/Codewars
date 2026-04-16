@@ -11090,3 +11090,26 @@ console.log(total([1, 2, 3, 4, 5])); */
   return str.replace(/\bcoffee\b/gi, (x) => x.toUpperCase());
 }
 console.log(coffee("coffee coffee coFFEE!")); */
+
+// #7kyu Compress sentences
+/* function compress(sentence) {
+  sentence = sentence.toLowerCase().split(" ");
+  let collect = [];
+  let result = "";
+  let idx = 0;
+  for (let i = 0; i < sentence.length; i++) {
+    if (collect.includes(sentence[i])) {
+      result += collect.indexOf(sentence[i]);
+    } else {
+      collect.push(sentence[i]);
+      result += idx;
+      idx++;
+    }
+  }
+  return result;
+}
+console.log(
+  compress(
+    "The number 0 is such a strange number Strangely it has zero meaning",
+  ),
+); */
