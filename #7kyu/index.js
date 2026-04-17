@@ -11113,3 +11113,22 @@ console.log(
     "The number 0 is such a strange number Strangely it has zero meaning",
   ),
 ); */
+
+// #7kyu Page replacement algorithms: FIFO
+/* function fifo(n, referenceList) {
+  let result = [];
+  let idx = 0;
+  for (let i = 0; i < referenceList.length; i++) {
+    if (result.length !== n && !result.includes(referenceList[i])) {
+      result.push(referenceList[i]);
+    }
+    if (result.length === n && !result.includes(referenceList[i])) {
+      result[idx] = referenceList[i];
+      idx = (idx + 1) % n;
+    }
+  }
+  return result.length !== n
+    ? [...result, ...new Array(n - result.length).fill(-1)]
+    : result;
+}
+console.log(fifo(5, [])); */
