@@ -11132,3 +11132,29 @@ console.log(
     : result;
 }
 console.log(fifo(5, [])); */
+
+// #7kyu London CityHacker
+/* function londonCityHacker(journey) {
+  let sum = 0;
+  let busCount = 0;
+  for (let i = 0; i < journey.length; i++) {
+    if (typeof journey[i] === "number") {
+      busCount++;
+      if (busCount === 2) {
+        sum += 1.5;
+        busCount = 0;
+      }
+    } else {
+      sum += 2.4;
+      if (busCount === 1) {
+        sum += 1.5;
+        busCount = 0;
+      }
+    }
+  }
+  if (busCount === 1) {
+    sum += 1.5;
+  }
+  return `£${sum.toFixed(2)}`;
+}
+console.log(londonCityHacker([12, 21, 32, "Central", "Circle", 21])); */
