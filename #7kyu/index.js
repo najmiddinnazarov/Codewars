@@ -11158,3 +11158,11 @@ console.log(fifo(5, [])); */
   return `£${sum.toFixed(2)}`;
 }
 console.log(londonCityHacker([12, 21, 32, "Central", "Circle", 21])); */
+
+// #7kyu Special Number (Special Numbers Series #5)
+/* function specialNumber(n) {
+  n = n.toString().split("");
+  const check = n.every((number) => 5 >= number);
+  return check ? "Special!!" : "NOT!!";
+}
+console.log(specialNumber(25432)); */
