@@ -11166,3 +11166,20 @@ console.log(londonCityHacker([12, 21, 32, "Central", "Circle", 21])); */
   return check ? "Special!!" : "NOT!!";
 }
 console.log(specialNumber(25432)); */
+
+// #7kyu Perfect squares, perfect fun
+/* function squareIt(int) {
+  int = int.toString();
+  let sqrt = Math.sqrt(int.length);
+  let result = "";
+  if (Number.isInteger(sqrt)) {
+    for (let i = 0; i < int.length; i += sqrt) {
+      result += int.slice(i, i + sqrt);
+      result += "\n";
+    }
+  } else {
+    return "Not a perfect square!";
+  }
+  return result.trim();
+}
+console.log(squareIt(112141568)); */
