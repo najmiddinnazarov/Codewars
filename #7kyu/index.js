@@ -11183,3 +11183,14 @@ console.log(specialNumber(25432)); */
   return result.trim();
 }
 console.log(squareIt(112141568)); */
+
+// #7kyu Help Suzuki complete his chores!
+/* function choreAssignment(chores) {
+  chores.sort((a, b) => a - b);
+  let result = [];
+  for (let i = 0; i < chores.length / 2; i++) {
+    result.push(chores[i] + chores[chores.length - (i + 1)]);
+  }
+  return result.sort((a, b) => a - b);
+}
+console.log(choreAssignment([1, 5, 2, 8, 4, 9, 6, 4, 2, 2, 2, 9])); */
