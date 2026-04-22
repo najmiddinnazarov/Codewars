@@ -11194,3 +11194,20 @@ console.log(squareIt(112141568)); */
   return result.sort((a, b) => a - b);
 }
 console.log(choreAssignment([1, 5, 2, 8, 4, 9, 6, 4, 2, 2, 2, 9])); */
+
+// #7kyu You're not my type
+/* Object.defineProperty(Array.prototype, "ofType", {
+  value: function (type) {
+    return this.filter((item) => {
+      if (type === Number) return typeof item === "number";
+      if (type === String) return typeof item === "string";
+      if (type === Boolean) return typeof item === "boolean";
+      return item instanceof type;
+    });
+  },
+});
+function func(x) {
+  return x;
+}
+var arr = [{ a: "a" }, /a-z/, [1, 2, 3], func];
+console.log(arr.ofType(Object)); */
