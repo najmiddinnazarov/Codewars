@@ -11211,3 +11211,15 @@ function func(x) {
 }
 var arr = [{ a: "a" }, /a-z/, [1, 2, 3], func];
 console.log(arr.ofType(Object)); */
+
+// #7kyu EAN Validation
+/* function validateEAN(eanCode) {
+  let lastNumber = +eanCode.slice(-1);
+  let array = eanCode.slice(0, -1).split("");
+  let sum = array.reduce((sum, curr, idx) => {
+    return (idx + 1) % 2 === 0 ? sum + curr * 3 : sum + curr * 1;
+  }, 0);
+  let checksum = sum % 10 === 0 ? 0 : 10 - (sum % 10);
+  return checksum === lastNumber;
+}
+console.log(validateEAN("400330101839")); */
