@@ -11223,3 +11223,16 @@ console.log(arr.ofType(Object)); */
   return checksum === lastNumber;
 }
 console.log(validateEAN("400330101839")); */
+
+// #7kyu Upstream/Downstream
+/* function time(distance, boatSpeed, stream) {
+  let effectiveSpeed;
+  stream = stream.split(" ");
+  if (stream[0] === "Downstream") {
+    effectiveSpeed = boatSpeed + +stream[1];
+  } else {
+    effectiveSpeed = boatSpeed - stream[1];
+  }
+  return +(distance / effectiveSpeed).toFixed(2);
+}
+console.log(time(54, 28, "Downstream 3")); */
