@@ -2396,3 +2396,9 @@ console.log(match({}, { maxSalary: 130000 })); */
   );
 }
 console.log(feast("great blue heron", "garlic naan")); */
+
+// #8kyu Sort My Textbooks
+/* function sorter(textbooks) {
+  return textbooks.sort((a, b) => (a.toLowerCase() > b.toLowerCase() ? 1 : -1));
+}
+console.log(sorter(["Algebra", "History", "Geometry", "English"])); */
