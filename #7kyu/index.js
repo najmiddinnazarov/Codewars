@@ -11236,3 +11236,18 @@ console.log(validateEAN("400330101839")); */
   return +(distance / effectiveSpeed).toFixed(2);
 }
 console.log(time(54, 28, "Downstream 3")); */
+
+// #7kyu Jumping Number (Special Numbers Series #4)
+/* function jumpingNumber(n) {
+  n = n.toString().split("");
+  if (n.length === 1) return "Jumping!!";
+  for (let i = 0; i < n.length; i++) {
+    if (n[i + 1]) {
+      if (Math.abs(n[i] - n[i + 1]) !== 1) {
+        return "Not!!";
+      }
+    }
+  }
+  return "Jumping!!";
+}
+console.log(jumpingNumber(23)); */
