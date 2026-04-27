@@ -11251,3 +11251,12 @@ console.log(time(54, 28, "Downstream 3")); */
   return "Jumping!!";
 }
 console.log(jumpingNumber(23)); */
+
+// #7kyu Frugal Pizza
+/* function pizzaPrice(diameter, price) {
+  if (typeof diameter !== "number" || typeof price !== "number") return 0;
+  let r = diameter / 2;
+  let area = Math.PI * Math.pow(r, 2);
+  return Number((price / area).toFixed(2));
+}
+console.log(pizzaPrice(12, 7.9)); */
