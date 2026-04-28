@@ -2402,3 +2402,9 @@ console.log(feast("great blue heron", "garlic naan")); */
   return textbooks.sort((a, b) => (a.toLowerCase() > b.toLowerCase() ? 1 : -1));
 }
 console.log(sorter(["Algebra", "History", "Geometry", "English"])); */
+
+// #8kyu NBA full 48 minutes average
+/* function pointsPer48(ppg, mpg) {
+  return Number(((ppg / mpg) * 48).toFixed(1)) || 0;
+}
+console.log(pointsPer48(12, 20)); */
