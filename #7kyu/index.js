@@ -11260,3 +11260,18 @@ console.log(jumpingNumber(23)); */
   return Number((price / area).toFixed(2));
 }
 console.log(pizzaPrice(12, 7.9)); */
+
+// #7kyu Folding your way to the moon
+/* function foldTo(distance) {
+  if (distance < 0) {
+    return null;
+  }
+  let count = 0;
+  let start = 0.0001;
+  while (start < distance) {
+    count++;
+    start *= 2;
+  }
+  return count;
+}
+console.log(foldTo(384000000)); */
