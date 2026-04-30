@@ -11275,3 +11275,31 @@ console.log(pizzaPrice(12, 7.9)); */
   return count;
 }
 console.log(foldTo(384000000)); */
+
+// #7kyu Compare Strings by Sum of Chars
+/* function compare(s1, s2) {
+  if (!s1) s1 = "";
+  if (!s2) s2 = "";
+  s1 = s1.toUpperCase();
+  s2 = s2.toUpperCase();
+  let sum1 = 0;
+  let sum2 = 0;
+  for (let i = 0; i < s1.length; i++) {
+    let ch = s1[i];
+    if (ch < "A" || ch > "Z") {
+      sum1 = 0;
+      break;
+    }
+    sum1 += ch.charCodeAt(0);
+  }
+  for (let i = 0; i < s2.length; i++) {
+    let ch = s2[i];
+    if (ch < "A" || ch > "Z") {
+      sum2 = 0;
+      break;
+    }
+    sum2 += ch.charCodeAt(0);
+  }
+  return sum1 === sum2;
+}
+console.log(compare("!!", "7476")); */
