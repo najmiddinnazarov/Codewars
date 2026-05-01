@@ -2408,3 +2408,13 @@ console.log(sorter(["Algebra", "History", "Geometry", "English"])); */
   return Number(((ppg / mpg) * 48).toFixed(1)) || 0;
 }
 console.log(pointsPer48(12, 20)); */
+
+// #8kyu Coding 3min : Jumping Dutch act
+/* function sc(floor) {
+  if (floor <= 1) {
+    return "";
+  } else if (floor <= 6) {
+    return "Aa~ ".repeat(floor - 1) + "Pa! " + "Aa!";
+  } else return "Aa~ ".repeat(floor - 1) + "Pa!";
+}
+console.log(sc(2)); */
