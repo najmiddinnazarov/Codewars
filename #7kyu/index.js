@@ -11284,7 +11284,6 @@ console.log(foldTo(384000000)); */
   s2 = s2.toUpperCase();
   let sum1 = 0;
   let sum2 = 0;
-  
   for (let i = 0; i < s1.length; i++) {
     let ch = s1[i];
     if (ch < "A" || ch > "Z") {
