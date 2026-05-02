@@ -11284,6 +11284,7 @@ console.log(foldTo(384000000)); */
   s2 = s2.toUpperCase();
   let sum1 = 0;
   let sum2 = 0;
+  
   for (let i = 0; i < s1.length; i++) {
     let ch = s1[i];
     if (ch < "A" || ch > "Z") {
@@ -11303,3 +11304,15 @@ console.log(foldTo(384000000)); */
   return sum1 === sum2;
 }
 console.log(compare("!!", "7476")); */
+
+// #7kyu Deodorant Evaporator
+/* function evaporator(content, evapPerDay, threshold) {
+  let count = 0;
+  let limit = content * (threshold / 100);
+  while (content > limit) {
+    content -= (evapPerDay / 100) * content;
+    count++;
+  }
+  return count;
+}
+console.log(evaporator(10, 10, 5)); */
