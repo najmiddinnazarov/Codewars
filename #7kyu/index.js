@@ -11315,3 +11315,16 @@ console.log(compare("!!", "7476")); */
   return count;
 }
 console.log(evaporator(10, 10, 5)); */
+
+// #7kyu Digital cypher vol 2
+/* function decode(code, n) {
+  n = n.toString();
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let keys = n.repeat(code.length).slice(0, code.length);
+  let result = "";
+  for (let i = 0; i < code.length; i++) {
+    result += alphabet[code[i] - keys[i]];
+  }
+  return result;
+}
+console.log(decode([20, 12, 18, 30, 21], 1939)); */
