@@ -11328,3 +11328,17 @@ console.log(evaporator(10, 10, 5)); */
   return result;
 }
 console.log(decode([20, 12, 18, 30, 21], 1939)); */
+
+// #7kyu Mean vs. Median
+/* function meanVsMedian(numbers) {
+  let average = numbers.reduce((sum, curr) => sum + curr, 0) / numbers.length;
+  let median = numbers.sort((a, b) => a - b)[Math.floor(numbers.length / 2)];
+  if (average === median) {
+    return "same";
+  } else if (average > median) {
+    return "mean";
+  } else if (average < median) {
+    return "median";
+  }
+}
+console.log(meanVsMedian([1, 2, 37])); */
