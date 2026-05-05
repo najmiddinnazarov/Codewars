@@ -11342,3 +11342,33 @@ console.log(decode([20, 12, 18, 30, 21], 1939)); */
   }
 }
 console.log(meanVsMedian([1, 2, 37])); */
+
+// #7kyu How many points did the teams from Los Angeles score?
+/* function getLosAngelesPoints(results) {
+  return results.reduce((sum, [team, score]) => {
+    const isValid = /^Los Angeles [A-Z][a-z]+$/.test(team);
+    if (isValid) {
+      return sum + Number(score.split(":")[0]);
+    }
+    return sum;
+  }, 0);
+}
+console.log(
+  getLosAngelesPoints([
+    ["los angeles", "67:639"],
+    ["Los Angeles 9nines", "45:171"],
+    ["Los Angeles", "740:587"],
+    ["Utah Jazz", "952:152"],
+    ["Sacramento Kings", "206:334"],
+    ["San Antonio Spurs", "382:700"],
+    ["Phoenix Suns", "169:86"],
+    ["Denver Nuggets", "475:989"],
+    ["Dallas Mavericks", "610:262"],
+    ["Los Angeles Lakers", "564:802"],
+    ["Houston Rockets", "241:440"],
+    ["Los Angeles Clippers", "270:59"],
+    ["New Orleans Pelicans", "203:325"],
+    ["Oklahoma City Thunder", "329:277"],
+    ["Golden State Warriors", "54:312"],
+  ]),
+); */
