@@ -11372,3 +11372,26 @@ console.log(
     ["Golden State Warriors", "54:312"],
   ]),
 ); */
+
+// #7kyu Competitive eating scoreboard
+/* function scoreboard(whoAteWhat) {
+  return whoAteWhat
+    .map((value) => ({
+      name: value.name,
+      score: value.chickenwings * 5 + value.hamburgers * 3 + value.hotdogs * 2,
+    }))
+    .sort((a, b) => {
+      if (b.score === a.score) {
+        return a.name.localeCompare(b.name);
+      }
+      return b.score - a.score;
+    });
+}
+console.log(
+  scoreboard([
+    { name: "Billy The Beast", chickenwings: 17, hamburgers: 7, hotdogs: 8 },
+    { name: "Habanero Hillary", chickenwings: 5, hamburgers: 17, hotdogs: 11 },
+    { name: "Joey Jaws", chickenwings: 8, hamburgers: 8, hotdogs: 15 },
+    { name: "Big Bob", chickenwings: 20, hamburgers: 4, hotdogs: 11 },
+  ]),
+); */
