@@ -11395,3 +11395,19 @@ console.log(
     { name: "Big Bob", chickenwings: 20, hamburgers: 4, hotdogs: 11 },
   ]),
 ); */
+
+// #7kyu Rotate for a Max
+/* function maxRot(n) {
+  n = n.toString();
+  let numbers = [+n];
+  for (let i = 0; i < n.length - 1; i++) {
+    let temp = "";
+    temp += n.slice(0, i);
+    temp += n.slice(i + 1);
+    temp += n.slice(i, i + 1);
+    numbers.push(+temp);
+    n = temp;
+  }
+  return Math.max(...numbers);
+}
+console.log(maxRot(507992495)); */
