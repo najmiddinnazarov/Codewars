@@ -11411,3 +11411,27 @@ console.log(
   return Math.max(...numbers);
 }
 console.log(maxRot(507992495)); */
+
+// #7kyu Apparently-Modifying Strings
+/* function apparently(string) {
+  string = string.split(" ");
+  let result = [];
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "but" || string[i] === "and") {
+      if (string[i + 1] === "apparently") {
+        result.push(string[i]);
+      } else {
+        result.push(string[i]);
+        result.push("apparently");
+      }
+    } else {
+      result.push(string[i]);
+    }
+  }
+  return result.join(" ");
+}
+console.log(
+  apparently(
+    "It was great and I have never been on live television before but sometimes I dont watch this.",
+  ),
+); */
