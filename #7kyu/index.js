@@ -11435,3 +11435,13 @@ console.log(
     "It was great and I have never been on live television before but sometimes I dont watch this.",
   ),
 ); */
+
+// #7kyu Money Match: Double or Nothing
+/* function doubleOrNothing(cash, wager, losses) {
+  let loss = wager * 2 ** (losses - 1);
+  if (loss > cash) {
+    return "I'll pay you back later";
+  }
+  return cash - loss;
+}
+console.log(doubleOrNothing(12, 2, 3)); */
