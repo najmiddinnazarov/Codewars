@@ -11445,3 +11445,22 @@ console.log(
   return cash - loss;
 }
 console.log(doubleOrNothing(12, 2, 3)); */
+
+// #7kyu Closing in Sum
+/* function closingInSum(n) {
+  n = n.toString();
+  let a = n.slice(0, Math.floor(n.length / 2));
+  let b = n
+    .slice(Math.ceil(n.length / 2))
+    .split("")
+    .reverse();
+  let sum = 0;
+  for (let i = 0; i < a.length; i++) {
+    sum += +(a[i] + b[i]);
+  }
+  if (n.length % 2 !== 0) {
+    sum += +n[Math.floor(n.length / 2)];
+  }
+  return sum;
+}
+console.log(closingInSum(121)); */
