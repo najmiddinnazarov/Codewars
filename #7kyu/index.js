@@ -11464,3 +11464,18 @@ console.log(doubleOrNothing(12, 2, 3)); */
   return sum;
 }
 console.log(closingInSum(121)); */
+
+// #7kyu SpeedCode #1 - Getters and Setters in Object Literals
+/* const person = {
+  firstName: "Jane",
+  lastName: "Doe",
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  set fullName(val) {
+    const parts = val.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
+};
+console.log(person.fullName); */
