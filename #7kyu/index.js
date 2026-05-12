@@ -11479,3 +11479,25 @@ console.log(closingInSum(121)); */
   },
 };
 console.log(person.fullName); */
+
+// #7kyu Simple Fun #320: Scratch lottery I
+/* function scratch(lottery) {
+  let sum = 0;
+  for (let i = 0; i < lottery.length; i++) {
+    let k = lottery[i].split(" ");
+    if (k[0] === k[1] && k[0] === k[2]) {
+      sum += +k[3];
+    }
+  }
+  return sum;
+}
+console.log(
+  scratch([
+    "rabbit rabbit horse 10000",
+    "tiger pig ox 5",
+    "cock cock cock 10000",
+    "monkey horse dog 50",
+    "monkey monkey monkey 50",
+    "rat dog sheep 5000",
+  ]),
+); */
