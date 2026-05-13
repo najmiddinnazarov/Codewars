@@ -11501,3 +11501,26 @@ console.log(
     "rat dog sheep 5000",
   ]),
 ); */
+
+// #7kyu Find the Middle of the Product
+/* function findMiddle(str) {
+  if (typeof str !== "string") return -1;
+  let product = 1;
+  let hasDigit = false;
+  for (let ch of str) {
+    if (/\d/.test(ch)) {
+      product *= Number(ch);
+      hasDigit = true;
+    }
+  }
+  if (!hasDigit) return -1;
+  product = String(product);
+  let mid;
+  if (product.length % 2 === 0) {
+    mid = product.slice(product.length / 2 - 1, product.length / 2 + 1);
+  } else {
+    mid = product[Math.floor(product.length / 2)];
+  }
+  return Number(mid);
+}
+console.log(findMiddle([1, 2, 3, 4, 5, 6])); */
