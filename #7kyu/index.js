@@ -11524,3 +11524,26 @@ console.log(
   return Number(mid);
 }
 console.log(findMiddle([1, 2, 3, 4, 5, 6])); */
+
+// #7kyu Sum and Length
+/* function sumLength(array) {
+  let sum = 0;
+  let negatives = 0;
+  let zeroCount = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      sum += array[i];
+    } else if (array[i] < 0) {
+      negatives++;
+    } else {
+      zeroCount++;
+      if (zeroCount % 2 === 1) {
+        negatives++;
+      } else {
+        sum += 0;
+      }
+    }
+  }
+  return `${sum} ${negatives}`;
+}
+console.log(sumLength([-1, 2, 3, 4, 0, 1, 0, -2, 0, -3])); */
