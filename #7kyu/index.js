@@ -11547,3 +11547,13 @@ console.log(findMiddle([1, 2, 3, 4, 5, 6])); */
   return `${sum} ${negatives}`;
 }
 console.log(sumLength([-1, 2, 3, 4, 0, 1, 0, -2, 0, -3])); */
+
+// #7kyu Eliminate the intruders! Bit manipulation
+/* function eliminateUnsetBits(number) {
+  let newBinary = "";
+  for (let i = 0; i < number.length; i++) {
+    if (Number(number[i])) newBinary += number[i];
+  }
+  return newBinary.length ? parseInt(newBinary, 2) : 0;
+}
+console.log(eliminateUnsetBits("000")); */
