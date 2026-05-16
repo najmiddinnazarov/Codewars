@@ -11557,3 +11557,10 @@ console.log(sumLength([-1, 2, 3, 4, 0, 1, 0, -2, 0, -3])); */
   return newBinary.length ? parseInt(newBinary, 2) : 0;
 }
 console.log(eliminateUnsetBits("000")); */
+
+// #7kyu Geometric sequence - sum of all elements
+/* function GeometricSequenceSum(a, r, n) {
+  if (r === 1) return a * n;
+  return (a * (1 - r ** n)) / (1 - r);
+}
+console.log(GeometricSequenceSum(2, 3, 5)); */
