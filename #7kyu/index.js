@@ -11564,3 +11564,18 @@ console.log(eliminateUnsetBits("000")); */
   return (a * (1 - r ** n)) / (1 - r);
 }
 console.log(GeometricSequenceSum(2, 3, 5)); */
+
+// #7kyu Tram Capacity
+/* function tram(stops, descending, onboarding) {
+  let current = 0;
+  let max = 0;
+  for (let i = 0; i < stops; i++) {
+    current -= descending[i];
+    current += onboarding[i];
+    if (current > max) {
+      max = current;
+    }
+  }
+  return max;
+}
+console.log(tram(4, [0, 2, 4, 4], [3, 5, 2, 0])); */
