@@ -11579,3 +11579,10 @@ console.log(GeometricSequenceSum(2, 3, 5)); */
   return max;
 }
 console.log(tram(4, [0, 2, 4, 4], [3, 5, 2, 0])); */
+
+// #7kyu Heron's formula
+/* function heron(a, b, c) {
+  let s = (a + b + c) / 2;
+  return Math.sqrt(s * ((s - a) * (s - b) * (s - c)));
+}
+console.log(heron(3, 4, 5)); */
