@@ -11586,3 +11586,21 @@ console.log(tram(4, [0, 2, 4, 4], [3, 5, 2, 0])); */
   return Math.sqrt(s * ((s - a) * (s - b) * (s - c)));
 }
 console.log(heron(3, 4, 5)); */
+
+// #7kyu 80's Kids #5: You Can't Do That on Television
+/* function bucketOf(str) {
+  str = str.toLowerCase();
+  const hasWater =
+    str.includes("water") || str.includes("wet") || str.includes("wash");
+  const hasSlime = str.includes("i don't know") || str.includes("slime");
+  if (hasWater && hasSlime) {
+    return "sludge";
+  } else if (hasWater) {
+    return "water";
+  } else if (hasSlime) {
+    return "slime";
+  } else {
+    return "air";
+  }
+}
+console.log(bucketOf("WATER is everywhere")); */
