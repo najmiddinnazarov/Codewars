@@ -11604,3 +11604,15 @@ console.log(heron(3, 4, 5)); */
   }
 }
 console.log(bucketOf("WATER is everywhere")); */
+
+// #7kyu Money, Money, Money
+/* function calculateYears(principal, interest, tax, desired) {
+  let year = 0;
+  if (principal >= desired) return year;
+  while (principal <= desired) {
+    principal = principal + principal * interest * (1 - tax);
+    year++;
+  }
+  return year;
+}
+console.log(calculateYears(1000, 0.05, 0.18, 1100)); */
