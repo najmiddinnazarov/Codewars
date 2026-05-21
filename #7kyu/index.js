@@ -11616,3 +11616,9 @@ console.log(bucketOf("WATER is everywhere")); */
   return year;
 }
 console.log(calculateYears(1000, 0.05, 0.18, 1100)); */
+
+// #7kyu Fast cooking pancakes
+/* function cookPancakes(n, m) {
+  return Math.max(2, Math.ceil((2 * n) / m));
+}
+console.log(cookPancakes(1, 2)); */
