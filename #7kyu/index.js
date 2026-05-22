@@ -11622,3 +11622,26 @@ console.log(calculateYears(1000, 0.05, 0.18, 1100)); */
   return Math.max(2, Math.ceil((2 * n) / m));
 }
 console.log(cookPancakes(1, 2)); */
+
+// #7kyu The Park Ranger's Umbrella
+/* function umbrella(weather) {
+  let count = 0;
+  for (let i = 0; i < weather.length; i += 3) {
+    let hasUmbrella = false;
+    for (let j = 0; j < 3 && i + j < weather.length; j++) {
+      let w = weather[i + j];
+      if (w === "rainy" || w === "thunderstorm") {
+        if (!hasUmbrella) {
+          count++;
+          hasUmbrella = true;
+        }
+      } else {
+        hasUmbrella = false;
+      }
+    }
+  }
+  return count;
+}
+console.log(
+  umbrella(["rainy", "cloudy", "thunderstorm", "rainy", "cloudy", "cloudy"]),
+); */
