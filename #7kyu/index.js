@@ -11645,3 +11645,20 @@ console.log(cookPancakes(1, 2)); */
 console.log(
   umbrella(["rainy", "cloudy", "thunderstorm", "rainy", "cloudy", "cloudy"]),
 ); */
+
+// #7kyu How many days are we represented in a foreign country?
+/* function daysRepresented(trips) {
+  let journeys = [];
+  for (let i = 0; i < trips.length; i++) {
+    for (let k = trips[i][0]; k <= trips[i][1]; k++) {
+      if (!journeys.includes(k)) journeys.push(k);
+    }
+  }
+  return journeys.length;
+}
+console.log(
+  daysRepresented([
+    [10, 15],
+    [25, 35],
+  ]),
+); */
