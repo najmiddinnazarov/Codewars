@@ -11662,3 +11662,16 @@ console.log(
     [25, 35],
   ]),
 ); */
+
+// #7kyu Palindrome chain length
+/* var palindromeChainLength = function (n) {
+  let counter = 0;
+  while (n !== +n.toString().split("").reverse().join("")) {
+    n = n.toString();
+    let reverse = n.split("").reverse().join("");
+    n = +n + Number(reverse);
+    counter++;
+  }
+  return counter;
+};
+console.log(palindromeChainLength(88)); */
