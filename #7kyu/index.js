@@ -11675,3 +11675,9 @@ console.log(
   return counter;
 };
 console.log(palindromeChainLength(88)); */
+
+// #7kyu Over The Road
+/* function overTheRoad(address, n) {
+  return 2 * n - address + 1;
+}
+console.log(overTheRoad(1, 3)); */
