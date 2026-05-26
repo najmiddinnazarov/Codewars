@@ -11681,3 +11681,10 @@ console.log(palindromeChainLength(88)); */
   return 2 * n - address + 1;
 }
 console.log(overTheRoad(1, 3)); */
+
+// #7kyu White or Black?
+/* function mineColor(file, rank) {
+  const alphabet = "Aabcdefghijklmnopqrstuvwxyz";
+  return (alphabet.indexOf(file) + rank) % 2 ? "white" : "black";
+}
+console.log(mineColor("a", 8)); */
