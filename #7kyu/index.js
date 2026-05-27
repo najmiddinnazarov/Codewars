@@ -11688,3 +11688,23 @@ console.log(overTheRoad(1, 3)); */
   return (alphabet.indexOf(file) + rank) % 2 ? "white" : "black";
 }
 console.log(mineColor("a", 8)); */
+
+// #7kyu T.T.T. #7: Profit or loss
+/* function profitLoss(records) {
+  let totalSellingPrice = 0;
+  let totalCostPrice = 0;
+  records.forEach((arr) => {
+    let price = arr[0];
+    let percentage = arr[1];
+    totalSellingPrice += price;
+    totalCostPrice += price / (1 + percentage / 100);
+  });
+  let result = totalSellingPrice - totalCostPrice;
+  return Number(result.toFixed(2));
+}
+console.log(
+  profitLoss([
+    [60, 20],
+    [60, -20],
+  ]),
+); */
