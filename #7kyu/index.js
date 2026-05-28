@@ -11708,3 +11708,11 @@ console.log(
     [60, -20],
   ]),
 ); */
+
+// #7kyu Get array elements with specified keys
+/* Array.prototype.only = function (keys) {
+  let result = [];
+  keys.forEach((value, idx) => (result[value] = this[value]));
+  return result.filter((value) => value !== "");
+};
+console.log(["a", "b", "a", "a", "b"].only([0, 1, 3])); */
