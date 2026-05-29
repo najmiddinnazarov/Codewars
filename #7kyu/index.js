@@ -11716,3 +11716,18 @@ console.log(
   return result.filter((value) => value !== "");
 };
 console.log(["a", "b", "a", "a", "b"].only([0, 1, 3])); */
+
+// #7kyu Spanish Conjugator
+/* function conjugate(verb) {
+  const ar = ["o", "as", "a", "amos", "áis", "an"];
+  const er = ["o", "es", "e", "emos", "éis", "en"];
+  const ir = ["o", "es", "e", "imos", "ís", "en"];
+  let suffix = verb.slice(verb.length - 2);
+  let suffixes;
+  if (suffix === "ar") suffixes = ar;
+  else if (suffix === "er") suffixes = er;
+  else suffixes = ir;
+  let result = suffixes.map((value) => verb.slice(0, verb.length - 2) + value);
+  return { [verb]: result };
+}
+console.log(conjugate("comer")); */
