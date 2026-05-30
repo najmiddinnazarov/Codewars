@@ -11731,3 +11731,7 @@ console.log(["a", "b", "a", "a", "b"].only([0, 1, 3])); */
   return { [verb]: result };
 }
 console.log(conjugate("comer")); */
+
+// #7kyu Write shortest function to calculate Average number of Array
+/* const avg = (a) => a.reduce((s, x) => s + x, 0) / a.length;
+console.log(avg([1, 2, 3])); */
