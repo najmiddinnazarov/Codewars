@@ -11735,3 +11735,16 @@ console.log(conjugate("comer")); */
 // #7kyu Write shortest function to calculate Average number of Array
 /* const avg = (a) => a.reduce((s, x) => s + x, 0) / a.length;
 console.log(avg([1, 2, 3])); */
+
+// #7kyu Simple Fun #75: Digit Degree
+/* function digitDegree(n) {
+  let counter = 0;
+  while (n > 9) {
+    n = n.toString().split("");
+    let sum = n.reduce((sum, curr) => sum + +curr, 0);
+    n = sum;
+    counter++;
+  }
+  return counter;
+}
+console.log(digitDegree(99)); */
