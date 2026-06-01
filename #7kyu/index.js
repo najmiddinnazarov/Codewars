@@ -11748,3 +11748,22 @@ console.log(avg([1, 2, 3])); */
   return counter;
 }
 console.log(digitDegree(99)); */
+
+// #7kyu Simple Fun #50: Array Conversion
+/* function arrayConversion(arr) {
+  let sumTurn = true;
+  while (arr.length > 1) {
+    const next = [];
+    for (let i = 0; i < arr.length; i += 2) {
+      if (sumTurn) {
+        next.push(arr[i] + arr[i + 1]);
+      } else {
+        next.push(arr[i] * arr[i + 1]);
+      }
+    }
+    arr = next;
+    sumTurn = !sumTurn;
+  }
+  return arr[0];
+}
+console.log(arrayConversion([1, 2, 3, 4, 5, 6, 7, 8])); */
