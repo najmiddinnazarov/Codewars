@@ -11767,3 +11767,47 @@ console.log(digitDegree(99)); */
   return arr[0];
 }
 console.log(arrayConversion([1, 2, 3, 4, 5, 6, 7, 8])); */
+
+// #7kyu Noye's Fludde
+/* function boatLoader(a) {
+  const count = {};
+  for (const letter of a) {
+    if (/[A-Za-z]/.test(letter)) {
+      count[letter] = (count[letter] || 0) + 1;
+    }
+  }
+  let array = Object.entries(count);
+  let result = [];
+  array.forEach((arr) => {
+    if (arr[1] >= 2) {
+      result.push([arr[0], arr[0]]);
+    }
+  });
+  return result.sort((a, b) => {
+    const x = a[0].toLowerCase();
+    const y = b[0].toLowerCase();
+    if (x !== y) {
+      return x.localeCompare(y);
+    }
+    return a[0].charCodeAt(0) - b[0].charCodeAt(0);
+  });
+}
+console.log(
+  boatLoader([
+    5,
+    6,
+    5,
+    "g",
+    "g",
+    "G",
+    "c",
+    "p",
+    "x",
+    "z",
+    "Z",
+    "G",
+    "c",
+    "g",
+    "g",
+  ]),
+); */
