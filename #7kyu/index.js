@@ -11811,3 +11811,14 @@ console.log(
     "g",
   ]),
 ); */
+
+// #7kyu How far will I go?
+/* function travel(totalTime, runTime, restTime, speed) {
+  let cycleTime = runTime + restTime;
+  let fullCycles = Math.floor(totalTime / cycleTime);
+  let remainingTime = totalTime % cycleTime;
+  let distance =
+    fullCycles * runTime * speed + Math.min(remainingTime, runTime) * speed;
+  return distance;
+}
+console.log(travel(500, 60, 45, 14)); */
