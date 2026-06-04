@@ -11822,3 +11822,10 @@ console.log(
   return distance;
 }
 console.log(travel(500, 60, 45, 14)); */
+
+// #7kyu Spoonerize Me
+/* function spoonerize(words) {
+  [word1, word2] = words.split(" ");
+  return word2[0] + word1.slice(1) + " " + word1[0] + word2.slice(1);
+}
+console.log(spoonerize("wedding bells")); */
