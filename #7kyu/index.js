@@ -11829,3 +11829,10 @@ console.log(travel(500, 60, 45, 14)); */
   return word2[0] + word1.slice(1) + " " + word1[0] + word2.slice(1);
 }
 console.log(spoonerize("wedding bells")); */
+
+// #7kyu Distance from the average
+/* function distancesFromAverage(arr) {
+  let average = arr.reduce((sum, curr) => sum + curr, 0) / arr.length;
+  return arr.map((num) => Number((average - num).toFixed(2)));
+}
+console.log(distancesFromAverage([55, 95, 62, 36, 48])); */
