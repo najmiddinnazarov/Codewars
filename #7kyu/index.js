@@ -11836,3 +11836,13 @@ console.log(spoonerize("wedding bells")); */
   return arr.map((num) => Number((average - num).toFixed(2)));
 }
 console.log(distancesFromAverage([55, 95, 62, 36, 48])); */
+
+// #7kyu Array.prototype.size()
+/* Array.prototype.size = function () {
+  let count = 0;
+  for (const _ of this) {
+    count++;
+  }
+  return count;
+};
+console.log([1, 2].size()); */
