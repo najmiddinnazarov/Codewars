@@ -11846,3 +11846,13 @@ console.log(distancesFromAverage([55, 95, 62, 36, 48])); */
   return count;
 };
 console.log([1, 2].size()); */
+
+// #7kyu You Complete Me
+/* function one(arr, fn) {
+  return arr.filter(fn).length === 1;
+}
+console.log(
+  one([1, 2, 3, 4, 5], function (item) {
+    return item < 2;
+  }),
+); */
