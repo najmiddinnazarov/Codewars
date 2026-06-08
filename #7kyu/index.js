@@ -11856,3 +11856,27 @@ console.log(
     return item < 2;
   }),
 ); */
+
+// #7kyu Reverse complement (DNA )
+/* function reverseComplement(dna) {
+  const map = {
+    A: "T",
+    T: "A",
+    C: "G",
+    G: "C",
+    a: "t",
+    t: "a",
+    c: "g",
+    g: "c",
+  };
+  let reversed = dna.split("").reverse().join("");
+  let comp = "";
+  for (let ch of reversed) {
+    if (!map[ch]) {
+      return "Invalid sequence";
+    }
+    comp += map[ch];
+  }
+  return comp;
+}
+console.log(reverseComplement("TTCCGGAA")); */
