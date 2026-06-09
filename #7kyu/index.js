@@ -11880,3 +11880,9 @@ console.log(
   return comp;
 }
 console.log(reverseComplement("TTCCGGAA")); */
+
+// #7kyu Half Life
+/* function halfLife(quantityInitial, quantityRemaining, time) {
+  return time / Math.log2(quantityInitial / quantityRemaining);
+}
+console.log(halfLife(8, 4, 2)); */
