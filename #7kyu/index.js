@@ -11886,3 +11886,28 @@ console.log(reverseComplement("TTCCGGAA")); */
   return time / Math.log2(quantityInitial / quantityRemaining);
 }
 console.log(halfLife(8, 4, 2)); */
+
+// #7kyu "Consonant Please"
+/* function sortLetters(arr) {
+  let result = [[], []];
+  arr.forEach((array) => {
+    for (let i = 0; i < array.length; i++) {
+      if (/[A-Za-z]/.test(array[i])) {
+        array[i] = array[i].toUpperCase();
+        if (/[AOEIU]/.test(array[i])) {
+          result[0].push(array[i]);
+        } else {
+          result[1].push(array[i]);
+        }
+      }
+    }
+  });
+  return result;
+}
+console.log(
+  sortLetters([
+    [1, "a", "H"],
+    [3, "o", "s"],
+    [4, "E", "i"],
+  ]),
+); */
