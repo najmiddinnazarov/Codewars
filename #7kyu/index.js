@@ -11911,3 +11911,20 @@ console.log(
     [4, "E", "i"],
   ]),
 ); */
+
+// #7kyu Row Weights
+/* function rowWeights(array) {
+  let result = [0, 0];
+  let counter = 0;
+  array.forEach((element) => {
+    if (counter % 2 === 0) {
+      result[0] += element;
+      counter++;
+    } else {
+      result[1] += element;
+      counter++;
+    }
+  });
+  return result;
+}
+console.log(rowWeights([50, 60, 70, 80])); */
