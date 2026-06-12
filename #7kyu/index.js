@@ -11928,3 +11928,19 @@ console.log(
   return result;
 }
 console.log(rowWeights([50, 60, 70, 80])); */
+
+// #7kyu Wrapping Paper
+/* function wrappingPaper(boxes) {
+  return boxes
+    .map((arr) => {
+      const [l, w, h] = arr;
+      return 2 * l * w + 2 * w * h + 2 * h * l + Math.min(l * w, w * h, h * l);
+    })
+    .reduce((sum, curr) => sum + curr, 0);
+}
+console.log(
+  wrappingPaper([
+    [2, 3, 4],
+    [1, 1, 10],
+  ]),
+); */
