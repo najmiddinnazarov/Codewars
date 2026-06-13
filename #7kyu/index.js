@@ -11944,3 +11944,17 @@ console.log(
     [1, 1, 10],
   ]),
 ); */
+
+// #7kyu 2 DNAs sequences, coding for same protein?
+/* function codeForSameProtein(seq1, seq2) {
+  const translate = (seq) => {
+    let protein = "";
+    for (let i = 0; i < seq.length; i += 3) {
+      const codon = seq.slice(i, i + 3);
+      protein += codons[codon];
+    }
+    return protein;
+  };
+  return translate(seq1) === translate(seq2);
+}
+console.log(codeForSameProtein("ATGTTTTAA", "ATGTTCTAA")); */
