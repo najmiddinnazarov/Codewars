@@ -11958,3 +11958,11 @@ console.log(
   return translate(seq1) === translate(seq2);
 }
 console.log(codeForSameProtein("ATGTTTTAA", "ATGTTCTAA")); */
+
+// #7kyu Aerial Firefighting
+/* function waterbombs(fire, w) {
+  return fire
+    .split("Y")
+    .reduce((sum, curr) => sum + Math.ceil(curr.length / w), 0);
+}
+console.log(waterbombs("xxxxYxYx", 4)); */
