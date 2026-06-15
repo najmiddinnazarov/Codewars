@@ -11966,3 +11966,22 @@ console.log(codeForSameProtein("ATGTTTTAA", "ATGTTCTAA")); */
     .reduce((sum, curr) => sum + Math.ceil(curr.length / w), 0);
 }
 console.log(waterbombs("xxxxYxYx", 4)); */
+
+// #7kyu Even and Odd !
+/* function evenAndOdd(num) {
+  const [even, odd] = num
+    .toString()
+    .split("")
+    .reduce(
+      (arr, curr) => {
+        curr % 2 === 0 ? arr[0].push(curr) : arr[1].push(curr);
+        return arr;
+      },
+      [[], []],
+    );
+  return [
+    even.length ? Number(even.join("")) : 0,
+    odd.length ? Number(odd.join("")) : 0,
+  ];
+}
+console.log(evenAndOdd(126453)); */
