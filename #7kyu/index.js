@@ -12025,3 +12025,13 @@ console.log(evenAndOdd(126453)); */
   return sum;
 }
 console.log(gematria("Devil")); */
+
+// #7kyu Music 1: How Many Quarter Notes?
+/* function findQuarterNotes(timeSignature) {
+  let [top, bottom] = timeSignature.split("/").map(Number);
+  if (!Number.isInteger(Math.log2(bottom))) {
+    return null;
+  }
+  return Math.floor((4 * top) / bottom);
+}
+console.log(findQuarterNotes("6/5")); */
