@@ -12035,3 +12035,19 @@ console.log(gematria("Devil")); */
   return Math.floor((4 * top) / bottom);
 }
 console.log(findQuarterNotes("6/5")); */
+
+// #7kyu Gould's sequence
+/* function* gould() {
+  let n = 0;
+  while (true) {
+    let count = 0;
+    let temp = n;
+    while (temp > 0) {
+      temp &= temp - 1;
+      count++;
+    }
+    yield count;
+    n++;
+  }
+}
+console.log(take(20)(gould())); */
