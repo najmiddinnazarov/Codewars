@@ -12051,3 +12051,29 @@ console.log(findQuarterNotes("6/5")); */
   }
 }
 console.log(take(20)(gould())); */
+
+// #7kyu Point belongs to arc
+/* function belongsToArc(a, b, c) {
+  const A = BigInt(a);
+  const B = BigInt(b);
+  const C = BigInt(c);
+  function normalize(angle) {
+    let mod = angle % 360n;
+    if (mod < 0n) {
+      mod += 360n;
+    }
+    return mod;
+  }
+  const normA = normalize(A);
+  const normB = normalize(B);
+  const normC = normalize(C);
+  if (normA === normB) {
+    return normC === normA;
+  }
+  if (normA < normB) {
+    return normC >= normA && normC <= normB;
+  } else {
+    return normC >= normA || normC <= normB;
+  }
+}
+console.log(belongsToArc(90, -45, 45)); */
