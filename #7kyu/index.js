@@ -12077,3 +12077,17 @@ console.log(take(20)(gould())); */
   }
 }
 console.log(belongsToArc(90, -45, 45)); */
+
+// #7kyu Double Sort
+/* function dbSort(a) {
+  let number = a
+    .filter((value) => typeof value === "number")
+    .sort((a, b) => a - b);
+  let letter = a
+    .filter((value) => typeof value === "string")
+    .sort((a, b) => a.localeCompare(b));
+  return [...number, ...letter];
+}
+console.log(
+  dbSort(["Apple", 46, "287", 574, "Peach", "3", "69", 78, "Grape", "423"]),
+); */
