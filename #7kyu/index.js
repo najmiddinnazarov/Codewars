@@ -12091,3 +12091,16 @@ console.log(belongsToArc(90, -45, 45)); */
 console.log(
   dbSort(["Apple", 46, "287", 574, "Peach", "3", "69", 78, "Grape", "423"]),
 ); */
+
+// #7kyu Composing squared strings
+/* function compose(s1, s2) {
+  let newString = "";
+  s1 = s1.split("\n");
+  s2 = s2.split("\n").reverse();
+  for (let i = 0; i < s1.length; i++) {
+    newString += s1[i].slice(0, i + 1) + s2[i].slice(0, s2[i].length - i);
+    if (i !== s1.length - 1) newString += "\n";
+  }
+  return newString;
+}
+console.log(compose("abcd\nefgh\nijkl\nmnop", "qrst\nuvwx\nyz12\n3456")); */
