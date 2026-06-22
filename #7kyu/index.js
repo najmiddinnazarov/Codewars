@@ -12104,3 +12104,11 @@ console.log(
   return newString;
 }
 console.log(compose("abcd\nefgh\nijkl\nmnop", "qrst\nuvwx\nyz12\n3456")); */
+
+// #7kyu Responsible Drinking
+/* function hydrate(s) {
+  s = s.split(" ");
+  let number = s.reduce((sum, curr) => sum + (+curr || 0), 0);
+  return `${number} glass${number === 1 ? "" : "es"} of water`;
+}
+console.log(hydrate("2 glasses of wine and 1 shot")); */
