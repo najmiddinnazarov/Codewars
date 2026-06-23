@@ -12112,3 +12112,9 @@ console.log(compose("abcd\nefgh\nijkl\nmnop", "qrst\nuvwx\nyz12\n3456")); */
   return `${number} glass${number === 1 ? "" : "es"} of water`;
 }
 console.log(hydrate("2 glasses of wine and 1 shot")); */
+
+// #7kyu Magic Index
+/* function findMagic(arr) {
+  return arr.filter((number, idx) => number === idx)[0] || -1;
+}
+console.log(findMagic([-20, -10, 20, 10, 20])); */
