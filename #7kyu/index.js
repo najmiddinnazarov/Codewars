@@ -12118,3 +12118,15 @@ console.log(hydrate("2 glasses of wine and 1 shot")); */
   return arr.filter((number, idx) => number === idx)[0] || -1;
 }
 console.log(findMagic([-20, -10, 20, 10, 20])); */
+
+// #7kyu Tidy Number (Special Numbers Series #9)
+/* function tidyNumber(n) {
+  const digits = String(n).split("").map(Number);
+  for (let i = 0; i < digits.length - 1; i++) {
+    if (digits[i] > digits[i + 1]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(tidyNumber(9672)); */
