@@ -12130,3 +12130,10 @@ console.log(findMagic([-20, -10, 20, 10, 20])); */
   return true;
 }
 console.log(tidyNumber(9672)); */
+
+// #7kyu Is n divisible by (...)?
+/* function isDivisible(...args) {
+  let number = args[0];
+  return args.every((value) => number % value === 0);
+}
+console.log(isDivisible(3, 3, 4)); */
