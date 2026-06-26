@@ -12137,3 +12137,28 @@ console.log(tidyNumber(9672)); */
   return args.every((value) => number % value === 0);
 }
 console.log(isDivisible(3, 3, 4)); */
+
+// #7kyu Convert Improper Fraction to Mixed Numeral
+/* function convertToMixedNumeral(parm) {
+  const [numStr, denStr] = parm.split("/");
+  const numerator = Number(numStr);
+  const denominator = Number(denStr);
+  if (numerator === 0) {
+    return "";
+  }
+  if (Math.abs(numerator) < denominator) {
+    return parm;
+  }
+  const sign = numerator < 0 ? -1 : 1;
+  const absNumerator = Math.abs(numerator);
+  const whole = Math.floor(absNumerator / denominator);
+  const remainder = absNumerator % denominator;
+  if (remainder === 0) {
+    return String(whole * sign);
+  }
+  if (sign === -1) {
+    return `-${whole} ${remainder}/${denominator}`;
+  }
+  return `${whole} ${remainder}/${denominator}`;
+}
+console.log(convertToMixedNumeral("6/2")); */
