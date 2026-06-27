@@ -12162,3 +12162,15 @@ console.log(isDivisible(3, 3, 4)); */
   return `${whole} ${remainder}/${denominator}`;
 }
 console.log(convertToMixedNumeral("6/2")); */
+
+// #7kyu The strictly necessary number of words for reading your numbers outloud
+/* function words(base_n, max) {
+  let counter = 0;
+  let temp = base_n;
+  while (max >= base_n) {
+    counter++;
+    base_n *= temp;
+  }
+  return temp + counter;
+}
+console.log(words(10, 1000)); */
