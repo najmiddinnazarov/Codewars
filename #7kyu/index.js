@@ -12174,3 +12174,26 @@ console.log(convertToMixedNumeral("6/2")); */
   return temp + counter;
 }
 console.log(words(10, 1000)); */
+
+// #7kyu Simple directions reversal
+/* function solve(arr) {
+  const res = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    const road = arr[i].split(" on ")[1];
+    if (i === arr.length - 1) {
+      res.push(`Begin on ${road}`);
+    } else {
+      const dir = arr[i + 1].split(" on ")[0];
+      res.push(`${dir === "Left" ? "Right" : "Left"} on ${road}`);
+    }
+  }
+  return res;
+}
+console.log(
+  solve([
+    "Begin on Road A",
+    "Right on Road B",
+    "Right on Road C",
+    "Left on Road D",
+  ]),
+); */
