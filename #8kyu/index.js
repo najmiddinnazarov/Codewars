@@ -2418,3 +2418,9 @@ console.log(pointsPer48(12, 20)); */
   } else return "Aa~ ".repeat(floor - 1) + "Pa!";
 }
 console.log(sc(2)); */
+
+// #8kyu Area of a Polygon (Easy)
+/* function polygonArea(A, B, C, D) {
+  return (B * (A + C)) / 2;
+}
+console.log(polygonArea(2, 4, 4, 2)); */
