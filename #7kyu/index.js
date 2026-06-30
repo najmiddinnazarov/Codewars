@@ -12197,3 +12197,11 @@ console.log(
     "Left on Road D",
   ]),
 ); */
+
+// #7kyu Chuck Norris II - One Punch
+/* function onePunch(items) {
+  return typeof items !== "string" || items === ""
+    ? "Broken!"
+    : items.split(" ").sort().join(" ").replace(/[ae]/gi, "");
+}
+console.log(onePunch("Beard Knife Grenade Motorbike Hat")); */
