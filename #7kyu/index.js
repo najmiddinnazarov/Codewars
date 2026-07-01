@@ -12205,3 +12205,12 @@ console.log(
     : items.split(" ").sort().join(" ").replace(/[ae]/gi, "");
 }
 console.log(onePunch("Beard Knife Grenade Motorbike Hat")); */
+
+// #7kyu Last Survivor
+/* function lastSurvivor(letters, coords) {
+  coords.forEach((idx) => {
+    letters = letters.slice(0, idx) + letters.slice(idx + 1);
+  });
+  return letters;
+}
+console.log(lastSurvivor("zbk", [2, 1])); */
