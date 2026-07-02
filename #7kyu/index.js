@@ -12214,3 +12214,13 @@ console.log(onePunch("Beard Knife Grenade Motorbike Hat")); */
   return letters;
 }
 console.log(lastSurvivor("zbk", [2, 1])); */
+
+// #7kyu Leonardo numbers
+/* const L = (n, L0, L1, add) => {
+  const result = [L0, L1];
+  for (let i = 2; i < n; i++) {
+    result.push(result[i - 1] + result[i - 2] + add);
+  }
+  return result;
+};
+console.log(L(2, 0, 0, 2)); */
