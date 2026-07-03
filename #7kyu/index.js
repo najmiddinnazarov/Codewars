@@ -12224,3 +12224,14 @@ console.log(lastSurvivor("zbk", [2, 1])); */
   return result;
 };
 console.log(L(2, 0, 0, 2)); */
+
+// #7kyu Sum Times Tables
+/* function sumTimesTables(tables, min, max) {
+  const tableSum = tables.reduce((sum, num) => sum + BigInt(num), 0n);
+  const minBig = BigInt(min);
+  const maxBig = BigInt(max);
+  const rangeSum =
+    (maxBig * (maxBig + 1n)) / 2n - ((minBig - 1n) * minBig) / 2n;
+  return Number(tableSum * rangeSum);
+}
+console.log(sumTimesTables([2, 3], 1, 3)); */
