@@ -12235,3 +12235,22 @@ console.log(L(2, 0, 0, 2)); */
   return Number(tableSum * rangeSum);
 }
 console.log(sumTimesTables([2, 3], 1, 3)); */
+
+// #7kyu Offspring Traits
+/* const bearFur = (bears) => {
+  const [a, b] = bears;
+  if (a === "black" && b === "black") return "black";
+  if (a === "brown" && b === "brown") return "brown";
+  if (a === "white" && b === "white") return "white";
+  if ((a === "black" && b === "brown") || (a === "brown" && b === "black")) {
+    return "dark brown";
+  }
+  if ((a === "black" && b === "white") || (a === "white" && b === "black")) {
+    return "grey";
+  }
+  if ((a === "brown" && b === "white") || (a === "white" && b === "brown")) {
+    return "light brown";
+  }
+  return "unknown";
+};
+console.log(bearFur(["black", "black"])); */
