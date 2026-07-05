@@ -12254,3 +12254,9 @@ console.log(sumTimesTables([2, 3], 1, 3)); */
   return "unknown";
 };
 console.log(bearFur(["black", "black"])); */
+
+// #7kyu Simple Fun #7: Will You?
+/* function willYou(young, beautiful, loved) {
+  return (young && beautiful && !loved) || (loved && (!young || !beautiful));
+}
+console.log(willYou(true, true, true)); */
