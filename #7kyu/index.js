@@ -12260,3 +12260,13 @@ console.log(bearFur(["black", "black"])); */
   return (young && beautiful && !loved) || (loved && (!young || !beautiful));
 }
 console.log(willYou(true, true, true)); */
+
+// #7kyu T.T.T.27: Four piles of apples
+/* function fourPiles(n, y) {
+  let x = (n * y) / (y + 1) ** 2;
+  if (!Number.isInteger(x)) return [];
+  let result = [x + y, x - y, x * y, x / y];
+  let isValid = result.every((num) => num > 0);
+  return isValid ? result : [];
+}
+console.log(fourPiles(25, 4)); */
