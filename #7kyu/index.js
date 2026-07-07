@@ -12270,3 +12270,15 @@ console.log(willYou(true, true, true)); */
   return isValid ? result : [];
 }
 console.log(fourPiles(25, 4)); */
+
+// #7kyu Are there doubles?
+/* function doubleCheck(str) {
+  str = str.toLowerCase();
+  for (let i = 0; i < str.length - 1; i++) {
+    if (str[i] === str[i + 1]) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(doubleCheck("abcaa")); */
