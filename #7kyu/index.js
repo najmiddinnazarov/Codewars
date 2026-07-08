@@ -12282,3 +12282,11 @@ console.log(fourPiles(25, 4)); */
   return false;
 }
 console.log(doubleCheck("abcaa")); */
+
+// #7kyu The unknown but known variables: Addition
+/* function theVar(theVariables) {
+  const alphabet = "Aabcdefghijklmnopqrstuvwxyz";
+  let [x, y] = theVariables.split("+");
+  return alphabet.indexOf(x) + alphabet.indexOf(y);
+}
+console.log(theVar("d+g")); */
