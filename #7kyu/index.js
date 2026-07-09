@@ -12290,3 +12290,11 @@ console.log(doubleCheck("abcaa")); */
   return alphabet.indexOf(x) + alphabet.indexOf(y);
 }
 console.log(theVar("d+g")); */
+
+// #7kyu Simple Interest and Compound Interest
+/* function interest(p, r, n) {
+  const simple = Math.round(p + p * r * n);
+  const compound = Math.round(p * Math.pow(1 + r, n));
+  return [simple, compound];
+}
+console.log(interest(100, 0.1, 1)); */
