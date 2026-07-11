@@ -12362,3 +12362,16 @@ console.log(interest(100, 0.1, 1)); */
   return a === b ? "Tie!" : a > b ? x : y;
 }
 console.log(battle("One", "Tw")); */
+
+// #7kyu Simple Fun #215: Properly Closed Bracket Word
+/* function closedBracketWord(word) {
+  if (word.length % 2) return false;
+  for (let i = 0; i < word.length; i++) {
+    if (
+      !(word[i].charCodeAt(0) + word[word.length - 1 - i].charCodeAt(0) === 219)
+    )
+      return false;
+  }
+  return true;
+}
+console.log(closedBracketWord("abiryy")); */
