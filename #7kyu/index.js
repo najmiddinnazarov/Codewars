@@ -12387,3 +12387,21 @@ console.log(closedBracketWord("abiryy")); */
   return true;
 }
 console.log(validateSequence([1, 2, 3, 4, 5, 6, 7, 8, 9])); */
+
+// #7kyu Inertial Array
+/* function isInertial(arr) {
+  const max = Math.max(...arr);
+  const odds = arr.filter((n) => n % 2 !== 0);
+  if (odds.length === 0) return false;
+  if (max % 2 !== 0) return false;
+  const evens = arr.filter((n) => n % 2 === 0 && n !== max);
+  for (let odd of odds) {
+    for (let even of evens) {
+      if (odd <= even) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+console.log(isInertial([11, 4, 20, 9, 2, 8])); */
