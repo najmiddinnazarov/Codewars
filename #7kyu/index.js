@@ -12405,3 +12405,20 @@ console.log(validateSequence([1, 2, 3, 4, 5, 6, 7, 8, 9])); */
   return true;
 }
 console.log(isInertial([11, 4, 20, 9, 2, 8])); */
+
+// #7kyu T.T.T.32: Count with your fingers
+/* function whichFinger(n) {
+  const remainder = n % 8;
+  if (remainder === 1) {
+    return "Thumb";
+  } else if (remainder === 2 || remainder === 0) {
+    return "Index finger";
+  } else if (remainder === 3 || remainder === 7) {
+    return "Middle finger";
+  } else if (remainder === 4 || remainder === 6) {
+    return "Ring finger";
+  } else if (remainder === 5) {
+    return "Little finger";
+  }
+}
+console.log(whichFinger(10)); */
