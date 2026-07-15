@@ -12422,3 +12422,30 @@ console.log(isInertial([11, 4, 20, 9, 2, 8])); */
   }
 }
 console.log(whichFinger(10)); */
+
+// #7kyu Left$ and Right$
+/* function left$(str, i = 1) {
+  if (typeof i === "number") {
+    if (i === 0) return "";
+    if (i > 0) {
+      return i >= str.length ? str : str.slice(0, i);
+    }
+    return str.slice(0, str.length + i);
+  }
+  const idx = str.indexOf(i);
+  if (idx === -1) return "";
+  return str.slice(0, idx);
+}
+function right$(str, i = 1) {
+  if (typeof i === "number") {
+    if (i === 0) return "";
+    if (i > 0) {
+      return i >= str.length ? str : str.slice(str.length - i);
+    }
+    return str.slice(-i);
+  }
+  const idx = str.lastIndexOf(i);
+  if (idx === -1) return "";
+  return str.slice(idx + i.length);
+}
+console.log(left$(text, 5)); */
