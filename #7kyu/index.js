@@ -12449,3 +12449,24 @@ function right$(str, i = 1) {
   return str.slice(idx + i.length);
 }
 console.log(left$(text, 5)); */
+
+// #7kyu Takeshi's Castle Spy: Knock Knock
+/* function knockKnock(str) {
+  const walls = str.split(" ");
+  let result = "!";
+  for (let i = 1; i < walls.length; i++) {
+    const prev = new Set(walls[i - 1]);
+    let found = "^";
+    for (const ch of walls[i]) {
+      if (prev.has(ch)) {
+        found = ch;
+        break;
+      }
+    }
+    result += found;
+  }
+  return result;
+}
+console.log(
+  knockKnock("uy6uq lhh105 tuzpwjus nc1a2 p6v7md cpyp p69hq2b8c 3a9k9r1aq"),
+); */
