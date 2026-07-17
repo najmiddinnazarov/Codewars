@@ -12470,3 +12470,18 @@ console.log(left$(text, 5)); */
 console.log(
   knockKnock("uy6uq lhh105 tuzpwjus nc1a2 p6v7md cpyp p69hq2b8c 3a9k9r1aq"),
 ); */
+
+// #7kyu Help Mr. E
+/* function evenator(str) {
+  str = str.replace(/[.,?!_]/g, "");
+  return str
+    .split(" ")
+    .map((word) => {
+      if (word.length % 2 === 1) {
+        return word + word[word.length - 1];
+      }
+      return word;
+    })
+    .join(" ");
+}
+console.log(evenator("tHiS sEnTeNcE iS eVeN.")); */
