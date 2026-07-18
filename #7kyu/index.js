@@ -12485,3 +12485,27 @@ console.log(
     .join(" ");
 }
 console.log(evenator("tHiS sEnTeNcE iS eVeN.")); */
+
+// #7kyu Most valuable character
+/* function solve(str) {
+  const first = {};
+  const last = {};
+  for (let i = 0; i < str.length; i++) {
+    const ch = str[i];
+    if (!(ch in first)) {
+      first[ch] = i;
+    }
+    last[ch] = i;
+  }
+  let answer = "";
+  let maxValue = -1;
+  for (const ch in first) {
+    const value = last[ch] - first[ch];
+    if (value > maxValue || (value === maxValue && ch < answer)) {
+      maxValue = value;
+      answer = ch;
+    }
+  }
+  return answer;
+}
+console.log(solve("a")); */
