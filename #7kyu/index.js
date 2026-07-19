@@ -12509,3 +12509,16 @@ console.log(evenator("tHiS sEnTeNcE iS eVeN.")); */
   return answer;
 }
 console.log(solve("a")); */
+
+// #7kyu Count the Combinations
+/* function numCombo(arr, num) {
+  const total = arr.reduce((sum, num) => sum + num, 0);
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (total - arr[i] === num) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(numCombo([2, 0, 0, 0, 1], 2)); */
