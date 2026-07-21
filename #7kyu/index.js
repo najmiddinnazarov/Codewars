@@ -12553,3 +12553,13 @@ console.log(numCombo([2, 0, 0, 0, 1], 2)); */
   return "Gold!";
 }
 console.log(olympicRing("wHjMudLwtoPGocnJ")); */
+
+// #7kyu Tricky Doubles
+/* function trickyDoubles(n) {
+  const s = String(n);
+  return s.length % 2 === 0 &&
+    s.slice(0, s.length / 2) === s.slice(s.length / 2)
+    ? n
+    : n * 2;
+}
+console.log(trickyDoubles(15)); */
