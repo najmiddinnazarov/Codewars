@@ -12563,3 +12563,10 @@ console.log(olympicRing("wHjMudLwtoPGocnJ")); */
     : n * 2;
 }
 console.log(trickyDoubles(15)); */
+
+// #7kyu Volume of the Largest Cube that Fits Inside a Given Cylinder
+/* function cubeVolume(h, r) {
+  const sideLength = Math.min(h, r * Math.sqrt(2));
+  return sideLength ** 3;
+}
+console.log(cubeVolume(3, 7)); */
