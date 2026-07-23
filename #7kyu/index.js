@@ -12570,3 +12570,25 @@ console.log(trickyDoubles(15)); */
   return sideLength ** 3;
 }
 console.log(cubeVolume(3, 7)); */
+
+// #7kyu Sequence generator
+/* function sequence(n, pattern) {
+  const result = [];
+  if (typeof pattern === "function") {
+    for (let i = 0; i < n; i++) {
+      result.push(pattern(undefined, i));
+    }
+  } else {
+    for (let i = 0; i < n; i++) {
+      if (Array.isArray(pattern)) {
+        result.push([...pattern]);
+      } else if (pattern !== null && typeof pattern === "object") {
+        result.push({ ...pattern });
+      } else {
+        result.push(pattern);
+      }
+    }
+  }
+  return result;
+}
+console.log(sequence(3, 4)); */
