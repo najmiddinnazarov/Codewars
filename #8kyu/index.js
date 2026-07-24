@@ -2424,3 +2424,10 @@ console.log(sc(2)); */
   return (B * (A + C)) / 2;
 }
 console.log(polygonArea(2, 4, 4, 2)); */
+
+// #8kyu Too many reversals
+/* function whowon(s) {
+  const names = s.split(" hit a reversal to ");
+  return names[names.length - 2];
+}
+console.log(whowon("Devant hit a reversal to Kripa")); */
