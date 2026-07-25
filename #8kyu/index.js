@@ -2431,3 +2431,9 @@ console.log(polygonArea(2, 4, 4, 2)); */
   return names[names.length - 2];
 }
 console.log(whowon("Devant hit a reversal to Kripa")); */
+
+// #8kyu Simple Fun #1: Seats in Theater
+/* function seatsInTheater(nCols, nRows, col, row) {
+  return (nRows - row) * (nCols - col + 1);
+}
+console.log(seatsInTheater(16, 11, 5, 3)); */
