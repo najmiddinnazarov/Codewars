@@ -12592,3 +12592,15 @@ console.log(cubeVolume(3, 7)); */
   return result;
 }
 console.log(sequence(3, 4)); */
+
+// #7kyu Thinkful - String Drills: Areacode extractor
+/* function areaCode(text) {
+  let result = "";
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === "(" && text[i + 4] === ")") {
+      result += text.slice(i + 1, i + 4);
+    }
+  }
+  return result;
+}
+console.log(areaCode("Grae's cell number used to be (123) 456-7890")); */
