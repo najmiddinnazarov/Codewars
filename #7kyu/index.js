@@ -12604,3 +12604,13 @@ console.log(sequence(3, 4)); */
   return result;
 }
 console.log(areaCode("Grae's cell number used to be (123) 456-7890")); */
+
+// #7kyu Bugs Life
+/* function shortestDistance(a, b, c) {
+  return Math.min(
+    Math.hypot(a + b, c),
+    Math.hypot(a + c, b),
+    Math.hypot(b + c, a),
+  );
+}
+console.log(shortestDistance(1, 2, 3)); */
