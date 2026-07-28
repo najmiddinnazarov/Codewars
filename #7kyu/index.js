@@ -12614,3 +12614,16 @@ console.log(areaCode("Grae's cell number used to be (123) 456-7890")); */
   );
 }
 console.log(shortestDistance(1, 2, 3)); */
+
+// #7kyu Putting the flatMap into the JS
+/* Array.prototype.flatMap = function (f) {
+  const result = [];
+  for (let i = 0; i < this.length; i++) {
+    const mapped = f(this[i], i, this);
+    for (let j = 0; j < mapped.length; j++) {
+      result.push(mapped[j]);
+    }
+  }
+  return result;
+};
+console.log([1].flatMap((x) => [x, x - 1, x + 2])); */
