@@ -12627,3 +12627,16 @@ console.log(shortestDistance(1, 2, 3)); */
   return result;
 };
 console.log([1].flatMap((x) => [x, x - 1, x + 2])); */
+
+// #7kyu Method For Counting Total Occurence Of Specific Digits
+/* function List() {
+  this.countSpecDigits = function (integersList, digitsList) {
+    const nums = integersList.map((n) => Math.abs(n)).join("");
+    return digitsList.map((d) => [
+      d,
+      [...nums].filter((ch) => +ch === d).length,
+    ]);
+  };
+}
+let l = new List();
+console.log(l.countSpecDigits([-18, -31, 81, -19, 111, -888], [1, 8, 4])); */
