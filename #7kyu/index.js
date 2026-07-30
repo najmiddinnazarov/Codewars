@@ -12640,3 +12640,9 @@ console.log([1].flatMap((x) => [x, x - 1, x + 2])); */
 }
 let l = new List();
 console.log(l.countSpecDigits([-18, -31, 81, -19, 111, -888], [1, 8, 4])); */
+
+// #7kyu Strange principal
+/* function numOfOpenLockers(n) {
+  return Math.floor(Math.sqrt(n));
+}
+console.log(numOfOpenLockers(4521)); */
