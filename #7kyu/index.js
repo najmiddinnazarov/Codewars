@@ -12646,3 +12646,34 @@ console.log(l.countSpecDigits([-18, -31, 81, -19, 111, -888], [1, 8, 4])); */
   return Math.floor(Math.sqrt(n));
 }
 console.log(numOfOpenLockers(4521)); */
+
+// #7kyu Pancakes or Waffles [Sentence Censorer]
+/* function censor(sentence) {
+  const pancakeWords = ["pancakes", "flapjacks", "slapjacks", "hotcakes"];
+  const waffleWords = ["waffles", "crepes", "blintzes"];
+  const toppingWords = [
+    "syrup",
+    "honey",
+    "jam",
+    "butter",
+    "chocolate",
+    "margarine",
+  ];
+  const hasWaffleWord = waffleWords.some((word) =>
+    new RegExp(`\\b${word}\\b`, "i").test(sentence),
+  );
+  return sentence.replace(/\b[a-zA-Z]+\b/g, (word) => {
+    const lower = word.toLowerCase();
+    if (pancakeWords.includes(lower)) {
+      return "*".repeat(word.length);
+    }
+    if (waffleWords.includes(lower)) {
+      return `**${word}**`;
+    }
+    if (toppingWords.includes(lower)) {
+      return hasWaffleWord ? `**${word}**` : "*".repeat(word.length);
+    }
+    return word;
+  });
+}
+console.log(censor("I love Javascript")); */
