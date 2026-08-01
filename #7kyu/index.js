@@ -12677,3 +12677,9 @@ console.log(numOfOpenLockers(4521)); */
   });
 }
 console.log(censor("I love Javascript")); */
+
+// #7kyu Adding remainders to a list
+/* function solve(nums, div) {
+  return nums.map((num) => num + (num % div));
+}
+console.log(solve([2, 7, 5, 9, 100, 34, 32, 0], 3)); */
