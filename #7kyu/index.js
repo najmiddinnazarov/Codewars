@@ -12683,3 +12683,29 @@ console.log(censor("I love Javascript")); */
   return nums.map((num) => num + (num % div));
 }
 console.log(solve([2, 7, 5, 9, 100, 34, 32, 0], 3)); */
+
+// #7kyu Survive the attack
+/* function hasSurvived(attackers, defenders) {
+  let attackSurvivors = 0;
+  let defenseSurvivors = 0;
+  const maxLength = Math.max(attackers.length, defenders.length);
+  for (let i = 0; i < maxLength; i++) {
+    const attacker = attackers[i];
+    const defender = defenders[i];
+    if (attacker === undefined) {
+      defenseSurvivors++;
+    } else if (defender === undefined) {
+      attackSurvivors++;
+    } else if (attacker > defender) {
+      attackSurvivors++;
+    } else if (defender > attacker) {
+      defenseSurvivors++;
+    }
+  }
+  if (defenseSurvivors > attackSurvivors) return true;
+  if (attackSurvivors > defenseSurvivors) return false;
+  const attackPower = attackers.reduce((sum, x) => sum + x, 0);
+  const defensePower = defenders.reduce((sum, x) => sum + x, 0);
+  return defensePower >= attackPower;
+}
+console.log(hasSurvived([2, 9, 9, 7], [1, 1, 3, 8])); */
