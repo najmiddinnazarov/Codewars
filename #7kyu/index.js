@@ -12709,3 +12709,10 @@ console.log(solve([2, 7, 5, 9, 100, 34, 32, 0], 3)); */
   return defensePower >= attackPower;
 }
 console.log(hasSurvived([2, 9, 9, 7], [1, 1, 3, 8])); */
+
+// #7kyu regex validation of 24 hours time.
+/* function validateTime(time) {
+  res = /^(?:[01]?\d|2[0-3]):[0-5]\d$/;
+  return res.test(time);
+}
+console.log(validateTime("01:00")); */
