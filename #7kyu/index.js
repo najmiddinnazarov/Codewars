@@ -12716,3 +12716,19 @@ console.log(hasSurvived([2, 9, 9, 7], [1, 1, 3, 8])); */
   return res.test(time);
 }
 console.log(validateTime("01:00")); */
+
+// #7kyu Math engine
+/* function mathEngine(arr) {
+  if (arr === null) return 0;
+  let product = 1;
+  let sum = 0;
+  for (let num of arr) {
+    if (num >= 0) {
+      product *= num;
+    } else {
+      sum += num;
+    }
+  }
+  return product + sum;
+}
+console.log(mathEngine([1, 2, 3, -4, -5])); */
