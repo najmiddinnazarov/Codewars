@@ -12732,3 +12732,25 @@ console.log(validateTime("01:00")); */
   return product + sum;
 }
 console.log(mathEngine([1, 2, 3, -4, -5])); */
+
+// #7kyu T.T.T. #9: Peaks and valleys
+/* function peakAndValley(arr) {
+  const res = [];
+  for (let i = 3; i < arr.length - 3; i++) {
+    const left = arr.slice(i - 3, i);
+    const right = arr.slice(i + 1, i + 4);
+    const neighbors = [...left, ...right];
+    if (
+      neighbors.every((v) => arr[i] > v) ||
+      neighbors.every((v) => arr[i] < v)
+    ) {
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
+console.log(
+  peakAndValley([
+    10, 20, 30, 40, 30, 20, 10, 11, 12, 13, 14, 15, 16, 15, 14, 13,
+  ]),
+); */
