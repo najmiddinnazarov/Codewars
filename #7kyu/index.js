@@ -12754,3 +12754,12 @@ console.log(
     10, 20, 30, 40, 30, 20, 10, 11, 12, 13, 14, 15, 16, 15, 14, 13,
   ]),
 ); */
+
+// #7kyu Simple Jeringonza
+/* function jeringonza(str) {
+  return str.replace(/[aeiouAEIOU]/g, (vowel) => {
+    const p = vowel === vowel.toUpperCase() ? "P" : "p";
+    return vowel + p + vowel;
+  });
+}
+console.log(jeringonza("jeringonza")); */
