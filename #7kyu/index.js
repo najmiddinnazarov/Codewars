@@ -12763,3 +12763,21 @@ console.log(
   });
 }
 console.log(jeringonza("jeringonza")); */
+
+// #7kyu The Four Seasons
+/* function fourSeasons(d) {
+  if (d > 365) {
+    return "The year flew by!";
+  }
+  if (d >= 80 && d < 172) {
+    return "Spring Season";
+  }
+  if (d >= 172 && d < 264) {
+    return "Summer Season";
+  }
+  if (d >= 264 && d < 355) {
+    return "Autumn Season";
+  }
+  return "Winter Season";
+}
+console.log(fourSeasons(264)); */
