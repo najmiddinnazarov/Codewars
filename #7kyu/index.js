@@ -12781,3 +12781,32 @@ console.log(jeringonza("jeringonza")); */
   return "Winter Season";
 }
 console.log(fourSeasons(264)); */
+
+// #7kyu Search JSON for any key value pair
+/* function getCharacters(obj, key, val) {
+  var foundCharacters = [];
+  for (var i = 0; i < obj.characters.length; i++) {
+    if (
+      obj.characters[i][key] &&
+      obj.characters[i][key].toLowerCase() === val.toLowerCase()
+    ) {
+      foundCharacters.push(obj.characters[i]);
+    }
+  }
+  return foundCharacters;
+}
+console.log(
+  getCharacters(
+    {
+      characters: [
+        {
+          name: "Bill Cipher",
+          age: "Unknown",
+          speciality: "warp reality",
+        },
+      ],
+    },
+    "name",
+    "Bill Cipher",
+  ),
+); */
