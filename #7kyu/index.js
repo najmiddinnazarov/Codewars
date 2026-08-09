@@ -12810,3 +12810,14 @@ console.log(
     "Bill Cipher",
   ),
 ); */
+
+// #7kyu Complete The Pattern #5 - Even Ladder
+/* function pattern(n) {
+  if (n <= 1) return "";
+  let result = [];
+  for (let i = 2; i <= n; i += 2) {
+    result.push(String(i).repeat(i));
+  }
+  return result.join("\n");
+}
+console.log(pattern(2)); */
