@@ -12821,3 +12821,19 @@ console.log(
   return result.join("\n");
 }
 console.log(pattern(2)); */
+
+// #7kyu Split by Mask
+/* function split(string, mask) {
+  const totalLength = mask.reduce((sum, length) => sum + length, 0);
+  if (totalLength !== string.length) {
+    return null;
+  }
+  const result = [];
+  let index = 0;
+  for (const length of mask) {
+    result.push(string.slice(index, index + length));
+    index += length;
+  }
+  return result;
+}
+console.log(split("1234567890", [3, 3, 4])); */
