@@ -12837,3 +12837,18 @@ console.log(pattern(2)); */
   return result;
 }
 console.log(split("1234567890", [3, 3, 4])); */
+
+// #7kyu Split By Value
+/* function splitByValue(k, elements) {
+  const less = [];
+  const greaterOrEqual = [];
+  for (const element of elements) {
+    if (element < k) {
+      less.push(element);
+    } else {
+      greaterOrEqual.push(element);
+    }
+  }
+  return less.concat(greaterOrEqual);
+}
+console.log(splitByValue(6, [6, 4, 10, 10, 6])); */
