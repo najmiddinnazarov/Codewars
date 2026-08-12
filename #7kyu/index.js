@@ -12869,3 +12869,20 @@ console.log(splitByValue(6, [6, 4, 10, 10, 6])); */
   return rank;
 }
 console.log(rankOfElement([2, 1, 2, 1, 2], 2)); */
+
+// #7kyu Greatest Difference
+/* function diff(str) {
+  if (str.length === 0) return false;
+  let maxDifference = 0;
+  let result = false;
+  for (const couple of str) {
+    const [a, b] = couple.split("-").map(Number);
+    const difference = Math.abs(a - b);
+    if (difference > maxDifference) {
+      maxDifference = difference;
+      result = couple;
+    }
+  }
+  return result;
+}
+console.log(diff(["23-32", "32-23", "2-6", "98-98", "100-101"])); */
