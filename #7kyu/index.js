@@ -12852,3 +12852,20 @@ console.log(split("1234567890", [3, 3, 4])); */
   return less.concat(greaterOrEqual);
 }
 console.log(splitByValue(6, [6, 4, 10, 10, 6])); */
+
+// #7kyu Simple Fun #177: Rank Of Element
+/* function rankOfElement(arr, i) {
+  let rank = 0;
+  for (let j = 0; j < i; j++) {
+    if (arr[j] <= arr[i]) {
+      rank++;
+    }
+  }
+  for (let j = i + 1; j < arr.length; j++) {
+    if (arr[j] < arr[i]) {
+      rank++;
+    }
+  }
+  return rank;
+}
+console.log(rankOfElement([2, 1, 2, 1, 2], 2)); */
