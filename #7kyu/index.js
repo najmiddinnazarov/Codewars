@@ -12886,3 +12886,20 @@ console.log(rankOfElement([2, 1, 2, 1, 2], 2)); */
   return result;
 }
 console.log(diff(["23-32", "32-23", "2-6", "98-98", "100-101"])); */
+
+// #7kyu Stone Pickaxe Crafting
+/* function stonePick(arr) {
+  let sticks = 0;
+  let cobblestones = 0;
+  for (const material of arr) {
+    if (material === "Sticks") {
+      sticks++;
+    } else if (material === "Wood") {
+      sticks += 4;
+    } else if (material === "Cobblestone") {
+      cobblestones++;
+    }
+  }
+  return Math.min(Math.floor(sticks / 2), Math.floor(cobblestones / 3));
+}
+console.log(stonePick([...repeat("Sticks", 2), "Cobblestone"])); */
