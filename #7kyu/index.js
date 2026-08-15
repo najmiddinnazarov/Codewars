@@ -12903,3 +12903,24 @@ console.log(diff(["23-32", "32-23", "2-6", "98-98", "100-101"])); */
   return Math.min(Math.floor(sticks / 2), Math.floor(cobblestones / 3));
 }
 console.log(stonePick([...repeat("Sticks", 2), "Cobblestone"])); */
+
+// #7kyu Rock Off!
+/* function solve(a, b) {
+  let aliceScore = 0;
+  let bobScore = 0;
+  for (let i = 0; i < 3; i++) {
+    if (a[i] > b[i]) {
+      aliceScore++;
+    } else if (b[i] > a[i]) {
+      bobScore++;
+    }
+  }
+  if (aliceScore > bobScore) {
+    return `${aliceScore}, ${bobScore}: Alice made "Kurt" proud!`;
+  } else if (bobScore > aliceScore) {
+    return `${aliceScore}, ${bobScore}: Bob made "Jeff" proud!`;
+  } else {
+    return `${aliceScore}, ${bobScore}: that looks like a "draw"! Rock on!`;
+  }
+}
+console.log(solve([47, 7, 2], [47, 7, 2])); */
