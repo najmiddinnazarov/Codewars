@@ -12924,3 +12924,15 @@ console.log(stonePick([...repeat("Sticks", 2), "Cobblestone"])); */
   }
 }
 console.log(solve([47, 7, 2], [47, 7, 2])); */
+
+// #7kyu Simple Fun #48: Higher Version
+/* function higherVersion(ver1, ver2) {
+  const v1 = ver1.split(".").map(Number);
+  const v2 = ver2.split(".").map(Number);
+  for (let i = 0; i < v1.length; i++) {
+    if (v1[i] > v2[i]) return true;
+    if (v1[i] < v2[i]) return false;
+  }
+  return false;
+}
+console.log(higherVersion("1.2.2", "1.2.0")); */
