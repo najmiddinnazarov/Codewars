@@ -12936,3 +12936,10 @@ console.log(solve([47, 7, 2], [47, 7, 2])); */
   return false;
 }
 console.log(higherVersion("1.2.2", "1.2.0")); */
+
+// #7kyu Simple Fun #131: Learn Charitable Game
+/* function learnCharitableGame(arr) {
+  const sum = arr.reduce((total, money) => total + money, 0);
+  return sum > 0 && sum % arr.length === 0;
+}
+console.log(learnCharitableGame([0, 56, 100])); */
