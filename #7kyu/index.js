@@ -12943,3 +12943,31 @@ console.log(higherVersion("1.2.2", "1.2.0")); */
   return sum > 0 && sum % arr.length === 0;
 }
 console.log(learnCharitableGame([0, 56, 100])); */
+
+// #7kyu Dice Rotation
+/* function rotations(dieArray) {
+  let min = Infinity;
+  for (let target = 1; target <= 6; target++) {
+    let rotations = 0;
+    for (const die of dieArray) {
+      if (die === target) {
+        continue;
+      }
+      if (
+        (die === 1 && target === 6) ||
+        (die === 6 && target === 1) ||
+        (die === 2 && target === 5) ||
+        (die === 5 && target === 2) ||
+        (die === 3 && target === 4) ||
+        (die === 4 && target === 3)
+      ) {
+        rotations += 2;
+      } else {
+        rotations += 1;
+      }
+    }
+    min = Math.min(min, rotations);
+  }
+  return min;
+}
+console.log(rotations([1, 1, 1, 1, 1, 6])); */
