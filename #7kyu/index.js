@@ -12971,3 +12971,14 @@ console.log(learnCharitableGame([0, 56, 100])); */
   return min;
 }
 console.log(rotations([1, 1, 1, 1, 1, 6])); */
+
+// #7kyu Simple Fun #24: Pages Numbering with Ink
+/* function pagesNumberingWithInk(current, numberOfDigits) {
+  let page = current;
+  while (numberOfDigits >= String(page).length) {
+    numberOfDigits -= String(page).length;
+    page++;
+  }
+  return page - 1;
+}
+console.log(pagesNumberingWithInk(1, 5)); */
