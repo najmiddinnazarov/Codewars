@@ -12982,3 +12982,16 @@ console.log(rotations([1, 1, 1, 1, 1, 6])); */
   return page - 1;
 }
 console.log(pagesNumberingWithInk(1, 5)); */
+
+// #7kyu Simple Fun #3: Late Ride
+/* function lateRide(n) {
+  let hours = Math.floor(n / 60);
+  let minutes = n % 60;
+  return (
+    Math.floor(hours / 10) +
+    (hours % 10) +
+    Math.floor(minutes / 10) +
+    (minutes % 10)
+  );
+}
+console.log(lateRide(240)); */
