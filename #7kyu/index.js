@@ -12995,3 +12995,12 @@ console.log(pagesNumberingWithInk(1, 5)); */
   );
 }
 console.log(lateRide(240)); */
+
+// #7kyu Simple Fun #69: Are Equally Strong?
+/* function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
+  return (
+    Math.max(yourLeft, yourRight) === Math.max(friendsLeft, friendsRight) &&
+    Math.min(yourLeft, yourRight) === Math.min(friendsLeft, friendsRight)
+  );
+}
+console.log(areEquallyStrong(10, 15, 15, 10)); */
