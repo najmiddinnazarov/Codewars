@@ -13004,3 +13004,17 @@ console.log(lateRide(240)); */
   );
 }
 console.log(areEquallyStrong(10, 15, 15, 10)); */
+
+// #7kyu Simple Fun #67: Array Change
+/* function arrayChange(arr) {
+  let moves = 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] <= arr[i - 1]) {
+      const needed = arr[i - 1] + 1 - arr[i];
+      arr[i] += needed;
+      moves += needed;
+    }
+  }
+  return moves;
+}
+console.log(arrayChange([1, 1, 1])); */
