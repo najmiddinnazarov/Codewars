@@ -13018,3 +13018,16 @@ console.log(areEquallyStrong(10, 15, 15, 10)); */
   return moves;
 }
 console.log(arrayChange([1, 1, 1])); */
+
+// #7kyu Simple Fun #260: Permutation Shift
+/* function permutationShift(permutation) {
+  let minShift = Infinity;
+  let maxShift = -Infinity;
+  for (let i = 0; i < permutation.length; i++) {
+    const shift = permutation[i] - i;
+    minShift = Math.min(minShift, shift);
+    maxShift = Math.max(maxShift, shift);
+  }
+  return maxShift - minShift;
+}
+console.log(permutationShift([1, 0, 2, 3])); */
