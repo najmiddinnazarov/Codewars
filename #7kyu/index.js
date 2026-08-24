@@ -13031,3 +13031,22 @@ console.log(arrayChange([1, 1, 1])); */
   return maxShift - minShift;
 }
 console.log(permutationShift([1, 0, 2, 3])); */
+
+// #7kyu Simple Fun #374: Minimal Subtractor
+/* function minimalSubtractor(n) {
+  for (let k = 0; k <= n; k++) {
+    let current = n;
+    let valid = true;
+    while (current > 1) {
+      if ((current - k) % 2 !== 0 || current - k < 0) {
+        valid = false;
+        break;
+      }
+      current = (current - k) / 2;
+    }
+    if (valid && current === 1) {
+      return k;
+    }
+  }
+}
+console.log(minimalSubtractor(16)); */
