@@ -13063,3 +13063,9 @@ console.log(minimalSubtractor(16)); */
   return [water, co2, methane];
 }
 console.log(burner(45, 11, 100)); */
+
+// #7kyu nova polynomial 4. derivative
+/* function polyDerivative(p) {
+  return p.slice(1).map((coef, index) => coef * (index + 1));
+}
+console.log(polyDerivative([1, 2])); */
