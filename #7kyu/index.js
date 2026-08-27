@@ -13069,3 +13069,18 @@ console.log(burner(45, 11, 100)); */
   return p.slice(1).map((coef, index) => coef * (index + 1));
 }
 console.log(polyDerivative([1, 2])); */
+
+// #7kyu The First Non Repeated Character In A String
+/* function firstNonRepeated(s) {
+  const counts = {};
+  for (const char of s) {
+    counts[char] = (counts[char] || 0) + 1;
+  }
+  for (const char of s) {
+    if (counts[char] === 1) {
+      return char;
+    }
+  }
+  return null;
+}
+console.log(firstNonRepeated("test")); */
