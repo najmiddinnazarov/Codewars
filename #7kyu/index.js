@@ -13084,3 +13084,12 @@ console.log(polyDerivative([1, 2])); */
   return null;
 }
 console.log(firstNonRepeated("test")); */
+
+// #7kyu Get row from alphabetical sequence
+/* function getRow(n) {
+  n = ((n - 1) % 26) + 1;
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const letter = alphabet[n - 1];
+  return letter.repeat(n) + alphabet.slice(n);
+}
+console.log(getRow(1)); */
