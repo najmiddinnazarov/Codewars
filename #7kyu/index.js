@@ -13093,3 +13093,10 @@ console.log(firstNonRepeated("test")); */
   return letter.repeat(n) + alphabet.slice(n);
 }
 console.log(getRow(1)); */
+
+// #7kyu Minimum to multiple
+function minimum(a, x) {
+  let r = a % x;
+  return Math.min(r, x - r);
+}
+console.log(minimum(1, 1));
