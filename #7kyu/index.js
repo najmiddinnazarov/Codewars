@@ -13095,8 +13095,8 @@ console.log(firstNonRepeated("test")); */
 console.log(getRow(1)); */
 
 // #7kyu Minimum to multiple
-function minimum(a, x) {
+/* function minimum(a, x) {
   let r = a % x;
   return Math.min(r, x - r);
 }
-console.log(minimum(1, 1));
+console.log(minimum(1, 1)); */
