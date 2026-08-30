@@ -13100,3 +13100,10 @@ console.log(getRow(1)); */
   return Math.min(r, x - r);
 }
 console.log(minimum(1, 1)); */
+
+// #7kyu Pyramid Structure Analyzer
+/* function pyramid(s) {
+  let root = (s - 2) / 4;
+  return [root + 1, root * 2, root + 1, root];
+}
+console.log(pyramid(42)); */
