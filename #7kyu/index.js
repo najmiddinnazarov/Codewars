@@ -13107,3 +13107,19 @@ console.log(minimum(1, 1)); */
   return [root + 1, root * 2, root + 1, root];
 }
 console.log(pyramid(42)); */
+
+// #7kyu Mr Martingale
+/* function martingale(bank, outcomes) {
+  let stake = 100;
+  for (const num of outcomes) {
+    if (num === 1) {
+      bank += stake;
+      stake = 100;
+    } else {
+      bank -= stake;
+      stake *= 2;
+    }
+  }
+  return bank;
+}
+console.log(martingale(1000, [1, 1, 0, 0, 1])); */
