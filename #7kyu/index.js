@@ -13123,3 +13123,23 @@ console.log(pyramid(42)); */
   return bank;
 }
 console.log(martingale(1000, [1, 1, 0, 0, 1])); */
+
+// #7kyu Stock Position Size Calculator
+/* function positionSize(
+  tradeType,
+  entryPrice,
+  stoploss,
+  capital,
+  riskPercentage,
+) {
+  if (tradeType === "LONG" && stoploss >= entryPrice) {
+    return false;
+  }
+  if (tradeType === "SHORT" && stoploss <= entryPrice) {
+    return false;
+  }
+  const riskAmount = (capital * riskPercentage) / 100;
+  const priceRisk = Math.abs(entryPrice - stoploss);
+  return Math.round(riskAmount / priceRisk);
+}
+console.log(positionSize("LONG", 10.12, 10.05, 10000, 1.6)); */
