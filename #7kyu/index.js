@@ -13143,3 +13143,13 @@ console.log(martingale(1000, [1, 1, 0, 0, 1])); */
   return Math.round(riskAmount / priceRisk);
 }
 console.log(positionSize("LONG", 10.12, 10.05, 10000, 1.6)); */
+
+// #7kyu Cat Years, Dog Years (2)
+/* var ownedCatAndDog = function (catYears, dogYears) {
+  const cat =
+    catYears < 15 ? 0 : catYears < 24 ? 1 : Math.floor((catYears - 24) / 4) + 2;
+  const dog =
+    dogYears < 15 ? 0 : dogYears < 24 ? 1 : Math.floor((dogYears - 24) / 5) + 2;
+  return [cat, dog];
+};
+console.log(ownedCatAndDog(15, 15)); */
