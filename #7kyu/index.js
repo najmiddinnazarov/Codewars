@@ -13153,3 +13153,21 @@ console.log(positionSize("LONG", 10.12, 10.05, 10000, 1.6)); */
   return [cat, dog];
 };
 console.log(ownedCatAndDog(15, 15)); */
+
+// #7kyu Simple Fun #264: Compare Two Integers
+/* function compareIntegers(a, b) {
+  if (a.length < b.length) {
+    return "less";
+  }
+  if (a.length > b.length) {
+    return "greater";
+  }
+  if (a < b) {
+    return "less";
+  }
+  if (a > b) {
+    return "greater";
+  }
+  return "equal";
+}
+console.log(compareIntegers("12", "13")); */
