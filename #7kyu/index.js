@@ -13171,3 +13171,20 @@ console.log(ownedCatAndDog(15, 15)); */
   return "equal";
 }
 console.log(compareIntegers("12", "13")); */
+
+// #7kyu Trilingual democracy
+/* function trilingualDemocracy(group) {
+  const counts = {};
+  for (const lang of group) {
+    counts[lang] = (counts[lang] || 0) + 1;
+  }
+  if (Object.keys(counts).length === 1) {
+    return group[0];
+  }
+  if (Object.keys(counts).length === 2) {
+    return Object.keys(counts).find((lang) => counts[lang] === 1);
+  }
+  const allLanguages = ["D", "F", "I", "K"];
+  return allLanguages.find((lang) => !counts[lang]);
+}
+console.log(trilingualDemocracy("FFF")); */
