@@ -13188,3 +13188,19 @@ console.log(compareIntegers("12", "13")); */
   return allLanguages.find((lang) => !counts[lang]);
 }
 console.log(trilingualDemocracy("FFF")); */
+
+// #7kyu Interweaving strings and removing digits
+/* function interweave(s1, s2) {
+  let result = "";
+  let maxLength = Math.max(s1.length, s2.length);
+  for (let i = 0; i < maxLength; i++) {
+    if (i < s1.length && !/\d/.test(s1[i])) {
+      result += s1[i];
+    }
+    if (i < s2.length && !/\d/.test(s2[i])) {
+      result += s2[i];
+    }
+  }
+  return result.trim();
+}
+console.log(interweave("hlo", "el")); */
