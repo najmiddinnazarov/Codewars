@@ -13204,3 +13204,15 @@ console.log(trilingualDemocracy("FFF")); */
   return result.trim();
 }
 console.log(interweave("hlo", "el")); */
+
+// #7kyu Character Counter
+/* function validateWord(s) {
+  s = s.toLowerCase();
+  const counts = {};
+  for (const char of s) {
+    counts[char] = (counts[char] || 0) + 1;
+  }
+  const values = Object.values(counts);
+  return values.every((count) => count === values[0]);
+}
+console.log(validateWord("abcabc")); */
