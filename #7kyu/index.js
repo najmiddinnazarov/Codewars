@@ -13216,3 +13216,13 @@ console.log(interweave("hlo", "el")); */
   return values.every((count) => count === values[0]);
 }
 console.log(validateWord("abcabc")); */
+
+// #7kyu Can this object fly? Balloons in "Up" and in real life
+/* function Journey(object, crew, balloons) {
+  this.isPossible = function () {
+    return balloons * 0.0048 >= object.weight + crew * 80;
+  };
+}
+var house = { weight: 45000 };
+var journey = new Journey(house, 2, 20622);
+console.log(journey.isPossible()); */
