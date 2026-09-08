@@ -13226,3 +13226,23 @@ console.log(validateWord("abcabc")); */
 var house = { weight: 45000 };
 var journey = new Journey(house, 2, 20622);
 console.log(journey.isPossible()); */
+
+// #7kyu How Many Lonely Letters?
+/* function countLonelyLetters(text) {
+  text = text.toLowerCase().replace(/[^a-z]/g, "");
+  let count = 0;
+  for (let i = 0; i < 26; i++) {
+    const letter = String.fromCharCode(97 + i);
+    const occurrences = text.split(letter).length - 1;
+    if (occurrences !== 1) continue;
+    const previous = i > 0 ? String.fromCharCode(96 + i) : null;
+    const next = i < 25 ? String.fromCharCode(98 + i) : null;
+    const hasPrevious = previous && text.includes(previous);
+    const hasNext = next && text.includes(next);
+    if (!hasPrevious && !hasNext) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countLonelyLetters("ad")); */
