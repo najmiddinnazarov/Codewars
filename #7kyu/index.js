@@ -13246,3 +13246,26 @@ console.log(journey.isPossible()); */
   return count;
 }
 console.log(countLonelyLetters("ad")); */
+
+// #7kyu Computing the entropy of a message
+/* function entropy(message) {
+  if (message.length === 0) {
+    return 0.0;
+  }
+  const counts = {};
+  for (const char of message) {
+    if (char === " ") continue;
+    counts[char] = (counts[char] || 0) + 1;
+  }
+  const total = Object.values(counts).reduce((sum, count) => sum + count, 0);
+  if (total === 0) {
+    return 0.0;
+  }
+  let result = 0;
+  for (const count of Object.values(counts)) {
+    const p = count / total;
+    result -= p * Math.log2(p);
+  }
+  return result;
+}
+console.log(entropy("hello world")); */
