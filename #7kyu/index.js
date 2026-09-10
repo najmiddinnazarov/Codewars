@@ -13269,3 +13269,12 @@ console.log(countLonelyLetters("ad")); */
   return result;
 }
 console.log(entropy("hello world")); */
+
+// #7kyu Sweet Dreams are Made of Cheese
+/* function payCheese(arr) {
+  const totalMinutes = arr.reduce((sum, day) => sum + day * 0.6, 0);
+  const hours = Math.ceil(totalMinutes / 60);
+  const totalWages = hours * 8.75 * 4;
+  return `£${totalWages}`;
+}
+console.log(payCheese([750, 750, 750, 750, 600])); */
