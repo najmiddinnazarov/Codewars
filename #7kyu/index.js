@@ -13278,3 +13278,17 @@ console.log(entropy("hello world")); */
   return `£${totalWages}`;
 }
 console.log(payCheese([750, 750, 750, 750, 600])); */
+
+// #7kyu Sine,cosine and others
+/* function sctc(sin) {
+  const cos = Math.sqrt(1 - sin * sin);
+  const result = [Number(sin.toFixed(2)), Number(cos.toFixed(2))];
+  if (cos !== 0) {
+    result.push(Number((sin / cos).toFixed(2)));
+  }
+  if (sin !== 0) {
+    result.push(Number((cos / sin).toFixed(2)));
+  }
+  return result;
+}
+console.log(sctc(1)); */
