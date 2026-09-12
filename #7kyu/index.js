@@ -13292,3 +13292,26 @@ console.log(payCheese([750, 750, 750, 750, 600])); */
   return result;
 }
 console.log(sctc(1)); */
+
+// #7kyu Most sales
+/* function top3(products, amounts, prices) {
+  const data = products.map((product, i) => ({
+    product,
+    revenue: amounts[i] * prices[i],
+    index: i,
+  }));
+  data.sort((a, b) => {
+    if (b.revenue !== a.revenue) {
+      return b.revenue - a.revenue;
+    }
+    return a.index - b.index;
+  });
+  return data.slice(0, 3).map((item) => item.product);
+}
+console.log(
+  top3(
+    ["Computer", "Cell Phones", "Vacuum Cleaner"],
+    [3, 24, 8],
+    [199, 299, 399],
+  ),
+); */
