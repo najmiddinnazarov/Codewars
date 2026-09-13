@@ -13315,3 +13315,15 @@ console.log(
     [199, 299, 399],
   ),
 ); */
+
+// #7kyu Sum and Multiply
+/* var sumAndMultiply = function (sum, multiply) {
+  for (let x = 0; x <= 1000; x++) {
+    let y = sum - x;
+    if (y >= 0 && y <= 1000 && x * y === multiply) {
+      return [x, y];
+    }
+  }
+  return null;
+};
+console.log(sumAndMultiply(13, 12)); */
