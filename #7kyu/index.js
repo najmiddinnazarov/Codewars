@@ -13327,3 +13327,17 @@ console.log(
   return null;
 };
 console.log(sumAndMultiply(13, 12)); */
+
+// #7kyu Transpose two strings in an array
+/* function transposeTwoStrings(array) {
+  const [a, b] = array;
+  const maxLength = Math.max(a.length, b.length);
+  const result = [];
+  for (let i = 0; i < maxLength; i++) {
+    const char1 = a[i] || " ";
+    const char2 = b[i] || " ";
+    result.push(char1 + " " + char2);
+  }
+  return result.join("\n");
+}
+console.log(transposeTwoStrings(["Hello", "World"])); */
