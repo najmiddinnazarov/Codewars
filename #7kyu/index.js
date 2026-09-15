@@ -13341,3 +13341,21 @@ console.log(sumAndMultiply(13, 12)); */
   return result.join("\n");
 }
 console.log(transposeTwoStrings(["Hello", "World"])); */
+
+// #7kyu The Speed of Letters
+/* function speedify(input) {
+  let positions = [];
+  for (let i = 0; i < input.length; i++) {
+    let char = input[i];
+    let alphabetIndex = char.charCodeAt(0) - 65;
+    let newPos = i + alphabetIndex;
+    positions[newPos] = char;
+  }
+  let maxPos = positions.length - 1;
+  let result = "";
+  for (let i = 0; i <= maxPos; i++) {
+    result += positions[i] !== undefined ? positions[i] : " ";
+  }
+  return result;
+}
+console.log(speedify(["ABC", "A B C"])); */
