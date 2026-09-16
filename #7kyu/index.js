@@ -13359,3 +13359,11 @@ console.log(transposeTwoStrings(["Hello", "World"])); */
   return result;
 }
 console.log(speedify(["ABC", "A B C"])); */
+
+// #7kyu Share prices
+/* const sharePrice = (invested, changes) => {
+  return changes
+    .reduce((sum, curr) => (sum *= 1 + curr / 100), invested)
+    .toFixed(2);
+};
+console.log(sharePrice(100, [-50, 50])); */
