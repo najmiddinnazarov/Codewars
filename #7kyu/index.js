@@ -13367,3 +13367,11 @@ console.log(speedify(["ABC", "A B C"])); */
     .toFixed(2);
 };
 console.log(sharePrice(100, [-50, 50])); */
+
+// #7kyu Simple Fun #138: Similarity
+/* function similarity(a, b) {
+  let intersection = a.filter((x) => b.includes(x)).length;
+  let union = new Set([...a, ...b]).size;
+  return intersection / union;
+}
+console.log(similarity([1, 2, 3], [1, 2, 3])); */
