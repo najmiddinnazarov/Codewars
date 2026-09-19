@@ -13409,3 +13409,17 @@ console.log(similarity([1, 2, 3], [1, 2, 3])); */
   );
 }
 console.log(bob("werewolf")); */
+
+// #7kyu Simple Fun #202: Min And Max
+/* function minAndMax(l, d, x) {
+  let result = [];
+  for (let i = l; i <= d; i++) {
+    let temp = i
+      .toString()
+      .split("")
+      .reduce((sum, curr) => sum + +curr, 0);
+    if (temp == x) result.push(i);
+  }
+  return [result[0], result[result.length - 1]];
+}
+console.log(minAndMax(500, 505, 10)); */
