@@ -13423,3 +13423,14 @@ console.log(bob("werewolf")); */
   return [result[0], result[result.length - 1]];
 }
 console.log(minAndMax(500, 505, 10)); */
+
+// #7kyu Mythical Heads and Tails
+/* function beasts(heads, tails) {
+  let hydra = (heads - 2 * tails) / 3;
+  let orthus = tails - hydra;
+  if (!Number.isInteger(hydra) || hydra < 0 || orthus < 0) {
+    return "No solutions";
+  }
+  return [orthus, hydra];
+}
+console.log(beasts(123, 39)); */
