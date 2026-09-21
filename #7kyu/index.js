@@ -13434,3 +13434,18 @@ console.log(minAndMax(500, 505, 10)); */
   return [orthus, hydra];
 }
 console.log(beasts(123, 39)); */
+
+// #7kyu Disagreeable ascii
+/* function getWeight(name) {
+  let sum = 0;
+  for (let i = 0; i < name.length; i++) {
+    if (/[A-Za-z]/.test(name[i])) {
+      if (name[i] === name[i].toUpperCase())
+        sum += name[i].toLowerCase().charCodeAt(0);
+      else if (name[i] === name[i].toLowerCase())
+        sum += name[i].toUpperCase().charCodeAt(0);
+    }
+  }
+  return sum;
+}
+console.log(getWeight("Joe ")); */
