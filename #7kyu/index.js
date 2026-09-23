@@ -13471,3 +13471,13 @@ console.log(getWeight("Joe ")); */
   else return getNote(pitch / 2);
 }
 console.log(getNote(92.49875)); */
+
+// #7kyu Identical Elements
+/* function duplicateElements(m, n) {
+  let max = [...m, ...n].length / 2;
+  for (let i = 0; i < max; i++) {
+    if (m.includes(n[i])) return true;
+  }
+  return false;
+}
+console.log(duplicateElements([1, 2, 3, 4, 5], [1, 6, 7, 8, 9])); */
