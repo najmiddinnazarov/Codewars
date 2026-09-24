@@ -13481,3 +13481,13 @@ console.log(getNote(92.49875)); */
   return false;
 }
 console.log(duplicateElements([1, 2, 3, 4, 5], [1, 6, 7, 8, 9])); */
+
+// #7kyu Anonymous Returns.
+/* name = "The Window";
+let alpha = {
+  name: "My Alpha",
+  getNameFunc: function () {
+    return () => this.name;
+  },
+};
+console.log(alpha.getNameFunc()()); */
