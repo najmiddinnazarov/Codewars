@@ -13491,3 +13491,38 @@ let alpha = {
   },
 };
 console.log(alpha.getNameFunc()()); */
+
+// #7kyu String Packet Based Communications
+/* function communicationModule(packet) {
+  const header = packet.slice(0, 4);
+  const instructor = packet.slice(4, 8);
+  const data1 = packet.slice(8, 12);
+  const data2 = packet.slice(12, 16);
+  const footer = packet.slice(16);
+  let number;
+  switch (instructor) {
+    case "0F12":
+      number = +data1 + +data2;
+      break;
+    case "B7A2":
+      number = +data1 - +data2;
+      break;
+    case "C3D9":
+      number = +data1 * +data2;
+      break;
+    default:
+      break;
+  }
+  let temp;
+  if (number >= 9999) temp = "9999";
+  else if (number < 0) temp = "0000";
+  let numLength = number.toString().length;
+  return (
+    header +
+    "FFFF" +
+    (temp || "0".repeat(4 - numLength) + number) +
+    "0000" +
+    footer
+  );
+}
+console.log(communicationModule("H1H10F1200120008F4F4")); */
