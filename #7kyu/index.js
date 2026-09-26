@@ -13526,3 +13526,13 @@ console.log(alpha.getNameFunc()()); */
   );
 }
 console.log(communicationModule("H1H10F1200120008F4F4")); */
+
+// #7kyu Age in days
+/* function ageInDays(year, month, day) {
+  const birthday = new Date(year, month - 1, day);
+  const today = new Date();
+  const difference = today - birthday;
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  return `You are ${days} days old`;
+}
+console.log(ageInDays(2026, 9, 24)); */
