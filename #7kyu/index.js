@@ -13536,3 +13536,15 @@ console.log(communicationModule("H1H10F1200120008F4F4")); */
   return `You are ${days} days old`;
 }
 console.log(ageInDays(2026, 9, 24)); */
+
+// #7kyu Weight of its Contents
+/* function contentWeight(bottleWeight, scale) {
+  const parts = scale.split(" ");
+  const n = Number(parts[0]);
+  const type = parts[2];
+  if (type === "larger") {
+    return (bottleWeight * n) / (n + 1);
+  }
+  return bottleWeight / (n + 1);
+}
+console.log(contentWeight(120, "2 times larger")); */
