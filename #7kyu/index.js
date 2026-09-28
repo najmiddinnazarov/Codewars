@@ -13548,3 +13548,16 @@ console.log(ageInDays(2026, 9, 24)); */
   return bottleWeight / (n + 1);
 }
 console.log(contentWeight(120, "2 times larger")); */
+
+// #7kyu SHEEEEPS
+/* function reloadSheeps(arr) {
+  return arr
+    .filter((value) => {
+      return (
+        value.length === 5 &&
+        /^(?=.*s)(?=.*h)(?=.*e.*e)(?=.*p)[a-z]{5}$/.test(value)
+      );
+    })
+    .map(() => "sheep");
+}
+console.log(reloadSheeps(["shpee"])); */
