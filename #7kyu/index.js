@@ -13561,3 +13561,10 @@ console.log(contentWeight(120, "2 times larger")); */
     .map(() => "sheep");
 }
 console.log(reloadSheeps(["shpee"])); */
+
+// #7kyu Simple Fun #74: Growing Plant
+/* function growingPlant(upSpeed, downSpeed, desiredHeight) {
+  let result = Math.ceil((desiredHeight - upSpeed) / (upSpeed - downSpeed) + 1);
+  return result > 0 ? result : 1;
+}
+console.log(growingPlant(100, 10, 910)); */
