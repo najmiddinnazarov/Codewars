@@ -13568,3 +13568,22 @@ console.log(reloadSheeps(["shpee"])); */
   return result > 0 ? result : 1;
 }
 console.log(growingPlant(100, 10, 910)); */
+
+// #7kyu Tube strike options calculator
+/* function calculator(distance, busDrive, busWalk) {
+  const walk = 5;
+  const bus = 8;
+  const walkingTime = distance / walk;
+  const busTime = busWalk / walk + busDrive / bus;
+  if (walkingTime > 2) {
+    return "Bus";
+  }
+  if (walkingTime < 1 / 6) {
+    return "Walk";
+  }
+  if (walkingTime <= busTime) {
+    return "Walk";
+  }
+  return "Bus";
+}
+console.log(calculator(5, 6, 1)); */
