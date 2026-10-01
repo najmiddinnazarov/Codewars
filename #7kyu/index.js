@@ -13587,3 +13587,20 @@ console.log(growingPlant(100, 10, 910)); */
   return "Bus";
 }
 console.log(calculator(5, 6, 1)); */
+
+// #7kyu Shorten your speech
+/* var shortenSpeech = function (str) {
+  return str.replace(/\S+/g, (word) => {
+    const cleanWord = word.endsWith(",") ? word.slice(0, -1) : word;
+    if (cleanWord.length <= 3) {
+      return word;
+    }
+    const match = cleanWord.slice(3).search(/[aeiouAEIOU]/);
+    if (match === -1) {
+      return cleanWord;
+    }
+    const vowelIndex = match + 3;
+    return cleanWord.slice(0, vowelIndex) + ".";
+  });
+};
+console.log(shortenSpeech("Hello, do you want a coffee ? ")); */
