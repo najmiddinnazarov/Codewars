@@ -13604,3 +13604,21 @@ console.log(calculator(5, 6, 1)); */
   });
 };
 console.log(shortenSpeech("Hello, do you want a coffee ? ")); */
+
+// #7kyu Cipher
+/* function encode(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result += String.fromCharCode(str[i].charCodeAt(0) * 6);
+  }
+  return result;
+}
+function decode(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result += String.fromCharCode(str[i].charCodeAt(0) / 6);
+  }
+  return result;
+}
+console.log(encode("Hello World!"));
+console.log(decode("ưɞʈʈʚÀȊʚʬʈɘÆ")); */
