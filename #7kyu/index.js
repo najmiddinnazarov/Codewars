@@ -13622,3 +13622,17 @@ function decode(str) {
 }
 console.log(encode("Hello World!"));
 console.log(decode("ưɞʈʈʚÀȊʚʬʈɘÆ")); */
+
+// #7kyu Sum Array with different bases
+/* function sumItUp(numbersWithBases) {
+  return numbersWithBases.reduce(
+    (sum, arr) => (sum += parseInt(arr[0], arr[1])),
+    0,
+  );
+}
+console.log(
+  sumItUp([
+    ["101", 2],
+    ["10", 8],
+  ]),
+); */
