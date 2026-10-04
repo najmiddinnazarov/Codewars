@@ -13636,3 +13636,13 @@ console.log(
     ["10", 8],
   ]),
 ); */
+
+// #7kyu How long will it take the train to reach its final destination?
+/* function reachDestination(distance, speed) {
+  const time = Math.round((distance / speed) * 2) / 2;
+  if (time === 1) {
+    return `The train will be there in 1 hour.`;
+  }
+  return `The train will be there in ${time} hours.`;
+}
+console.log(reachDestination(5, 10)); */
