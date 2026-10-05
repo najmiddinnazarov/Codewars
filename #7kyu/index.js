@@ -13646,3 +13646,15 @@ console.log(
   return `The train will be there in ${time} hours.`;
 }
 console.log(reachDestination(5, 10)); */
+
+// #7kyu Sort the climbing grades
+/* function sortGrades(arr) {
+  return arr.sort((a, b) => {
+    if (a === "VB") return -1;
+    if (b === "VB") return 1;
+    if (a === "V0+") return b === "V0" ? 1 : -1;
+    if (b === "V0+") return a === "V0" ? -1 : 1;
+    return Number(a.slice(1)) - Number(b.slice(1));
+  });
+}
+console.log(sortGrades(["V13", "V14", "VB", "V0"])); */
