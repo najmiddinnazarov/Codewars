@@ -1,0 +1,13660 @@
+// #7kyu Vowel Count
+/* function getCount(str) {
+  const vowel = "aeiou";
+  let count = 0;
+  for (const i of str) {
+    if (vowel.includes(i)) count++;
+  }
+  return count;
+} */
+
+// #7kyu Ordered Count of Characters
+/* const orderedCount = function (text) {
+  let obj = {};
+  for (const i of text) {
+    if (i in obj) obj[i]++;
+    else obj[i] = 1;
+  }
+  return Object.entries(obj);
+};
+console.log(orderedCount("233312")); */
+
+// #7kyu Squares sequence
+/* function squares(x, n) {
+  let result = [];
+  n > 0 && n !== undefined ? result.push(x) : [];
+  for (let i = 1; i < n; i++) {
+    result.push((x = x ** 2));
+  }
+  return result;
+}
+console.log(squares(2, -1)); */
+
+// #7kyu shorter concat [reverse longer]
+/* function shorter_reverse_longer(a, b) {
+  let reverseLetterA = a.split("").reverse().join("");
+  let reverseLetterB = b.split("").reverse().join("");
+  if (a.length >= b.length) {
+    return `${b}${reverseLetterA}${b}`;
+  } else {
+    return `${a}${reverseLetterB}${a}`;
+  }
+}
+console.log(shorter_reverse_longer("fghi", "abcde")); */
+
+// #7kyu Find Count of Most Frequent Item in an Array
+/* function mostFrequentItemCount(collection) {
+  let res = [];
+  let obj = {};
+  if (collection.length !== 0) {
+    for (const i of collection) {
+      if (i in obj) obj[i]++;
+      else obj[i] = 1;
+    }
+  } else return 0;
+  for (const key in obj) {
+    res.push(obj[key]);
+  }
+  return Math.max(...res);
+}
+console.log(mostFrequentItemCount([])); */
+
+// #7kyu Debug Sum of Digits of a Number
+/* function getSumOfDigits(integer) {
+  var sum = [];
+  var digits = Math.trunc(integer).toString();
+  for (var ix = 0; ix < digits.length; ix++) {
+    sum.push(digits[ix]);
+  }
+  return eval(sum.join("+"));
+}
+console.log(getSumOfDigits(223)); */
+
+// 7kyu V A P O R C O D E
+/* function vaporcode(string) {
+  let str = string.split(" ").join("").toUpperCase();
+  return str.split("").join("  ");
+}
+console.log(vaporcode("Why isnt my code working")); */
+
+// #7kyu Get the Middle Character
+/* function getMiddle(s) {
+  if (s.length % 2 === 0) {
+    return s
+      .split("")
+      .splice(s.length / 2 - 1, 2)
+      .join("");
+  } else {
+    return s
+      .split("")
+      .splice(Math.floor(s.length / 2), 1)
+      .join("");
+  }
+}
+console.log(getMiddle("A")); */
+
+// #7kyu Mumbling
+/* function accum(s) {
+  let str = s.toLowerCase();
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result += str[i].toUpperCase();
+    result += `${str[i].repeat(i)}-`;
+  }
+  return result.substring(-1, result.length - 1);
+}
+console.log(accum("abcd")); */
+
+// #7kyu Shortest Word
+/* function findShort(s) {
+  let str = s.toLowerCase();
+  let obj = {};
+  let arr = str.split(" ");
+  let uniqueChars = arr.filter((element, index) => {
+    return arr.indexOf(element) === index;
+  });
+  for (const i of uniqueChars) {
+    for (const j of i) {
+      if (i in obj) obj[i]++;
+      else obj[i] = 1;
+    }
+  }
+  return Math.min(...Object.values(obj));
+}
+console.log(
+  findShort(
+    "Monero Steem LiteCoin BTC Dogecoin Bitcoin Classic Dash Ethereum 21inc Bitcoin Classic Lisk BTC LiteCoin ProofOfStake Dash"
+  )
+); */
+
+// #7kyu Friend or Foe?
+/* function friend(friends) {
+  return friends.filter((value) => value.length == 4);
+}
+console.log(friend(["Love", "Your", "Face", "1"])); */
+
+// #7kyu Binary Addition
+/* function addBinary(a, b) {
+  return (a + b).toString(2);
+}
+console.log(addBinary(1, 1)); */
+
+// #7kyu Ones and Zeros
+/* const binaryArrayToNumber = (arr) => {
+  return parseInt(arr.join(""), 2);
+};
+console.log(binaryArrayToNumber([0, 1, 0, 1, 1])); */
+
+// #7kyu Hex Hash Sum
+/* function hexHash(code) {
+  let str = "";
+  for (let i = 0; i < code.length; i++) {
+    str += code.charCodeAt(i).toString(16);
+  }
+  let result = str.split("").filter((value) => !isNaN(value));
+  return eval(result.join("+")) == undefined ? 0 : eval(result.join("+"));
+}
+console.log(hexHash("")); */
+
+// #7kyu Flatten
+/* var flatten = function (array) {
+  let arr = [];
+  for (let i = 0; i < array.length; i++) {
+    arr.push(...array[i]);
+  }
+  return arr;
+};
+console.log(flatten([[3, 4, 5], [[9, 9, 9]], ["a,b,c"]]));
+var flatten = function (array) {
+  let arr = [];
+  return arr.concat(array).flat(1);
+};
+console.log(flatten([[3, 4, 5], [[9, 9, 9]], ["a,b,c"]])); */
+
+// #7kyu Fizz Buzz
+/* function fizzbuzz(n) {
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) arr.push("FizzBuzz");
+    else if (i % 3 === 0) arr.push("Fizz");
+    else if (i % 5 === 0) arr.push("Buzz");
+    else arr.push(i);
+  }
+  return arr;
+}
+console.log(fizzbuzz(15)); */
+
+// #7kyu Simple Fun #176: Reverse Letter
+/* function reverseLetter(str) {
+  let arr = [];
+  for (const i of str) {
+    if (i.toLowerCase() !== i.toUpperCase()) arr.push(i);
+  }
+  return arr.reverse().join("");
+}
+console.log(reverseLetter("ultr53o?n")); */
+
+// #7kyu String ends with?
+/* function solution(str, ending) {
+  return str.endsWith(ending);
+}
+console.log(solution("abcde", "de")); */
+
+// #7kyu MinMinMax
+/* function minMinMax(array) {
+  let newArr = array;
+  let arr = [];
+  array.sort((a, b) => a - b);
+  arr.push(array[0]);
+  function rec(x) {
+    if (!newArr.includes(x)) return x;
+    else return rec(x + 1);
+  }
+  arr.push(rec(arr[0]), array[array.length - 1]);
+  return arr;
+}
+console.log(minMinMax([1, 3, -3, -2, 8, -1])); */
+
+// #7kyu Count consonants
+/* function consonantCount(str) {
+  const vowel = ["a", "e", "i", "o", "u"];
+  let count = 0;
+  for (const i of str) {
+    if (!i.match(/^[^a-zA-Z]+$/) && !vowel.includes(i)) count++;
+  }
+  return count;
+}
+console.log(consonantCount("h^$&^#$&^elLo world")); */
+
+// #7kyu How Many Unique Consonants?
+/* function countConsonants(str) {
+  let dublicate = [...new Set(str.toLowerCase())];
+  console.log(dublicate);
+  return (
+    dublicate.length -
+    (dublicate.join("").match(/[a, e, i, o, u,0-9,' ']/gi)?.length == null
+      ? 0
+      : dublicate.join("").match(/[a, e, i, o, u,0-9,!]/gi).length)
+  );
+}
+console.log(countConsonants("Count my unique consonants!!")); */
+
+// #7kyu Number of People in the Bus
+/* var number = function (busStops) {
+  return (
+    busStops.reduce((a, b) => a + b[0], 0) -
+    busStops.reduce((a, b) => a + b[1], 0)
+  );
+};
+console.log(
+  number([
+    [10, 0],
+    [3, 5],
+    [5, 8],
+  ])
+);
+ */
+
+// #7kyu Beginner Series #3 Sum of Numbers
+/* function getSum(a, b) {
+  if (a == b) return a;
+  let count = 0;
+  if (a > b) {
+    for (let i = b; i <= a; i++) {
+      count += i;
+    }
+  } else {
+    for (let i = a; i <= b; i++) {
+      count += i;
+    }
+  }
+  return count;
+}
+console.log(getSum(-1, 2)); */
+
+// #7kyu Simple string characters
+/* function solve(s) {
+  let arr = [0, 0, 0, 0];
+  for (const i of s) {
+    if (i == i.toUpperCase() && isNaN(i) && i.toLowerCase() !== i.toUpperCase())
+      arr[0]++;
+    else if (
+      i == i.toLowerCase() &&
+      isNaN(i) &&
+      i.toLowerCase() !== i.toUpperCase()
+    )
+      arr[1]++;
+    else if (!isNaN(i)) arr[2]++;
+    else arr[3]++;
+  }
+  return arr;
+}
+console.log(solve("@mw>0=QD-iAx!rp9TaG?o&M%l$34L.nbft")); */
+
+// #7kyu Ch4113ng3
+/* function nerdify(txt) {
+  let arr = txt.split("");
+  let res = [];
+  arr.map((vl) => {
+    if (vl.match(/A|a/g)) res.push(4);
+    else if (vl.match(/E|e/g)) res.push(3);
+    else if (vl.match(/l/g)) res.push(1);
+    else res.push(vl);
+  });
+  return res.join("");
+}
+console.log(nerdify("SeAoijselawuue")); */
+
+// #7kyu Vowel one
+/* function vowelOne(s) {
+  let arr = [];
+  s.split("").map((vl) =>
+    vl.match(/^[aeiou]$/gi) ? arr.push(1) : arr.push(0)
+  );
+  return arr.join("");
+}
+console.log(vowelOne("123, arou"));
+ */
+
+// #7kyu Band name generator
+/* function bandNameGenerator(str) {
+  if (str.charAt(0) === str.charAt(str.length - 1)) {
+    return (
+      str.replace(str.charAt(0), str.charAt(0).toUpperCase()) + str.slice(1)
+    );
+  } else {
+    return "The " + str.replace(str.charAt(0), str.charAt(0).toUpperCase());
+  }
+}
+console.log(bandNameGenerator("tarta")); */
+
+// #7kyu Greet Me
+/* var greet = function (name) {
+  let lower = name.toLowerCase();
+  return "Hello " + lower[0].toUpperCase() + lower.slice(1) + "!";
+};
+console.log(greet("RILEY")); */
+
+// #7kyu Fix string case
+/* function solve(s) {
+  let lower = 0;
+  let upper = 0;
+  for (const i of s) {
+    if (i === i.toLowerCase()) lower++;
+    else upper++;
+  }
+  return lower >= upper ? s.toLowerCase() : s.toUpperCase();
+}
+console.log(solve("CODe")); */
+
+// #7kyu Minimize Sum Of Array (Array Series #1)
+/* function minSum(arr) {
+  let sortNum = arr.sort((a, b) => b - a);
+  let array = [];
+  let res = [];
+  while (sortNum.length > 0) {
+    array.push([sortNum[0], sortNum[sortNum.length - 1]]);
+    sortNum.splice(0, 1);
+    sortNum.splice(-1, 1);
+  }
+  array.map((vl) => {
+    res.push(eval(vl.join("*")));
+  });
+  return res.reduce((a, b) => a + b, 0);
+}
+console.log(minSum([9, 2, 8, 7, 5, 4, 0, 6])); */
+
+// #7kyu Product Of Maximums Of Array (Array Series #2)
+/* function maxProduct(numbers, size) {
+  return numbers
+    .sort((a, b) => b - a)
+    .slice(0, size)
+    .reduce((a, b) => a * b, 1);
+}
+console.log(maxProduct([4, 3, 5], 2));
+ */
+
+// #7kyu Maximum Triplet Sum (Array Series #7)
+/* function maxTriSum(numbers) {
+  return numbers
+    .filter((vl, index) => numbers.indexOf(vl) === index)
+    .sort((a, b) => b - a)
+    .slice(0, 3)
+    .reduce((sum, curr) => (sum += curr), 0);
+}
+console.log(maxTriSum([3, 2, 6, 8, 2, 3]));
+ */
+
+// #7kyu Divide and Conquer
+/* function divCon(x) {
+  let str = 0;
+  let number = 0;
+  x.map((num) => {
+    if (typeof num == "string") str += Number(num);
+    else number += num;
+  });
+  return number - Number(str);
+}
+console.log(divCon([9, 3, "7", "3"]));
+ */
+
+// #7kyu Alphabet war
+/* function alphabetWar(fight) {
+  let left = 0;
+  let right = 0;
+  for (const i of fight) {
+    if (i == "w") left += 4;
+    if (i == "p") left += 3;
+    if (i == "b") left += 2;
+    if (i == "s") left += 1;
+    if (i == "m") right += 4;
+    if (i == "q") right += 3;
+    if (i == "d") right += 2;
+    if (i == "z") right += 1;
+  }
+  if (left == right) return "Let's fight again!";
+  else if (left > right) return "Left side wins!";
+  else return "Right side wins!";
+}
+console.log(alphabetWar("z"));
+ */
+
+// #7kyu Sum a list but ignore any duplicates
+/* function sumNoDuplicates(numList) {
+  let filterList = numList.filter((vl, index) => numList.indexOf(vl) !== index);
+  let a = new Set([...filterList]);
+  let b = new Set([...numList]);
+  return [...a, ...b]
+    .filter((x) => ![...a].includes(x))
+    .reduce((sum, curr) => (sum += curr), 0);
+}
+console.log(sumNoDuplicates([1, 9, 2, 1, 5, 5, 1, 1, 5, 10, 5, 9, 5, 2, 1])); */
+
+// #7kyu Convert Hash To An Array
+/* function convertHashToArray(hash) {
+  return Object.entries(hash).sort((a, b) => a[0].localeCompare(b[0]));
+}
+console.log(convertHashToArray({ name: "Jeremy", age: 24 }));
+ */
+
+// #7kyu Covfefe
+/* function covfefe(str) {
+  if (str.includes("coverage")) return str.replace(/coverage/g, "covfefe");
+  else return [...str.split(" "), "covfefe"].join(" ");
+}
+console.log(
+  covfefe(
+    "sryzxamftj vhkrgujbrlab uxtdqtlxnz ghykquor coverage bdsyh dciuk coverage bsbsmsxqhyco tdbvoyxs lsoru smoxpx tihznmmtcnofzu uyfjclmv zpwwpudzjul hynveshwmxgn jvftl"
+  )
+); */
+
+// #7kyu Sum of Cubes
+/* function sumCubes(n) {
+  let res = 0;
+  for (let i = 1; i <= n; i++) {
+    res += i ** 3;
+  }
+  return res;
+}
+console.log(sumCubes(3)); */
+
+// #7kyu Incrementer
+/* function incrementer(nums) {
+  let res = [];
+  for (let i = 0; i < nums.length; i++) {
+    res.push(Number(`${nums[i] + (i + 1)}`.slice(-1, 2)));
+  }
+  return res;
+}
+console.log(incrementer([4, 6, 7, 1, 3])); */
+
+// #7kyu Testing 1-2-3
+/* var number = function (array) {
+  return array.map((vl, index) => `${index + 1}: ${vl}`);
+};
+console.log(number(["a", "b", "c"]));
+ */
+
+// #7kyu Sort array by string length
+/* function sortByLength(array) {
+  return array.sort((a, b) => a.length - b.length);
+}
+console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"]));
+ */
+
+// #7kyu Filter Coffee
+/* function search(budget, prices) {
+  return prices
+    .sort((a, b) => a - b)
+    .filter((num) => num <= budget)
+    .join(",");
+}
+console.log(search(14, [7, 3, 23, 9, 14, 20, 7])); */
+
+// #7kyu Sorting Dictionaries
+/* function sortDict(dict) {
+  return Object.entries(dict)
+    .sort((a, b) => b[1] - a[1])
+    .map((num) => {
+      if (!isNaN(num[0])) return [+num[0], num[1]];
+      else return [num[0], num[1]];
+    });
+}
+console.log(sortDict({ a: 6, b: 2, c: 4 })); */
+
+// #7kyu Changing letters
+/* function swap(string) {
+  return string.replace(/[aouei]/gi, (letter) => letter.toUpperCase());
+}
+console.log(swap("Codewars"));
+ */
+
+// #7kyu Are the numbers in order?
+/* function inAscOrder(arr) {
+  let cloneArr = arr.join("");
+  let sortArr = arr.sort((a, b) => a - b).join("");
+  return Object.is(sortArr, cloneArr);
+}
+console.log(inAscOrder([1, 6, 10, 18, 2, 4, 20]));
+ */
+
+// #7kyu Odd or Even?
+/* function oddOrEven(array) {
+  return array.reduce((sum, curr) => sum + curr, 0) % 2 === 0 ? "even" : "odd";
+}
+console.log(oddOrEven([-1023, -1, 3]));
+ */
+
+// #7kyu Remove the minimum
+/* function removeSmallest(numbers) {
+  let arr = numbers;
+  return numbers.filter(
+    (vl, index) => numbers.indexOf(Math.min(...numbers)) !== index
+  );
+}
+console.log(removeSmallest([1, 2, 3, 4, 5]));
+ */
+
+// #7kyu char_to_ascii
+/* function charToAscii(string) {
+  if (string === "") return null;
+  let onlyLetter = string.match(/[A-Za-z]/g);
+  let obj = {};
+  for (const i of onlyLetter) {
+    if (!(i in obj)) obj[i] = i.charCodeAt();
+  }
+  return obj;
+}
+console.log(charToAscii(""));
+ */
+
+// #7kyu Largest Elements
+/* function largest(n, array) {
+  return array
+    .sort((a, b) => b - a)
+    .slice(0, n)
+    .reverse();
+}
+console.log(largest(7, [9, 1, 50, 22, 3, 13, 2, 63, 5]));
+ */
+
+// #7kyu Sum even numbers
+/* function sumEvenNumbers(input) {
+  return input.reduce((sum, curr) => (curr % 2 === 0 ? sum + curr : sum), 0);
+}
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+ */
+
+// #7kyu Odd-Even String Sort
+/* function sortMyString(S) {
+  let even = "";
+  let odd = "";
+  for (let i = 0; i < S.length; i++) {
+    if (i % 2 === 0) even += S[i];
+    else odd += S[i];
+  }
+  return even + " " + odd;
+}
+console.log(sortMyString("CodeWars"));
+ */
+
+// #7kyu Decreasing Inputs
+/* function add(...args) {
+  let res = 0;
+  for (let i = 0; i < [...args].length; i++) {
+    res += [...args][i] / (i + 1);
+  }
+  return Math.round(res);
+}
+console.log(add(4, -3, -2));
+ */
+
+// #7kyu C.Wars
+/* function initials(n) {
+  let str = n.split(" ").map((vl) => vl[0].toUpperCase());
+  return str.join(".") + n.split(" ").slice(-1).join("").slice(1);
+}
+console.log(initials("Barack hussain obama"));
+ */
+
+// #7kyu Get key/value pairs as arrays
+/* function keysAndValues(data) {
+  return [Object.keys(data), Object.values(data)];
+}
+console.log(keysAndValues({ a: 1, b: 2, c: 3 }));
+ */
+
+// #7kyu Between Extremes
+/* function betweenExtremes(numbers) {
+  return Math.max(...numbers) - Math.min(...numbers);
+}
+console.log(betweenExtremes([21, 34, 54, 43, 26, 12]));
+ */
+
+// #7kyu Maid Ep2: Christmas Trash Party
+/* const openOrSenior = (data) =>
+  data.map((el) => ((el[0] >= 55) & (el[1] > 7) ? "Senior" : "Open"));
+console.log(
+  openOrSenior([
+    [45, 12],
+    [55, 21],
+    [19, -2],
+    [104, 20],
+  ])
+);
+ */
+
+// #7kyu Dot Calculator
+/* function dotCalculator(equation) {
+  let arr = equation.split(" ");
+  let a = arr[0].length;
+  let b = arr[2].length;
+  if (equation.includes("+")) return ".".repeat(a + b);
+  else if (equation.includes("-")) {
+    if (a > b) return ".".repeat(a - b);
+    else return ".".repeat(b - a);
+  } else if (equation.includes("*")) return ".".repeat(a * b);
+  else return ".".repeat(a / b);
+}
+console.log(dotCalculator("..... - ..............."));
+ */
+
+// #7kyu No oddities here
+/* function noOdds(values) {
+  return values.filter((vl) => vl % 2 === 0);
+}
+console.log(noOdds([0, 1, 2, 3]));
+ */
+
+// #7kyu Jaden Casing Strings
+/* String.prototype.toJadenCase = function () {
+  return this.split(" ")
+    .map((el) => el[0].toUpperCase() + el.slice(1))
+    .join(" ");
+};
+console.log("How can mirrors be real if our eyes aren't real".toJadenCase()); */
+
+// #7kyu Don't give me five!
+/* function dontGiveMeFive(start, end) {
+  arr = [];
+  for (i = start; i <= end; i++) {
+    if (!/[5]/i.test(i)) {
+      arr.push(i);
+    }
+  }
+  return arr.length;
+}
+console.log(dontGiveMeFive(1, 9));
+ */
+
+// #7kyu Green Glass Door
+/* function stepThroughWith(s) {
+  let regex = /[^\w\s]|(.)\1/gi;
+  return regex.test(s);
+}
+console.log(stepThroughWith("mon"));
+ */
+
+// #7kyu Flatten and sort an array
+/* "use strict";
+function flattenAndSort(array) {
+  return array.flat(Infinity).sort((a, b) => a - b);
+}
+console.log(
+  flattenAndSort(
+    flattenAndSort([
+      [3, 2, 1],
+      [7, 9, 8],
+      [6, 4, 5],
+    ])
+  )
+);
+ */
+
+// #7kyu Reverse list
+/* function reverseList(arr) {
+  return arr.reverse();
+}
+console.log(reverseList([1, 2, 3]));
+ */
+
+// #7kyu Sort arrays - 1
+/* sortme = function (names) {
+  return names.sort();
+};
+console.log(sortme(["one", "two", "three"])); */
+
+// #7kyu Find the stray number
+/* function stray(numbers) {
+  let obj = {};
+  for (const i of numbers) {
+    if (i in obj) obj[i]++;
+    else obj[i] = 1;
+  }
+  for (const key in obj) {
+    if (obj[key] === 1) return +key;
+  }
+}
+console.log(stray([1, 2, 1]));
+ */
+
+// #7kyu Factorial
+/* function factorial(n) {
+  return n != 0 ? n * factorial(n - 1) : 1;
+}
+console.log(factorial(4));
+ */
+
+// #7kyu Alphabetically ordered
+/* function alphabetic(s) {
+  return s.split("").sort().join("") === s;
+}
+console.log(alphabetic("codewars"));
+ */
+
+// #7kyu Find the index of the second occurrence of a letter in a string
+/* function secondSymbol(s, symbol) {
+  let a = s.split("").map((vl, index) => (vl === symbol ? index : null));
+  return a.filter((value) => value !== null)[1] || null;
+}
+console.log(secondSymbol("Hello world!!!", "A"));
+ */
+
+// #7kyu Fibonacci's FizzBuzz
+/* var fibsFizzBuzz = function (n) {
+  var output = [];
+  let n1 = 0,
+    n2 = 1,
+    nextTerm;
+  for (let i = 1; i <= n; i++) {
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+    output.push(n1);
+  }
+  return output.map((vl) =>
+    vl % 3 === 0 && vl % 5 === 0
+      ? "FizzBuzz"
+      : vl % 3 === 0
+      ? "Fizz"
+      : vl % 5 === 0
+      ? "Buzz"
+      : vl
+  );
+};
+console.log(fibsFizzBuzz(5)); */
+
+// #7kyu Make acronym
+/* function toAcronym(inp) {
+  return inp
+    .split(" ")
+    .map((vl) => vl[0].toUpperCase())
+    .join("");
+}
+console.log(toAcronym("hyper text markup language"));
+ */
+
+// #7kyu Length and two values.
+/* function alternate(n, firstValue, secondValue) {
+  let output = [];
+  let num = n;
+  while (n--) {
+    output.push(firstValue, secondValue);
+  }
+  return output.slice(0, num);
+}
+console.log(alternate(5, true, false));
+ */
+
+// #7kyu esreveR
+/* reverse = function (array) {
+  let result = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    result.push(array[i]);
+  }
+  return result;
+};
+console.log(reverse([767, 918, 621, 883, 367, 41, 829]));
+ */
+
+// #7kyu Cats and shelves
+/* function solution(start, finish) {
+  let difference = finish - start;
+  return Math.floor(difference / 3) + (difference % 3);
+}
+console.log(solution(1, 5));
+ */
+
+// #7kyu Complementary DNA
+/* function DNAStrand(dna) {
+  const obj = {
+    A: "T",
+    T: "A",
+    C: "G",
+    G: "C",
+  };
+  return dna.replace(/[A-Z]/g, (x) => (obj[x] ? obj[x] : x));
+}
+console.log(DNAStrand("GTAT"));
+ */
+
+// #7kyu Credit Card Mask
+/* function maskify(cc) {
+  let slice = cc.slice(-4);
+  if (cc.length <= 4) return cc;
+  else return "#".repeat(cc.length - 4) + slice;
+}
+console.log(maskify("4556364607935616"));
+ */
+
+// #7kyu Find the divisors!
+/* function divisors(integer) {
+  let res = [];
+  for (let i = 2; i < integer; i++) {
+    if (integer % i === 0) res.push(i);
+  }
+  return res.length === 0 ? `${integer} is prime` : res;
+}
+console.log(divisors(253)); */
+
+// #7kyu Switcheroo
+/* function switcheroo(x) {
+  return x.replace(/[a | b]/g, (x) => {
+    return { a: "b", b: "a" }[x];
+  });
+}
+console.log(switcheroo("abc"));
+ */
+
+// #7kyu Build a square
+/* function generateShape(integer) {
+  let str = "";
+  for (let i = 1; i <= integer; i++) {
+    for (let k = 1; k <= integer; k++) {
+      str += `+`;
+    }
+    str += `\n`;
+  }
+  return str.slice(0, -1);
+}
+console.log(generateShape(8)); */
+
+// #7kyu Running out of space
+/* function spacey(array) {
+  let res = [];
+  for (let i = 1; i <= array.length; ) {
+    res.push(array.slice(array[i], i++).join(""));
+  }
+  return res;
+}
+console.log(spacey(["kevin", "has", "no", "space"]));
+ */
+
+// #7kyu Remove All The Marked Elements of a List
+/* Array.prototype.remove_ = function (integer_list, values_list) {
+  return integer_list.filter((vl) => !values_list.includes(vl));
+};
+let l = new Array();
+console.log(l.remove_([1, 1, 2, 3, 1, 2, 3, 4], [1, 3]));
+ */
+
+// #7kyu Likes Vs Dislikes
+/* function likeOrDislike(buttons) {
+  return buttons.reduce((sum, curr) => (curr == sum ? Nothing : curr), Nothing);
+}
+console.log(likeOrDislike([Dislike]));
+ */
+
+// #7kyu Chain me
+/* function chain(input, fs) {
+  return fs.reduce((input, fn) => fn(input), input);
+}
+ */
+
+// #7kyu 99 Problems, #1: last in list
+/* const last = (xs) => (xs.length > 0 ? xs[xs.length - 1] : null);
+console.log(last([])); */
+
+// #7kyu Return the closest number multiple of 10
+/* const closestMultiple10 = (num) => {
+  return +`${num}`.slice(-1) < 5
+    ? +`${Math.round(num / 10)}0`
+    : +`${Math.round(num / 10)}0`;
+};
+console.log(closestMultiple10(37));
+ */
+
+// #7kyu Basic JS - Building a calculator
+/* var Calculator = {
+  add: (a, b) => a + b,
+  subtract: (a, b) => a - b,
+  multiply: (a, b) => a * b,
+  divide: (a, b) => (b !== 0 ? a / b : false),
+};
+console.log(Calculator.add(2, 2));
+console.log(Calculator.subtract(2, 2));
+console.log(Calculator.multiply(2, 2));
+console.log(Calculator.divide(2, 2));
+ */
+
+// #7kyu Find array
+/* function findArray(arr1, arr2) {
+  return !arr1.length || !arr2.length ? [] : arr2.map((value) => arr1[value]);
+}
+console.log(findArray([0, 1, 5, 2, 1, 8, 9, 1, 5], [1, 4, 7])); */
+
+// #7kyu Sorting Arrays
+/* function sortArray(a1, a2) {
+  return a1.map((value) => {
+    for (const i of a2) {
+      if (i[0] === value[0]) return i;
+    }
+  });
+}
+console.log(
+  sortArray(
+    ["giraffe", "orangutan", "impala", "elephant", "rhino"],
+    ["rattlesnake", "eagle", "geko", "iguana", "octopus"]
+  )
+);
+ */
+
+// #7kyu [JS] Parse integers in array
+/* var parseNumbers = function (intStrs) {
+  return intStrs.map((value) => parseInt(value));
+};
+console.log(parseNumbers(["2.48"]));
+
+ */
+
+// #7kyu Regex validate PIN code
+/* const validatePIN = (pin) => {
+  if (pin.length == 4 || pin.length == 6)
+    return pin.match(/[0-9]/gm).length === pin.length;
+  return false;
+};
+console.log(validatePIN("1234")); */
+
+// #7kyu Sum - Square Even, Root Odd
+/* const sumSquareEvenRootOdd = (ns) => {
+  return +ns
+    .reduce(
+      (sum, curr) => (sum += curr % 2 === 0 ? curr ** 2 : Math.sqrt(curr)),
+      0
+    )
+    .toFixed(2);
+};
+console.log(sumSquareEvenRootOdd([4, 5, 7, 8, 1, 2, 3, 0]));
+ */
+
+// #7kyu Complete The Pattern #1
+// function pattern(n) {
+//   var output = "";
+//   for (let i = 1; i <= n; i++) {
+//     output += `${i}`.repeat(i) + "\n";
+//   }
+//   return output.slice(0, -1);
+// }
+// console.log(pattern(5));
+
+// #7kyu Array Array Array
+/* function explode(x) {
+  let number = x.join("").match(/[0-9]/g);
+  if (number == null) return "Void!";
+  let finishNumber = eval(number.join("+"));
+  let result = [];
+  for (let i = 0; i < finishNumber; i++) { 
+    result.push(x);
+  }
+  return result;
+}
+console.log(explode(["a", "b"]));
+ */
+
+// #7kyu Anagram Detection
+/* var isAnagram = function (test, original) {
+  return (
+    test.toLowerCase().split("").sort().join("") ===
+    original.toLowerCase().split("").sort().join("")
+  );
+};
+console.log(isAnagram("Buckethead", "DeathCubeK")); */
+
+// #7kyu Cat and Mouse - Easy Version
+/* function catMouse(x) {
+  return (x.match(/\./g) || []).length > 3 ? "Escaped!" : "Caught!";
+}
+console.log(catMouse("C....m"));
+ */
+
+// #7kyu Converting 12-hour time to 24-hour time
+/* function to24hourtime(hour, minute, period) {
+  if (period === "pm") {
+    if (hour === 12) return `${`12`}${minute > 9 ? minute : `0${minute}`}`;
+    return `${hour + 12}${minute > 9 ? minute : `0${minute}`}`;
+  } else {
+    if (hour === 12) return `${`00`}${minute > 9 ? minute : `0${minute}`}`;
+    return `${hour > 9 ? hour : `0${hour}`}${
+      minute > 9 ? minute : `0${minute}`
+    }`;
+  }
+}
+console.log(to24hourtime(4, 0, "pm")); */
+
+// #7kyu Find the capitals
+/* var capitals = function (word) {
+  let result = [];
+  for (let i = 0; i < word.length; i++)
+    if (word[i] === word[i].toUpperCase()) result.push(i);
+  return result;
+};
+console.log(capitals("CodEWaRs")); */
+
+// #7kyu The Coupon Code
+/* function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+  const curDate = new Date(currentDate);
+  const expDate = new Date(expirationDate);
+  if (enteredCode === correctCode && curDate <= expDate) return true;
+  return false;
+}
+console.log(checkCoupon("123", "123", "September 5, 2014", "October 1, 2014")); */
+
+// #7kyu Waiting room
+/* function lastChair(N) {
+  return N - 1;
+}
+console.log(lastChair(lastChair(10))); */
+
+// #7kyu Convert an array of strings to array of numbers
+/* function toNumberArray(stringarray) {
+  return stringarray.map((value) => Number(value));
+}
+console.log(toNumberArray(["1.1", "2.2", "3.3"]));
+ */
+
+// #7kyu Insert dashes
+/* function insertDash(num) {
+  let arr = num.toString().split("");
+  let result = "";
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 && arr[i + 1] % 2) result += `${arr[i]}-`;
+    else result += arr[i];
+  }
+  return result;
+}
+console.log(insertDash(454793)); */
+
+// #7kyu Slaphead
+/* function bald(x) {
+  let count = 0;
+  let str = "";
+  for (let i = 0; i < x.length; i++) if (x[i] === "/") count++;
+  switch (count) {
+    case 0:
+      str += "Clean!";
+      break;
+    case 1:
+      str += "Unicorn!";
+      break;
+    case 2:
+      str += "Homer!";
+      break;
+    case 3:
+    case 4:
+    case 5:
+      str += "Careless!";
+      break;
+    default:
+      str += "Hobo!";
+      break;
+  }
+  return ["-".repeat(x.length), str];
+}
+console.log(bald("/---------")); */
+
+// #7kyu Scrolling Text
+/* function scrollingText(text) {
+  let result = [];
+  let upper = text.toUpperCase();
+  for (let i = 0; i < text.length; i++) {
+    result.push(upper.slice(i) + upper.slice(0, i));
+  }
+  return result;
+}
+console.log(scrollingText("codewars")); */
+
+// #7kyu Sort by Last Char
+/* function last(x) {
+  return x
+    .split(" ")
+    .sort((a, b) => a[a.length - 1].localeCompare(b[b.length - 1]));
+}
+console.log(last("take me to semynak")); */
+
+// #7kyu The average length
+/* function averageLength(arr) {
+  let letterLength = Math.round(arr.join("").length / arr.length);
+  return arr.map((value) => value[0].repeat(letterLength));
+}
+console.log(averageLength(["aa", "bb", "ddd", "eee"]));
+ */
+
+// #7kyu That unites us
+/* function thatUnitesUs(array1, array2, n) {
+  return [...new Set(array1.concat(array2).sort())].slice(0, n);
+}
+console.log(thatUnitesUs(["z", "g", "f"], ["g", "f", "c"], 3));
+ */
+
+// #7kyu Lowercase strings in array
+/* function arrayLowerCase(arr) {
+  return arr.map((value) =>
+    typeof value === "string" ? value.toLowerCase() : value
+  );
+}
+console.log(arrayLowerCase(["Red", 1]));
+ */
+
+// #7kyu Absent vowel
+/* function absentVowel(x) {
+  if (!x.match(/a/)) return 0;
+  if (!x.match(/e/)) return 1;
+  if (!x.match(/i/)) return 2;
+  if (!x.match(/o/)) return 3;
+  if (!x.match(/u/)) return 4;
+}
+console.log(absentVowel("Bb Smith sent us six neatly arranged range bicycles"));
+ */
+
+// #7kyu Always perfect
+/* function checkRoot(string) {
+  const arr = string.split(",").map((v) => v * 1);
+  if (arr.some((v) => isNaN(v) || v === 0) || arr.length !== 4)
+    return "incorrect input";
+  const sum = arr.reduce((a, b) => a * b, 1);
+  if (
+    arr.map((v, i, arr) => arr[i] + 1 === arr[i + 1]).filter((v) => v === false)
+      .length > 1
+  )
+    return "not consecutive";
+  return `${sum + 1}, ${Math.sqrt(sum + 1)}`;
+}
+console.log(checkRoot("4,5,6,7")); */
+
+// #7kyu A Rule of Divisibility by 7
+/* const seven = (m) => {
+  let times = 0;
+  while (("" + m).length > 2) {
+    times++;
+    m = Math.floor(m / 10) - (m % 10) * 2;
+  }
+  return [m, times];
+};
+console.log(seven(1021));
+ */
+
+// #7kyu All unique
+/* function hasUniqueChars(str) {
+  return new Set(str).size === str.length;
+}
+console.log(hasUniqueChars("  nAa")); */
+
+// #7kyu Calculate Julie's Age
+/* function age(x, y) {
+  return (x * y) / (y - 1);
+}
+console.log(age(-15, 0.25));
+ */
+
+// #7kyu Move 10
+/* function moveTen(s){
+  const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+  const arr = s.split('').map(v => v = str.indexOf(v)+10);
+  return arr.map(v => v = str[v]).join('');
+}
+console.log(moveTen("testcase")); */
+
+// #7kyu Numbers to Letters
+/* function switcher(x) {
+  const obj = {
+    1: "z",
+    2: "y",
+    3: "x",
+    4: "w",
+    5: "v",
+    6: "u",
+    7: "t",
+    8: "s",
+    9: "r",
+    10: "q",
+    11: "p",
+    12: "o",
+    13: "n",
+    14: "m",
+    15: "l",
+    16: "k",
+    17: "j",
+    18: "i",
+    19: "h",
+    20: "g",
+    21: "f",
+    22: "e",
+    23: "d",
+    24: "c",
+    25: "b",
+    26: "a",
+    27: "!",
+    28: "?",
+    29: " ",
+  };
+  return x.map((v) => obj[v * 1]).join("");
+}
+console.log(switcher(["24", "12", "23", "22", "4", "26", "9", "8"])); */
+
+// #7kyu Multiply the strings in the array
+/* function arrMultiply(arr) {
+  return `${arr[0] * arr[1]}`;
+}
+console.log(arrMultiply(["4", "5"])); */
+
+// #7kyu Name Array Capping
+/* function capMe(names) {
+  return names.map(
+    (value) => value[0].toUpperCase() + value.slice(1).toLowerCase()
+  );
+}
+console.log(capMe(["jo", "nelson", "jurie"])); */
+
+// #7kyu By 3, or not by 3? That is the question . . .
+/* function divisibleByThree(str) {
+  return str.split("").reduce((a, b) => a + b * 1, 0) % 3 === 0;
+}
+console.log(divisibleByThree("123")); */
+
+// #7kyu Binary Calculator
+/* function calculate(n1, n2, o) {
+  n1 = parseInt(n1, 2);
+  n2 = parseInt(n2, 2);
+  switch (o) {
+    case "add":
+      return (n1 + n2).toString(2);
+    case "subtract":
+      return (n1 - n2).toString(2);
+    case "multiply":
+      return (n1 * n2).toString(2);
+  }
+}
+console.log(calculate("1", "1", "add")); */
+
+// #7kyu Differential Averaging
+/* function addToAverage(current, points, add) {
+  return (current * points + add) / (points + 1);
+}
+console.log(addToAverage(0, 0, 1)); */
+
+// #7kyu Check digit
+/* function checkDigit(number, index1, index2, digit) {
+  if (index1 > index2) {
+    [index1, index2] = [index2, index1];
+  }
+  return ("" + number).slice(index1, index2 + 1).indexOf("" + digit) > -1;
+}
+console.log(checkDigit(1234567, 1, 0, 1)); */
+
+// #7kyu Filter the number
+/* var filterString = function (value) {
+  let result = "";
+  for (let i = 0; i < value.length; i++) {
+    if (!isNaN(value[i])) result += value[i];
+  }
+  return +result;
+};
+console.log(filterString("a1b2c3")); */
+
+// #7kyu Check your arguments
+/* function objectType(obj) {
+  return Object.prototype.toString.call(arguments.length == 0 ? null : obj);
+}
+console.log(objectType(false)); */
+
+// #7kyu max diff - easy
+/* function maxDiff(list) {
+  return list.length ? Math.max(...list) - Math.min(...list) : 0;
+}
+console.log(maxDiff([])); */
+
+// #7kyu TIY-FizzBuzz
+/* function tiyFizzBuzz(sentence) {
+  return sentence.split``.map((v) => {
+    if (/[\W]/.test(v)) return v;
+    if (/[^AEIUO \d]/.test(v) && v === v.toUpperCase()) return "Iron";
+    if (/[AEIUO]/.test(v)) return "Iron Yard";
+    if (/[aeiou]/.test(v)) return "Yard";
+    return v;
+  }).join``;
+}
+console.log(tiyFizzBuzz("a")); */
+
+// #7kyu Debug Basic Calculator
+/* const calculate = (a, o, b) => {
+  if (o === "+") return a + b;
+  if (o === "-") return a - b;
+  if (o === "/") return b !== 0 ? a / b : null;
+  if (o === "*") return a * b;
+  return null;
+};
+console.log(calculate(2, "+", 4)); */
+
+// #7kyu Easy wallpaper
+/* function wallpaper(l, w, h) {
+  var numbers = [
+    "zero",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "ten",
+    "eleven",
+    "twelve",
+    "thirteen",
+    "fourteen",
+    "fifteen",
+    "sixteen",
+    "seventeen",
+    "eighteen",
+    "nineteen",
+    "twenty",
+  ];
+  return w * h * l === 0
+    ? numbers[0]
+    : numbers[Math.ceil(((l * h * 2 + w * h * 2) * 1.15) / 5.2)];
+}
+console.log(wallpaper(6.3, 4.5, 3.29)); */
+
+// #7kyu Where's Wally
+/* function wheresWally(string) {
+  return (" " + string).search(/ Wally\b/);
+}
+console.log(wheresWally("DWally")); */
+
+// #7kyu Count the Digit
+/* function nbDig(n, d) {
+  let res = 0;
+  for (let i = 0; i <= n; i++) {
+    let square = (i * i + "").split("");
+    square.forEach((value) => (value == d ? res++ : null));
+  }
+  return res;
+}
+console.log(nbDig(5750, 0)); */
+
+// #7kyu Christmas baubles on the tree
+/* function baublesOnTree(baubles, branches) {
+  let arr = Array(branches).fill(0);
+  if (arr.length === 0)
+    return "Grandma, we will have to buy a Christmas tree first!";
+  for (let i = 0; ; i++) {
+    if (arr.reduce((a, b) => a + b, 0) === baubles) {
+      break;
+    }
+    arr[i % arr.length] += 1;
+  }
+  return arr;
+}
+console.log(baublesOnTree(5, 5)); */
+
+// #7kyu Selective fear of numbers
+/* var AmIAfraid = function (day, num) {
+  if (day === "Monday" && num === 12) return true;
+  else if (day === "Tuesday" && num > 95) return true;
+  else if (day === "Wednesday" && num === 34) return true;
+  else if (day === "Thursday" && num === 0) return true;
+  else if (day === "Friday" && num % 2 === 0) return true;
+  else if (day === "Saturday" && num === 56) return true;
+  else if (day === "Sunday" && (num === 666 || num === -666)) return true;
+  else return false;
+};
+console.log(AmIAfraid("Monday", 13)); */
+
+// #7kyu Love vs friendship
+/* function wordsToMarks(string) {
+  const alphabet = "Aabcdefghijklmnopqrstuvwxyz";
+  let result = 0;
+  for (let i = 0; i < string.length; i++) result += alphabet.indexOf(string[i]);
+  return result;
+}
+console.log(wordsToMarks("friends")); */
+
+// #7kyu Send in the Clones
+/* const clonewars = (n) => [
+  Math.round(Math.pow(2, n - 1)),
+  Array(n)
+    .fill(1)
+    .map((_, i, arr) => Math.pow(2, i) * (arr.length - i))
+    .reduce((a, b) => a + b, 0),
+];
+console.log(clonewars(1)); */
+
+// #7kyu 254 shades of grey
+/* function shadesOfGrey(n) {
+  const shades = [];
+  for (let i = 1; i <= Math.min(n, 254); i++) {
+    const grey = ("0" + i.toString(16)).slice(-2);
+    shades.push("#" + grey + grey + grey);
+  }
+  return shades;
+}
+console.log(shadesOfGrey(-2)); */
+
+// #7kyu Dropcaps
+/* var dropCap = (n) => {
+  const array = n.split(" ");
+  return array
+    .map((value) => {
+      if (value.length > 2)
+        return value[0].toUpperCase() + value.slice(1).toLowerCase();
+      else return value;
+    })
+    .join(" ");
+};
+console.log(dropCap("  Apple banana of")); */
+
+// #7kyu NATO Phonetic Alphabet
+/* function nato(word) {
+  const alphabet = {
+    A: "Alpha",
+    B: "Bravo",
+    C: "Charlie",
+    D: "Delta",
+    E: "Echo",
+    F: "Foxtrot",
+    G: "Golf",
+    H: "Hotel",
+    I: "India",
+    J: "Juliett",
+    K: "Kilo",
+    L: "Lima",
+    M: "Mike",
+    N: "November",
+    O: "Oscar",
+    P: "Papa",
+    Q: "Quebec",
+    R: "Romeo",
+    S: "Sierra",
+    T: "Tango",
+    U: "Uniform",
+    V: "Victor",
+    W: "Whiskey",
+    X: "X-ray",
+    Y: "Yankee",
+    Z: "Zulu",
+  };
+  return [...word.toUpperCase()].map((x) => alphabet[x]).join(" ");
+}
+console.log(nato("hi")); */
+
+// #7kyu Cats in hats
+/* function height(n) {
+  return ((2000000 * (1 - Math.pow(0.4, n + 1))) / (1 - 0.4)).toFixed(3);
+}
+console.log(height(7)); */
+
+// #7kyu Reversed Message
+/* function reverseMessage(str) {
+  const firstReverse = str
+    .split(" ")
+    .map((value) => [...value].reverse().join(""))
+    .join(" ");
+  const secondReverse = firstReverse
+    .split(` `)
+    .map(
+      (value) => value.slice(0, 1).toUpperCase() + value.slice(1).toLowerCase()
+    );
+  return secondReverse.reverse().join` `;
+}
+console.log(reverseMessage("Hello there")); */
+
+// #7kyu A Gift Well Spent
+/* var buy = function (x, arr) {
+  for (var i = 0; i < arr.length - 1; ++i)
+    for (var j = i + 1; j < arr.length; ++j)
+      if (arr[i] + arr[j] == x) return [i, j];
+  return null;
+};
+console.log(buy(2, [1, 1])); */
+
+// #7kyu Bubblesort Once
+/* const bubblesortOnce = function ([h, ...t]) {
+  return t
+    .reduce(function (acc, v) {
+      if (h < v) [h, v] = [v, h];
+      return [...acc, v];
+    }, [])x
+    .concat(h || []);
+}; */
+
+// #7kyu Count the Ones
+/* function hammingWeight(x) {
+  let i = 0;
+  while (x > 0) {
+    i += x & 1;
+    x >>= 1;
+  }
+  return i;
+}
+console.log(hammingWeight(10)); */
+
+// #7kyu Slope of a Line
+/* function getSlope(p1, p2) {
+  if ((p2[0] == p1[0] && p2[1] == p1[1]) || p2[0] == p1[0]) return null;
+  return (p2[1] - p1[1]) / (p2[0] - p1[0]);
+}
+console.log(getSlope([1, 1], [2, 2])); */
+
+// #7kyu Numbers in strings
+/* function solve(s) {
+  return Math.max(...s.match(/\d+/g));
+}
+console.log(solve("gh12cdy695m1")); */
+
+// #7kyu Candy problem
+/* function candies(kids) {
+  if (kids.length <= 1) return -1;
+  const maxCandies = Math.max(...kids);
+  return kids.reduce((total, kid) => total + maxCandies - kid, 0);
+}
+console.log(candies([5, 8, 6, 4])); */
+
+// #7kyu Dinner Plans
+/* function commonGround(s1, s2) {
+  let arr1 = s1.split(" ");
+  let arr2 = s2.split(" ");
+  let search = arr1.length > arr2.length ? arr1 : arr2;
+  let temp = arr1.length > arr2.length ? arr2 : arr1;
+  let res = "";
+  for (let i = 0; i < temp.length; i++) {
+    if (search.includes(temp[i])) res += temp[i] + " ";
+  }
+  res = res.trim();
+  return res.length ? res : "death";
+}
+console.log(commonGround("eat chicken", "eat chicken and rice")); */
+
+// #7kyu Consecutive letters
+/* function solve(s) {
+  const sorted = s
+    .split(``)
+    .sort()
+    .map((v) => v.charCodeAt());
+  return (
+    sorted.map((v, i, arr) => v + 1 === arr[i + 1]).filter((v) => v === false)
+      .length < 2
+  );
+}
+console.log(solve("abc")); */
+
+// #7kyu Cost of my ride
+/* function insurance(age, size, numofdays) {
+  let insur = 0;
+  if (age < 25) insur += 10;
+  if (size === "economy") insur += 0;
+  else if (size === "medium") insur += 10;
+  else if (size === "full-size") insur += 15;
+  else insur += 15;
+  insur = numofdays * (50 + insur);
+  return insur >= 0 ? insur : 0;
+}
+console.log(insurance(18, "medium", 7)); */
+
+// #7kyu Reverse the bits in an integer
+/* function reverseBits(n) {
+  const bits = Number(n).toString(2).split("").reverse().join("");
+  return parseInt(bits, 2);
+}
+console.log(reverseBits(Number.MAX_SAFE_INTEGER)); */
+
+// #7kyu Array2Binary addition
+/* function arr2bin(arr) {
+  if (arr.filter((v) => typeof v != "number").length > 0) return false;
+  return arr.reduce((a, b) => a + b, 0).toString(2);
+}
+console.log(arr2bin([1, 2])); */
+
+// #7kyu Batman Quotes
+/* function getQuote(quotes, hero) {
+  return (
+    { R: "Robin", J: "Joker", B: "Batman" }[hero[0]] +
+    ": " +
+    quotes[hero.match(/\d+/)[0]]
+  );
+}
+console.log(getQuote(quotes, "Rob1n")); */
+
+// #7kyu Bumps in the Road
+/* function bump(str) {
+  return str.replace(/_/g, "").length > 15 ? "Car Dead" : "Woohoo!";
+}
+console.log(bump("__nn_nnnn__n_n___n____nn__nnn")); */
+
+// #7kyu Permutation Average
+/* const cupAndBalls = (ball, pairs) =>
+  pairs.reduce((ball, [a, b]) => (a == ball ? b : b == ball ? a : ball), ball);
+console.log(cupAndBalls(2, [[1, 2]])); */
+
+// #7kyu Clean up after your dog
+/* function crap(x, bags, cap) {
+  let crap = 0;
+  let dog = 0;
+  x.map((v) =>
+    v.map((v) => (v === "@" ? (crap += 1) : v === "D" ? (dog += 1) : v))
+  );
+  if (dog > 0) return "Dog!!";
+  return crap > bags * cap ? "Cr@p" : "Clean";
+}
+console.log(
+  crap(
+    [
+      ["_", "_", "_", "_"],
+      ["_", "_", "_", "@"],
+      ["_", "_", "@", "_"],
+    ],
+    1,
+    1
+  )
+); */
+
+// #7kyu Centroid I
+/* function centroid(c) {
+  let x = c.map(
+    (v, i) => (c.reduce((a, b) => a + b[0], 0) / c.length).toFixed(2) * 1
+  )[0];
+  let y = c.map(
+    (v, i) => (c.reduce((a, b) => a + b[1], 0) / c.length).toFixed(2) * 1
+  )[0];
+  let z = c.map(
+    (v, i) => (c.reduce((a, b) => a + b[2], 0) / c.length).toFixed(2) * 1
+  )[0];
+  return [x, y, z];
+}
+console.log(
+  centroid([
+    [1, 0, 5],
+    [0, 1, 5],
+    [2, 2, 5],
+  ])
+); */
+
+// #7kyu Why So Serious?
+/* function whySoSerious(str) {
+  let J = str.includes("Jc");
+  let O = str.includes("7s");
+  let K = str.includes("5s");
+  let E = str.includes("As");
+  let R = str.includes("9c");
+  return J && O && K && E && R;
+}
+console.log(whySoSerious("4s8cJcJs6c6s9s7s9c4c5sAs2s")); */
+
+// #7kyu Surf is Up!
+/* function surfsUp(waves) {
+  for (let i = 0; i < 3; i++) {
+    let w = waves[i];
+    if (w > 7 && w < 11) return [w, `Johnny ${w == 8 ? "rides" : "falls"}`];
+    if (i == 2 && w < 8) return [w, "Johnny rides"];
+  }
+  return ["Johnny waits"];
+}
+console.log(surfsUp([9, 8, 10])); */
+
+// #7kyu Even odd disparity
+/* function solve(a) {
+  let odd = 0;
+  let even = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] % 2 === 0) even++;
+    else if (a[i] % 2 === 1) odd++;
+  }
+  return even - odd;
+}
+console.log(solve([0, 15, "z", 16, "m", 13, 14, "c", 9, 10, 13, "u", 4, 3])); */
+
+// #7kyu SillyCASE
+/* function sillycase(silly) {
+  return (
+    silly.slice(0, Math.ceil(silly.length / 2)).toLowerCase() +
+    silly.slice(Math.ceil(silly.length / 2)).toUpperCase()
+  );
+}
+console.log(sillycase("brian")); */
+
+// #7kyu Simple remove duplicates
+/* function solve(arr) {
+  return [...new Set(arr.reverse())].reverse();
+}
+console.log(solve([3, 4, 4, 3, 6, 3])); */
+
+// #7kyu Put a Letter in a Column
+/* function buildRowText(index, character) {
+  const arr = [];
+  for (let i = 0; i <= 8; i++) {
+    if (i === index) {
+      arr.push(`|${character}`);
+    } else {
+      arr.push("|");
+    }
+  }
+  arr.push("|");
+  return arr.join(" ").replace(/\w\s/g, `${character}`);
+}
+console.log(buildRowText(2, "A")); */
+
+// #7kyu Initialize my name
+/* function initializeNames(name) {
+  if (name.split(" ").length < 2) return name;
+  else {
+    let array = [];
+    let first = name.split(" ")[0];
+    let last = name.split(" ")[name.split(" ").length - 1];
+    for (let i = 1; i < name.split(" ").length - 1; i++)
+      array.push(name.split(" ")[i][0] + ".");
+    array.unshift(first);
+    array.push(last);
+    return array.join(" ");
+  }
+}
+console.log(initializeNames("Dimitri")); */
+
+// #7kyu The reject() function
+/* function reject(array, iterator) {
+  return array.filter((el) => !iterator(el));
+}
+console.log(reject([1, 2, 3, 4, 5, 6], (n) => n % 2 === 0)); */
+
+// #7kyu ASCII letters from Number
+/* function convert(number) {
+  let result = "";
+  for (let i = 0; i < number.length; i += 2) {
+    result += String.fromCharCode(`${number[i]}${number[i + 1]}`);
+  }
+  return result;
+}
+console.log(convert("73327673756932858080698267658369")); */
+
+// #7kyu The old switcheroo
+/* function vowel2index(str) {
+  return str.replace(/[aeiou]/g, (a, b) => b + 1);
+}
+console.log(vowel2index("this is my string")); */
+
+// #7kyu Decoding a message
+/* function decode(code, list = "abcdefghijklmnopqrstuvwxyz") {
+  return code
+    .toLowerCase()
+    .replace(/./gi, (a) =>
+      list.indexOf(a) > -1 ? list[list.length - list.indexOf(a) - 1] : a
+    );
+}
+console.log(decode("sr")); */
+
+// #7kyu Sort the Vowels!
+/* function sortVowels(s) {
+  if (typeof s !== "string") return "";
+  return s.split``.map((v) => {
+    if (/[aeiou]/i.test(v)) return "|" + v + "\n";
+    else return v + "|" + "\n";
+  }).join``.slice(0, -1);
+}
+console.log(sortVowels("Codewars")); */
+
+// #7kyu Colored Hexes!
+/* function hexColor(colors) {
+  let b = colors.split(" ")[2] * 1;
+  let g = colors.split(" ")[1] * 1;
+  let r = colors.split(" ")[0] * 1;
+  if (b > g && b > r) return "blue";
+  if (r > g && r > b) return "red";
+  if (g > r && g > b) return "green";
+  if (b === g && g === b && b === r && r > 0) return "white";
+  if (b === 0 && g === 0 && r === 0) return "black";
+  if (r === b) return "magenta";
+  if (g === r) return "yellow";
+  if (g === b) return "cyan";
+  return "black";
+}
+console.log(hexColor(hexColor("000 000 000"))); */
+
+// #7kyu Uglify Word
+/* function uglifyWord(s) {
+  s = s.toLowerCase().split("");
+  let flag = 1;
+  for (let i = 0; i < s.length; i++) {
+    if (/[a-z]/.test(s[i])) {
+      if (flag === 1) {
+        let str = s[i].toUpperCase();
+        s[i] = str;
+        flag = 0;
+      } else {
+        let str = s[i].toLowerCase();
+        s[i] = str;
+        flag = 1;
+      }
+    } else {
+      flag = 1;
+    }
+  }
+  return s.join(``);
+}
+console.log(uglifyWord("Eqwe123asdf456zxc")); */
+
+// #7kyu Asterisk it
+/* function asteriscIt(n) {
+  if (Array.isArray(n))
+    return n
+      .join("")
+      .split("")
+      .map((v, i, arr) => (v % 2 === 0 && arr[i + 1] % 2 === 0 ? v + "*" : v))
+      .join(``);
+  return ("" + n)
+    .split("")
+    .map((v, i, arr) => (v % 2 === 0 && arr[i + 1] % 2 === 0 ? v + "*" : v))
+    .join(``);
+}
+console.log(asteriscIt(5312708)); */
+
+// #7kyu Coding Meetup #17 - Higher-Order Functions Series - Sort by programming language
+/* function sortByLanguage(list) {
+  return list
+    .sort((a, b) => a.firstName.localeCompare(b.firstName))
+    .sort((a, b) => a.language.localeCompare(b.language));
+}
+console.log(
+  sortByLanguage([
+    {
+      firstName: "Nikau",
+      lastName: "R.",
+      country: "New Zealand",
+      continent: "Oceania",
+      age: 39,
+      language: "Ruby",
+    },
+    {
+      firstName: "Precious",
+      lastName: "G.",
+      country: "South Africa",
+      continent: "Africa",
+      age: 22,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Maria",
+      lastName: "S.",
+      country: "Peru",
+      continent: "Americas",
+      age: 30,
+      language: "C",
+    },
+    {
+      firstName: "Agustin",
+      lastName: "V.",
+      country: "Uruguay",
+      continent: "Americas",
+      age: 19,
+      language: "JavaScript",
+    },
+  ])
+); */
+
+// #7kyu Driving School Series #1
+/* function passed(list) {
+  let count = 0;
+  const result =
+    list.reduce((sum, curr) => {
+      if (curr <= 18) {
+        count++;
+        return sum + curr;
+      } else return sum + 0;
+    }, 0) / count;
+  return Math.round(result) || "No pass scores registered.";
+}
+console.log(passed([21, 22, 24])); */
+
+// #7kyu ReOrdering
+/* function reOrdering(text) {
+  const array = text.split(" ");
+  const firstWord = array.filter((value) => value[0] === value[0].toUpperCase());
+  const othersWord = array.filter((value) => value[0] === value[0].toLowerCase()).join(" ");
+  return `${firstWord} ${othersWord}`.trim();
+}
+console.log(reOrdering("wario LoBan hello")); */
+
+// #7kyu All Inclusive?
+/* function containAllRots(str, arr) {
+  for (var i = 0; i < str.length; i++)
+    if (arr.indexOf(str.slice(i) + str.slice(0, i)) === -1) return false;
+  return true;
+}
+console.log(containAllRots("", ["bsjq", "qbsj"])); */
+
+// #7kyu Sectional Array Sort
+/* function sectSort(arr, start, length) {
+  length === 0 ? (length = undefined) : length;
+  const before = arr.slice(0, start);
+  const center = arr
+    .slice(start, start + length || arr.length)
+    .sort((a, b) => a - b);
+  let end;
+  length === undefined
+    ? (end = arr.slice(start, start))
+    : (end = arr.slice(start + length));
+  return [...before, ...center, ...end];
+}
+console.log(sectSort([1, 2, 5, 7, 4, 6, 3, 9, 8], 2)); */
+
+// #7kyu Max-min arrays
+/* function solve(arr) {
+  arr = arr.sort((a, b) => b - a);
+  const length = arr.slice().length;
+  const arr1 = [];
+  for (let i = 0; i < length; i++) {
+    arr1.push(arr.shift());
+    arr1.push(arr.pop());
+  }
+  return arr1.filter((v) => v != undefined);
+}
+console.log(solve([15, 11, 10, 7, 12])); */
+
+// #7kyu reverseIt
+/* function reverseIt(data){
+  if (typeof data === "string") return `${data}`.split("").reverse().join("")
+  else if (typeof data === "number") return +`${data}`.split("").reverse().join("")
+  else return data
+}
+console.log(reverseIt('314159')); */
+
+// #7kyu Find the missing element between two arrays
+/* function findMissing(arr1, arr2) {
+  const array = [...arr1, ...arr2]
+  let obj = {}
+  for (const i of array) i in obj ? obj[i]++ : obj[i] = 0;
+  for (const key in obj) if (obj[key] % 2 === 0) return +key;
+}
+console.log(findMissing([4, 3, 3, 61, 8, 8], [8, 61, 8, 3, 4])); */
+
+// #7kyu Array Mash
+/* function arrayMash (array1, array2) {
+  let result = [];
+  for (let i = 0; i < array1.length; i++) result.push(array1[i], array2[i]);
+  return result;
+}
+console.log(arrayMash([1, 1, 1, 1], [2, 2, 2, 2])); */
+
+// #7kyu Fruit string calculator
+/* function calculate(string) {
+  let result = [];
+  const array = string.split(" ");
+  for (let i = 0; i < array.length; i++) if (!isNaN(array[i])) result.push(array[i]);
+  return string.includes("gains") ? eval(result.join("+")) : eval(result.join("-"));
+}
+console.log(calculate("Panda has 48 apples and gains 4")); */
+
+// #7kyu Sort by Example
+/* function exampleSort(arr,exampleArr){
+    let result = [];
+    for (let i = 0; i < exampleArr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        if (exampleArr[i] === arr[j]) result.push(arr[j]);
+      }
+    }
+  return result;
+}
+console.log(exampleSort([1,2,3,4,5],[2,3,4,1,5])); */
+
+// #7kyu Return a sorted list of objects
+/* function sortList (sortBy, list) {
+  return [...list].sort((a,b)=>b[sortBy]-a[sortBy]);
+} */
+
+// #7kyu filterEvenLengthWords
+/* function filterEvenLengthWords(words) {
+  return words.filter((value) => value.length % 2 === 0)
+}
+console.log(filterEvenLengthWords(['word', 'words', 'word', 'words'])); */
+
+// #7kyu Arithmetic List!
+/* var seqlist = function(first,c,l){
+  return  Array.from({ length: l }, (value, index) => first + c * index)
+}
+console.log(seqlist(0,1,20)); */
+
+// #7kyu Failed Sort - Bug Fixing #4
+/* var sortArray = function(value) {
+  return value.split('').sort((c, p) => c - p ).join('');
+}
+console.log(sortArray('12345')); */
+
+// #7kyu String reverse slicing 101
+/* function reverseSlice(str) {
+  let result = [];
+  const reverse = str.split("").reverse().join("");
+  for (let i = 0; i < reverse.length; i++)
+    result.push(reverse.slice(i, reverse.length));
+  return result;
+}
+console.log(reverseSlice("abcdef")); */
+
+// #7kyu Small enough? - Beginner
+/* function smallEnough(a, limit) {
+  return a.every((value) => value <= limit);
+}
+console.log(smallEnough([110, 45, 75, 105, 99, 107], 107)); */
+
+// #7kyu 8 towers
+/* function towerCombination(n) {
+  return n === 1 ? 1 : n * towerCombination(n - 1);
+}
+console.log(towerCombination(2)); */
+
+// #7kyu Failed Filter - Bug Fixing #3
+/* var FilterNumbers = function (str) {
+  return str
+    .split("")
+    .filter((c) => !c.match(/[1-9]/))
+    .join("");
+};
+console.log(FilterNumbers("test1203")); */
+
+// #7kyu Ordering the words!
+/* function orderWord(s) {
+  if (s === null || s.length) return "Invalid String!";
+  else return s.split("").sort().join("");
+}
+console.log(orderWord(null)); */
+
+// #7kyu Simple Fun #20: First Reverse Try
+/* function firstReverseTry(arr) {
+  if (arr.length === 0 || arr.length === 1) return arr;
+  const array = [arr[arr.length - 1]];
+  for (let i = 1; i < arr.length - 1; i++) array.push(arr[i]);
+  array.push(arr[0]);
+  return array;
+}
+console.log(firstReverseTry([])); */
+
+// #7kyu Hello World - Without Strings
+/* const helloWorld = () => {
+  return String.fromCharCode(
+    72,
+    101,
+    108,
+    108,
+    111,
+    44,
+    32,
+    87,
+    111,
+    114,
+    108,
+    100,
+    33
+  );
+};
+console.log(helloWorld()); */
+
+// #7kyu Nickname Generator
+/* function nicknameGenerator(name) {
+  if (name.length < 4) return "Error: Name too short";
+  const sliceString = name.slice(0, 3);
+  return /[aeiou]$/g.test(sliceString) ? name.slice(0, 4) : sliceString;
+}
+console.log(nicknameGenerator("Kaeyne")); */
+
+// #7kyu Building Strings From a Hash
+/* function solution(pairs) {
+  let string = "";
+  for (let key in pairs) {
+    string += `${key} = ${pairs[key]},`;
+  }
+  return string.slice(0, -1);
+}
+console.log(solution({ a: 1, b: "2" })); */
+
+// #7kyu Average Scores
+/* function average(scores) {
+  return Math.round(scores.reduce((sum, curr) => sum + curr, 0) / scores.length)
+}
+console.log(average([90, 98, 89, 100, 100, 86, 94])); */
+
+// #7kyu Sum of a nested list
+/* const sumNested = (arr) => {
+  return eval(arr.flat(Infinity).join("+")) || 0;
+};
+console.log(
+  sumNested([[[[], [], [[[[[[[[[[]]]]]]]]]]], [], [], [[[], [[]]]]], []])
+); */
+
+// #7kyu Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe
+/* function countDevelopers(list) {
+  let count = 0;
+  list.forEach((element) => {
+    if (element.continent === "Europe" && element.language === "JavaScript")
+      count++;
+  });
+  return count;
+}
+console.log(
+  countDevelopers([
+    {
+      firstName: "Noah",
+      lastName: "M.",
+      country: "Switzerland",
+      continent: "Europe",
+      age: 19,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Maia",
+      lastName: "S.",
+      country: "Tahiti",
+      continent: "Oceania",
+      age: 28,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Shufen",
+      lastName: "L.",
+      country: "Taiwan",
+      continent: "Asia",
+      age: 35,
+      language: "HTML",
+    },
+    {
+      firstName: "Sumayah",
+      lastName: "M.",
+      country: "Tajikistan",
+      continent: "Asia",
+      age: 30,
+      language: "CSS",
+    },
+  ])
+); */
+
+// #7kyu Coding Meetup #2 - Higher-Order Functions Series - Greet developers
+/* function greetDevelopers(list) {
+  return list.map((value) => {
+    return {
+      ...value,
+      greeting: `Hi ${value.firstName}, what do you like the most about ${value.language}?`,
+    };
+  });
+}
+console.log(
+  greetDevelopers([
+    {
+      firstName: "Sofia",
+      lastName: "I.",
+      country: "Argentina",
+      continent: "Americas",
+      age: 35,
+      language: "Java",
+    },
+    {
+      firstName: "Lukas",
+      lastName: "X.",
+      country: "Croatia",
+      continent: "Europe",
+      age: 35,
+      language: "Python",
+    },
+    {
+      firstName: "Madison",
+      lastName: "U.",
+      country: "United States",
+      continent: "Americas",
+      age: 32,
+      language: "Ruby",
+    },
+  ])
+);
+ */
+
+// #7kyu Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages
+/* function countLanguages(list) {
+  let result = {};
+  list.forEach((value) => {
+    if (value.language in result) result[value.language]++;
+    else result[value.language] = 1;
+  });
+  return result;
+}
+console.log(
+  countLanguages([
+    {
+      firstName: "Noah",
+      lastName: "M.",
+      country: "Switzerland",
+      continent: "Europe",
+      age: 19,
+      language: "C",
+    },
+    {
+      firstName: "Anna",
+      lastName: "R.",
+      country: "Liechtenstein",
+      continent: "Europe",
+      age: 52,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Ramon",
+      lastName: "R.",
+      country: "Paraguay",
+      continent: "Americas",
+      age: 29,
+      language: "Ruby",
+    },
+    {
+      firstName: "George",
+      lastName: "B.",
+      country: "England",
+      continent: "Europe",
+      age: 81,
+      language: "C",
+    },
+  ])
+); */
+
+// #7kyu Coding Meetup #11 - Higher-Order Functions Series - Find the average age
+/* function getAverageAge(list) {
+  return Math.round(
+    list.reduce((sum, curr) => sum + curr.age, 0) / list.length
+  );
+}
+console.log(
+  getAverageAge([
+    {
+      firstName: "Noa",
+      lastName: "A.",
+      country: "Israel",
+      continent: "Asia",
+      age: 20,
+      language: "Ruby",
+    },
+    {
+      firstName: "Andrei",
+      lastName: "E.",
+      country: "Romania",
+      continent: "Europe",
+      age: 21,
+      language: "C",
+    },
+  ])
+); */
+
+// #7kyu Easy mathematical callback
+/* function processArray(arr, callback) {
+  return arr.map((value) => callback(value));
+}
+console.log(processArray([4, 8, 2, 7, 5], (n) => n * 2)); */
+
+// #7kyu Simple Fun #37: House Numbers Sum
+/* function houseNumbersSum(inputArray) {
+  let count = 0;
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] === 0) return count;
+    else count += inputArray[i];
+  }
+}
+console.log(houseNumbersSum([4, 1, 2, 3, 0, 10, 2])); */
+
+// #7kyu Smallest value of an array
+/* function min(arr, toReturn) {
+  return toReturn === "value"
+    ? Math.min(...arr)
+    : arr.indexOf(Math.min(...arr));
+}
+console.log(min([10, 2, 3, 1, 5], "value")); */
+
+// #7kyu Reduce My Fraction
+/* function reduce(fraction) {
+  let x = fraction[0];
+  let y = fraction[1];
+  for (let i = 2; i <= Math.min(...fraction); ) {
+    if (x % i === 0 && y % i === 0) {
+      x = x / i;
+      y = y / i;
+      i = 2;
+    } else i++;
+  }
+  return [x, y];
+}
+console.log(reduce([4, 2])); */
+
+// #7kyu Return the Missing Element
+/* function getMissingElement(superImportantArray) {
+  for (let i = 0; i < 10; i++) {
+    if (superImportantArray.sort()[i] !== i) return i;
+  }
+}
+console.log(getMissingElement([0, 5, 1, 3, 2, 9, 7, 6, 4])); */
+
+// #7kyu Find the vowels
+/* function vowelIndices(word) {
+  let result = [];
+  word = word.toLowerCase();
+  for (let i = 0; i < word.length; i++) {
+    if (["a", "o", "e", "i", "u", "y"].includes(word[i])) result.push(i + 1);
+  }
+  return result;
+}
+console.log(vowelIndices("rsaSVwsCXtwYVCxxZf")); */
+
+// #7kyu Reverse a Number
+/* function reverseNumber(n) {
+  let reversed = 0;
+  let number = Math.abs(n);
+  while (number != 0) {
+    reversed = reversed * 10 + (number % 10);
+    number = Math.floor(number / 10);
+  }
+  return n < 0 ? -reversed : reversed;
+}
+console.log(reverseNumber(-123)); */
+
+// #7kyu Halving Sum
+/* function halvingSum(n) {
+  let count = n;
+  while (n) {
+    count += Math.floor(n / 2);
+    n = n / 2;
+  }
+  return count;
+}
+console.log(halvingSum(25)); */
+
+// #7kyu Frank's Sticky Calculator
+/* function stickyCalc(operation, val1, val2) {
+  val1 = Math.round(val1);
+  val2 = Math.round(val2);
+  let result;
+  switch (operation) {
+    case "+":
+      result = +`${val1}${val2}` + val2;
+      break;
+    case "-":
+      result = `${val1}${val2}` - val2;
+      break;
+    case "*":
+      result = `${val1}${val2}` * val2;
+      break;
+    default:
+      result = `${val1}${val2}` / val2;
+      break;
+  }
+  return Math.round(result);
+}
+console.log(stickyCalc("+", 4.2, 7)); */
+
+// #7kyu Fix My Phone Numbers!
+/* function isItANum(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result += parseInt(str[i]) || str[i] == "0" ? str[i] : "";
+  }
+  return result[0] == "0" && result.length >= 11
+    ? result.slice(0, 11)
+    : "Not a phone number";
+}
+console.log(isItANum("S:)0207ERGQREG88349F82!efRF)")); */
+
+// #7kyu Substring fun
+/* function nthChar(words) {
+  return words.map((value, index) => value[index]).join("");
+}
+console.log(nthChar([])); */
+
+// #7kyu Even or Odd - Which is Greater?
+/* function evenOrOdd(str) {
+  let even = 0;
+  let odd = 0;
+  for (let i = 0; i < str.length; i++) {
+    str[i] % 2 === 0 ? (even += +str[i]) : (odd += +str[i]);
+  }
+  if (even > odd) return "Even is greater than Odd";
+  else if (even < odd) return "Odd is greater than Even";
+  else return "Even and Odd are the same";
+}
+console.log(evenOrOdd("12")); */
+
+// #7kyu Reverse Factorials
+/* function reverseFactorial(num) {
+  let factorial = 1;
+  let i = 1;
+  while (factorial < num) {
+    i++;
+    factorial *= i;
+  }
+  if (factorial === num) {
+    return i + "!";
+  } else {
+    return "None";
+  }
+}
+console.log(reverseFactorial(150)); */
+
+// #7kyu Ones' Complement
+/* function onesComplement(n) {
+  let reverse = "";
+  for (let i = 0; i < n.length; i++) {
+    reverse += n[i] === "1" ? "0" : "1";
+  }
+  return reverse;
+}
+console.log(onesComplement("1101")); */
+
+// #7kyu Name That Number!
+/* function nameThatNumber(num) {
+  num = num.toString();
+  let ones = [
+    "",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+  ];
+  let numbersTenToTwenty = [
+    "ten",
+    "eleven",
+    "twelve",
+    "thirteen",
+    "fourteen",
+    "fifteen",
+    "sixteen",
+    "seventeen",
+    "eighteen",
+    "nineteen",
+  ];
+
+  let tens = [
+    "",
+    "",
+    "twenty",
+    "thirty",
+    "forty",
+    "fifty",
+    "sixty",
+    "seventy",
+    "eighty",
+    "ninety",
+  ];
+  if (num === "" || num === "0") return "zero";
+  else if (num < 10) return ones[num];
+  else if (num > 9 && num < 20) return numbersTenToTwenty[num[1]];
+  else return (tens[num[0]] + " " + ones[num[1]]).trim();
+}
+console.log(nameThatNumber(9)); */
+
+// #7kyu Find the middle element
+/* function gimme(triplet) {
+  let temp = [...triplet];
+  let index = Math.floor(triplet.length / 2);
+  let sortArray = triplet.sort((a, b) => a - b)[index];
+  for (let i = 0; i < triplet.length; i++) {
+    if (temp[i] === sortArray) return i;
+  }
+}
+console.log(gimme([2.1, 3.2, 1.4])); */
+
+// #7kyu Factorial
+/* function factorial(n) {
+  if (n < 0 || n > 12) throw new RangeError("Range must be between 0 and 12");
+  return n > 1 ? n * factorial(n - 1) : 1;
+}
+console.log(factorial(15)); */
+
+// #7kyu Nth power rules them all!
+/* function modifiedSum(a, n) {
+  let sum = 0;
+  for (let i = 0; i < a.length; i++) {
+    sum += a[i] ** n;
+  }
+  return sum - eval(a.join("+"));
+}
+console.log(modifiedSum([1, 2, 3], 3)); */
+
+// #7kyu letters only, please!
+/* function removeChars(s) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i].toLowerCase() !== s[i].toUpperCase() || s[i] === " ")
+      result += s[i];
+  }
+  return result;
+}
+console.log(removeChars("that's a pie&ce o_f p#ie!")); */
+
+// #7kyu Remove HTML tags using regexp
+/* const reg = /<[^>]*>/g; */
+
+// #7kyu Help Bob count letters and digits.
+/* function countLettersAndDigits(input) {
+  return (input.match(/[A-Za-z0-9]/g) || []).length;
+}
+console.log(countLettersAndDigits("..."));
+ */
+
+// #7kyu Recursive Replication
+/* function replicate(times, number) {
+  if (times < 0) {
+    return [];
+  } else if (times === 0) {
+    return [];
+  } else {
+    return [number].concat(replicate(times - 1, number));
+  }
+}
+console.log(replicate(3, 5)); */
+
+// #7kyu Describe a list
+/* function describeList(x) {
+  return x.length === 0 ? "empty" : x.length === 1 ? "singleton" : "longer";
+}
+console.log(describeList([1.5])); */
+
+// #7kyu Count number of zeros from 1 to N
+/* function countZeros(n) {
+  for (let i = 1; i <= n; i += 10) {
+    let str = n.toString();
+    let count = 0;
+    for (let i = 0; i < n; i++) {
+      str = str.toString();
+      if (str.includes("0")) {
+        count += str.replace(/[^0]/g, "").length;
+      }
+      str = str * 1 - 1;
+    }
+    return count;
+  }
+}
+console.log(countZeros(10)); */
+
+// #7kyu Interview Question (easy)
+/* function getStrings(city) {
+  city = city.toLowerCase().split(" ").join("");
+  let string = "";
+  const double = {};
+  for (const i of city) {
+    i in double ? double[i]++ : (double[i] = 1);
+  }
+  for (const key in double) {
+    string += `${key}:${"*".repeat(double[key])},`;
+  }
+  return string.slice(0, -1);
+}
+console.log(getStrings("Las Vegas")); */
+
+// #7kyu Bob's Short Forms
+/* function shortForm(str) {
+  let output = ''
+  for (let i = 1; i < str.length - 1; i++) { if (str[i].match(/[^aeuio]/i)) { output += str[i] } }
+  return str[0] + output + str[str.length - 1]
+};
+console.log(shortForm("asault")); */
+
+// #7kyu Reversing Fun
+/* function flipNumber(n) {
+  let reverse = "";
+  n = n.split("");
+  while (n.length) {
+    n = n.reverse();
+    reverse += n[0];
+    n = n.slice(1);
+  }
+  return reverse;
+}
+console.log(flipNumber("012345")); */
+
+// #7kyu Chinese Zodiac
+/* function chineseZodiac(year) {
+  const animals = [
+    "Rat",
+    "Ox",
+    "Tiger",
+    "Rabbit",
+    "Dragon",
+    "Snake",
+    "Horse",
+    "Goat",
+    "Monkey",
+    "Rooster",
+    "Dog",
+    "Pig",
+  ];
+  const elements = ["Wood", "Fire", "Earth", "Metal", "Water"];
+  const baseYear = 1924;
+  const givenYear = year - baseYear;
+  const element = elements[Math.floor(givenYear / 2) % 5];
+  const animal = animals[givenYear % 12];
+  return element + " " + animal;
+}
+console.log(chineseZodiac(1965)); */
+
+// #7kyu Visible Dots On a Die
+/* function totalAmountVisible(topNum, numOfSides) {
+  return (numOfSides * (numOfSides + 1)) / 2 + (topNum - numOfSides - 1);
+}
+console.log(totalAmountVisible(3, 6)); */
+
+// #7kyu Guess the Word: Count Matching Letters
+/* function countCorrectCharacters(correctWord, guess) {
+  let sum = 0;
+  if (correctWord.length !== guess.length) {
+    throw new Error("Error");
+  }
+  for (let i = 0; i < correctWord.length; i++) {
+    if (correctWord[i] === guess[i]) sum++;
+  }
+  return sum;
+}
+console.log(countCorrectCharacters("dog", "bog")); */
+
+// #7kyu Radio DJ helper function
+/* function longestPossible(playback) {
+  for (let song of songs) {
+    song[`time`] =
+      song[`playback`].split(":")[0] * 60 + song[`playback`].split(":")[1] * 1;
+  }
+  songs = songs.sort((a, b) => b.time - a.time);
+  return songs.find((v) => v.time < playback) === undefined
+    ? false
+    : songs.find((v) => v.time < playback).title;
+}
+console.log(longestPossible(215)); */
+
+// #7kyu Filter Long Words
+/* function filterLongWords(sentence, n) {
+  return sentence.split(" ").filter((value) => value.length > n);
+}
+console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4)); */
+
+// #7kyu Basic JS - Calculating averages
+/* var Calculator = {
+  average: function (...args) {
+    return eval(args.join("+")) / args.length || 0;
+  },
+};
+console.log(Calculator.average()); */
+
+// #7kyu Sum of array singles
+/* function repeats(arr) {
+  const dublicate = arr.filter((value, index) => arr.indexOf(value) !== index);
+  const single = arr.filter((value) => !dublicate.includes(value));
+  return eval(single.join("+"));
+}
+console.log(repeats([4, 5, 7, 5, 4, 8])); */
+
+// #7kyu esrever esreveR!
+/* function esrever(str) {
+  return (
+    str
+      .slice(0, -1)
+      .split(" ")
+      .map((value) => [...value].reverse().join(""))
+      .reverse()
+      .join(" ") + str.slice(str.length - 1)
+  );
+}
+console.log(esrever("b3tTer p4ss thIS 0ne.")); */
+
+// #7kyu esreveR gnirtS
+/* String.prototype.reverse = function () {
+  return this.split("").reverse().join("");
+};
+console.log("Hello World".reverse()); */
+
+// #7kyu Reducing Problems - Bug Fixing #8
+/* function calculateTotal(team1, team2) {
+  var t1s = team1.reduce((t, c) => t + c, 0);
+  var t2s = team2.reduce((t, c) => t + c, 0);
+  return t1s > t2s;
+}
+console.log(calculateTotal([1, 2, 2], [1, 0, 0])); */
+
+// #7kyu SevenAte9
+/* function sevenAte9(str) {
+  let string = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "7" && str[i + 1] === "9" && str[i + 2] === "7") {
+      string += "7";
+      i++;
+    } else string += str[i];
+  }
+  return string;
+}
+console.log(sevenAte9("7927")); */
+
+// #7kyu No Loops 1 - Small enough?
+/* function smallEnough(a, limit) {
+  return Math.max(...a) <= limit;
+}
+console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100)); */
+
+// #7kyu Coding Meetup #4 - Higher-Order Functions Series - Find the first Python developer
+/* function getFirstPython(list) {
+  const firstDev = list.find((value) => {
+    return value.language === "Python";
+  });
+  return firstDev
+    ? `${firstDev.firstName}, ${firstDev.country}`
+    : "There will be no Python developers";
+}
+console.log(
+  getFirstPython([
+    {
+      firstName: "Mark",
+      lastName: "G.",
+      country: "Scotland",
+      continent: "Europe",
+      age: 22,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Victoria",
+      lastName: "T.",
+      country: "Puerto Rico",
+      continent: "Americas",
+      age: 30,
+      language: "Python",
+    },
+    {
+      firstName: "Anna",
+      lastName: "Doe",
+      country: "New York",
+      continent: "Americas",
+      age: 44,
+      language: "Python",
+    },
+    {
+      firstName: "Emma",
+      lastName: "B.",
+      country: "Norway",
+      continent: "Europe",
+      age: 19,
+      language: "Clojure",
+    },
+  ])
+); */
+
+// #7kyu Ce*s*r*d Strings
+/* function uncensor(infected, discovered) {
+  let k = 0;
+  let string = "";
+  for (let i = 0; i < infected.length; i++) {
+    if (infected[i] === "*") {
+      string += discovered[k];
+      k++;
+    } else {
+      string += infected[i];
+    }
+  }
+  return string;
+}
+console.log(uncensor("*h*s *s v*ry *tr*ng*", "Tiiesae")); */
+
+// #7kyu Alan Partridge III - London
+/* function alan(x) {
+  const dict = [
+    "Rejection",
+    "Disappointment",
+    "Backstabbing Central",
+    "Shattered Dreams Parkway",
+  ];
+  return dict.every((v) => x.includes(v))
+    ? "Smell my cheese you mother!"
+    : "No, seriously, run. You will miss it.";
+}
+console.log(
+  alan([
+    "Norwich",
+    "Rejection",
+    "Disappointment",
+    "Backstabbing Central",
+    "Shattered Dreams Parkway",
+    "London",
+  ])
+); */
+
+// #7kyu Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
+/* function isRubyComing(list) {
+  return list.some((value) => value.language === "Ruby");
+}
+console.log(
+  isRubyComing([
+    {
+      firstName: "Sofia",
+      lastName: "I.",
+      country: "Argentina",
+      continent: "Americas",
+      age: 35,
+      language: "Java",
+    },
+    {
+      firstName: "Lukas",
+      lastName: "X.",
+      country: "Croatia",
+      continent: "Europe",
+      age: 35,
+      language: "Python",
+    },
+    {
+      firstName: "Madison",
+      lastName: "U.",
+      country: "United States",
+      continent: "Americas",
+      age: 32,
+      language: "Ruby",
+    },
+  ])
+); */
+
+// #7kyu Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?
+/* function isSameLanguage(list) {
+  return list.every((value) => value.language === list[0].language);
+}
+console.log(
+  isSameLanguage([
+    {
+      firstName: "Daniel",
+      lastName: "J.",
+      country: "Aruba",
+      continent: "Americas",
+      age: 42,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Kseniya",
+      lastName: "T.",
+      country: "Belarus",
+      continent: "Europe",
+      age: 22,
+      language: "JavaScript",
+    },
+    {
+      firstName: "Hanna",
+      lastName: "L.",
+      country: "Hungary",
+      continent: "Europe",
+      age: 65,
+      language: "JavaScript",
+    },
+  ])
+); */
+
+// #7kyu Coding Meetup #12 - Higher-Order Functions Series - Find GitHub admins
+/* function findAdmin(list, lang) {
+  return list.filter(
+    (value) => value.language === lang && value.githubAdmin === "yes"
+  );
+}
+console.log(
+  findAdmin(
+    [
+      {
+        firstName: "Harry",
+        lastName: "K.",
+        country: "Brazil",
+        continent: "Americas",
+        age: 22,
+        language: "JavaScript",
+        githubAdmin: "yes",
+      },
+      {
+        firstName: "Kseniya",
+        lastName: "T.",
+        country: "Belarus",
+        continent: "Europe",
+        age: 49,
+        language: "Ruby",
+        githubAdmin: "no",
+      },
+      {
+        firstName: "Jing",
+        lastName: "X.",
+        country: "China",
+        continent: "Asia",
+        age: 34,
+        language: "JavaScript",
+        githubAdmin: "yes",
+      },
+      {
+        firstName: "Piotr",
+        lastName: "B.",
+        country: "Poland",
+        continent: "Europe",
+        age: 128,
+        language: "JavaScript",
+        githubAdmin: "no",
+      },
+    ],
+    "JavaScript"
+  )
+); */
+
+// #7kyu CompoundArray
+/* function compoundArray(a, b) {
+  let arr = [];
+  for (let i = 0; i < (a.length > b.length ? a.length : b.length); i++) {
+    arr.push(a[i]);
+    arr.push(b[i]);
+  }
+  return arr.filter((v) => v != undefined);
+}
+console.log(compoundArray([11, 12], [21, 22, 23, 24])); */
+
+// #7kyu Fix my method
+/* function myFunction() {
+  return {
+    objProperty: "string",
+    objMethod: function () {
+      return this.objProperty;
+    },
+  };
+}
+console.log(myFunction().objMethod()); */
+
+// #7kyu From A to Z
+/* function gimmeTheLetters(sp) {
+  let upperLetter = sp[0] === sp[0].toUpperCase();
+  sp = sp.toLowerCase();
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let result = alphabet.slice(
+    alphabet.indexOf(sp[0]),
+    alphabet.indexOf(sp[2]) + 1
+  );
+  return upperLetter ? result.toUpperCase() : result;
+}
+console.log(gimmeTheLetters("J-J")); */
+
+// #7kyu Digitize
+/* function digitize(n) {
+  return n
+    .toString()
+    .split("")
+    .map((value) => Number(value));
+}
+console.log(digitize(8675309)); */
+
+// #7kyu Substituting Variables Into Strings: Padded Numbers
+/* function solution(value) {
+  return "Value is " + "0".repeat(5 - `${value}`.length) + `${value}`;
+}
+console.log(solution(109)); */
+
+// #7kyu Remove anchor from URL
+/* function removeUrlAnchor(url) {
+  return url.slice(0, url.indexOf("#") > 0 ? url.indexOf("#") : url.length);
+}
+console.log(removeUrlAnchor("www.codewars.com/katas/")); */
+
+// #7kyu Simple Fun #63: Shape Area
+/* function shapeArea(n) {
+  let count = n + n - 1;
+  for (let i = 1; i < n + n - 1; i += 2) {
+    count += i * 2;
+  }
+  return count;
+}
+console.log(shapeArea(5)); */
+
+// #7kyu Split In Parts
+/* var splitInParts = function (s, partLength) {
+  let string = "";
+  while (s) {
+    string += s.slice(0, partLength);
+    s = s.slice(partLength);
+    string += " ";
+  }
+  return string.slice(0, -1);
+};
+console.log(splitInParts("supercalifragilisticexpialidocious", 3)); */
+
+// #7kyu Nothing special
+/* function nothingSpecial(str) {
+  if (typeof str !== "string") {
+    return "Not a string!";
+  }
+  return str.replace(/[^A-Za-z0-9\s]/g, "");
+}
+console.log(nothingSpecial("M$$$$$$$y al ly!!!!!")); */
+
+// #7kyu The Office II - Boredom Score
+/* function boredom(staff) {
+  let sum = 0;
+  const object = {
+    accounts: 1,
+    finance: 2,
+    canteen: 10,
+    regulation: 3,
+    trading: 6,
+    change: 6,
+    IS: 8,
+    retail: 5,
+    cleaning: 4,
+    "pissing about": 25,
+  };
+  for (const key in staff) {
+    sum += object[staff[key]];
+  }
+  if (sum <= 80) return "kill me now";
+  else if (sum < 100 && sum > 80) return "i can handle this";
+  else return "party time!!";
+}
+console.log(
+  boredom({
+    tim: "IS",
+    jim: "finance",
+    randy: "pissing about",
+    sandy: "cleaning",
+    andy: "cleaning",
+    katie: "cleaning",
+    laura: "pissing about",
+    saajid: "regulation",
+    alex: "regulation",
+    john: "accounts",
+    mr: "canteen",
+  })
+); */
+
+// #7kyu Find the nth Digit of a Number
+/* var findDigit = function (num, nth) {
+  num = Math.abs(num);
+  num = num.toString();
+  if (nth <= 0) return -1;
+  else if (num.length < nth) return 0;
+  num = num
+    .split("")
+    .reverse()
+    .slice(nth - 1, nth)
+    .join("");
+  return +num;
+};
+console.log(findDigit(-2825, 5)); */
+
+// #7kyu Acrostic reader
+/* function readOut(acrostic) {
+  let string = "";
+  for (let i = 0; i < acrostic.length; i++) {
+    string += acrostic[i][0];
+  }
+  return string;
+}
+console.log(readOut(["Jolly", "Amazing", "Courteous", "Keen"])); */
+
+// #7kyu Char Code Calculation
+/* function calc(x) {
+  let charToString = "";
+  let firstCount = 0;
+  let secondCount = 0;
+  for (let i = 0; i < x.length; i++) {
+    charToString += x[i].charCodeAt();
+  }
+  let replace = charToString.replace(/[7]/g, 1);
+  for (let i = 0; i < charToString.length; i++) {
+    firstCount += Number(charToString[i]);
+    secondCount += Number(replace[i]);
+  }
+  return firstCount - secondCount;
+}
+console.log(calc("ABC")); */
+
+// #7kyu Holiday II - Plane Seating
+/* function planeSeat(a) {
+  let string = "";
+  if (parseInt(a) > 0 && parseInt(a) < 21) {
+    string += "Front-";
+  } else if (parseInt(a) > 20 && parseInt(a) < 41) {
+    string += "Middle-";
+  } else if (parseInt(a) > 39 && parseInt(a) < 61) {
+    string += "Back-";
+  } else {
+    return "No Seat!!";
+  }
+  if (["A", "B", "C"].includes(a.slice(-1))) string += "Left";
+  else if (["D", "E", "F"].includes(a.slice(-1))) string += "Middle";
+  else if (["G", "H", "K"].includes(a.slice(-1))) string += "Right";
+  else return "No Seat!!";
+  return string;
+}
+console.log(planeSeat("35B")); */
+
+// #7kyu Check if a triangle is an equable triangle!
+/* function equableTriangle(a, b, c) {
+  const p = (a + b + c) / 2;
+  return 4 * p == (p - a) * (p - b) * (p - c);
+}
+console.log(equableTriangle(5, 12, 13)); */
+
+// #7kyu Is it a letter?
+/* function isItLetter(character) {
+  return character.toLowerCase() !== character.toUpperCase();
+}
+console.log(isItLetter("1")); */
+
+// #7kyu Working with arrays I (and why your code fails in some katas)
+/* function withoutLast(arr) {
+  return arr.slice(0, -1);
+}
+console.log(withoutLast([1, 2, 3, 4, 5])); */
+
+// #7kyu Find the next perfect square!
+/* function findNextSquare(sq) {
+  let square = Math.sqrt(sq);
+  if (parseInt(square) === square) return (square + 1) ** 2;
+  else return -1;
+}
+console.log(findNextSquare(121)); */
+
+// #7kyu Mobile operator detector
+/* function detectOperator(a) {
+  let operators = {
+    "039": "Golden Telecom",
+    "050": "MTS",
+    "063": "Life:)",
+    "066": "MTS",
+    "067": "Kyivstar",
+    "068": "Beeline",
+    "093": "Life:)",
+    "095": "MTS",
+    "096": "Kyivstar",
+    "097": "Kyivstar",
+    "098": "Kyivstar",
+    "099": "MTS",
+  };
+  var op = a.toString().slice(1, 4);
+  return operators[op] || "no info";
+}
+console.log(detectOperator(80931551119)); */
+
+// #7kyu Sum of the first nth term of Series
+/* function SeriesSum(n) {
+  let sum = 0;
+  for (let i = 1; i <= n * 3; i += 3) {
+    sum += 1 / i;
+  }
+  return sum.toFixed(2).toString();
+}
+console.log(SeriesSum(5)); */
+
+// #7kyu Concatenated Sum
+/* function checkConcatenatedSum(num, repeat) {
+  let sum = 0;
+  let originNumber = num;
+  let minus = num > 0 ? false : true;
+  num = Math.abs(num);
+  num = num.toString();
+  for (let i = 0; i < num.length; i++) {
+    if (minus) {
+      sum += Number(-num[i].repeat(repeat));
+    } else {
+      sum += Number(num[i].repeat(repeat));
+    }
+  }
+  return originNumber === sum;
+}
+console.log(checkConcatenatedSum(-2997, 3)); */
+
+// #7kyu Frog's Dinner
+/* function frogContest(n) {
+  const chris = (n * (n + 1)) / 2;
+  const tom = (Math.floor(chris / 2) * (Math.floor(chris / 2) + 1)) / 2;
+  const cat = ((chris + tom) * (chris + tom + 1)) / 2;
+  return `Chris ate ${chris} flies, Tom ate ${tom} flies and Cat ate ${cat} flies`;
+}
+console.log(frogContest(5)); */
+
+// #7kyu Divisible by previous digit?
+/* function divisibleByLast(n) {
+  n = n.toString();
+  let array = [];
+  for (let i = 0; i < n.length; i++) {
+    array.push(n[i] % n[i - 1] === 0);
+  }
+  return array;
+}
+console.log(divisibleByLast(73312)); */
+
+// #7kyu ToLeetSpeak
+/* function toLeetSpeak(str) {
+  let string = "";
+  const alphabet = {
+    A: "@",
+    B: "8",
+    C: "(",
+    D: "D",
+    E: "3",
+    F: "F",
+    G: "6",
+    H: "#",
+    I: "!",
+    J: "J",
+    K: "K",
+    L: "1",
+    M: "M",
+    N: "N",
+    O: "0",
+    P: "P",
+    Q: "Q",
+    R: "R",
+    S: "$",
+    T: "7",
+    U: "U",
+    V: "V",
+    W: "W",
+    X: "X",
+    Y: "Y",
+    Z: "2",
+    " ": " ",
+  };
+  for (let i = 0; i < str.length; i++) {
+    string += alphabet[str[i]];
+  }
+  return string;
+}
+console.log(toLeetSpeak("CODEWARS"));
+ */
+
+// #7kyu Simple Fun #137: S2N
+/* function S2N(m, n) {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    for (let k = 0; k <= m; k++) {
+      sum += k ** i;
+    }
+  }
+  return sum;
+}
+console.log(S2N(10, 9)); */
+
+// #7kyu String Reordering
+/* function sentence(List) {
+  return List.sort((a, b) => Number(Object.keys(a)) - Number(Object.keys(b)))
+    .map((value) => Object.values(value))
+    .join(" ");
+}
+console.log(
+  sentence([
+    { 4: "dog" },
+    { 2: "took" },
+    { 3: "his" },
+    { "-2": "Vatsan" },
+    { 5: "for" },
+    { 6: "a" },
+    { 12: "spin" },
+  ])
+); */
+
+// #7kyu Even numbers in an array
+/* function evenNumbers(array, number) {
+  return array
+    .filter((value) => value % 2 === 0)
+    .reverse()
+    .slice(0, number)
+    .reverse();
+}
+console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3)); */
+
+// #7kyu Is every value in the array an array?
+/* const arrCheck = (value) => {
+  return value.every((array) => Array.isArray(array));
+};
+console.log(arrCheck([[1], [2], 3])); */
+
+// #7kyu How many e-mails we sent today?
+/* function getPercentage(sent, limit = 1000) {
+  if (sent >= limit) return "Daily limit is reached";
+  else if (sent === 0) return "No e-mails sent";
+  else return Math.floor((sent / limit) * 100) + "%";
+}
+console.log(getPercentage(101)); */
+
+// #7kyu Find twins
+/* function elimination(arr) {
+  return +arr.filter((value, index) => arr.indexOf(value) !== index).join("") || null;
+}
+console.log(elimination([2, 5, 34, 1, 22, 1])); */
+
+// #7kyu makeBackronym
+/* var makeBackronym = function (string) {
+  string = string.toUpperCase();
+  let result = "";
+  for (let i = 0; i < string.length; i++) {
+    result += dict[string[i]] + (i + 1 < string.length ? " " : "");
+  }
+  return result;
+};
+console.log(makeBackronym("dgm")); */
+
+// #7kyu Two to One
+/* function longest(s1, s2) {
+  s1 = s1 + s2;
+  let text = "";
+  const letters = new Set(s1.split("").sort());
+  letters.forEach(function (value) {
+    text += value;
+  });
+  return text;
+}
+console.log(longest("aretheyhere", "yestheyarehere")); */
+
+// #7kyu Sum it continuously
+/* function add(arr) {
+  let newArray = [];
+  let array = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (array.length <= i) {
+      array.push(arr[i]);
+      newArray.push(eval(array.join("+")));
+    }
+  }
+  return newArray;
+}
+console.log(add([1, 2, 3, 4, 5])); */
+
+// #7kyu Currying functions: multiply all elements in an array
+/* function multiplyAll(arr) {
+  return function (num) {
+    return arr.map((value) => value * num);
+  };
+}
+console.log(multiplyAll([1, 2, 3])(2)); */
+
+// #7kyu Digital cypher
+/* function encode(str, n) {
+  const alphabet = "0abcdefghijklmnopqrstuvwxyz";
+  n = n.toString().repeat(str.length);
+  let array = [];
+  for (let i = 0; i < str.length; i++) {
+    array.push(alphabet.indexOf(str[i]) + +n[i]);
+  }
+  return array;
+}
+console.log(encode("scout", 1939)); */
+
+// #7kyu Milk and Cookies for Santa
+/* function timeForMilkAndCookies(date) {
+  const data = new Date(date);
+  return data.getMonth() === 11 && data.getDate() === 24;
+}
+console.log(timeForMilkAndCookies("2013-12-24T00:00:00.000Z")); */
+
+// #7kyu Hells Kitchen
+/* function gordon(a) {
+  a = a.toUpperCase();
+  a = a.replace(/[A]/g, "@");
+  a = a.replace(/[OUEI]/g, "*");
+  a = a
+    .split(" ")
+    .map((value) => value + "!!!!")
+    .join(" ");
+  return a;
+}
+console.log(gordon("What feck damn cake")); */
+
+// #7kyu Reverse and Invert
+/* function reverseInvert(array) {
+  return array
+    .filter((value) => Number.isInteger(value))
+    .map((value) => {
+      let reverse = Math.abs(value).toString().split("").reverse().join("");
+      return value >= 0 ? -reverse : +reverse;
+    });
+}
+console.log(reverseInvert([1, 12, "a", 3.4, 87, 99.9, -42, 50, 5.6])); */
+
+// #7kyu Multiplication - Generators #2
+/* function* generator(a) {
+  let i = 1;
+  while (true) {
+    yield `${a} x $
+    {i} = ${a * i}`;
+    i++;
+  }
+}
+var gen = generator(10);
+console.log(gen.next().value); */
+
+// #7kyu Check the exam
+/* function checkExam(array1, array2) {
+  let sum = 0;
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] === array2[i]) {
+      sum += 4;
+    } else if (array1[i] === "" || array2[i] === "") {
+      sum += 0;
+    } else {
+      sum -= 1;
+    }
+  }
+  return sum >= 0 ? sum : 0;
+}
+console.log(checkExam(["b", "c", "b", "a"], ["", "a", "a", "c"])); */
+
+// #7kyu Make them bark!
+/* function Dog(name, breed, sex, age) {
+  this.name = name;
+  this.breed = breed;
+  this.sex = sex;
+  this.age = age;
+}
+Dog.prototype.bark = function () {
+  return "Woof!";
+};
+var apollo = new Dog("Apollo", "Dobermann", "male", "4");
+console.log(apollo.bark()); */
+
+// #7kyu Holiday VII - Local Talk
+/* function pak(s) {
+  return s.trim().replace(/ /g, " pak ");
+}
+console.log(pak(" ")); */
+
+// #7kyu Thinkful - List and Loop Drills: Inverse Slicer
+/* function inverseSlice(items, a, b) {
+  return [...items.slice(0, a), ...items.slice(b)];
+}
+console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4)); */
+
+// #7kyu Make Me Slow
+/* function makeMeSlow() {
+  for (let x = 0; x < 7000000000; x++) {}
+} */
+
+// #7kyu The old switcheroo 2
+/* function encode(str) {
+  str = str.toLowerCase();
+  let alphabet = "0abcdefghijklmnopqrstuvwxyz";
+  let index = "";
+  for (let i = 0; i < str.length; i++) {
+    index += alphabet.includes(str[i]) ? alphabet.indexOf(str[i]) : str[i];
+  }
+  return index;
+}
+console.log(encode("abc-#@5")); */
+
+// #7kyu Class conundrum - Bug Fixing #7
+/* class List {
+  constructor(type) {
+    this.type = type;
+    this.items = [];
+  }
+  get count() {
+    return this.items.length;
+  }
+  add(item) {
+    if (typeof item !== this.type) {
+      return `This item is not of type: ${this.type}`;
+    }
+    this.items.push(item);
+    return this;
+  }
+}
+const myList = new List("string");
+console.log(myList.add(42)); */
+
+// #7kyu Is that a real phone number? (British version)
+/* function validateNumber(str) {
+  str = str.match(/\d/g).join("");
+  if (str.startsWith("07")) {
+    return str.slice(2).length === 9
+      ? "In with a chance"
+      : "Plenty more fish in the sea";
+  } else if (str.startsWith("447")) {
+    return str.slice(3).length === 9
+      ? "In with a chance"
+      : "Plenty more fish in the sea";
+  } else {
+    return "Plenty more fish in the sea";
+  }
+}
+console.log(validateNumber("+07535514555")); */
+
+// #7kyu Colour Association
+/* function colourAssociation(array) {
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(Object.fromEntries([array[i]]));
+  }
+  return result;
+}
+console.log(
+  colourAssociation([
+    ["white", "goodness"],
+    ["blue", "tranquility"],
+  ])
+); */
+
+// #7kyu Basic Math (Add or Subtract)
+/* function calculate(str) {
+  return eval(str.split("plus").join("+").split("minus").join("-")).toString();
+}
+console.log(calculate("1plus2plus3minus4")); */
+
+// #7kyu Simple Fun #13: Magical Well
+/* function magicalWell(a, b, n) {
+  let sum = 0;
+  while (n--) {
+    sum += a * b;
+    a = a + 1;
+    b = b + 1;
+  }
+  return sum;
+}
+console.log(magicalWell(6, 5, 3)); */
+
+// #7kyu Sum of a sequence
+/* const sequenceSum = (begin, end, step) => {
+  let sum = 0;
+  for (let i = begin; i <= end; i += step) {
+    sum += i;
+  }
+  return sum;
+};
+console.log(sequenceSum(2, 6, 2)); */
+
+// #7kyu Evens times last
+/* function evenLast(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i += 2) {
+    sum += numbers[i];
+  }
+  return sum * numbers[numbers.length - 1] || 0;
+}
+console.log(evenLast([2, 3, 4, 5])); */
+
+// #7kyu Sum of Minimums!
+/* function sumOfMinimums(arr) {
+  let sum = 0;
+  arr.forEach((value) => {
+    sum += Math.min(...value);
+  });
+  return sum;
+}
+console.log(
+  sumOfMinimums([
+    [7, 9, 8, 6, 2],
+    [6, 3, 5, 4, 3],
+    [5, 8, 7, 4, 5],
+  ])
+);
+ */
+
+// #7kyu Middle Me
+/* function middleMe(N, X, Y) {
+  if (N % 2) return X;
+  return Y.repeat(N / 2) + X + Y.repeat(N / 2);
+}
+console.log(middleMe(18, "z", "#")); */
+
+// #7kyu Simple Fun #384: Is Turing's Equation?
+/* function isTuringEquation(s) {
+  let sum = 0;
+  let array = s.split(/[+|=]/g);
+  for (let i = 0; i < array.length - 1; i++) {
+    sum += Number(array[i].split("").reverse().join(""));
+  }
+  return sum == array[array.length - 1].split("").reverse().join("");
+}
+console.log(isTuringEquation("73+42=16")); */
+
+// #7kyu Round up to the next multiple of 5
+/* function roundToNext5(n) {
+  if (n % 5) {
+    while (n % 5) {
+      n += 1;
+    }
+    return n;
+  } else {
+    return n;
+  }
+}
+console.log(roundToNext5(21)); */
+
+// #7kyu Formatting decimal places #1
+/* function twoDecimalPlaces(number) {
+  let array = number.toString().split(".");
+  return +array
+    .map((value, index) => (index === 1 ? value.slice(0, 2) : value))
+    .join(".");
+}
+console.log(twoDecimalPlaces(10.1289767789)); */
+
+// #7kyu Double Every Other
+/* function doubleEveryOther(a) {
+  return a.map((value, index) => (index % 2 ? value * 2 : value));
+}
+console.log(doubleEveryOther([1, 2, 3, 4])); */
+
+// #7kyu Remove duplicate words
+/* function removeDuplicateWords(s) {
+  let result = [];
+  s = s.split(" ");
+  for (let i = 0; i < s.length; i++) {
+    if (!result.includes(s[i])) {
+      result.push(s[i]);
+    }
+  }
+  return result.join(" ");
+}
+console.log(
+  removeDuplicateWords(
+    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
+  )
+); */
+
+// #7kyu Power of two
+/* function isPowerOfTwo(n) {
+  let sum;
+  for (let i = 1; i <= n; i *= 2) {
+    sum = i;
+  }
+  return sum === n;
+}
+console.log(isPowerOfTwo(2)); */
+
+// #7kyu Pull your words together, man!
+/* function sentencify(words) {
+  let str = words[0][0].toUpperCase() + words[0].slice(1);
+  for (let i = 1; i < words.length; i++) {
+    str += " " + words[i];
+  }
+  return str + ".";
+}
+console.log(sentencify(["i", "go"])); */
+
+// #7kyu isEven? - Bitwise Series
+/* var isEven = function (n) {
+  n = n / 2;
+  let numStr = n.toString();
+  let parts = numStr.split(".");
+  let number = parts.length > 1 ? parts[1] : 0;
+  return number === 0;
+};
+console.log(isEven(14)); */
+
+// #7kyu Sort the Gift Code
+/* function sortGiftCode(code) {
+  return code.split("").sort().join("");
+}
+console.log(sortGiftCode("pqksuvy")); */
+
+// #7kyu Multiples!
+/* function multiple(x) {
+  if (x % 3 === 0 && x % 5 === 0) {
+    return "BangBoom";
+  } else if (x % 3 === 0) {
+    return "Bang";
+  } else if (x % 5 === 0) {
+    return "Boom";
+  } else {
+    return "Miss";
+  }
+}
+console.log(multiple(65)); */
+
+// #7kyu Paul's Misery
+/* function paul(x) {
+  let sum = 0;
+  let obj = {
+    kata: 5,
+    "Petes kata": 10,
+    life: 0,
+    eating: 1,
+  };
+  for (let i = 0; i < x.length; i++) {
+    sum += obj[x[i]];
+  }
+  if (sum < 40) {
+    return "Super happy!";
+  } else if (sum < 70 && sum >= 40) {
+    return "Happy!";
+  } else if (sum < 100 && sum >= 70) {
+    return "Sad!";
+  } else {
+    return "Miserable!";
+  }
+}
+console.log(
+  paul([
+    "Petes kata",
+    "Petes kata",
+    "eating",
+    "Petes kata",
+    "Petes kata",
+    "eating",
+  ])
+); */
+
+// #7kyu GA-DE-RY-PO-LU-KI cypher
+/* const object = {
+  G: "A",
+  A: "G",
+  a: "g",
+  g: "a",
+  D: "E",
+  E: "D",
+  d: "e",
+  e: "d",
+  R: "Y",
+  Y: "R",
+  r: "y",
+  y: "r",
+  P: "O",
+  O: "P",
+  p: "o",
+  o: "p",
+  L: "U",
+  U: "L",
+  l: "u",
+  u: "l",
+  K: "I",
+  I: "K",
+  k: "i",
+  i: "k",
+};
+function encode(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (object[str[i]]) {
+      result += object[str[i]];
+    } else {
+      result += str[i];
+    }
+  }
+  return result;
+}
+
+function decode(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (object[str[i]]) {
+      result += object[str[i]];
+    } else {
+      result += str[i];
+    }
+  }
+  return result;
+}
+console.log(encode("Ala has a cat"));
+console.log(decode("Gug hgs g cgt")); */
+
+// #7kyu lucky number
+/* function isLucky(n) {
+  let sum = 0;
+  while (n > 0) {
+    sum += n % 10;
+    n = Math.floor(n / 10);
+  }
+  return sum % 9 === 0;
+}
+console.log(isLucky(1892376)); */
+
+// #7kyu Summing a number's digits
+/* function sumDigits(number) {
+  number = Math.abs(number).toString();
+  return eval(number.split("").join("+"));
+}
+console.log(sumDigits(-32)); */
+
+// #7kyu Return String of First Characters
+/* function makeString(s) {
+  let string = "";
+  s = s.split(" ");
+  for (let i = 0; i < s.length; i++) {
+    string += s[i].slice(0, 1);
+  }
+  return string;
+}
+console.log(makeString("brown eyes are nice")); */
+
+// #7kyu Predict your age!
+/* function predictAge(...args) {
+  return Math.floor(
+    Math.sqrt(args.reduce((sum, curr) => curr * curr + sum, 0)) / 2
+  );
+}
+console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45)); */
+
+// #7kyu Is it a vowel on this position?
+/* function checkVowel(string, position) {
+  return /[aouei]/.test(string.slice(position, position + 1).toLowerCase());
+}
+console.log(checkVowel("%WXpIEhqRc%O6o7", -2)); */
+
+// #7kyu ScholarStem: Unit 6- Baby count!
+/* function countName(anArr, name) {
+  let sum = 0;
+  for (let i = 0; i < anArr.length; i++) {
+    if (anArr[i] === name) {
+      sum++;
+    }
+  }
+  return sum;
+}
+console.log(countName(["Tom", "Bob", "Harry", "Bob"], "Bob")); */
+
+// #7kyu Alternate case
+/* function alternateCase(s) {
+  let string = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === s[i].toUpperCase()) {
+      string += s[i].toLowerCase();
+    } else {
+      string += s[i].toUpperCase();
+    }
+  }
+  return string;
+}
+console.log(alternateCase("Hello World")); */
+
+// #7kyu Check three and two
+/* function checkThreeAndTwo(array) {
+  let obj = {};
+  for (const key in array) {
+    if (array[key] in obj) {
+      obj[array[key]]++;
+    } else {
+      obj[array[key]] = 1;
+    }
+  }
+  return Object.values(obj).includes(3) && Object.values(obj).includes(2);
+}
+console.log(checkThreeAndTwo(["a", "a", "a", "b", "b"])); */
+
+// #7kyu Turkish Numbers, 0-99
+/* const getTurkishNumber = (num) => {
+  const singleNumber = {
+    0: "sıfır",
+    1: "bir",
+    2: "iki",
+    3: "üç",
+    4: "dört",
+    5: "beş",
+    6: "altı",
+    7: "yedi",
+    8: "sekiz",
+    9: "dokuz",
+  };
+  const tensNumber = {
+    10: "on",
+    20: "yirmi",
+    30: "otuz",
+    40: "kırk",
+    50: "elli",
+    60: "altmış",
+    70: "yetmiş",
+    80: "seksen",
+    90: "doksan",
+  };
+  if (singleNumber[num] || tensNumber[num]) {
+    return singleNumber[num] || tensNumber[num];
+  } else {
+    num = num.toString();
+    return `${tensNumber[num[0] + 0]} ${singleNumber[num[1]]}`;
+  }
+};
+console.log(getTurkishNumber(20)); */
+
+// #7kyu Calculate mean and concatenate string
+/* function mean(lst) {
+  lst = lst.join("");
+  let stringRegex = /[a-zA-Z]/g;
+  let numberRegex = /\d/g;
+  return [
+    eval(lst.match(numberRegex).join("+")) / lst.match(numberRegex).length,
+    lst.match(stringRegex).join(""),
+  ];
+}
+console.log(
+  mean([
+    "u",
+    "6",
+    "d",
+    "1",
+    "i",
+    "w",
+    "6",
+    "s",
+    "t",
+    "4",
+    "a",
+    "6",
+    "g",
+    "1",
+    "2",
+    "w",
+    "8",
+    "o",
+    "2",
+    "0",
+  ])
+); */
+
+// #7kyu #~For Kids~# d/m/Y -> Day of the week.
+/* function dayOfTheWeek(date) {
+  date = date.split("/");
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const d = new Date(`${date[2]}-${date[1]}-${date[0]}`);
+  let day = weekday[d.getDay()];
+  return day;
+}
+console.log(dayOfTheWeek("07/12/2000")); */
+
+// #7kyu Number of Divisions
+/* const divisions = (n, divisor) => {
+  let sum = 0;
+  while (n >= divisor) {
+    n = Math.floor(n / divisor);
+    sum++;
+  }
+  return sum;
+};
+console.log(divisions(2450, 5)); */
+
+// #7kyu Find the anonymous function
+/* var FindFunction = function (func, arr) {
+  const findFunc = func.find((value) => typeof value === "function");
+  return arr.filter((value) => findFunc(value));
+};
+console.log(FindFunction([9, 3, (a) => a % 2, 1, 0], [1, 2, 3, 4])); */
+
+// #7kyu First-Class Function Factory
+/* function factory(number) {
+  return function (array) {
+    return array.map(function (element) {
+      return element * number;
+    });
+  };
+}
+var myArray = [1, 2, 3];
+var threes = factory(3);
+console.log(threes(myArray)); */
+
+// #7kyu Find all occurrences of an element in an array
+/* const findAll = (array, n) => {
+  let arr = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === n) {
+      arr.push(i);
+    }
+  }
+  return arr;
+};
+console.log(findAll([6, 9, 3, 4, 3, 82, 11], 3)); */
+
+// #7kyu String Merge!
+/* function stringMerge(string1, string2, letter) {
+  return (
+    string1.slice(0, string1.indexOf(letter)) +
+    string2.slice(string2.indexOf(letter))
+  );
+}
+console.log(stringMerge("person", "here", "e")); */
+
+// #7kyu Partial Word Searching
+/* function wordSearch(query, seq) {
+  const result = seq.filter((value) =>
+    value.toLowerCase().includes(query.toLowerCase())
+  );
+  return result.length ? result : ["Empty"];
+}
+console.log(wordSearch("ak", ["za", "ab", "abc", "zab", "zbc"])); */
+
+// #7kyu Difference Of Squares
+/* function differenceOfSquares(n) {
+  let first = 0;
+  let second = 0;
+  for (let i = 1; i <= n; i++) {
+    first += i;
+    second += i ** 2;
+  }
+  return first ** 2 - second;
+}
+console.log(differenceOfSquares(10)); */
+
+// #7kyu Exclamation marks series #7: Remove words from the sentence if it contains one exclamation mark
+/* function remove(string) {
+  string = string.split(" ");
+  return string
+    .filter((value) => (value.match(/!/g) || "").length !== 1)
+    .join(" ");
+}
+console.log(remove("Hi! !Hi Hi!")); */
+
+// #7kyu Exes and Ohs
+/* function XO(str) {
+  str = str.toLowerCase();
+  let x = 0;
+  let o = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "x") {
+      x++;
+    } else if (str[i] === "o") {
+      o++;
+    }
+  }
+  return x === o;
+}
+console.log(XO("ooom")); */
+
+// #7kyu Simple Fun #6: Is Infinite Process?
+/* function isInfiniteProcess(a, b) {
+  if (b < a) return true;
+  if ((b - a) % 2 == 1) return true;
+  return false;
+}
+console.log(isInfiniteProcess(2, 6)); */
+
+// #7kyu Do you speak retsec?
+/* function reverseByCenter(s) {
+  if (s.length % 2 === 0) {
+    return s.slice(s.length / 2) + s.slice(0, s.length / 2);
+  } else {
+    return (
+      s.slice(Math.ceil(s.length / 2)) +
+      s.slice(Math.floor(s.length / 2), Math.ceil(s.length / 2)) +
+      s.slice(0, Math.floor(s.length / 2))
+    );
+  }
+}
+console.log(reverseByCenter("agent")); */
+
+// #7kyu Word to binary
+/* function wordToBin(str) {
+  return str
+    .split("")
+    .map((value) => value.charCodeAt(0))
+    .map((value) => value.toString(2))
+    .map((value) => value.padStart(8, "0"));
+}
+console.log(wordToBin("man")); */
+
+// #7kyu Tail Swap
+/* function tailSwap(arr) {
+  return [
+    arr[0].split(":")[0] + ":" + arr[1].split(":")[1],
+    arr[1].split(":")[0] + ":" + arr[0].split(":")[1],
+  ];
+}
+console.log(tailSwap(["abc:123", "cde:456"])); */
+
+// #7kyu Number Pairs
+/* function getLargerNumbers(a, b) {
+  let arr = [];
+  for (let i = 0; i < a.length; i++) {
+    arr.push(a[i] >= b[i] ? a[i] : b[i]);
+  }
+  return arr;
+}
+console.log(getLargerNumbers([13, 64, 15, 17, 88], [23, 14, 53, 17, 80])); */
+
+// #7kyu Sort Santa's Reindeer
+/* function sortReindeer(reindeerNames) {
+  return reindeerNames
+    .map((value) => value.split(" "))
+    .sort((a, b) => a[1].localeCompare(b[1]))
+    .map((value) => value.join(" "));
+}
+console.log(
+  sortReindeer([
+    "Dasher Tonoyan",
+    "Dancer Moore",
+    "Prancer Chua",
+    "Vixen Hall",
+    "Comet Karavani",
+    "Cupid Foroutan",
+    "Donder Jonker",
+    "Blitzen Claus",
+  ])
+); */
+
+// #7kyu No Loops 2 - You only need one
+/* function check(a, x) {
+  return a.includes(x);
+}
+console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45)); */
+
+// #7kyu Test Your Knowledge Of Function Scope
+/* function add(a) {
+  return function (b) {
+    return a + b;
+  };
+}
+console.log(add(2)(5)); */
+
+// #7kyu Exclamation marks series #8: Move all exclamation marks to the end of the sentence
+/* function remove(string) {
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    string[i] === "!" && count++;
+  }
+  return string.replace(/[!]/g, "") + "!".repeat(count);
+}
+console.log(remove("Hi! !Hi Hi!")); */
+
+// #7kyu Excessively Abundant Numbers
+/* function abundantNumber(num) {
+  let count = 0;
+  for (let i = 1; i <= Math.floor(num / 2); i++) {
+    if (num % i === 0) {
+      count += i;
+    }
+  }
+  return count > num;
+}
+console.log(abundantNumber(18)); */
+
+// #7kyu Email Address Obfuscator
+/* obfuscate = function (email) {
+  let string = "";
+  for (let i = 0; i < email.length; i++) {
+    if (email[i] === "@") {
+      string += " [at] ";
+    } else if (email[i] === ".") {
+      string += " [dot] ";
+    } else {
+      string += email[i];
+    }
+  }
+  return string;
+};
+console.log(obfuscate("test@123.com")); */
+
+// #7kyu Number-Star ladder
+/* function pattern(n) {
+  var output = "1";
+  for (let i = 2; i <= n; i++) {
+    output += `\n1${"*".repeat(i - 1)}${i}`;
+  }
+  return output;
+}
+console.log(pattern(3)); */
+
+// #7kyu How many times should I go?
+/* function howManyTimes(annualPrice, individualPrice) {
+  return Math.ceil(annualPrice / individualPrice);
+}
+console.log(howManyTimes(40, 15)); */
+
+// #7kyu Alternate capitalization
+/* function capitalize(s) {
+  const upperLetter = s
+    .split("")
+    .map((value, index) =>
+      index % 2 === 0 ? value.toUpperCase() : value.toLowerCase()
+    )
+    .join("");
+  const lowerLetter = s
+    .split("")
+    .map((value, index) =>
+      index % 2 ? value.toUpperCase() : value.toLowerCase()
+    )
+    .join("");
+  return [upperLetter, lowerLetter];
+}
+console.log(capitalize("abcdef")); */
+
+// #7kyu Regex Failure - Bug Fixing #2
+/* function filterWords(phrase) {
+  return phrase.replace(/(bad|mean|ugly|horrible|hideous)/gi, "awesome");
+}
+console.log(filterWords("You're Bad! timmy!")); */
+
+// #7kyu Magic Sum of 3s
+/* function magicSum(numbers) {
+  let count = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i].toString().includes(3) && numbers[i] % 2) {
+      count += numbers[i];
+    }
+  }
+  return count;
+}
+console.log(magicSum([3, 12, 5, 8, 30, 13])); */
+
+// #7kyu Dad is Commatose
+/* function dadFilter(str) {
+  str = str.replace(/,+/g, ",").trim();
+  return str.slice(-1) === "," ? str.slice(0, -1) : str;
+}
+console.log(dadFilter("all this,,,, used to be trees,,,,,,")); */
+
+// #7kyu Thinkful - List and Loop Drills: Lists of lists
+/* function processData(data) {
+  return data.reduce((sum, curr) => sum * eval(curr.join("-")), 1);
+}
+console.log(
+  processData([
+    [2, 5],
+    [3, 4],
+    [8, 7],
+  ])
+); */
+
+// #7kyu Evens and Odds
+/* function evensAndOdds(num) {
+  if (num % 2 === 0) {
+    return num.toString(2);
+  } else {
+    return num.toString(16);
+  }
+}
+console.log(evensAndOdds(12800)); */
+
+// #7kyu Sum of Array Averages
+/* const sumAverage = (arr) => {
+  const arrayAverage = arr.map((value) => eval(value.join("+")) / value.length);
+  return Math.floor(eval(arrayAverage.join("+")));
+};
+console.log(
+  sumAverage([
+    [3, 4, 1, 3, 5, 1, 4],
+    [21, 54, 33, 21, 77],
+  ])
+); */
+
+// #7kyu L2: Triple X
+/* function tripleX(str) {
+  return (
+    str[str.indexOf("x")] === "x" &&
+    str[str.indexOf("x") + 1] === "x" &&
+    str[str.indexOf("x") + 2] === "x"
+  );
+}
+console.log(tripleX("softx kitty, warm kitty, xxxxx")); */
+
+// #7kyu Truthy and Falsy
+/* const truthy = [1, 2, 3, 4, 5];
+const falsy = [NaN, 0, false, null, undefined]; */
+
+// #7kyu Find the Missing Number
+/* function missingNo(nums) {
+  const n = 100;
+  const expectedSum = (n * (n + 1)) / 2;
+  const actualSum = nums.reduce((acc, num) => acc + num, 0);
+  return expectedSum - actualSum;
+}
+const nums = [
+  9, 45, 53, 10, 100, 30, 85, 72, 69, 93, 98, 27, 73, 82, 91, 60, 5, 79, 88, 18,
+  71, 36, 44, 22, 89, 40, 59, 80, 81, 67, 25, 54, 13, 64, 56, 39, 48, 92, 84,
+  94, 87, 90, 77, 63, 32, 68, 37, 96, 23, 0, 95, 1, 52, 78, 6, 57, 50, 2, 46,
+  19, 76, 47, 14, 4, 3, 29, 17, 11, 21, 24, 74, 65, 12, 83, 28, 41, 66, 7, 58,
+  55, 51, 43, 97, 42, 86, 49, 31, 20, 75, 70, 34, 33, 38, 8, 15, 62, 35, 61, 99,
+  16,
+];
+console.log(missingNo(nums)); */
+
+// #7kyu My Language Skills
+/* function myLanguages(results) {
+  let object = {};
+  for (const key in results) {
+    if (results[key] >= 60) {
+      object[key] = results[key];
+    }
+  }
+  let sortArray = Object.entries(object).sort((a, b) => b[1] - a[1]);
+  return sortArray.map((value) => value[0]);
+}
+console.log(myLanguages({ Java: 90, Ruby: 80, Python: 65 })); */
+
+// #7kyu Leap Years
+/* function isLeapYear(year) {
+  let boolean = false;
+  if (year % 4 === 0) {
+    boolean = true;
+  }
+  if (year % 100 === 0) {
+    boolean = false;
+  }
+  if (year % 400 === 0) {
+    boolean = true;
+  }
+  return boolean;
+}
+console.log(isLeapYear(2020)); */
+
+// #7kyu Sum of two lowest positive integers
+/* function sumTwoSmallestNumbers(numbers) {
+  let sort = numbers.sort((a, b) => a - b);
+  return sort[0] + sort[1];
+}
+console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453])); */
+
+// #7kyu Squeaky Clean
+/* function squeakyClean(arr) {
+  return arr.filter((value) => value);
+}
+console.log(squeakyClean(["click1", "click2", null, "", "", "submitForm"])); */
+
+// #7kyu Spot the Differences
+/* function spot(s1, s2) {
+  let result = [];
+  for (let i = 0; i < s1.length; i++) {
+    if (s1[i] !== s2[i]) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+console.log(spot("abcdefg", "abcqetg")); */
+
+// #7kyu Sum of squares less than some number
+/* function getNumberOfSquares(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i ** 2;
+    if (sum >= n) {
+      return i - 1;
+    }
+  }
+}
+console.log(getNumberOfSquares(15)); */
+
+// #7kyu Figurate Numbers #2 - Pronic Number
+/* function isPronic(n) {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    if (sum === n) {
+      return true;
+    } else {
+      sum = i * (i + 1);
+    }
+  }
+  return false;
+}
+console.log(isPronic(3)); */
+
+// #7kyu Larger Product or Sum
+/* function sumOrProduct(array, n) {
+  array = array.sort((a, b) => a - b);
+  let sum = eval(array.reverse().slice(0, n).join("+"));
+  let product = eval(array.reverse().slice(0, n).join("*"));
+  if (sum > product) {
+    return "sum";
+  } else if (product > sum) {
+    return "product";
+  } else {
+    return "same";
+  }
+}
+console.log(sumOrProduct([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 4)); */
+
+// #7kyu Especially Joyful Numbers
+/* function numberJoy(n) {
+  let sum = eval(n.toString().split("").join("+"));
+  let product = sum * sum.toString().split("").reverse().join("");
+  return n === product;
+}
+console.log(numberJoy(1729)); */
+
+// #7kyu Temperature analysis I
+/* function lowestTemp(t) {
+  t = t.split(" ");
+  return +t.sort((a, b) => a - b)[0] || null;
+}
+console.log(lowestTemp("")); */
+
+// #7kyu Inspiring Strings
+/* function longestWord(stringOfWords) {
+  stringOfWords = stringOfWords.split(" ");
+  return stringOfWords.sort((a, b) => a.length - b.length)[
+    stringOfWords.length - 1
+  ];
+}
+console.log(longestWord("one two three")); */
+
+// #7kyu Powers of i
+/* function pofi(n) {
+  let remainder = n % 4;
+  if (remainder === 0) {
+    return "1";
+  } else if (remainder === 1) {
+    return "i";
+  } else if (remainder === 2) {
+    return "-1";
+  } else if (remainder === 3) {
+    return "-i";
+  }
+}
+console.log(pofi(0)); */
+
+// #7kyu The highest profit wins!
+/* function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
+console.log(minMax([1, 2, 3, 4, 5])); */
+
+// #7kyu Dan's great power generator
+/* function danspower(num, power) {
+  let number = num ** power;
+  return number % 2 === 0 ? number : Math.round(number / 10) * 10;
+}
+console.log(danspower(6, 0)); */
+
+// #7kyu Simple Fun #147: Find The Missing Tree
+/* function findTheMissingTree(trees) {
+  let numbers = {};
+  for (let i = 0; i < trees.length; i++) {
+    if (trees[i] in numbers) {
+      numbers[trees[i]]++;
+    } else {
+      numbers[trees[i]] = 1;
+    }
+  }
+  let minNumber = Math.min(...Object.values(numbers));
+  for (const key in numbers) {
+    if (numbers[key] === minNumber) {
+      return +key;
+    }
+  }
+}
+console.log(findTheMissingTree([1, 2, 2, 3, 3])); */
+
+// #7kyu Odd Ones Out!
+/* function oddOnesOut(nums) {
+  let object = {};
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] in object) {
+      object[nums[i]]++;
+    } else {
+      object[nums[i]] = 1;
+    }
+  }
+  let entries = Object.entries(object);
+  let odds = [];
+  for (let i = 0; i < entries.length; i++) {
+    if (entries[i][1] % 2) {
+      odds.push(+entries[i][0]);
+    }
+  }
+  let result = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (!odds.includes(nums[i])) {
+      result.push(nums[i]);
+    }
+  }
+  return result;
+}
+console.log(oddOnesOut([1, 2, 3, 1, 3, 3])); */
+
+// #7kyu Find how many times did a team from a given country win the Champions League?
+/* function countWins(winnerList, country) {
+  let sum = 0;
+  winnerList.forEach((object) => {
+    if (country === object.country) {
+      sum++;
+    }
+  });
+  return sum;
+}
+console.log(
+  countWins(
+    [
+      { season: "1996–97", team: "Borussia Dortmund", country: "Germany" },
+      { season: "1997–98", team: "Real Madrid", country: "Spain" },
+      { season: "1998–99", team: "Manchester United", country: "England" },
+      { season: "1999–00", team: "Real Madrid", country: "Spain" },
+      { season: "2000–01", team: "Bayern Munich", country: "Germany" },
+      { season: "2001–02", team: "Real Madrid", country: "Spain" },
+      { season: "2002–03", team: "Milan", country: "Italy" },
+      { season: "2003–04", team: "Porto", country: "Portugal" },
+      { season: "2004–05", team: "Liverpool", country: "England" },
+      { season: "2005–06", team: "Barcelona", country: "Spain" },
+      { season: "2006–07", team: "Milan", country: "Italy" },
+      { season: "2007–08", team: "Manchester United", country: "England" },
+      { season: "2008–09", team: "Barcelona", country: "Spain" },
+      { season: "2009–10", team: "Internazionale", country: "Italy" },
+      { season: "2010–11", team: "Barcelona", country: "Spain" },
+      { season: "2011–12", team: "Chelsea", country: "England" },
+      { season: "2012–13", team: "Bayern", country: "Germany" },
+      { season: "2013–14", team: "Real Madrid", country: "Spain" },
+      { season: "2014–15", team: "Barcelona", country: "Spain" },
+      { season: "2015–16", team: "Real Madrid", country: "Spain" },
+    ],
+    "Portugal"
+  )
+); */
+
+// #7kyu Extra Perfect Numbers (Special Numbers Series #7)
+/* function extraPerfect(n) {
+  let array = [];
+  for (let i = 1; i <= n; i += 2) {
+    array.push(i);
+  }
+  return array;
+}
+console.log(extraPerfect(39)); */
+
+// #7kyu Fizz Buzz Cuckoo Clock
+/* function fizzBuzzCuckooClock(time) {
+  time = time.split(":");
+  if (time[1] === "00") {
+    let numbers = {
+      "00": 12,
+      13: 1,
+      14: 2,
+      15: 3,
+      16: 4,
+      17: 5,
+      18: 6,
+      19: 7,
+      20: 8,
+      21: 9,
+      22: 10,
+      23: 11,
+    };
+    let str = "";
+    for (let i = 1; i <= (numbers[time[0]] || time[0]); i++) {
+      str += "Cuckoo ";
+    }
+    return str.trim();
+  } else if (time[1] === "30") {
+    return "Cuckoo";
+  } else if (time[1] % 3 === 0 && time[1] % 5 === 0) {
+    return "Fizz Buzz";
+  } else if (time[1] % 3 === 0) {
+    return "Fizz";
+  } else if (time[1] % 5 === 0) {
+    return "Buzz";
+  } else {
+    return "tick";
+  }
+}
+console.log(fizzBuzzCuckooClock("13:00")); */
+
+// #7kyu Inverting a Hash
+/* function invertHash(hash) {
+  return Object.fromEntries(
+    Object.entries(hash).map((value) => value.reverse())
+  );
+}
+console.log(invertHash({ a: "1", b: "2", c: "3" })); */
+
+// #7kyu Simple Fun #238: Tennis Game Points
+/* function tennisGamePoints(score) {
+  score = score.split("-");
+  let ball = {
+    love: 0,
+    15: 1,
+    30: 2,
+    40: 3,
+  };
+  let sum = 0;
+  if (score[0] === "all") {
+    return (sum += ball[score[1]] + ball[score[1]]);
+  } else if (score[1] === "all") {
+    return (sum += ball[score[0]] + ball[score[0]]);
+  } else {
+    return (sum += ball[score[0]] + ball[score[1]]);
+  }
+}
+console.log(tennisGamePoints("30-all")); */
+
+// #7kyu Who is the killer?
+/* function killer(suspectInfo, dead) {
+  for (const key in suspectInfo) {
+    for (let i = 0; i < dead.length; i++) {
+      if (suspectInfo[key].includes(dead[i])) {
+        return key;
+      }
+    }
+  }
+}
+console.log(
+  killer(
+    {
+      James: ["Jacob", "Bill", "Lucas"],
+      Johnny: ["David", "Kyle", "Lucas"],
+      Peter: ["Lucy", "Kyle"],
+    },
+    ["Lucas", "Bill"]
+  )
+); */
+
+// #7kyu Sum of angles
+/* function angle(n) {
+  return (n - 2) * 180;
+}
+console.log(angle(3)); */
+
+// #7kyu Exclamation marks series #13: Count the number of exclamation marks and question marks, return the product
+/* function product(string) {
+  let exclamation = 0;
+  let question = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "!") {
+      exclamation++;
+    } else if (string[i] === "?") {
+      question++;
+    }
+  }
+  return exclamation * question;
+}
+console.log(product("!!!???")); */
+
+// #7kyu Indexed capitalization
+/* function capitalize(s, arr) {
+  s = s.split("");
+  let str = "";
+  for (let i = 0; i < s.length; i++) {
+    if (arr.includes(i)) {
+      str += s[i].toUpperCase();
+    } else {
+      str += s[i];
+    }
+  }
+  return str;
+}
+console.log(capitalize("abcdef", [1, 2, 5])); */
+
+// #7kyu Calculate Meal Total
+/* function calculate_total(subtotal, tax, tip) {
+  tax = subtotal * (tax / 100);
+  tip = subtotal * (tip / 100);
+  total = subtotal + tax + tip;
+  return parseFloat(total.toFixed(2));
+}
+console.log(calculate_total(5, 5, 10)); */
+
+// #7kyu FIXME: Get Full Name
+/* class Dinglemouse {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  getFullName() {
+    if (this.firstName && this.lastName) {
+      return this.firstName + " " + this.lastName;
+    } else if (this.firstName) {
+      return this.firstName;
+    } else if (this.lastName) {
+      return this.lastName;
+    } else {
+      return "";
+    }
+  }
+}
+console.log(new Dinglemouse("Clint", "Eastwood").getFullName()); */
+
+// #7kyu Averages of numbers
+/* function averages(numbers) {
+  if (!numbers || numbers.length < 2) {
+    return [];
+  }
+  const result = [];
+  for (let i = 0; i < numbers.length - 1; i++) {
+    const avg = (numbers[i] + numbers[i + 1]) / 2;
+    result.push(avg);
+  }
+  return result;
+}
+console.log(averages([1, 3, 5, 1, -10])); */
+
+// #7kyu Multiples and Digit Sums
+/* function procedure(n) {
+  let sum = 0;
+  for (let i = n; i <= 100; i += n) {
+    sum += eval(eval(i.toString().split("").join("+")));
+  }
+  return sum;
+}
+console.log(procedure(30)); */
+
+// #7kyu The Ladies of ENIAC
+/* function radLadies(name) {
+  let string = "";
+  for (let i = 0; i < name.length; i++) {
+    if (!/[0-9%$&/£?@]/.test(name[i])) {
+      string += name[i];
+    }
+  }
+  return string.toUpperCase();
+}
+console.log(
+  radLadies("k?%35a&&/y@@@£5599 m93753&$$$c$n///79u??@@%l?975$t?%5y%&$3$1!")
+); */
+
+// #7kyu Filter unused digits
+/* function unusedDigits(...args) {
+  let number = "";
+  args = args.join("");
+  for (let i = 0; i <= 9; i++) {
+    if (!args.includes(i)) {
+      number += i;
+    }
+  }
+  return number;
+}
+console.log(unusedDigits(2015, 8, 26)); */
+
+// #7kyu 80's Kids #1: How Many Licks Does it Take?
+/* function totalLicks(env) {
+  let licks = 252;
+  let challenge;
+  for (const effect in env) {
+    if (env[effect] > 0 && (!challenge || env[effect] > env[challenge])) {
+      challenge = effect;
+    }
+    licks += env[effect];
+  }
+  return (
+    `It took ${licks} licks to get to the tootsie roll center of a tootsie pop.` +
+    (challenge ? ` The toughest challenge was ${challenge}.` : "")
+  );
+}
+console.log(totalLicks({ "freezing temps": 10, "clear skies": -2 })); */
+
+// #7kyu Password validator
+/* function password(str) {
+  let upper = /[A-Z]/.test(str);
+  let lower = /[a-z]/.test(str);
+  let number = /[0-9]/.test(str);
+  return upper && lower && number && str.length >= 8;
+}
+console.log(password("AbcdefGhijKlmnopQRsTuvwxyZ1234567890")); */
+
+// #7kyu Every nth array element. (Basic)
+/* function every(arr, interval = 1, start = 0) {
+  let array = [];
+  for (let i = start; i < arr.length; i += interval) {
+    array.push(arr[i]);
+  }
+  return array;
+}
+console.log(every([0, 1, 2, 3, 4])); */
+
+// #7kyu Find the number of trailing zeros in the binary representation of a number.
+/* function trailingZeros(n) {
+  n = n.toString(2);
+  let sum = 0;
+  while (n > 0 && n % 2 === 0) {
+    sum++;
+    n = n / 2;
+  }
+  return sum;
+}
+console.log(trailingZeros(25)); */
+
+// #7kyu Return the first M multiples of N
+/* function multiples(m, n) {
+  let array = [];
+  for (let i = 1; i <= m; i++) {
+    array.push(n * i);
+  }
+  return array;
+}
+console.log(multiples(3, 5)); */
+
+// #7kyu Interlocking Binary Pairs
+/* function interlockable(a, b) {
+  return (a & b) == 0;
+}
+console.log(interlockable(3n, 6n)); */
+
+// #7kyu Authenticate a list of usernames
+/* function authList(arr) {
+  for (let i = 0; i < arr.length; ) {
+    if (/^(?=.*[a-z])(?=.*\d)[a-z\d]{6,10}$/.test(arr[i])) {
+      i++;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(authList(["john123", "alex222", "sandra1"])); */
+
+// #7kyu Map function issue
+/* var func = function (item) {
+  return item.map((value) => value % 2 === 0);
+};
+
+function map(arr, somefunction) {
+  if (somefunction !== func) {
+    return "given argument is not a function";
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (!Number(arr[i])) {
+      return "array should contain only numbers";
+    }
+  }
+  return somefunction(arr);
+}
+console.log(map([27, 18, 5, "8", "1"], "s")); */
+
+// #7kyu Cut array into smaller parts
+/* function makeParts(arr, chunkSize) {
+  let result = [];
+  for (let i = 0; i < arr.length; ) {
+    result.push(arr.slice(i, (i += chunkSize)));
+  }
+  return result;
+}
+console.log(makeParts([1, 2, 3, 4, 5], 2)); */
+
+// #7kyu Find the calculation type
+/* function calcType(a, b, res) {
+  if (a + b === res) {
+    return "addition";
+  } else if (a - b === res) {
+    return "subtraction";
+  } else if (a * b === res) {
+    return "multiplication";
+  } else {
+    return "division";
+  }
+}
+console.log(calcType(1, 2, 3)); */
+
+// #7kyu Find the sum of the roots of a quadratic equation
+/* function roots(a, b, c) {
+  let sum = 0;
+  let discriminant = b ** 2 - 4 * a * c;
+  if (discriminant < 0) {
+    return null;
+  } else {
+    sum = -b / a;
+  }
+  return Number(sum.toFixed(2));
+}
+console.log(roots(1, -35, -23)); */
+
+// #7kyu Two Oldest Ages
+/* function twoOldestAges(ages) {
+  ages = ages.sort((a, b) => b - a);
+  return [ages[1], ages[0]];
+}
+console.log(twoOldestAges([1, 5, 87, 45, 8, 8])); */
+
+// #7kyu Make a function that does arithmetic!
+/* function arithmetic(a, b, operator) {
+  if ("add" === operator) {
+    return a + b;
+  } else if ("subtract" === operator) {
+    return a - b;
+  } else if ("multiply" === operator) {
+    return a * b;
+  } else {
+    return a / b;
+  }
+}
+console.log(arithmetic(1, 2, "add")); */
+
+// #7kyu Looking for a benefactor
+/* function newAvg(arr, newavg) {
+  let n = arr.length;
+  let sum = arr.reduce((acc, num) => acc + num, 0);
+  let newDonation = newavg * (n + 1) - sum;
+  if (newDonation <= 0) {
+    throw new Error("Expected New Average is too low");
+  } else {
+    return Math.ceil(newDonation);
+  }
+}
+console.log(newAvg([14, 30, 5, 7, 9, 11, 15], 92)); */
+
+// #7kyu Alphabetical Addition
+/* function addLetters(...letters) {
+  const alphabet = "0abcdefghijklmnopqrstuvwxyz";
+  let count = 0;
+  for (let i = 0; i < letters.length; i++) {
+    count += alphabet.indexOf(letters[i]);
+  }
+  return count % 26 === 0 ? "z" : alphabet[count] || alphabet[count % 26];
+}
+console.log(addLetters("l", "x", "p")); */
+
+// #7kyu Count the divisors of a number
+/* function getDivisorsCnt(n) {
+  let count = 0;
+  for (let i = 1; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      count += 1;
+      if (i !== n / i) {
+        count += 1;
+      }
+    }
+  }
+  return count;
+}
+console.log(getDivisorsCnt(11)); */
+
+// #7kyu The Office I - Outed
+/* function outed(meet, boss) {
+  let sum = 0;
+  let team = 1;
+  for (const key in meet) {
+    if (key !== boss) {
+      sum += meet[key];
+      team++;
+    } else {
+      sum += meet[key] + meet[key];
+    }
+  }
+  return sum / team <= 5 ? "Get Out Now!" : "Nice Work Champ!";
+}
+console.log(
+  outed(
+    {
+      tim: 7,
+      jim: 4,
+      randy: 5,
+      sandy: 4,
+      andy: 8,
+      katie: 9,
+      laura: 3,
+      saajid: 9,
+      alex: 0,
+      john: 5,
+      mr: 5,
+    },
+    "jim"
+  )
+); */
+
+// #7kyu Number to digit tiers
+/* function createArrayOfTiers(num) {
+  num = num.toString();
+  let result = [];
+  for (let i = 1; i <= num.length; i++) {
+    result.push(num.slice(0, i));
+  }
+  return result;
+}
+console.log(createArrayOfTiers(2017)); */
+
+// #7kyu Odder Than the Rest
+/* function oddOne(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2) {
+      return arr.indexOf(arr[i]);
+    }
+  }
+  return -1;
+}
+console.log(oddOne([2, 4, 6, 7, 10])); */
+
+// #7kyu Thinkful - String Drills: Quotable
+/* function quotable(name, quote) {
+  return `${name} said: "${quote}"`;
+}
+console.log(quotable("Grae", "Practice makes perfect")); */
+
+// #7kyu String Scramble
+/* function scramble(str, arr) {
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    result[arr[i]] = str[i];
+  }
+  return result.join("");
+}
+console.log(scramble("abcd", [0, 3, 1, 2])); */
+
+// #7kyu Password maker
+/* function makePassword(phrase) {
+  let words = {
+    I: 1,
+    i: 1,
+    O: "0",
+    o: "0",
+    S: 5,
+    s: 5,
+  };
+  phrase = phrase.split(" ");
+  let str = "";
+  for (let i = 0; i < phrase.length; i++) {
+    str += phrase[i].slice(0, 1);
+  }
+  return str.replace(/[IiOoSs]/gi, (x) => {
+    if (words[x]) {
+      return words[x];
+    } else {
+      return x;
+    }
+  });
+}
+console.log(makePassword("Give me liberty or give me death")); */
+
+// #7kyu Speed Control
+/* function gps(s, x) {
+  let maxSpeed = 0;
+  if (x.length <= 1) return 0;
+  for (let i = 0; i < x.length - 1; i++) {
+    let speed = (3600 * (x[i + 1] - x[i])) / s;
+    if (speed > maxSpeed) {
+      maxSpeed = speed;
+    }
+  }
+  return Math.floor(maxSpeed);
+}
+console.log(gps(15, [0.0, 0.19, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25])); */
+
+// #7kyu Dominant array elements
+/* function solve(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > Math.max(...arr.slice(i + 1))) {
+      result.push(arr[i]);
+    }
+  }
+  return [...new Set(result)];
+}
+console.log(solve([5, 4, 3, 2, 1]));
+ */
+
+// #7kyu Super Secret Password Generator
+/* var superSecretChars = [
+  ["a", "@"],
+  ["s", "$"],
+  ["o", "0"],
+  ["h", "5"],
+  ["x", "*"],
+];
+function createSSP(password) {
+  let object = Object.fromEntries(superSecretChars);
+  return password.replace(/[A-Za-z]/gi, (x) => object[x.toLowerCase()] || x);
+}
+console.log(createSSP("Haxorpassword")); */
+
+// #7kyu Wise drunk man
+/* function wdm(talk) {
+  return talk
+    .split(/puke|hiccup/gi)
+    .join(" ")
+    .replace(/ +/g, " ")
+    .trim();
+}
+console.log(wdm("puke All's well hiccup     that ends hiccup well puke")); */
+
+// #7kyu Longest vowel chain
+/* function solve(s) {
+  return s.match(/[aeiou]+/gi).sort((a, b) => b.length - a.length)[0].length;
+}
+console.log(solve("chrononhotonthuooaos")); */
+
+// #7kyu Insert Dashes 2
+/* function insertDashII(num) {
+  let result = "";
+  num = num.toString();
+  for (let i = 0; i < num.length; i++) {
+    result += num[i];
+    if (i < num.length - 1) {
+      let current = parseInt(num[i]);
+      let next = parseInt(num[i + 1]);
+      if (current % 2 === 0 && next % 2 === 0 && current !== 0 && next !== 0) {
+        result += "*";
+      } else if (current % 2 === 1 && next % 2 === 1) {
+        result += "-";
+      }
+    }
+  }
+  return result;
+}
+console.log(insertDashII(40546793)); */
+
+// #7kyu "Very Even" Numbers.
+/* function isVeryEvenNumber(n) {
+  let sum = n;
+  n = n.toString();
+  while (n.length > 1) {
+    n = eval(n.split("").join("+")).toString();
+    sum = n;
+  }
+  return sum % 2 === 0;
+}
+console.log(isVeryEvenNumber(841)); */
+
+// #7kyu Cryptanalysis Word Patterns
+/* function wordPattern(word) {
+  word = word.toLowerCase();
+  let pattern = [];
+  let letterCodes = {};
+  let currentCode = 0;
+  for (let i = 0; i < word.length; i++) {
+    const letter = word[i];
+    if (!(letter in letterCodes)) {
+      letterCodes[letter] = currentCode;
+      currentCode++;
+    }
+    pattern.push(letterCodes[letter]);
+  }
+  return pattern.join(".");
+}
+console.log(wordPattern("hello")); */
+
+// #7kyu Unscrambled eggs
+/* function unscrambleEggs(word) {
+  let string = "";
+  for (let i = 0; i < word.length; i++) {
+    if (word.slice(i).startsWith("egg")) {
+      i += 2;
+    } else {
+      string += word[i];
+    }
+  }
+  return string;
+}
+console.log(unscrambleEggs("Beggegeggineggneggeregg")); */
+
+// #7kyu Find the lucky numbers
+/* var filterLucky = (x) => {
+  return x.filter((value) => /[7]/.test(value.toString()));
+};
+console.log(filterLucky([1, 2, 3, 4, 5, 6, 7, 68, 69, 70, 15, 17])); */
+
+// #7kyu Multiples By Permutations II
+/* function findLowestInt(k) {
+  let k1 = k;
+  let k2 = k + 1;
+  for (let i = 1; true; i++) {
+    let product1 = (k1 * i).toString();
+    let product2 = (k2 * i).toString();
+    if (
+      product1.split("").sort().join("") === product2.split("").sort().join("")
+    ) {
+      return i;
+    }
+  }
+}
+console.log(findLowestInt(325)); */
+
+// #7kyu Simple string reversal II
+/* function solve(st, a, b) {
+  let splitText = st.slice(a, b + 1 || st.length);
+  return (
+    st.slice(0, a) +
+    splitText.split("").reverse().join("") +
+    st.slice(b + 1 || st.length)
+  );
+}
+console.log(solve("codewars", 1, 5)); */
+
+// #7kyu The Most Amicable of Numbers
+/* function amicableNumbers(num1, num2) {
+  let number1Sum = 0;
+  let number2Sum = 0;
+  for (let i = 1; i <= Math.max(num1, num2) / 2; i++) {
+    number1Sum += num1 % i === 0 ? i : 0;
+    number2Sum += num2 % i === 0 ? i : 0;
+  }
+  return number1Sum === num2 && number2Sum === num1;
+}
+console.log(amicableNumbers(220, 284)); */
+
+// #7kyu Multiply Adjacent Digits
+/* function digitMultiplication(expr) {
+  let string = "";
+  for (let i = 0; i < expr.length; i++) {
+    if (/[0-9]/.test(expr[i])) {
+      string += expr[i];
+      string += /[0-9]/.test(expr[i + 1]) ? "*" : "";
+    } else {
+      string += expr[i];
+    }
+  }
+  return eval(string);
+}
+console.log(digitMultiplication("10000345+77-2")); */
+
+// #7kyu Round to nearest 0 or 5
+/* function roundToFive(numbers) {
+  let result = [];
+  for (let i = 0; i < numbers.length; i++) {
+    let num = Math.round(numbers[i] / 5);
+    result.push(num * 5);
+  }
+  return result;
+}
+console.log(roundToFive([34.5, 56.2, 11, 13])); */
+
+// #7kyu Ghostbusters (whitespace removal)
+/* function ghostBusters(building) {
+  if (building.includes(" ")) {
+    return building.split(" ").join("");
+  } else {
+    return "You just wanted my autograph didn't you?";
+  }
+}
+console.log(ghostBusters("Factor y")); */
+
+// #7kyu DigitAll
+/* function digitAll(x) {
+  if (typeof x !== "string") {
+    return "Invalid input !";
+  }
+  let result = "";
+  for (let i = 0; i < x.length; i++) {
+    if (/[0-9]/.test(x[i])) {
+      result += x[i];
+    }
+  }
+  return result;
+}
+console.log(digitAll(["yes", "i", "am", "kidding", "you", "!"])); */
+
+// #7kyu Find missing numbers
+/* function findMissingNumbers(arr) {
+  if (arr === undefined) {
+    return [];
+  }
+  let result = [];
+  for (let i = Math.min(...arr); i < Math.max(...arr); i++) {
+    if (!arr.includes(i)) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+console.log(findMissingNumbers(undefined)); */
+
+// #7kyu Lucky Bus Ticket
+/* function isLucky(ticket) {
+  if (ticket.length !== 6 || !/^\d{6}$/.test(ticket)) {
+    return false;
+  }
+  const firstHalf = ticket.slice(0, 3);
+  const secondHalf = ticket.slice(3);
+  const sumFirstHalf = firstHalf
+    .split("")
+    .reduce((sum, digit) => sum + Number(digit), 0);
+  const sumSecondHalf = secondHalf
+    .split("")
+    .reduce((sum, digit) => sum + Number(digit), 0);
+  return sumFirstHalf === sumSecondHalf;
+}
+console.log(isLucky("")); */
+
+// #7kyu Diving Scores
+/* function scoreOfDive(scores, tariff) {
+  let array = scores.sort((a, b) => a - b);
+  let sum = 0;
+  for (let i = 2; i < array.length - 2; i++) {
+    sum += array[i];
+  }
+  return (sum * tariff).toFixed(2);
+}
+console.log(scoreOfDive([7, 7.5, 8, 7.5, 6, 7, 7], 3)); */
+
+// #7kyu Mew Cipher
+/* function decipher(code) {
+  let alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let result = "";
+  for (let i = 0; i < code[0].length; i++) {
+    let sum = 0;
+    for (let j = 0; j < code.length; j++) {
+      sum += alphabet.indexOf(code[j][i]);
+    }
+    let avg = Math.floor(sum / code.length);
+    result += alphabet[avg];
+  }
+  return result;
+}
+console.log(decipher(["a  ", " b ", "  c", "   ", "   "])); */
+
+// #7kyu Say "Hello World" JS Style
+/* var say = function (string1) {
+  return (x) => string1 + " " + x;
+};
+console.log(say("Hello")("World")); */
+
+// #7kyu Scoring Tests
+/* function scoreTest(str, right, omit, wrong) {
+  let rightAnswer = 0;
+  let omitAnswer = 0;
+  let wrongAnswer = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === 0) {
+      rightAnswer++;
+    } else if (str[i] === 1) {
+      omitAnswer++;
+    } else {
+      wrongAnswer++;
+    }
+  }
+  return rightAnswer * right + omitAnswer * omit - wrongAnswer * wrong;
+}
+console.log(scoreTest([0, 0, 0, 0, 2, 1, 0], 2, 0, 1)); */
+
+// #7kyu Offload your work!
+/* function workNeeded(projectMinutes, freelancers) {
+  let freelancerTime = 0;
+  for (let i = 0; i < freelancers.length; i++) {
+    freelancerTime += freelancers[i][0] * 60 + freelancers[i][1];
+  }
+  let projectTime = projectMinutes - freelancerTime;
+  if (projectTime <= 0) {
+    return "Easy Money!";
+  } else if (projectTime >= 60) {
+    return `I need to work ${Math.floor(
+      projectTime / 60
+    )} hour(s) and ${Math.floor(projectTime % 60)} minute(s)`;
+  } else {
+    return `I need to work 0 hour(s) and ${projectTime} minute(s)`;
+  }
+}
+console.log(workNeeded(60, [[1, 0]])); */
+
+// #7kyu Swap items in a dictionary
+/* function switchDict(dic) {
+  let result = {};
+  for (const key in dic) {
+    if (dic[key] in result) {
+      result[dic[key]] = [...result[dic[key]], key];
+    } else {
+      result[dic[key]] = [key];
+    }
+  }
+  return result;
+}
+console.log(
+  switchDict({
+    Ice: "Cream",
+    Age: "21",
+    Light: "Cream",
+    Double: "Cream",
+  })
+); */
+
+// #7kyu Recursive Ninja
+/* function chirp(n) {
+  if (n === 1) {
+    return "chirp";
+  } else {
+    return "chirp-" + chirp(n - 1);
+  }
+}
+console.log(chirp(2)); */
+
+// #7kyu Find your caterer
+/* function findCaterer(budget, people) {
+  if (people === 0 || budget < 15 * people) {
+    return -1;
+  }
+  const sum1 = 15 * people;
+  const sum2 = 20 * people;
+  let sum3 = 30 * people;
+  if (people > 60) {
+    sum3 *= 0.8;
+  }
+  if (sum3 <= budget) {
+    return 3;
+  }
+  if (sum2 <= budget) {
+    return 2;
+  }
+  if (sum1 <= budget) {
+    return 1;
+  }
+  return -1;
+}
+console.log(findCaterer(200, 9)); */
+
+// #7kyu Simple Fun #182: Happy "g"
+/* function gHappy(str) {
+  return str.replace(/[gg]{2,}/gi, "").includes("g") === false;
+}
+console.log(gHappy("gg0gg3gg0gggog213g2g")); */
+
+// #7kyu Find The Duplicated Number in a Consecutive Unsorted List
+/* function findDup(arr) {
+  return +arr.filter((value, index) => arr.indexOf(value) !== index).join("");
+}
+console.log(findDup([1, 2, 2, 3])); */
+
+// #7kyu Katastrophe!
+/* function strongEnough(earthquake, age) {
+  let sum = 1;
+  for (let i = 0; i < earthquake.length; i++) {
+    sum *= eval(earthquake[i].join("+"));
+  }
+  return 1000 * 0.99 ** age >= sum ? "Safe!" : "Needs Reinforcement!";
+}
+console.log(
+  strongEnough(
+    [
+      [2, 3, 1],
+      [3, 1, 1],
+      [1, 1, 2],
+    ],
+    2
+  )
+); */
+
+// #7kyu Credit Card Checker
+/* function validCard(card) {
+  let string = card.split(" ").join("");
+  let reverse = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+    reverse += string[i];
+  }
+  let sort = [];
+  for (let i = 0; i < reverse.length; i++) {
+    if (i % 2) {
+      sort.push(reverse[i] * 2);
+    } else {
+      sort.push(parseInt(reverse[i]));
+    }
+  }
+  let adjusted = sort.map((value) => (value > 9 ? value - 9 : value));
+  let total = adjusted.reduce((sum, value) => sum + value, 0);
+  return total % 10 === 0;
+}
+console.log(validCard("5457 6238 9823 4311")); */
+
+// #7kyu Valid HK Phone Number
+/* function isValidHKPhoneNumber(params) {
+  let array = params.split(" ");
+  return /[0-9]{4}/.test(array[0]) && /[0-9]{4}/.test(array[1]);
+}
+function hasValidHKPhoneNumber(params) {
+  let array = params.split(" ");
+  for (let i = 0; i < array.length; i++) {
+    if (/[0-9]{4}/.test(array[i]) && /[0-9]{4}/.test(array[i + 1])) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(isValidHKPhoneNumber("836g 2986"));
+console.log(hasValidHKPhoneNumber("What about 9684 2396?")); */
+
+// #7kyu Debug the functions EASY
+/* function multi(arr) {
+  return eval(arr.join("*"));
+}
+function add(arr) {
+  return eval(arr.join("+"));
+}
+function reverse(str) {
+  return str.split("").reverse().join("");
+}
+console.log(multi([5, 1, 5])); */
+
+// #7kyu Is Undefined?
+/* function isUndefined(value) {
+  return value == undefined;
+}
+console.log(isUndefined(1)); */
+
+// #7kyu JS Golfing #7: Join
+/* x=a=>a.join``
+console.log(x([undefined, null])); */
+
+// #7kyu Give me the k first digits. Odd digits.
+/* function findOddDigits(n, k) {
+  let oddNumbers = "";
+  n = n.toString();
+  for (let i = 0; i < n.length; i++) {
+    oddNumbers += n[i] % 2 ? n[i] : "";
+  }
+  return oddNumbers.length >= k ? +oddNumbers.slice(0, k) : 0;
+}
+console.log(findOddDigits(123456789111, 5)); */
+
+// #7kyu UniDecoder
+/* function uniDecoder(...args) {
+  let boolean = args.some(
+    (value) => typeof value === "number" && Number.isInteger(value)
+  );
+  let result = "";
+  if (boolean) {
+    for (let i = 0; i < args.length; i++) {
+      if (typeof args[i] === "number") {
+        result += String.fromCharCode(args[i]);
+      }
+    }
+  } else {
+    return "not a valid character code";
+  }
+  return result;
+}
+console.log(uniDecoder("test", true, 99)); */
+
+// #7kyu Unique Sum
+/* function uniqueSum(lst) {
+  if (lst.length === 0) {
+    return null;
+  }
+  let unique = [...new Set(lst)];
+  return unique.reduce((sum, curr) => sum + curr, 0);
+}
+console.log(uniqueSum([1, 3, 8, 1, 8])); */
+
+// #7kyu Wordsearch
+/* function wordSearch(word, text) {
+  text = text.replace(/[,!@.]/gi, "").split(" ");
+  return text.includes(word);
+}
+console.log(
+  wordSearch(
+    "beautiful",
+    "what makes the desert beautiful, said the little prince is that somewhere it hides a well"
+  )
+); */
+
+// #7kyu We Have Liftoff
+/* function liftoff(instructions) {
+  return instructions.sort((a, b) => b - a).join(" ") + " " + "liftoff!";
+}
+console.log(liftoff([2, 8, 10, 9, 1, 3, 4, 7, 6, 5])); */
+
+// #7kyu Deletion in an array
+/* function deleteValues(array, pred) {
+  for (var i = array.length - 1; i >= 0; i--) {
+    if (pred(array[i])) {
+      array.splice(i, 1);
+    }
+  }
+  return array;
+}
+console.log(
+  deleteValues([1, 3, 2, 4, 5, 7, 6, 8, 10, 9], function isEven(n) {
+    return n % 2 === 0;
+  })
+); */
+
+// #7kyu isAN(value)
+/* function isAN(value) {
+  if (typeof value === "number") {
+    return true;
+  }
+  if (value instanceof Number) {
+    return !Number.isNaN(value.valueOf());
+  }
+  return false;
+}
+console.log(isAN(123)); */
+
+// #7kyu Swap two elements
+/* function swapTwo(array, a, b) {
+  let result = array.slice();
+  let firstIndex = result.indexOf(a);
+  let lastIndex = result.lastIndexOf(b);
+  if (firstIndex !== -1 && lastIndex !== -1) {
+    [result[firstIndex], result[lastIndex]] = [
+      result[lastIndex],
+      result[firstIndex],
+    ];
+  }
+  return result;
+}
+console.log(swapTwo([1, 2, 3, 4, 1, 2, 3, 4], 2, 4)); */
+
+// #7kyu [Code Golf] Return Odd No Matter What
+/* alwaysOdd=n=>n%2?n:n-1
+console.log(alwaysOdd(1)); */
+
+// #7kyu Comfortable words
+/* const comfortableWord = (word) => {
+  let left = [
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "a",
+    "s",
+    "d",
+    "f",
+    "g",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+  ];
+  let right = ["y", "u", "i", "o", "p", "h", "j", "k", "l", "n", "m"];
+  let currentWord = right.includes(word[0]) ? 1 : 0;
+  for (let i = 1; i < word.length; i++) {
+    if (currentWord) {
+      if (left.includes(word[i])) {
+        currentWord = 0;
+      } else {
+        return false;
+      }
+    } else {
+      if (right.includes(word[i])) {
+        currentWord = 1;
+      } else {
+        return false;
+      }
+    }
+  }
+  return true;
+};
+console.log(comfortableWord("yams")); */
+
+// #7kyu How sexy is your name?
+/* function sexyName(name) {
+  name = name.toUpperCase();
+  const scores = {
+    A: 100,
+    B: 14,
+    C: 9,
+    D: 28,
+    E: 145,
+    F: 12,
+    G: 3,
+    H: 10,
+    I: 200,
+    J: 100,
+    K: 114,
+    L: 100,
+    M: 25,
+    N: 450,
+    O: 80,
+    P: 2,
+    Q: 12,
+    R: 400,
+    S: 113,
+    T: 405,
+    U: 11,
+    V: 10,
+    W: 10,
+    X: 3,
+    Y: 210,
+    Z: 23,
+  };
+  let score = 0;
+  for (let i = 0; i < name.length; i++) {
+    score += scores[name[i]] || 0;
+  }
+  if (score <= 60) {
+    return "NOT TOO SEXY";
+  } else if (61 <= score && score <= 300) {
+    return "PRETTY SEXY";
+  } else if (301 <= score && score <= 599) {
+    return "VERY SEXY";
+  } else if (score >= 600) {
+    return "THE ULTIMATE SEXIEST";
+  }
+}
+console.log(sexyName("GUV")); */
+
+// #7kyu Make the small words big!
+/* function smallWordHelper(sentence) {
+  sentence = sentence.split(" ");
+  return sentence
+    .map((value) => {
+      if (value.length <= 3) {
+        return value.toUpperCase();
+      } else if (value.length >= 4) {
+        return value.replace(/["a", "e", "i", "o", "u", ]/gi, "");
+      }
+    })
+    .join(" ");
+}
+console.log(smallWordHelper("The quick brown fox jumps over the lazy dog")); */
+
+// #7kyu Tea for two
+/* function tea42(input) {
+  input = input.toString();
+  return input.replace(/[2]/gi, "t");
+}
+console.log(tea42("2ea2")); */
+
+// #7kyu What rank is this card?
+/* function rank(card) {
+  let cardObject = {
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    T: 10,
+    J: 11,
+    Q: 12,
+    K: 13,
+    A: 14,
+  };
+  card = card[0];
+  return cardObject[card] || 0;
+}
+console.log(rank("2s")); */
+
+// #7kyu I'm everywhere!
+/* function i(word) {
+  if (word === "") {
+    return "Invalid word";
+  }
+  if (word[0] === word[0].toUpperCase()) {
+    if (word[0] !== "I") {
+      let vowel = 0;
+      let consonant = 0;
+      for (let i = 0; i < word.length; i++) {
+        if (/[aeiou]/gi.test(word[i])) {
+          vowel++;
+        } else {
+          consonant++;
+        }
+      }
+      return consonant > vowel ? "i" + word : "Invalid word";
+    }
+  }
+  return "Invalid word";
+}
+console.log(i("Phone")); */
+
+// #7kyu ASCII Shift Encryption/Decryption
+/* function asciiEncrypt(plaintext) {
+  let result = "";
+  for (let i = 0; i < plaintext.length; i++) {
+    result += String.fromCharCode(plaintext[i].charCodeAt() + i);
+  }
+  return result;
+}
+function asciiDecrypt(ciphertext) {
+  let result = "";
+  for (let i = 0; i < ciphertext.length; i++) {
+    result += String.fromCharCode(ciphertext[i].charCodeAt() - i);
+  }
+  return result;
+}
+console.log(asciiEncrypt("PASSWORD"));
+console.log(asciiDecrypt("PBUV[TXK")); */
+
+// #7kyu Sushi-go-round (Beginner's)
+/* function totalBill(str) {
+  let rLength = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "r") {
+      rLength++;
+    }
+  }
+  return (rLength - Math.floor(rLength / 5)) * 2;
+}
+console.log(totalBill("rr rrr rrr rr")); */
+
+// #7kyu Extending JavaScript Objects: Get First & Last Array Element
+/* Array.prototype.first = function () {
+  return this[0];
+};
+Array.prototype.last = function () {
+  return this[this.length - 1];
+};
+console.log([2, 5, 7, 3, 4].last()); */
+
+// #7kyu Zebulan's Nightmare
+/* function zebulansNightmare(functionName) {
+  functionName = functionName.split("_");
+  let result = functionName[0];
+  for (let i = 1; i < functionName.length; i++) {
+    result += functionName[i][0].toUpperCase() + functionName[i].slice(1);
+  }
+  return result;
+}
+console.log(zebulansNightmare("camel_case")); */
+
+// #7kyu Is It Negative Zero (-0)?
+/* function isNegativeZero(n) {
+  return (n == 0 && 1 / n) === -Infinity;
+}
+console.log(isNegativeZero(+0)); */
+
+// #7kyu Deutschstunde
+/* function derDieDas(wort) {
+  let wortLenght = (wort.match(/[aeiouäöü]/gi) || "0").length;
+  if (wortLenght < 2) {
+    return "das " + wort;
+  } else if (wortLenght >= 2 && wortLenght <= 3) {
+    return "die " + wort;
+  } else {
+    return "der " + wort;
+  }
+}
+console.log(derDieDas("ZXp")); */
+
+// #7kyu EZ code golf #2 : 8 -> 10
+/* f=x=>+('0o'+x)
+console.log(f("2")); */
+
+// #7kyu Russian postal code checker
+/* function zipvalidate(postcode) {
+  if (postcode.length === 6 && Number(postcode)) {
+    if (!"05789".includes(postcode[0])) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(zipvalidate("198328")); */
+
+// #7kyu Shorten Me: Array Declaration II (undefined)
+/* array=x=>[...`${x}`] */
+
+// #7kyu sPoNgEbOb MeMe
+/* function spongeMeme(sentence) {
+  let result = "";
+  for (let i = 0; i < sentence.length; i++) {
+    if (i % 2 === 0) {
+      result += sentence[i].toUpperCase();
+    } else {
+      result += sentence[i].toLowerCase();
+    }
+  }
+  return result;
+}
+console.log(spongeMeme("stop Making spongebob Memes!")); */
+
+// #7kyu Baby shark lyrics generator
+/* function babySharkLyrics() {
+  let verses=["Baby","Mommy","Daddy","Grandma","Grandpa"];result='';
+  for (let v of verses)result+=`${v} shark, doo doo doo doo doo doo\n`.repeat(3) + `${v} shark!\n`;
+  return result+"Let's go hunt, doo doo doo doo doo doo\n".repeat(3) + "Let's go hunt!\nRun away,…"
+}
+console.log(babySharkLyrics()); */
+
+// #7kyu Hëävÿ Mëtäl Ümläüts
+/* function heavyMetalUmlauts(boringText) {
+  const replacements = {
+    A: "Ä",
+    E: "Ë",
+    I: "Ï",
+    O: "Ö",
+    U: "Ü",
+    Y: "Ÿ",
+    a: "ä",
+    e: "ë",
+    i: "ï", 
+    o: "ö",
+    u: "ü",
+    y: "ÿ",
+  };
+  return boringText.replace(/[A-Za-z]/gi, (value) =>
+    replacements[value] ? replacements[value] : value
+  );
+}
+console.log(heavyMetalUmlauts("Announcing the Macbook Air Guitar")); */
+
+// #7kyu Tetration
+/* function tetration(x, y) {
+  if (y == 0) {
+    return 1;
+  } else if (y == 1) return x;
+  else {
+    return x ** tetration(x, y - 1);
+  }
+}
+console.log(tetration(4, 0)); */
+
+// #7kyu Sort deck of cards
+/* function sortCards(array) {
+  const rankOrder = {
+    A: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    T: 10,
+    J: 11,
+    Q: 12,
+    K: 13,
+  };
+  return array.sort((a, b) => rankOrder[a] - rankOrder[b]);
+}
+console.log(sortCards([3, 9, "A", 5, "T", 8, 2, 4, "Q", 7, "J", 6, "K"])); */
+
+// #7kyu ATM
+/* function solve(n) {
+  const banknotes = [10, 20, 50, 100, 200, 500];
+  let sum = 0;
+  for (let i = banknotes.length - 1; i >= 0; i--) {
+    while (n >= banknotes[i]) {
+      n -= banknotes[i];
+      sum++;
+    }
+  }
+  return n === 0 ? sum : -1;
+}
+console.log(solve(22)); */
+
+// #7kyu Find Screen Size
+/* function findScreenHeight(width, ratio) {
+  const [w, h] = ratio.split(":").map(Number);
+  const result = Math.floor((width / w) * h);
+  return `${width}x${result}`;
+}
+console.log(findScreenHeight(1024, "4:3")); */
+
+// #7kyu Jenny the youngest detective
+/* function missingWord(nums, str) {
+  str = str.split(" ").join("");
+  nums = nums.sort((a, b) => a - b);
+  let result = "";
+  for (let i = 0; i < nums.length; i++) {
+    if (str[nums[i]]) {
+      result += str[nums[i]];
+    } else {
+      return "No mission today";
+    }
+  }
+  return result.toLowerCase();
+}
+console.log(missingWord([5, 0, 3], "I love you")); */
+
+// #7kyu Count up the points for the 7 Wonders board game! Easy version
+/* function solve(compasses, gears, tablets) {
+  const distinctSets = Math.min(compasses, gears, tablets);
+  const distinctSetPoints = distinctSets * 7;
+  const squarePoints =
+    compasses * compasses + gears * gears + tablets * tablets;
+  return distinctSetPoints + squarePoints;
+}
+console.log(solve(0, 0, 0)); */
+
+// #7kyu Sum of numbers from 0 to N
+/* var SequenceSum = (function () {
+  function SequenceSum() {}
+  SequenceSum.showSequence = function (count) {
+    let sum = 0;
+    let result = "";
+    if (count < 0) {
+      return count + "<" + "0";
+    } else if (count === 0) {
+      return "0=0";
+    }
+    for (let i = 0; i <= count; i++) {
+      sum += i;
+      result += i + 1 <= count ? i + "+" : i + " " + "=" + " " + sum;
+    }
+    return result;
+  };
+  return SequenceSum;
+})();
+console.log(SequenceSum.showSequence(-15)); */
+
+// #7kyu Simple Fun #28: Html End Tag By Start Tag
+/* function htmlEndTagByStartTag(startTag) {
+  let tag = startTag.slice(startTag.indexOf("<") + 1, startTag.indexOf(" "));
+  return `</${tag}>`;
+}
+console.log(htmlEndTagByStartTag("<button type='button' disabled>")); */
+
+// #7kyu Price is right
+/* function priceIsRight(numbers, target) {
+  numbers = numbers.sort((a, b) => a - b);
+  let result;
+  for (let i = 0; i < numbers.length; i++) {
+    if (target >= numbers[i]) {
+      result = numbers[i];
+    }
+  }
+  return result;
+}
+console.log(priceIsRight([1, 2, 3, 4, 5], 5)); */
+
+// #7kyu Multidimensional array
+/* function getElement(array, indexes) {
+  let result;
+  for (let i = 0; i < indexes.length; i++) {
+    if (result) {
+      result = result[indexes[i]];
+    } else {
+      result = array[indexes[i]];
+    }
+  }
+  return result;
+}
+console.log(getElement([[[1, 2, 3]]], [0, 0, 1])); */
+
+// #7kyu Negation of a Value
+/* function negationValue(string, value) {
+  for (let i = 0; i < string.length; i++) {
+    value = !value;
+  }
+  return value;
+}
+console.log(negationValue("!!", 0)); */
+
+// #7kyu An English Twist on a Japanese Classic
+/* function shiritori(words) {
+  let result = [];
+  for (let i = 0; i < words.length; i++) {
+    let last = words[i][words[i].length - 1];
+    let first = words[i + 1] ? words[i + 1][0] : 0;
+    if (last === first) {
+      result.push(words[i]);
+    } else {
+      result.push(words[i]);
+      return result.join("").length ? result : [];
+    }
+  }
+  return result;
+}
+console.log(shiritori(["", "", "", "", "", ""])); */
+
+// #7kyu Lost number in number sequence
+/* function findDeletedNumber(arr, mixArr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (!mixArr.includes(arr[i])) {
+      return arr[i];
+    }
+  }
+  return 0;
+}
+console.log(findDeletedNumber([1, 2, 3, 4, 5], [3, 4, 1, 5])); */
+
+// #7kyu Words to sentence
+/* function wordsToSentence(words) {
+  return words.join(" ");
+}
+console.log(wordsToSentence(["hello", "world"])); */
+
+// #7kyu Chicken Sexing
+/* function correctness(bobsDecisions, expertDecisions) {
+  let sum = 0;
+  for (let i = 0; i < bobsDecisions.length; i++) {
+    if (bobsDecisions[i] === expertDecisions[i]) {
+      sum++;
+    } else if (bobsDecisions[i] === "?" || expertDecisions[i] === "?") {
+      sum += 0.5;
+    } else {
+      sum += 0;
+    }
+  }
+  return sum;
+}
+console.log(correctness(["M", "?", "M"], ["M", "F", "?"])); */
+
+// #7kyu Fac Recursion (Pest control - find the bugs and fix them)
+/* function facRecursion(value) {
+  if (value < 0) {
+    return 0;
+  } else if (value === 1 || value === 0) {
+    return 1;
+  }
+  return value * facRecursion(value - 1);
+}
+console.log(facRecursion(4)); */
+
+// #7kyu Remove duplication
+/* function removeDuplication(arr) {
+  let object = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] in object) {
+      object[arr[i]]++;
+    } else {
+      object[arr[i]] = 1;
+    }
+  }
+  let result = [];
+  for (const key in object) {
+    if (object[key] === 1) {
+      if (/[0-9]/.test(Number(key))) {
+        result.push(Number(key));
+      }
+    }
+  }
+  return result;
+}
+console.log(removeDuplication([1, 2, 3, 2, 4, 6, 2, 6, 7, undefined])); */
+
+// #7kyu Sorted? yes? no? how?
+/* function isSortedAndHow(array) {
+  let ascendingClone = [...array];
+  let descendingClone = [...array];
+  let ascending = ascendingClone.sort((a, b) => a - b).join("");
+  let descending = descendingClone.sort((a, b) => b - a).join("");
+  array = array.join("");
+  return ascending == array
+    ? "yes, ascending"
+    : descending == array
+    ? "yes, descending"
+    : "no";
+}
+console.log(isSortedAndHow([3, 2, 3])); */
+
+// #7kyu Closure Counter
+/* function counter() {
+  let sum = 1;
+  return function () {
+    return sum++;
+  };
+}
+const newCounter = counter();
+console.log(newCounter());
+console.log(newCounter()); */
+
+// #7kyu Javascript filter - 1
+/* function searchNames(logins) {
+  return logins.filter((value) => value[0][value[0].length - 1] == "_");
+}
+console.log(
+  searchNames([
+    ["foo", "foo@foo.com"],
+    ["bar_", "bar@bar.com"],
+  ])
+); */
+
+// #7kyu Train to remove duplicates from an array with filter()
+/* function unique(arr) {
+  return arr.filter((value, index, temp) => temp.indexOf(value) === index);
+}
+console.log(unique([1, 2, 2, 3, 3])); */
+
+// #7kyu Exclamation marks series #9: Remove or add a exclamation mark at the end of words of the sentence
+/* function removeOrAdd(string) {
+  let result = [];
+  string = string.split(" ");
+  for (let i = 0; i < string.length; i++) {
+    let once = string[i][string[i].length - 1];
+    let twice = string[i][string[i].length - 2];
+    if (twice !== "!" && once === "!") {
+      result.push(string[i].slice(0, -1));
+    } else if (once !== "!") {
+      result.push(string[i] + "!");
+    } else {
+      result.push(string[i]);
+    }
+  }
+  return result.join(" ");
+}
+console.log(removeOrAdd("Hi! Hi!")); */
+
+// #7kyu Automorphic Number (Special Numbers Series #6)
+/* function automorphic(n) {
+  n = n.toString();
+  let number = (n * n).toString();
+  return number.slice(number.length - n.length) === n ? "Automorphic" : "Not!!";
+}
+console.log(automorphic(25)); */
+
+// #7kyu Fizz / Buzz
+/* function solution(number) {
+  let A = 0;
+  let B = 0;
+  let C = 0;
+  for (let i = 1; i < number; i++) {
+    if (i % 3 == 0 && i % 5 != 0) {
+      A += 1;
+    } else if (i % 5 == 0 && i % 3 != 0) {
+      B += 1;
+    } else if (i % 3 == 0 && i % 5 == 0) {
+      C += 1;
+    }
+  }
+  return [A, B, C];
+}
+console.log(solution(20)); */
+
+// #7kyu PopShift
+/* function popShift(s) {
+  let stringNumber = Math.floor(s.length / 2);
+  if (s.length % 2) {
+    return [
+      [...s.slice(stringNumber + 1)].reverse().join(""),
+      s.slice(0, stringNumber),
+      s.slice(stringNumber, stringNumber + 1),
+    ];
+  } else {
+    return [
+      [...s.slice(stringNumber)].reverse().join(""),
+      s.slice(0, stringNumber),
+      "",
+    ];
+  }
+}
+console.log(popShift("exampleesthere")); */
+
+// #7kyu Power of 4
+/* function powerOf4(n) {
+  if (n === 1) {
+    return true;
+  }
+  if (typeof n === "number") {
+    return (Math.log(n) / Math.log(4)) % 1 === 0;
+  } else {
+    return false;
+  }
+}
+console.log(powerOf4(2)); */
+
+// #7kyu Every archer has its arrows
+/* function archersReady(archers) {
+  if (archers.length === 0) {
+    return false;
+  }
+  return archers.every((value) => value >= 5) === true;
+}
+console.log(archersReady([])); */
+
+// #7kyu Sorted Union
+/* function uniteUnique(...args) {
+  return [...new Set(args.flat())];
+}
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1])); */
+
+// #7kyu Unix command line `ls -l` extract the file type.
+/* function linuxType(fileAttribute) {
+  const command = {
+    "-": "file",
+    d: "directory",
+    l: "symlink",
+    s: "socket",
+    p: "pipe",
+    c: "character_file",
+    b: "block_file",
+    D: "door",
+  };
+  return command[fileAttribute[0]];
+}
+console.log(linuxType("srwxrwxrwx")); */
+
+// #7kyu Club Doorman
+/* function passTheDoorMan(word) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  const doubleLetter = alphabet.indexOf(word.match(/(.)\1/)[1]);
+  return doubleLetter * 3;
+}
+console.log(passTheDoorMan("lettuce")); */
+
+// #7kyu Test's results
+/* function testResult(array) {
+  const classAverage =
+    array.reduce((curr, sum) => curr + sum, 0) / array.length;
+  let ball = {
+    h: 0,
+    a: 0,
+    l: 0,
+  };
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] >= 9) {
+      ball["h"]++;
+    } else if (array[i] >= 7) {
+      ball["a"]++;
+    } else {
+      ball["l"]++;
+    }
+  }
+  let result;
+  if (ball["a"] === 0 && ball["l"] === 0) {
+    result = [ball, "They did well"];
+  } else {
+    result = [ball];
+  }
+  return [Number(classAverage.toFixed(3)), ...result];
+}
+console.log(testResult([10, 9, 7, 10, 9, 10, 9]));
+ */
+
+// #7kyu Functional Addition
+/* function add(n) {
+  return (number) => n + number;
+}
+console.log(add(1)(-5)); */
+
+// #7kyu Oh come on! Hello world! once again?
+/* f = (_) =>
+  "\u0048" +
+  "\u0065" +
+  "\u006C" +
+  "\u006C" +
+  "\u006F" +
+  "\u002C" +
+  "\u0020" +
+  "\u0077" +
+  "\u006F" +
+  "\u0072" +
+  "\u006C" +
+  "\u0064" +
+  "\u0021";
+console.log(f()); */
+
+// #7kyu Arithmetic sequence - sum of n elements
+/* function ArithmeticSequenceSum(a, r, n) {
+  let sum = a;
+  for (let i = 2; i <= n; i++) {
+    sum += a;
+    sum += r * (i - 1);
+  }
+  return sum;
+}
+console.log(ArithmeticSequenceSum(2, 3, 5)); */
+
+// #7kyu Get the 𝑟𝑒𝑎𝑙 length of a string
+/* function getRealLength(string) {
+  return Array.from(string.split(/[\ufe00-\ufe0f]/).join("")).length;
+}
+console.log(getRealLength("1")); */
+
+// #7kyu Sum of all arguments
+/* function sum(...args) {
+  return args.reduce((curr, sum) => curr + sum, 0);
+}
+console.log(sum(5, 7, 9)); */
+
+// #7kyu Arithmetic progression
+/* function arithmeticSequenceElements(a, d, n) {
+  let sum = [];
+  for (let i = a; ; i += d) {
+    if (sum.length === n) {
+      return sum.join(", ");
+    } else {
+      sum.push(i);
+    }
+  }
+}
+console.log(arithmeticSequenceElements(1, 2, 5)); */
+
+// #7kyu What is my name score? #1
+/* function nameScore(name) {
+  const alpha = ["Z", "ABCDE", "FGHIJ", "KLMNO", "PQRST", "UVWXY"];
+  let sum = 0;
+  let result = {};
+  let clearName = name.toUpperCase().split(" ").join("");
+  for (let i = 0; i < clearName.length; i++) {
+    for (let k = 0; k < alpha.length; k++) {
+      if (alpha[k].includes(clearName[i])) {
+        sum += k;
+      }
+    }
+  }
+  result[name] = sum;
+  return result;
+}
+console.log(nameScore("Mary Jane")); */
+
+// #7kyu Operations With Sets
+/* function process2Arrays(arr1, arr2) {
+  let bothArray = arr1.concat(arr2).filter((value, index, temp) => {
+    return temp.indexOf(value) !== index;
+  });
+  let onlyArray = arr1.concat(arr2).filter((value) => {
+    return !bothArray.includes(value);
+  });
+  let firstArray = arr1.filter((value) => !bothArray.includes(value));
+  let secondArray = arr2.filter((value) => !bothArray.includes(value));
+  return [
+    bothArray.length,
+    onlyArray.length,
+    firstArray.length,
+    secondArray.length,
+  ];
+}
+console.log(
+  process2Arrays([1, 2, 3, 4, 5, 6, 7, 8, 9], [2, 4, 6, 8, 10, 12, 14])
+); */
+
+// #7kyu The Hidden Word
+/* function hiddenWord(num) {
+  const maya = {
+    6: "a",
+    1: "b",
+    7: "d",
+    4: "e",
+    3: "i",
+    2: "l",
+    9: "m",
+    8: "n",
+    0: "o",
+    5: "t",
+  };
+  num = num.toString();
+  return num.replace(/[0-9]/g, (value) => maya[value] || "");
+}
+console.log(hiddenWord(942547)); */
+
+// #7kyu Number Manipulation I (Easy)
+/* function manipulate(num) {
+  num = num.toString();
+  const result =
+    num.slice(0, Math.floor(num.length / 2)) +
+    "0".repeat(num.length - Math.floor(num.length / 2));
+  return Number(result);
+}
+console.log(manipulate(8384737)); */
+
+// #7kyu Character Concatenation
+/* function charConcat(string) {
+  let originalSize = Math.floor(string.length / 2);
+  let result = "";
+  for (let i = 0; i < originalSize; i++) {
+    result += string[i] + string[string.length - 1 - i] + (i + 1);
+  }
+  return result;
+}
+console.log(charConcat("abc!def")); */
+
+// #7kyu Credit card issuer checking
+/* function getIssuer(number) {
+  number = number.toString();
+  const len = number.length;
+  if ((len === 13 || len === 16) && number.startsWith("4")) {
+    return "VISA";
+  }
+  if (len === 16 && /^5[1-5]/.test(number)) {
+    return "Mastercard";
+  }
+  if (len === 16 && number.startsWith("6011")) {
+    return "Discover";
+  }
+  if (len === 15 && /^3[4|7]/.test(number)) {
+    return "AMEX";
+  }
+  return "Unknown";
+}
+console.log(getIssuer(4111111111111111)); */
+
+// #7kyu Well of Ideas - Harder Version
+/* function well(x) {
+  let good = 0;
+  let array = x.flat(Infinity);
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].toString().toLowerCase() === "good") {
+      good++;
+    }
+  }
+  if (good === 1 || good === 2) {
+    return "Publish!";
+  } else if (good > 2) {
+    return "I smell a series!";
+  } else {
+    return "Fail!";
+  }
+}
+console.log(well([[]])); */
+
+// #7kyu Regexp Basics - is it a letter?
+/* String.prototype.isLetter = function () {
+  return this.length === 1 ? /[A-Za-z]/.test(this) : false;
+};
+console.log("ab".isLetter()); */
+
+// #7kyu Multiply array values and filter non-numeric
+/* function multiplyAndFilter(array, multiplier) {
+  let checkArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (/[0-9]/.test(array[i])) {
+      checkArray.push(array[i]);
+    }
+  }
+  let result = [];
+  for (let i = 0; i < checkArray.length; i++) {
+    result.push(multiplier * checkArray[i]);
+  }
+  return result;
+}
+console.log(
+  multiplyAndFilter(
+    [1, null, function () {}, 2.5, "string", 10, undefined, {}, []],
+    2
+  )
+); */
+
+// #7kyu Combine objects
+/* function combine(...args) {
+  let object = {};
+  for (let i = 0; i < args.length; i++) {
+    let keys = Object.keys(args[i]);
+    let values = Object.values(args[i]);
+    for (let k = 0; k < keys.length; k++) {
+      if (keys[k] in object) {
+        object[keys[k]] += values[k];
+      } else {
+        object[keys[k]] = values[k];
+      }
+    }
+  }
+  return object;
+}
+console.log(
+  combine({ a: 10, b: 20, c: 30 }, { a: 3, c: 6, d: 3 }, { a: 5, d: 11, e: 8 })
+); */
+
+// #7kyu Multiply Word in String
+/* function modifyMultiply(str, loc, num) {
+  str = str.split(" ");
+  return (str[loc] + "-").repeat(num).slice(0, -1);
+}
+console.log(modifyMultiply("This is a string", 3, 5));
+ */
+
+// #7kyu Regexp Basics - is it a vowel?
+/* String.prototype.vowel = function () {
+  const regex = /[aeiou]/i;
+  return this.length === 1 ? regex.test(this) : false;
+};
+console.log("aa".vowel()); */
+
+// #7kyu Maximum Product
+/* function adjacentElementsProduct(array) {
+  let result = array[0] * array[1];
+  for (let i = 0; i < array.length; i++) {
+    let multiple = array[i] * array[i + 1];
+    if (multiple >= result) {
+      result = multiple;
+    }
+  }
+  return result;
+}
+console.log(adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921])); */
+
+// #7kyu Get initials from person name
+/* function toInitials(name) {
+  let array = name.split(" ");
+  let result = "";
+  for (let i = 0; i < array.length; i++) {
+    result += array[i + 1] ? array[i][0] + "." + " " : array[i][0] + ".";
+  }
+  return result;
+}
+console.log(toInitials("Robert C. Martin")); */
+
+// #7kyu Broken Collatz
+/* function collatz(n, count = 1) {
+  if (n === 1) return count;
+  n = n % 2 === 0 ? n / 2 : n * 3 + 1;
+  return collatz(n, count + 1);
+}
+console.log(collatz(4)); */
+
+// #7kyu Bug fix: Is this component visible?
+/* class Component {
+  #id;
+  #parent;
+  #children;
+  #visibility;
+  constructor(id, children) {
+    this.#id = id;
+    this.#children = children;
+    this.#visibility = null; 
+    this.#parent = null;
+    this.#children.forEach(child => child.#parent = this);
+  }
+  set visibility(value) {
+    this.#visibility = value;
+  }
+  get isVisible() {
+    if (this.#visibility !== null) {
+      return this.#visibility;
+    }
+    if (this.#parent) {
+      return this.#parent.isVisible;
+    }
+    return true;
+  }
+  toString() {
+    return this.#id;
+  }
+} */
+
+// #7kyu For the sake of argument
+/* function numbers(...args) {
+  return args.every((value) => typeof value === "number");
+}
+console.log(numbers(1, 4, 3, NaN, 5)); */
+
+// #7kyu Coding 3min: Bug in Apple
+/* function sc(apple) {
+  let result = [];
+  for (let i = 0; i < apple.length; i++) {
+    for (let k = 0; k < apple[i].length; k++) {
+      if (apple[i][k] === "B") {
+        result[0] = i;
+        result[1] = k;
+      }
+    }
+  }
+  return result;
+}
+console.log(
+  sc([
+    ["B", "A", "A", "A", "A"],
+    ["A", "A", "A", "A", "A"],
+    ["A", "A", "A", "A", "A"],
+    ["A", "A", "A", "A", "A"],
+    ["A", "A", "A", "A", "A"],
+  ])
+); */
+
+// #7kyu A (no more) bugs trilogy: Episode 3 - Make a Player
+/* function Player(name, position, age, dribbling, pass, shoot) {
+  this.name = name;
+  this.position = position;
+  this.age = age;
+  this.dribbling = dribbling;
+  this.pass = pass;
+  this.shoot = shoot;
+}
+const myPlayer = new Player("Dumbo", "Kata Coder", 1, 2, 3, 4);
+console.log(myPlayer.dribbling); */
+
+// #7kyu [BUG] XCOM-141: Koko always gets treats
+/* function applyFeedback(battlescape, enemy, position) {
+  const battlescapeArray = [...battlescape];
+  if (battlescapeArray[position] === enemy) {
+    return "DISPENSE_TREAT";
+  } else {
+    return "RELEASE_NITROGEN_SHOWER";
+  }
+}
+console.log(applyFeedback("👮🚗👽🏠🚒", "👽", 2)); */
+
+// #7kyu Turn any word into a beef taco
+/* function tacofy(word) {
+  word = word.toLowerCase();
+  let object = {
+    a: "beef",
+    o: "beef",
+    e: "beef",
+    i: "beef",
+    u: "beef",
+    t: "tomato",
+    l: "lettuce",
+    c: "cheese",
+    g: "guacamole",
+    s: "salsa",
+  };
+  let result = [];
+  for (let i = 0; i < word.length; i++) {
+    if (object[word[i]]) {
+      result.push(object[word[i]]);
+    }
+  }
+  result.unshift("shell");
+  result.push("shell");
+  return result;
+}
+console.log(tacofy("aggg")); */
+
+// #7kyu Alphabetize a list by the nth character
+/* function sortIt(list, n) {
+  let array = list.split(", ");
+  return array
+    .sort((a, b) => {
+      let letterA = a[n - 1].toLowerCase();
+      let letterB = b[n - 1].toLowerCase();
+      if (letterA !== letterB) {
+        return letterA.localeCompare(letterB);
+      }
+      return a.toLowerCase().localeCompare(b.toLowerCase());
+    })
+    .join(", ");
+}
+console.log(
+  sortIt(
+    "Cornelius Lutz, Anton Ferner, Wolfgang Mittermeyer, Oskar von Reuenthal, Helmut Rennenkampf, Fritz Josef Bittenfeld, Neidhardt Muller",
+    10
+  )
+); */
+
+// #7kyu Number encrypting: cypher
+/* function cypher(string) {
+  const object = {
+    O: "0",
+    I: 1,
+    R: 2,
+    E: 3,
+    A: 4,
+    S: 5,
+    G: 6,
+    T: 7,
+    B: 8,
+    o: "0",
+    l: 1,
+    z: 2,
+    e: 3,
+    a: 4,
+    s: 5,
+    b: 6,
+    t: 7,
+    g: 9,
+  };
+  return string.replace(/[A-Za-z]/g, (x) => (object[x] ? object[x] : x));
+}
+console.log(cypher("Hello World")); */
+
+// #7kyu Array element parity
+/* function solve(arr) {
+  let uniqueNumbers = new Set(arr);
+  for (let num of uniqueNumbers) {
+    if (!uniqueNumbers.has(-num)) {
+      return num;
+    }
+  }
+}
+console.log(solve([-110, 110, -38, -38, -62, 62, -38, -38, -38])); */
+
+// #7kyu Simple Fun #144: Distinct Digit Year
+/* function distinctDigitYear(year) {
+  if (year === 1987) {
+    return 2013;
+  } else {
+    year += 1;
+    while (true) {
+      let yearStr = year.toString();
+      if ([...new Set([...yearStr])].length === yearStr.length) {
+        return year;
+      }
+      year += 1;
+    }
+  }
+}
+console.log(distinctDigitYear(8743)); */
+
+// #7kyu Largest Square Inside A Circle
+/* function areaLargestSquare(r) {
+  return r * r + r * r;
+}
+console.log(areaLargestSquare(5)); */
+
+// #7kyu Spraying trees
+/* function task(w, t, c) {
+  let names = {
+    Monday: "James",
+    Tuesday: "John",
+    Wednesday: "Robert",
+    Thursday: "Michael",
+    Friday: "William",
+  };
+  return `It is ${w} today, ${
+    names[w]
+  }, you have to work, you must spray ${t} trees and you need ${
+    t * c
+  } dollars to buy liquid`;
+}
+console.log(task("Wednesday", 10, 2)); */
+
+// #7kyu Noonerize Me
+/* function noonerize(numbers) {
+  let a = numbers[1].toString()[0] + numbers[0].toString().slice(1);
+  let b = numbers[0].toString()[0] + numbers[1].toString().slice(1);
+  return a - b ? Math.abs(a - b) : "invalid array";
+}
+console.log(noonerize([1000000, 9999999])); */
+
+// #7kyu Mirror, mirror, on the wall...
+/* function mirror(data) {
+  let temp1 = [...data];
+  let temp2 = [...data];
+  const increase = temp1.sort((a, b) => a - b);
+  const decrease = temp2.sort((a, b) => b - a);
+  if (increase[increase.length - 1] === decrease[0]) {
+    return [...increase, ...decrease.slice(1)];
+  } else {
+    return [...increase, ...decrease];
+  }
+}
+console.log(mirror([2, 3, 1])); */
+
+// #7kyu Collatz Conjecture Length
+/* function collatz(n) {
+  let output = [n];
+  let i = 0;
+  while (output[i] !== 1) {
+    if (output[i] % 2 === 0) {
+      output.push(output[i] / 2);
+      i++;
+    } else {
+      output.push(output[i] * 3 + 1);
+      i++;
+    }
+  }
+  return output.length;
+}
+console.log(collatz(20)); */
+
+// #7kyu Lorraine Wants to Win the TV Contest
+/* function unscramble(scramble) {
+  return wordList.filter((value) => {
+    if (value.length === scramble.length) {
+      let sortValue = [...value].sort().join("");
+      let sortScramble = [...scramble].sort().join("");
+      if (sortValue === sortScramble) {
+        return value;
+      }
+    }
+  });
+}
+console.log(unscramble("shi")); */
+
+// #7kyu Simple Fun #40: Timed Reading
+/* function timedReading(maxLength, text) {
+  const onlyRead = text.split(/\W+/g);
+  return onlyRead.filter(
+    (value) => value.length > 0 && value.length <= maxLength
+  ).length;
+}
+console.log(timedReading(4, "The Fox asked the stork, 'How is the soup?'")); */
+
+// #7kyu Guess the Sequence
+/* function sequence(x) {
+  let array = [];
+  for (let i = 1; i <= x; i++) {
+    array.push(i);
+  }
+  return array.sort();
+}
+console.log(sequence(16)); */
+
+// #7kyu Operations with sequence
+/* var calc = function (a) {
+  const firstCondition = a.map((value) => (value > 0 ? value * value : value));
+  const secondCondition = firstCondition.map((value, index) =>
+    (index + 1) % 3 === 0 ? value * 3 : value
+  );
+  const thirdCondition = secondCondition.map((value, index) =>
+    (index + 1) % 5 === 0 ? value * -1 : value
+  );
+  return thirdCondition.reduce((curr, sum) => curr + sum, 0);
+};
+console.log(calc([0, 2, 1, -6, -3, 3])); */
+
+// #7kyu Simple Maths Test
+/* function numberProperty(n) {
+  let result = [];
+  if (n > 1) {
+    let isPrime = true;
+    for (let i = 2; i <= n / 2; i++) {
+      if (n % i == 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    result[0] = isPrime;
+  } else {
+    result[0] = false;
+  }
+  if (n % 2 === 0) {
+    result[1] = true;
+  } else {
+    result[1] = false;
+  }
+  if (n % 10 === 0) {
+    result[2] = true;
+  } else {
+    result[2] = false;
+  }
+  return result;
+}
+console.log(numberProperty(7)); */
+
+// #7kyu Adding words - Part I
+/* class Arith {
+  constructor(number) {
+    this.number = number;
+  }
+  add = function (n) {
+    const numbers = [
+      "zero",
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten",
+      "eleven",
+      "twelve",
+      "thirteen",
+      "fourteen",
+      "fifteen",
+      "sixteen",
+      "seventeen",
+      "eighteen",
+      "nineteen",
+      "twenty",
+    ];
+    const calc = numbers.indexOf(this.number) + numbers.indexOf(n);
+    return numbers[calc];
+  };
+}
+var k = new Arith("three");
+console.log(k.add("seven")); */
+
+// #7kyu Elevator Distance
+/* function elevatorDistance(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i + 1] || array[i + 1] === 0) {
+      sum += Math.abs(array[i] - array[i + 1]);
+    }
+  }
+  return sum;
+}
+console.log(elevatorDistance([19, 0, 20, 11])); */
+
+// #7kyu Alphabetical Sequence
+/* function alphaSeq(str) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  const sortString = [...str.toLowerCase()].sort((a, b) => a.localeCompare(b));
+  return sortString
+    .map(
+      (value) => value.toUpperCase() + value.repeat(alphabet.indexOf(value) - 1)
+    )
+    .join(",");
+}
+console.log(alphaSeq("ZpglnRxqenU")); */
+
+// #7kyu Equalize the array!
+/* function equalize(array) {
+  let result = [];
+  const firstNumber = array[0];
+  for (let i = 0; i < array.length; i++) {
+    result.push(
+      array[i] - firstNumber >= 0
+        ? "+" + (array[i] - firstNumber).toString()
+        : (array[i] - firstNumber).toString()
+    );
+  }
+  return result;
+}
+console.log(equalize([10, 12, 24, 50, 0, 15, 20])); */
+
+// #7kyu Diagonals sum
+/* function sum(matrix) {
+  const a = matrix.map((value, index) => value[index]);
+  const b = matrix.map((value, index) => value[value.length - 1 - index]);
+  return [...a, ...b].reduce((sum, curr) => sum + curr, 0);
+}
+console.log(
+  sum([
+    [-2, 5, 3, 2],
+    [9, -6, 5, 1],
+    [3, 2, 7, 3],
+    [-1, 8, -4, 8],
+  ])
+); */
+
+// #7kyu Finding Remainder Without Using '%' Operator
+/* const remainder = (D, d) => {
+  q = parseInt(D / d);
+  p = q * d;
+  return D - p;
+};
+console.log(remainder(3, 2)); */
+
+// #7kyu Simple Fun #136: Missing Values
+/* function missingValues(arr) {
+  let valueCount = {};
+  for (const key in arr) {
+    if (arr[key] in valueCount) {
+      valueCount[arr[key]]++;
+    } else {
+      valueCount[arr[key]] = 1;
+    }
+  }
+  let sum = 1;
+  for (const key in valueCount) {
+    if (valueCount[key] === 2) {
+      sum *= key;
+    } else if (valueCount[key] === 1) {
+      sum *= key ** 2;
+    }
+  }
+  return sum;
+}
+console.log(missingValues([1, 1, 1, 2, 2, 3])); */
+
+// #7kyu Not all but sometimes all
+/* function remove(str, what) {
+  for (const key in what) {
+    for (let i = 0; i < what[key]; i++) {
+      str = str.replace(key, "");
+    }
+  }
+  return str;
+}
+console.log(remove("this is a string", { t: 1, i: 2 })); */
+
+// #7kyu Hungarian Vowel Harmony (easy)
+/* function dative(word) {
+  const frontVowel = ["e", "é", "i", "í", "ö", "ő", "ü", "ű"];
+  const backVowel = ["a", "á", "o", "ó", "u", "ú"];
+  for (let i = word.length; i >= 0; i--) {
+    if (frontVowel.includes(word[i])) {
+      return word + "nek";
+    } else if (backVowel.includes(word[i])) {
+      return word + "nak";
+    }
+  }
+}
+console.log(dative("őr")); */
+
+// #7kyu Upturn Numeral Triangle
+/* function pattern(n) {
+  let output = [];
+  let k = n;
+  let j = 1;
+  for (let i = 1; i < n + 1; i++) {
+    let temp = i.toString().split("")[i.toString().length - 1];
+    output.push(" ".repeat(j - 1) + (" " + temp).repeat(k));
+    k--;
+    j++;
+  }
+  return output.join("\n");
+}
+console.log(pattern(16)); */
+
+// #7kyu Simple Fun #270: Evil Code Medal
+/* function evilCodeMedal(userTime, gold, silver, bronze) {
+  userTime = +userTime.split(":").join("");
+  gold = +gold.split(":").join("");
+  silver = +silver.split(":").join("");
+  bronze = +bronze.split(":").join("");
+  if (userTime < gold) {
+    return "Gold";
+  } else if (userTime >= gold && userTime < silver) {
+    return "Silver";
+  } else if (userTime >= silver && userTime < bronze) {
+    return "Bronze";
+  } else {
+    return "None";
+  }
+}
+console.log(evilCodeMedal("03:15:00", "03:15:00", "03:15:01", "03:15:02")); */
+
+// #7kyu Palindromes Here and There
+/* function convertPalindromes(numbers) {
+  return numbers.map((value) => {
+    let string = value.toString().split("").reverse().join("");
+    return Number(value == string);
+  });
+}
+console.log(convertPalindromes([101, 2, 85, 33, 14014])); */
+
+// #7kyu Nice Array
+/* function isNice(arr) {
+  if (arr.length === 0) {
+    return false;
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (!(arr.includes(arr[i] - 1) || arr.includes(arr[i] + 1))) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(isNice([])); */
+
+// #7kyu Reimplement Multiplication Part 1
+/* function mul(a, b) {
+  let sum = 0;
+  if (a === 0 || b === 0) {
+    return sum;
+  }
+  for (let i = 0; i < b; i++) {
+    sum += a;
+  }
+  return sum;
+}
+console.log(mul(5, 5)); */
+
+// #7kyu Say hello!
+/* function greet(name) {
+  if (name) {
+    return "hello " + name + "!";
+  }
+  return null;
+}
+console.log(greet("Niks")); */
+
+// #7kyu Coding Meetup #14 - Higher-Order Functions Series - Order the food
+/* function orderFood(list) {
+  let result = {};
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].meal in result) {
+      result[list[i].meal]++;
+    } else {
+      result[list[i].meal] = 1;
+    }
+  }
+  return result;
+}
+console.log(
+  orderFood([
+    {
+      firstName: "Noah",
+      lastName: "M.",
+      country: "Switzerland",
+      continent: "Europe",
+      age: 19,
+      language: "C",
+      meal: "vegetarian",
+    },
+    {
+      firstName: "Anna",
+      lastName: "R.",
+      country: "Liechtenstein",
+      continent: "Europe",
+      age: 52,
+      language: "JavaScript",
+      meal: "standard",
+    },
+    {
+      firstName: "Ramona",
+      lastName: "R.",
+      country: "Paraguay",
+      continent: "Americas",
+      age: 29,
+      language: "Ruby",
+      meal: "vegan",
+    },
+    {
+      firstName: "George",
+      lastName: "B.",
+      country: "England",
+      continent: "Europe",
+      age: 81,
+      language: "C",
+      meal: "vegetarian",
+    },
+  ])
+); */
+
+// #7kyu Check whether a number is valid in a given numeral system
+/* function validateBase(num, base) {
+  const validChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".slice(0, base);
+  return [...num].every((char) => validChars.includes(char.toUpperCase()));
+}
+console.log(validateBase("7623", 8)); */
+
+// #7kyu Gryffindor vs Slytherin Quidditch Game
+/* function gameWinners(gryffindor, slytherin) {
+  if (gryffindor[1] === "yes") {
+    gryffindor[0] = gryffindor[0] + 150;
+  }
+  if (slytherin[1] === "yes") {
+    slytherin[0] = slytherin[0] + 150;
+  }
+  if (gryffindor[0] > slytherin[0]) {
+    return "Gryffindor wins!";
+  } else if (slytherin[0] > gryffindor[0]) {
+    return "Slytherin wins!";
+  } else {
+    return "It's a draw!";
+  }
+}
+console.log(gameWinners([350, "no"], [250, "yes"])); */
+
+// #7kyu Simple string reversal
+/* function solve(str) {
+  let result = [];
+  let space = [];
+  for (let i = str.length - 1; i >= 0; i--) {
+    if (str[i] === " ") {
+      space.push(i);
+    } else {
+      result.push(str[i]);
+    }
+  }
+  space = space.sort((a, b) => a - b);
+  for (let i = 0; i < space.length; i++) {
+    result.splice(space[i], 0, " ");
+  }
+  return result.join("");
+}
+console.log(solve("your code rocks")); */
+
+// #7kyu Coding 3min : A*B=C
+/* function findAB(numbers, c) {
+  let result = [];
+  for (let i = 0; i < numbers.length; i++) {
+    for (let k = i + 1; k < numbers.length; k++) {
+      if (numbers[i] * numbers[k] === c) {
+        result.push(numbers[i], numbers[k]);
+        return result;
+      }
+    }
+  }
+  return null;
+}
+console.log(findAB([1, 2, 3], 6)); */
+
+// #7kyu "Center yourself", says the monk.
+/* function center(strng, width, fill = " ") {
+  if (strng.length >= width) {
+    return strng;
+  }
+  const padding = width - strng.length;
+  const rightPadding = Math.floor(padding / 2);
+  const leftPadding = padding - rightPadding;
+  return fill.repeat(leftPadding) + strng + fill.repeat(rightPadding);
+}
+console.log(center("abc", 10, "_")); */
+
+// #7kyu Is this a triangle?
+/* function isTriangle(a, b, c) {
+  return a + b > c && a + c > b && b + c > a;
+}
+console.log(isTriangle(1, 2, 3)); */
+
+// #7kyu Digits explosion
+/* function explode(s) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    const digit = parseInt(s[i], 10);
+    if (!isNaN(digit)) {
+      result += s[i].repeat(digit);
+    }
+  }
+  return result;
+}
+console.log(explode("3120")); */
+
+// #7kyu Basic Calculator
+/* function calculate(num1, operation, num2) {
+  switch (operation) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num2 !== 0 ? num1 / num2 : null;
+    default:
+      return null;
+  }
+}
+console.log(calculate(2, "+", 3)); */
+
+// #7kyu Sum of Odd Cubed Numbers
+/* function cubeOdd(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== "number" || isNaN(arr[i])) {
+      return undefined;
+    }
+    if (arr[i] % 2) {
+      sum += arr[i] ** 3;
+    }
+  }
+  return sum;
+}
+console.log(cubeOdd([1, 2, 3, 4])); */
+
+// #7kyu Return a string's even characters.
+/* function evenChars(string) {
+  if (string.length < 2 || string.length > 100) {
+    return "invalid string";
+  }
+  let result = [];
+  for (let i = 1; i < string.length; i += 2) {
+    result.push(string[i]);
+  }
+  return result;
+}
+console.log(evenChars("abcdefg")); */
+
+// #7kyu Get decimal part of the given number
+/* function getDecimal(n) {
+  return Number("0." + n.toString().split(".")[1]) || 0;
+}
+console.log(getDecimal(10)); */
+
+// #7kyu Form The Minimum
+/* function minValue(values) {
+  const uniqueValues = [...new Set(values)];
+  uniqueValues.sort((a, b) => a - b);
+  return Number(uniqueValues.join(""));
+}
+console.log(minValue([1, 9, 3, 1, 7, 4, 6, 6, 7])); */
+
+// #7kyu Who's Online?
+/* const whosOnline = (friends) => {
+  const result = {
+    online: [],
+    offline: [],
+    away: [],
+  };
+  friends.forEach((friend) => {
+    if (friend.status === "online" && friend.lastActivity > 10) {
+      result["away"].push(friend.username);
+    } else if (friend.status === "online") {
+      result["online"].push(friend.username);
+    } else if (friend.status === "offline") {
+      result["offline"].push(friend.username);
+    }
+  });
+  Object.keys(result).forEach((key) => {
+    if (result[key].length === 0) {
+      delete result[key];
+    }
+  });
+  return result;
+};
+console.log(
+  whosOnline([
+    {
+      username: "Lucy",
+      status: "offline",
+      lastActivity: 22,
+    },
+    {
+      username: "Bob",
+      status: "online",
+      lastActivity: 104,
+    },
+  ])
+); */
+
+// #7kyu Use map() to double the values in an array
+/* function double(array) {
+  return array.map((value) => value * 2);
+}
+console.log(double([1, 2, 3])); */
+
+// #7kyu Every possible sum of two digits
+/* function digits(num) {
+  let result = [];
+  const strNum = num.toString();
+  for (let i = 0; i < strNum.length; i++) {
+    for (let j = i + 1; j < strNum.length; j++) {
+      const sum = parseInt(strNum[i]) + parseInt(strNum[j]);
+      result.push(sum);
+    }
+  }
+  return result;
+}
+console.log(digits(12345)); */
+
+// #7kyu Array Appender
+/* function appendArrays(arr1, arr2) {
+  return [...arr1, ...arr2];
+}
+console.log(appendArrays([["x", "x"], "B"], ["c", "D"])); */
+
+// #7kyu Basic method
+/* Array.prototype.max = function () {
+  if (this.length === 0) {
+    return null;
+  }
+  let max = Number(this[0]);
+  if (isNaN(max)) return NaN;
+  for (let i = 1; i < this.length; i++) {
+    let num = Number(this[i]);
+    if (isNaN(num)) return NaN;
+    if (num > max) {
+      max = num;
+    }
+  }
+  return max;
+};
+console.log([2, "5", 1, 3].max()); */
+
+// #7kyu Pairs of integers from m to n
+/* function generatePairs(m, n) {
+  let result = [];
+  for (let i = m; i <= n; i++) {
+    for (let j = i; j <= n; j++) {
+      result.push([i, j]);
+    }
+  }
+  return result;
+}
+console.log(generatePairs(2, 4)); */
+
+// #7kyu Complete The Pattern #4
+/* function pattern(n) {
+  var output = "";
+  for (let i = 1; i <= n; i++) {
+    for (let j = i; j <= n; j++) {
+      output += j;
+    }
+    if (i < n) {
+      output += "\n";
+    }
+  }
+  return output;
+}
+console.log(pattern(6)); */
+
+// #7kyu last digits of a number
+/* function lastDigit(n, d) {
+  const strNum = n.toString();
+  const length = strNum.length;
+  const startIndex = Math.max(0, length - d);
+  const lastDigits = strNum.slice(startIndex);
+  return lastDigits.split("").map(Number);
+}
+console.log(lastDigit(123456789, 3)); */
+
+// #7kyu Greatest common divisor
+/* function mygcd(x, y) {
+  if (y === 0) {
+    return x;
+  }
+  return mygcd(y, x % y);
+}
+console.log(mygcd(30, 12)); */
+
+// #7kyu How many consecutive numbers are needed?
+/* function consecutive(array) {
+  if (array.length === 0) {
+    return 0;
+  }
+  const min = Math.min(...array);
+  const max = Math.max(...array);
+  return max - min + 1 - array.length;
+}
+console.log(consecutive([1, 2, 5])); */
+
+// #7kyu Largest pair sum in array
+/* function largestPairSum(numbers) {
+  numbers = numbers.sort((a, b) => b - a);
+  return numbers[0] + numbers[1];
+}
+console.log(largestPairSum([10, 14, 2, 23, 20])); */
+
+// #7kyu Return substring instance count
+/* function solution(fullText, search) {
+  let count = 0;
+  for (let i = 0; i < fullText.length; i++) {
+    if (fullText[i] === search[0]) {
+      if (fullText.slice(i, i + search.length) === search) {
+        count++;
+        i += search.length - 1;
+      }
+    }
+  }
+  return count;
+}
+console.log(solution("aaabbbccc", "bb")); */
+
+// #7kyu Maximum Multiple
+/* function maxMultiple(divisor, bound) {
+  for (let i = bound; i > 0; i--) {
+    if (i % divisor === 0) {
+      return i;
+    }
+  }
+}
+console.log(maxMultiple(2, 7)); */
+
+// #7kyu Difference between years. (Level 1)
+/* var howManyYears = function (date1, date2) {
+  date1 = date1.slice(0, 4);
+  date2 = date2.slice(0, 4);
+  return Math.abs(date1 - date2);
+};
+console.log(howManyYears("1997/10/10", "2015/10/10")); */
+
+// #7kyu Card game: twenty-one
+/* function twentyOne(card1, card2, card3) {
+  card1 = card1.slice(0, -1);
+  card2 = card2.slice(0, -1);
+  card3 = card3.slice(0, -1);
+  [card1, card2, card3] = [card1, card2, card3].map((value) => {
+    if (value === "J") {
+      return 2;
+    } else if (value === "Q") {
+      return 3;
+    } else if (value === "K") {
+      return 4;
+    } else if (value === "A") {
+      return 11;
+    } else {
+      return +value;
+    }
+  });
+  let sum = [card1, card2, card3].reduce((sum, curr) => sum + curr, 0);
+  if (sum < 21) {
+    return "less";
+  } else if (sum > 21) {
+    return "more";
+  } else {
+    return "twenty-one";
+  }
+}
+console.log(twentyOne("A♣", "4♦", "Q♥")); */
+
+// #7kyu Array comparator
+/* function matchArrays(v, r) {
+  let dublicate = [...new Set([...v, ...r])];
+  return [...v, ...r].length - dublicate.length;
+}
+console.log(
+  matchArrays(["Perl", "Closure", "JavaScript"], ["Go", "C++", "Erlang"])
+); */
+
+// #7kyu All Star Code Challenge #16
+/* function noRepeat(str) {
+  let countLetter = {};
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] in countLetter) {
+      countLetter[str[i]]++;
+    } else {
+      countLetter[str[i]] = 1;
+    }
+  }
+  let noRepeatLetter = Object.keys(countLetter).filter(
+    (key) => countLetter[key] === 1
+  );
+  for (let i = 0; i < str.length; i++) {
+    if (noRepeatLetter.includes(str[i])) {
+      return str[i];
+    }
+  }
+}
+console.log(noRepeat("wxyz")); */
+
+// #7kyu Adding useful functional functionality to JavaScript arrays
+/* Array.range = function (start, count) {
+  if (start === 0 && count === 0) {
+    return [];
+  }
+  if (count === 0) {
+    return [];
+  }
+  let result = [];
+  for (let i = start; i < start + count; i++) {
+    result.push(i);
+  }
+  return result;
+};
+Array.prototype.sum = function () {
+  let result = 0;
+  for (let i = 0; i < this.length; i++) {
+    result += this[i];
+  }
+  return result;
+};
+console.log(Array.range(0, 23));
+console.log([-2, -1, -5].sum()); */
+
+// #7kyu Borrower Speak
+/* function borrow(s) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    if (/[A-Za-z]/.test(s[i])) {
+      result += s[i].toLowerCase();
+    }
+  }
+  return result;
+}
+console.log(borrow("WhAt! FiCK! DaMn CAke?")); */
+
+// #7kyu Perimeter sequence
+/* function perimeterSequence(a, n) {
+  return 4 * n * a;
+}
+console.log(perimeterSequence(1, 3)); */
+
+// #7kyu Sort with Arrow Functions
+/* var OrderPeople = function (people) {
+  return people.sort((a, b) => a["age"] - b["age"]);
+};
+console.log(
+  OrderPeople([
+    { age: 83, name: "joel" },
+    { age: 46, name: "roger" },
+    { age: 99, name: "vinny" },
+    { age: 26, name: "don" },
+    { age: 74, name: "brendan" },
+  ])
+); */
+
+// #7kyu Convert the score
+/* function scoreboard(string) {
+  let numbers = {
+    nil: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    seven: 7,
+    eight: 8,
+    nine: 9,
+  };
+  string = string.split(" ");
+  return [
+    numbers[string[string.length - 2]],
+    numbers[string[string.length - 1]],
+  ];
+}
+console.log(scoreboard("new score: two three")); */
+
+// #7kyu Numbers to Objects
+/* function numObj(s) {
+  let obj = [];
+  let array = s.map((value) => [value, String.fromCharCode(value)]);
+  array.forEach((value) => {
+    obj.push({ [value[0]]: value[1] });
+  });
+  return obj;
+}
+console.log(numObj([118, 117, 120])); */
+
+// #7kyu Replace all items
+/* function replaceAll(seq, find, replace) {
+  if (typeof seq === "string") {
+    return seq.split(find).join(replace);
+  }
+  return seq.map((item) => (item === find ? replace : item));
+}
+console.log(replaceAll("Hell1 Word1", 1, 2)); */
+
+// #7kyu Area of an arrow
+/* function arrowArea(a,b) {
+  return (1/2) * b * (a/2);
+}
+console.log(arrowArea(4,2)) */
+
+// #7kyu JS Golfing #1: undefined
+/* x=()=>{}
+console.log(x()); */
+
+// #7kyu Hit Count
+/* function counterEffect(hitCount) {
+  let result = [];
+  for (let i = 0; i < hitCount.length; i++) {
+    let array = [];
+    for (let j = 0; j <= hitCount[i]; j++) {
+      array.push(j);
+    }
+    result.push(array);
+    array = [];
+  }
+  return result;
+}
+console.log(counterEffect("1250")); */
+
+// #7kyu Understanding closures - the basics
+/* function buildFun(n) {
+  let res = [];
+  for (let i = 0; i < n; i++) {
+    res.push(function () {
+      return i;
+    });
+  }
+  return res;
+}
+console.log(buildFun(10)[1]()); */
+
+// #7kyu Format to the 2nd
+/* function printNums(...args) {
+  let max = Math.max(...args.flat(Infinity)).toString().length;
+  return args
+    .flat(Infinity)
+    .map((num) => num.toString().padStart(max, "0"))
+    .join("\n");
+}
+console.log(printNums([1, 12, 34])); */
+
+// #7kyu Loose Change!
+/* function changeCount(change) {
+  const coins = {
+    penny: 0.01,
+    nickel: 0.05,
+    dime: 0.1,
+    quarter: 0.25,
+    dollar: 1.0,
+  };
+  let total = 0;
+  const changeArray = change.split(" ");
+  for (let coin of changeArray) {
+    if (coins[coin]) {
+      total += coins[coin];
+    }
+  }
+  return "$" + total.toFixed(2);
+}
+console.log(changeCount("dime penny dollar")); */
+
+// #7kyu Four/Seven
+/* function fourSeven(n) {
+  return ([4, 7].includes(n) && ((n === 4 && 7) || 4)) || 0;
+}
+console.log(fourSeven(4)); */
+
+// #7kyu Complete The Pattern #7 - Cyclical Permutation
+/* function pattern(n) {
+  var output = [];
+  var numbers = [];
+  for (let j = 1; j <= n; j++) {
+    numbers.push(j);
+  }
+  for (let i = 1; i <= n; i++) {
+    output.push(
+      (numbers.slice(i - 1, n) + numbers.slice(0, i - 1)).split(",").join("")
+    );
+  }
+  return output.join("\n");
+}
+console.log(pattern(10)); */
+
+// #7kyu Difference between two collections
+/* function diff(a, b) {
+  let result = [];
+  let uniqueA = new Set(a);
+  let uniqueB = new Set(b);
+  for (let item of uniqueA) {
+    if (!uniqueB.has(item)) {
+      result.push(item);
+    }
+  }
+  for (let item of uniqueB) {
+    if (!uniqueA.has(item)) {
+      result.push(item);
+    }
+  }
+  return result.sort();
+}
+console.log(
+  diff(["a", "a", "t", "e", "f", "i", "j"], ["t", "g", "g", "i", "k", "f"])
+); */
+
+// #7kyu String to list of integers.
+/* function stringToIntArray(s) {
+  return s
+    .split(",")
+    .filter((value) => value.trim() !== "")
+    .map((value) => parseInt(value, 10));
+}
+console.log(stringToIntArray("1,2,3,,,4,,5,,,")); */
+
+// #7kyu Get length of the list recursively
+/* function lenR(x) {
+  return x.length;
+}
+console.log(lenR([1, 2, 3, 4, 5])); */
+
+// #7kyu EZ code golf #1 : ∞
+/* f=_=>1/0
+console.log(f()); */
+
+// #7kyu All Star Code Challenge #14 - Find the median
+/* function median(array) {
+  array = array.sort((a, b) => a - b);
+  const arrayLength = array.length;
+  if (arrayLength % 2 === 0) {
+    const mid1 = array[arrayLength / 2 - 1];
+    const mid2 = array[arrayLength / 2];
+    return (mid1 + mid2) / 2;
+  } else {
+    return array[Math.floor(arrayLength / 2)];
+  }
+}
+console.log(median([33, 99, 100, 30, 29, 50])); */
+
+// #7kyu Scrabblemania
+/* function wordscore(word) {
+  const object = {
+    a: 1,
+    b: 3,
+    c: 3,
+    d: 2,
+    e: 1,
+    f: 4,
+    g: 2,
+    h: 4,
+    i: 1,
+    j: 8,
+    k: 5,
+    l: 1,
+    m: 3,
+    n: 1,
+    o: 1,
+    p: 3,
+    q: 10,
+    r: 1,
+    s: 1,
+    t: 1,
+    u: 1,
+    v: 4,
+    w: 4,
+    x: 8,
+    y: 4,
+    z: 10,
+  };
+  let score = 0;
+  for (let i = 0; i < word.length; i++) {
+    const letter = word[i].toLowerCase();
+    if (object.hasOwnProperty(letter)) {
+      score += object[letter];
+    }
+  }
+  return word.length === 7 ? score * word.length + 50 : score * word.length;
+}
+console.log(wordscore("deceive")); */
+
+// #7kyu Sentence to words
+/* function splitSentence(s) {
+  return s.split(" ");
+}
+console.log(splitSentence("Hello world! This is a test.")); */
+
+// #7kyu Sum ALL the arrays!
+/* function arraySum(arr) {
+  arr = arr.flat(Infinity);
+  let number = [];
+  arr.filter((value) => {
+    if (typeof value === "number") {
+      number.push(value);
+    }
+  });
+  return number.reduce((sum, curr) => sum + curr, 0);
+}
+console.log(arraySum([1, 2, [3, "b"], 5])); */
+
+// #7kyu Add a property to an object
+/* function addProperty(obj, prop, value) {
+  if (prop in obj) {
+    throw new Error("Property already exists");
+  }
+  obj[prop] = value;
+  return obj;
+}
+console.log(addProperty({ name: "John" }, "age", 30)); */
+
+// #7kyu Separate basic types
+/* function separateTypes(input) {
+  let result = {
+    number: [],
+    string: [],
+    boolean: [],
+    null: [],
+    undefined: [],
+  };
+  input.forEach((item) => {
+    if (typeof item === "number") {
+      result.number.push(item);
+    } else if (typeof item === "string") {
+      result.string.push(item);
+    } else if (typeof item === "boolean") {
+      result.boolean.push(item);
+    } else if (item === null) {
+      result.null.push(item);
+    } else if (typeof item === "undefined") {
+      result.undefined.push(item);
+    }
+  });
+  for (const key in result) {
+    if (result[key].length === 0) {
+      delete result[key];
+    }
+  }
+  return result;
+}
+console.log(separateTypes([1, "hello", true, 3.14, undefined, "world"])); */
+
+// #7kyu Extending JavaScript Objects: Simple Math Methods
+/* Number.prototype.add = function (n) {
+  return this + n;
+};
+Number.prototype.sub = function (n) {
+  return this - n;
+};
+Number.prototype.mul = function (n) {
+  return this * n;
+};
+Number.prototype.div = function (n) {
+  return this / n;
+};
+Number.prototype.pow = function (n) {
+  return this ** n;
+};
+Number.prototype.sqr = function () {
+  return Math.sqrt(this);
+};
+var n = 25;
+n.add(4);
+n.sub(3);
+n.mul(2);
+n.div(5);
+n.pow(2);
+n.sqr(); */
+
+// #7kyu Complete Series
+/* function completeSeries(arr) {
+  if (arr.toString() !== [...new Set(arr)].toString()) {
+    return [0];
+  }
+  let maxNumber = Math.max(...arr);
+  let result = [];
+  for (let i = 0; i <= maxNumber; i++) {
+    result.push(i);
+  }
+  return result;
+}
+console.log(completeSeries([1, 4, 4, 6])); */
+
+// #7kyu Grid blast!
+/* function fire(x, y) {
+  const grid = [
+    ["top left", "top middle", "top right"],
+    ["middle left", "center", "middle right"],
+    ["bottom left", "bottom middle", "bottom right"],
+  ];
+  return grid[y][x];
+}
+console.log(fire(1, 2)); */
+
+// #7kyu What comes after?
+/* function comes_after(str, l) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].toLowerCase() === l.toLowerCase()) {
+      result +=
+        /[A-Za-z]/.test(str[i + 1]) && str[i + 1] !== undefined
+          ? str[i + 1]
+          : "";
+    }
+  }
+  return result;
+}
+console.log(comes_after("Pirates say arrrrrrrrr", "r")); */
+
+// #7kyu Exclamation marks series #5: Remove all exclamation marks from the end of words
+/* function remove(string) {
+  string = string.split(" ");
+  let result = "";
+  for (let i = 0; i < string.length; i++) {
+    result +=
+      string[i].replace(/!+$/g, "") + (i === string.length - 1 ? "" : " ");
+  }
+  return result;
+}
+console.log(remove("pwap !!zcsxm!")); */
+
+// #7kyu Product of the main diagonal of a square matrix.
+/* function mainDiagonalProduct(mat) {
+  let result = 1;
+  for (let i = 0; i < mat.length; i++) {
+    result *= mat[i][i];
+  }
+  return result;
+}
+console.log(
+  mainDiagonalProduct([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ])
+); */
+
+// #7kyu Odd or Even? Determine that!
+/* function oddOrEven(n) {
+  if (n % 2) {
+    return "Either";
+  }
+  if ((n / 2) % 2 === 0) {
+    return "Even";
+  }
+  if ((n / 2) % 2 === 1) {
+    return "Odd";
+  }
+}
+console.log(oddOrEven(5)); */
+
+// #7kyu Pluck
+/* function pluck(objs, name) {
+  const result = objs
+    .filter((value) => name in value)
+    .map((value) => value[name]);
+  result.length !== objs.length ? result.push(undefined) : [];
+  return result;
+}
+console.log(pluck([{ a: 1, b: 3 }, { a: 2 }], "b")); */
+
+// #7kyu Sentences should start with capital letters.
+/* function fix(paragraph) {
+  return paragraph
+    .split(". ")
+    .map((sentence) => sentence.charAt(0).toUpperCase() + sentence.slice(1))
+    .join(". ");
+}
+console.log(
+  fix("hello. my name is inigo montoya. you killed my father. prepare to die.")
+); */
+
+// #7kyu Move Zeros
+/* function move_zeros(arrNum, isRight = true) {
+  let zeros = arrNum.filter((value) => value === 0);
+  let nonZeros = arrNum.filter((value) => value !== 0);
+  return isRight ? nonZeros.concat(zeros) : zeros.concat(nonZeros);
+}
+console.log(move_zeros([12, 0, 10, 0, 8, 12, 7, 6, 0, 4, 10, 12, 0], false)); */
+
+// #7kyu getNames()
+/* function getNames(data) {
+  return data.filter((value) => "name" in value).map((value) => value.name);
+}
+console.log(
+  getNames([
+    { name: "Joe", age: 20 },
+    { name: "Bill", age: 30 },
+    { name: "Kate", age: 23 },
+  ])
+); */
+
+// #7kyu Gradually Adding Parameters
+/* function add(...arguments) {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i] * (i + 1);
+  }
+  return sum;
+}
+console.log(add(100, 200, 300)); */
+
+// #7kyu Battle of the characters (Easy)
+/* function battle(x, y) {
+  let alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let sumX = 0;
+  let sumY = 0;
+  for (let i = 0; i < x.length; i++) {
+    sumX += alphabet.indexOf(x[i].toLowerCase());
+  }
+  for (let i = 0; i < y.length; i++) {
+    sumY += alphabet.indexOf(y[i].toLowerCase());
+  }
+  return sumX > sumY ? x : sumY > sumX ? y : "Tie!";
+}
+console.log(battle("QAZWSX", "VFREDC")); */
+
+// #7kyu Most digits
+/* function findLongest(array) {
+  let digits = array.map((num) => num.toString().length);
+  let maxDigits = Math.max(...digits);
+  return array[digits.indexOf(maxDigits)];
+}
+console.log(findLongest([8, 900, 500])); */
+
+// #7kyu Duplicate sandwich
+/* function duplicateSandwich(a) {
+  let boolean = false;
+  if (Array.isArray(a) === false) {
+    a = a.split("");
+    boolean = true;
+  }
+  let dublicateLetter = a.filter((value, index) => a.indexOf(value) !== index);
+  let result = a.slice(
+    a.indexOf(dublicateLetter[0]) + 1,
+    a.lastIndexOf(dublicateLetter[0])
+  );
+  return boolean ? result.join("") : result;
+}
+console.log(duplicateSandwich("example")); */
+
+// #7kyu Grid index
+/* function gridIndex(grid, indices) {
+  let result = "";
+  grid = grid.flat();
+  grid.unshift(" ");
+  for (let i = 0; i < indices.length; i++) {
+    if (indices[i] < grid.length) {
+      result += grid[indices[i]];
+    }
+  }
+  return result;
+}
+console.log(
+  gridIndex(
+    [
+      ["m", "y", "e"],
+      ["x", "a", "m"],
+      ["p", "l", "e"],
+    ],
+    [1, 5, 6]
+  )
+); */
+
+// #7kyu Lottery machine
+/* function lottery(str) {
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    if (/[0-9]/.test(str[i])) {
+      result.push(str[i]);
+    }
+  }
+  return result.length === 0 ? "One more run!" : [...new Set(result)].join("");
+}
+console.log(lottery("ffaQtaRFKeGIIBIcSJtg")); */
+
+// #7kyu UVB-76 Message Validator
+/* function validate(message) {
+  message = message.split(" ");
+  if (message.length !== 8) {
+    return false;
+  }
+  if (message[0] === "MDZHB") {
+    if (message[1].length === 2) {
+      if (message[2].length === 3) {
+        if (/^[A-Z]+$/.test(message[3])) {
+          if (message[4].length === 2) {
+            if (message[5].length === 2) {
+              if (message[6].length === 2) {
+                if (message[7].length === 2) {
+                  return true;
+                } else {
+                  return false;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  return false;
+}
+console.log(validate("MDZHB 12 733 VOSKHOD 67 79 66")); */
+
+// #7kyu Complete The Pattern #6 - Odd Ladder
+/* function pattern(n) {
+  let output = [];
+  for (let i = 1; i <= n; i += 2) {
+    output.push(i.toString().repeat(i));
+  }
+  return output.join("\n");
+}
+console.log(pattern(3)); */
+
+// #7kyu Makes the Sentence
+/* function makesTheSentence(characterArray, sentenceString) {
+  let sentenceArray = sentenceString.replace(/\s/g, "").split("");
+  let chars = characterArray.slice();
+  for (let ch of sentenceArray) {
+    let idx = chars.indexOf(ch);
+    if (idx === -1) return false;
+    chars.splice(idx, 1);
+  }
+  return chars.length === 0;
+}
+console.log(
+  makesTheSentence(
+    ["D", "u", "c", "k", "s", "q", "u", "a", "c", "k", "!", ".", "?"],
+    "Ducks quack."
+  )
+); */
+
+// #7kyu Alternate Square Sum
+/* function alternateSqSum(arr) {
+  return arr.reduce((sum, curr, index) => {
+    return index % 2 === 0 ? sum + curr : sum + curr ** 2;
+  }, 0);
+}
+console.log(alternateSqSum([1, 2, 3, 4, 5])); */
+
+// #7kyu Vault experience (1): Enough water for how many days?
+/* function thirstyIn(water, ageOfDwellerArray) {
+  if (water.length === 0) {
+    return -1;
+  }
+  if (water < 0) {
+    return 0;
+  }
+  let limit = 0;
+  for (let i = 0; i < ageOfDwellerArray.length; i++) {
+    if (ageOfDwellerArray[i] < 18) {
+      limit += 1;
+    } else if (ageOfDwellerArray[i] > 50) {
+      limit += 1.5;
+    } else {
+      limit += 2;
+    }
+  }
+  return limit === 0 ? -1 : Math.floor(water / limit);
+}
+console.log(thirstyIn(150, [5, 30, 10])); */
+
+// #7kyu Nth Smallest Element (Array Series #4)
+/* function nthSmallest(arr, pos) {
+  const temp = arr.sort((a, b) => a - b);
+  return temp[pos - 1];
+}
+console.log(nthSmallest([3, 1, 2], 2)); */
+
+// #7kyu Javascript Namespacing
+/* MyNamespace.MyClass = class {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHello() {
+    return this.name;
+  }
+};
+console.log(new MyNamespace.MyClass("John").sayHello()); */
+
+// #7kyu Find sum of top-left to bottom-right diagonals
+/* function diagonalSum(matrix) {
+  return matrix.reduce((sum, curr, i) => sum + curr[i], 0);
+}
+console.log(
+  diagonalSum([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ])
+); */
+
+// #7kyu Odds-Index
+/* function oddBall(arr) {
+  const oddIndex = arr.indexOf("odd");
+  return arr.some((x) => typeof x === "number" && x === oddIndex);
+}
+console.log(
+  oddBall([
+    "even",
+    4,
+    "even",
+    7,
+    "even",
+    55,
+    "even",
+    6,
+    "even",
+    10,
+    "odd",
+    3,
+    "even",
+  ])
+); */
+
+// #7kyu Add property to every object in array
+/* questions.map((value) => (value.usersAnswer = null)); */
+
+// #7kyu Area of a Circle
+/* function circleArea(radius) {
+  if (radius <= 0) {
+    throw new Error("Invalid radius");
+  }
+  return Math.PI * radius * radius;
+}
+console.log(circleArea(0)); */
+
+// #7kyu The Office IV - Find a Meeting Room
+/* function meeting(x) {
+  return x.indexOf("O") !== -1 ? x.indexOf("O") : "None available!";
+}
+console.log(meeting(["X", "O", "X", "X"])); */
+
+// #7kyu Sort with a sorting array
+/* function sort(initialArray, sortingArray) {
+  let result = [];
+  for (let i = 0; i < sortingArray.length; i++) {
+    result[sortingArray[i]] = initialArray[i];
+  }
+  return result;
+}
+console.log(sort(["x", "y", "z"], [1, 2, 0])); */
+
+// #7kyu Stones on the Table
+/* function solve(stones) {
+  return stones
+    .split("")
+    .reduce((acc, curr, i, arr) => (curr === arr[i - 1] ? acc + 1 : acc), 0);
+}
+console.log(solve("RGBRGBRGGB")); */
+
+// #7kyu Capitals first!
+/* function capitalsFirst(str) {
+  let arr = str.split(" ");
+  arr = arr.filter((value) => /[A-Za-z]/.test(value[0]));
+  let upperCase = [];
+  let lowerCase = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i][0] === arr[i][0].toUpperCase()) upperCase.push(arr[i]);
+    else lowerCase.push(arr[i]);
+  }
+  return [...upperCase, ...lowerCase].join(" ");
+}
+console.log(capitalsFirst("Life gets Sometimes pretty !Hard")); */
+
+// #7kyu Binary Zoo
+/* function countTheAnimals(animals) {
+  animals = Object.values(animals);
+  return animals.reduce((sum, curr) => sum + parseInt(curr, 2), 0);
+}
+console.log(
+  countTheAnimals({
+    aardvark: "1101",
+    tiger: "1100",
+    donkey: "1100",
+    emu: "1010",
+  })
+); */
+
+// #7kyu Caffeine Script
+/* function caffeineBuzz(n) {
+  let result = "";
+  let condition = false;
+  if (n % 3 === 0 && n % 4 === 0) {
+    result = "Coffee";
+    condition = true;
+  } else if (n % 3 === 0) {
+    result += "Java";
+    condition = true;
+  }
+  if (condition && n % 2 === 0) {
+    result += "Script";
+  }
+  return result === "" ? "mocha_missing!" : result;
+}
+console.log(caffeineBuzz(4)); */
+
+// #7kyu Converting integer to currency format
+/* function toCurrency(price) {
+  if (price < 1000) {
+    return price.toString();
+  }
+  price = price.toString().split("").reverse();
+  let result = [];
+  let count = "";
+  for (let i = 0; i < price.length; i++) {
+    if (count.length === 3) {
+      result.push(count);
+      result.push(",");
+      count = "";
+    }
+    count += price[i];
+  }
+  result.push(count);
+  return result.join("").split("").reverse().join("");
+}
+console.log(toCurrency(12345678)); */
+
+// #7kyu Sum of a Beach
+/* function sumOfABeach(beach) {
+  let count = 0;
+  beach = beach.toLowerCase();
+  let words = ["sand", "water", "fish", "sun"];
+  for (let word of words) {
+    let regex = new RegExp(word, "g");
+    let matches = beach.match(regex);
+    if (matches) {
+      count += matches.length;
+    }
+  }
+  return count;
+}
+console.log(sumOfABeach("WAtErSlIde")); */
+
+// #7kyu Scrabble Score
+/* function scrabbleScore(str) {
+  const scores = {
+    1: "AEIOULNRST",
+    2: "DG",
+    3: "BCMP",
+    4: "FHVWY",
+    5: "K",
+    8: "JX",
+    10: "QZ",
+  };
+  str = str.toUpperCase();
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    for (let key in scores) {
+      if (scores[key].includes(str[i])) {
+        count += parseInt(key);
+      }
+    }
+  }
+  return count;
+}
+console.log(scrabbleScore("cabbage")); */
+
+// #7kyu Easy Time Convert
+/* function timeConvert(num) {
+  if (num < 0) {
+    return "00:00";
+  }
+  if (num < 60) {
+    return `00:${num < 10 ? `0${num}` : num}`;
+  } else {
+    let hours =
+      Math.floor(num / 60) < 10
+        ? `0${Math.floor(num / 60)}`
+        : Math.floor(num / 60);
+    let minutes = num % 60 < 10 ? `0${num % 60}` : num % 60;
+    return `${hours}:${minutes}`;
+  }
+}
+console.log(timeConvert(78));
+ */
+
+// #7kyu Maxed Out
+/* function maxedOut(arr) {
+  const calc = arr.reduce((sum, curr) => sum + Math.pow(curr, 3), 0);
+  return calc >= 9007199254740991 ? "You've pushed me to the max!" : calc;
+}
+console.log(
+  maxedOut([434, 653, 323, 5645, 322354, 6534, 323, 556, 23122, 324])
+); */
+
+// #7kyu Find Your Villain Name
+/* function getVillainName(birthday) {
+  const m = [
+    "Evil",
+    "Vile",
+    "Cruel",
+    "Trashy",
+    "Despicable",
+    "Embarrassing",
+    "Disreputable",
+    "Atrocious",
+    "Twirling",
+    "Orange",
+    "Terrifying",
+    "Awkward",
+  ];
+  const d = [
+    "Mustache",
+    "Pickle",
+    "Hood Ornament",
+    "Raisin",
+    "Recycling Bin",
+    "Potato",
+    "Tomato",
+    "House Cat",
+    "Teaspoon",
+    "Laundry Basket",
+  ];
+  const date = birthday.getDate().toString().slice(-1);
+  const month = birthday.getMonth();
+  return "The" + " " + m[month] + " " + d[date];
+}
+console.log(getVillainName(new Date("May 3"))); */
+
+// #7kyu Sum squares of numbers in list that may contain more lists
+/* function SumSquares(l) {
+  l = l.flat(Infinity);
+  return l.reduce((sum, curr) => sum + curr * curr, 0);
+}
+console.log(SumSquares([1, 2, [3, 4]])); */
+
+// #7kyu Numbers in different systems
+/* function sysNums(n, sys) {
+  const str = n.toString(sys);
+  return /^\d+$/.test(str) ? Number(str) : str;
+}
+console.log(sysNums(5, 2)); */
+
+// #7kyu Celebrity Baby Names
+/* function validName(array) {
+  if (array.length === 0) {
+    return "You must test at least one name.";
+  }
+  if (array.length === 1) {
+    return "Congratulations, you can choose any name you like!";
+  }
+  array = array.map((value) => value.toLowerCase());
+  for (let i = 0; i < array.length; i++) {
+    if (array[i + 1]) {
+      if (array[i][array[i].length - 1] == array[i + 1][0]) {
+        continue;
+      } else {
+        return "Back to the drawing board, your baby names are not compatible.";
+      }
+    }
+  }
+  return "Congratulations, your baby names are compatible!";
+}
+console.log(validName(["Cruz", "Zuma"])); */
+
+// #7kyu Find the Combination
+/* let countCombinations = function (string, key) {
+  let regex = new RegExp(key, "gi");
+  let count = 0;
+  string.replace(regex, () => count++);
+  return count;
+};
+console.log(countCombinations("03948", "\\d")); */
+
+// #7kyu Display Large Numbers
+/* function displayLargeNumber(n) {
+  n = n.toString();
+  if (n.length <= 3) {
+    return n;
+  }
+  const firstSplitNumber = n.length % 3;
+  let result = [];
+  if (firstSplitNumber !== 0) {
+    result.push(n.slice(0, firstSplitNumber));
+  }
+  let temp = n.slice(firstSplitNumber);
+  while (temp.length > 0) {
+    result.push(temp.slice(0, 3));
+    temp = temp.slice(3);
+  }
+  return result.join(",");
+}
+console.log(displayLargeNumber("123456789")); */
+
+// #7kyu Swap the head and the tail
+/* function swapHeadAndTail(arr) {
+  const head = arr.slice(0, Math.floor(arr.length / 2));
+  const middle = arr.length % 2 === 0 ? [] : [arr[Math.floor(arr.length / 2)]];
+  const tail = arr.slice(Math.ceil(arr.length / 2));
+  return [...tail, ...middle, ...head];
+}
+console.log(swapHeadAndTail([1, 2, 3, 4, 5])); */
+
+// #7kyu You Can't Code Under Pressure #2
+/* function Counter() {
+  function increment() {
+    this.count = (this.count || 0) + 1;
+    return this.count;
+  }
+  this.check = function () {
+    return this.count || 0;
+  };
+  this.increment = increment;
+}
+var myCounter = new Counter();
+myCounter.increment();
+myCounter.increment();
+console.log(myCounter.check()); */
+
+// #7kyu Remove the noise from the string
+/* function removeNoise(str) {
+  return str.replace(/[%$&#\/·@|º\\ª]/g, "");
+}
+console.log(removeNoise("Th!e@ #l$az%y^ &d*o(g)")); */
+
+// #7kyu noobCode 03: CHECK THESE LETTERS... see if letters in "String 2" are present in "String 1"
+/* function letterCheck(arr) {
+  return arr[1]
+    .toLowerCase()
+    .split("")
+    .every((value) => arr[0].toLowerCase().includes(value));
+}
+console.log(letterCheck(["compadres", "DRAPES"])); */
+
+// #7kyu Pairs of integers from 0 to n
+/* function generatePairs(n) {
+  let array = [];
+  for (let i = 0; i <= n; i++) {
+    let x = [];
+    for (let j = 0; j <= n; j++) {
+      x.push([i, j]);
+    }
+    array.push(x);
+    x = [];
+  }
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(...array[i].slice(i));
+  }
+  return result;
+}
+console.log(generatePairs(10)); */
+
+// #7kyu Pizza Payments
+/* function michaelPays(costs) {
+  if (costs < 5) {
+    return Number(costs.toFixed(2));
+  }
+  const discount = costs * (1 / 3);
+  return Number((discount <= 10 ? costs - discount : costs - 10).toFixed(2));
+}
+console.log(michaelPays(40.2)); */
+
+// #7kyu Sort rectangles and circles by area
+/* function sortByArea(array) {
+  return array
+    .map((value) =>
+      Array.isArray(value)
+        ? Number((value[0] * value[1]).toFixed(2))
+        : Number((Math.PI * value * value).toFixed(2))
+    )
+    .sort((a, b) => a - b);
+}
+console.log(sortByArea([[4.23, 6.43], 1.23, 3.444, [1.342, 3.212]])); */
+
+// #7kyu JavaScript class-like objects
+/* class Animal {
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
+  }
+  toString() {
+    return this.name.toString() + " is a " + this.type.toString();
+  }
+  type() {
+    return this.type;
+  }
+  name() {
+    return this.name;
+  }
+}
+let dog = new Animal("Max", "dog");
+console.log(dog.toString());
+console.log(dog.type);
+console.log(dog.name); */
+
+// #7kyu Squeaky Window
+/* function sliding(nums, k) {
+  return nums
+    .map((value, index) => nums.slice(index, k + index))
+    .filter((value) => value.length === k)
+    .map((value) => Math.max(...value));
+}
+console.log(sliding([1, 3, -1, -3, 5, 3, 6, 7], 3)); */
+
+// #7kyu Time Converter: hours, minutes, seconds and milliseconds
+/* function convert(time) {
+  return (
+    time.getHours().toString().padStart(2, "0") +
+    ":" +
+    time.getMinutes().toString().padStart(2, "0") +
+    ":" +
+    time.getSeconds().toString().padStart(2, "0") +
+    "," +
+    time.getMilliseconds().toString().padStart(3, "0")
+  );
+}
+console.log(convert(new Date(1850, 12, 30, 11, 11, 11, 123))); */
+
+// #7kyu The once rollable dice
+/* function Character(name, opness) {
+  this.name = name;
+  this.opness = opness;
+  this.attack = function () {
+    return this.opness + Math.floor(Math.random() * 20) + 1;
+  };
+  this.levelUp = function () {
+    this.opness++;
+  };
+}
+var balthazaar = new Character("Balthazaar", 30);
+console.log(balthazaar.attack); */
+
+// #7kyu Months, Weeks, Days, Hours and Minutes
+/* function displayValue(value) {
+  const month = Math.floor(value / 40320);
+  const week = Math.floor((value % 40320) / 10080);
+  const day = Math.floor(((value % 40320) % 10080) / 1440);
+  const hour = Math.floor((((value % 40320) % 10080) % 1440) / 60);
+  const minute = Math.floor((((value % 40320) % 10080) % 1440) % 60);
+  let result = "";
+  if (month > 0) result += month + " month" + (month > 1 ? "s " : " ");
+  if (week > 0) result += week + " week" + (week > 1 ? "s " : " ");
+  if (day > 0) result += day + " day" + (day > 1 ? "s " : " ");
+  if (hour > 0) result += hour + " hour" + (hour > 1 ? "s " : " ");
+  if (minute > 0) result += minute + " minute" + (minute > 1 ? "s" : "");
+  return result.trim();
+}
+console.log(displayValue(100650)); */
+
+// #7kyu Simple letter removal
+/* function solve(s, k) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let count = 0;
+  for (let i = 0; i < alphabet.length; i++) {
+    for (let j = 0; j < s.length; j++) {
+      if (s[j] === alphabet[i] && count < k) {
+        s = s.slice(0, j) + s.slice(j + 1);
+        count++;
+        j--;
+      }
+    }
+  }
+  return s;
+}
+console.log(solve("hxehmvkybeklnj", 5)); */
+
+// #7kyu Simple Fun #223: Parameter Of Number
+/* function parameter(n) {
+  const sum = n
+    .toString()
+    .split("")
+    .reduce((acc, curr) => acc + Number(curr), 0);
+  const multiple = n
+    .toString()
+    .split("")
+    .reduce((acc, curr) => acc * Number(curr), 1);
+  let array = [Math.max(sum, multiple), Math.min(sum, multiple)];
+  let remainder;
+  while (remainder !== 0) {
+    remainder = array[0] % array[1];
+    array[0] = array[1];
+    array[1] = remainder;
+  }
+  return (sum * multiple) / array[0];
+}
+console.log(parameter(1234)); */
+
+// #7kyu JS Golfing #5: A Million Times
+/* x=n=>n*1e6
+console.log(x(2)); */
+
+// #7kyu Monkey Tennis - The Aftermath
+/* function ballCollector(detritus) {
+  const balls = detritus.filter((w) => w === 58).length;
+  return { weight: balls * 58 };
+}
+console.log(ballCollector([58, 68, 62, 69, 58])); */
+
+// #7kyu Merge two arrays
+/* function mergeArrays(a, b) {
+  let result = [];
+  let maxLength = Math.max(a.length, b.length);
+  for (let i = 0; i < maxLength; i++) {
+    if (i < a.length) {
+      result.push(a[i]);
+    }
+    if (i < b.length) {
+      result.push(b[i]);
+    }
+  }
+  return result;
+}
+console.log(mergeArrays(["a", "b", "c", "d", "e"], [1, 2, 3, 4, 5])); */
+
+// #7kyu Loop Array
+/* function loopArr(arr, direction, steps) {
+  steps = steps % arr.length;
+  if (direction === "right") {
+    return arr.slice(-steps).concat(arr.slice(0, -steps));
+  } else {
+    return arr.slice(steps).concat(arr.slice(0, steps));
+  }
+}
+console.log(
+  loopArr([529, 514, 376, 708, 168, 860, 861, 495, 328, 443, 4], "right", 0)
+); */
+
+// #7kyu Monotone travel
+/* var isMonotone = function (arr) {
+  return arr.every((val, i, a) => i === 0 || val >= a[i - 1]);
+};
+console.log(isMonotone([3, 2, 3])); */
+
+// #7kyu Exclamation marks series #3: Remove all exclamation marks from sentence except at the end
+/* function remove(string) {
+  return string
+    .split(" ")
+    .map((word, index, arr) => {
+      if (index === arr.length - 1) {
+        return word.replace(/^!/g, "");
+      } else {
+        return word.replace(/!/g, "");
+      }
+    })
+    .join(" ");
+}
+console.log(remove("Hi!")); */
+
+// #7kyu The Lazy Startup Office
+/* function binRota(arr) {
+  return arr
+    .map((value, index) => (index % 2 ? value.reverse() : value))
+    .flat(Infinity);
+}
+console.log(
+  binRota([
+    ["Stefan", "Raj", "Marie"],
+    ["Alexa", "Amy", "Edward"],
+    ["Liz", "Claire", "Juan"],
+    ["Dee", "Luke", "Katie"],
+  ])
+); */
+
+// #7kyu Valid Spacing
+/* function validSpacing(s) {
+  return s.trim() === s && !s.includes("  ");
+}
+console.log(validSpacing("Hello world")); */
+
+// #7kyu SCHEDULE YOUR DA(RRA)Y
+/* function dayPlan(hours, tasks, duration) {
+  hours = hours * 60;
+  if (hours < tasks * duration) {
+    return "You're not sleeping tonight!";
+  }
+  const durationWork = tasks * duration;
+  const remainTime = hours - durationWork;
+  const breakTime = Math.round(remainTime / (tasks - 1));
+  let result = [];
+  for (let i = 0; i < tasks; i++) {
+    result.push(duration);
+    if (i !== tasks - 1) {
+      result.push(breakTime);
+    }
+  }
+  return result;
+}
+console.log(dayPlan(2, 2, 60)); */
+
+// #7kyu Dictionary from two lists
+/* function createDict(keys, values) {
+  let result = {};
+  for (let i = 0; i < keys.length; i++) {
+    result[keys[i]] = values[i] !== undefined ? values[i] : null;
+  }
+  return result;
+}
+console.log(createDict(["a", "b", "c", "d", "e"], [1, 2, 0, false, ""])); */
+
+// #7kyu Show multiples of 2 numbers within a range
+/* function multiples(s1, s2, s3) {
+  let result = [];
+  for (let i = s1; i < s3; i++) {
+    if (i % s1 === 0 && i % s2 === 0) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+console.log(multiples(4, 6, 15)); */
+
+// #7kyu Super Class Extensions
+/* class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    return this.name + " makes a noise, ";
+  }
+}
+class Cat extends Animal {
+  speak() {
+    return super.speak() + this.name + " goes meow.";
+  }
+}
+var cat = new Cat("Mr Whiskers");
+console.log(cat.speak()); */
+
+// #7kyu The Crockford Invocation
+/* function add(a, b) {
+  return function (b) {
+    return a + b;
+  };
+}
+function subtract(a, b) {
+  return function (b) {
+    return a - b;
+  };
+}
+function multiply(a, b) {
+  return function (b) {
+    return a * b;
+  };
+}
+function apply(fn) {
+  return function (x) {
+    return function (y) {
+      return fn(x)(y);
+    };
+  };
+}
+console.log(apply(add(3)(4)));
+console.log(apply(subtract(3)(4)));
+console.log(apply(multiply(3)(4))); */
+
+// #7kyu Capitalize first letter of a string
+/* String.prototype.capitalize = function () {
+  const s = String(this);
+  if (s.length === 0) return "";
+  const firstChar = s.charAt(0);
+  const charCode = firstChar.charCodeAt(0);
+  if (charCode >= 97 && charCode <= 122) {
+    const upperFirst = String.fromCharCode(charCode - 32);
+    return upperFirst + s.slice(1);
+  }
+  return s;
+};
+console.log("hello world".capitalize()); */
+
+// #7kyu Last
+/* function last(...args) {
+  if (args.length === 1) {
+    const x = args[0];
+    if (typeof x === "string" || Array.isArray(x)) {
+      return x[x.length - 1];
+    } else {
+      return x;
+    }
+  }
+  return args[args.length - 1];
+}
+console.log(last([1, 2], [3, 4])); */
+
+// #7kyu Sums of consecutive integers
+/* function position(x, y, n) {
+  const a = (y - (x * (x - 1)) / 2) / x;
+  return a + n;
+}
+console.log(position(3, -9, 1)); */
+
+// #7kyu Pure Functions
+/* const state = {
+  modifier: 5,
+};
+function solution(arr, options) {
+  return arr.map((value) => value + options.modifier * 2);
+}
+console.log(solution([1, 2, 3], state)); */
+
+// #7kyu Double Trouble
+/* function trouble(x, t) {
+  let result = [];
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] + x[i + 1] === t) {
+      x.splice(i + 1, 1);
+      i--;
+    } else {
+      result.push(x[i]);
+    }
+  }
+  return result;
+}
+console.log(trouble([4, 1, 1, 1, 4], 2)); */
+
+// #7kyu Calculate Two People's Individual Ages
+/* function getAges(sum, difference) {
+  if (sum < 0 || difference < 0) {
+    return null;
+  }
+  const older = (sum + difference) / 2 < 0 ? null : (sum + difference) / 2;
+  const younger = (sum - difference) / 2 < 0 ? null : (sum - difference) / 2;
+  return older !== null && younger !== null ? [older, younger] : null;
+}
+console.log(getAges(86, 94)); */
+
+// #7kyu Find Duplicates
+/* function duplicates(arr) {
+  let dublicateNumber = [];
+  let isNotDublicateNumber = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!isNotDublicateNumber.includes(arr[i])) {
+      isNotDublicateNumber.push(arr[i]);
+    } else if (!dublicateNumber.includes(arr[i])) {
+      dublicateNumber.push(arr[i]);
+    }
+  }
+  return dublicateNumber;
+}
+console.log(duplicates([1, 2, 4, 4, 3, 3, 1, 5, 3, "5"])); */
+
+// #7kyu Simple Fun #173: A Hero Go To The School
+/* function whichBusToTake(busesColors, goingToSchool) {
+  let result;
+  for (let i = 0; i < busesColors.length; i++) {
+    if (busesColors[i] === "red" && goingToSchool[i]) {
+      result = i;
+      break;
+    }
+    if (busesColors[i] === "blue" && goingToSchool[i]) {
+      if (result === undefined) {
+        result = i;
+      }
+    }
+  }
+  return result;
+}
+console.log(
+  whichBusToTake(
+    ["blue", "blue", "red", "red", "red", "red", "blue", "blue", "blue"],
+    [true, false, false, false, false, false, true, true, false]
+  )
+); */
+
+// #7kyu KISS - Keep It Simple Stupid
+/* function isKiss(words) {
+  const array = words.split(" ");
+  const wordsLength = array.map((word) => word.length);
+  return wordsLength.every((length) => length <= array.length)
+    ? "Good work Joe!"
+    : "Keep It Simple Stupid";
+}
+console.log(isKiss("Keep It Simple Stupid")); */
+
+// #7kyu Letterbox Paint-Squad
+/* var paintLetterboxes = function (start, end) {
+  const numbers = [];
+  for (let i = start; i <= end; i++) {
+    let spreadNumber = i.toString().split("");
+    for (let j = 0; j < spreadNumber.length; j++) {
+      numbers.push(spreadNumber[j]);
+    }
+  }
+  const result = Array(10).fill(0);
+  for (let k = 0; k < numbers.length; k++) {
+    result[parseInt(numbers[k])] += 1;
+  }
+  return result;
+};
+console.log(paintLetterboxes(125, 132)); */
+
+// #7kyu Find an employees role in the company
+/* function findEmployeesRole(name) {
+  let [first, last] = name.split(" ");
+  let person = employees.find(
+    (e) => e.firstName === first && e.lastName === last
+  );
+  return person ? person.role : "Does not work here!";
+}
+console.log(findEmployeesRole("Dipper Pines")); */
+
+// #7kyu Whose bicycle?
+/* function whoseBicycle(diary1, diary2, diary3) {
+  const ageTable = {
+    firstSonAge: 14,
+    secondSonAge: 9,
+    thirdSonAge: 8,
+  };
+  const firstSon = Math.round(
+    Object.values(diary1).reduce((acc, curr) => acc + curr, 0)
+  );
+  const secondSon = Math.round(
+    Object.values(diary2).reduce((acc, curr) => acc + curr, 0)
+  );
+  const thirdSon = Math.round(
+    Object.values(diary3).reduce((acc, curr) => acc + curr, 0)
+  );
+  const maxStudy = Math.max(firstSon, secondSon, thirdSon);
+  if (
+    maxStudy === firstSon &&
+    maxStudy === secondSon &&
+    maxStudy === thirdSon
+  ) {
+    return "I need to buy a bicycle for my third son.";
+  } else if (maxStudy === firstSon && maxStudy === secondSon) {
+    return "I need to buy a bicycle for my second son.";
+  } else if (maxStudy === firstSon && maxStudy === thirdSon) {
+    return "I need to buy a bicycle for my third son.";
+  } else if (maxStudy === secondSon && maxStudy === thirdSon) {
+    return "I need to buy a bicycle for my third son.";
+  } else if (maxStudy === firstSon) {
+    return "I need to buy a bicycle for my first son.";
+  } else if (maxStudy === secondSon) {
+    return "I need to buy a bicycle for my second son.";
+  } else if (maxStudy === thirdSon) {
+    return "I need to buy a bicycle for my third son.";
+  }
+}
+console.log(
+  whoseBicycle(
+    {
+      algebra: 10,
+      history: 2,
+      physics: 10,
+      geography: 9,
+      chemistry: 3,
+    },
+    {
+      algebra: 2,
+      history: 10,
+      physics: 8,
+      geography: 1,
+      chemistry: 2,
+    },
+    {
+      algebra: 8,
+      history: 2,
+      physics: 5,
+      geography: 2,
+      chemistry: 5,
+    }
+  )
+); */
+
+// #7kyu Recycle!
+/* function recycleMe(recycle) {
+  let result = [0, 0, 0];
+  for (let value of recycle) {
+    if (value > 0) {
+      result[0]++;
+    } else if (value < 0) {
+      result[1]++;
+    } else if (value === 0) {
+      result[2]++;
+    }
+  }
+  return result;
+}
+console.log(recycleMe([5, -9, 0, 6, -84, -95, 15])); */
+
+// #7kyu draw me a chessboard
+/* function chessBoard(rows, columns) {
+  let matrix = [];
+  for (let i = 0; i < rows; i++) {
+    let row = [];
+    let startChar = i % 2 === 0 ? "O" : "X";
+    let boolean = startChar === "X";
+    for (let j = 0; j < columns; j++) {
+      if (boolean) {
+        row.push("X");
+        boolean = false;
+      } else {
+        row.push("O");
+        boolean = true;
+      }
+    }
+    if (matrix.length < rows) {
+      matrix.push(row);
+    }
+  }
+  return matrix;
+}
+console.log(chessBoard(6, 4)); */
+
+// #7kyu Sum of odd numbers
+/* function rowSumOddNumbers(n) {
+  return Math.pow(n, 3);
+}
+console.log(rowSumOddNumbers(2)); */
+
+// #7kyu Happy Birthday, Darling!
+/* function womensAge(n) {
+  for (let i = 1; i <= 100; i++) {
+    if (n === 2 * i) {
+      return `${n}? That's just 20, in base ${i}!`;
+    }
+    if (n === 2 * i + 1) {
+      return `${n}? That's just 21, in base ${i}!`;
+    }
+  }
+}
+console.log(womensAge(32)); */
+
+// #7kyu Product of Largest Pair
+/* function maxProduct(a) {
+  let max1 = 0;
+  let max2 = 0;
+  for (let num of a) {
+    if (num > max1) {
+      max2 = max1;
+      max1 = num;
+    } else if (num > max2) {
+      max2 = num;
+    }
+  }
+  return max1 * max2;
+}
+console.log(maxProduct([56, 335, 195, 443, 6, 494, 252])); */
+
+// #7kyu Strange mathematics
+/* function strangeMath(n, k) {
+  return (
+    Array.from({ length: n }, (_, i) => i + 1)
+      .sort()
+      .indexOf(k) + 1
+  );
+}
+console.log(strangeMath(11, 2)); */
+
+// #7kyu Friday the 13th Part 1
+/* function killcount(counselors, jason) {
+  let result = counselors.filter((value) => value[1] < jason);
+  return result.map((value) => value[0]);
+}
+console.log(
+  killcount(
+    [
+      ["Tiffany", 4],
+      ["Jack", 6],
+      ["Megan", 7],
+      ["Tyler", 3],
+    ],
+    5
+  )
+); */
+
+// #7kyu Sum of Triangular Numbers
+/* function sumTriangularNumbers(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    let temp = 0;
+    for (let j = 1; j <= i; j++) {
+      temp += j;
+    }
+    sum += temp;
+  }
+  return sum;
+}
+console.log(sumTriangularNumbers(6)); */
+
+// #7kyu All Star Code Challenge #17
+/* function findYear(month, dayOfWeek) {
+  if (dayOfWeek < 0 || dayOfWeek > 6) return 0;
+  for (let year = 2014; year <= 2050; year++) {
+    const firstDay = new Date(year, month, 1).getDay();
+    if (firstDay === dayOfWeek) return year;
+  }
+  return 0;
+}
+console.log(findYear(11, 2)); */
+
+// #7kyu So Easy: Show my password
+/* function showMyPassword(birthdays) {
+  const sortYear = birthdays.sort((a, b) => b.slice(0, 4) - a.slice(0, 4));
+  const john = sortYear[1].slice(2, 4);
+  const johnGirlfriend = sortYear[0].slice(2, 4);
+  let johnFather = sortYear[3].split("-");
+  let johnMother = sortYear[2].split("-");
+  if (johnFather[0] === johnMother[0] && +johnFather[1] > +johnMother[1]) {
+    let temp = johnFather;
+    johnFather = johnMother;
+    johnMother = temp;
+  }
+  johnFather = johnFather[1] < 10 ? "0" + johnFather[1] : johnFather[1];
+  johnMother = johnMother[2] < 10 ? "0" + johnMother[2] : johnMother[2];
+  return [john, johnGirlfriend, johnFather, johnMother].join("");
+}
+console.log(
+  showMyPassword(["1990-2-21", "1959-2-14", "1980-10-21", "1959-11-23"])
+); */
+
+// #7kyu Split The Bill
+/* function splitTheBill(x) {
+  const sum = Object.values(x).reduce((sum, curr) => sum + curr, 0);
+  const averageSum = sum / Object.values(x).length;
+  let result = {};
+  for (const key in x) {
+    result[key] = Number((x[key] - averageSum).toFixed(2));
+  }
+  return result;
+}
+console.log(splitTheBill({ A: 40, B: 25, C: 10, D: 153, E: 58 })); */
+
+// #7kyu Possibilities Array
+/* function isAllPossibilities(x) {
+  x = x.sort((a, b) => a - b);
+  let newArray = Array.from({ length: x.length }, (v, i) => i);
+  return newArray.join("") === x.join("");
+}
+console.log(isAllPossibilities([0, 4, 1, 3])); */
+
+// #7kyu Sum of integers in string
+/* function sumOfIntegersInString(s) {
+  return (s.match(/\d+/g) || []).reduce((sum, curr) => sum + Number(curr), 0);
+}
+console.log(sumOfIntegersInString("Dogs are our best friends.")); */
+
+// #7kyu Printer Errors
+/* function printerError(s) {
+  const alphabet = "abcdefghijklm";
+  let errors = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (!alphabet.includes(s[i])) {
+      errors++;
+    }
+  }
+  return errors + "/" + s.length;
+}
+console.log(
+  printerError("kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
+); */
+
+// #7kyu Trimming a string
+/* function trim(str, size) {
+  if (str.length <= size) {
+    return str;
+  }
+  if (size > 3) {
+    let cutText = str.slice(0, size - 3);
+    return cutText + "...";
+  }
+  if (size <= 3) {
+    let cutText = str.slice(0, size);
+    return cutText + "...";
+  }
+}
+console.log(trim("Code Wars is pretty rad", 50)); */
+
+// #7kyu Stanton measure
+/* function stantonMeasure(a) {
+  const n = a.filter((value) => value === 1).length;
+  return a.filter((value) => value === n).length;
+}
+console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2])); */
+
+// #7kyu Mean Means
+/* function geo_mean(nums, arith_mean) {
+  const sumAllNumbers = nums.reduce((sum, curr) => sum + curr, 0);
+  const remainNumber = (nums.length + 1) * arith_mean;
+  const x = Math.abs(sumAllNumbers - remainNumber);
+  return (
+    Math.abs([...nums, x].reduce((sum, curr) => sum * curr, 1)) **
+    (1 / (nums.length + 1))
+  );
+}
+console.log(geo_mean([-4, 45, 9], 6)); */
+
+// #7kyu Create sequence containing all allowed characters
+/* const createSequence = (regex) => {
+  const numbers = "0123456789";
+  const upperLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lowerLetter = "abcdefghijklmnopqrstuvwxyz";
+  let result = [];
+  for (let i = 0; i < upperLetter.length; i++) {
+    if (regex.test(numbers[i])) {
+      result.push(numbers[i]);
+    }
+    if (regex.test(upperLetter[i])) {
+      result.push(upperLetter[i]);
+    }
+    if (regex.test(lowerLetter[i])) {
+      result.push(lowerLetter[i]);
+    }
+  }
+  return result.sort().join("");
+};
+console.log(createSequence(/[0-9A-F]/)); */
+
+// #7kyu Basics - Generators #1
+/* function* generator() {
+  let counter = 1;
+  while (true) {
+    const newValue = yield counter;
+    if (typeof newValue === "number") {
+      counter = newValue;
+    } else {
+      counter++;
+    }
+  }
+}
+var gen = generator();
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next(10).value); */
+
+// #7kyu How fast can the burglar steal all the diamonds?
+/* function diamondBurglar(locker) {
+  return locker
+    .map((value) => value.split("."))
+    .flat()
+    .reduce((sum, curr) => sum + Math.round(curr.length / 2), 0);
+}
+console.log(
+  diamondBurglar(["..****..*.", "..***.....", ".*..*...*.", "......**.."])
+); */
+
+// #7kyu Birthday I - Cake
+/* function cake(x, y) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let sum = 0;
+  for (let i = 0; i < y.length; i++) {
+    if (i % 2 === 0) {
+      sum += y[i].charCodeAt(0);
+    } else {
+      sum += alphabet.indexOf(y[i]);
+    }
+  }
+  return x * 0.7 > sum ? "That was close!" : "Fire!";
+}
+console.log(cake(900, "abcdef")); */
+
+// #7kyu Find the smallest power higher than a given a value
+/* function findNextPower(val, pow_) {
+  let sum = 0;
+  let i = 2;
+  while (val >= sum) {
+    i++;
+    sum = Math.pow(i, pow_);
+  }
+  return sum;
+}
+console.log(findNextPower(4782969, 7)); */
+
+// #7kyu Second largest in Array
+/* function secondLargest(array) {
+  if (Array.isArray(array)) {
+    let onlyNumbers = array
+      .filter((value) => /[0-9]/gi.test(value))
+      .map((value) => Number(value));
+    return [...new Set(onlyNumbers)].sort((a, b) => b - a)[1];
+  }
+}
+console.log(secondLargest(["-1", 2, null, false])); */
+
+// #7kyu The Power of Exponents
+/* function power(base, exponent) {
+  if (exponent === 0) {
+    return 1;
+  }
+  let result = base;
+  for (let i = 1; i < Math.abs(exponent); i++) {
+    result *= base;
+  }
+  return exponent <= 0 ? 1 / result : result;
+}
+console.log(power(10, 0)); */
+
+// #7kyu The Span Function
+/* function span(arr, predicate) {
+  if (arr.length === 0) {
+    return [[], []];
+  }
+  let divider = arr.find((num) => !predicate(num)) || 0;
+  let index = arr.indexOf(divider) !== -1 ? arr.indexOf(divider) : 0;
+  let result = [arr.slice(0, index), arr.slice(index)];
+  return divider === 0 ? result.reverse() : result;
+}
+console.log(
+  span([13, 17, 19, 11, 21], function isOdd(x) {
+    return Math.abs(x) % 2 !== 0;
+  })
+); */
+
+// #7kyu Remove Empty Items of Array
+/* function clean(arr) {
+  return arr.filter((value) => value !== ",");
+}
+console.log(clean([undefined, null, NaN, false, "", 0])); */
+
+// #7kyu 16+18=214
+/* function add(num1, num2) {
+  let result = [];
+  num1 = num1.toString();
+  num2 = num2.toString();
+  let boolean = true;
+  let zeros;
+  if (num1.length > num2.length) {
+    zeros = "0".repeat(num1.length - num2.length) + num2;
+  } else {
+    zeros = "0".repeat(num2.length - num1.length) + num1;
+    boolean = false;
+  }
+  for (let i = 0; i < zeros.length; i++) {
+    if (boolean) {
+      result.push(Number(num1[i]) + Number(zeros[i]));
+    } else {
+      result.push(Number(zeros[i]) + Number(num2[i]));
+    }
+  }
+  return Number(result.join(""));
+}
+console.log(add(122, 81)); */
+
+// #7kyu List of Presents
+/* function howManyGifts(maxBudget, gifts) {
+  gifts = gifts.sort((a, b) => a - b);
+  let sum = 0n;
+  let result = gifts.length;
+  for (let i = 0; i < gifts.length; i++) {
+    if (maxBudget >= sum + BigInt(gifts[i])) {
+      sum += BigInt(gifts[i]);
+    } else {
+      result = i;
+      break;
+    }
+  }
+  return result;
+}
+console.log(howManyGifts(90, [5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10])); */
+
+// #7kyu Everything Is Even
+/* function ensureEven(n) {
+  return Math.round(n / 2) * 2;
+}
+console.log(ensureEven(1)); */
+
+// #7kyu True Min
+/* function min(a, b) {
+  a = a === null ? 0 : a;
+  b = b === null ? 0 : b;
+  a = typeof a !== "number" || isNaN(a) ? NaN : a;
+  b = typeof b !== "number" || isNaN(b) ? NaN : b;
+  if (isNaN(a) || isNaN(b)) {
+    return NaN;
+  }
+  return a < b ? a : b;
+}
+console.log(min(NaN, 1.5)); */
+
+// #7kyu What dominates your array?
+/* function dominator(arr) {
+  let numberCounter = {};
+  for (const num of arr) {
+    if (num in numberCounter) {
+      numberCounter[num]++;
+    } else {
+      numberCounter[num] = 1;
+    }
+  }
+  let half = Math.floor(arr.length / 2);
+  let maxValue = Object.values(numberCounter).filter(
+    (value) => value > half
+  )[0];
+  if (maxValue) {
+    for (const key in numberCounter) {
+      if (numberCounter[key] === maxValue) {
+        return Number(key);
+      }
+    }
+  }
+  return -1;
+}
+console.log(dominator([1, 1, 1, 2, 2, 2, 2])); */
+
+// #7kyu Format of a ticket number
+/* function nbrValidTickets(tickets) {
+  let lettersRegex = /^[a-zA-Z]+$/;
+  let numbersRegex = /^[0-9]+$/;
+  let result = [];
+  for (let i = 0; i < tickets.length; i++) {
+    let firstLetter = tickets[i][0];
+    let secondLetter = tickets[i][1];
+    let thirdToSix = tickets[i].slice(2);
+    if (
+      tickets[i].length === 6 &&
+      lettersRegex.test(firstLetter) &&
+      numbersRegex.test(secondLetter) &&
+      lettersRegex.test(thirdToSix)
+    ) {
+      result.push(tickets[i]);
+    }
+  }
+  return result.length;
+}
+console.log(
+  nbrValidTickets([
+    "A9JZOD",
+    "E9FIDH",
+    "SI2JIS",
+    "F8JIODJ",
+    "FDSNJA",
+    "A9POF?",
+    "AA9DIJD",
+  ])
+); */
+
+// #7kyu Which triangle is that?
+/* var typeOfTriangle = function (sideA, sideB, sideC) {
+  if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+    if (sideA === sideB && sideB === sideC) {
+      return "Equilateral";
+    } else if (sideA === sideB || sideB === sideC || sideA === sideC) {
+      return "Isosceles";
+    } else {
+      return "Scalene";
+    }
+  }
+  return "Not a valid triangle";
+};
+console.log(typeOfTriangle(1, 1, 1)); */
+
+// #7kyu All Star Code Challenge #28
+/* function convertCF(num, scale = "c") {
+  if (!["c", "f"].includes(scale)) {
+    throw Error("Error");
+  }
+  if (scale === "f") {
+    return num * (9 / 5) + 32;
+  } else {
+    return (num - 32) * (5 / 9);
+  }
+}
+console.log(convertCF(60, "f")); */
+
+// #7kyu The Baby Years III - First Tooth
+/* function firstTooth(t) {
+  let numbers = [];
+  for (let i = 0; i < t.length; i++) {
+    let left;
+    let right;
+    if (t[i - 1] !== undefined) {
+      left = t[i] - t[i - 1];
+    }
+    if (t[i + 1] !== undefined) {
+      right = t[i] - t[i + 1];
+    }
+    numbers.push((left || 0) + (right || 0));
+    left = null;
+    right = null;
+  }
+  let maxNumber = Math.max(...numbers);
+  let checkDublicate = numbers.filter((value) => value === maxNumber).length;
+  let idx = numbers.findIndex((value) => value === maxNumber);
+  return checkDublicate === 1 ? idx : -1;
+}
+console.log(firstTooth([9, 2, 8, 1])); */
+
+// #7kyu Sum The Strings: ARRAY EDITION
+/* function sumArr(a, b) {
+  return a.map((value, idx) => (Number(value) + Number(b[idx])).toString());
+}
+console.log(sumArr(["4", "5", "6", "7", "8"], ["1", "2", "3", "4", "5"])); */
+
+// #7kyu Grouping in string
+/* const isConsecutive = (str) => {
+  let group = [];
+  for (let i = 0; i < str.length; i++) {
+    let temp = [];
+    temp.push(str[i]);
+    for (let k = i; k < str.length; ) {
+      if (str[i] === str[k + 1]) {
+        temp.push(str[k]);
+      } else {
+        break;
+      }
+      k++;
+    }
+    group.push(temp.join(""));
+    i += temp.length - 1;
+    temp = [];
+  }
+  let checkdublicate = [];
+  for (let i = 0; i < group.length; i++) {
+    if (!checkdublicate.includes(group[i][0])) {
+      checkdublicate.push(group[i][0]);
+    } else {
+      return false;
+    }
+  }
+  return true;
+};
+console.log(isConsecutive("112200")); */
+
+// #7kyu Adding Arrays
+/* function arrAdder(arr) {
+  let result = [];
+  for (let i = 0; i < arr[0].length; i++) {
+    let temp = [];
+    for (let k = 0; k < arr.length; k++) {
+      temp.push(arr[k][i]);
+    }
+    if (temp.join("").trim()) {
+      result.push(temp.join("").trim());
+      temp = [];
+    }
+  }
+  return result.join(" ");
+}
+console.log(
+  arrAdder([
+    ["", "A", "", "C", "", "L", "", "T"],
+    ["S", "r", "", "o", "", "e", "", "e"],
+    ["y", "t", "", "d", "", "a", "", "s"],
+    ["", "i", "", "e", "", "r", "", "t"],
+    ["", "f", "", "", "", "n", "", ""],
+    ["", "i", "", "", "", "i", "", ""],
+    ["", "c", "", "", "", "n", "", ""],
+    ["", "i", "", "", "", "g", "", ""],
+    ["", "a", "", "", "", "", "", ""],
+  ])
+); */
+
+// #7kyu Find the Capitals
+/* function capital(capitals) {
+  return capitals.map(
+    (value) =>
+      `The capital of ${value.state || value.country} is ${value.capital}`
+  );
+}
+console.log(
+  capital([
+    { state: "Maine", capital: "Augusta" },
+    { country: "Spain", capital: "Madrid" },
+  ])
+); */
+
+// #7kyu Integer Difference
+/* const intDiff = (arr, n) => {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    for (let k = i + 1; k < arr.length; k++) {
+      if (Math.abs(arr[i] - arr[k]) === n) {
+        result.push([arr[i], arr[k]]);
+      }
+    }
+  }
+  return result.length;
+};
+console.log(intDiff([1, 6, 2, 3, 7, 8, 7], 0)); */
+
+// #7kyu Weird words
+/* function nextLetter(str) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  // return alphabet[alphabet.indexOf("f") + 1];
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    let checkLetter = str[i].toUpperCase() === str[i];
+    let temp = str[i].toLowerCase();
+    if (temp == "z") {
+      result += checkLetter ? "a".toUpperCase() : "a";
+    } else if (/[a-z]/.test(temp)) {
+      result += checkLetter
+        ? alphabet[alphabet.indexOf(temp) + 1].toUpperCase()
+        : alphabet[alphabet.indexOf(temp) + 1];
+    } else {
+      result += temp;
+    }
+  }
+  return result;
+}
+console.log(nextLetter("My Name Is Zoo")); */
+
+// #7kyu 'x' marks the spot.
+/* function xMarksTheSpot(matrix) {
+  let result = [];
+  for (let i = 0; i < matrix.length; i++) {
+    for (let k = 0; k < matrix[i].length; k++) {
+      if (matrix[i][k] === "x") {
+        result.push(i, k);
+      }
+    }
+  }
+  return result.length === 2 ? result : [];
+}
+console.log(
+  xMarksTheSpot([
+    ["x", "o"],
+    ["o", "x"],
+  ])
+); */
+
+// #7kyu heggeleggleggo
+/* function heggeleggleggo(word) {
+  let vowel = ["a", "o", "u", "i", "e", "A", "O", "U", "I", "E"];
+  let result = "";
+  for (let i = 0; i < word.length; i++) {
+    if (!vowel.includes(word[i]) && /[A-Za-z]/.test(word[i])) {
+      result += word[i] + "egg";
+    } else {
+      result += word[i];
+    }
+  }
+  return result;
+}
+console.log(heggeleggleggo("code here")); */
+
+// #7kyu Difference between biggest 2 numbers
+/* function diffBig2(arr) {
+  let first = 0;
+  let second = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > first) {
+      second = first;
+      first = arr[i];
+    } else if (arr[i] > second) {
+      second = arr[i];
+    }
+  }
+  return first - second;
+}
+console.log(diffBig2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); */
+
+// #7kyu Remove method in Arrays
+/* Array.prototype.remove = function (index) {
+  if (typeof index !== "number" || index < 0 || index >= this.length) {
+    return this;
+  }
+  for (let i = index; i < this.length - 1; i++) {
+    this[i] = this[i + 1];
+  }
+  this.length = this.length - 1;
+  return this;
+};
+console.log([1, 2, 3].remove(1)); */
+
+// #7kyu Write out expression!
+/* function expressionOut(expr) {
+  let operators = {
+    "+": "Plus",
+    "-": "Minus",
+    "*": "Times",
+    "/": "Divided By",
+    "**": "To The Power Of",
+    "=": "Equals",
+    "!=": "Does Not Equal",
+  };
+  let numbers = {
+    1: "One",
+    2: "Two",
+    3: "Three",
+    4: "Four",
+    5: "Five",
+    6: "Six",
+    7: "Seven",
+    8: "Eight",
+    9: "Nine",
+    10: "Ten",
+  };
+  expr = expr.split(" ");
+  if (operators[expr[1]]) {
+    return numbers[expr[0]] + " " + operators[expr[1]] + " " + numbers[expr[2]];
+  } else {
+    return "That's not an operator!";
+  }
+}
+console.log(expressionOut("6 ** 9")); */
+
+// #7kyu Generate HTML links
+/* function generateMenu(menuItems) {
+  return menuItems
+    .map((obj) => `<a href="${obj.url}">${obj.text}</a>`)
+    .join("");
+}
+console.log(
+  generateMenu([
+    {
+      url: "http://www.google.com",
+      text: "10^100",
+    },
+    {
+      url: "#codewars",
+      text: "codewars",
+    },
+    {
+      url: "#q",
+      text: "query",
+    },
+    {
+      url: "#a",
+      text: "ans",
+    },
+    {
+      url: "#123",
+      text: 123,
+    },
+  ])
+); */
+
+// #7kyu Sorting the Odd way!
+/* function sortItOut(array) {
+  const oddArray = array
+    .filter((value) => Math.floor(value) % 2)
+    .sort((a, b) => a - b);
+  const evenArray = array
+    .filter((value) => Math.floor(value) % 2 === 0)
+    .sort((a, b) => b - a);
+  return [...oddArray, ...evenArray];
+}
+console.log(sortItOut([11, 22, 33, 44, 55, 55, 90.4, 4, 78])); */
+
+// #7kyu Extending JavaScript Objects: Reverse String
+/* String.prototype.reverse = function () {
+  let result = "";
+  for (let i = this.length - 1; i >= 0; i--) {
+    result += this[i];
+  }
+  return result;
+};
+console.log("Hello, World!".reverse()); */
+
+// #7kyu Lost Cities Score Calculator
+/* function calculateScore(cardsArr, wager) {
+  if (cardsArr.length === 0 && wager === 0) {
+    return 0;
+  }
+  const handshake = {
+    1: 2,
+    2: 3,
+    3: 4,
+  };
+  const sum = -20 + cardsArr.reduce((sum, curr) => sum + curr, 0);
+  return (handshake[wager] || 1) * sum;
+}
+console.log(calculateScore([2, 3, 4, 6, 7, 10], 0)); */
+
+// #7kyu Is my string repeating the same character over and over ?
+/* function hasOneChar(s) {
+  return [...new Set(s)].length === 1;
+}
+console.log(hasOneChar("aaaaa")); */
+
+// #7kyu Return Specifics from an Object.
+/* function returnSpecifics(obj) {
+  let number = [];
+  let func = [];
+  for (const key in obj) {
+    if (typeof obj[key] === "number") {
+      number.push(obj[key]);
+    }
+    if (typeof obj[key] === "function") {
+      func.push(key);
+    }
+  }
+  return number.concat(...func).length
+    ? number.concat(...func)
+    : ["The Object is Empty"];
+}
+console.log(returnSpecifics({})); */
+
+// #7kyu Smallest Product
+/* function smallestProduct(arr) {
+  const sum = arr.map((value) => value.reduce((sum, curr) => sum * curr, 1));
+  return Math.min(...sum);
+}
+console.log(smallestProduct([[1, 5], [2], [-1, -3]])); */
+
+// #7kyu Holiday X - Bintang Vests
+/* function vestBuy(price, haggle) {
+  let haggleObject = {
+    light: 20,
+    medium: 30,
+    heavy: 40,
+    walkandswear: 90,
+  };
+  if (haggleObject[haggle]) {
+    let perCent = price * (haggleObject[haggle] / 100);
+    return price - perCent;
+  } else {
+    return "Run!!";
+  }
+}
+console.log(vestBuy(70000, "light")); */
+
+// #7kyu Move all vowels
+/* function moveVowel(input) {
+  let vowel = [];
+  let consonant = [];
+  for (let i = 0; i < input.length; i++) {
+    if (/[aoeiu]/.test(input[i])) {
+      vowel.push(input[i]);
+    } else {
+      consonant.push(input[i]);
+    }
+  }
+  return consonant.concat(...vowel).join("");
+}
+console.log(moveVowel(moveVowel("apple"))); */
+
+// #7kyu Multiple remainder of the division
+/* function isMultiple(a, b, n) {
+  let result = a / b;
+  let fractionalPart = result - Math.floor(result);
+  let roundedFraction = parseFloat(fractionalPart.toFixed(1));
+  roundedFraction = (roundedFraction + "").split(".")[1];
+  return roundedFraction > 0 && roundedFraction % n === 0;
+}
+console.log(isMultiple(5, 4, 3)); */
+
+// #7kyu Map over a list of lists
+/* function gridMap(fn, a) {
+  return a.map((array) => array.map((value) => fn(value)));
+}
+console.log(
+  gridMap(
+    (x) => x + 1,
+    [
+      [1, 2, 3, 4],
+      [5, 6, 7, 8, 9],
+      [0, 2, 4],
+    ]
+  )
+); */
+
+// #7kyu What is type of variable?
+/* function type(value) {
+  return Object.prototype.toString
+    .call(value)
+    .split(" ")[1]
+    .slice(0, -1)
+    .toLowerCase();
+}
+console.log(type(new Date())); */
+
+// #7kyu Symbols counted
+/* const transform = (s) => {
+  let dublicateLetterCounter = {};
+  for (const letter in s) {
+    if (s[letter] in dublicateLetterCounter) {
+      dublicateLetterCounter[s[letter]]++;
+    } else {
+      dublicateLetterCounter[s[letter]] = 1;
+    }
+  }
+  let removeDublicateLetter = [...new Set([...s])];
+  return removeDublicateLetter
+    .map((value) => {
+      if (dublicateLetterCounter[value] >= 2) {
+        return value + dublicateLetterCounter[value];
+      } else {
+        return value;
+      }
+    })
+    .join("");
+};
+console.log(transform("economics")); */
+
+// #7kyu Youtube URL
+/* function makeYoutubeLink(str) {
+  let getId = str.split(/[/=]/);
+  return "https://www.youtube.com/embed/" + getId[getId.length - 1];
+}
+console.log(makeYoutubeLink("https://www.youtube.com/watch?v=L3JxAuUyjzY")); */
+
+// #7kyu Thinking & Testing: Sing a Song
+/* function singSong(a, b = "") {
+  let vowel = "aouei";
+  if (a === b) {
+    return `I have two ${a[0].toLowerCase() + a.slice(1)}s.`;
+  } else if (a.length > 0 && b.length > 0) {
+    return `Uhh! ${a[0].toUpperCase() + a.slice(1)}-${b}!`;
+  } else if (vowel.includes(a[0])) {
+    return `I have an ${a}.`;
+  } else {
+    return `I have a ${a}.`;
+  }
+}
+console.log(singSong("fig", "fig")); */
+
+// #7kyu All, None & Any
+/* Array.prototype.all = function (p) {
+  for (let i = 0; i < this.length; i++) {
+    if (!p(this[i])) {
+      return false;
+    }
+  }
+  return true;
+};
+
+Array.prototype.none = function (p) {
+  for (let i = 0; i < this.length; i++) {
+    if (p(this[i])) {
+      return false;
+    }
+  }
+  return true;
+};
+
+Array.prototype.any = function (p) {
+  for (let i = 0; i < this.length; i++) {
+    if (p(this[i])) {
+      return true;
+    }
+  }
+  return false;
+};
+console.log(
+  [1, 2, 3].all(function isGreaterThanZero(num) {
+    return num > 0;
+  })
+); */
+
+// #7kyu Valid Parentheses
+/* function validParentheses(parenStr) {
+  let counter = 0;
+  for (let i = 0; i < parenStr.length; i++) {
+    if (counter < 0) {
+      return false;
+    } else {
+      parenStr[i] === "(" ? counter++ : counter--;
+    }
+  }
+  return counter === 0;
+}
+console.log(validParentheses("(())((()())())")); */
+
+// #7kyu Maximum Length Difference
+/* function mxdiflg(a1, a2) {
+  if (a1.length === 0 || a2.length === 0) {
+    return -1;
+  }
+  let str1 = a1.map((value) => value.length).sort((a, b) => a - b);
+  let str2 = a2.map((value) => value.length).sort((a, b) => a - b);
+  return Math.max(
+    str1[str1.length - 1] - str2[0],
+    str2[str2.length - 1] - str1[0],
+  );
+}
+console.log(
+  mxdiflg(
+    [
+      "hoqq",
+      "bbllkw",
+      "oox",
+      "ejjuyyy",
+      "plmiis",
+      "xxxzgpsssa",
+      "xxwwkktt",
+      "znnnnfqknaz",
+      "qqquuhii",
+      "dvvvwz",
+    ],
+    ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"],
+  ),
+); */
+
+// #7kyu Largest 5 digit number in a series
+/* function solution(digits) {
+  let numbers = [];
+  for (let i = 0; i < digits.length; i++) {
+    numbers.push(digits.slice(i, i + 5));
+  }
+  return Math.max(...numbers.map((number) => Number(number)));
+}
+console.log(
+  solution(
+    "7316717653133062491922511967442657474235534919493496983520368542506326239578318016984801869478851843858615607891129494954595017379583319528532088055111254069874715852386305071569329096329522744304355766896648950445244523161731856403098711121722383113622298934233803081353362766142828064444866452387493035890729629049156044077239071381051585930796086670172427121883998797908792274921901699720888093776657273330010533678812202354218097512545405947522435258490771167055601360483958644670632441572215539753123457977846174064955149290862569321978468622482839722413756570560574902614079729686524145351004748216637048440319989000889524345065854122758866688116427171479924442928230863465674813919123162824586178664583591245665294765456828489128831426076900422421902267105562632111110937054421750694165896040807198403850962455444362981230987879927244284909188845801561660979191338754992005240636899125607176060588611646710940507754100225698315520005593572972571636269561882670428252483600823257540920752963450",
+  ),
+); */
+
+// #7kyu Alphabet symmetry
+/* function solve(arr) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].toLowerCase();
+    var counter = 0;
+    for (let k = 0; k < arr[i].length; k++) {
+      if (alphabet.indexOf(arr[i][k]) === k + 1) {
+        counter++;
+      }
+    }
+    result.push(counter);
+    counter = 0;
+  }
+  return result;
+}
+console.log(solve(["IAMDEFANDJKL", "thedefgh", "xyzDEFghijabc"])); */
+
+// #7kyu Argue the toss
+/* function anArgument(...args) {
+  if (args.length === 0) {
+    return "You didn't give me any arguments.";
+  } else if (args.length === 1) {
+    return `You gave me 1 argument and it is "${args[0]}".`;
+  } else if (args.length === 2) {
+    return `You gave me 2 arguments and they are "${args[0]}" and "${args[1]}".`;
+  } else if (args.length > 2) {
+    const lastArgument = args.slice(-1);
+    return `You gave me ${args.length} arguments and they are ${args
+      .slice(0, -1)
+      .map((value) => `"${value}"`)
+      .join(", ")} and "${lastArgument}".`;
+  }
+}
+console.log(anArgument("chairs", "table", "lamp", "sideboard")); */
+
+// #7kyu Its all backwards
+/* function flipper(stringArr) {
+  let reverseArray = stringArr.reverse();
+  let lastLetterUpper = reverseArray.map((word) => {
+    if (word.length === 1) {
+      return word;
+    } else {
+      return word.slice(0, -1).toLowerCase() + word.slice(-1).toUpperCase();
+    }
+  });
+  return lastLetterUpper.join(" ");
+}
+console.log(flipper(["This", "Is", "A", "Test"])); */
+
+// #7kyu HTML Generator
+/* function HTMLGen() {
+  HTMLGen.prototype.a = function (param) {
+    return `<a>${param}</a>`;
+  };
+  HTMLGen.prototype.b = function (param) {
+    return `<b>${param}</b>`;
+  };
+  HTMLGen.prototype.p = function (param) {
+    return `<p>${param}</p>`;
+  };
+  HTMLGen.prototype.body = function (param) {
+    return `<body>${param}</body>`;
+  };
+  HTMLGen.prototype.div = function (param) {
+    return `<div>${param}</div>`;
+  };
+  HTMLGen.prototype.span = function (param) {
+    return `<span>${param}</span>`;
+  };
+  HTMLGen.prototype.title = function (param) {
+    return `<title>${param}</title>`;
+  };
+  HTMLGen.prototype.comment = function (param) {
+    return `<!--${param}-->`;
+  };
+}
+var g = new HTMLGen();
+console.log(g.comment("i am a comment")); */
+
+// #7kyu Geometric Progression Sequence
+/* function geometricSequenceElements(a, r, n) {
+  let result = [a];
+  for (let i = 1; i < n; i++) {
+    result.push(a * r);
+    a = a * r;
+  }
+  return result.join(", ");
+}
+console.log(geometricSequenceElements(2, 3, 5)); */
+
+// #7kyu Simple equation reversal
+/* function solve(eq) {
+  return eq
+    .replace(/[+-/*]/g, (num) => {
+      return " " + num + " ";
+    })
+    .split(" ")
+    .reverse()
+    .join("");
+}
+console.log(solve("100*b/y")); */
+
+// #7kyu A Promise is a Promise
+/* function promiseHelloWorld() {
+  return Promise.resolve('Hello World!');
+} */
+
+// #7kyu Homogenous arrays
+/* function filterHomogenous(arrays) {
+  return arrays.filter((arr) => {
+    let check = arr.every(
+      (value, idx, origin) => typeof origin[0] === typeof value,
+    );
+    if (check && arr.length) {
+      return arr;
+    }
+  });
+}
+console.log(filterHomogenous([[1, 5, 4], ["a", 3, 5], ["b"], [], ["1", 2, 3]])); */
+
+// #7kyu Plus - minus - plus - plus - ... - Count
+/* function catchSignChange(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if ((arr[i] >= 0 && arr[i + 1] < 0) || (arr[i] < 0 && arr[i + 1] >= 0)) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(catchSignChange([-2, -2, -5, -4, 5, 2, 0, 6, 0])); */
+
+// #7kyu Simple Fun #10: Range Bit Counting
+/* function rangeBitCount(a, b) {
+  let array = [];
+  for (let i = a; i <= b; i++) {
+    array.push(i.toString(2));
+  }
+  array = array.join("").split("");
+  return array.reduce((sum, curr) => sum + Number(curr), 0);
+}
+console.log(rangeBitCount(2, 7)); */
+
+// #7kyu Toggle, Set, and Clear Bits (Bit Manipulation Basics)
+/* const toggleBit = (n, position) => {
+  return n ^ (1 << position);
+};
+const setBit = (n, position) => {
+  return n | (1 << position);
+};
+const clearBit = (n, position) => {
+  return n & ~(1 << position);
+};
+const isBitSet = (n, position) => {
+  return (n & (1 << position)) !== 0;
+};
+const setMultipleBits = (n, mask) => {
+  return n | mask;
+};
+const clearMultipleBits = (n, mask) => {
+  return n & ~mask;
+};
+const toggleMultipleBits = (n, mask) => {
+  return n ^ mask;
+};
+console.log(toggleBit(5, 1));
+console.log(setBit(5, 1));
+console.log(clearBit(7, 1));
+console.log(isBitSet(5, 0));
+console.log(setMultipleBits(5, 3));
+console.log(setMultipleBits(5, 3));
+console.log(clearMultipleBits(7, 2));
+console.log(toggleMultipleBits(5, 3)); */
+
+// #7kyu Polydivisible Numbers
+/* function polydivisible(x) {
+  x = String(x);
+  let temp = "";
+  for (let i = 0; i < x.length; i++) {
+    temp += x[i];
+    if (+temp % (i + 1) !== 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(polydivisible(1232)); */
+
+// #7kyu LinkedList -> Array
+/* function listToArray(list) {
+  let arr = [list["value"]];
+  while (list["next"]) {
+    list = list["next"];
+    arr.push(list["value"]);
+  }
+  return arr;
+}
+console.log(
+  listToArray({ value: 1, next: { value: 2, next: { value: 3, next: null } } }),
+); */
+
+// #7kyu 80's Kids #3: Punky Brewster's Socks
+/* function getSocks(name, socks) {
+  let sortSocks = socks.sort();
+  let a = sortSocks[0];
+  let b = sortSocks[sortSocks.length - 1];
+  if (name === "Punky") {
+    if (a !== b) {
+      return [a, b];
+    }
+  } else if (name === "Henry") {
+    if (a === socks[1]) {
+      return [sortSocks[0], sortSocks[1]];
+    }
+  }
+  return [];
+}
+console.log(getSocks("Punky", ["red", "blue", "blue", "green"])); */
+
+// #7kyu Fridge Organizer: Priority Eating
+/* function fridgeOrganizer(items) {
+  return items
+    .filter((item) => item.expiryDays >= 0)
+    .sort((a, b) => {
+      if (a.isAlmostEmpty !== b.isAlmostEmpty) {
+        return b.isAlmostEmpty - a.isAlmostEmpty;
+      }
+      if (a.expiryDays !== b.expiryDays) {
+        return a.expiryDays - b.expiryDays;
+      }
+      return a.name.localeCompare(b.name);
+    })
+    .map((item) => item.name);
+}
+console.log(
+  fridgeOrganizer([
+    { name: "Milk", expiryDays: 3, isAlmostEmpty: false },
+    { name: "Jam", expiryDays: 3, isAlmostEmpty: true },
+    { name: "Yogurt", expiryDays: 1, isAlmostEmpty: false },
+    { name: "Old Meat", expiryDays: -1, isAlmostEmpty: true },
+    { name: "Today's Tofu", expiryDays: 0, isAlmostEmpty: false },
+  ]),
+); */
+
+// #7kyu New £5 notes collectors!
+/* function getNewNotes(salary, bills) {
+  let sum = bills.reduce((sum, curr) => sum + curr, 0);
+  let result = Math.floor((salary - sum) / 5);
+  return result > 0 ? result : 0;
+}
+console.log(getNewNotes(2300, [590, 1500, 45, 655, 150])); */
+
+// #7kyu Bits Battle
+/* function bitsBattle(numbers) {
+  if (numbers[0] === 0) {
+    return "tie";
+  }
+  let odds = [];
+  let even = [];
+  numbers.forEach((num) => {
+    let binary = num.toString(2);
+    if (num % 2 === 0) {
+      even.push(...binary);
+    } else {
+      odds.push(...binary);
+    }
+  });
+  odds = odds.filter((value) => value == 1).length;
+  even = even.filter((value) => value == 0).length;
+  if (odds > even) {
+    return "odds win";
+  } else if (even > odds) {
+    return "evens win";
+  } else {
+    return "tie";
+  }
+}
+console.log(bitsBattle([0])); */
+
+// #7kyu Fly as fast as you can
+/* function flyTime(dist, train, fly) {
+  const result = fly * (dist / (2 * train));
+  return result === Infinity ? null : result;
+}
+console.log(flyTime(100, 0, 30)); */
+
+// #7kyu Match My Husband
+/* function match(usefulness, months) {
+  let man = usefulness.reduce((sum, curr) => sum + curr, 0);
+  let woman = 100 * 0.85 ** months;
+  return man >= woman ? "Match!" : "No match!";
+}
+console.log(match([15, 24, 12], 2)); */
+
+// #7kyu Simple Fun #152: Invite More Women?
+/* function inviteMoreWomen(L) {
+  return L.filter((value) => value === 1).length > L.length / 2;
+}
+console.log(inviteMoreWomen([1, 1, 1])); */
+
+// #7kyu maxPossibleScore
+/* function maxPossibleScore(obj, arr) {
+  let sum = 0;
+  for (const key in obj) {
+    if (arr.includes(key)) {
+      sum += obj[key] * 2;
+    } else {
+      sum += obj[key];
+    }
+  }
+  return sum;
+}
+console.log(maxPossibleScore({ a: 1 }, [])); */
+
+// #7kyu Slice the middle of a list backwards
+/* function reverseMiddle(array) {
+  let sliceNumber;
+  let evenOrOdd = true;
+  let result;
+  if (array.length % 2 === 0) {
+    sliceNumber = (array.length - 2) / 2;
+  } else {
+    sliceNumber = (array.length - 3) / 2;
+    evenOrOdd = false;
+  }
+  if (evenOrOdd) {
+    result = array.slice(sliceNumber, sliceNumber + 2);
+  } else {
+    result = array.slice(sliceNumber, sliceNumber + 3);
+  }
+  return result.reverse();
+}
+console.log(
+  reverseMiddle([
+    -29, -59, -77, -47, -3, 78, -80, -26, 42, -52, 91, 68, 9, 73, -4, 7, 29, 40,
+    17, 31, 39, 15, -26, 53, 82, -12, -97,
+  ]),
+); */
+
+// #7kyu Least Larger
+/* function leastLarger(a, i) {
+  let number = a[i];
+  let candidates = a.filter((v) => v > number);
+  if (candidates.length === 0) return -1;
+  let smallest = Math.min(...candidates);
+  return a.indexOf(smallest);
+}
+console.log(leastLarger([1, 3, 5, 2, 4], 0)); */
+
+// #7kyu Growth of a Population
+/* function nbYear(p0, percent, aug, p) {
+  let year = 0;
+  while (p > p0) {
+    p0 = Math.floor(p0 + p0 * (percent / 100) + aug);
+    year++;
+  }
+  return year;
+}
+console.log(nbYear(1500000, 0, 10000, 2000000)); */
+
+// #7kyu Oh dear God! Is it bugged?
+/* function isItBugged(code) {
+  return /^\d{2}-\d{2}-\d{4} \d{2}:\d{2}/.test(code);
+}
+console.log(isItBugged("14-10-1066 12:00")); */
+
+// #7kyu Find all non-consecutive numbers
+/* function allNonConsecutive(arr) {
+  let result = [];
+  arr.forEach((num, idx, origin) => {
+    if (num + 1 !== origin[idx + 1]) {
+      if (origin[idx + 1] || origin[idx + 1] === 0) {
+        result.push({ i: idx + 1, n: origin[idx + 1] });
+      }
+    }
+  });
+  return result;
+}
+console.log(allNonConsecutive([-5, -3, -2, 0, 1, 2, 3, 4, 6, 7, 8, 10])); */
+
+// #7kyu Discover The Original Price
+/* function discoverOriginalPrice(discountedPrice, salePercentage) {
+  let originPrice = (discountedPrice / (1 - salePercentage / 100)).toFixed(2);
+  return Number(originPrice);
+}
+console.log(discoverOriginalPrice(458.2, 17.13)); */
+
+// #7kyu Disarium Number (Special Numbers Series #3)
+/* function disariumNumber(n) {
+  let sum = 0;
+  n = n.toString();
+  for (let i = 0; i < n.length; i++) {
+    sum += n[i] ** (i + 1);
+  }
+  return sum == n ? "Disarium !!" : "Not !!";
+}
+console.log(disariumNumber(89)); */
+
+// #7kyu Decompose single strand DNA into 3 reading frames
+/* var decomposeSingleStrand = function (singleStrand) {
+  let frame1 = ["Frame 1:"];
+  let frame2 = ["Frame 2:", singleStrand[0]];
+  let frame3 = ["Frame 3:", singleStrand.slice(0, 2)];
+  for (let i = 0; i < singleStrand.length; i += 3) {
+    frame1.push(singleStrand.slice(i, i + 3));
+    frame2.push(singleStrand.slice(i + 1, i + 4));
+    frame3.push(singleStrand.slice(i + 2, i + 5));
+  }
+  return [frame1.join(" "), frame2.join(" "), frame3.join(" ")].join("\n");
+};
+console.log(decomposeSingleStrand("AGGTGACACCGCAAGCCTTATATTAGC")); */
+
+// #7kyu The Office VI - Sabbatical
+/* function sabb(s, val, happiness) {
+  let count = 0;
+  for (let i = 0; i < s.length; i++) {
+    if ("sabbatical".includes(s[i])) {
+      count++;
+    }
+  }
+  let sum = val + happiness + count;
+  return sum > 22 ? "Sabbatical! Boom!" : "Back to your desk, boy.";
+}
+console.log(sabb("Can I have a sabbatical?", 5, 5)); */
+
+// #7kyu Sort an array by value and index
+/* function sortByValueAndIndex(array) {
+  return array
+    .map((value, idx, origin) => [origin[idx], value * (idx + 1)])
+    .sort((a, b) => a[1] - b[1])
+    .map((value) => value[0]);
+}
+console.log(sortByValueAndIndex([23, 2, 3, 4, 5])); */
+
+// #7kyu Stalin Sort
+/* function stalinSort(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > array[i + 1]) {
+      array.splice(i + 1, 1);
+      return stalinSort(array);
+    }
+  }
+}
+console.log(stalinSort([1, 2, 2, 3, 1, 4])); */
+
+// #7kyu Recursion 101
+/* function solve(a, b) {
+  if (a === 0 || b === 0) {
+    return [a, b];
+  }
+  if (a >= 2 * b) {
+    return solve((a = a - 2 * b), b);
+  }
+  if (b >= 2 * a) {
+    return solve(a, (b = b - 2 * a));
+  }
+  return [a, b];
+}
+console.log(solve(2, 10)); */
+
+// #7kyu Recurrence by Recursion
+/* function recurrence(base, formula, term) {
+  if (term === 1) {
+    return base;
+  }
+  return recurrence(formula(base), formula, term - 1);
+}
+console.log(recurrence(1, (n) => n + 3, 3)); */
+
+// #7kyu Average Array
+/* function avgArray(arr) {
+  let result = [];
+  for (let i = 0; i < arr[0].length; i++) {
+    let sum = 0;
+    for (let k = 0; k < arr.length; k++) {
+      sum += arr[k][i];
+    }
+    result.push(sum / arr.length);
+    sum = 0;
+  }
+  return result;
+}
+console.log(
+  avgArray([
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+  ]),
+); */
+
+// #7kyu Simple Fun #246: Array Center
+/* function arrayCenter(a) {
+  let min = Math.min(...a);
+  let avg = a.reduce((sum, curr) => sum + curr, 0) / a.length;
+  return a.filter((value) => avg - min < value && value < avg + min);
+}
+console.log(arrayCenter([8, 3, 4, 5, 2, 8])); */
+
+// #7kyu Password Check - Binary to String
+/* function decodePass(passArr, bin) {
+  bin = bin.split(" ");
+  let password = bin
+    .map((value) => String.fromCharCode(parseInt(value, 2)))
+    .join("");
+  let result = passArr.filter((pass) => pass === password);
+  return result.length ? result[0] : false;
+}
+console.log(
+  decodePass(
+    ["password123", "admin", "admin1"],
+    "01110000 01100001 01110011 01110011 01110111 01101111 01110010 01100100 00110001 00110010 00110011",
+  ),
+); */
+
+// #7kyu The Office III - Broken Photocopier
+/* function broken(x) {
+  let result = "";
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === "1") {
+      result += "0";
+    } else {
+      result += "1";
+    }
+  }
+  return result;
+}
+console.log(broken("10000000101101111110011001000")); */
+
+// #7kyu Adaptive Security System
+/* function breachAttempts(hackers, securityLevel, increase) {
+  let hackCount = 0;
+  hackers.forEach((value) => {
+    if (value > securityLevel) {
+      hackCount++;
+    } else {
+      securityLevel += increase;
+    }
+  });
+  return hackCount;
+}
+console.log(breachAttempts([10, 11, 12], 5, 3)); */
+
+// #7kyu Player Contact Manager
+/* function playerManager(players) {
+  if (players) {
+    players = players.split(", ");
+  } else {
+    return [];
+  }
+  let result = [];
+  for (let i = 0; i < players.length; i += 2) {
+    result.push({
+      player: players[i],
+      contact: Number(players[i + 1]),
+    });
+  }
+  return result;
+}
+console.log(playerManager("John Doe, 8167238327, Jane Doe, 8163723827")); */
+
+// #7kyu Parts of a list
+/* function partlist(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i + 1]) {
+      result.push([arr.slice(0, i + 1).join(" "), arr.slice(i + 1).join(" ")]);
+    }
+  }
+  return result;
+}
+console.log(partlist(["az", "toto", "picaro", "zone", "kiwi"])); */
+
+// #7kyu Drone Fly-By
+/* function flyBy(lamps, drone) {
+  if (drone.length > lamps.length) {
+    return "o".repeat(lamps.length);
+  }
+  let flyDrone = lamps.length - drone.length;
+  return "o".repeat(drone.length) + "x".repeat(flyDrone);
+}
+console.log(flyBy("xxxxxx", "====T")); */
+
+// #7kyu How much coffee do you need?
+/* function howMuchCoffee(events) {
+  let keys = ["cw", "dog", "cat", "movie"];
+  let result = 0;
+  for (let i = 0; i < events.length; i++) {
+    if (keys.includes(events[i].toLowerCase())) {
+      if (events[i].toLowerCase() === events[i]) {
+        result++;
+      } else {
+        result += 2;
+      }
+    }
+  }
+  return result > 3 ? "You need extra sleep" : result;
+}
+console.log(howMuchCoffee(["cw", "CAT", "DOG"])); */
+
+// #7kyu Shortest direction on circle
+/* function shortestDirection(a, b) {
+  const norm = (x) => ((x % 360) + 360) % 360;
+  let d = norm(b) - norm(a);
+  if (d > 180) d -= 360;
+  if (d < -180) d += 360;
+  return d;
+}
+console.log(shortestDirection(180, -450)); */
+
+// #7kyu String matchup
+/* function solve(a, b) {
+  let result = [];
+  for (let i = 0; i < b.length; i++) {
+    let count = a.filter((value) => value === b[i]).length;
+    result.push(count);
+  }
+  return result;
+}
+console.log(solve(["abc", "abc", "xyz", "abcd", "cde"], ["abc", "cde", "uap"])); */
+
+// #7kyu Sum Factorial
+/* function sumFactorial(arr) {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let temp = 1;
+    for (let k = arr[i]; k > 0; k--) {
+      temp *= k;
+    }
+    result += temp;
+    temp = 1;
+  }
+  return result;
+}
+console.log(sumFactorial([4, 6])); */
+
+// #7kyu Word values
+/* function wordValue(words) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  return words.map(
+    (value, idx) =>
+      [...value].reduce((sum, curr) => sum + alphabet.indexOf(curr), 0) *
+      (idx + 1),
+  );
+}
+console.log(wordValue(["codewars", "abc", "xyz"])); */
+
+// #7kyu Array Info
+/* function arrayInfo(arr) {
+  if (arr.length === 0) {
+    return "Nothing in the array!";
+  }
+  let result = [arr.length, 0, 0, 0, 0];
+  for (let i = 0; i < arr.length; i++) {
+    if (Number.isInteger(arr[i])) {
+      result[1]++;
+    } else if (typeof arr[i] === "number") {
+      result[2]++;
+    } else if (typeof arr[i] === "string" && arr[i] !== " ") {
+      result[3]++;
+    }
+    if (arr[i] === " ") {
+      result[4]++;
+    }
+  }
+  return result.map((value) => [value === 0 ? null : value]);
+}
+console.log(arrayInfo([1, 2, 3.33, 4, 5.01, "bass", "kick", " "])); */
+
+// #7kyu Keypad horror
+/* function computerToPhone(numbers) {
+  let computerToPhoneKeyboard = {
+    7: 1,
+    8: 2,
+    9: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    1: 7,
+    2: 8,
+    3: 9,
+    0: 0,
+  };
+  return numbers.replace(/[0-9]/g, (num) => computerToPhoneKeyboard[num]);
+}
+console.log(computerToPhone("0789456123")); */
+
+// #7kyu Unflatten a list (Easy)
+/* function unflatten(flatArray) {
+  let result = [];
+  for (let i = 0; i < flatArray.length; i++) {
+    if (flatArray[i] < 3) {
+      result.push(flatArray[i]);
+    } else {
+      result.push(flatArray.slice(i, i + flatArray[i]));
+      i += flatArray[i] - 1;
+    }
+  }
+  return result;
+}
+console.log(unflatten([1, 4, 5, 2, 1, 2, 4, 5, 2, 6, 2, 3, 3])); */
+
+// #7kyu Determine if the poker hand is flush
+/* function isFlush(cards) {
+  return cards.every((card) => card.slice(-1) === cards[0].slice(-1));
+}
+console.log(isFlush(["AS", "3S", "9S", "KS", "4S"])); */
+
+// #7kyu Which string is worth more?
+/* function highestValue(a, b) {
+  let convertArrayA = [...a];
+  let convertArrayB = [...b];
+  let firstAsciiCode = convertArrayA
+    .map((value) => value.charCodeAt(0))
+    .reduce((sum, curr) => sum + curr, 0);
+  let secondAsciiCode = convertArrayB
+    .map((value) => value.charCodeAt(0))
+    .reduce((sum, curr) => sum + curr, 0);
+
+  if (firstAsciiCode === secondAsciiCode) {
+    return a;
+  }
+  if (firstAsciiCode > secondAsciiCode) {
+    return a;
+  } else {
+    return b;
+  }
+}
+console.log(highestValue("AaBbCcXxYyZz0189", "KkLlMmNnOoPp4567")); */
+
+// #7kyu Describe the shape
+/* function describeTheShape(angles) {
+  if (angles <= 2) {
+    return "this will be a line segment or a dot";
+  }
+  let a = Math.floor(((angles - 2) * 180) / angles);
+  return `This shape has ${angles} sides and each angle measures ${a}`;
+}
+console.log(describeTheShape(4)); */
+
+// #7kyu Counting in the Amazon
+/* function countArara(n) {
+  return ("adak ".repeat(Math.floor(n / 2)) + "anane".repeat(n % 2)).trim();
+}
+console.log(countArara(3)); */
+
+// #7kyu Consecutive Vowels in a String
+/* function getTheVowels(word) {
+  let count = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+  let counter = 0;
+  for (let i = 0; i < word.length; i++) {
+    let currentVowel = vowels[counter];
+    if (word[i] === currentVowel) {
+      count++;
+      vowels[counter + 1] === undefined ? (counter = 0) : (counter += 1);
+    }
+  }
+  return count;
+}
+console.log(getTheVowels("erfaiekjudhyfimngukduo")); */
+
+// #7kyu Witcher's Contract: The Bestiary
+/* function identifyMonster(observedWeaknesses, bestiary) {
+  for (const key in bestiary) {
+    let check = observedWeaknesses.every((value) =>
+      bestiary[key].includes(value),
+    );
+    if (check) {
+      return key;
+    }
+  }
+  return "Unknown monster";
+}
+console.log(
+  identifyMonster(["Igni", "Relict Oil"], {
+    Griffin: ["Grapeshot", "Hybrid Oil", "Aard"],
+    Noonwraith: ["Yrden", "Moon Dust", "Specter Oil"],
+    Drowner: ["Igni", "Necrophage Oil"],
+    Leshen: ["Igni", "Relict Oil", "Dimeritium Bomb"],
+    Fiend: ["Samum", "Devil's Puffball", "Relict Oil"],
+  }),
+); */
+
+// #7kyu Numbers with this digit inside
+/* function numbersWithDigitInside(x, d) {
+  let numbers = [0, 0, 1];
+  let boolean = false;
+  for (let i = 1; i <= x; i++) {
+    i = i.toString();
+    if (i.includes(d)) numbers[0]++;
+    if (i.includes(d)) numbers[1] += Number(i);
+    if (i.includes(d)) {
+      numbers[2] *= i;
+      boolean = true;
+    }
+  }
+  return numbers[2] === 1 && !boolean ? [...numbers.slice(0, 2), 0] : numbers;
+}
+console.log(numbersWithDigitInside(11, 1)); */
+
+// #7kyu I guess this is a 7kyu kata #6: Fruit Ninja I
+/* function cutFruits(fruits) {
+  const fruitsName = [
+    "apple",
+    "pear",
+    "banana",
+    "orange",
+    "mango",
+    "pineapple",
+    "strawberry",
+    "cherry",
+    "peach",
+    "apricot",
+    "watermelon",
+    "melon",
+    "kiwi",
+    "lemon",
+    "lime",
+    "plum",
+    "coconut",
+    "durian",
+    "pitaya",
+    "jujube",
+    "hawthorn",
+    "litchi",
+    "ginkgo",
+    "carambola",
+    "grape",
+    "cantaloupe",
+    "tomato",
+    "pomegranate",
+    "fig",
+    "blueberry",
+    "mangosteen",
+    "persimmon",
+  ];
+  let result = [];
+  for (let i = 0; i < fruits.length; i++) {
+    if (!fruitsName.includes(fruits[i])) {
+      result.push(fruits[i]);
+    } else {
+      result.push(
+        fruits[i].slice(0, Math.ceil(fruits[i].length / 2)),
+        fruits[i].slice(Math.ceil(fruits[i].length / 2)),
+      );
+    }
+  }
+  return result;
+}
+console.log(
+  cutFruits([
+    "litchi",
+    "blueberry",
+    "litchi",
+    "peach",
+    "pitaya",
+    "rtnv",
+    "apricot",
+    "cherry",
+    "pear",
+  ]),
+); */
+
+// #7kyu Working with arrays II (and why your code fails in some katas)
+/* function removeNthElement(arr, n) {
+  var arrCopy = [...arr];
+  arrCopy.splice(n, 1);
+  return arrCopy;
+}
+console.log(removeNthElement([2, 3, 4, 5], 1)); */
+
+// #7kyu I guess this is a 7kyu kata #1: Search result
+/* function finalResult(keywords, searchResult) {
+  let result = [];
+  for (let i = 0; i < searchResult.length; i++) {
+    let check = [...keywords].every((letter) =>
+      searchResult[i].includes(letter),
+    );
+    if (check) {
+      result.push(searchResult[i]);
+    }
+  }
+  return result;
+}
+console.log(finalResult("abc", ["ab", "abc", "abcd", "bcd"])); */
+
+// #7kyu Number climber
+/* function climb(n) {
+  let result = [n];
+  while (n > 1) {
+    if (n % 2 === 0) {
+      result.unshift(n / 2);
+      n = n / 2;
+    } else {
+      result.unshift((n - 1) / 2);
+      n = (n - 1) / 2;
+    }
+  }
+  return result;
+}
+console.log(climb(13)); */
+
+// #7kyu Find Factors Down to Limit
+/* function factors(integer, limit) {
+  let result = [];
+  if (limit > integer) {
+    return [];
+  }
+  for (let i = limit; i <= integer; i++) {
+    if (integer % i === 0) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+console.log(factors(30, 2)); */
+
+// #7kyu Boiled Eggs
+/* function cookingTime(eggs) {
+  return Math.ceil(eggs / 8) * 5;
+}
+console.log(cookingTime(10)); */
+
+// #7kyu Count all the sheep on farm in the heights of New Zealand
+/* function lostSheep(friday, saturday, total) {
+  return total - [...friday, ...saturday].reduce((sum, curr) => sum + curr, 0);
+}
+console.log(lostSheep([1, 2], [3, 4], 15)); */
+
+// #7kyu Lazily executing a function
+/* function makeLazy(...args) {
+  return function () {
+    return args[0](...args.slice(1));
+  };
+}
+const result = makeLazy(
+  function add(a, b) {
+    return a + b;
+  },
+  5,
+  10,
+);
+console.log(result()); */
+
+// #7kyu sum2total
+/* function total(arr) {
+  let newArr = [];
+  if (arr.length === 1) {
+    return arr[0];
+  }
+  for (let i = 0; i < arr.length - 1; i++) {
+    newArr.push(arr[i] + arr[i + 1]);
+  }
+  arr = newArr;
+  return total(arr);
+}
+console.log(total([1, 2, 3, 4, 5])); */
+
+// #7kyu COFFEE!
+/* function coffee(str) {
+  return str.replace(/\bcoffee\b/gi, (x) => x.toUpperCase());
+}
+console.log(coffee("coffee coffee coFFEE!")); */
+
+// #7kyu Compress sentences
+/* function compress(sentence) {
+  sentence = sentence.toLowerCase().split(" ");
+  let collect = [];
+  let result = "";
+  let idx = 0;
+  for (let i = 0; i < sentence.length; i++) {
+    if (collect.includes(sentence[i])) {
+      result += collect.indexOf(sentence[i]);
+    } else {
+      collect.push(sentence[i]);
+      result += idx;
+      idx++;
+    }
+  }
+  return result;
+}
+console.log(
+  compress(
+    "The number 0 is such a strange number Strangely it has zero meaning",
+  ),
+); */
+
+// #7kyu Page replacement algorithms: FIFO
+/* function fifo(n, referenceList) {
+  let result = [];
+  let idx = 0;
+  for (let i = 0; i < referenceList.length; i++) {
+    if (result.length !== n && !result.includes(referenceList[i])) {
+      result.push(referenceList[i]);
+    }
+    if (result.length === n && !result.includes(referenceList[i])) {
+      result[idx] = referenceList[i];
+      idx = (idx + 1) % n;
+    }
+  }
+  return result.length !== n
+    ? [...result, ...new Array(n - result.length).fill(-1)]
+    : result;
+}
+console.log(fifo(5, [])); */
+
+// #7kyu London CityHacker
+/* function londonCityHacker(journey) {
+  let sum = 0;
+  let busCount = 0;
+  for (let i = 0; i < journey.length; i++) {
+    if (typeof journey[i] === "number") {
+      busCount++;
+      if (busCount === 2) {
+        sum += 1.5;
+        busCount = 0;
+      }
+    } else {
+      sum += 2.4;
+      if (busCount === 1) {
+        sum += 1.5;
+        busCount = 0;
+      }
+    }
+  }
+  if (busCount === 1) {
+    sum += 1.5;
+  }
+  return `£${sum.toFixed(2)}`;
+}
+console.log(londonCityHacker([12, 21, 32, "Central", "Circle", 21])); */
+
+// #7kyu Special Number (Special Numbers Series #5)
+/* function specialNumber(n) {
+  n = n.toString().split("");
+  const check = n.every((number) => 5 >= number);
+  return check ? "Special!!" : "NOT!!";
+}
+console.log(specialNumber(25432)); */
+
+// #7kyu Perfect squares, perfect fun
+/* function squareIt(int) {
+  int = int.toString();
+  let sqrt = Math.sqrt(int.length);
+  let result = "";
+  if (Number.isInteger(sqrt)) {
+    for (let i = 0; i < int.length; i += sqrt) {
+      result += int.slice(i, i + sqrt);
+      result += "\n";
+    }
+  } else {
+    return "Not a perfect square!";
+  }
+  return result.trim();
+}
+console.log(squareIt(112141568)); */
+
+// #7kyu Help Suzuki complete his chores!
+/* function choreAssignment(chores) {
+  chores.sort((a, b) => a - b);
+  let result = [];
+  for (let i = 0; i < chores.length / 2; i++) {
+    result.push(chores[i] + chores[chores.length - (i + 1)]);
+  }
+  return result.sort((a, b) => a - b);
+}
+console.log(choreAssignment([1, 5, 2, 8, 4, 9, 6, 4, 2, 2, 2, 9])); */
+
+// #7kyu You're not my type
+/* Object.defineProperty(Array.prototype, "ofType", {
+  value: function (type) {
+    return this.filter((item) => {
+      if (type === Number) return typeof item === "number";
+      if (type === String) return typeof item === "string";
+      if (type === Boolean) return typeof item === "boolean";
+      return item instanceof type;
+    });
+  },
+});
+function func(x) {
+  return x;
+}
+var arr = [{ a: "a" }, /a-z/, [1, 2, 3], func];
+console.log(arr.ofType(Object)); */
+
+// #7kyu EAN Validation
+/* function validateEAN(eanCode) {
+  let lastNumber = +eanCode.slice(-1);
+  let array = eanCode.slice(0, -1).split("");
+  let sum = array.reduce((sum, curr, idx) => {
+    return (idx + 1) % 2 === 0 ? sum + curr * 3 : sum + curr * 1;
+  }, 0);
+  let checksum = sum % 10 === 0 ? 0 : 10 - (sum % 10);
+  return checksum === lastNumber;
+}
+console.log(validateEAN("400330101839")); */
+
+// #7kyu Upstream/Downstream
+/* function time(distance, boatSpeed, stream) {
+  let effectiveSpeed;
+  stream = stream.split(" ");
+  if (stream[0] === "Downstream") {
+    effectiveSpeed = boatSpeed + +stream[1];
+  } else {
+    effectiveSpeed = boatSpeed - stream[1];
+  }
+  return +(distance / effectiveSpeed).toFixed(2);
+}
+console.log(time(54, 28, "Downstream 3")); */
+
+// #7kyu Jumping Number (Special Numbers Series #4)
+/* function jumpingNumber(n) {
+  n = n.toString().split("");
+  if (n.length === 1) return "Jumping!!";
+  for (let i = 0; i < n.length; i++) {
+    if (n[i + 1]) {
+      if (Math.abs(n[i] - n[i + 1]) !== 1) {
+        return "Not!!";
+      }
+    }
+  }
+  return "Jumping!!";
+}
+console.log(jumpingNumber(23)); */
+
+// #7kyu Frugal Pizza
+/* function pizzaPrice(diameter, price) {
+  if (typeof diameter !== "number" || typeof price !== "number") return 0;
+  let r = diameter / 2;
+  let area = Math.PI * Math.pow(r, 2);
+  return Number((price / area).toFixed(2));
+}
+console.log(pizzaPrice(12, 7.9)); */
+
+// #7kyu Folding your way to the moon
+/* function foldTo(distance) {
+  if (distance < 0) {
+    return null;
+  }
+  let count = 0;
+  let start = 0.0001;
+  while (start < distance) {
+    count++;
+    start *= 2;
+  }
+  return count;
+}
+console.log(foldTo(384000000)); */
+
+// #7kyu Compare Strings by Sum of Chars
+/* function compare(s1, s2) {
+  if (!s1) s1 = "";
+  if (!s2) s2 = "";
+  s1 = s1.toUpperCase();
+  s2 = s2.toUpperCase();
+  let sum1 = 0;
+  let sum2 = 0;
+  for (let i = 0; i < s1.length; i++) {
+    let ch = s1[i];
+    if (ch < "A" || ch > "Z") {
+      sum1 = 0;
+      break;
+    }
+    sum1 += ch.charCodeAt(0);
+  }
+  for (let i = 0; i < s2.length; i++) {
+    let ch = s2[i];
+    if (ch < "A" || ch > "Z") {
+      sum2 = 0;
+      break;
+    }
+    sum2 += ch.charCodeAt(0);
+  }
+  return sum1 === sum2;
+}
+console.log(compare("!!", "7476")); */
+
+// #7kyu Deodorant Evaporator
+/* function evaporator(content, evapPerDay, threshold) {
+  let count = 0;
+  let limit = content * (threshold / 100);
+  while (content > limit) {
+    content -= (evapPerDay / 100) * content;
+    count++;
+  }
+  return count;
+}
+console.log(evaporator(10, 10, 5)); */
+
+// #7kyu Digital cypher vol 2
+/* function decode(code, n) {
+  n = n.toString();
+  const alphabet = " abcdefghijklmnopqrstuvwxyz";
+  let keys = n.repeat(code.length).slice(0, code.length);
+  let result = "";
+  for (let i = 0; i < code.length; i++) {
+    result += alphabet[code[i] - keys[i]];
+  }
+  return result;
+}
+console.log(decode([20, 12, 18, 30, 21], 1939)); */
+
+// #7kyu Mean vs. Median
+/* function meanVsMedian(numbers) {
+  let average = numbers.reduce((sum, curr) => sum + curr, 0) / numbers.length;
+  let median = numbers.sort((a, b) => a - b)[Math.floor(numbers.length / 2)];
+  if (average === median) {
+    return "same";
+  } else if (average > median) {
+    return "mean";
+  } else if (average < median) {
+    return "median";
+  }
+}
+console.log(meanVsMedian([1, 2, 37])); */
+
+// #7kyu How many points did the teams from Los Angeles score?
+/* function getLosAngelesPoints(results) {
+  return results.reduce((sum, [team, score]) => {
+    const isValid = /^Los Angeles [A-Z][a-z]+$/.test(team);
+    if (isValid) {
+      return sum + Number(score.split(":")[0]);
+    }
+    return sum;
+  }, 0);
+}
+console.log(
+  getLosAngelesPoints([
+    ["los angeles", "67:639"],
+    ["Los Angeles 9nines", "45:171"],
+    ["Los Angeles", "740:587"],
+    ["Utah Jazz", "952:152"],
+    ["Sacramento Kings", "206:334"],
+    ["San Antonio Spurs", "382:700"],
+    ["Phoenix Suns", "169:86"],
+    ["Denver Nuggets", "475:989"],
+    ["Dallas Mavericks", "610:262"],
+    ["Los Angeles Lakers", "564:802"],
+    ["Houston Rockets", "241:440"],
+    ["Los Angeles Clippers", "270:59"],
+    ["New Orleans Pelicans", "203:325"],
+    ["Oklahoma City Thunder", "329:277"],
+    ["Golden State Warriors", "54:312"],
+  ]),
+); */
+
+// #7kyu Competitive eating scoreboard
+/* function scoreboard(whoAteWhat) {
+  return whoAteWhat
+    .map((value) => ({
+      name: value.name,
+      score: value.chickenwings * 5 + value.hamburgers * 3 + value.hotdogs * 2,
+    }))
+    .sort((a, b) => {
+      if (b.score === a.score) {
+        return a.name.localeCompare(b.name);
+      }
+      return b.score - a.score;
+    });
+}
+console.log(
+  scoreboard([
+    { name: "Billy The Beast", chickenwings: 17, hamburgers: 7, hotdogs: 8 },
+    { name: "Habanero Hillary", chickenwings: 5, hamburgers: 17, hotdogs: 11 },
+    { name: "Joey Jaws", chickenwings: 8, hamburgers: 8, hotdogs: 15 },
+    { name: "Big Bob", chickenwings: 20, hamburgers: 4, hotdogs: 11 },
+  ]),
+); */
+
+// #7kyu Rotate for a Max
+/* function maxRot(n) {
+  n = n.toString();
+  let numbers = [+n];
+  for (let i = 0; i < n.length - 1; i++) {
+    let temp = "";
+    temp += n.slice(0, i);
+    temp += n.slice(i + 1);
+    temp += n.slice(i, i + 1);
+    numbers.push(+temp);
+    n = temp;
+  }
+  return Math.max(...numbers);
+}
+console.log(maxRot(507992495)); */
+
+// #7kyu Apparently-Modifying Strings
+/* function apparently(string) {
+  string = string.split(" ");
+  let result = [];
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "but" || string[i] === "and") {
+      if (string[i + 1] === "apparently") {
+        result.push(string[i]);
+      } else {
+        result.push(string[i]);
+        result.push("apparently");
+      }
+    } else {
+      result.push(string[i]);
+    }
+  }
+  return result.join(" ");
+}
+console.log(
+  apparently(
+    "It was great and I have never been on live television before but sometimes I dont watch this.",
+  ),
+); */
+
+// #7kyu Money Match: Double or Nothing
+/* function doubleOrNothing(cash, wager, losses) {
+  let loss = wager * 2 ** (losses - 1);
+  if (loss > cash) {
+    return "I'll pay you back later";
+  }
+  return cash - loss;
+}
+console.log(doubleOrNothing(12, 2, 3)); */
+
+// #7kyu Closing in Sum
+/* function closingInSum(n) {
+  n = n.toString();
+  let a = n.slice(0, Math.floor(n.length / 2));
+  let b = n
+    .slice(Math.ceil(n.length / 2))
+    .split("")
+    .reverse();
+  let sum = 0;
+  for (let i = 0; i < a.length; i++) {
+    sum += +(a[i] + b[i]);
+  }
+  if (n.length % 2 !== 0) {
+    sum += +n[Math.floor(n.length / 2)];
+  }
+  return sum;
+}
+console.log(closingInSum(121)); */
+
+// #7kyu SpeedCode #1 - Getters and Setters in Object Literals
+/* const person = {
+  firstName: "Jane",
+  lastName: "Doe",
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  set fullName(val) {
+    const parts = val.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
+};
+console.log(person.fullName); */
+
+// #7kyu Simple Fun #320: Scratch lottery I
+/* function scratch(lottery) {
+  let sum = 0;
+  for (let i = 0; i < lottery.length; i++) {
+    let k = lottery[i].split(" ");
+    if (k[0] === k[1] && k[0] === k[2]) {
+      sum += +k[3];
+    }
+  }
+  return sum;
+}
+console.log(
+  scratch([
+    "rabbit rabbit horse 10000",
+    "tiger pig ox 5",
+    "cock cock cock 10000",
+    "monkey horse dog 50",
+    "monkey monkey monkey 50",
+    "rat dog sheep 5000",
+  ]),
+); */
+
+// #7kyu Find the Middle of the Product
+/* function findMiddle(str) {
+  if (typeof str !== "string") return -1;
+  let product = 1;
+  let hasDigit = false;
+  for (let ch of str) {
+    if (/\d/.test(ch)) {
+      product *= Number(ch);
+      hasDigit = true;
+    }
+  }
+  if (!hasDigit) return -1;
+  product = String(product);
+  let mid;
+  if (product.length % 2 === 0) {
+    mid = product.slice(product.length / 2 - 1, product.length / 2 + 1);
+  } else {
+    mid = product[Math.floor(product.length / 2)];
+  }
+  return Number(mid);
+}
+console.log(findMiddle([1, 2, 3, 4, 5, 6])); */
+
+// #7kyu Sum and Length
+/* function sumLength(array) {
+  let sum = 0;
+  let negatives = 0;
+  let zeroCount = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      sum += array[i];
+    } else if (array[i] < 0) {
+      negatives++;
+    } else {
+      zeroCount++;
+      if (zeroCount % 2 === 1) {
+        negatives++;
+      } else {
+        sum += 0;
+      }
+    }
+  }
+  return `${sum} ${negatives}`;
+}
+console.log(sumLength([-1, 2, 3, 4, 0, 1, 0, -2, 0, -3])); */
+
+// #7kyu Eliminate the intruders! Bit manipulation
+/* function eliminateUnsetBits(number) {
+  let newBinary = "";
+  for (let i = 0; i < number.length; i++) {
+    if (Number(number[i])) newBinary += number[i];
+  }
+  return newBinary.length ? parseInt(newBinary, 2) : 0;
+}
+console.log(eliminateUnsetBits("000")); */
+
+// #7kyu Geometric sequence - sum of all elements
+/* function GeometricSequenceSum(a, r, n) {
+  if (r === 1) return a * n;
+  return (a * (1 - r ** n)) / (1 - r);
+}
+console.log(GeometricSequenceSum(2, 3, 5)); */
+
+// #7kyu Tram Capacity
+/* function tram(stops, descending, onboarding) {
+  let current = 0;
+  let max = 0;
+  for (let i = 0; i < stops; i++) {
+    current -= descending[i];
+    current += onboarding[i];
+    if (current > max) {
+      max = current;
+    }
+  }
+  return max;
+}
+console.log(tram(4, [0, 2, 4, 4], [3, 5, 2, 0])); */
+
+// #7kyu Heron's formula
+/* function heron(a, b, c) {
+  let s = (a + b + c) / 2;
+  return Math.sqrt(s * ((s - a) * (s - b) * (s - c)));
+}
+console.log(heron(3, 4, 5)); */
+
+// #7kyu 80's Kids #5: You Can't Do That on Television
+/* function bucketOf(str) {
+  str = str.toLowerCase();
+  const hasWater =
+    str.includes("water") || str.includes("wet") || str.includes("wash");
+  const hasSlime = str.includes("i don't know") || str.includes("slime");
+  if (hasWater && hasSlime) {
+    return "sludge";
+  } else if (hasWater) {
+    return "water";
+  } else if (hasSlime) {
+    return "slime";
+  } else {
+    return "air";
+  }
+}
+console.log(bucketOf("WATER is everywhere")); */
+
+// #7kyu Money, Money, Money
+/* function calculateYears(principal, interest, tax, desired) {
+  let year = 0;
+  if (principal >= desired) return year;
+  while (principal <= desired) {
+    principal = principal + principal * interest * (1 - tax);
+    year++;
+  }
+  return year;
+}
+console.log(calculateYears(1000, 0.05, 0.18, 1100)); */
+
+// #7kyu Fast cooking pancakes
+/* function cookPancakes(n, m) {
+  return Math.max(2, Math.ceil((2 * n) / m));
+}
+console.log(cookPancakes(1, 2)); */
+
+// #7kyu The Park Ranger's Umbrella
+/* function umbrella(weather) {
+  let count = 0;
+  for (let i = 0; i < weather.length; i += 3) {
+    let hasUmbrella = false;
+    for (let j = 0; j < 3 && i + j < weather.length; j++) {
+      let w = weather[i + j];
+      if (w === "rainy" || w === "thunderstorm") {
+        if (!hasUmbrella) {
+          count++;
+          hasUmbrella = true;
+        }
+      } else {
+        hasUmbrella = false;
+      }
+    }
+  }
+  return count;
+}
+console.log(
+  umbrella(["rainy", "cloudy", "thunderstorm", "rainy", "cloudy", "cloudy"]),
+); */
+
+// #7kyu How many days are we represented in a foreign country?
+/* function daysRepresented(trips) {
+  let journeys = [];
+  for (let i = 0; i < trips.length; i++) {
+    for (let k = trips[i][0]; k <= trips[i][1]; k++) {
+      if (!journeys.includes(k)) journeys.push(k);
+    }
+  }
+  return journeys.length;
+}
+console.log(
+  daysRepresented([
+    [10, 15],
+    [25, 35],
+  ]),
+); */
+
+// #7kyu Palindrome chain length
+/* var palindromeChainLength = function (n) {
+  let counter = 0;
+  while (n !== +n.toString().split("").reverse().join("")) {
+    n = n.toString();
+    let reverse = n.split("").reverse().join("");
+    n = +n + Number(reverse);
+    counter++;
+  }
+  return counter;
+};
+console.log(palindromeChainLength(88)); */
+
+// #7kyu Over The Road
+/* function overTheRoad(address, n) {
+  return 2 * n - address + 1;
+}
+console.log(overTheRoad(1, 3)); */
+
+// #7kyu White or Black?
+/* function mineColor(file, rank) {
+  const alphabet = "Aabcdefghijklmnopqrstuvwxyz";
+  return (alphabet.indexOf(file) + rank) % 2 ? "white" : "black";
+}
+console.log(mineColor("a", 8)); */
+
+// #7kyu T.T.T. #7: Profit or loss
+/* function profitLoss(records) {
+  let totalSellingPrice = 0;
+  let totalCostPrice = 0;
+  records.forEach((arr) => {
+    let price = arr[0];
+    let percentage = arr[1];
+    totalSellingPrice += price;
+    totalCostPrice += price / (1 + percentage / 100);
+  });
+  let result = totalSellingPrice - totalCostPrice;
+  return Number(result.toFixed(2));
+}
+console.log(
+  profitLoss([
+    [60, 20],
+    [60, -20],
+  ]),
+); */
+
+// #7kyu Get array elements with specified keys
+/* Array.prototype.only = function (keys) {
+  let result = [];
+  keys.forEach((value, idx) => (result[value] = this[value]));
+  return result.filter((value) => value !== "");
+};
+console.log(["a", "b", "a", "a", "b"].only([0, 1, 3])); */
+
+// #7kyu Spanish Conjugator
+/* function conjugate(verb) {
+  const ar = ["o", "as", "a", "amos", "áis", "an"];
+  const er = ["o", "es", "e", "emos", "éis", "en"];
+  const ir = ["o", "es", "e", "imos", "ís", "en"];
+  let suffix = verb.slice(verb.length - 2);
+  let suffixes;
+  if (suffix === "ar") suffixes = ar;
+  else if (suffix === "er") suffixes = er;
+  else suffixes = ir;
+  let result = suffixes.map((value) => verb.slice(0, verb.length - 2) + value);
+  return { [verb]: result };
+}
+console.log(conjugate("comer")); */
+
+// #7kyu Write shortest function to calculate Average number of Array
+/* const avg = (a) => a.reduce((s, x) => s + x, 0) / a.length;
+console.log(avg([1, 2, 3])); */
+
+// #7kyu Simple Fun #75: Digit Degree
+/* function digitDegree(n) {
+  let counter = 0;
+  while (n > 9) {
+    n = n.toString().split("");
+    let sum = n.reduce((sum, curr) => sum + +curr, 0);
+    n = sum;
+    counter++;
+  }
+  return counter;
+}
+console.log(digitDegree(99)); */
+
+// #7kyu Simple Fun #50: Array Conversion
+/* function arrayConversion(arr) {
+  let sumTurn = true;
+  while (arr.length > 1) {
+    const next = [];
+    for (let i = 0; i < arr.length; i += 2) {
+      if (sumTurn) {
+        next.push(arr[i] + arr[i + 1]);
+      } else {
+        next.push(arr[i] * arr[i + 1]);
+      }
+    }
+    arr = next;
+    sumTurn = !sumTurn;
+  }
+  return arr[0];
+}
+console.log(arrayConversion([1, 2, 3, 4, 5, 6, 7, 8])); */
+
+// #7kyu Noye's Fludde
+/* function boatLoader(a) {
+  const count = {};
+  for (const letter of a) {
+    if (/[A-Za-z]/.test(letter)) {
+      count[letter] = (count[letter] || 0) + 1;
+    }
+  }
+  let array = Object.entries(count);
+  let result = [];
+  array.forEach((arr) => {
+    if (arr[1] >= 2) {
+      result.push([arr[0], arr[0]]);
+    }
+  });
+  return result.sort((a, b) => {
+    const x = a[0].toLowerCase();
+    const y = b[0].toLowerCase();
+    if (x !== y) {
+      return x.localeCompare(y);
+    }
+    return a[0].charCodeAt(0) - b[0].charCodeAt(0);
+  });
+}
+console.log(
+  boatLoader([
+    5,
+    6,
+    5,
+    "g",
+    "g",
+    "G",
+    "c",
+    "p",
+    "x",
+    "z",
+    "Z",
+    "G",
+    "c",
+    "g",
+    "g",
+  ]),
+); */
+
+// #7kyu How far will I go?
+/* function travel(totalTime, runTime, restTime, speed) {
+  let cycleTime = runTime + restTime;
+  let fullCycles = Math.floor(totalTime / cycleTime);
+  let remainingTime = totalTime % cycleTime;
+  let distance =
+    fullCycles * runTime * speed + Math.min(remainingTime, runTime) * speed;
+  return distance;
+}
+console.log(travel(500, 60, 45, 14)); */
+
+// #7kyu Spoonerize Me
+/* function spoonerize(words) {
+  [word1, word2] = words.split(" ");
+  return word2[0] + word1.slice(1) + " " + word1[0] + word2.slice(1);
+}
+console.log(spoonerize("wedding bells")); */
+
+// #7kyu Distance from the average
+/* function distancesFromAverage(arr) {
+  let average = arr.reduce((sum, curr) => sum + curr, 0) / arr.length;
+  return arr.map((num) => Number((average - num).toFixed(2)));
+}
+console.log(distancesFromAverage([55, 95, 62, 36, 48])); */
+
+// #7kyu Array.prototype.size()
+/* Array.prototype.size = function () {
+  let count = 0;
+  for (const _ of this) {
+    count++;
+  }
+  return count;
+};
+console.log([1, 2].size()); */
+
+// #7kyu You Complete Me
+/* function one(arr, fn) {
+  return arr.filter(fn).length === 1;
+}
+console.log(
+  one([1, 2, 3, 4, 5], function (item) {
+    return item < 2;
+  }),
+); */
+
+// #7kyu Reverse complement (DNA )
+/* function reverseComplement(dna) {
+  const map = {
+    A: "T",
+    T: "A",
+    C: "G",
+    G: "C",
+    a: "t",
+    t: "a",
+    c: "g",
+    g: "c",
+  };
+  let reversed = dna.split("").reverse().join("");
+  let comp = "";
+  for (let ch of reversed) {
+    if (!map[ch]) {
+      return "Invalid sequence";
+    }
+    comp += map[ch];
+  }
+  return comp;
+}
+console.log(reverseComplement("TTCCGGAA")); */
+
+// #7kyu Half Life
+/* function halfLife(quantityInitial, quantityRemaining, time) {
+  return time / Math.log2(quantityInitial / quantityRemaining);
+}
+console.log(halfLife(8, 4, 2)); */
+
+// #7kyu "Consonant Please"
+/* function sortLetters(arr) {
+  let result = [[], []];
+  arr.forEach((array) => {
+    for (let i = 0; i < array.length; i++) {
+      if (/[A-Za-z]/.test(array[i])) {
+        array[i] = array[i].toUpperCase();
+        if (/[AOEIU]/.test(array[i])) {
+          result[0].push(array[i]);
+        } else {
+          result[1].push(array[i]);
+        }
+      }
+    }
+  });
+  return result;
+}
+console.log(
+  sortLetters([
+    [1, "a", "H"],
+    [3, "o", "s"],
+    [4, "E", "i"],
+  ]),
+); */
+
+// #7kyu Row Weights
+/* function rowWeights(array) {
+  let result = [0, 0];
+  let counter = 0;
+  array.forEach((element) => {
+    if (counter % 2 === 0) {
+      result[0] += element;
+      counter++;
+    } else {
+      result[1] += element;
+      counter++;
+    }
+  });
+  return result;
+}
+console.log(rowWeights([50, 60, 70, 80])); */
+
+// #7kyu Wrapping Paper
+/* function wrappingPaper(boxes) {
+  return boxes
+    .map((arr) => {
+      const [l, w, h] = arr;
+      return 2 * l * w + 2 * w * h + 2 * h * l + Math.min(l * w, w * h, h * l);
+    })
+    .reduce((sum, curr) => sum + curr, 0);
+}
+console.log(
+  wrappingPaper([
+    [2, 3, 4],
+    [1, 1, 10],
+  ]),
+); */
+
+// #7kyu 2 DNAs sequences, coding for same protein?
+/* function codeForSameProtein(seq1, seq2) {
+  const translate = (seq) => {
+    let protein = "";
+    for (let i = 0; i < seq.length; i += 3) {
+      const codon = seq.slice(i, i + 3);
+      protein += codons[codon];
+    }
+    return protein;
+  };
+  return translate(seq1) === translate(seq2);
+}
+console.log(codeForSameProtein("ATGTTTTAA", "ATGTTCTAA")); */
+
+// #7kyu Aerial Firefighting
+/* function waterbombs(fire, w) {
+  return fire
+    .split("Y")
+    .reduce((sum, curr) => sum + Math.ceil(curr.length / w), 0);
+}
+console.log(waterbombs("xxxxYxYx", 4)); */
+
+// #7kyu Even and Odd !
+/* function evenAndOdd(num) {
+  const [even, odd] = num
+    .toString()
+    .split("")
+    .reduce(
+      (arr, curr) => {
+        curr % 2 === 0 ? arr[0].push(curr) : arr[1].push(curr);
+        return arr;
+      },
+      [[], []],
+    );
+  return [
+    even.length ? Number(even.join("")) : 0,
+    odd.length ? Number(odd.join("")) : 0,
+  ];
+}
+console.log(evenAndOdd(126453)); */
+
+// #7kyu Gematria for all
+/* function gematria(str) {
+  const gematriaValues = {
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4,
+    e: 5,
+    f: 6,
+    g: 7,
+    h: 8,
+    i: 9,
+    k: 10,
+    l: 20,
+    m: 30,
+    n: 40,
+    o: 50,
+    p: 60,
+    q: 70,
+    r: 80,
+    s: 90,
+    t: 100,
+    u: 200,
+    x: 300,
+    y: 400,
+    z: 500,
+    j: 600,
+    v: 700,
+    w: 900,
+  };
+  let sum = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (/[A-Za-z]/.test(str[i])) {
+      sum += gematriaValues[str[i].toLowerCase()];
+    }
+  }
+  return sum;
+}
+console.log(gematria("Devil")); */
+
+// #7kyu Music 1: How Many Quarter Notes?
+/* function findQuarterNotes(timeSignature) {
+  let [top, bottom] = timeSignature.split("/").map(Number);
+  if (!Number.isInteger(Math.log2(bottom))) {
+    return null;
+  }
+  return Math.floor((4 * top) / bottom);
+}
+console.log(findQuarterNotes("6/5")); */
+
+// #7kyu Gould's sequence
+/* function* gould() {
+  let n = 0;
+  while (true) {
+    let count = 0;
+    let temp = n;
+    while (temp > 0) {
+      temp &= temp - 1;
+      count++;
+    }
+    yield count;
+    n++;
+  }
+}
+console.log(take(20)(gould())); */
+
+// #7kyu Point belongs to arc
+/* function belongsToArc(a, b, c) {
+  const A = BigInt(a);
+  const B = BigInt(b);
+  const C = BigInt(c);
+  function normalize(angle) {
+    let mod = angle % 360n;
+    if (mod < 0n) {
+      mod += 360n;
+    }
+    return mod;
+  }
+  const normA = normalize(A);
+  const normB = normalize(B);
+  const normC = normalize(C);
+  if (normA === normB) {
+    return normC === normA;
+  }
+  if (normA < normB) {
+    return normC >= normA && normC <= normB;
+  } else {
+    return normC >= normA || normC <= normB;
+  }
+}
+console.log(belongsToArc(90, -45, 45)); */
+
+// #7kyu Double Sort
+/* function dbSort(a) {
+  let number = a
+    .filter((value) => typeof value === "number")
+    .sort((a, b) => a - b);
+  let letter = a
+    .filter((value) => typeof value === "string")
+    .sort((a, b) => a.localeCompare(b));
+  return [...number, ...letter];
+}
+console.log(
+  dbSort(["Apple", 46, "287", 574, "Peach", "3", "69", 78, "Grape", "423"]),
+); */
+
+// #7kyu Composing squared strings
+/* function compose(s1, s2) {
+  let newString = "";
+  s1 = s1.split("\n");
+  s2 = s2.split("\n").reverse();
+  for (let i = 0; i < s1.length; i++) {
+    newString += s1[i].slice(0, i + 1) + s2[i].slice(0, s2[i].length - i);
+    if (i !== s1.length - 1) newString += "\n";
+  }
+  return newString;
+}
+console.log(compose("abcd\nefgh\nijkl\nmnop", "qrst\nuvwx\nyz12\n3456")); */
+
+// #7kyu Responsible Drinking
+/* function hydrate(s) {
+  s = s.split(" ");
+  let number = s.reduce((sum, curr) => sum + (+curr || 0), 0);
+  return `${number} glass${number === 1 ? "" : "es"} of water`;
+}
+console.log(hydrate("2 glasses of wine and 1 shot")); */
+
+// #7kyu Magic Index
+/* function findMagic(arr) {
+  return arr.filter((number, idx) => number === idx)[0] || -1;
+}
+console.log(findMagic([-20, -10, 20, 10, 20])); */
+
+// #7kyu Tidy Number (Special Numbers Series #9)
+/* function tidyNumber(n) {
+  const digits = String(n).split("").map(Number);
+  for (let i = 0; i < digits.length - 1; i++) {
+    if (digits[i] > digits[i + 1]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(tidyNumber(9672)); */
+
+// #7kyu Is n divisible by (...)?
+/* function isDivisible(...args) {
+  let number = args[0];
+  return args.every((value) => number % value === 0);
+}
+console.log(isDivisible(3, 3, 4)); */
+
+// #7kyu Convert Improper Fraction to Mixed Numeral
+/* function convertToMixedNumeral(parm) {
+  const [numStr, denStr] = parm.split("/");
+  const numerator = Number(numStr);
+  const denominator = Number(denStr);
+  if (numerator === 0) {
+    return "";
+  }
+  if (Math.abs(numerator) < denominator) {
+    return parm;
+  }
+  const sign = numerator < 0 ? -1 : 1;
+  const absNumerator = Math.abs(numerator);
+  const whole = Math.floor(absNumerator / denominator);
+  const remainder = absNumerator % denominator;
+  if (remainder === 0) {
+    return String(whole * sign);
+  }
+  if (sign === -1) {
+    return `-${whole} ${remainder}/${denominator}`;
+  }
+  return `${whole} ${remainder}/${denominator}`;
+}
+console.log(convertToMixedNumeral("6/2")); */
+
+// #7kyu The strictly necessary number of words for reading your numbers outloud
+/* function words(base_n, max) {
+  let counter = 0;
+  let temp = base_n;
+  while (max >= base_n) {
+    counter++;
+    base_n *= temp;
+  }
+  return temp + counter;
+}
+console.log(words(10, 1000)); */
+
+// #7kyu Simple directions reversal
+/* function solve(arr) {
+  const res = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    const road = arr[i].split(" on ")[1];
+    if (i === arr.length - 1) {
+      res.push(`Begin on ${road}`);
+    } else {
+      const dir = arr[i + 1].split(" on ")[0];
+      res.push(`${dir === "Left" ? "Right" : "Left"} on ${road}`);
+    }
+  }
+  return res;
+}
+console.log(
+  solve([
+    "Begin on Road A",
+    "Right on Road B",
+    "Right on Road C",
+    "Left on Road D",
+  ]),
+); */
+
+// #7kyu Chuck Norris II - One Punch
+/* function onePunch(items) {
+  return typeof items !== "string" || items === ""
+    ? "Broken!"
+    : items.split(" ").sort().join(" ").replace(/[ae]/gi, "");
+}
+console.log(onePunch("Beard Knife Grenade Motorbike Hat")); */
+
+// #7kyu Last Survivor
+/* function lastSurvivor(letters, coords) {
+  coords.forEach((idx) => {
+    letters = letters.slice(0, idx) + letters.slice(idx + 1);
+  });
+  return letters;
+}
+console.log(lastSurvivor("zbk", [2, 1])); */
+
+// #7kyu Leonardo numbers
+/* const L = (n, L0, L1, add) => {
+  const result = [L0, L1];
+  for (let i = 2; i < n; i++) {
+    result.push(result[i - 1] + result[i - 2] + add);
+  }
+  return result;
+};
+console.log(L(2, 0, 0, 2)); */
+
+// #7kyu Sum Times Tables
+/* function sumTimesTables(tables, min, max) {
+  const tableSum = tables.reduce((sum, num) => sum + BigInt(num), 0n);
+  const minBig = BigInt(min);
+  const maxBig = BigInt(max);
+  const rangeSum =
+    (maxBig * (maxBig + 1n)) / 2n - ((minBig - 1n) * minBig) / 2n;
+  return Number(tableSum * rangeSum);
+}
+console.log(sumTimesTables([2, 3], 1, 3)); */
+
+// #7kyu Offspring Traits
+/* const bearFur = (bears) => {
+  const [a, b] = bears;
+  if (a === "black" && b === "black") return "black";
+  if (a === "brown" && b === "brown") return "brown";
+  if (a === "white" && b === "white") return "white";
+  if ((a === "black" && b === "brown") || (a === "brown" && b === "black")) {
+    return "dark brown";
+  }
+  if ((a === "black" && b === "white") || (a === "white" && b === "black")) {
+    return "grey";
+  }
+  if ((a === "brown" && b === "white") || (a === "white" && b === "brown")) {
+    return "light brown";
+  }
+  return "unknown";
+};
+console.log(bearFur(["black", "black"])); */
+
+// #7kyu Simple Fun #7: Will You?
+/* function willYou(young, beautiful, loved) {
+  return (young && beautiful && !loved) || (loved && (!young || !beautiful));
+}
+console.log(willYou(true, true, true)); */
+
+// #7kyu T.T.T.27: Four piles of apples
+/* function fourPiles(n, y) {
+  let x = (n * y) / (y + 1) ** 2;
+  if (!Number.isInteger(x)) return [];
+  let result = [x + y, x - y, x * y, x / y];
+  let isValid = result.every((num) => num > 0);
+  return isValid ? result : [];
+}
+console.log(fourPiles(25, 4)); */
+
+// #7kyu Are there doubles?
+/* function doubleCheck(str) {
+  str = str.toLowerCase();
+  for (let i = 0; i < str.length - 1; i++) {
+    if (str[i] === str[i + 1]) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(doubleCheck("abcaa")); */
+
+// #7kyu The unknown but known variables: Addition
+/* function theVar(theVariables) {
+  const alphabet = "Aabcdefghijklmnopqrstuvwxyz";
+  let [x, y] = theVariables.split("+");
+  return alphabet.indexOf(x) + alphabet.indexOf(y);
+}
+console.log(theVar("d+g")); */
+
+// #7kyu Simple Interest and Compound Interest
+/* function interest(p, r, n) {
+  const simple = Math.round(p + p * r * n);
+  const compound = Math.round(p * Math.pow(1 + r, n));
+  return [simple, compound];
+}
+console.log(interest(100, 0.1, 1)); */
+
+// #7kyu Battle of the characters (Medium)
+/* function battle(x, y) {
+  const powers = {
+    A: 1,
+    B: 2,
+    C: 3,
+    D: 4,
+    E: 5,
+    F: 6,
+    G: 7,
+    H: 8,
+    I: 9,
+    J: 10,
+    K: 11,
+    L: 12,
+    M: 13,
+    N: 14,
+    O: 15,
+    P: 16,
+    Q: 17,
+    R: 18,
+    S: 19,
+    T: 20,
+    U: 21,
+    V: 22,
+    W: 23,
+    X: 24,
+    Y: 25,
+    Z: 26,
+    a: 0.5,
+    b: 1,
+    c: 1.5,
+    d: 2,
+    e: 2.5,
+    f: 3,
+    g: 3.5,
+    h: 4,
+    i: 4.5,
+    j: 5,
+    k: 5.5,
+    l: 6,
+    m: 6.5,
+    n: 7,
+    o: 7.5,
+    p: 8,
+    q: 8.5,
+    r: 9,
+    s: 9.5,
+    t: 10,
+    u: 10.5,
+    v: 11,
+    w: 11.5,
+    x: 12,
+    y: 12.5,
+    z: 13,
+  };
+  let a = 0;
+  let b = 0;
+  for (const ch of x) a += powers[ch];
+  for (const ch of y) b += powers[ch];
+  return a === b ? "Tie!" : a > b ? x : y;
+}
+console.log(battle("One", "Tw")); */
+
+// #7kyu Simple Fun #215: Properly Closed Bracket Word
+/* function closedBracketWord(word) {
+  if (word.length % 2) return false;
+  for (let i = 0; i < word.length; i++) {
+    if (
+      !(word[i].charCodeAt(0) + word[word.length - 1 - i].charCodeAt(0) === 219)
+    )
+      return false;
+  }
+  return true;
+}
+console.log(closedBracketWord("abiryy")); */
+
+// #7kyu Simple Sequence Validator
+/* function validateSequence(arr) {
+  const step = arr[1] - arr[0];
+  for (let i = 2; i < arr.length; i++) {
+    if (arr[i] - arr[i - 1] !== step) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(validateSequence([1, 2, 3, 4, 5, 6, 7, 8, 9])); */
+
+// #7kyu Inertial Array
+/* function isInertial(arr) {
+  const max = Math.max(...arr);
+  const odds = arr.filter((n) => n % 2 !== 0);
+  if (odds.length === 0) return false;
+  if (max % 2 !== 0) return false;
+  const evens = arr.filter((n) => n % 2 === 0 && n !== max);
+  for (let odd of odds) {
+    for (let even of evens) {
+      if (odd <= even) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+console.log(isInertial([11, 4, 20, 9, 2, 8])); */
+
+// #7kyu T.T.T.32: Count with your fingers
+/* function whichFinger(n) {
+  const remainder = n % 8;
+  if (remainder === 1) {
+    return "Thumb";
+  } else if (remainder === 2 || remainder === 0) {
+    return "Index finger";
+  } else if (remainder === 3 || remainder === 7) {
+    return "Middle finger";
+  } else if (remainder === 4 || remainder === 6) {
+    return "Ring finger";
+  } else if (remainder === 5) {
+    return "Little finger";
+  }
+}
+console.log(whichFinger(10)); */
+
+// #7kyu Left$ and Right$
+/* function left$(str, i = 1) {
+  if (typeof i === "number") {
+    if (i === 0) return "";
+    if (i > 0) {
+      return i >= str.length ? str : str.slice(0, i);
+    }
+    return str.slice(0, str.length + i);
+  }
+  const idx = str.indexOf(i);
+  if (idx === -1) return "";
+  return str.slice(0, idx);
+}
+function right$(str, i = 1) {
+  if (typeof i === "number") {
+    if (i === 0) return "";
+    if (i > 0) {
+      return i >= str.length ? str : str.slice(str.length - i);
+    }
+    return str.slice(-i);
+  }
+  const idx = str.lastIndexOf(i);
+  if (idx === -1) return "";
+  return str.slice(idx + i.length);
+}
+console.log(left$(text, 5)); */
+
+// #7kyu Takeshi's Castle Spy: Knock Knock
+/* function knockKnock(str) {
+  const walls = str.split(" ");
+  let result = "!";
+  for (let i = 1; i < walls.length; i++) {
+    const prev = new Set(walls[i - 1]);
+    let found = "^";
+    for (const ch of walls[i]) {
+      if (prev.has(ch)) {
+        found = ch;
+        break;
+      }
+    }
+    result += found;
+  }
+  return result;
+}
+console.log(
+  knockKnock("uy6uq lhh105 tuzpwjus nc1a2 p6v7md cpyp p69hq2b8c 3a9k9r1aq"),
+); */
+
+// #7kyu Help Mr. E
+/* function evenator(str) {
+  str = str.replace(/[.,?!_]/g, "");
+  return str
+    .split(" ")
+    .map((word) => {
+      if (word.length % 2 === 1) {
+        return word + word[word.length - 1];
+      }
+      return word;
+    })
+    .join(" ");
+}
+console.log(evenator("tHiS sEnTeNcE iS eVeN.")); */
+
+// #7kyu Most valuable character
+/* function solve(str) {
+  const first = {};
+  const last = {};
+  for (let i = 0; i < str.length; i++) {
+    const ch = str[i];
+    if (!(ch in first)) {
+      first[ch] = i;
+    }
+    last[ch] = i;
+  }
+  let answer = "";
+  let maxValue = -1;
+  for (const ch in first) {
+    const value = last[ch] - first[ch];
+    if (value > maxValue || (value === maxValue && ch < answer)) {
+      maxValue = value;
+      answer = ch;
+    }
+  }
+  return answer;
+}
+console.log(solve("a")); */
+
+// #7kyu Count the Combinations
+/* function numCombo(arr, num) {
+  const total = arr.reduce((sum, num) => sum + num, 0);
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (total - arr[i] === num) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(numCombo([2, 0, 0, 0, 1], 2)); */
+
+// #7kyu Olympic Rings
+/* function olympicRing(a) {
+  const rings = {
+    A: 1,
+    B: 2,
+    D: 1,
+    O: 1,
+    P: 1,
+    Q: 1,
+    R: 1,
+    a: 1,
+    b: 1,
+    d: 1,
+    e: 1,
+    g: 1,
+    o: 1,
+    p: 1,
+    q: 1,
+  };
+  let total = 0;
+  for (const ch of a) {
+    total += rings[ch] || 0;
+  }
+  const score = Math.floor(total / 2);
+  if (score <= 1) return "Not even a medal!";
+  if (score === 2) return "Bronze!";
+  if (score === 3) return "Silver!";
+  return "Gold!";
+}
+console.log(olympicRing("wHjMudLwtoPGocnJ")); */
+
+// #7kyu Tricky Doubles
+/* function trickyDoubles(n) {
+  const s = String(n);
+  return s.length % 2 === 0 &&
+    s.slice(0, s.length / 2) === s.slice(s.length / 2)
+    ? n
+    : n * 2;
+}
+console.log(trickyDoubles(15)); */
+
+// #7kyu Volume of the Largest Cube that Fits Inside a Given Cylinder
+/* function cubeVolume(h, r) {
+  const sideLength = Math.min(h, r * Math.sqrt(2));
+  return sideLength ** 3;
+}
+console.log(cubeVolume(3, 7)); */
+
+// #7kyu Sequence generator
+/* function sequence(n, pattern) {
+  const result = [];
+  if (typeof pattern === "function") {
+    for (let i = 0; i < n; i++) {
+      result.push(pattern(undefined, i));
+    }
+  } else {
+    for (let i = 0; i < n; i++) {
+      if (Array.isArray(pattern)) {
+        result.push([...pattern]);
+      } else if (pattern !== null && typeof pattern === "object") {
+        result.push({ ...pattern });
+      } else {
+        result.push(pattern);
+      }
+    }
+  }
+  return result;
+}
+console.log(sequence(3, 4)); */
+
+// #7kyu Thinkful - String Drills: Areacode extractor
+/* function areaCode(text) {
+  let result = "";
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === "(" && text[i + 4] === ")") {
+      result += text.slice(i + 1, i + 4);
+    }
+  }
+  return result;
+}
+console.log(areaCode("Grae's cell number used to be (123) 456-7890")); */
+
+// #7kyu Bugs Life
+/* function shortestDistance(a, b, c) {
+  return Math.min(
+    Math.hypot(a + b, c),
+    Math.hypot(a + c, b),
+    Math.hypot(b + c, a),
+  );
+}
+console.log(shortestDistance(1, 2, 3)); */
+
+// #7kyu Putting the flatMap into the JS
+/* Array.prototype.flatMap = function (f) {
+  const result = [];
+  for (let i = 0; i < this.length; i++) {
+    const mapped = f(this[i], i, this);
+    for (let j = 0; j < mapped.length; j++) {
+      result.push(mapped[j]);
+    }
+  }
+  return result;
+};
+console.log([1].flatMap((x) => [x, x - 1, x + 2])); */
+
+// #7kyu Method For Counting Total Occurence Of Specific Digits
+/* function List() {
+  this.countSpecDigits = function (integersList, digitsList) {
+    const nums = integersList.map((n) => Math.abs(n)).join("");
+    return digitsList.map((d) => [
+      d,
+      [...nums].filter((ch) => +ch === d).length,
+    ]);
+  };
+}
+let l = new List();
+console.log(l.countSpecDigits([-18, -31, 81, -19, 111, -888], [1, 8, 4])); */
+
+// #7kyu Strange principal
+/* function numOfOpenLockers(n) {
+  return Math.floor(Math.sqrt(n));
+}
+console.log(numOfOpenLockers(4521)); */
+
+// #7kyu Pancakes or Waffles [Sentence Censorer]
+/* function censor(sentence) {
+  const pancakeWords = ["pancakes", "flapjacks", "slapjacks", "hotcakes"];
+  const waffleWords = ["waffles", "crepes", "blintzes"];
+  const toppingWords = [
+    "syrup",
+    "honey",
+    "jam",
+    "butter",
+    "chocolate",
+    "margarine",
+  ];
+  const hasWaffleWord = waffleWords.some((word) =>
+    new RegExp(`\\b${word}\\b`, "i").test(sentence),
+  );
+  return sentence.replace(/\b[a-zA-Z]+\b/g, (word) => {
+    const lower = word.toLowerCase();
+    if (pancakeWords.includes(lower)) {
+      return "*".repeat(word.length);
+    }
+    if (waffleWords.includes(lower)) {
+      return `**${word}**`;
+    }
+    if (toppingWords.includes(lower)) {
+      return hasWaffleWord ? `**${word}**` : "*".repeat(word.length);
+    }
+    return word;
+  });
+}
+console.log(censor("I love Javascript")); */
+
+// #7kyu Adding remainders to a list
+/* function solve(nums, div) {
+  return nums.map((num) => num + (num % div));
+}
+console.log(solve([2, 7, 5, 9, 100, 34, 32, 0], 3)); */
+
+// #7kyu Survive the attack
+/* function hasSurvived(attackers, defenders) {
+  let attackSurvivors = 0;
+  let defenseSurvivors = 0;
+  const maxLength = Math.max(attackers.length, defenders.length);
+  for (let i = 0; i < maxLength; i++) {
+    const attacker = attackers[i];
+    const defender = defenders[i];
+    if (attacker === undefined) {
+      defenseSurvivors++;
+    } else if (defender === undefined) {
+      attackSurvivors++;
+    } else if (attacker > defender) {
+      attackSurvivors++;
+    } else if (defender > attacker) {
+      defenseSurvivors++;
+    }
+  }
+  if (defenseSurvivors > attackSurvivors) return true;
+  if (attackSurvivors > defenseSurvivors) return false;
+  const attackPower = attackers.reduce((sum, x) => sum + x, 0);
+  const defensePower = defenders.reduce((sum, x) => sum + x, 0);
+  return defensePower >= attackPower;
+}
+console.log(hasSurvived([2, 9, 9, 7], [1, 1, 3, 8])); */
+
+// #7kyu regex validation of 24 hours time.
+/* function validateTime(time) {
+  res = /^(?:[01]?\d|2[0-3]):[0-5]\d$/;
+  return res.test(time);
+}
+console.log(validateTime("01:00")); */
+
+// #7kyu Math engine
+/* function mathEngine(arr) {
+  if (arr === null) return 0;
+  let product = 1;
+  let sum = 0;
+  for (let num of arr) {
+    if (num >= 0) {
+      product *= num;
+    } else {
+      sum += num;
+    }
+  }
+  return product + sum;
+}
+console.log(mathEngine([1, 2, 3, -4, -5])); */
+
+// #7kyu T.T.T. #9: Peaks and valleys
+/* function peakAndValley(arr) {
+  const res = [];
+  for (let i = 3; i < arr.length - 3; i++) {
+    const left = arr.slice(i - 3, i);
+    const right = arr.slice(i + 1, i + 4);
+    const neighbors = [...left, ...right];
+    if (
+      neighbors.every((v) => arr[i] > v) ||
+      neighbors.every((v) => arr[i] < v)
+    ) {
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
+console.log(
+  peakAndValley([
+    10, 20, 30, 40, 30, 20, 10, 11, 12, 13, 14, 15, 16, 15, 14, 13,
+  ]),
+); */
+
+// #7kyu Simple Jeringonza
+/* function jeringonza(str) {
+  return str.replace(/[aeiouAEIOU]/g, (vowel) => {
+    const p = vowel === vowel.toUpperCase() ? "P" : "p";
+    return vowel + p + vowel;
+  });
+}
+console.log(jeringonza("jeringonza")); */
+
+// #7kyu The Four Seasons
+/* function fourSeasons(d) {
+  if (d > 365) {
+    return "The year flew by!";
+  }
+  if (d >= 80 && d < 172) {
+    return "Spring Season";
+  }
+  if (d >= 172 && d < 264) {
+    return "Summer Season";
+  }
+  if (d >= 264 && d < 355) {
+    return "Autumn Season";
+  }
+  return "Winter Season";
+}
+console.log(fourSeasons(264)); */
+
+// #7kyu Search JSON for any key value pair
+/* function getCharacters(obj, key, val) {
+  var foundCharacters = [];
+  for (var i = 0; i < obj.characters.length; i++) {
+    if (
+      obj.characters[i][key] &&
+      obj.characters[i][key].toLowerCase() === val.toLowerCase()
+    ) {
+      foundCharacters.push(obj.characters[i]);
+    }
+  }
+  return foundCharacters;
+}
+console.log(
+  getCharacters(
+    {
+      characters: [
+        {
+          name: "Bill Cipher",
+          age: "Unknown",
+          speciality: "warp reality",
+        },
+      ],
+    },
+    "name",
+    "Bill Cipher",
+  ),
+); */
+
+// #7kyu Complete The Pattern #5 - Even Ladder
+/* function pattern(n) {
+  if (n <= 1) return "";
+  let result = [];
+  for (let i = 2; i <= n; i += 2) {
+    result.push(String(i).repeat(i));
+  }
+  return result.join("\n");
+}
+console.log(pattern(2)); */
+
+// #7kyu Split by Mask
+/* function split(string, mask) {
+  const totalLength = mask.reduce((sum, length) => sum + length, 0);
+  if (totalLength !== string.length) {
+    return null;
+  }
+  const result = [];
+  let index = 0;
+  for (const length of mask) {
+    result.push(string.slice(index, index + length));
+    index += length;
+  }
+  return result;
+}
+console.log(split("1234567890", [3, 3, 4])); */
+
+// #7kyu Split By Value
+/* function splitByValue(k, elements) {
+  const less = [];
+  const greaterOrEqual = [];
+  for (const element of elements) {
+    if (element < k) {
+      less.push(element);
+    } else {
+      greaterOrEqual.push(element);
+    }
+  }
+  return less.concat(greaterOrEqual);
+}
+console.log(splitByValue(6, [6, 4, 10, 10, 6])); */
+
+// #7kyu Simple Fun #177: Rank Of Element
+/* function rankOfElement(arr, i) {
+  let rank = 0;
+  for (let j = 0; j < i; j++) {
+    if (arr[j] <= arr[i]) {
+      rank++;
+    }
+  }
+  for (let j = i + 1; j < arr.length; j++) {
+    if (arr[j] < arr[i]) {
+      rank++;
+    }
+  }
+  return rank;
+}
+console.log(rankOfElement([2, 1, 2, 1, 2], 2)); */
+
+// #7kyu Greatest Difference
+/* function diff(str) {
+  if (str.length === 0) return false;
+  let maxDifference = 0;
+  let result = false;
+  for (const couple of str) {
+    const [a, b] = couple.split("-").map(Number);
+    const difference = Math.abs(a - b);
+    if (difference > maxDifference) {
+      maxDifference = difference;
+      result = couple;
+    }
+  }
+  return result;
+}
+console.log(diff(["23-32", "32-23", "2-6", "98-98", "100-101"])); */
+
+// #7kyu Stone Pickaxe Crafting
+/* function stonePick(arr) {
+  let sticks = 0;
+  let cobblestones = 0;
+  for (const material of arr) {
+    if (material === "Sticks") {
+      sticks++;
+    } else if (material === "Wood") {
+      sticks += 4;
+    } else if (material === "Cobblestone") {
+      cobblestones++;
+    }
+  }
+  return Math.min(Math.floor(sticks / 2), Math.floor(cobblestones / 3));
+}
+console.log(stonePick([...repeat("Sticks", 2), "Cobblestone"])); */
+
+// #7kyu Rock Off!
+/* function solve(a, b) {
+  let aliceScore = 0;
+  let bobScore = 0;
+  for (let i = 0; i < 3; i++) {
+    if (a[i] > b[i]) {
+      aliceScore++;
+    } else if (b[i] > a[i]) {
+      bobScore++;
+    }
+  }
+  if (aliceScore > bobScore) {
+    return `${aliceScore}, ${bobScore}: Alice made "Kurt" proud!`;
+  } else if (bobScore > aliceScore) {
+    return `${aliceScore}, ${bobScore}: Bob made "Jeff" proud!`;
+  } else {
+    return `${aliceScore}, ${bobScore}: that looks like a "draw"! Rock on!`;
+  }
+}
+console.log(solve([47, 7, 2], [47, 7, 2])); */
+
+// #7kyu Simple Fun #48: Higher Version
+/* function higherVersion(ver1, ver2) {
+  const v1 = ver1.split(".").map(Number);
+  const v2 = ver2.split(".").map(Number);
+  for (let i = 0; i < v1.length; i++) {
+    if (v1[i] > v2[i]) return true;
+    if (v1[i] < v2[i]) return false;
+  }
+  return false;
+}
+console.log(higherVersion("1.2.2", "1.2.0")); */
+
+// #7kyu Simple Fun #131: Learn Charitable Game
+/* function learnCharitableGame(arr) {
+  const sum = arr.reduce((total, money) => total + money, 0);
+  return sum > 0 && sum % arr.length === 0;
+}
+console.log(learnCharitableGame([0, 56, 100])); */
+
+// #7kyu Dice Rotation
+/* function rotations(dieArray) {
+  let min = Infinity;
+  for (let target = 1; target <= 6; target++) {
+    let rotations = 0;
+    for (const die of dieArray) {
+      if (die === target) {
+        continue;
+      }
+      if (
+        (die === 1 && target === 6) ||
+        (die === 6 && target === 1) ||
+        (die === 2 && target === 5) ||
+        (die === 5 && target === 2) ||
+        (die === 3 && target === 4) ||
+        (die === 4 && target === 3)
+      ) {
+        rotations += 2;
+      } else {
+        rotations += 1;
+      }
+    }
+    min = Math.min(min, rotations);
+  }
+  return min;
+}
+console.log(rotations([1, 1, 1, 1, 1, 6])); */
+
+// #7kyu Simple Fun #24: Pages Numbering with Ink
+/* function pagesNumberingWithInk(current, numberOfDigits) {
+  let page = current;
+  while (numberOfDigits >= String(page).length) {
+    numberOfDigits -= String(page).length;
+    page++;
+  }
+  return page - 1;
+}
+console.log(pagesNumberingWithInk(1, 5)); */
+
+// #7kyu Simple Fun #3: Late Ride
+/* function lateRide(n) {
+  let hours = Math.floor(n / 60);
+  let minutes = n % 60;
+  return (
+    Math.floor(hours / 10) +
+    (hours % 10) +
+    Math.floor(minutes / 10) +
+    (minutes % 10)
+  );
+}
+console.log(lateRide(240)); */
+
+// #7kyu Simple Fun #69: Are Equally Strong?
+/* function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
+  return (
+    Math.max(yourLeft, yourRight) === Math.max(friendsLeft, friendsRight) &&
+    Math.min(yourLeft, yourRight) === Math.min(friendsLeft, friendsRight)
+  );
+}
+console.log(areEquallyStrong(10, 15, 15, 10)); */
+
+// #7kyu Simple Fun #67: Array Change
+/* function arrayChange(arr) {
+  let moves = 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] <= arr[i - 1]) {
+      const needed = arr[i - 1] + 1 - arr[i];
+      arr[i] += needed;
+      moves += needed;
+    }
+  }
+  return moves;
+}
+console.log(arrayChange([1, 1, 1])); */
+
+// #7kyu Simple Fun #260: Permutation Shift
+/* function permutationShift(permutation) {
+  let minShift = Infinity;
+  let maxShift = -Infinity;
+  for (let i = 0; i < permutation.length; i++) {
+    const shift = permutation[i] - i;
+    minShift = Math.min(minShift, shift);
+    maxShift = Math.max(maxShift, shift);
+  }
+  return maxShift - minShift;
+}
+console.log(permutationShift([1, 0, 2, 3])); */
+
+// #7kyu Simple Fun #374: Minimal Subtractor
+/* function minimalSubtractor(n) {
+  for (let k = 0; k <= n; k++) {
+    let current = n;
+    let valid = true;
+    while (current > 1) {
+      if ((current - k) % 2 !== 0 || current - k < 0) {
+        valid = false;
+        break;
+      }
+      current = (current - k) / 2;
+    }
+    if (valid && current === 1) {
+      return k;
+    }
+  }
+}
+console.log(minimalSubtractor(16)); */
+
+// #7kyu ⚠️Fusion Chamber Shutdown⚠️
+/* function burner(c, h, o) {
+  const water = Math.min(Math.floor(h / 2), o);
+  h -= water * 2;
+  o -= water;
+  const co2 = Math.min(c, Math.floor(o / 2));
+  c -= co2;
+  o -= co2 * 2;
+  const methane = Math.min(c, Math.floor(h / 4));
+  return [water, co2, methane];
+}
+console.log(burner(45, 11, 100)); */
+
+// #7kyu nova polynomial 4. derivative
+/* function polyDerivative(p) {
+  return p.slice(1).map((coef, index) => coef * (index + 1));
+}
+console.log(polyDerivative([1, 2])); */
+
+// #7kyu The First Non Repeated Character In A String
+/* function firstNonRepeated(s) {
+  const counts = {};
+  for (const char of s) {
+    counts[char] = (counts[char] || 0) + 1;
+  }
+  for (const char of s) {
+    if (counts[char] === 1) {
+      return char;
+    }
+  }
+  return null;
+}
+console.log(firstNonRepeated("test")); */
+
+// #7kyu Get row from alphabetical sequence
+/* function getRow(n) {
+  n = ((n - 1) % 26) + 1;
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const letter = alphabet[n - 1];
+  return letter.repeat(n) + alphabet.slice(n);
+}
+console.log(getRow(1)); */
+
+// #7kyu Minimum to multiple
+/* function minimum(a, x) {
+  let r = a % x;
+  return Math.min(r, x - r);
+}
+console.log(minimum(1, 1)); */
+
+// #7kyu Pyramid Structure Analyzer
+/* function pyramid(s) {
+  let root = (s - 2) / 4;
+  return [root + 1, root * 2, root + 1, root];
+}
+console.log(pyramid(42)); */
+
+// #7kyu Mr Martingale
+/* function martingale(bank, outcomes) {
+  let stake = 100;
+  for (const num of outcomes) {
+    if (num === 1) {
+      bank += stake;
+      stake = 100;
+    } else {
+      bank -= stake;
+      stake *= 2;
+    }
+  }
+  return bank;
+}
+console.log(martingale(1000, [1, 1, 0, 0, 1])); */
+
+// #7kyu Stock Position Size Calculator
+/* function positionSize(
+  tradeType,
+  entryPrice,
+  stoploss,
+  capital,
+  riskPercentage,
+) {
+  if (tradeType === "LONG" && stoploss >= entryPrice) {
+    return false;
+  }
+  if (tradeType === "SHORT" && stoploss <= entryPrice) {
+    return false;
+  }
+  const riskAmount = (capital * riskPercentage) / 100;
+  const priceRisk = Math.abs(entryPrice - stoploss);
+  return Math.round(riskAmount / priceRisk);
+}
+console.log(positionSize("LONG", 10.12, 10.05, 10000, 1.6)); */
+
+// #7kyu Cat Years, Dog Years (2)
+/* var ownedCatAndDog = function (catYears, dogYears) {
+  const cat =
+    catYears < 15 ? 0 : catYears < 24 ? 1 : Math.floor((catYears - 24) / 4) + 2;
+  const dog =
+    dogYears < 15 ? 0 : dogYears < 24 ? 1 : Math.floor((dogYears - 24) / 5) + 2;
+  return [cat, dog];
+};
+console.log(ownedCatAndDog(15, 15)); */
+
+// #7kyu Simple Fun #264: Compare Two Integers
+/* function compareIntegers(a, b) {
+  if (a.length < b.length) {
+    return "less";
+  }
+  if (a.length > b.length) {
+    return "greater";
+  }
+  if (a < b) {
+    return "less";
+  }
+  if (a > b) {
+    return "greater";
+  }
+  return "equal";
+}
+console.log(compareIntegers("12", "13")); */
+
+// #7kyu Trilingual democracy
+/* function trilingualDemocracy(group) {
+  const counts = {};
+  for (const lang of group) {
+    counts[lang] = (counts[lang] || 0) + 1;
+  }
+  if (Object.keys(counts).length === 1) {
+    return group[0];
+  }
+  if (Object.keys(counts).length === 2) {
+    return Object.keys(counts).find((lang) => counts[lang] === 1);
+  }
+  const allLanguages = ["D", "F", "I", "K"];
+  return allLanguages.find((lang) => !counts[lang]);
+}
+console.log(trilingualDemocracy("FFF")); */
+
+// #7kyu Interweaving strings and removing digits
+/* function interweave(s1, s2) {
+  let result = "";
+  let maxLength = Math.max(s1.length, s2.length);
+  for (let i = 0; i < maxLength; i++) {
+    if (i < s1.length && !/\d/.test(s1[i])) {
+      result += s1[i];
+    }
+    if (i < s2.length && !/\d/.test(s2[i])) {
+      result += s2[i];
+    }
+  }
+  return result.trim();
+}
+console.log(interweave("hlo", "el")); */
+
+// #7kyu Character Counter
+/* function validateWord(s) {
+  s = s.toLowerCase();
+  const counts = {};
+  for (const char of s) {
+    counts[char] = (counts[char] || 0) + 1;
+  }
+  const values = Object.values(counts);
+  return values.every((count) => count === values[0]);
+}
+console.log(validateWord("abcabc")); */
+
+// #7kyu Can this object fly? Balloons in "Up" and in real life
+/* function Journey(object, crew, balloons) {
+  this.isPossible = function () {
+    return balloons * 0.0048 >= object.weight + crew * 80;
+  };
+}
+var house = { weight: 45000 };
+var journey = new Journey(house, 2, 20622);
+console.log(journey.isPossible()); */
+
+// #7kyu How Many Lonely Letters?
+/* function countLonelyLetters(text) {
+  text = text.toLowerCase().replace(/[^a-z]/g, "");
+  let count = 0;
+  for (let i = 0; i < 26; i++) {
+    const letter = String.fromCharCode(97 + i);
+    const occurrences = text.split(letter).length - 1;
+    if (occurrences !== 1) continue;
+    const previous = i > 0 ? String.fromCharCode(96 + i) : null;
+    const next = i < 25 ? String.fromCharCode(98 + i) : null;
+    const hasPrevious = previous && text.includes(previous);
+    const hasNext = next && text.includes(next);
+    if (!hasPrevious && !hasNext) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countLonelyLetters("ad")); */
+
+// #7kyu Computing the entropy of a message
+/* function entropy(message) {
+  if (message.length === 0) {
+    return 0.0;
+  }
+  const counts = {};
+  for (const char of message) {
+    if (char === " ") continue;
+    counts[char] = (counts[char] || 0) + 1;
+  }
+  const total = Object.values(counts).reduce((sum, count) => sum + count, 0);
+  if (total === 0) {
+    return 0.0;
+  }
+  let result = 0;
+  for (const count of Object.values(counts)) {
+    const p = count / total;
+    result -= p * Math.log2(p);
+  }
+  return result;
+}
+console.log(entropy("hello world")); */
+
+// #7kyu Sweet Dreams are Made of Cheese
+/* function payCheese(arr) {
+  const totalMinutes = arr.reduce((sum, day) => sum + day * 0.6, 0);
+  const hours = Math.ceil(totalMinutes / 60);
+  const totalWages = hours * 8.75 * 4;
+  return `£${totalWages}`;
+}
+console.log(payCheese([750, 750, 750, 750, 600])); */
+
+// #7kyu Sine,cosine and others
+/* function sctc(sin) {
+  const cos = Math.sqrt(1 - sin * sin);
+  const result = [Number(sin.toFixed(2)), Number(cos.toFixed(2))];
+  if (cos !== 0) {
+    result.push(Number((sin / cos).toFixed(2)));
+  }
+  if (sin !== 0) {
+    result.push(Number((cos / sin).toFixed(2)));
+  }
+  return result;
+}
+console.log(sctc(1)); */
+
+// #7kyu Most sales
+/* function top3(products, amounts, prices) {
+  const data = products.map((product, i) => ({
+    product,
+    revenue: amounts[i] * prices[i],
+    index: i,
+  }));
+  data.sort((a, b) => {
+    if (b.revenue !== a.revenue) {
+      return b.revenue - a.revenue;
+    }
+    return a.index - b.index;
+  });
+  return data.slice(0, 3).map((item) => item.product);
+}
+console.log(
+  top3(
+    ["Computer", "Cell Phones", "Vacuum Cleaner"],
+    [3, 24, 8],
+    [199, 299, 399],
+  ),
+); */
+
+// #7kyu Sum and Multiply
+/* var sumAndMultiply = function (sum, multiply) {
+  for (let x = 0; x <= 1000; x++) {
+    let y = sum - x;
+    if (y >= 0 && y <= 1000 && x * y === multiply) {
+      return [x, y];
+    }
+  }
+  return null;
+};
+console.log(sumAndMultiply(13, 12)); */
+
+// #7kyu Transpose two strings in an array
+/* function transposeTwoStrings(array) {
+  const [a, b] = array;
+  const maxLength = Math.max(a.length, b.length);
+  const result = [];
+  for (let i = 0; i < maxLength; i++) {
+    const char1 = a[i] || " ";
+    const char2 = b[i] || " ";
+    result.push(char1 + " " + char2);
+  }
+  return result.join("\n");
+}
+console.log(transposeTwoStrings(["Hello", "World"])); */
+
+// #7kyu The Speed of Letters
+/* function speedify(input) {
+  let positions = [];
+  for (let i = 0; i < input.length; i++) {
+    let char = input[i];
+    let alphabetIndex = char.charCodeAt(0) - 65;
+    let newPos = i + alphabetIndex;
+    positions[newPos] = char;
+  }
+  let maxPos = positions.length - 1;
+  let result = "";
+  for (let i = 0; i <= maxPos; i++) {
+    result += positions[i] !== undefined ? positions[i] : " ";
+  }
+  return result;
+}
+console.log(speedify(["ABC", "A B C"])); */
+
+// #7kyu Share prices
+/* const sharePrice = (invested, changes) => {
+  return changes
+    .reduce((sum, curr) => (sum *= 1 + curr / 100), invested)
+    .toFixed(2);
+};
+console.log(sharePrice(100, [-50, 50])); */
+
+// #7kyu Simple Fun #138: Similarity
+/* function similarity(a, b) {
+  let intersection = a.filter((x) => b.includes(x)).length;
+  let union = new Set([...a, ...b]).size;
+  return intersection / union;
+}
+console.log(similarity([1, 2, 3], [1, 2, 3])); */
+
+// #7kyu Supernatural
+/* function bob(str) {
+  const drunken_doodling = {
+    werewolf: "Silver knife or bullet to the heart",
+    vampire: "Behead it with a machete",
+    wendigo: "Burn it to death",
+    shapeshifter: "Silver knife or bullet to the heart",
+    angel: "Use the angelic blade",
+    demon: "Use Ruby's knife, or some Jesus-juice",
+    ghost: "Salt and iron, and don't forget to burn the corpse",
+    dragon: "You have to find the excalibur for that",
+    djinn: "Stab it with silver knife dipped in a lamb's blood",
+    "pagan god": "It depends on which one it is",
+    leviathan: "Use some Borax, then kill Dick",
+    ghoul: "Behead it",
+    "jefferson starship": "Behead it with a silver blade",
+    reaper: "If it's nasty, you should gank who controls it",
+    rugaru: "Burn it alive",
+    skinwalker: "A silver bullet will do it",
+    phoenix: "Use the colt",
+    witch: "They are humans",
+    else: "I have friggin no idea yet",
+  };
+  return (
+    (drunken_doodling[str]
+      ? drunken_doodling[str]
+      : "I have friggin no idea yet") +
+    "," +
+    " " +
+    "idjits!"
+  );
+}
+console.log(bob("werewolf")); */
+
+// #7kyu Simple Fun #202: Min And Max
+/* function minAndMax(l, d, x) {
+  let result = [];
+  for (let i = l; i <= d; i++) {
+    let temp = i
+      .toString()
+      .split("")
+      .reduce((sum, curr) => sum + +curr, 0);
+    if (temp == x) result.push(i);
+  }
+  return [result[0], result[result.length - 1]];
+}
+console.log(minAndMax(500, 505, 10)); */
+
+// #7kyu Mythical Heads and Tails
+/* function beasts(heads, tails) {
+  let hydra = (heads - 2 * tails) / 3;
+  let orthus = tails - hydra;
+  if (!Number.isInteger(hydra) || hydra < 0 || orthus < 0) {
+    return "No solutions";
+  }
+  return [orthus, hydra];
+}
+console.log(beasts(123, 39)); */
+
+// #7kyu Disagreeable ascii
+/* function getWeight(name) {
+  let sum = 0;
+  for (let i = 0; i < name.length; i++) {
+    if (/[A-Za-z]/.test(name[i])) {
+      if (name[i] === name[i].toUpperCase())
+        sum += name[i].toLowerCase().charCodeAt(0);
+      else if (name[i] === name[i].toLowerCase())
+        sum += name[i].toUpperCase().charCodeAt(0);
+    }
+  }
+  return sum;
+}
+console.log(getWeight("Joe ")); */
+
+// #7kyu Pitches and Notes
+/* function getNote(pitch) {
+  const notesDictionary = {
+    440: "A",
+    466.16: "A#",
+    493.88: "B",
+    523.25: "C",
+    554.37: "C#",
+    587.33: "D",
+    622.25: "D#",
+    659.25: "E",
+    698.46: "F",
+    739.99: "F#",
+    783.99: "G",
+    830.61: "G#",
+  };
+  if (notesDictionary[pitch]) return notesDictionary[pitch];
+  else if (pitch < 440) return getNote(pitch * 2);
+  else return getNote(pitch / 2);
+}
+console.log(getNote(92.49875)); */
+
+// #7kyu Identical Elements
+/* function duplicateElements(m, n) {
+  let max = [...m, ...n].length / 2;
+  for (let i = 0; i < max; i++) {
+    if (m.includes(n[i])) return true;
+  }
+  return false;
+}
+console.log(duplicateElements([1, 2, 3, 4, 5], [1, 6, 7, 8, 9])); */
+
+// #7kyu Anonymous Returns.
+/* name = "The Window";
+let alpha = {
+  name: "My Alpha",
+  getNameFunc: function () {
+    return () => this.name;
+  },
+};
+console.log(alpha.getNameFunc()()); */
+
+// #7kyu String Packet Based Communications
+/* function communicationModule(packet) {
+  const header = packet.slice(0, 4);
+  const instructor = packet.slice(4, 8);
+  const data1 = packet.slice(8, 12);
+  const data2 = packet.slice(12, 16);
+  const footer = packet.slice(16);
+  let number;
+  switch (instructor) {
+    case "0F12":
+      number = +data1 + +data2;
+      break;
+    case "B7A2":
+      number = +data1 - +data2;
+      break;
+    case "C3D9":
+      number = +data1 * +data2;
+      break;
+    default:
+      break;
+  }
+  let temp;
+  if (number >= 9999) temp = "9999";
+  else if (number < 0) temp = "0000";
+  let numLength = number.toString().length;
+  return (
+    header +
+    "FFFF" +
+    (temp || "0".repeat(4 - numLength) + number) +
+    "0000" +
+    footer
+  );
+}
+console.log(communicationModule("H1H10F1200120008F4F4")); */
+
+// #7kyu Age in days
+/* function ageInDays(year, month, day) {
+  const birthday = new Date(year, month - 1, day);
+  const today = new Date();
+  const difference = today - birthday;
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  return `You are ${days} days old`;
+}
+console.log(ageInDays(2026, 9, 24)); */
+
+// #7kyu Weight of its Contents
+/* function contentWeight(bottleWeight, scale) {
+  const parts = scale.split(" ");
+  const n = Number(parts[0]);
+  const type = parts[2];
+  if (type === "larger") {
+    return (bottleWeight * n) / (n + 1);
+  }
+  return bottleWeight / (n + 1);
+}
+console.log(contentWeight(120, "2 times larger")); */
+
+// #7kyu SHEEEEPS
+/* function reloadSheeps(arr) {
+  return arr
+    .filter((value) => {
+      return (
+        value.length === 5 &&
+        /^(?=.*s)(?=.*h)(?=.*e.*e)(?=.*p)[a-z]{5}$/.test(value)
+      );
+    })
+    .map(() => "sheep");
+}
+console.log(reloadSheeps(["shpee"])); */
+
+// #7kyu Simple Fun #74: Growing Plant
+/* function growingPlant(upSpeed, downSpeed, desiredHeight) {
+  let result = Math.ceil((desiredHeight - upSpeed) / (upSpeed - downSpeed) + 1);
+  return result > 0 ? result : 1;
+}
+console.log(growingPlant(100, 10, 910)); */
+
+// #7kyu Tube strike options calculator
+/* function calculator(distance, busDrive, busWalk) {
+  const walk = 5;
+  const bus = 8;
+  const walkingTime = distance / walk;
+  const busTime = busWalk / walk + busDrive / bus;
+  if (walkingTime > 2) {
+    return "Bus";
+  }
+  if (walkingTime < 1 / 6) {
+    return "Walk";
+  }
+  if (walkingTime <= busTime) {
+    return "Walk";
+  }
+  return "Bus";
+}
+console.log(calculator(5, 6, 1)); */
+
+// #7kyu Shorten your speech
+/* var shortenSpeech = function (str) {
+  return str.replace(/\S+/g, (word) => {
+    const cleanWord = word.endsWith(",") ? word.slice(0, -1) : word;
+    if (cleanWord.length <= 3) {
+      return word;
+    }
+    const match = cleanWord.slice(3).search(/[aeiouAEIOU]/);
+    if (match === -1) {
+      return cleanWord;
+    }
+    const vowelIndex = match + 3;
+    return cleanWord.slice(0, vowelIndex) + ".";
+  });
+};
+console.log(shortenSpeech("Hello, do you want a coffee ? ")); */
+
+// #7kyu Cipher
+/* function encode(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result += String.fromCharCode(str[i].charCodeAt(0) * 6);
+  }
+  return result;
+}
+function decode(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result += String.fromCharCode(str[i].charCodeAt(0) / 6);
+  }
+  return result;
+}
+console.log(encode("Hello World!"));
+console.log(decode("ưɞʈʈʚÀȊʚʬʈɘÆ")); */
+
+// #7kyu Sum Array with different bases
+/* function sumItUp(numbersWithBases) {
+  return numbersWithBases.reduce(
+    (sum, arr) => (sum += parseInt(arr[0], arr[1])),
+    0,
+  );
+}
+console.log(
+  sumItUp([
+    ["101", 2],
+    ["10", 8],
+  ]),
+); */
+
+// #7kyu How long will it take the train to reach its final destination?
+/* function reachDestination(distance, speed) {
+  const time = Math.round((distance / speed) * 2) / 2;
+  if (time === 1) {
+    return `The train will be there in 1 hour.`;
+  }
+  return `The train will be there in ${time} hours.`;
+}
+console.log(reachDestination(5, 10)); */
+
+// #7kyu Sort the climbing grades
+/* function sortGrades(arr) {
+  return arr.sort((a, b) => {
+    if (a === "VB") return -1;
+    if (b === "VB") return 1;
+    if (a === "V0+") return b === "V0" ? 1 : -1;
+    if (b === "V0+") return a === "V0" ? -1 : 1;
+    return Number(a.slice(1)) - Number(b.slice(1));
+  });
+}
+console.log(sortGrades(["V13", "V14", "VB", "V0"])); */
