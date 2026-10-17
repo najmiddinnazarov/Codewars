@@ -1,0 +1,15 @@
+# Ignore all .exe files
+*.exe
+
+# Compiled object files and shared libraries
+*.o
+*.obj
+*.out
+*.dll
+*.so
+*.dylib
+
+# OS and IDE generated files
+.vscode/
+.idea/
+.DS_Store
