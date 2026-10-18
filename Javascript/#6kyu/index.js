@@ -2379,3 +2379,20 @@ console.log(goodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0")); */
   return array[0];
 }
 console.log(max([5])); */
+
+// #6kyu Zero or more hands
+/* function whichHand(word) {
+  const left = new Set("qwertasdfgzxcvb");
+  const right = new Set("yuiophjklnm");
+  let usedLeft = false;
+  let usedRight = false;
+  for (const letter of word) {
+    if (left.has(letter)) usedLeft = true;
+    if (right.has(letter)) usedRight = true;
+    if (usedLeft && usedRight) return "BOTH";
+  }
+  if (!usedLeft && !usedRight) return "NONE";
+  if (usedLeft) return "LEFT";
+  return "RIGHT";
+}
+console.log(whichHand("")); */
