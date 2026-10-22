@@ -2437,3 +2437,10 @@ console.log(whowon("Devant hit a reversal to Kripa")); */
   return (nRows - row) * (nCols - col + 1);
 }
 console.log(seatsInTheater(16, 11, 5, 3)); */
+
+// #8kyu Pole Vault Starting Marks
+/* function startingMark(bodyHeight) {
+  return (10.67 - 9.45) / (1.83 - 1.52) * bodyHeight
+       + (9.45 - ((10.67 - 9.45) / (1.83 - 1.52)) * 1.52);
+}
+console.log(startingMark(1.52)); */
